@@ -1,0 +1,93 @@
+{
+	"pattrstorage" : 	{
+		"name" : "FreqShift4",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "Default",
+				"data" : 				{
+					"1delay" : [ 10.0 ],
+					"1feed" : [ 0.0 ],
+					"1freq" : [ 15.0 ],
+					"1pan" : [ -1.0 ],
+					"1side" : [ 0.0 ],
+					"2delay" : [ 100.0 ],
+					"2feed" : [ 0.0 ],
+					"2freq" : [ 15.0 ],
+					"2gain" : [ 0.0 ],
+					"2pan" : [ -0.33 ],
+					"3delay" : [ 333.0 ],
+					"3feed" : [ 0.0 ],
+					"3freq" : [ 15.0 ],
+					"3gain" : [ 0.0 ],
+					"3pan" : [ 0.33 ],
+					"3side" : [ 0.0 ],
+					"4delay" : [ 555.0 ],
+					"4feed" : [ 0.0 ],
+					"4freq" : [ 15.0 ],
+					"4gain" : [ 0.0 ],
+					"4pan" : [ 1.0 ],
+					"Automate" : [ 0.0 ],
+					"Clear" : [ 0.0 ],
+					"Delay" : [ 0.0 ],
+					"Dry/wet" : [ 100.0 ],
+					"Feedback" : [ 0.0 ],
+					"Feedbacks" : [ 0.0 ],
+					"FilterFreq" : [ 1000.0 ],
+					"FilterGain" : [ 0.0 ],
+					"FilterQ" : [ 0.3 ],
+					"Filters" : [ 0.0 ],
+					"Ingain" : [ 0.0 ],
+					"Outgain" : [ -70.0 ],
+					"FilterMode" : [  ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"name" : "1fshift-high",
+				"data" : 				{
+					"1delay" : [ 0.0 ],
+					"1feed" : [ 0.0 ],
+					"1freq" : [ 64.02314 ],
+					"1pan" : [ 0.0 ],
+					"1side" : [ 1.0 ],
+					"2delay" : [ 100.0 ],
+					"2feed" : [ 0.0 ],
+					"2freq" : [ 15.0 ],
+					"2gain" : [ -127.0 ],
+					"2pan" : [ -0.33 ],
+					"3delay" : [ 333.0 ],
+					"3feed" : [ 0.0 ],
+					"3freq" : [ 15.0 ],
+					"3gain" : [ -127.0 ],
+					"3pan" : [ 0.33 ],
+					"3side" : [ 0.0 ],
+					"4delay" : [ 555.0 ],
+					"4feed" : [ 0.0 ],
+					"4freq" : [ 15.0 ],
+					"4gain" : [ -127.0 ],
+					"4pan" : [ 1.0 ],
+					"Automate" : [ 0.0 ],
+					"Clear" : [ 0.0 ],
+					"Delay" : [ 0.0 ],
+					"Dry/wet" : [ 100.0 ],
+					"Feedback" : [ 0.0 ],
+					"Feedbacks" : [ 0.0 ],
+					"FilterFreq" : [ 1000.0 ],
+					"FilterGain" : [ 0.0 ],
+					"FilterQ" : [ 0.3 ],
+					"Filters" : [ 0.0 ],
+					"Ingain" : [ 0.0 ],
+					"Outgain" : [ 0.0 ],
+					"FilterMode" : [  ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

@@ -1,0 +1,93 @@
+{
+	"pattrstorage" : 	{
+		"name" : "FreezeKoalaPreset",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "toto1",
+				"data" : 				{
+					"Denoise" : [ 10.000002 ],
+					"Dry/wet" : [ 100.0 ],
+					"FilterFreq" : [ 1000.0 ],
+					"FilterGain" : [ 0.0 ],
+					"FilterMode" : [ 5.0 ],
+					"FilterQ" : [ 0.3 ],
+					"Freeze" : [ 0.0 ],
+					"Grain" : [ 0.0 ],
+					"Ingain" : [ 0.0 ],
+					"LinkSmooth" : [ 1.0 ],
+					"Metro" : [ 1.0 ],
+					"MetroMode" : [ 0.0 ],
+					"MetroSyncNb" : [ 4.0 ],
+					"MetroSyncUnit" : [ 13.0 ],
+					"MetroTime" : [ 2000.000122 ],
+					"Outgain" : [ -2.388451 ],
+					"Scale" : [ 1.0 ],
+					"Shift" : [ 0.0 ],
+					"Smooth" : [ 2000.000122 ],
+					"Stereo" : [ 1.0 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"name" : "toto2",
+				"data" : 				{
+					"Denoise" : [ 318.539124 ],
+					"Dry/wet" : [ 100.0 ],
+					"FilterFreq" : [ 2326.858154 ],
+					"FilterGain" : [ 14.480551 ],
+					"FilterMode" : [ 5.0 ],
+					"FilterQ" : [ 0.3 ],
+					"Freeze" : [ 0.0 ],
+					"Grain" : [ 0.204724 ],
+					"Ingain" : [ 0.0 ],
+					"LinkSmooth" : [ 1.0 ],
+					"Metro" : [ 1.0 ],
+					"MetroMode" : [ 0.0 ],
+					"MetroSyncNb" : [ 4.0 ],
+					"MetroSyncUnit" : [ 13.0 ],
+					"MetroTime" : [ 2000.000122 ],
+					"Outgain" : [ -2.388451 ],
+					"Scale" : [ -0.396704 ],
+					"Shift" : [ -32.251968 ],
+					"Smooth" : [ 2000.000122 ],
+					"Stereo" : [ 1.0 ]
+				}
+
+			}
+,
+			"3" : 			{
+				"id" : 3,
+				"name" : "default",
+				"data" : 				{
+					"Denoise" : [ 10.000002 ],
+					"Dry/wet" : [ 100.0 ],
+					"FilterFreq" : [ 1000.0 ],
+					"FilterGain" : [ 0.0 ],
+					"FilterMode" : [ 5.0 ],
+					"FilterQ" : [ 0.3 ],
+					"Freeze" : [ 0.0 ],
+					"Grain" : [ 0.0 ],
+					"Ingain" : [ 0.0 ],
+					"LinkSmooth" : [ 1.0 ],
+					"Metro" : [ 1.0 ],
+					"MetroMode" : [ 0.0 ],
+					"MetroSyncNb" : [ 4.0 ],
+					"MetroSyncUnit" : [ 13.0 ],
+					"MetroTime" : [ 2000.000122 ],
+					"Outgain" : [ -70.0 ],
+					"Scale" : [ 1.0 ],
+					"Shift" : [ 0.0 ],
+					"Smooth" : [ 2000.000122 ],
+					"Stereo" : [ 1.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
