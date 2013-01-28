@@ -7,7 +7,7 @@
 			"revision" : 8
 		}
 ,
-		"rect" : [ 41.0, 44.0, 1568.0, 944.0 ],
+		"rect" : [ -1538.0, 44.0, 1568.0, 944.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
@@ -330,7 +330,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 421.497284, 712.0, 96.0, 27.0 ],
+					"patching_rect" : [ 421.497284, 712.0, 98.0, 27.0 ],
 					"text" : "set #1.buffer~, bang"
 				}
 
@@ -931,7 +931,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 135.0, 243.167236, 73.0, 27.0 ],
+									"patching_rect" : [ 135.0, 243.167236, 75.0, 27.0 ],
 									"text" : "set #1.buffer~"
 								}
 
@@ -1258,7 +1258,6 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial Bold",
@@ -2201,7 +2200,7 @@
 							"revision" : 8
 						}
 ,
-						"rect" : [ 0.0, 44.0, 1609.0, 956.0 ],
+						"rect" : [ -1657.0, 22.0, 1609.0, 956.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 10.0,
@@ -2221,6 +2220,20 @@
 						"digest" : "",
 						"tags" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Arial Bold",
+									"fontsize" : 10.0,
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 585.5, 767.0, 71.0, 18.0 ],
+									"text" : "loadmess 87"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"comment" : "TranspMode",
 									"id" : "obj-93",
@@ -2397,7 +2410,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "signal" ],
-									"patching_rect" : [ 442.5, 820.0, 162.0, 29.0 ],
+									"patching_rect" : [ 442.5, 843.0, 162.0, 29.0 ],
 									"text" : "poly~ tg.samplingHarmv1 20 args --- @parallel 1"
 								}
 
@@ -2412,7 +2425,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 585.5, 772.0, 50.0, 18.0 ]
+									"patching_rect" : [ 585.5, 795.0, 50.0, 18.0 ]
 								}
 
 							}
@@ -2440,7 +2453,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 585.5, 794.0, 93.0, 16.0 ],
+									"patching_rect" : [ 585.5, 817.0, 93.0, 16.0 ],
 									"text" : "target 0, wsize $1"
 								}
 
@@ -2469,7 +2482,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 442.5, 794.0, 74.0, 18.0 ],
+									"patching_rect" : [ 442.5, 817.0, 74.0, 18.0 ],
 									"text" : "prepend note"
 								}
 
@@ -2614,7 +2627,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 467.0, 900.0, 25.0, 25.0 ]
+									"patching_rect" : [ 467.0, 923.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -2625,7 +2638,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 402.0, 900.0, 25.0, 25.0 ]
+									"patching_rect" : [ 402.0, 923.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -3476,7 +3489,7 @@
 									"numinlets" : 7,
 									"numoutlets" : 3,
 									"outlettype" : [ "signal", "signal", "int" ],
-									"patching_rect" : [ 402.0, 862.0, 149.0, 18.0 ],
+									"patching_rect" : [ 402.0, 885.0, 149.0, 18.0 ],
 									"text" : "samplor~ 2 20"
 								}
 
@@ -3682,7 +3695,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 74.0, 20.0, 25.0, 25.0 ]
 								}
 
@@ -4008,7 +4021,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 28.5, 20.0, 25.0, 25.0 ]
 								}
 
@@ -6167,6 +6180,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-47", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-32", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -7392,9 +7414,9 @@
 						"ArpegeMetroRand" : [ 0.0 ],
 						"ArpegeMetroSpeed" : [ 100.0 ],
 						"ArpegeNbNotes" : [ 10.0 ],
-						"ArpegePower" : [ 0.0 ],
+						"ArpegePower" : [ 1.0 ],
 						"ArpegeSampleSize" : [ 100.0 ],
-						"ArpegeTranspMode" : [ 0.0 ],
+						"ArpegeTranspMode" : [ 1.0 ],
 						"Content" : [ 0.0 ],
 						"Downsampling" : [ 0.0 ],
 						"Dry/wet" : [ 100.0 ],
@@ -7417,7 +7439,7 @@
 						"Metronome" : [ 0.0 ],
 						"Monitor" : [ 0.0 ],
 						"Ordering" : [ 0.0 ],
-						"Outgain" : [ -70.0 ],
+						"Outgain" : [ -1.37212 ],
 						"Output" : [ 0.0 ],
 						"Rate" : [ 60.0 ],
 						"RefLevel" : [ 90.0 ],
@@ -7434,7 +7456,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u707011629"
+					"varname" : "u305009093"
 				}
 
 			}
@@ -7833,8 +7855,8 @@
 							"parameter_initial" : [ 0.3 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
-							"parameter_shortname" : "FilterQ",
-							"parameter_longname" : "FilterQ",
+							"parameter_shortname" : "TranspEnable",
+							"parameter_longname" : "TranspEnable",
 							"parameter_linknames" : 1,
 							"parameter_units" : "q"
 						}
@@ -10207,7 +10229,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 0,
 							"parameter_shortname" : "Gain",
-							"parameter_longname" : "Gain",
+							"parameter_longname" : "Gain[1]",
 							"parameter_linknames" : 1
 						}
 
@@ -11224,7 +11246,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 104.0, 40.0, 18.0, 18.0 ]
 				}
 
@@ -11236,7 +11258,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 72.0, 40.0, 18.0, 18.0 ]
 				}
 
@@ -13238,8 +13260,8 @@
 							"parameter_initial" : [ 2 ],
 							"parameter_type" : 1,
 							"parameter_initial_enable" : 1,
-							"parameter_shortname" : "Width",
-							"parameter_longname" : "Width",
+							"parameter_shortname" : "BufSize",
+							"parameter_longname" : "BufSize",
 							"parameter_linknames" : 1
 						}
 
@@ -13610,8 +13632,8 @@
 							"parameter_initial" : [ 4 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
-							"parameter_shortname" : "FFTSize",
-							"parameter_longname" : "FFTSize",
+							"parameter_shortname" : "BufLoop",
+							"parameter_longname" : "BufLoop",
 							"parameter_linknames" : 1
 						}
 
@@ -15625,135 +15647,6 @@
 					"source" : [ "obj-99", 0 ]
 				}
 
-			}
- ],
-		"parameters" : 		{
-			"obj-30" : [ "Ordering", "Ordering", 0 ],
-			"obj-114" : [ "RemixError", "Error", 0 ],
-			"obj-81" : [ "Sync", "Sync", 0 ],
-			"obj-7" : [ "WindowType", "WindowType", 0 ],
-			"obj-181" : [ "ArpegePower", "ArpegePower", 0 ],
-			"obj-161" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-182" : [ "ArpegeSampleSize", "ArpegeSampleSize", 0 ],
-			"obj-1" : [ "Gain", "Gain", 0 ],
-			"obj-199" : [ "ArpegeInput", "ArpegeInput", 0 ],
-			"obj-165" : [ "Outgain", "Outgain", 0 ],
-			"obj-47" : [ "Send", "Send", 0 ],
-			"obj-23" : [ "Threshold", "Threshold", 0 ],
-			"obj-331" : [ "ArpegeBufSet", "ArpegeBufSet", 0 ],
-			"obj-255" : [ "ArpegeBufReplace", "ArpegeBufReplace", 0 ],
-			"obj-160" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-44" : [ "HearingThreshold", "HearingThreshold", 0 ],
-			"obj-123" : [ "InputChannels", "InputChannels", 0 ],
-			"obj-194" : [ "ArpegeTranspMode", "ArpegeTranspMode", 0 ],
-			"obj-36" : [ "MaxPartials", "MaxPartials", 0 ],
-			"obj-19" : [ "MaxPeaks", "MaxPeaks", 0 ],
-			"obj-34" : [ "Output", "Output", 0 ],
-			"obj-66" : [ "SendData", "SendData", 0 ],
-			"obj-162" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-103" : [ "AmpSmooth", "ASmooth", 0 ],
-			"obj-9" : [ "Downsampling", "Downsampling", 0 ],
-			"obj-152" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-184" : [ "ArpegeMetroRand", "ArpegeMetroRand", 0 ],
-			"obj-18" : [ "LastToSearch", "LastToSearch", 0 ],
-			"obj-49" : [ "Metronome", "Metronome", 0 ],
-			"obj-50" : [ "Rate", "Rate", 0 ],
-			"obj-41" : [ "Shift", "Shift", 0 ],
-			"obj-39" : [ "Transpose", "Transpose", 0 ],
-			"obj-26" : [ "Width", "Width", 0 ],
-			"obj-31" : [ "Content", "Content", 0 ],
-			"obj-3" : [ "FFTSize", "FFTSize", 0 ],
-			"obj-196" : [ "ArpegeDir", "ArpegeDir", 0 ],
-			"obj-10" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-201" : [ "ArpegeBasePitch", "ArpegeBasePitch", 0 ],
-			"obj-16" : [ "FirstToSearch", "FirstToSearch", 0 ],
-			"obj-187" : [ "ArpegeMetroSpeed", "ArpegeMetroSpeed", 0 ],
-			"obj-37" : [ "Level", "Level", 0 ],
-			"obj-22" : [ "Monitor", "Monitor", 0 ],
-			"obj-27" : [ "RefLevel", "RefLevel", 0 ],
-			"obj-74" : [ "SpeedFactor", "SpeedFactor", 0 ],
-			"obj-195" : [ "ArpegeDirRand", "ArpegeDirRand", 0 ],
-			"obj-171" : [ "Fiddle", "Fiddle", 0 ],
-			"obj-286" : [ "ArpegeBuf", "ArpegeBuf", 0 ],
-			"obj-99" : [ "FreqSmooth", "FSmooth", 0 ],
-			"obj-198" : [ "ArpegeNbNotes", "ArpegeNbNotes", 0 ],
-			"obj-213" : [ "Manual", "Manual", 0 ]
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "AtodB",
-				"bootpath" : "/Applications/Max6/patches/docs/refpages/max-ref",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/docs/refpages/max-ref",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max6/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/m4l-patches/Tools resources",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.IanaToAdd.json",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/IanaToAdd",
-				"patcherrelativepath" : "",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.m.fgraph.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.random.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.samplingHarmv1.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/IanaToAdd",
-				"patcherrelativepath" : "",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.samplingGizmo1.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/IanaToAdd",
-				"patcherrelativepath" : "",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "gizmo_loadme.maxpat",
-				"bootpath" : "/Applications/Max6/Cycling '74/msp-help",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max6/Cycling '74/msp-help",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "iana~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "fiddle~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "samplor~.mxo",
-				"type" : "iLaX"
 			}
  ]
 	}
