@@ -54,13 +54,13 @@
 					"presentation_rect" : [ 462.357147, 4.0, 71.642853, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "FilterMode",
-							"parameter_longname" : "FilterMode",
-							"parameter_linknames" : 1,
 							"parameter_enum" : [ "display", "lowpass", "highpass", "bandpass", "bandstop", "peaknotch", "lowshelf", "highshelf", "resonant", "allpass" ],
 							"parameter_initial" : [ 5.0 ],
 							"parameter_type" : 2,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "FilterMode",
+							"parameter_longname" : "FilterMode",
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -203,15 +203,15 @@
 					"presentation_rect" : [ 494.0, 20.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "FilterGain",
-							"parameter_longname" : "FilterGain",
-							"parameter_linknames" : 1,
 							"parameter_unitstyle" : 4,
 							"parameter_mmax" : 80.0,
 							"parameter_mmin" : -80.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "FilterGain",
+							"parameter_longname" : "FilterGain",
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -233,14 +233,14 @@
 					"presentation_rect" : [ 366.0, 20.0, 49.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "FilterFreq",
-							"parameter_longname" : "FilterFreq",
-							"parameter_linknames" : 1,
 							"parameter_unitstyle" : 3,
 							"parameter_mmax" : 22050.0,
 							"parameter_initial" : [ 1000.0 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "FilterFreq",
+							"parameter_longname" : "FilterFreq",
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -262,16 +262,16 @@
 					"presentation_rect" : [ 430.0, 20.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "FilterQ",
-							"parameter_longname" : "FilterQ",
-							"parameter_linknames" : 1,
-							"parameter_units" : "q",
 							"parameter_exponent" : 5.0,
 							"parameter_unitstyle" : 1,
 							"parameter_mmax" : 22000.0,
 							"parameter_initial" : [ 0.3 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "FilterQ",
+							"parameter_longname" : "FilterQ",
+							"parameter_linknames" : 1,
+							"parameter_units" : "q"
 						}
 
 					}
@@ -446,14 +446,14 @@
 					"presentation_rect" : [ 259.5, 141.5, 36.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Stereo",
-							"parameter_longname" : "Stereo",
-							"parameter_linknames" : 1,
 							"parameter_unitstyle" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1.0 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Stereo",
+							"parameter_longname" : "Stereo",
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -904,7 +904,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u067003319"
+					"varname" : "u605010330"
 				}
 
 			}
@@ -1238,15 +1238,15 @@
 					"presentation_rect" : [ 123.0, 85.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "MetroSyncNb",
-							"parameter_longname" : "MetroSyncNb",
-							"parameter_linknames" : 1,
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 256.0,
 							"parameter_mmin" : 1.0,
 							"parameter_initial" : [ 4 ],
 							"parameter_type" : 1,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "MetroSyncNb",
+							"parameter_longname" : "MetroSyncNb",
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -1336,17 +1336,16 @@
 					"presentation_rect" : [ 65.0, 56.0, 53.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "MetroTime",
-							"parameter_longname" : "MetroTime",
-							"parameter_linknames" : 1,
 							"parameter_speedlim" : 0.0,
-							"parameter_steps" : 51,
 							"parameter_exponent" : 3.3333,
 							"parameter_unitstyle" : 2,
 							"parameter_mmax" : 20000.0,
 							"parameter_initial" : [ 2000 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "MetroTime",
+							"parameter_longname" : "MetroTime",
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -1615,7 +1614,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 39.0, 153.0, 88.0, 63.0 ],
+									"patching_rect" : [ 39.0, 153.0, 88.0, 62.0 ],
 									"text" : "If value is one, > \noutput the value stored in the dial object with a bang message."
 								}
 
@@ -2059,16 +2058,16 @@
 					"presentation_rect" : [ 123.0, 53.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "MetroMode",
-							"parameter_longname" : "MetroMode",
-							"parameter_linknames" : 1,
-							"parameter_order" : 1,
 							"parameter_speedlim" : 0.0,
 							"parameter_enum" : [ "Time", "Sync" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 2,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "MetroMode",
+							"parameter_longname" : "MetroMode",
+							"parameter_linknames" : 1,
+							"parameter_order" : 1
 						}
 
 					}
@@ -2092,14 +2091,14 @@
 					"presentation_rect" : [ 123.0, 69.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "MetroSyncUnit",
-							"parameter_longname" : "MetroSyncUnit",
-							"parameter_linknames" : 1,
 							"parameter_speedlim" : 0.0,
 							"parameter_enum" : [ "128n", "64n", "32nt", "64nd", "32n", "16nt", "32nd", "16n", "8nt", "16nd", "8n", "4nt", "8nd", "4n", "2nt", "4nd", "2n", "1nt", "2nd", "1n", "1nd" ],
 							"parameter_initial" : [ 13.0 ],
 							"parameter_type" : 2,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "MetroSyncUnit",
+							"parameter_longname" : "MetroSyncUnit",
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -2122,15 +2121,15 @@
 					"presentation_rect" : [ 280.5, 69.0, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Shift",
-							"parameter_longname" : "Shift",
-							"parameter_linknames" : 1,
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 2048.0,
 							"parameter_mmin" : -2048.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Shift",
+							"parameter_longname" : "Shift",
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -2153,17 +2152,17 @@
 					"presentation_rect" : [ 236.5, 69.0, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Scale",
-							"parameter_longname" : "Scale",
-							"parameter_linknames" : 1,
-							"parameter_units" : "x",
 							"parameter_exponent" : 3.333,
 							"parameter_unitstyle" : 9,
 							"parameter_mmax" : 10.0,
 							"parameter_mmin" : -1.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Scale",
+							"parameter_longname" : "Scale",
+							"parameter_linknames" : 1,
+							"parameter_units" : "x"
 						}
 
 					}
@@ -2323,14 +2322,14 @@
 					"presentation_rect" : [ 115.0, 17.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "LinkSmooth",
-							"parameter_longname" : "LinkSmooth",
-							"parameter_linknames" : 1,
 							"parameter_enum" : [ "freeze", "freeze" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1.0 ],
 							"parameter_type" : 2,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "LinkSmooth",
+							"parameter_longname" : "LinkSmooth",
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -2485,14 +2484,14 @@
 					"presentation_rect" : [ 72.0, 17.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Metro",
-							"parameter_longname" : "Metro",
-							"parameter_linknames" : 1,
 							"parameter_enum" : [ "freeze", "freeze" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1.0 ],
 							"parameter_type" : 2,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Metro",
+							"parameter_longname" : "Metro",
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -2564,12 +2563,12 @@
 					"presentation_rect" : [ 92.0, 126.75, 40.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Freeze",
-							"parameter_longname" : "Freeze",
-							"parameter_linknames" : 1,
 							"parameter_enum" : [ "freeze", "freeze" ],
 							"parameter_mmax" : 1.0,
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_shortname" : "Freeze",
+							"parameter_longname" : "Freeze",
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -2594,15 +2593,15 @@
 					"presentation_rect" : [ 215.5, 5.5, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Smooth",
-							"parameter_longname" : "Smooth",
-							"parameter_linknames" : 1,
 							"parameter_exponent" : 3.3333,
 							"parameter_unitstyle" : 2,
 							"parameter_mmax" : 20000.0,
 							"parameter_initial" : [ 2000.0 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Smooth",
+							"parameter_longname" : "Smooth",
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -2625,16 +2624,16 @@
 					"presentation_rect" : [ 303.5, 5.5, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Denoise",
-							"parameter_longname" : "Denoise",
-							"parameter_linknames" : 1,
 							"parameter_exponent" : 4.0,
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 2048.0,
 							"parameter_mmin" : 1.0,
 							"parameter_initial" : [ 10.0 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Denoise",
+							"parameter_longname" : "Denoise",
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -2657,14 +2656,14 @@
 					"presentation_rect" : [ 259.5, 5.5, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Grain",
-							"parameter_longname" : "Grain",
-							"parameter_linknames" : 1,
 							"parameter_unitstyle" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Grain",
+							"parameter_longname" : "Grain",
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -2747,15 +2746,15 @@
 					"prototypename" : "M4L.live.gain~.V.extended",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Outgain",
-							"parameter_longname" : "Outgain",
-							"parameter_linknames" : 1,
 							"parameter_unitstyle" : 4,
 							"parameter_mmax" : 30.0,
 							"parameter_mmin" : -70.0,
 							"parameter_initial" : [ -70 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Outgain",
+							"parameter_longname" : "Outgain",
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -2778,14 +2777,14 @@
 					"prototypename" : "amount",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Dry/wet",
-							"parameter_longname" : "Dry/wet",
-							"parameter_linknames" : 1,
 							"parameter_unitstyle" : 5,
 							"parameter_mmax" : 100.0,
 							"parameter_initial" : [ 100 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Dry/wet",
+							"parameter_longname" : "Dry/wet",
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -2824,15 +2823,15 @@
 					"prototypename" : "M4L.live.gain~.V.extended",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Ingain",
-							"parameter_longname" : "Ingain",
-							"parameter_linknames" : 1,
 							"parameter_unitstyle" : 4,
 							"parameter_mmax" : 30.0,
 							"parameter_mmin" : -70.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Ingain",
+							"parameter_longname" : "Ingain",
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -4134,26 +4133,26 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-6" : [ "Metro", "Metro", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-27" : [ "MetroMode", "MetroMode", 1 ],
-			"obj-158" : [ "Shift", "Shift", 0 ],
 			"obj-159" : [ "Scale", "Scale", 0 ],
-			"obj-98" : [ "Denoise", "Denoise", 0 ],
-			"obj-89" : [ "Grain", "Grain", 0 ],
 			"obj-76" : [ "MetroSyncNb", "MetroSyncNb", 0 ],
+			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
 			"obj-101" : [ "Freeze", "Freeze", 0 ],
-			"obj-99" : [ "Smooth", "Smooth", 0 ],
+			"obj-6" : [ "Metro", "Metro", 0 ],
 			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-8" : [ "Ingain", "Ingain", 0 ],
 			"obj-33" : [ "MetroSyncUnit", "MetroSyncUnit", 0 ],
-			"obj-49" : [ "Stereo", "Stereo", 0 ],
 			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-98" : [ "Denoise", "Denoise", 0 ],
+			"obj-24" : [ "MetroTime", "MetroTime", 0 ],
+			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-89" : [ "Grain", "Grain", 0 ],
 			"obj-26" : [ "LinkSmooth", "LinkSmooth", 0 ],
-			"obj-24" : [ "MetroTime", "MetroTime", 0 ]
+			"obj-99" : [ "Smooth", "Smooth", 0 ],
+			"obj-158" : [ "Shift", "Shift", 0 ],
+			"obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-27" : [ "MetroMode", "MetroMode", 1 ],
+			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-49" : [ "Stereo", "Stereo", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -4172,8 +4171,8 @@
 			}
 , 			{
 				"name" : "tg.freeze-1h.pfft.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/EFFECTS/freeze",
-				"patcherrelativepath" : "../../../EFFECTS/freeze",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/FreezeKoala",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -4186,8 +4185,8 @@
 			}
 , 			{
 				"name" : "FreezeKoalaPreset.json",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Freeze",
-				"patcherrelativepath" : "",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"patcherrelativepath" : "../../JSON",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -4196,6 +4195,13 @@
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "AtodB",
+				"bootpath" : "/Applications/Max6/patches/docs/refpages/max-ref",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/docs/refpages/max-ref",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
  ]
