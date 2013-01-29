@@ -7,7 +7,7 @@
 			"revision" : 8
 		}
 ,
-		"rect" : [ 63.0, 44.0, 1354.0, 171.0 ],
+		"rect" : [ 63.0, 44.0, 1421.0, 172.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 10.0,
@@ -1291,6 +1291,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 69.0, 378.0, 40.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 2"
 				}
 
@@ -1551,6 +1555,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 23.0, 378.0, 40.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 1"
 				}
 
@@ -1566,7 +1574,7 @@
 					"outlettype" : [ "signal", "signal", "", "list", "" ],
 					"patching_rect" : [ 23.0, 64.0, 1113.0, 184.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -1.0, 0.0, 1354.0, 170.0 ],
+					"presentation_rect" : [ -2.0, 0.0, 1423.0, 170.0 ],
 					"varname" : "FreezeKoala"
 				}
 
@@ -1596,6 +1604,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 570.0, 34.0, 42.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in~ 2"
 				}
 
@@ -1610,6 +1622,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 23.0, 34.0, 34.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in~ 1"
 				}
 
