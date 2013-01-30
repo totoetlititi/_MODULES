@@ -213,11 +213,11 @@
 						"Outgain" : [ -70.0 ],
 						"Quality" : [ 0.65 ],
 						"Smooth" : [ 5.0 ],
-						"Transp[1]" : [ 0.0 ]
+						"Transp" : [ 0.0 ]
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u878001906"
+					"varname" : "u144009152"
 				}
 
 			}
@@ -404,13 +404,12 @@
 					"presentation_rect" : [ 226.857178, 10.0, 71.642853, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "FilterMode",
-							"parameter_linknames" : 1,
-							"parameter_enum" : [ "display", "lowpass", "highpass", "bandpass", "bandstop", "peaknotch", "lowshelf", "highshelf", "resonant", "allpass" ],
 							"parameter_initial" : [ 5.0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
-							"parameter_shortname" : "FilterMode"
+							"parameter_shortname" : "FilterMode",
+							"parameter_longname" : "FilterMode",
+							"parameter_enum" : [ "display", "lowpass", "highpass", "bandpass", "bandstop", "peaknotch", "lowshelf", "highshelf", "resonant", "allpass" ]
 						}
 
 					}
@@ -553,15 +552,14 @@
 					"presentation_rect" : [ 258.5, 26.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "FilterGain",
-							"parameter_linknames" : 1,
-							"parameter_unitstyle" : 4,
-							"parameter_mmax" : 80.0,
 							"parameter_mmin" : -80.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
-							"parameter_shortname" : "FilterGain"
+							"parameter_shortname" : "FilterGain",
+							"parameter_longname" : "FilterGain",
+							"parameter_unitstyle" : 4,
+							"parameter_mmax" : 80.0
 						}
 
 					}
@@ -583,14 +581,13 @@
 					"presentation_rect" : [ 130.5, 26.0, 49.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "FilterFreq",
-							"parameter_linknames" : 1,
-							"parameter_unitstyle" : 3,
-							"parameter_mmax" : 22050.0,
 							"parameter_initial" : [ 1000.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
-							"parameter_shortname" : "FilterFreq"
+							"parameter_shortname" : "FilterFreq",
+							"parameter_longname" : "FilterFreq",
+							"parameter_unitstyle" : 3,
+							"parameter_mmax" : 22050.0
 						}
 
 					}
@@ -612,16 +609,15 @@
 					"presentation_rect" : [ 194.5, 26.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "FilterQ",
-							"parameter_linknames" : 1,
-							"parameter_units" : "q",
-							"parameter_exponent" : 5.0,
-							"parameter_unitstyle" : 1,
-							"parameter_mmax" : 22000.0,
 							"parameter_initial" : [ 0.3 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
-							"parameter_shortname" : "FilterQ"
+							"parameter_shortname" : "FilterQ",
+							"parameter_longname" : "FilterQ",
+							"parameter_units" : "q",
+							"parameter_exponent" : 5.0,
+							"parameter_unitstyle" : 1,
+							"parameter_mmax" : 22000.0
 						}
 
 					}
@@ -661,20 +657,19 @@
 					"presentation_rect" : [ 65.0, 116.0, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Transp[1]",
-							"parameter_linknames" : 1,
-							"parameter_unitstyle" : 1,
-							"parameter_mmax" : 48.0,
 							"parameter_mmin" : -48.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
-							"parameter_shortname" : "Transp"
+							"parameter_shortname" : "Transp",
+							"parameter_longname" : "Transp",
+							"parameter_unitstyle" : 1,
+							"parameter_mmax" : 48.0
 						}
 
 					}
 ,
-					"varname" : "Transp[1]"
+					"varname" : "Transp"
 				}
 
 			}
@@ -733,14 +728,13 @@
 					"presentation_rect" : [ 65.0, 60.0, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Smooth",
-							"parameter_linknames" : 1,
-							"parameter_unitstyle" : 1,
-							"parameter_mmax" : 20.0,
 							"parameter_initial" : [ 5 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
-							"parameter_shortname" : "Smooth"
+							"parameter_shortname" : "Smooth",
+							"parameter_longname" : "Smooth",
+							"parameter_unitstyle" : 1,
+							"parameter_mmax" : 20.0
 						}
 
 					}
@@ -762,14 +756,13 @@
 					"presentation_rect" : [ 65.0, 7.0, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Quality",
-							"parameter_linknames" : 1,
-							"parameter_unitstyle" : 1,
-							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0.65 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
-							"parameter_shortname" : "Quality"
+							"parameter_shortname" : "Quality",
+							"parameter_longname" : "Quality",
+							"parameter_unitstyle" : 1,
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -1039,15 +1032,14 @@
 					"prototypename" : "M4L.live.gain~.V.extended",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Outgain",
-							"parameter_linknames" : 1,
-							"parameter_unitstyle" : 4,
-							"parameter_mmax" : 30.0,
 							"parameter_mmin" : -70.0,
 							"parameter_initial" : [ -70 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
-							"parameter_shortname" : "Outgain"
+							"parameter_shortname" : "Outgain",
+							"parameter_longname" : "Outgain",
+							"parameter_unitstyle" : 4,
+							"parameter_mmax" : 30.0
 						}
 
 					}
@@ -1070,14 +1062,13 @@
 					"prototypename" : "amount",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Dry/wet",
-							"parameter_linknames" : 1,
-							"parameter_unitstyle" : 5,
-							"parameter_mmax" : 100.0,
 							"parameter_initial" : [ 100 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
-							"parameter_shortname" : "Dry/wet"
+							"parameter_shortname" : "Dry/wet",
+							"parameter_longname" : "Dry/wet",
+							"parameter_unitstyle" : 5,
+							"parameter_mmax" : 100.0
 						}
 
 					}
@@ -1116,15 +1107,14 @@
 					"prototypename" : "M4L.live.gain~.V.extended",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Ingain",
-							"parameter_linknames" : 1,
-							"parameter_unitstyle" : 4,
-							"parameter_mmax" : 30.0,
 							"parameter_mmin" : -70.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
-							"parameter_shortname" : "Ingain"
+							"parameter_shortname" : "Ingain",
+							"parameter_longname" : "Ingain",
+							"parameter_unitstyle" : 4,
+							"parameter_mmax" : 30.0
 						}
 
 					}
@@ -1745,16 +1735,16 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-23" : [ "Transp[1]", "Transp", 0 ],
+			"obj-14" : [ "Outgain", "Outgain", 0 ],
 			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
 			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-23" : [ "Transp", "Transp", 0 ],
 			"obj-18" : [ "Quality", "Quality", 0 ],
-			"obj-19" : [ "Smooth", "Smooth", 0 ]
+			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-19" : [ "Smooth", "Smooth", 0 ],
+			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -1773,8 +1763,8 @@
 			}
 , 			{
 				"name" : "YinToSinPreset.json",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/YinToSin",
-				"patcherrelativepath" : "",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"patcherrelativepath" : "../../JSON",
 				"type" : "JSON",
 				"implicit" : 1
 			}

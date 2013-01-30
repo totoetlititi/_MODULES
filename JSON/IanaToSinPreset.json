@@ -1,0 +1,31 @@
+{
+	"pattrstorage" : 	{
+		"name" : "IanaToSin",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "Default",
+				"data" : 				{
+					"CycPar" : [ 50.0 ],
+					"Dry/wet" : [ 100.0 ],
+					"FilterFreq" : [ 1000.0 ],
+					"FilterGain" : [ 0.0 ],
+					"FilterMode" : [ 5.0 ],
+					"FilterQ" : [ 0.3 ],
+					"ListMax" : [ 10.0 ],
+					"ListMin" : [ 1.0 ],
+					"Metro" : [ 0.0 ],
+					"Outgain" : [ -70.0 ],
+					"ReceiveFrom" : [ "<none>" ],
+					"Speed" : [ "random", 200, 1000, 2000 ],
+					"VibAmp" : [ "random", "range", 100, 0, 0.5 ],
+					"VibFreq" : [ "random", "range", 10, 3, 7 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
