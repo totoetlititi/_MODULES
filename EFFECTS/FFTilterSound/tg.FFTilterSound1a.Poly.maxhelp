@@ -7,7 +7,7 @@
 			"revision" : 8
 		}
 ,
-		"rect" : [ 922.0, 349.0, 791.0, 823.0 ],
+		"rect" : [ 889.0, 349.0, 791.0, 823.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -388,7 +388,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 18.0, 569.0, 45.0, 45.0 ]
+					"patching_rect" : [ 18.0, 451.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -400,16 +400,16 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 18.0, 389.0, 48.0, 136.0 ],
+					"patching_rect" : [ 18.0, 271.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.gain~",
-							"parameter_longname" : "live.gain~",
 							"parameter_unitstyle" : 4,
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_initial" : [ 0.0 ],
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_shortname" : "live.gain~",
+							"parameter_longname" : "live.gain~"
 						}
 
 					}
@@ -437,13 +437,13 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-1",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 4,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 18.0, 218.0, 150.0, 40.0 ],
-					"text" : "poly~ tg.FFTilterSound1a-Poly 1 args 1FFTf",
+					"patching_rect" : [ 18.0, 218.0, 155.0, 29.0 ],
+					"text" : "poly~ tg.FFTilterSound1a.Poly 1 args 1FFTf",
 					"varname" : "poly~"
 				}
 
@@ -550,57 +550,50 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1.1::obj-5::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-1.1::obj-5::obj-89" : [ "DelMax", "DelMax", 0 ],
-			"obj-1.1::obj-5::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-1.1::obj-5::obj-121" : [ "Filter", "Filter", 0 ],
-			"obj-7::obj-50" : [ "Play", "Play", 0 ],
-			"obj-1.1::obj-5::obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-1.1::obj-5::obj-98" : [ "FeedMax", "FeedMax", 0 ],
-			"obj-1.1::obj-5::obj-23" : [ "Shift", "Shift", 0 ],
-			"obj-1.1::obj-5::obj-18" : [ "Pow", "Pow", 0 ],
-			"obj-1.1::obj-5::obj-128" : [ "iGrain", "iGrain", 0 ],
-			"obj-1.1::obj-5::obj-112" : [ "PreserveTransients", "PreserveTransients", 1 ],
 			"obj-1.1::obj-5::obj-157" : [ "TranspMode", "TranspMode", 0 ],
-			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
-			"obj-1.1::obj-5::obj-100" : [ "Denoise", "Denoise", 0 ],
-			"obj-1.1::obj-5::obj-123" : [ "FilterGain[1]", "Filter", 0 ],
-			"obj-1.1::obj-5::obj-101" : [ "Freeze", "Freeze", 0 ],
-			"obj-1.1::obj-5::obj-118" : [ "ReceiveEnable", "ReceiveEnable", 0 ],
-			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
 			"obj-1.1::obj-5::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-1.1::obj-5::obj-127" : [ "ForceFilter", "ForceFilter", 0 ],
-			"obj-1.1::obj-5::obj-258" : [ "iSlope", "iSlope", 0 ],
 			"obj-1.1::obj-5::obj-4" : [ "FilterMode", "FilterMode", 0 ],
 			"obj-1.1::obj-5::obj-7" : [ "Noise", "Noise", 0 ],
-			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
-			"obj-1.1::obj-5::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-1.1::obj-5::obj-258" : [ "iSlope", "iSlope", 0 ],
+			"obj-1.1::obj-5::obj-112" : [ "PreserveTransients", "PreserveTransients", 1 ],
+			"obj-1.1::obj-5::obj-98" : [ "FeedMax", "FeedMax", 0 ],
+			"obj-1.1::obj-5::obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
+			"obj-1.1::obj-5::obj-14" : [ "Outgain", "Outgain", 0 ],
 			"obj-1.1::obj-5::obj-19" : [ "Stretch", "Stretch", 0 ],
-			"obj-1.1::obj-5::obj-146" : [ "EnvScaleEnable", "EnvScaleEnable", 0 ],
-			"obj-1.1::obj-5::obj-96" : [ "Oversampling", "Oversampling", 0 ],
-			"obj-1.1::obj-5::obj-114" : [ "RemixError", "Error", 0 ],
+			"obj-1.1::obj-5::obj-121" : [ "Filter", "Filter", 0 ],
 			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ]
+			"obj-1.1::obj-5::obj-127" : [ "ForceFilter", "ForceFilter", 0 ],
+			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
+			"obj-1.1::obj-5::obj-18" : [ "Pow", "Pow", 0 ],
+			"obj-1.1::obj-5::obj-123" : [ "FilterGain[1]", "Filter", 0 ],
+			"obj-1.1::obj-5::obj-101" : [ "Freeze", "Freeze", 0 ],
+			"obj-1.1::obj-5::obj-114" : [ "RemixError", "Error", 0 ],
+			"obj-1.1::obj-5::obj-89" : [ "DelMax", "DelMax", 0 ],
+			"obj-1.1::obj-5::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-7::obj-50" : [ "Play", "Play", 0 ],
+			"obj-1.1::obj-5::obj-118" : [ "ReceiveEnable", "ReceiveEnable", 0 ],
+			"obj-1.1::obj-5::obj-128" : [ "iGrain", "iGrain", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-1.1::obj-5::obj-96" : [ "Oversampling", "Oversampling", 0 ],
+			"obj-1.1::obj-5::obj-146" : [ "EnvScaleEnable", "EnvScaleEnable", 0 ],
+			"obj-1.1::obj-5::obj-100" : [ "Denoise", "Denoise", 0 ],
+			"obj-1.1::obj-5::obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
+			"obj-1.1::obj-5::obj-23" : [ "Shift", "Shift", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "tg.FFTilterSound1a-Poly.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/SpectralDelay",
+				"name" : "tg.FFTilterSound1a.Poly.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/FFTilterSound",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.FFTilterSound1a.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/SpectralDelay",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/FFTilterSound",
 				"patcherrelativepath" : "",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -626,6 +619,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "AtodB",
+				"bootpath" : "/Applications/Max6/patches/docs/refpages/max-ref",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/docs/refpages/max-ref",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "M4L.gain2~.maxpat",
 				"bootpath" : "/Applications/Max6/patches/m4l-patches/Tools resources",
 				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/m4l-patches/Tools resources",
@@ -634,7 +634,7 @@
 			}
 , 			{
 				"name" : "SpecDelGenInterpolAnalysis1.pfft.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/SpectralDelay",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/FFTilterSound",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
@@ -647,9 +647,16 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "tg.m.preset.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "FMA.SoundPlayer~.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/ForumMaxAppsTest/Utilities",
-				"patcherrelativepath" : "../../../../ForumMaxAppsTest/Utilities",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/IRCAM/ForumMaxApps-All/Utilities",
+				"patcherrelativepath" : "../../../../IRCAM/ForumMaxApps-All/Utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}

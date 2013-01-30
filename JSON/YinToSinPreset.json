@@ -6,16 +6,16 @@
 				"id" : 1,
 				"name" : "Default",
 				"data" : 				{
-					"FilterMode" : [ "peaknotch" ],
 					"Dry/wet" : [ 100.0 ],
 					"FilterFreq" : [ 1000.0 ],
 					"FilterGain" : [ 0.0 ],
+					"FilterMode" : [ 5.0 ],
 					"FilterQ" : [ 0.3 ],
 					"Ingain" : [ 0.0 ],
 					"Outgain" : [ -70.0 ],
 					"Quality" : [ 0.65 ],
 					"Smooth" : [ 5.0 ],
-					"Transp" : [ 15.874016 ]
+					"Transp" : [ 0.0 ]
 				}
 
 			}
@@ -24,10 +24,10 @@
 				"id" : 2,
 				"name" : "Test1",
 				"data" : 				{
-					"FilterMode" : [ "peaknotch" ],
 					"Dry/wet" : [ 48.031498 ],
 					"FilterFreq" : [ 806.723938 ],
 					"FilterGain" : [ 10.60535 ],
+					"FilterMode" : [ 5.0 ],
 					"FilterQ" : [ 0.3 ],
 					"Ingain" : [  ],
 					"Outgain" : [ 0.0 ],

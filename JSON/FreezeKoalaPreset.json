@@ -4,9 +4,9 @@
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
-				"name" : "toto1",
+				"name" : "Default",
 				"data" : 				{
-					"Denoise" : [ 10.000002 ],
+					"Denoise" : [ 10.0 ],
 					"Dry/wet" : [ 100.0 ],
 					"FilterFreq" : [ 1000.0 ],
 					"FilterGain" : [ 0.0 ],
@@ -20,11 +20,11 @@
 					"MetroMode" : [ 0.0 ],
 					"MetroSyncNb" : [ 4.0 ],
 					"MetroSyncUnit" : [ 13.0 ],
-					"MetroTime" : [ 2000.000122 ],
-					"Outgain" : [ -2.388451 ],
+					"MetroTime" : [ 2000.0 ],
+					"Outgain" : [ -70.0 ],
 					"Scale" : [ 1.0 ],
 					"Shift" : [ 0.0 ],
-					"Smooth" : [ 2000.000122 ],
+					"Smooth" : [ 2000.0 ],
 					"Stereo" : [ 1.0 ]
 				}
 
@@ -78,6 +78,34 @@
 					"MetroSyncUnit" : [ 13.0 ],
 					"MetroTime" : [ 2000.000122 ],
 					"Outgain" : [ -70.0 ],
+					"Scale" : [ 1.0 ],
+					"Shift" : [ 0.0 ],
+					"Smooth" : [ 2000.000122 ],
+					"Stereo" : [ 1.0 ]
+				}
+
+			}
+,
+			"4" : 			{
+				"id" : 4,
+				"name" : "test2",
+				"data" : 				{
+					"Denoise" : [ 10.000002 ],
+					"Dry/wet" : [ 100.0 ],
+					"FilterFreq" : [ 1000.0 ],
+					"FilterGain" : [ 0.0 ],
+					"FilterMode" : [ 5.0 ],
+					"FilterQ" : [ 0.3 ],
+					"Freeze" : [ 0.0 ],
+					"Grain" : [ 0.0 ],
+					"Ingain" : [ 0.0 ],
+					"LinkSmooth" : [ 1.0 ],
+					"Metro" : [ 1.0 ],
+					"MetroMode" : [ 0.0 ],
+					"MetroSyncNb" : [ 4.0 ],
+					"MetroSyncUnit" : [ 13.0 ],
+					"MetroTime" : [ 2000.000122 ],
+					"Outgain" : [ -2.388451 ],
 					"Scale" : [ 1.0 ],
 					"Shift" : [ 0.0 ],
 					"Smooth" : [ 2000.000122 ],

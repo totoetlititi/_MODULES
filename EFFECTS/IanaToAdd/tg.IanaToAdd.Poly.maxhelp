@@ -7,7 +7,7 @@
 			"revision" : 8
 		}
 ,
-		"rect" : [ 814.0, 44.0, 791.0, 823.0 ],
+		"rect" : [ 436.0, 274.0, 1214.0, 683.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -30,14 +30,86 @@
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
+					"id" : "obj-13",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 315.0, 261.0, 113.0, 27.0 ],
+					"text" : ";\r1IANA.STORAGE 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 181.0, 311.0, 20.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-2",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 181.0, 341.0, 113.0, 27.0 ],
+					"text" : ";\r1IANA Metronome $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-9",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 181.0, 261.0, 113.0, 27.0 ],
+					"text" : ";\r1IANA.INIT bang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-5",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 896.0, 38.5, 56.0, 27.0 ],
+					"text" : "setrange 0 1200"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
 					"id" : "obj-8",
 					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 181.0, 218.0, 109.0, 27.0 ],
-					"text" : ";\r1KOA.interface open"
+					"patching_rect" : [ 181.0, 218.0, 113.0, 27.0 ],
+					"text" : ";\r1IANA.interface open"
 				}
 
 			}
@@ -50,7 +122,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 403.0, 231.0, 50.0, 16.0 ],
+					"patching_rect" : [ 718.0, 14.5, 50.0, 16.0 ],
 					"text" : "clear"
 				}
 
@@ -60,13 +132,13 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-11",
-					"linecount" : 6,
+					"linecount" : 12,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 375.0, 75.0, 278.0, 72.0 ],
-					"text" : ";\r1KOA Denoise 6.565382, Dry/wet 100., FilterFreq 1000., FilterGain 0., FilterQ 0.3, Freeze 0., Grain 0., Ingain 0., LinkSmooth 1., Metro 1., MetroMode 0., MetroSyncNb 4., MetroSyncUnit 13., MetroTime 1984.296997, Outgain 0, Scale 1., Shift 0, Smooth 2000., Stereo 1.,"
+					"patching_rect" : [ 351.0, 36.0, 298.0, 139.0 ],
+					"text" : ";\r1IANA AmpSmooth 0., BufLoop 4., BufSize 2., Content 0., Display 1., Downsampling 0., Dry/wet 100., FilterFreq 1000., FilterGain 0., FilterMode 5., FirstToSearch 0., FreqSmooth 0., Gain 0., HearingThreshold 1., InitOutput 0., InitPeaks 0., InitSendData 0., InitSpectrum 0., InputChannels 2., LastToSearch 1024., Level 0., Manual 0., MaxPartials 40., MaxPeaks 100., Metronome 1., Monitor 1., Ordering 0., Outgain 0.205235, Output 0., Rate 60., RefLevel 90., RemixError 0., Send nowhere, SendData 0., Shift 0., SpeedFactor 8., Sync 0., Threshold 2., TranspEnable 0.3, Transpose 0., WindowSize 1., WindowType 2.,"
 				}
 
 			}
@@ -275,7 +347,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 403.0, 404.0, 64.0, 18.0 ],
+					"patching_rect" : [ 726.333313, 187.5, 64.0, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial Bold",
@@ -302,7 +374,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 377.0, 261.0, 152.0, 18.0 ],
+					"patching_rect" : [ 692.0, 44.5, 152.0, 18.0 ],
 					"text" : "< Play transposition envelope"
 				}
 
@@ -316,7 +388,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 451.0, 428.0, 19.0, 18.0 ],
+					"patching_rect" : [ 774.333313, 211.5, 19.0, 18.0 ],
 					"text" : "ct"
 				}
 
@@ -331,7 +403,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 403.0, 428.0, 48.0, 18.0 ],
+					"patching_rect" : [ 726.333313, 211.5, 48.0, 18.0 ],
 					"prototypename" : "Live",
 					"triscale" : 0.75
 				}
@@ -342,13 +414,13 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-35",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 403.0, 452.0, 97.0, 27.0 ],
-					"text" : ";\r1KOA Denoise $1"
+					"patching_rect" : [ 726.333313, 235.5, 97.0, 38.0 ],
+					"text" : ";\r1IANA AmpSmooth $1"
 				}
 
 			}
@@ -360,13 +432,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 351.0, 257.0, 24.0, 24.0 ]
+					"patching_rect" : [ 666.0, 40.5, 24.0, 24.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"addpoints_with_curve" : [ 10.638297, 0.0, 0, 0.0, 2925.531982, 100.0, 0, 0.395, 3776.595703, 45.880001, 0, 0.0, 5904.255371, 88.120003, 0, 0.0, 7180.851074, 22.120001, 0, -0.345, 10000.0, 1.0, 0, -0.7 ],
+					"addpoints_with_curve" : [ 10.638297, -12.121212, 0, 0.0, 2925.531982, 1200.0, 0, 0.395, 3776.595703, 544.0, 0, 0.0, 5904.255371, 1056.0, 0, 0.0, 7180.851074, 256.0, 0, -0.345, 10000.0, 0.0, 0, -0.7 ],
 					"domain" : 10000.0,
 					"id" : "obj-19",
 					"linecolor" : [ 0.333333, 0.333333, 0.333333, 1.0 ],
@@ -376,9 +448,9 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "float", "", "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 351.0, 289.0, 200.0, 100.0 ],
+					"patching_rect" : [ 666.0, 72.5, 200.0, 100.0 ],
 					"pointcolor" : [ 0.290196, 0.611765, 0.380392, 1.0 ],
-					"range" : [ 1.0, 100.0 ]
+					"range" : [ 0.0, 1200.0 ]
 				}
 
 			}
@@ -403,13 +475,13 @@
 					"patching_rect" : [ 18.0, 389.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.gain~",
-							"parameter_longname" : "live.gain~",
 							"parameter_unitstyle" : 4,
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_initial" : [ 0.0 ],
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_shortname" : "live.gain~",
+							"parameter_longname" : "live.gain~"
 						}
 
 					}
@@ -443,7 +515,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 18.0, 218.0, 145.5, 29.0 ],
-					"text" : "poly~ tg.FreezeKoala-Poly 1 args 1KOA",
+					"text" : "poly~ tg.IanaToAdd.Poly 1 args 1IANA",
 					"varname" : "poly~"
 				}
 
@@ -464,6 +536,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-12", 0 ]
 				}
 
 			}
@@ -526,6 +607,15 @@
 					"destination" : [ "obj-19", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -550,46 +640,87 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1.1::obj-5::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-1.1::obj-5::obj-6" : [ "Metro", "Metro", 0 ],
-			"obj-1.1::obj-5::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-7::obj-50" : [ "Play", "Play", 0 ],
-			"obj-1.1::obj-5::obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-1.1::obj-5::obj-27" : [ "MetroMode", "MetroMode", 1 ],
-			"obj-1.1::obj-5::obj-158" : [ "Shift", "Shift", 0 ],
-			"obj-1.1::obj-5::obj-159" : [ "Scale", "Scale", 0 ],
-			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
-			"obj-1.1::obj-5::obj-98" : [ "Denoise", "Denoise", 0 ],
-			"obj-1.1::obj-5::obj-89" : [ "Grain", "Grain", 0 ],
-			"obj-1.1::obj-5::obj-101" : [ "Freeze", "Freeze", 0 ],
-			"obj-1.1::obj-5::obj-76" : [ "MetroSyncNb", "MetroSyncNb", 0 ],
-			"obj-1.1::obj-5::obj-99" : [ "Smooth", "Smooth", 0 ],
+			"obj-1.1::obj-5::obj-184" : [ "ArpegeMetroRand", "ArpegeMetroRand", 0 ],
+			"obj-1.1::obj-5::obj-50" : [ "Rate", "Rate", 0 ],
+			"obj-1.1::obj-5::obj-74" : [ "SpeedFactor", "SpeedFactor", 0 ],
+			"obj-1.1::obj-5::obj-274" : [ "ArpegeS", "ArpegeS", 0 ],
+			"obj-1.1::obj-5::obj-7" : [ "WindowType", "WindowType", 0 ],
+			"obj-1.1::obj-5::obj-10" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-1.1::obj-5::obj-152" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-1.1::obj-5::obj-16" : [ "FirstToSearch", "FirstToSearch", 0 ],
+			"obj-1.1::obj-5::obj-201" : [ "ArpegeBasePitch", "ArpegeBasePitch", 0 ],
+			"obj-1.1::obj-5::obj-196" : [ "ArpegeDir", "ArpegeDir", 0 ],
+			"obj-1.1::obj-5::obj-36" : [ "MaxPartials", "MaxPartials", 0 ],
+			"obj-1.1::obj-5::obj-187" : [ "ArpegeMetroSpeed", "ArpegeMetroSpeed", 0 ],
+			"obj-1.1::obj-5::obj-27" : [ "RefLevel", "RefLevel", 0 ],
+			"obj-1.1::obj-5::obj-23" : [ "Threshold", "Threshold", 0 ],
+			"obj-1.1::obj-5::obj-182" : [ "ArpegeSampleSize", "ArpegeSampleSize", 0 ],
 			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
-			"obj-1.1::obj-5::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-1.1::obj-5::obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-1.1::obj-5::obj-33" : [ "MetroSyncUnit", "MetroSyncUnit", 0 ],
-			"obj-1.1::obj-5::obj-49" : [ "Stereo", "Stereo", 0 ],
-			"obj-1.1::obj-5::obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
-			"obj-1.1::obj-5::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-1.1::obj-5::obj-26" : [ "LinkSmooth", "LinkSmooth", 0 ],
-			"obj-1.1::obj-5::obj-24" : [ "MetroTime", "MetroTime", 0 ],
+			"obj-1.1::obj-5::obj-165" : [ "Outgain", "Outgain", 0 ],
+			"obj-1.1::obj-5::obj-213" : [ "Manual", "Manual", 0 ],
+			"obj-1.1::obj-5::obj-103" : [ "AmpSmooth", "ASmooth", 0 ],
+			"obj-1.1::obj-5::obj-99" : [ "FreqSmooth", "FSmooth", 0 ],
+			"obj-1.1::obj-5::obj-286" : [ "ArpegeBuf", "ArpegeBuf", 0 ],
+			"obj-1.1::obj-5::obj-195" : [ "ArpegeDirRand", "ArpegeDirRand", 0 ],
+			"obj-1.1::obj-5::obj-19" : [ "MaxPeaks", "MaxPeaks", 0 ],
+			"obj-1.1::obj-5::obj-232" : [ "Error", "Error", 0 ],
+			"obj-1.1::obj-5::obj-47" : [ "Send", "Send", 0 ],
+			"obj-1.1::obj-5::obj-198" : [ "ArpegeNbNotes", "ArpegeNbNotes", 0 ],
+			"obj-1.1::obj-5::obj-162" : [ "TranspEnable", "TranspEnable", 0 ],
+			"obj-1.1::obj-5::obj-31" : [ "Content", "Content", 0 ],
+			"obj-1.1::obj-5::obj-194" : [ "ArpegeTranspMode", "ArpegeTranspMode", 0 ],
 			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ]
+			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
+			"obj-1.1::obj-5::obj-3" : [ "BufLoop", "BufLoop", 0 ],
+			"obj-1.1::obj-5::obj-44" : [ "HearingThreshold", "HearingThreshold", 0 ],
+			"obj-1.1::obj-5::obj-123" : [ "InputChannels", "InputChannels", 0 ],
+			"obj-1.1::obj-5::obj-255" : [ "ArpegeBufReplace", "ArpegeBufReplace", 0 ],
+			"obj-1.1::obj-5::obj-22" : [ "Monitor", "Monitor", 0 ],
+			"obj-1.1::obj-5::obj-226" : [ "ArpegeEnv", "ArpegeEnv", 0 ],
+			"obj-1.1::obj-5::obj-181" : [ "ArpegePower", "ArpegePower", 0 ],
+			"obj-1.1::obj-5::obj-171" : [ "Fiddle", "Fiddle", 0 ],
+			"obj-1.1::obj-5::obj-39" : [ "Transpose", "Transpose", 0 ],
+			"obj-1.1::obj-5::obj-161" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-1.1::obj-5::obj-34" : [ "Output", "Output", 0 ],
+			"obj-7::obj-50" : [ "Play", "Play", 0 ],
+			"obj-1.1::obj-5::obj-49" : [ "Metronome", "Metronome", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-1.1::obj-5::obj-26" : [ "BufSize", "BufSize", 0 ],
+			"obj-1.1::obj-5::obj-331" : [ "ArpegeBufSet", "ArpegeBufSet", 0 ],
+			"obj-1.1::obj-5::obj-18" : [ "LastToSearch", "LastToSearch", 0 ],
+			"obj-1.1::obj-5::obj-30" : [ "Ordering", "Ordering", 0 ],
+			"obj-1.1::obj-5::obj-199" : [ "ArpegeInput", "ArpegeInput", 0 ],
+			"obj-1.1::obj-5::obj-66" : [ "SendData", "SendData", 0 ],
+			"obj-1.1::obj-5::obj-81" : [ "Sync", "Sync", 0 ],
+			"obj-1.1::obj-5::obj-224" : [ "ArpegeR", "ArpegeR", 0 ],
+			"obj-1.1::obj-5::obj-160" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
+			"obj-1.1::obj-5::obj-41" : [ "Shift", "Shift", 0 ],
+			"obj-1.1::obj-5::obj-9" : [ "Downsampling", "Downsampling", 0 ],
+			"obj-1.1::obj-5::obj-296" : [ "ArpegeA", "ArpegeA", 0 ],
+			"obj-1.1::obj-5::obj-37" : [ "Level", "Level", 0 ],
+			"obj-1.1::obj-5::obj-278" : [ "ArpegeD", "ArpegeD", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "tg.FreezeKoala-Poly.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Freeze",
+				"name" : "tg.IanaToAdd.Poly.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/IanaToAdd",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "tg.FreezeKoala.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Freeze",
+				"name" : "tg.IanaToAdd.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/IanaToAdd",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "AtodB",
+				"bootpath" : "/Applications/Max6/patches/docs/refpages/max-ref",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/docs/refpages/max-ref",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -600,32 +731,72 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "tg.freeze-1h.pfft.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/EFFECTS/freeze",
-				"patcherrelativepath" : "../../../EFFECTS/freeze",
+				"name" : "IanaToAddPreset.json",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"patcherrelativepath" : "../../JSON",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "M4L.pan2~.maxpat",
-				"bootpath" : "/Applications/Max6/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/m4l-patches/Tools resources",
+				"name" : "tg.m.fgraph.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "FreezeKoalaPreset.json",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Freeze",
-				"patcherrelativepath" : "",
+				"name" : "tg.random.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.samplingHarm.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/_Samplor",
+				"patcherrelativepath" : "../_Samplor",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.samplingGizmo1.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/_Samplor",
+				"patcherrelativepath" : "../_Samplor",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "gizmo_loadme.maxpat",
+				"bootpath" : "/Applications/Max6/Cycling '74/msp-help",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max6/Cycling '74/msp-help",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.m.preset.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "FMA.SoundPlayer~.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/ForumMaxAppsTest/Utilities",
-				"patcherrelativepath" : "../../../../ForumMaxAppsTest/Utilities",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/IRCAM/ForumMaxApps-All/Utilities",
+				"patcherrelativepath" : "../../../../IRCAM/ForumMaxApps-All/Utilities",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "iana~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "fiddle~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "samplor~.mxo",
+				"type" : "iLaX"
 			}
  ]
 	}

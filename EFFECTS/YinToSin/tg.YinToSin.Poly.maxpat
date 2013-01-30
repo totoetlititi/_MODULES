@@ -7,7 +7,7 @@
 			"revision" : 8
 		}
 ,
-		"rect" : [ 63.0, 44.0, 1421.0, 172.0 ],
+		"rect" : [ 66.0, 44.0, 474.0, 173.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 10.0,
@@ -1436,7 +1436,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 115.0, 15.0, 93.0, 18.0 ],
+									"patching_rect" : [ 115.0, 15.0, 91.0, 18.0 ],
 									"text" : "r #1.MIXgain~"
 								}
 
@@ -1568,14 +1568,14 @@
 					"args" : [ "#1" ],
 					"id" : "obj-5",
 					"maxclass" : "bpatcher",
-					"name" : "tg.IanaToAdd.maxpat",
+					"name" : "tg.YinToSin.maxpat",
 					"numinlets" : 3,
-					"numoutlets" : 5,
-					"outlettype" : [ "signal", "signal", "", "list", "" ],
-					"patching_rect" : [ 23.0, 64.0, 1113.0, 184.0 ],
+					"numoutlets" : 4,
+					"outlettype" : [ "signal", "signal", "", "" ],
+					"patching_rect" : [ 23.0, 64.0, 480.0, 173.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -2.0, 0.0, 1423.0, 170.0 ],
-					"varname" : "FreezeKoala"
+					"presentation_rect" : [ 0.0, 0.0, 484.0, 170.0 ],
+					"varname" : "YinToSin"
 				}
 
 			}
@@ -1589,7 +1589,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1117.0, 34.0, 96.0, 18.0 ],
+					"patching_rect" : [ 484.0, 34.0, 96.0, 18.0 ],
 					"text" : "r #1"
 				}
 
@@ -1603,7 +1603,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 570.0, 34.0, 42.0, 18.0 ],
+					"patching_rect" : [ 253.5, 34.0, 34.0, 18.0 ],
 					"saved_object_attributes" : 					{
 						"attr_comment" : ""
 					}

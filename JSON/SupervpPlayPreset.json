@@ -4,18 +4,17 @@
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
+				"name" : "Default",
 				"data" : 				{
 					"Buf" : [ "<none>" ],
-					"BufArm" : [ 0.0 ],
+					"BufAction" : [ 0.0 ],
 					"BufBegin" : [ 0.0 ],
-					"BufEnd" : [ 39445.578125 ],
+					"BufEnd" : [ 30000.001953 ],
 					"BufLoop" : [ 0.0 ],
-					"BufPlay" : [ 1.0 ],
-					"BufRec&Read" : [ 0.0 ],
-					"BufRecord" : [ 0.0 ],
-					"BufReplace" : [ "008.aif" ],
-					"BufSet" : [ "#0.buffer~" ],
-					"BufSize" : [ 39445.578125 ],
+					"BufReplace" : [ "<none>" ],
+					"BufSet" : [ "1SVPP.buffer~" ],
+					"BufSize" : [ 30000.0 ],
+					"BufSpeed" : [ 1.0 ],
 					"BufSync" : [ 0.0 ],
 					"Dry/wet" : [ 100.0 ],
 					"EnvLpcOrder" : [ 12.0 ],
@@ -32,7 +31,7 @@
 					"FilterMode" : [ 5.0 ],
 					"FilterQ" : [ 0.3 ],
 					"Ingain" : [ 0.0 ],
-					"Outgain" : [ -15.134321 ],
+					"Outgain" : [ -70.0 ],
 					"Oversampling" : [ 2.0 ],
 					"PreserveStereo" : [ 0.0 ],
 					"PreserveTransients" : [ 1.0 ],
@@ -50,8 +49,7 @@
 					"WindowSize" : [ 6.0 ],
 					"fade-in" : [ 10.0 ],
 					"fade-out" : [ 10.0 ],
-					"nb-shots" : [ 1.0 ],
-					"speed" : [ 1.0 ]
+					"nb-shots" : [ 1.0 ]
 				}
 
 			}

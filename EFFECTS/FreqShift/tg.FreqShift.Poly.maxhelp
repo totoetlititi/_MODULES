@@ -94,7 +94,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 535.0, 257.0, 83.0, 16.0 ],
-					"text" : "setrange 2 20"
+					"text" : "setrange 2 200"
 				}
 
 			}
@@ -137,8 +137,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 375.0, 75.0, 297.0, 94.0 ],
-					"text" : ";\r1fsh 1delay 10., 1feed 0., 1freq 15., 1pan -1., 1side 0., 2delay 100., 2feed 0., 2freq 15., 2gain 0., 2pan -0.33, 3delay 333., 3feed 0., 3freq 15., 3gain 0., 3pan 0.33, 3side 0., 4delay 555., 4feed 0., 4freq 15., 4gain 0., 4pan 1., Automate 0., Clear 0., Delay 0., Dry/wet 100., Feedback 0., Feedbacks 0., FilterFreq 1000., FilterGain 0., FilterMode 5., FilterQ 0.3, Filters 0., Ingain 0., Outgain -70.,"
+					"patching_rect" : [ 375.0, 75.0, 302.0, 94.0 ],
+					"text" : ";\r1fsh 1delay 10., 1feed 0., 1freq 15., 1gain 0., 1pan -1., 1side -1., 2delay 100., 2feed 0.275591, 2freq 15., 2gain 0., 2pan -0.33, 2side -0.606299, 3delay 333., 3feed 0.409449, 3freq 15., 3gain 0., 3pan 0.33, 3side 0.377953, 4delay 555., 4feed 0.464567, 4freq 15., 4gain 0., 4pan 1., 4side 1., Clear 0., Delay 0., Dry/wet 100., Feedback 0., FilterFreq 1000., FilterGain 0., FilterMode 5., FilterQ 0.3, Ingain 0., Outgain -2.222222,"
 				}
 
 			}
@@ -438,7 +438,7 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints_with_curve" : [ 10.638297, 1.818182, 0, 0.0, 2925.531982, 20.0, 0, 0.395, 3776.595703, 10.16, 0, 0.0, 5904.255371, 17.84, 0, 0.0, 7180.851074, 5.84, 0, -0.345, 10000.0, 2.0, 0, -0.7 ],
+					"addpoints_with_curve" : [ 10.638297, 0.000002, 0, 0.0, 2925.531982, 200.0, 0, 0.395, 3776.595703, 91.759995, 0, 0.0, 5904.255371, 176.240005, 0, 0.0, 7180.851074, 44.240002, 0, -0.345, 10000.0, 2.0, 0, -0.7 ],
 					"domain" : 10000.0,
 					"id" : "obj-19",
 					"linecolor" : [ 0.333333, 0.333333, 0.333333, 1.0 ],
@@ -450,7 +450,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 351.0, 289.0, 200.0, 100.0 ],
 					"pointcolor" : [ 0.290196, 0.611765, 0.380392, 1.0 ],
-					"range" : [ 2.0, 20.0 ]
+					"range" : [ 2.0, 200.0 ]
 				}
 
 			}
@@ -475,13 +475,13 @@
 					"patching_rect" : [ 18.0, 257.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.gain~",
 							"parameter_unitstyle" : 4,
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 0,
-							"parameter_shortname" : "live.gain~"
+							"parameter_shortname" : "live.gain~",
+							"parameter_longname" : "live.gain~"
 						}
 
 					}
@@ -631,46 +631,46 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1.1::obj-5::obj-206" : [ "Feedback", "Feedback", 0 ],
-			"obj-1.1::obj-5::obj-108" : [ "1delay", "1delay", 0 ],
-			"obj-1.1::obj-5::obj-162" : [ "2feed", "2feed", 0 ],
-			"obj-1.1::obj-5::obj-173" : [ "3freq", "3freq", 0 ],
-			"obj-1.1::obj-5::obj-188" : [ "4gain", "4gain", 0 ],
-			"obj-1.1::obj-5::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-1.1::obj-5::obj-112" : [ "1side", "1side", 0 ],
-			"obj-1.1::obj-5::obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-7::obj-50" : [ "Play", "Play", 0 ],
-			"obj-1.1::obj-5::obj-163" : [ "2delay", "2delay", 0 ],
-			"obj-1.1::obj-5::obj-176" : [ "3feed", "3feed", 0 ],
-			"obj-1.1::obj-5::obj-187" : [ "4freq", "4freq", 0 ],
-			"obj-1.1::obj-5::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-1.1::obj-5::obj-114" : [ "1pan", "1pan", 0 ],
-			"obj-1.1::obj-5::obj-208" : [ "Clear", "Clear", 0 ],
-			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-1.1::obj-5::obj-177" : [ "3delay", "3delay", 0 ],
-			"obj-1.1::obj-5::obj-191" : [ "4feed", "4feed", 0 ],
-			"obj-1.1::obj-5::obj-161" : [ "2pan", "2pan", 0 ],
-			"obj-1.1::obj-5::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-1.1::obj-5::obj-172" : [ "3side", "3side", 0 ],
-			"obj-1.1::obj-5::obj-28" : [ "Filters", "Filters", 0 ],
-			"obj-1.1::obj-5::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
-			"obj-1.1::obj-5::obj-186" : [ "Automate", "Automate", 0 ],
-			"obj-1.1::obj-5::obj-192" : [ "4delay", "4delay", 0 ],
-			"obj-1.1::obj-5::obj-113" : [ "1freq", "1freq", 0 ],
-			"obj-1.1::obj-5::obj-160" : [ "2gain", "2gain", 0 ],
-			"obj-1.1::obj-5::obj-175" : [ "3pan", "3pan", 0 ],
-			"obj-1.1::obj-5::obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-1.1::obj-5::obj-126" : [ "Delay", "Delay", 0 ],
 			"obj-1.1::obj-5::obj-42" : [ "FilterMode[1]", "FilterMode", 0 ],
-			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
+			"obj-1.1::obj-5::obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-1.1::obj-5::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
 			"obj-1.1::obj-5::obj-115" : [ "1feed", "1feed", 0 ],
+			"obj-1.1::obj-5::obj-162" : [ "2feed", "2feed", 0 ],
+			"obj-1.1::obj-5::obj-176" : [ "3feed", "3feed", 0 ],
+			"obj-1.1::obj-5::obj-192" : [ "4delay", "4delay", 0 ],
+			"obj-1.1::obj-5::obj-186" : [ "Automate", "Automate", 0 ],
+			"obj-1.1::obj-5::obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
+			"obj-1.1::obj-5::obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-1.1::obj-5::obj-113" : [ "1freq", "1freq", 0 ],
 			"obj-1.1::obj-5::obj-159" : [ "2freq", "2freq", 0 ],
+			"obj-1.1::obj-5::obj-173" : [ "3freq", "3freq", 0 ],
+			"obj-1.1::obj-5::obj-191" : [ "4feed", "4feed", 0 ],
+			"obj-1.1::obj-5::obj-126" : [ "Delay", "Delay", 0 ],
+			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
+			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
+			"obj-1.1::obj-5::obj-114" : [ "1pan", "1pan", 0 ],
+			"obj-1.1::obj-5::obj-160" : [ "2gain", "2gain", 0 ],
 			"obj-1.1::obj-5::obj-174" : [ "3gain", "3gain", 0 ],
+			"obj-1.1::obj-5::obj-187" : [ "4freq", "4freq", 0 ],
+			"obj-1.1::obj-5::obj-206" : [ "Feedback", "Feedback", 0 ],
+			"obj-1.1::obj-5::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-1.1::obj-5::obj-28" : [ "Filters", "Filters", 0 ],
+			"obj-7::obj-50" : [ "Play", "Play", 0 ],
+			"obj-1.1::obj-5::obj-112" : [ "1side", "1side", 0 ],
+			"obj-1.1::obj-5::obj-161" : [ "2pan", "2pan", 0 ],
+			"obj-1.1::obj-5::obj-175" : [ "3pan", "3pan", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-1.1::obj-5::obj-188" : [ "4gain", "4gain", 0 ],
 			"obj-1.1::obj-5::obj-158" : [ "Feedbacks", "Feedbacks", 0 ],
+			"obj-1.1::obj-5::obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-1.1::obj-5::obj-108" : [ "1delay", "1delay", 0 ],
+			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
+			"obj-1.1::obj-5::obj-163" : [ "2delay", "2delay", 0 ],
+			"obj-1.1::obj-5::obj-177" : [ "3delay", "3delay", 0 ],
+			"obj-1.1::obj-5::obj-172" : [ "3side", "3side", 0 ],
 			"obj-1.1::obj-5::obj-190" : [ "4pan", "4pan", 0 ],
-			"obj-7::obj-39" : [ "Loop", "Loop", 0 ]
+			"obj-1.1::obj-5::obj-208" : [ "Clear", "Clear", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -695,9 +695,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
+				"name" : "FreqShift4Preset.json",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"patcherrelativepath" : "../../JSON",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -730,9 +730,16 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "tg.m.preset.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "FMA.SoundPlayer~.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/IRCAM/ForumMaxApps-SoundBox",
-				"patcherrelativepath" : "../../../../IRCAM/ForumMaxApps-SoundBox",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/IRCAM/ForumMaxApps-All/Utilities",
+				"patcherrelativepath" : "../../../../IRCAM/ForumMaxApps-All/Utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
