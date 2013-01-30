@@ -28,6 +28,20 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-38",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 850.0, 600.0, 100.0, 18.0 ],
+					"text" : "freqshift~"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-67",
 					"maxclass" : "button",
 					"numinlets" : 1,
@@ -134,7 +148,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 238.464111, 203.0, 109.0, 16.0 ],
-									"presentation_rect" : [ 358.196411, 229.0, 0.0, 0.0 ],
 									"text" : "fill 1, apply hamming"
 								}
 
