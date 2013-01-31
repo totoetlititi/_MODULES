@@ -7,9 +7,9 @@
 			"revision" : 8
 		}
 ,
-		"rect" : [ 66.0, 44.0, 837.0, 175.0 ],
+		"rect" : [ 66.0, 44.0, 1266.0, 817.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 1,
+		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial Bold",
@@ -17,74 +17,16 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"gridsnaponopen" : 0,
 		"statusbarvisible" : 2,
-		"toolbarvisible" : 0,
+		"toolbarvisible" : 1,
 		"boxanimatetime" : 200,
 		"imprint" : 0,
-		"enablehscroll" : 0,
-		"enablevscroll" : 0,
+		"enablehscroll" : 1,
+		"enablevscroll" : 1,
 		"devicewidth" : 0.0,
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-46",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 219.0, 355.0, 50.0, 16.0 ],
-					"text" : "front"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-44",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 219.0, 322.0, 62.0, 18.0 ],
-					"text" : "route open"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-43",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 219.0, 384.0, 100.0, 18.0 ],
-					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
-					"text" : "thispatcher"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-42",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 219.0, 296.0, 96.0, 18.0 ],
-					"text" : "r #1.interface"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
@@ -1291,6 +1233,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 69.0, 378.0, 40.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 2"
 				}
 
@@ -1551,6 +1497,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 23.0, 378.0, 40.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 1"
 				}
 
@@ -1596,6 +1546,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 371.0, 34.0, 34.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in~ 2"
 				}
 
@@ -1610,6 +1564,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 23.0, 34.0, 34.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in~ 1"
 				}
 
@@ -1671,42 +1629,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-44", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-42", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-43", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-44", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-46", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-44", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-43", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-46", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-40", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1749,6 +1671,100 @@
 					"source" : [ "obj-54", 0 ]
 				}
 
+			}
+ ],
+		"parameters" : 		{
+			"obj-5::obj-190" : [ "4pan", "4pan", 0 ],
+			"obj-5::obj-186" : [ "4side", "4side", 0 ],
+			"obj-5::obj-172" : [ "3side", "3side", 0 ],
+			"obj-5::obj-28" : [ "1gain", "1gain", 0 ],
+			"obj-5::obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-5::obj-162" : [ "2feed", "2feed", 0 ],
+			"obj-5::obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-5::obj-177" : [ "3delay", "3delay", 0 ],
+			"obj-5::obj-187" : [ "4freq", "4freq", 0 ],
+			"obj-5::obj-173" : [ "3freq", "3freq", 0 ],
+			"obj-5::obj-114" : [ "1pan", "1pan", 0 ],
+			"obj-5::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-5::obj-160" : [ "2gain", "2gain", 0 ],
+			"obj-5::obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-5::obj-176" : [ "3feed", "3feed", 0 ],
+			"obj-5::obj-192" : [ "4delay", "4delay", 0 ],
+			"obj-5::obj-208" : [ "Clear", "Clear", 0 ],
+			"obj-5::obj-159" : [ "2freq", "2freq", 0 ],
+			"obj-5::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-5::obj-161" : [ "2pan", "2pan", 0 ],
+			"obj-5::obj-174" : [ "3gain", "3gain", 0 ],
+			"obj-5::obj-191" : [ "4feed", "4feed", 0 ],
+			"obj-5::obj-126" : [ "Delay", "Delay", 0 ],
+			"obj-5::obj-112" : [ "1side", "1side", 0 ],
+			"obj-5::obj-108" : [ "1delay", "1delay", 0 ],
+			"obj-5::obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-5::obj-175" : [ "3pan", "3pan", 0 ],
+			"obj-5::obj-188" : [ "4gain", "4gain", 0 ],
+			"obj-5::obj-158" : [ "2side", "2side", 0 ],
+			"obj-5::obj-206" : [ "Feedback", "Feedback", 0 ],
+			"obj-5::obj-113" : [ "1freq", "1freq", 0 ],
+			"obj-5::obj-115" : [ "1feed", "1feed", 0 ],
+			"obj-5::obj-163" : [ "2delay", "2delay", 0 ],
+			"obj-5::obj-72" : [ "FilterQ", "FilterQ", 0 ]
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "tg.FreqShift.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/FreqShift",
+				"patcherrelativepath" : "",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "M4L.bal2~.maxpat",
+				"bootpath" : "/Applications/Max6/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/m4l-patches/Tools resources",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "FreqShift4Preset.json",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"patcherrelativepath" : "../../JSON",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.m.fgraph.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "AtodB",
+				"bootpath" : "/Applications/Max6/patches/docs/refpages/max-ref",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/docs/refpages/max-ref",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.line~.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/dsp.components",
+				"patcherrelativepath" : "../../../dsp.components",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "x.pan.1.2~.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/Poletti",
+				"patcherrelativepath" : "../../../../Poletti",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.m.preset.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
 			}
  ]
 	}

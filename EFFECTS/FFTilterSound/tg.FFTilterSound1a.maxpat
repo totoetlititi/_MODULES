@@ -7,7 +7,7 @@
 			"revision" : 8
 		}
 ,
-		"rect" : [ 248.0, 44.0, 1160.0, 953.0 ],
+		"rect" : [ 248.0, 44.0, 725.0, 171.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -18,7 +18,7 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"gridsnaponopen" : 0,
 		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
+		"toolbarvisible" : 0,
 		"boxanimatetime" : 200,
 		"imprint" : 0,
 		"enablehscroll" : 1,
@@ -1934,7 +1934,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u160006983"
+					"varname" : "u059006209"
 				}
 
 			}
@@ -3476,31 +3476,31 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-157" : [ "Mean", "Mean", 0 ],
 			"obj-128" : [ "iGrain", "iGrain", 0 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-121" : [ "Filter", "Filter", 0 ],
-			"obj-123" : [ "FiltGain", "FiltGain", 0 ],
+			"obj-7" : [ "Noise", "Noise", 0 ],
+			"obj-4" : [ "FilterMode", "FilterMode", 0 ],
 			"obj-118" : [ "ReceiveEnable", "ReceiveEnable", 0 ],
-			"obj-112" : [ "iPow", "iPow", 0 ],
-			"obj-101" : [ "Freeze", "Freeze", 0 ],
-			"obj-98" : [ "FeedMax", "FeedMax", 0 ],
-			"obj-23" : [ "Shift", "Shift", 0 ],
 			"obj-18" : [ "Pow", "Pow", 0 ],
-			"obj-127" : [ "ForceFilter", "ForceFilter", 0 ],
+			"obj-112" : [ "iPow", "iPow", 0 ],
+			"obj-100" : [ "Denoise", "Denoise", 0 ],
+			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-101" : [ "Freeze", "Freeze", 0 ],
+			"obj-89" : [ "DelMax", "DelMax", 0 ],
+			"obj-98" : [ "FeedMax", "FeedMax", 0 ],
+			"obj-123" : [ "FiltGain", "FiltGain", 0 ],
 			"obj-114" : [ "SourceGain", "SourceGain", 0 ],
 			"obj-258" : [ "iSlope", "iSlope", 0 ],
+			"obj-121" : [ "Filter", "Filter", 0 ],
 			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-89" : [ "DelMax", "DelMax", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-96" : [ "InverseSource", "InverseSource", 0 ],
+			"obj-127" : [ "ForceFilter", "ForceFilter", 0 ],
 			"obj-19" : [ "Stretch", "Stretch", 0 ],
 			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-157" : [ "Mean", "Mean", 0 ],
+			"obj-96" : [ "InverseSource", "InverseSource", 0 ],
 			"obj-146" : [ "iDuration", "iDuration", 0 ],
-			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-4" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-100" : [ "Denoise", "Denoise", 0 ],
-			"obj-7" : [ "Noise", "Noise", 0 ]
+			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-23" : [ "Shift", "Shift", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

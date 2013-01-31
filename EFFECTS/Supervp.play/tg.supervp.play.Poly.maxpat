@@ -7,9 +7,9 @@
 			"revision" : 8
 		}
 ,
-		"rect" : [ 63.0, 44.0, 1240.0, 174.0 ],
+		"rect" : [ 63.0, 44.0, 1463.0, 704.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 1,
+		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial Bold",
@@ -17,74 +17,16 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"gridsnaponopen" : 0,
 		"statusbarvisible" : 2,
-		"toolbarvisible" : 0,
+		"toolbarvisible" : 1,
 		"boxanimatetime" : 200,
 		"imprint" : 0,
-		"enablehscroll" : 0,
-		"enablevscroll" : 0,
+		"enablehscroll" : 1,
+		"enablevscroll" : 1,
 		"devicewidth" : 0.0,
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-46",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 219.0, 355.0, 50.0, 16.0 ],
-					"text" : "front"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-44",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 219.0, 322.0, 62.0, 18.0 ],
-					"text" : "route open"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-43",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 219.0, 384.0, 100.0, 18.0 ],
-					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
-					"text" : "thispatcher"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-42",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 219.0, 296.0, 96.0, 18.0 ],
-					"text" : "r #1.interface"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
@@ -1671,42 +1613,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-44", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-42", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-43", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-44", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-46", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-44", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-43", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-46", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-40", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1749,6 +1655,111 @@
 					"source" : [ "obj-54", 0 ]
 				}
 
+			}
+ ],
+		"parameters" : 		{
+			"obj-5::obj-185" : [ "BufSpeed", "BufSpeed", 0 ],
+			"obj-5::obj-124" : [ "EnvPreserve", "EnvPreserve", 1 ],
+			"obj-5::obj-90" : [ "FFTOversamp", "FFTOversamp", 0 ],
+			"obj-5::obj-122" : [ "RemixEnable", "RemixEnable", 0 ],
+			"obj-5::obj-119" : [ "RemixSinus", "RemixSinus", 0 ],
+			"obj-5::obj-105" : [ "WindowSize", "WindowSize", 0 ],
+			"obj-5::obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-5::obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-5::obj-3" : [ "BufLoop", "BufLoop", 0 ],
+			"obj-5::obj-354" : [ "BufSync", "BufSync", 0 ],
+			"obj-5::obj-133" : [ "EnvScale", "EnvScale", 0 ],
+			"obj-5::obj-96" : [ "Oversampling", "Oversampling", 0 ],
+			"obj-5::obj-114" : [ "RemixError", "RemixError", 0 ],
+			"obj-5::obj-116" : [ "RemixTransients", "RemixTransients", 0 ],
+			"obj-5::obj-100" : [ "fade-in", "fade-in", 0 ],
+			"obj-5::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-5::obj-286" : [ "Buf", "Buf", 0 ],
+			"obj-5::obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-5::obj-255" : [ "BufReplace", "BufReplace", 0 ],
+			"obj-5::obj-148" : [ "EnvLpcOrder", "EnvLpcOrder", 0 ],
+			"obj-5::obj-146" : [ "EnvScaleEnable", "EnvScaleEnable", 0 ],
+			"obj-5::obj-111" : [ "PreserveStereo", "PreserveStereo", 1 ],
+			"obj-5::obj-120" : [ "RemixMode", "RemixMode", 0 ],
+			"obj-5::obj-162" : [ "TranspEnable", "TranspEnable", 0 ],
+			"obj-5::obj-97" : [ "fade-out", "fade-out", 0 ],
+			"obj-5::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-5::obj-314" : [ "BufAction", "BufAction", 0 ],
+			"obj-5::obj-331" : [ "BufSet", "BufSet", 0 ],
+			"obj-5::obj-150" : [ "EnvMaxFreq", "EnvMaxFreq", 0 ],
+			"obj-5::obj-156" : [ "EnvTransp", "EnvTransp", 0 ],
+			"obj-5::obj-112" : [ "PreserveTransients", "PreserveTransients", 1 ],
+			"obj-5::obj-117" : [ "RemixNoise", "RemixNoise", 0 ],
+			"obj-5::obj-157" : [ "TranspMode", "TranspMode", 0 ],
+			"obj-5::obj-25" : [ "nb-shots", "nb-shots", 0 ],
+			"obj-5::obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-5::obj-324" : [ "BufBegin", "BufBegin", 0 ],
+			"obj-5::obj-26" : [ "BufSize", "BufSize", 0 ],
+			"obj-5::obj-153" : [ "EnvMode", "EnvMode", 0 ],
+			"obj-5::obj-147" : [ "EnvTranspEnable", "EnvTranspEnable", 0 ],
+			"obj-5::obj-164" : [ "PreserveWaveform", "PreserveWaveform", 1 ],
+			"obj-5::obj-115" : [ "RemixRelax", "RemixRelax", 0 ],
+			"obj-5::obj-163" : [ "Transpose", "Transpose", 0 ],
+			"obj-5::obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-5::obj-326" : [ "BufEnd", "BufEnd", 0 ]
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "tg.supervp.play.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Supervp.play",
+				"patcherrelativepath" : "",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "M4L.bal2~.maxpat",
+				"bootpath" : "/Applications/Max6/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/m4l-patches/Tools resources",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "SupervpPlayPreset.json",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"patcherrelativepath" : "../../JSON",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.m.fgraph.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "AtodB",
+				"bootpath" : "/Applications/Max6/patches/docs/refpages/max-ref",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/docs/refpages/max-ref",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.m.waveform.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.m.preset.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "supervp.play~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "fiddle~.mxo",
+				"type" : "iLaX"
 			}
  ]
 	}

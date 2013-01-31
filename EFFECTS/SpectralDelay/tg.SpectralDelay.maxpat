@@ -7,7 +7,7 @@
 			"revision" : 8
 		}
 ,
-		"rect" : [ 185.0, 44.0, 1495.0, 989.0 ],
+		"rect" : [ 0.0, 44.0, 1267.0, 170.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -18,7 +18,7 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"gridsnaponopen" : 0,
 		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
+		"toolbarvisible" : 0,
 		"boxanimatetime" : 200,
 		"imprint" : 0,
 		"enablehscroll" : 1,
@@ -6371,6 +6371,7 @@
 					"presentation_rect" : [ 278.500122, 7.0, 47.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_speedlim" : 0.0,
 							"parameter_exponent" : 2.0,
 							"parameter_unitstyle" : 2,
 							"parameter_mmax" : 10000.0,
@@ -6378,8 +6379,7 @@
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "DelMax",
-							"parameter_longname" : "DelMax",
-							"parameter_speedlim" : 0.0
+							"parameter_longname" : "DelMax"
 						}
 
 					}
@@ -6402,14 +6402,14 @@
 					"presentation_rect" : [ 278.500122, 63.0, 47.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_speedlim" : 0.0,
 							"parameter_unitstyle" : 5,
 							"parameter_mmax" : 99.0,
 							"parameter_initial" : [ 50 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FeedMax",
-							"parameter_longname" : "FeedMax",
-							"parameter_speedlim" : 0.0
+							"parameter_longname" : "FeedMax"
 						}
 
 					}
@@ -6931,7 +6931,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u667009984"
+					"varname" : "u665008806"
 				}
 
 			}
@@ -8423,37 +8423,37 @@
  ],
 		"parameters" : 		{
 			"obj-558" : [ "DelDrunk", "DelDrunk", 0 ],
-			"obj-624" : [ "FeedDrunkStep", "FeedDrunkStep", 0 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-625" : [ "FeedDrunk", "FeedDrunk", 0 ],
+			"obj-267" : [ "FiltDrunkStep", "FiltDrunkStep", 0 ],
 			"obj-198" : [ "Metro", "Metro", 0 ],
 			"obj-231" : [ "TimeMin", "TimeMin", 0 ],
+			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-8" : [ "Ingain", "Ingain", 0 ],
 			"obj-557" : [ "DelDrunkStep", "DelDrunkStep", 0 ],
+			"obj-624" : [ "FeedDrunkStep", "FeedDrunkStep", 0 ],
+			"obj-28" : [ "Filters", "Filters", 0 ],
+			"obj-262" : [ "Pow", "Pow", 0 ],
+			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-186" : [ "Automate", "Automate", 0 ],
+			"obj-55" : [ "DelMax", "DelMax", 0 ],
 			"obj-56" : [ "FeedMax", "FeedMax", 0 ],
 			"obj-60" : [ "ForceFeed", "ForceFeed", 0 ],
-			"obj-262" : [ "Pow", "Pow", 0 ],
-			"obj-186" : [ "Automate", "Automate", 0 ],
-			"obj-415" : [ "Slope", "Slope", 0 ],
-			"obj-155" : [ "Delays", "Delays", 0 ],
-			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-55" : [ "DelMax", "DelMax", 0 ],
-			"obj-158" : [ "Feedbacks", "Feedbacks", 0 ],
-			"obj-28" : [ "Filters", "Filters", 0 ],
-			"obj-54" : [ "ForceFilt", "ForceFilt", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ],
 			"obj-249" : [ "SizeMax", "SizeMax", 0 ],
+			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-415" : [ "Slope", "Slope", 0 ],
 			"obj-240" : [ "BandsMax", "BandsMax", 0 ],
+			"obj-155" : [ "Delays", "Delays", 0 ],
+			"obj-158" : [ "Feedbacks", "Feedbacks", 0 ],
+			"obj-54" : [ "ForceFilt", "ForceFilt", 0 ],
+			"obj-252" : [ "SizeMin", "SizeMin", 0 ],
 			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-237" : [ "BandsMin", "BandsMin", 0 ],
 			"obj-146" : [ "FadeOut", "FadeOut", 0 ],
 			"obj-207" : [ "FiltDrunk", "FiltDrunk", 0 ],
 			"obj-255" : [ "Grain", "Grain", 0 ],
-			"obj-252" : [ "SizeMin", "SizeMin", 0 ],
-			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-237" : [ "BandsMin", "BandsMin", 0 ],
-			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-625" : [ "FeedDrunk", "FeedDrunk", 0 ],
-			"obj-267" : [ "FiltDrunkStep", "FiltDrunkStep", 0 ],
-			"obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-234" : [ "TimeMax", "TimeMax", 0 ]
+			"obj-234" : [ "TimeMax", "TimeMax", 0 ],
+			"obj-72" : [ "FilterQ", "FilterQ", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

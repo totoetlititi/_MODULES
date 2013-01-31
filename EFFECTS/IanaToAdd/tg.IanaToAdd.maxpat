@@ -7,7 +7,7 @@
 			"revision" : 8
 		}
 ,
-		"rect" : [ 56.0, 44.0, 1517.0, 960.0 ],
+		"rect" : [ 56.0, 44.0, 1408.0, 171.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
@@ -18,7 +18,7 @@
 		"gridsize" : [ 8.0, 8.0 ],
 		"gridsnaponopen" : 0,
 		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
+		"toolbarvisible" : 0,
 		"boxanimatetime" : 200,
 		"imprint" : 0,
 		"enablehscroll" : 1,
@@ -1116,14 +1116,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_speedlim" : 0.0,
 							"parameter_enum" : [ "Off", "On" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "ArpegeInput",
-							"parameter_longname" : "ArpegeInput",
-							"parameter_speedlim" : 0.0
+							"parameter_longname" : "ArpegeInput"
 						}
 
 					}
@@ -1198,14 +1198,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_speedlim" : 0.0,
 							"parameter_enum" : [ "Off", "On" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "ArpegeDir",
-							"parameter_longname" : "ArpegeDir",
-							"parameter_speedlim" : 0.0
+							"parameter_longname" : "ArpegeDir"
 						}
 
 					}
@@ -1233,14 +1233,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_speedlim" : 0.0,
 							"parameter_enum" : [ "Off", "On" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "ArpegeDirRand",
-							"parameter_longname" : "ArpegeDirRand",
-							"parameter_speedlim" : 0.0
+							"parameter_longname" : "ArpegeDirRand"
 						}
 
 					}
@@ -1368,14 +1368,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_speedlim" : 0.0,
 							"parameter_enum" : [ "Off", "On" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "ArpegeMetroRand",
-							"parameter_longname" : "ArpegeMetroRand",
-							"parameter_speedlim" : 0.0
+							"parameter_longname" : "ArpegeMetroRand"
 						}
 
 					}
@@ -1451,14 +1451,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_speedlim" : 0.0,
 							"parameter_enum" : [ "Off", "On" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "ArpegePower",
-							"parameter_longname" : "ArpegePower",
-							"parameter_speedlim" : 0.0
+							"parameter_longname" : "ArpegePower"
 						}
 
 					}
@@ -7728,14 +7728,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_speedlim" : 0.0,
 							"parameter_enum" : [ "Off", "On" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Fiddle",
-							"parameter_longname" : "Fiddle",
-							"parameter_speedlim" : 0.0
+							"parameter_longname" : "Fiddle"
 						}
 
 					}
@@ -8367,7 +8367,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u261003587"
+					"varname" : "u862001326"
 				}
 
 			}
@@ -9116,14 +9116,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_speedlim" : 0.0,
 							"parameter_enum" : [ "Off", "On" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "SendData",
-							"parameter_longname" : "SendData",
-							"parameter_speedlim" : 0.0
+							"parameter_longname" : "SendData"
 						}
 
 					}
@@ -10821,14 +10821,14 @@
 					"presentation_rect" : [ 665.0, 96.0, 48.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_steps" : 301,
 							"parameter_unitstyle" : 2,
 							"parameter_mmax" : 3000.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "AmpSmooth",
-							"parameter_longname" : "AmpSmooth",
-							"parameter_steps" : 301
+							"parameter_longname" : "AmpSmooth"
 						}
 
 					}
@@ -10851,14 +10851,14 @@
 					"presentation_rect" : [ 665.0, 43.0, 48.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_steps" : 301,
 							"parameter_unitstyle" : 2,
 							"parameter_mmax" : 3000.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FreqSmooth",
-							"parameter_longname" : "FreqSmooth",
-							"parameter_steps" : 301
+							"parameter_longname" : "FreqSmooth"
 						}
 
 					}
@@ -10884,14 +10884,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_speedlim" : 0.0,
 							"parameter_enum" : [ "Off", "On" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Monitor",
-							"parameter_longname" : "Monitor",
-							"parameter_speedlim" : 0.0
+							"parameter_longname" : "Monitor"
 						}
 
 					}
@@ -13218,14 +13218,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_speedlim" : 0.0,
 							"parameter_enum" : [ "Off", "On" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Sync",
-							"parameter_longname" : "Sync",
-							"parameter_speedlim" : 0.0
+							"parameter_longname" : "Sync"
 						}
 
 					}
@@ -13413,6 +13413,7 @@
 					"presentation_rect" : [ 74.0, 52.0, 48.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_steps" : 597,
 							"parameter_unitstyle" : 2,
 							"parameter_mmax" : 3000.0,
 							"parameter_mmin" : 20.0,
@@ -13420,8 +13421,7 @@
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Rate",
-							"parameter_longname" : "Rate",
-							"parameter_steps" : 597
+							"parameter_longname" : "Rate"
 						}
 
 					}
@@ -13447,14 +13447,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_speedlim" : 0.0,
 							"parameter_enum" : [ "Off", "On" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Metronome",
-							"parameter_longname" : "Metronome",
-							"parameter_speedlim" : 0.0
+							"parameter_longname" : "Metronome"
 						}
 
 					}
@@ -13514,14 +13514,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_speedlim" : 0.0,
 							"parameter_enum" : [ "Off", "On" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "HearingThreshold",
-							"parameter_longname" : "HearingThreshold",
-							"parameter_speedlim" : 0.0
+							"parameter_longname" : "HearingThreshold"
 						}
 
 					}
@@ -13610,6 +13610,7 @@
 					"presentation_rect" : [ 408.0, 130.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_steps" : 961,
 							"parameter_unitstyle" : 9,
 							"parameter_mmax" : 24.0,
 							"parameter_mmin" : -24.0,
@@ -13618,8 +13619,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Transpose",
 							"parameter_longname" : "Transpose",
-							"parameter_units" : "st",
-							"parameter_steps" : 961
+							"parameter_units" : "st"
 						}
 
 					}
@@ -16559,60 +16559,60 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-286" : [ "ArpegeBuf", "ArpegeBuf", 0 ],
-			"obj-195" : [ "ArpegeDirRand", "ArpegeDirRand", 0 ],
-			"obj-198" : [ "ArpegeNbNotes", "ArpegeNbNotes", 0 ],
-			"obj-194" : [ "ArpegeTranspMode", "ArpegeTranspMode", 0 ],
-			"obj-232" : [ "Error", "Error", 0 ],
-			"obj-16" : [ "FirstToSearch", "FirstToSearch", 0 ],
-			"obj-37" : [ "Level", "Level", 0 ],
-			"obj-22" : [ "Monitor", "Monitor", 0 ],
-			"obj-66" : [ "SendData", "SendData", 0 ],
-			"obj-162" : [ "TranspEnable", "TranspEnable", 0 ],
-			"obj-31" : [ "Content", "Content", 0 ],
-			"obj-255" : [ "ArpegeBufReplace", "ArpegeBufReplace", 0 ],
-			"obj-226" : [ "ArpegeEnv", "ArpegeEnv", 0 ],
-			"obj-181" : [ "ArpegePower", "ArpegePower", 0 ],
-			"obj-3" : [ "BufLoop", "BufLoop", 0 ],
-			"obj-171" : [ "Fiddle", "Fiddle", 0 ],
-			"obj-47" : [ "Send", "Send", 0 ],
-			"obj-99" : [ "FreqSmooth", "FreqSmooth", 0 ],
-			"obj-213" : [ "Manual", "Manual", 0 ],
-			"obj-30" : [ "Ordering", "Ordering", 0 ],
-			"obj-41" : [ "Shift", "Shift", 0 ],
-			"obj-39" : [ "Transpose", "Transpose", 0 ],
-			"obj-103" : [ "AmpSmooth", "AmpSmooth", 0 ],
-			"obj-331" : [ "ArpegeBufSet", "ArpegeBufSet", 0 ],
-			"obj-199" : [ "ArpegeInput", "ArpegeInput", 0 ],
-			"obj-224" : [ "ArpegeR", "ArpegeR", 0 ],
-			"obj-26" : [ "BufSize", "BufSize", 0 ],
-			"obj-161" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-44" : [ "HearingThreshold", "HearingThreshold", 0 ],
-			"obj-36" : [ "MaxPartials", "MaxPartials", 0 ],
-			"obj-165" : [ "Outgain", "Outgain", 0 ],
-			"obj-74" : [ "SpeedFactor", "SpeedFactor", 0 ],
-			"obj-34" : [ "Output", "Output", 0 ],
-			"obj-7" : [ "WindowType", "WindowType", 0 ],
-			"obj-296" : [ "ArpegeA", "ArpegeA", 0 ],
+			"obj-201" : [ "ArpegeBasePitch", "ArpegeBasePitch", 0 ],
 			"obj-278" : [ "ArpegeD", "ArpegeD", 0 ],
 			"obj-184" : [ "ArpegeMetroRand", "ArpegeMetroRand", 0 ],
 			"obj-274" : [ "ArpegeS", "ArpegeS", 0 ],
-			"obj-9" : [ "Downsampling", "Downsampling", 0 ],
-			"obj-160" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-123" : [ "InputChannels", "InputChannels", 0 ],
-			"obj-19" : [ "MaxPeaks", "MaxPeaks", 0 ],
+			"obj-99" : [ "FreqSmooth", "FreqSmooth", 0 ],
+			"obj-213" : [ "Manual", "Manual", 0 ],
+			"obj-152" : [ "FilterMode", "FilterMode", 0 ],
 			"obj-50" : [ "Rate", "Rate", 0 ],
-			"obj-81" : [ "Sync", "Sync", 0 ],
-			"obj-201" : [ "ArpegeBasePitch", "ArpegeBasePitch", 0 ],
+			"obj-74" : [ "SpeedFactor", "SpeedFactor", 0 ],
+			"obj-3" : [ "BufLoop", "BufLoop", 0 ],
+			"obj-34" : [ "Output", "Output", 0 ],
+			"obj-286" : [ "ArpegeBuf", "ArpegeBuf", 0 ],
 			"obj-196" : [ "ArpegeDir", "ArpegeDir", 0 ],
 			"obj-187" : [ "ArpegeMetroSpeed", "ArpegeMetroSpeed", 0 ],
 			"obj-182" : [ "ArpegeSampleSize", "ArpegeSampleSize", 0 ],
+			"obj-31" : [ "Content", "Content", 0 ],
+			"obj-44" : [ "HearingThreshold", "HearingThreshold", 0 ],
+			"obj-36" : [ "MaxPartials", "MaxPartials", 0 ],
 			"obj-10" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-152" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-18" : [ "LastToSearch", "LastToSearch", 0 ],
-			"obj-49" : [ "Metronome", "Metronome", 0 ],
 			"obj-27" : [ "RefLevel", "RefLevel", 0 ],
-			"obj-23" : [ "Threshold", "Threshold", 0 ]
+			"obj-165" : [ "Outgain", "Outgain", 0 ],
+			"obj-23" : [ "Threshold", "Threshold", 0 ],
+			"obj-171" : [ "Fiddle", "Fiddle", 0 ],
+			"obj-255" : [ "ArpegeBufReplace", "ArpegeBufReplace", 0 ],
+			"obj-162" : [ "TranspEnable", "TranspEnable", 0 ],
+			"obj-195" : [ "ArpegeDirRand", "ArpegeDirRand", 0 ],
+			"obj-198" : [ "ArpegeNbNotes", "ArpegeNbNotes", 0 ],
+			"obj-194" : [ "ArpegeTranspMode", "ArpegeTranspMode", 0 ],
+			"obj-123" : [ "InputChannels", "InputChannels", 0 ],
+			"obj-49" : [ "Metronome", "Metronome", 0 ],
+			"obj-19" : [ "MaxPeaks", "MaxPeaks", 0 ],
+			"obj-47" : [ "Send", "Send", 0 ],
+			"obj-161" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-7" : [ "WindowType", "WindowType", 0 ],
+			"obj-103" : [ "AmpSmooth", "AmpSmooth", 0 ],
+			"obj-331" : [ "ArpegeBufSet", "ArpegeBufSet", 0 ],
+			"obj-226" : [ "ArpegeEnv", "ArpegeEnv", 0 ],
+			"obj-181" : [ "ArpegePower", "ArpegePower", 0 ],
+			"obj-9" : [ "Downsampling", "Downsampling", 0 ],
+			"obj-18" : [ "LastToSearch", "LastToSearch", 0 ],
+			"obj-22" : [ "Monitor", "Monitor", 0 ],
+			"obj-160" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-66" : [ "SendData", "SendData", 0 ],
+			"obj-26" : [ "BufSize", "BufSize", 0 ],
+			"obj-81" : [ "Sync", "Sync", 0 ],
+			"obj-296" : [ "ArpegeA", "ArpegeA", 0 ],
+			"obj-39" : [ "Transpose", "Transpose", 0 ],
+			"obj-199" : [ "ArpegeInput", "ArpegeInput", 0 ],
+			"obj-232" : [ "Error", "Error", 0 ],
+			"obj-224" : [ "ArpegeR", "ArpegeR", 0 ],
+			"obj-16" : [ "FirstToSearch", "FirstToSearch", 0 ],
+			"obj-37" : [ "Level", "Level", 0 ],
+			"obj-30" : [ "Ordering", "Ordering", 0 ],
+			"obj-41" : [ "Shift", "Shift", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
