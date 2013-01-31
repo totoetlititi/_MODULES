@@ -1,0 +1,56 @@
+{
+	"pattrstorage" : 	{
+		"name" : "PsychHarm4Preset",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "Default",
+				"data" : 				{
+					"Del1" : [ 0.0 ],
+					"Del2" : [ 0.0 ],
+					"Del3" : [ 0.0 ],
+					"Del4" : [ 0.0 ],
+					"Dry/Wet" : [ 100.0 ],
+					"FilterFreq" : [ 1000.0 ],
+					"FilterGain" : [ 0.0 ],
+					"FilterMode" : [ 5.0 ],
+					"FilterQ" : [ 0.3 ],
+					"Gain1" : [ 0.0 ],
+					"Gain2" : [ 0.0 ],
+					"Gain3" : [ 0.0 ],
+					"Gain4" : [ 0.0 ],
+					"Harm1" : [ 1.0 ],
+					"Harm2" : [ 1.0 ],
+					"Harm3" : [ 1.0 ],
+					"Harm4" : [ 1.0 ],
+					"Ingain" : [ 0.0 ],
+					"Outgain" : [ -70.0 ],
+					"Pan1" : [ -50.0 ],
+					"Pan2" : [ -20.0 ],
+					"Pan3" : [ 20.0 ],
+					"Pan4" : [ 50.0 ],
+					"PitchMod" : [ 0.0 ],
+					"PitchModMax" : [ 500.0 ],
+					"PitchModMaxTrans" : [ 200.0 ],
+					"PitchModMin" : [ 200.0 ],
+					"Resp1" : [ 0.0 ],
+					"Resp2" : [ 0.0 ],
+					"Resp3" : [ 0.0 ],
+					"Resp4" : [ 0.0 ],
+					"SpeedMod" : [ 0.0 ],
+					"SpeedModMax" : [ 50.0 ],
+					"SpeedModMaxDel" : [ 100.0 ],
+					"SpeedModMin" : [ 20.0 ],
+					"Trans1" : [ 0.0 ],
+					"Trans2" : [ 0.0 ],
+					"Trans3" : [ 0.0 ],
+					"Trans4" : [ 0.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
