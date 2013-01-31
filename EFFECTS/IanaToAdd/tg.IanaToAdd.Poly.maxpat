@@ -7,7 +7,7 @@
 			"revision" : 8
 		}
 ,
-		"rect" : [ 63.0, 44.0, 1304.0, 531.0 ],
+		"rect" : [ 63.0, 44.0, 494.0, 324.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -1180,7 +1180,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 23.0, 306.0, 111.0, 18.0 ],
+					"patching_rect" : [ 26.0, 169.0, 111.0, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial Bold",
@@ -1207,7 +1207,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 378.0, 42.0, 18.0 ],
+					"patching_rect" : [ 138.0, 241.0, 42.0, 18.0 ],
 					"text" : "On/Off"
 				}
 
@@ -1220,7 +1220,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 115.0, 378.0, 20.0, 20.0 ]
+					"patching_rect" : [ 118.0, 241.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -1232,11 +1232,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 69.0, 378.0, 40.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
+					"patching_rect" : [ 72.0, 241.0, 40.0, 18.0 ],
 					"text" : "out~ 2"
 				}
 
@@ -1470,7 +1466,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 23.0, 266.0, 65.0, 18.0 ],
+					"patching_rect" : [ 26.0, 129.0, 65.0, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial Bold",
@@ -1496,28 +1492,25 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 23.0, 378.0, 40.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
+					"patching_rect" : [ 26.0, 241.0, 40.0, 18.0 ],
 					"text" : "out~ 1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "#1" ],
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
 					"id" : "obj-5",
-					"maxclass" : "bpatcher",
-					"name" : "tg.IanaToAdd.maxpat",
+					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "list", "" ],
-					"patching_rect" : [ 23.0, 64.0, 1113.0, 184.0 ],
+					"patching_rect" : [ 26.0, 68.0, 203.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -2.0, 0.0, 1423.0, 170.0 ],
-					"varname" : "FreezeKoala"
+					"presentation_rect" : [ -2.0, 0.0, 100.0, 18.0 ],
+					"text" : "tg.IanaToAdd #1",
+					"varname" : "tg.IanaToAdd"
 				}
 
 			}
@@ -1531,7 +1524,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1117.0, 34.0, 96.0, 18.0 ],
+					"patching_rect" : [ 210.0, 17.0, 96.0, 18.0 ],
 					"text" : "r #1"
 				}
 
@@ -1545,11 +1538,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 570.0, 34.0, 42.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
+					"patching_rect" : [ 118.0, 17.0, 42.0, 18.0 ],
 					"text" : "in~ 2"
 				}
 
@@ -1563,11 +1552,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 23.0, 34.0, 34.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
+					"patching_rect" : [ 26.0, 17.0, 34.0, 18.0 ],
 					"text" : "in~ 1"
 				}
 
@@ -1674,60 +1659,60 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-5::obj-201" : [ "ArpegeBasePitch", "ArpegeBasePitch", 0 ],
+			"obj-5::obj-34" : [ "Output", "Output", 0 ],
+			"obj-5::obj-103" : [ "AmpSmooth", "AmpSmooth", 0 ],
+			"obj-5::obj-331" : [ "ArpegeBufSet", "ArpegeBufSet", 0 ],
+			"obj-5::obj-199" : [ "ArpegeInput", "ArpegeInput", 0 ],
+			"obj-5::obj-224" : [ "ArpegeR", "ArpegeR", 0 ],
+			"obj-5::obj-232" : [ "Error", "Error", 0 ],
+			"obj-5::obj-123" : [ "InputChannels", "InputChannels", 0 ],
+			"obj-5::obj-49" : [ "Metronome", "Metronome", 0 ],
+			"obj-5::obj-47" : [ "Send", "Send", 0 ],
+			"obj-5::obj-165" : [ "Outgain", "Outgain", 0 ],
+			"obj-5::obj-7" : [ "WindowType", "WindowType", 0 ],
+			"obj-5::obj-296" : [ "ArpegeA", "ArpegeA", 0 ],
+			"obj-5::obj-3" : [ "BufLoop", "BufLoop", 0 ],
 			"obj-5::obj-278" : [ "ArpegeD", "ArpegeD", 0 ],
 			"obj-5::obj-184" : [ "ArpegeMetroRand", "ArpegeMetroRand", 0 ],
 			"obj-5::obj-274" : [ "ArpegeS", "ArpegeS", 0 ],
-			"obj-5::obj-99" : [ "FreqSmooth", "FreqSmooth", 0 ],
-			"obj-5::obj-213" : [ "Manual", "Manual", 0 ],
-			"obj-5::obj-152" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-5::obj-50" : [ "Rate", "Rate", 0 ],
-			"obj-5::obj-74" : [ "SpeedFactor", "SpeedFactor", 0 ],
-			"obj-5::obj-3" : [ "BufLoop", "BufLoop", 0 ],
-			"obj-5::obj-34" : [ "Output", "Output", 0 ],
-			"obj-5::obj-286" : [ "ArpegeBuf", "ArpegeBuf", 0 ],
-			"obj-5::obj-196" : [ "ArpegeDir", "ArpegeDir", 0 ],
-			"obj-5::obj-187" : [ "ArpegeMetroSpeed", "ArpegeMetroSpeed", 0 ],
-			"obj-5::obj-182" : [ "ArpegeSampleSize", "ArpegeSampleSize", 0 ],
-			"obj-5::obj-44" : [ "HearingThreshold", "HearingThreshold", 0 ],
-			"obj-5::obj-31" : [ "Content", "Content", 0 ],
-			"obj-5::obj-36" : [ "MaxPartials", "MaxPartials", 0 ],
-			"obj-5::obj-10" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-5::obj-27" : [ "RefLevel", "RefLevel", 0 ],
-			"obj-5::obj-165" : [ "Outgain", "Outgain", 0 ],
-			"obj-5::obj-23" : [ "Threshold", "Threshold", 0 ],
 			"obj-5::obj-171" : [ "Fiddle", "Fiddle", 0 ],
-			"obj-5::obj-255" : [ "ArpegeBufReplace", "ArpegeBufReplace", 0 ],
-			"obj-5::obj-195" : [ "ArpegeDirRand", "ArpegeDirRand", 0 ],
-			"obj-5::obj-162" : [ "TranspEnable", "TranspEnable", 0 ],
-			"obj-5::obj-198" : [ "ArpegeNbNotes", "ArpegeNbNotes", 0 ],
-			"obj-5::obj-194" : [ "ArpegeTranspMode", "ArpegeTranspMode", 0 ],
-			"obj-5::obj-123" : [ "InputChannels", "InputChannels", 0 ],
-			"obj-5::obj-49" : [ "Metronome", "Metronome", 0 ],
-			"obj-5::obj-19" : [ "MaxPeaks", "MaxPeaks", 0 ],
-			"obj-5::obj-47" : [ "Send", "Send", 0 ],
-			"obj-5::obj-161" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-5::obj-7" : [ "WindowType", "WindowType", 0 ],
-			"obj-5::obj-103" : [ "AmpSmooth", "AmpSmooth", 0 ],
-			"obj-5::obj-331" : [ "ArpegeBufSet", "ArpegeBufSet", 0 ],
-			"obj-5::obj-226" : [ "ArpegeEnv", "ArpegeEnv", 0 ],
-			"obj-5::obj-181" : [ "ArpegePower", "ArpegePower", 0 ],
-			"obj-5::obj-9" : [ "Downsampling", "Downsampling", 0 ],
 			"obj-5::obj-18" : [ "LastToSearch", "LastToSearch", 0 ],
 			"obj-5::obj-22" : [ "Monitor", "Monitor", 0 ],
 			"obj-5::obj-160" : [ "FilterGain", "FilterGain", 0 ],
 			"obj-5::obj-66" : [ "SendData", "SendData", 0 ],
-			"obj-5::obj-26" : [ "BufSize", "BufSize", 0 ],
-			"obj-5::obj-81" : [ "Sync", "Sync", 0 ],
-			"obj-5::obj-296" : [ "ArpegeA", "ArpegeA", 0 ],
-			"obj-5::obj-199" : [ "ArpegeInput", "ArpegeInput", 0 ],
-			"obj-5::obj-39" : [ "Transpose", "Transpose", 0 ],
-			"obj-5::obj-224" : [ "ArpegeR", "ArpegeR", 0 ],
-			"obj-5::obj-232" : [ "Error", "Error", 0 ],
+			"obj-5::obj-201" : [ "ArpegeBasePitch", "ArpegeBasePitch", 0 ],
+			"obj-5::obj-196" : [ "ArpegeDir", "ArpegeDir", 0 ],
+			"obj-5::obj-10" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-5::obj-187" : [ "ArpegeMetroSpeed", "ArpegeMetroSpeed", 0 ],
+			"obj-5::obj-182" : [ "ArpegeSampleSize", "ArpegeSampleSize", 0 ],
 			"obj-5::obj-16" : [ "FirstToSearch", "FirstToSearch", 0 ],
-			"obj-5::obj-37" : [ "Level", "Level", 0 ],
+			"obj-5::obj-213" : [ "Manual", "Manual", 0 ],
+			"obj-5::obj-162" : [ "TranspEnable", "TranspEnable", 0 ],
 			"obj-5::obj-30" : [ "Ordering", "Ordering", 0 ],
-			"obj-5::obj-41" : [ "Shift", "Shift", 0 ]
+			"obj-5::obj-152" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-5::obj-41" : [ "Shift", "Shift", 0 ],
+			"obj-5::obj-286" : [ "ArpegeBuf", "ArpegeBuf", 0 ],
+			"obj-5::obj-31" : [ "Content", "Content", 0 ],
+			"obj-5::obj-81" : [ "Sync", "Sync", 0 ],
+			"obj-5::obj-195" : [ "ArpegeDirRand", "ArpegeDirRand", 0 ],
+			"obj-5::obj-198" : [ "ArpegeNbNotes", "ArpegeNbNotes", 0 ],
+			"obj-5::obj-194" : [ "ArpegeTranspMode", "ArpegeTranspMode", 0 ],
+			"obj-5::obj-99" : [ "FreqSmooth", "FreqSmooth", 0 ],
+			"obj-5::obj-36" : [ "MaxPartials", "MaxPartials", 0 ],
+			"obj-5::obj-50" : [ "Rate", "Rate", 0 ],
+			"obj-5::obj-74" : [ "SpeedFactor", "SpeedFactor", 0 ],
+			"obj-5::obj-37" : [ "Level", "Level", 0 ],
+			"obj-5::obj-26" : [ "BufSize", "BufSize", 0 ],
+			"obj-5::obj-255" : [ "ArpegeBufReplace", "ArpegeBufReplace", 0 ],
+			"obj-5::obj-161" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-5::obj-226" : [ "ArpegeEnv", "ArpegeEnv", 0 ],
+			"obj-5::obj-181" : [ "ArpegePower", "ArpegePower", 0 ],
+			"obj-5::obj-9" : [ "Downsampling", "Downsampling", 0 ],
+			"obj-5::obj-44" : [ "HearingThreshold", "HearingThreshold", 0 ],
+			"obj-5::obj-19" : [ "MaxPeaks", "MaxPeaks", 0 ],
+			"obj-5::obj-39" : [ "Transpose", "Transpose", 0 ],
+			"obj-5::obj-27" : [ "RefLevel", "RefLevel", 0 ],
+			"obj-5::obj-23" : [ "Threshold", "Threshold", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

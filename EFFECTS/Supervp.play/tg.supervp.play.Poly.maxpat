@@ -7,7 +7,7 @@
 			"revision" : 8
 		}
 ,
-		"rect" : [ 63.0, 44.0, 1463.0, 704.0 ],
+		"rect" : [ 63.0, 44.0, 371.0, 343.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -27,6 +27,21 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 4,
+					"outlettype" : [ "signal", "signal", "", "" ],
+					"patching_rect" : [ 23.0, 93.0, 157.0, 18.0 ],
+					"text" : "tg.supervp.play #1",
+					"varname" : "tg.supervp.play"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
@@ -1180,7 +1195,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 23.0, 306.0, 111.0, 18.0 ],
+					"patching_rect" : [ 23.0, 169.0, 111.0, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial Bold",
@@ -1207,7 +1222,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 378.0, 42.0, 18.0 ],
+					"patching_rect" : [ 135.0, 241.0, 42.0, 18.0 ],
 					"text" : "On/Off"
 				}
 
@@ -1220,7 +1235,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 115.0, 378.0, 20.0, 20.0 ]
+					"patching_rect" : [ 115.0, 241.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -1232,7 +1247,11 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 69.0, 378.0, 40.0, 18.0 ],
+					"patching_rect" : [ 69.0, 241.0, 40.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 2"
 				}
 
@@ -1466,7 +1485,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 23.0, 266.0, 65.0, 18.0 ],
+					"patching_rect" : [ 23.0, 129.0, 65.0, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial Bold",
@@ -1492,24 +1511,12 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 23.0, 378.0, 40.0, 18.0 ],
+					"patching_rect" : [ 23.0, 241.0, 40.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ "1SVPP" ],
-					"id" : "obj-5",
-					"maxclass" : "bpatcher",
-					"name" : "tg.supervp.play.maxpat",
-					"numinlets" : 3,
-					"numoutlets" : 4,
-					"outlettype" : [ "signal", "signal", "", "" ],
-					"patching_rect" : [ 23.0, 64.0, 872.0, 181.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 1239.0, 170.0 ],
-					"varname" : "FreezeKoala"
 				}
 
 			}
@@ -1523,7 +1530,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 876.0, 34.0, 96.0, 18.0 ],
+					"patching_rect" : [ 161.0, 34.0, 96.0, 18.0 ],
 					"text" : "r #1"
 				}
 
@@ -1537,7 +1544,11 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 449.5, 34.0, 34.0, 18.0 ],
+					"patching_rect" : [ 92.0, 34.0, 34.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in~ 2"
 				}
 
@@ -1552,6 +1563,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 23.0, 34.0, 34.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in~ 1"
 				}
 
@@ -1559,7 +1574,34 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
+					"destination" : [ "obj-40", 2 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-54", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
@@ -1568,7 +1610,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 1 ],
+					"destination" : [ "obj-1", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-3", 0 ]
@@ -1577,7 +1619,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 2 ],
+					"destination" : [ "obj-1", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-4", 0 ]
@@ -1613,33 +1655,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-40", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-5", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-54", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-5", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-54", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-5", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-40", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1658,50 +1673,50 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-5::obj-185" : [ "BufSpeed", "BufSpeed", 0 ],
-			"obj-5::obj-124" : [ "EnvPreserve", "EnvPreserve", 1 ],
-			"obj-5::obj-90" : [ "FFTOversamp", "FFTOversamp", 0 ],
-			"obj-5::obj-122" : [ "RemixEnable", "RemixEnable", 0 ],
-			"obj-5::obj-119" : [ "RemixSinus", "RemixSinus", 0 ],
-			"obj-5::obj-105" : [ "WindowSize", "WindowSize", 0 ],
-			"obj-5::obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-5::obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-5::obj-3" : [ "BufLoop", "BufLoop", 0 ],
-			"obj-5::obj-354" : [ "BufSync", "BufSync", 0 ],
-			"obj-5::obj-133" : [ "EnvScale", "EnvScale", 0 ],
-			"obj-5::obj-96" : [ "Oversampling", "Oversampling", 0 ],
-			"obj-5::obj-114" : [ "RemixError", "RemixError", 0 ],
-			"obj-5::obj-116" : [ "RemixTransients", "RemixTransients", 0 ],
-			"obj-5::obj-100" : [ "fade-in", "fade-in", 0 ],
-			"obj-5::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-5::obj-286" : [ "Buf", "Buf", 0 ],
-			"obj-5::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-5::obj-255" : [ "BufReplace", "BufReplace", 0 ],
-			"obj-5::obj-148" : [ "EnvLpcOrder", "EnvLpcOrder", 0 ],
-			"obj-5::obj-146" : [ "EnvScaleEnable", "EnvScaleEnable", 0 ],
-			"obj-5::obj-111" : [ "PreserveStereo", "PreserveStereo", 1 ],
-			"obj-5::obj-120" : [ "RemixMode", "RemixMode", 0 ],
-			"obj-5::obj-162" : [ "TranspEnable", "TranspEnable", 0 ],
-			"obj-5::obj-97" : [ "fade-out", "fade-out", 0 ],
-			"obj-5::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-5::obj-314" : [ "BufAction", "BufAction", 0 ],
-			"obj-5::obj-331" : [ "BufSet", "BufSet", 0 ],
-			"obj-5::obj-150" : [ "EnvMaxFreq", "EnvMaxFreq", 0 ],
-			"obj-5::obj-156" : [ "EnvTransp", "EnvTransp", 0 ],
-			"obj-5::obj-112" : [ "PreserveTransients", "PreserveTransients", 1 ],
-			"obj-5::obj-117" : [ "RemixNoise", "RemixNoise", 0 ],
-			"obj-5::obj-157" : [ "TranspMode", "TranspMode", 0 ],
-			"obj-5::obj-25" : [ "nb-shots", "nb-shots", 0 ],
-			"obj-5::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-5::obj-324" : [ "BufBegin", "BufBegin", 0 ],
-			"obj-5::obj-26" : [ "BufSize", "BufSize", 0 ],
-			"obj-5::obj-153" : [ "EnvMode", "EnvMode", 0 ],
-			"obj-5::obj-147" : [ "EnvTranspEnable", "EnvTranspEnable", 0 ],
-			"obj-5::obj-164" : [ "PreserveWaveform", "PreserveWaveform", 1 ],
-			"obj-5::obj-115" : [ "RemixRelax", "RemixRelax", 0 ],
-			"obj-5::obj-163" : [ "Transpose", "Transpose", 0 ],
-			"obj-5::obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-5::obj-326" : [ "BufEnd", "BufEnd", 0 ]
+			"obj-1::obj-326" : [ "BufEnd", "BufEnd", 0 ],
+			"obj-1::obj-185" : [ "BufSpeed", "BufSpeed", 0 ],
+			"obj-1::obj-124" : [ "EnvPreserve", "EnvPreserve", 1 ],
+			"obj-1::obj-90" : [ "FFTOversamp", "FFTOversamp", 0 ],
+			"obj-1::obj-122" : [ "RemixEnable", "RemixEnable", 0 ],
+			"obj-1::obj-119" : [ "RemixSinus", "RemixSinus", 0 ],
+			"obj-1::obj-105" : [ "WindowSize", "WindowSize", 0 ],
+			"obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-1::obj-3" : [ "BufLoop", "BufLoop", 0 ],
+			"obj-1::obj-354" : [ "BufSync", "BufSync", 0 ],
+			"obj-1::obj-133" : [ "EnvScale", "EnvScale", 0 ],
+			"obj-1::obj-96" : [ "Oversampling", "Oversampling", 0 ],
+			"obj-1::obj-114" : [ "RemixError", "RemixError", 0 ],
+			"obj-1::obj-116" : [ "RemixTransients", "RemixTransients", 0 ],
+			"obj-1::obj-100" : [ "fade-in", "fade-in", 0 ],
+			"obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-1::obj-286" : [ "Buf", "Buf", 0 ],
+			"obj-1::obj-255" : [ "BufReplace", "BufReplace", 0 ],
+			"obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-1::obj-148" : [ "EnvLpcOrder", "EnvLpcOrder", 0 ],
+			"obj-1::obj-146" : [ "EnvScaleEnable", "EnvScaleEnable", 0 ],
+			"obj-1::obj-111" : [ "PreserveStereo", "PreserveStereo", 1 ],
+			"obj-1::obj-120" : [ "RemixMode", "RemixMode", 0 ],
+			"obj-1::obj-162" : [ "TranspEnable", "TranspEnable", 0 ],
+			"obj-1::obj-97" : [ "fade-out", "fade-out", 0 ],
+			"obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-1::obj-314" : [ "BufAction", "BufAction", 0 ],
+			"obj-1::obj-331" : [ "BufSet", "BufSet", 0 ],
+			"obj-1::obj-150" : [ "EnvMaxFreq", "EnvMaxFreq", 0 ],
+			"obj-1::obj-156" : [ "EnvTransp", "EnvTransp", 0 ],
+			"obj-1::obj-112" : [ "PreserveTransients", "PreserveTransients", 1 ],
+			"obj-1::obj-117" : [ "RemixNoise", "RemixNoise", 0 ],
+			"obj-1::obj-157" : [ "TranspMode", "TranspMode", 0 ],
+			"obj-1::obj-25" : [ "nb-shots", "nb-shots", 0 ],
+			"obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-1::obj-324" : [ "BufBegin", "BufBegin", 0 ],
+			"obj-1::obj-26" : [ "BufSize", "BufSize", 0 ],
+			"obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-1::obj-153" : [ "EnvMode", "EnvMode", 0 ],
+			"obj-1::obj-147" : [ "EnvTranspEnable", "EnvTranspEnable", 0 ],
+			"obj-1::obj-164" : [ "PreserveWaveform", "PreserveWaveform", 1 ],
+			"obj-1::obj-115" : [ "RemixRelax", "RemixRelax", 0 ],
+			"obj-1::obj-163" : [ "Transpose", "Transpose", 0 ],
+			"obj-1::obj-8" : [ "Ingain", "Ingain", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

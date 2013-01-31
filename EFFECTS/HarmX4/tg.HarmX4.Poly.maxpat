@@ -7,7 +7,7 @@
 			"revision" : 8
 		}
 ,
-		"rect" : [ 66.0, 44.0, 1236.0, 728.0 ],
+		"rect" : [ 66.0, 44.0, 341.0, 352.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -1180,7 +1180,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 23.0, 306.0, 111.0, 18.0 ],
+					"patching_rect" : [ 23.0, 182.0, 111.0, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial Bold",
@@ -1207,7 +1207,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 378.0, 42.0, 18.0 ],
+					"patching_rect" : [ 135.0, 254.0, 42.0, 18.0 ],
 					"text" : "On/Off"
 				}
 
@@ -1220,7 +1220,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 115.0, 378.0, 20.0, 20.0 ]
+					"patching_rect" : [ 115.0, 254.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -1232,7 +1232,11 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 69.0, 378.0, 40.0, 18.0 ],
+					"patching_rect" : [ 69.0, 254.0, 40.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 2"
 				}
 
@@ -1466,7 +1470,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 23.0, 266.0, 65.0, 18.0 ],
+					"patching_rect" : [ 23.0, 142.0, 65.0, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial Bold",
@@ -1492,24 +1496,29 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 23.0, 378.0, 40.0, 18.0 ],
+					"patching_rect" : [ 23.0, 254.0, 40.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "#1" ],
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
 					"id" : "obj-5",
-					"maxclass" : "bpatcher",
-					"name" : "tg.HarmX4.maxpat",
+					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "", "" ],
-					"patching_rect" : [ 23.0, 64.0, 715.0, 172.0 ],
+					"patching_rect" : [ 23.0, 83.0, 157.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 835.0, 170.0 ],
-					"varname" : "FreezeKoala"
+					"presentation_rect" : [ 0.0, 0.0, 100.0, 18.0 ],
+					"text" : "tg.HarmX4 #1",
+					"varname" : "tg.HarmX4"
 				}
 
 			}
@@ -1523,7 +1532,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 719.0, 34.0, 96.0, 18.0 ],
+					"patching_rect" : [ 161.0, 34.0, 96.0, 18.0 ],
 					"text" : "r #1"
 				}
 
@@ -1537,7 +1546,11 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 371.0, 34.0, 34.0, 18.0 ],
+					"patching_rect" : [ 92.0, 34.0, 34.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in~ 2"
 				}
 
@@ -1552,6 +1565,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 23.0, 34.0, 34.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in~ 1"
 				}
 
@@ -1658,40 +1675,40 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-5::obj-190" : [ "4pan", "4pan", 0 ],
-			"obj-5::obj-172" : [ "3side", "3side", 0 ],
-			"obj-5::obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-5::obj-162" : [ "2feed", "2feed", 0 ],
-			"obj-5::obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-5::obj-177" : [ "3delay", "3delay", 0 ],
-			"obj-5::obj-28" : [ "Filters", "Filters", 0 ],
-			"obj-5::obj-187" : [ "4freq", "4freq", 0 ],
-			"obj-5::obj-173" : [ "3freq", "3freq", 0 ],
-			"obj-5::obj-114" : [ "1pan", "1pan", 0 ],
-			"obj-5::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-5::obj-160" : [ "2gain", "2gain", 0 ],
-			"obj-5::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-5::obj-176" : [ "3feed", "3feed", 0 ],
-			"obj-5::obj-186" : [ "Automate", "Automate", 0 ],
-			"obj-5::obj-192" : [ "4delay", "4delay", 0 ],
+			"obj-5::obj-191" : [ "4feed", "4feed", 0 ],
 			"obj-5::obj-208" : [ "Clear", "Clear", 0 ],
-			"obj-5::obj-159" : [ "2freq", "2freq", 0 ],
-			"obj-5::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-5::obj-28" : [ "Filters", "Filters", 0 ],
+			"obj-5::obj-186" : [ "Automate", "Automate", 0 ],
+			"obj-5::obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-5::obj-108" : [ "1delay", "1delay", 0 ],
+			"obj-5::obj-112" : [ "1side", "1side", 0 ],
 			"obj-5::obj-161" : [ "2pan", "2pan", 0 ],
 			"obj-5::obj-174" : [ "3gain", "3gain", 0 ],
-			"obj-5::obj-191" : [ "4feed", "4feed", 0 ],
+			"obj-5::obj-187" : [ "4freq", "4freq", 0 ],
 			"obj-5::obj-126" : [ "Delay", "Delay", 0 ],
-			"obj-5::obj-158" : [ "Feedbacks", "Feedbacks", 0 ],
-			"obj-5::obj-112" : [ "1side", "1side", 0 ],
-			"obj-5::obj-108" : [ "1delay", "1delay", 0 ],
 			"obj-5::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-5::obj-175" : [ "3pan", "3pan", 0 ],
-			"obj-5::obj-188" : [ "4gain", "4gain", 0 ],
-			"obj-5::obj-206" : [ "Feedback", "Feedback", 0 ],
-			"obj-5::obj-113" : [ "1freq", "1freq", 0 ],
 			"obj-5::obj-115" : [ "1feed", "1feed", 0 ],
 			"obj-5::obj-163" : [ "2delay", "2delay", 0 ],
-			"obj-5::obj-72" : [ "FilterQ", "FilterQ", 0 ]
+			"obj-5::obj-175" : [ "3pan", "3pan", 0 ],
+			"obj-5::obj-188" : [ "4gain", "4gain", 0 ],
+			"obj-5::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-5::obj-158" : [ "Feedbacks", "Feedbacks", 0 ],
+			"obj-5::obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-5::obj-113" : [ "1freq", "1freq", 0 ],
+			"obj-5::obj-162" : [ "2feed", "2feed", 0 ],
+			"obj-5::obj-177" : [ "3delay", "3delay", 0 ],
+			"obj-5::obj-172" : [ "3side", "3side", 0 ],
+			"obj-5::obj-190" : [ "4pan", "4pan", 0 ],
+			"obj-5::obj-206" : [ "Feedback", "Feedback", 0 ],
+			"obj-5::obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-5::obj-159" : [ "2freq", "2freq", 0 ],
+			"obj-5::obj-176" : [ "3feed", "3feed", 0 ],
+			"obj-5::obj-192" : [ "4delay", "4delay", 0 ],
+			"obj-5::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-5::obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-5::obj-114" : [ "1pan", "1pan", 0 ],
+			"obj-5::obj-160" : [ "2gain", "2gain", 0 ],
+			"obj-5::obj-173" : [ "3freq", "3freq", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

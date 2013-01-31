@@ -7,7 +7,7 @@
 			"revision" : 8
 		}
 ,
-		"rect" : [ 556.0, 389.0, 858.0, 507.0 ],
+		"rect" : [ 140.0, 44.0, 381.0, 295.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -35,11 +35,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 663.25, 34.0, 34.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
+					"patching_rect" : [ 126.5, 34.0, 34.0, 18.0 ],
 					"text" : "in~ 4"
 				}
 
@@ -53,11 +49,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 450.0, 34.0, 34.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
+					"patching_rect" : [ 92.0, 34.0, 34.0, 18.0 ],
 					"text" : "in~ 3"
 				}
 
@@ -1216,7 +1208,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 23.0, 306.0, 111.0, 18.0 ],
+					"patching_rect" : [ 23.0, 141.0, 111.0, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial Bold",
@@ -1243,7 +1235,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 378.0, 42.0, 18.0 ],
+					"patching_rect" : [ 135.0, 213.0, 42.0, 18.0 ],
 					"text" : "On/Off"
 				}
 
@@ -1256,7 +1248,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 115.0, 378.0, 20.0, 20.0 ]
+					"patching_rect" : [ 115.0, 213.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -1268,11 +1260,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 69.0, 378.0, 40.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
+					"patching_rect" : [ 69.0, 213.0, 40.0, 18.0 ],
 					"text" : "out~ 2"
 				}
 
@@ -1506,7 +1494,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 23.0, 266.0, 65.0, 18.0 ],
+					"patching_rect" : [ 23.0, 101.0, 65.0, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial Bold",
@@ -1532,28 +1520,25 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 23.0, 378.0, 40.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
+					"patching_rect" : [ 23.0, 213.0, 40.0, 18.0 ],
 					"text" : "out~ 1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "#1" ],
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
 					"id" : "obj-5",
-					"maxclass" : "bpatcher",
-					"name" : "tg.FFTilterSound1a.maxpat",
+					"maxclass" : "newobj",
 					"numinlets" : 5,
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "", "" ],
-					"patching_rect" : [ 23.0, 64.0, 872.0, 181.0 ],
+					"patching_rect" : [ 23.0, 64.0, 157.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 731.0, 170.0 ],
-					"varname" : "FreezeKoala"
+					"presentation_rect" : [ 0.0, 0.0, 113.0, 18.0 ],
+					"text" : "tg.FFTilterSound1a #1",
+					"varname" : "tg.FFTilterSound1a"
 				}
 
 			}
@@ -1567,7 +1552,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 876.0, 34.0, 96.0, 18.0 ],
+					"patching_rect" : [ 161.0, 34.0, 96.0, 18.0 ],
 					"text" : "r #1"
 				}
 
@@ -1581,11 +1566,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 236.25, 34.0, 34.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
+					"patching_rect" : [ 57.5, 34.0, 34.0, 18.0 ],
 					"text" : "in~ 2"
 				}
 
@@ -1600,10 +1581,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 23.0, 34.0, 34.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in~ 1"
 				}
 
@@ -1728,31 +1705,31 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-5::obj-157" : [ "Mean", "Mean", 0 ],
-			"obj-5::obj-128" : [ "iGrain", "iGrain", 0 ],
-			"obj-5::obj-7" : [ "Noise", "Noise", 0 ],
-			"obj-5::obj-4" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-5::obj-118" : [ "ReceiveEnable", "ReceiveEnable", 0 ],
-			"obj-5::obj-112" : [ "iPow", "iPow", 0 ],
-			"obj-5::obj-18" : [ "Pow", "Pow", 0 ],
-			"obj-5::obj-100" : [ "Denoise", "Denoise", 0 ],
-			"obj-5::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-5::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-5::obj-101" : [ "Freeze", "Freeze", 0 ],
-			"obj-5::obj-89" : [ "DelMax", "DelMax", 0 ],
-			"obj-5::obj-98" : [ "FeedMax", "FeedMax", 0 ],
 			"obj-5::obj-123" : [ "FiltGain", "FiltGain", 0 ],
+			"obj-5::obj-18" : [ "Pow", "Pow", 0 ],
 			"obj-5::obj-114" : [ "SourceGain", "SourceGain", 0 ],
 			"obj-5::obj-258" : [ "iSlope", "iSlope", 0 ],
-			"obj-5::obj-121" : [ "Filter", "Filter", 0 ],
-			"obj-5::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-5::obj-7" : [ "Noise", "Noise", 0 ],
+			"obj-5::obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-5::obj-89" : [ "DelMax", "DelMax", 0 ],
+			"obj-5::obj-98" : [ "FeedMax", "FeedMax", 0 ],
 			"obj-5::obj-127" : [ "ForceFilter", "ForceFilter", 0 ],
 			"obj-5::obj-19" : [ "Stretch", "Stretch", 0 ],
 			"obj-5::obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-5::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
 			"obj-5::obj-96" : [ "InverseSource", "InverseSource", 0 ],
 			"obj-5::obj-146" : [ "iDuration", "iDuration", 0 ],
+			"obj-5::obj-4" : [ "FilterMode", "FilterMode", 0 ],
 			"obj-5::obj-23" : [ "Shift", "Shift", 0 ],
-			"obj-5::obj-72" : [ "FilterQ", "FilterQ", 0 ]
+			"obj-5::obj-101" : [ "Freeze", "Freeze", 0 ],
+			"obj-5::obj-121" : [ "Filter", "Filter", 0 ],
+			"obj-5::obj-157" : [ "Mean", "Mean", 0 ],
+			"obj-5::obj-128" : [ "iGrain", "iGrain", 0 ],
+			"obj-5::obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-5::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-5::obj-118" : [ "ReceiveEnable", "ReceiveEnable", 0 ],
+			"obj-5::obj-112" : [ "iPow", "iPow", 0 ],
+			"obj-5::obj-100" : [ "Denoise", "Denoise", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

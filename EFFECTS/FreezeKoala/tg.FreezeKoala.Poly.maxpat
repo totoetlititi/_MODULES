@@ -7,7 +7,7 @@
 			"revision" : 8
 		}
 ,
-		"rect" : [ 66.0, 44.0, 902.0, 482.0 ],
+		"rect" : [ 66.0, 44.0, 354.0, 302.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -1180,7 +1180,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 23.0, 306.0, 111.0, 18.0 ],
+					"patching_rect" : [ 23.0, 148.0, 111.0, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial Bold",
@@ -1207,7 +1207,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 378.0, 42.0, 18.0 ],
+					"patching_rect" : [ 135.0, 220.0, 42.0, 18.0 ],
 					"text" : "On/Off"
 				}
 
@@ -1220,7 +1220,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 115.0, 378.0, 20.0, 20.0 ]
+					"patching_rect" : [ 115.0, 220.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -1232,7 +1232,11 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 69.0, 378.0, 40.0, 18.0 ],
+					"patching_rect" : [ 69.0, 220.0, 40.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 2"
 				}
 
@@ -1466,7 +1470,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 23.0, 266.0, 65.0, 18.0 ],
+					"patching_rect" : [ 23.0, 108.0, 65.0, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial Bold",
@@ -1492,24 +1496,29 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 23.0, 378.0, 40.0, 18.0 ],
+					"patching_rect" : [ 23.0, 220.0, 40.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "#1" ],
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
 					"id" : "obj-5",
-					"maxclass" : "bpatcher",
-					"name" : "tg.FreezeKoala.maxpat",
+					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "", "" ],
-					"patching_rect" : [ 23.0, 64.0, 715.0, 172.0 ],
+					"patching_rect" : [ 23.0, 64.0, 157.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 712.0, 170.0 ],
-					"varname" : "FreezeKoala"
+					"presentation_rect" : [ 0.0, 0.0, 100.0, 18.0 ],
+					"text" : "tg.FreezeKoala #1",
+					"varname" : "tg.FreezeKoala"
 				}
 
 			}
@@ -1523,7 +1532,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 719.0, 34.0, 96.0, 18.0 ],
+					"patching_rect" : [ 161.0, 34.0, 96.0, 18.0 ],
 					"text" : "r #1"
 				}
 
@@ -1537,7 +1546,11 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 371.0, 34.0, 34.0, 18.0 ],
+					"patching_rect" : [ 92.0, 34.0, 34.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in~ 2"
 				}
 
@@ -1552,6 +1565,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 23.0, 34.0, 34.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in~ 1"
 				}
 
@@ -1658,26 +1675,26 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-5::obj-159" : [ "Scale", "Scale", 0 ],
-			"obj-5::obj-6" : [ "Metro", "Metro", 0 ],
-			"obj-5::obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-5::obj-33" : [ "MetroSyncUnit", "MetroSyncUnit", 0 ],
-			"obj-5::obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-5::obj-98" : [ "Denoise", "Denoise", 0 ],
-			"obj-5::obj-24" : [ "MetroTime", "MetroTime", 0 ],
-			"obj-5::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-5::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-5::obj-101" : [ "Freeze", "Freeze", 0 ],
+			"obj-5::obj-99" : [ "Smooth", "Smooth", 0 ],
 			"obj-5::obj-26" : [ "LinkSmooth", "LinkSmooth", 0 ],
-			"obj-5::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-5::obj-49" : [ "Stereo", "Stereo", 0 ],
+			"obj-5::obj-14" : [ "Outgain", "Outgain", 0 ],
 			"obj-5::obj-27" : [ "MetroMode", "MetroMode", 1 ],
 			"obj-5::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-5::obj-99" : [ "Smooth", "Smooth", 0 ],
-			"obj-5::obj-89" : [ "Grain", "Grain", 0 ],
+			"obj-5::obj-159" : [ "Scale", "Scale", 0 ],
+			"obj-5::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
 			"obj-5::obj-76" : [ "MetroSyncNb", "MetroSyncNb", 0 ],
+			"obj-5::obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-5::obj-158" : [ "Shift", "Shift", 0 ],
+			"obj-5::obj-101" : [ "Freeze", "Freeze", 0 ],
+			"obj-5::obj-89" : [ "Grain", "Grain", 0 ],
 			"obj-5::obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-5::obj-158" : [ "Shift", "Shift", 0 ]
+			"obj-5::obj-33" : [ "MetroSyncUnit", "MetroSyncUnit", 0 ],
+			"obj-5::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-5::obj-49" : [ "Stereo", "Stereo", 0 ],
+			"obj-5::obj-6" : [ "Metro", "Metro", 0 ],
+			"obj-5::obj-98" : [ "Denoise", "Denoise", 0 ],
+			"obj-5::obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-5::obj-24" : [ "MetroTime", "MetroTime", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
