@@ -7,7 +7,7 @@
 			"revision" : 8
 		}
 ,
-		"rect" : [ 214.0, 44.0, 1495.0, 989.0 ],
+		"rect" : [ 185.0, 44.0, 1495.0, 989.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -28,6 +28,35 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-120",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 360.333313, 814.5, 64.0, 18.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+					"text" : "thispatcher"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-118",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 360.333313, 758.5, 50.0, 16.0 ],
+					"text" : "refresh"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 18.0,
@@ -152,10 +181,10 @@
 					"fontsize" : 10.0,
 					"id" : "obj-11",
 					"maxclass" : "newobj",
-					"numinlets" : 6,
-					"numoutlets" : 7,
-					"outlettype" : [ "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 257.833313, 785.5, 107.0, 18.0 ],
+					"numinlets" : 7,
+					"numoutlets" : 8,
+					"outlettype" : [ "", "", "", "", "", "", "", "" ],
+					"patching_rect" : [ 257.833313, 785.5, 121.666664, 18.0 ],
 					"text" : "tg.m.preset #1"
 				}
 
@@ -180,7 +209,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "preset", "int", "preset", "int" ],
 					"patching_rect" : [ 262.833313, 672.5, 92.5, 69.0 ],
-					"pattrstorage" : "SpectralDelayComb",
+					"pattrstorage" : "SpectralDelayCombPreset",
 					"presentation" : 1,
 					"presentation_rect" : [ 1169.5, 67.0, 92.5, 69.0 ],
 					"prototypename" : "M4L.H",
@@ -3996,8 +4025,7 @@
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Slope",
-							"parameter_longname" : "Slope",
-							"parameter_linknames" : 1
+							"parameter_longname" : "Slope"
 						}
 
 					}
@@ -4041,7 +4069,6 @@
 					"presentation_rect" : [ 189.333374, 19.0, 51.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_units" : "v",
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 1.0,
@@ -4050,7 +4077,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FadeOut",
 							"parameter_longname" : "FadeOut",
-							"parameter_linknames" : 1
+							"parameter_units" : "v"
 						}
 
 					}
@@ -4266,8 +4293,7 @@
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Automate",
-							"parameter_longname" : "Automate",
-							"parameter_linknames" : 1
+							"parameter_longname" : "Automate"
 						}
 
 					}
@@ -4482,7 +4508,6 @@
 					"presentation_rect" : [ 795.0, 142.0, 39.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_units" : "v",
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 256.0,
 							"parameter_initial" : [ 10.0 ],
@@ -4490,7 +4515,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FeedDrunkStep",
 							"parameter_longname" : "FeedDrunkStep",
-							"parameter_linknames" : 1
+							"parameter_units" : "v"
 						}
 
 					}
@@ -4518,7 +4543,6 @@
 					"presentation_rect" : [ 732.5, 142.0, 60.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_units" : "v",
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 1.0,
@@ -4527,7 +4551,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FeedDrunk",
 							"parameter_longname" : "FeedDrunk",
-							"parameter_linknames" : 1
+							"parameter_units" : "v"
 						}
 
 					}
@@ -4892,7 +4916,6 @@
 					"presentation_rect" : [ 609.833496, 142.0, 39.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_units" : "v",
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 256.0,
 							"parameter_initial" : [ 10.0 ],
@@ -4900,7 +4923,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "DelDrunkStep",
 							"parameter_longname" : "DelDrunkStep",
-							"parameter_linknames" : 1
+							"parameter_units" : "v"
 						}
 
 					}
@@ -4928,7 +4951,6 @@
 					"presentation_rect" : [ 547.333496, 142.0, 60.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_units" : "v",
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 1.0,
@@ -4937,7 +4959,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "DelDrunk",
 							"parameter_longname" : "DelDrunk",
-							"parameter_linknames" : 1
+							"parameter_units" : "v"
 						}
 
 					}
@@ -5382,7 +5404,6 @@
 					"presentation_rect" : [ 369.000122, 142.0, 60.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_units" : "v",
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 1.0,
@@ -5391,7 +5412,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FiltDrunk",
 							"parameter_longname" : "FiltDrunk",
-							"parameter_linknames" : 1
+							"parameter_units" : "v"
 						}
 
 					}
@@ -5745,7 +5766,6 @@
 					"presentation_rect" : [ 100.500061, 19.0, 53.666687, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_units" : "v",
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 1.0,
@@ -5754,7 +5774,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Metro",
 							"parameter_longname" : "Metro",
-							"parameter_linknames" : 1
+							"parameter_units" : "v"
 						}
 
 					}
@@ -6003,7 +6023,6 @@
 					"presentation_rect" : [ 271.500122, 143.5, 61.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_units" : "v",
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 1.0,
@@ -6012,7 +6031,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "ForceFeed",
 							"parameter_longname" : "ForceFeed",
-							"parameter_linknames" : 1
+							"parameter_units" : "v"
 						}
 
 					}
@@ -6037,7 +6056,6 @@
 					"presentation_rect" : [ 431.500122, 142.0, 39.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_units" : "v",
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 256.0,
 							"parameter_initial" : [ 10.0 ],
@@ -6045,7 +6063,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FiltDrunkStep",
 							"parameter_longname" : "FiltDrunkStep",
-							"parameter_linknames" : 1
+							"parameter_units" : "v"
 						}
 
 					}
@@ -6068,7 +6086,6 @@
 					"presentation_rect" : [ 222.499756, 148.5, 35.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_units" : "v",
 							"parameter_exponent" : 3.333,
 							"parameter_unitstyle" : 1,
 							"parameter_mmax" : 10.0,
@@ -6077,7 +6094,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Pow",
 							"parameter_longname" : "Pow",
-							"parameter_linknames" : 1
+							"parameter_units" : "v"
 						}
 
 					}
@@ -6100,7 +6117,6 @@
 					"presentation_rect" : [ 189.333374, 55.0, 51.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_units" : "v",
 							"parameter_exponent" : 3.3333,
 							"parameter_unitstyle" : 2,
 							"parameter_mmax" : 20000.0,
@@ -6109,7 +6125,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Grain",
 							"parameter_longname" : "Grain",
-							"parameter_linknames" : 1
+							"parameter_units" : "v"
 						}
 
 					}
@@ -6132,7 +6148,6 @@
 					"presentation_rect" : [ 138.416656, 130.0, 35.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_units" : "v",
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 512.0,
 							"parameter_mmin" : 1.0,
@@ -6141,7 +6156,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "SizeMax",
 							"parameter_longname" : "SizeMax",
-							"parameter_linknames" : 1
+							"parameter_units" : "v"
 						}
 
 					}
@@ -6164,7 +6179,6 @@
 					"presentation_rect" : [ 138.416656, 148.5, 35.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_units" : "v",
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 512.0,
 							"parameter_mmin" : 1.0,
@@ -6173,7 +6187,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "SizeMin",
 							"parameter_longname" : "SizeMin",
-							"parameter_linknames" : 1
+							"parameter_units" : "v"
 						}
 
 					}
@@ -6196,7 +6210,6 @@
 					"presentation_rect" : [ 100.500061, 130.0, 35.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_units" : "v",
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 512.0,
 							"parameter_mmin" : 1.0,
@@ -6205,7 +6218,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "BandsMax",
 							"parameter_longname" : "BandsMax",
-							"parameter_linknames" : 1
+							"parameter_units" : "v"
 						}
 
 					}
@@ -6228,16 +6241,15 @@
 					"presentation_rect" : [ 100.500061, 148.5, 35.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_units" : "v",
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 512.0,
 							"parameter_mmin" : 1.0,
 							"parameter_initial" : [ 1.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
-							"parameter_shortname" : "BandMins",
+							"parameter_shortname" : "BandsMin",
 							"parameter_longname" : "BandsMin",
-							"parameter_linknames" : 1
+							"parameter_units" : "v"
 						}
 
 					}
@@ -6260,7 +6272,6 @@
 					"presentation_rect" : [ 100.500061, 37.0, 53.666687, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_units" : "v",
 							"parameter_exponent" : 3.3333,
 							"parameter_unitstyle" : 2,
 							"parameter_mmax" : 20000.0,
@@ -6269,7 +6280,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "TimeMax",
 							"parameter_longname" : "TimeMax",
-							"parameter_linknames" : 1
+							"parameter_units" : "v"
 						}
 
 					}
@@ -6292,7 +6303,6 @@
 					"presentation_rect" : [ 100.500061, 55.0, 53.666687, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_units" : "v",
 							"parameter_exponent" : 3.3333,
 							"parameter_unitstyle" : 2,
 							"parameter_mmax" : 20000.0,
@@ -6301,7 +6311,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "TimeMin",
 							"parameter_longname" : "TimeMin",
-							"parameter_linknames" : 1
+							"parameter_units" : "v"
 						}
 
 					}
@@ -6329,7 +6339,6 @@
 					"presentation_rect" : [ 271.500122, 121.5, 61.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_units" : "v",
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 1.0,
@@ -6338,7 +6347,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "ForceFilt",
 							"parameter_longname" : "ForceFilt",
-							"parameter_linknames" : 1
+							"parameter_units" : "v"
 						}
 
 					}
@@ -6362,7 +6371,6 @@
 					"presentation_rect" : [ 278.500122, 7.0, 47.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_speedlim" : 0.0,
 							"parameter_exponent" : 2.0,
 							"parameter_unitstyle" : 2,
 							"parameter_mmax" : 10000.0,
@@ -6371,7 +6379,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "DelMax",
 							"parameter_longname" : "DelMax",
-							"parameter_linknames" : 1
+							"parameter_speedlim" : 0.0
 						}
 
 					}
@@ -6394,7 +6402,6 @@
 					"presentation_rect" : [ 278.500122, 63.0, 47.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_speedlim" : 0.0,
 							"parameter_unitstyle" : 5,
 							"parameter_mmax" : 99.0,
 							"parameter_initial" : [ 50 ],
@@ -6402,7 +6409,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FeedMax",
 							"parameter_longname" : "FeedMax",
-							"parameter_linknames" : 1
+							"parameter_speedlim" : 0.0
 						}
 
 					}
@@ -6473,8 +6480,7 @@
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FilterMode",
-							"parameter_longname" : "FilterMode",
-							"parameter_linknames" : 1
+							"parameter_longname" : "FilterMode"
 						}
 
 					}
@@ -6624,8 +6630,7 @@
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FilterGain",
-							"parameter_longname" : "FilterGain",
-							"parameter_linknames" : 1
+							"parameter_longname" : "FilterGain"
 						}
 
 					}
@@ -6653,8 +6658,7 @@
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FilterFreq",
-							"parameter_longname" : "FilterFreq",
-							"parameter_linknames" : 1
+							"parameter_longname" : "FilterFreq"
 						}
 
 					}
@@ -6676,7 +6680,6 @@
 					"presentation_rect" : [ 988.0, 20.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_units" : "q",
 							"parameter_exponent" : 5.0,
 							"parameter_unitstyle" : 1,
 							"parameter_mmax" : 22000.0,
@@ -6685,7 +6688,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FilterQ",
 							"parameter_longname" : "FilterQ",
-							"parameter_linknames" : 1
+							"parameter_units" : "q"
 						}
 
 					}
@@ -6719,7 +6722,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 345.833313, 806.5, 20.0, 20.0 ]
+					"patching_rect" : [ 345.833313, 814.5, 20.0, 20.0 ]
 				}
 
 			}
@@ -6928,7 +6931,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u956006335"
+					"varname" : "u667009984"
 				}
 
 			}
@@ -7090,8 +7093,7 @@
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Outgain",
-							"parameter_longname" : "Outgain",
-							"parameter_linknames" : 1
+							"parameter_longname" : "Outgain"
 						}
 
 					}
@@ -7120,8 +7122,7 @@
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Dry/wet",
-							"parameter_longname" : "Dry/wet",
-							"parameter_linknames" : 1
+							"parameter_longname" : "Dry/wet"
 						}
 
 					}
@@ -7167,8 +7168,7 @@
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Ingain",
-							"parameter_longname" : "Ingain",
-							"parameter_linknames" : 1
+							"parameter_longname" : "Ingain"
 						}
 
 					}
@@ -7229,6 +7229,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-109", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-120", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-11", 7 ]
 				}
 
 			}
@@ -7296,6 +7305,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-11", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 6 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-118", 0 ]
 				}
 
 			}
@@ -8404,38 +8422,38 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-155" : [ "Delays", "Delays", 0 ],
-			"obj-207" : [ "FiltDrunk", "FiltDrunk", 0 ],
-			"obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-231" : [ "TimeMin", "TimeMin", 0 ],
-			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-186" : [ "Automate", "Automate", 0 ],
-			"obj-240" : [ "BandsMax", "BandsMax", 0 ],
-			"obj-146" : [ "FadeOut", "FadeOut", 0 ],
-			"obj-267" : [ "FiltDrunkStep", "FiltDrunkStep", 0 ],
-			"obj-198" : [ "Metro", "Metro", 0 ],
-			"obj-56" : [ "FeedMax", "FeedMax", 0 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-237" : [ "BandsMin", "BandMins", 0 ],
-			"obj-625" : [ "FeedDrunk", "FeedDrunk", 0 ],
-			"obj-60" : [ "ForceFeed", "ForceFeed", 0 ],
-			"obj-249" : [ "SizeMax", "SizeMax", 0 ],
-			"obj-262" : [ "Pow", "Pow", 0 ],
 			"obj-558" : [ "DelDrunk", "DelDrunk", 0 ],
 			"obj-624" : [ "FeedDrunkStep", "FeedDrunkStep", 0 ],
-			"obj-54" : [ "ForceFilt", "ForceFilt", 0 ],
-			"obj-252" : [ "SizeMin", "SizeMin", 0 ],
-			"obj-55" : [ "DelMax", "DelMax", 0 ],
-			"obj-28" : [ "Filters", "Filters", 0 ],
-			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-198" : [ "Metro", "Metro", 0 ],
+			"obj-231" : [ "TimeMin", "TimeMin", 0 ],
 			"obj-557" : [ "DelDrunkStep", "DelDrunkStep", 0 ],
+			"obj-56" : [ "FeedMax", "FeedMax", 0 ],
+			"obj-60" : [ "ForceFeed", "ForceFeed", 0 ],
+			"obj-262" : [ "Pow", "Pow", 0 ],
+			"obj-186" : [ "Automate", "Automate", 0 ],
+			"obj-415" : [ "Slope", "Slope", 0 ],
+			"obj-155" : [ "Delays", "Delays", 0 ],
+			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-55" : [ "DelMax", "DelMax", 0 ],
 			"obj-158" : [ "Feedbacks", "Feedbacks", 0 ],
-			"obj-255" : [ "Grain", "Grain", 0 ],
-			"obj-234" : [ "TimeMax", "TimeMax", 0 ],
+			"obj-28" : [ "Filters", "Filters", 0 ],
+			"obj-54" : [ "ForceFilt", "ForceFilt", 0 ],
+			"obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-249" : [ "SizeMax", "SizeMax", 0 ],
+			"obj-240" : [ "BandsMax", "BandsMax", 0 ],
 			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-415" : [ "Slope", "Slope", 0 ]
+			"obj-146" : [ "FadeOut", "FadeOut", 0 ],
+			"obj-207" : [ "FiltDrunk", "FiltDrunk", 0 ],
+			"obj-255" : [ "Grain", "Grain", 0 ],
+			"obj-252" : [ "SizeMin", "SizeMin", 0 ],
+			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-237" : [ "BandsMin", "BandsMin", 0 ],
+			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-625" : [ "FeedDrunk", "FeedDrunk", 0 ],
+			"obj-267" : [ "FiltDrunkStep", "FiltDrunkStep", 0 ],
+			"obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-234" : [ "TimeMax", "TimeMax", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
