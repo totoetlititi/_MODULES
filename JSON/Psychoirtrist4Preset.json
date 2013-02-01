@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "PsychHarm4Preset",
+		"name" : "Psychoirtrist4Preset",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -15,15 +15,19 @@
 					"FilterGain" : [ 0.0 ],
 					"FilterMode" : [ 5.0 ],
 					"FilterQ" : [ 0.3 ],
+					"Freq1" : [ 250.0 ],
+					"Freq2" : [ 250.0 ],
+					"Freq3" : [ 250.0 ],
+					"Freq4" : [ 250.0 ],
 					"Gain1" : [ 0.0 ],
 					"Gain2" : [ 0.0 ],
 					"Gain3" : [ 0.0 ],
 					"Gain4" : [ 0.0 ],
-					"Harm1" : [ 1.0 ],
-					"Harm2" : [ 1.0 ],
-					"Harm3" : [ 1.0 ],
-					"Harm4" : [ 1.0 ],
 					"Ingain" : [ 0.0 ],
+					"Mode1" : [ 1.0 ],
+					"Mode2" : [ 1.0 ],
+					"Mode3" : [ 1.0 ],
+					"Mode4" : [ 1.0 ],
 					"Outgain" : [ -70.0 ],
 					"Pan1" : [ -50.0 ],
 					"Pan2" : [ -20.0 ],
