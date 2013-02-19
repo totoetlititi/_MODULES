@@ -1,0 +1,60 @@
+{
+	"pattrstorage" : 	{
+		"name" : "IanaToResPreset",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "Default",
+				"data" : 				{
+					"BufLoop" : [ 4.0 ],
+					"BufSize" : [ 2.0 ],
+					"Content" : [ 0.0 ],
+					"Downsampling" : [ 0.0 ],
+					"Dry/wet" : [ 100.0 ],
+					"FilterFreq" : [ 1000.0 ],
+					"FilterGain" : [ 0.0 ],
+					"FilterMode" : [ 5.0 ],
+					"FirstToSearch" : [ 0.0 ],
+					"HearingThreshold" : [ 1.0 ],
+					"Ingain" : [ 0.0 ],
+					"InputChannels" : [ 2.0 ],
+					"LastToSearch" : [ 1024.0 ],
+					"Level" : [ 0.0 ],
+					"MaxPartials" : [ 40.0 ],
+					"MaxPeaks" : [ 100.0 ],
+					"Metronome" : [ 0.0 ],
+					"Ordering" : [ 0.0 ],
+					"Outgain" : [ -70.0 ],
+					"Output" : [ 0.0 ],
+					"Rate" : [ 60.0 ],
+					"Rate[2]" : [ 60.0 ],
+					"RefLevel" : [ 90.0 ],
+					"Send" : [ "nowhere" ],
+					"SendData" : [ 0.0 ],
+					"Shift" : [ 0.0 ],
+					"SpeedFactor" : [ 8.0 ],
+					"Sync" : [ 0.0 ],
+					"Threshold" : [ 2.0 ],
+					"TranspEnable" : [ 0.3 ],
+					"Transpose" : [ 0.0 ],
+					"WindowType" : [ 2.0 ],
+					"envCutoff" : [ 50.0 ],
+					"envFactor" : [ 8.0 ],
+					"envPower" : [ 1.0 ],
+					"envRate" : [ 10.0 ],
+					"envStretch" : [ 1.0 ],
+					"meters-SL" : [ 250, 250 ],
+					"resBwCoeff" : [ 0.03 ],
+					"resClear" : [ 0.0 ],
+					"resInterp" : [ 0.5 ],
+					"resStep" : [ 1.0 ],
+					"resVoices" : [ 8.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
