@@ -3,8 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 8
+			"minor" : 1,
+			"revision" : 0,
+			"architecture" : "x86"
 		}
 ,
 		"rect" : [ 0.0, 525.0, 1456.0, 496.0 ],
@@ -74,13 +75,13 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-74",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1124.0, 215.0, 243.0, 38.0 ],
-					"text" : "script sendbox $1 _parameter_linknames 0, script sendbox $1 _parameter_shortname $1, script sendbox $1 _parameter_longname $1"
+					"patching_rect" : [ 1124.0, 194.0, 235.0, 49.0 ],
+					"text" : "script sendbox $1 _parameter_linknames 0, script sendbox $1 _parameter_shortname $1, script sendbox $1 _parameter_longname $1, script sendbox $1 annotation $1"
 				}
 
 			}
@@ -562,8 +563,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 58.0, 487.0, 406.0, 308.0 ],
@@ -694,7 +696,7 @@
 									"fontsize" : 10.0,
 									"id" : "obj-1",
 									"maxclass" : "newobj",
-									"numinlets" : 0,
+									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 134.0, 45.0, 39.0, 18.0 ],
@@ -800,8 +802,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 331.0, 416.0, 334.0, 346.0 ],
@@ -1212,7 +1215,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 605.5, 24.0, 18.0, 18.0 ]
 				}
 
@@ -1443,7 +1446,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 509.5, 25.0, 18.0, 18.0 ]
 				}
 
@@ -2294,8 +2297,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ]
+ ]
 	}
 
 }

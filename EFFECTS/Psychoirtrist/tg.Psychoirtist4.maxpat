@@ -3,8 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 8
+			"minor" : 1,
+			"revision" : 0,
+			"architecture" : "x86"
 		}
 ,
 		"rect" : [ 58.0, 44.0, 1036.0, 178.0 ],
@@ -17,7 +18,7 @@
 		"gridonopen" : 0,
 		"gridsize" : [ 8.0, 8.0 ],
 		"gridsnaponopen" : 0,
-		"statusbarvisible" : 2,
+		"statusbarvisible" : 1,
 		"toolbarvisible" : 0,
 		"boxanimatetime" : 200,
 		"imprint" : 0,
@@ -61,6 +62,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Resp4",
 					"id" : "obj-206",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -72,13 +74,13 @@
 					"presentation_rect" : [ 222.0, 98.5, 43.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 2400.0,
 							"parameter_mmin" : -2400.0,
 							"parameter_type" : 0,
 							"parameter_shortname" : "Resp4",
 							"parameter_longname" : "Resp4",
 							"parameter_units" : "ct",
-							"parameter_unitstyle" : 9,
-							"parameter_mmax" : 2400.0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -89,6 +91,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Resp3",
 					"id" : "obj-207",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -100,13 +103,13 @@
 					"presentation_rect" : [ 174.0, 98.5, 43.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 2400.0,
 							"parameter_mmin" : -2400.0,
 							"parameter_type" : 0,
 							"parameter_shortname" : "Resp3",
 							"parameter_longname" : "Resp3",
 							"parameter_units" : "ct",
-							"parameter_unitstyle" : 9,
-							"parameter_mmax" : 2400.0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -145,6 +148,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Mode4",
 					"id" : "obj-183",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -306,6 +310,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Freq4",
 					"id" : "obj-194",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -317,6 +322,7 @@
 					"presentation_rect" : [ 222.0, 62.5, 43.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 22000.0,
 							"parameter_mmin" : 20.0,
 							"parameter_initial" : [ 250 ],
 							"parameter_type" : 0,
@@ -325,8 +331,7 @@
 							"parameter_longname" : "Freq4",
 							"parameter_units" : "ct",
 							"parameter_exponent" : 3.333,
-							"parameter_unitstyle" : 3,
-							"parameter_mmax" : 22000.0
+							"parameter_unitstyle" : 3
 						}
 
 					}
@@ -337,6 +342,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Freq3",
 					"id" : "obj-195",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -348,6 +354,7 @@
 					"presentation_rect" : [ 174.0, 62.5, 43.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 22000.0,
 							"parameter_mmin" : 20.0,
 							"parameter_initial" : [ 250 ],
 							"parameter_type" : 0,
@@ -356,8 +363,7 @@
 							"parameter_longname" : "Freq3",
 							"parameter_units" : "ct",
 							"parameter_exponent" : 3.333,
-							"parameter_unitstyle" : 3,
-							"parameter_mmax" : 22000.0
+							"parameter_unitstyle" : 3
 						}
 
 					}
@@ -384,6 +390,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Trans4",
 					"id" : "obj-198",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -395,6 +402,7 @@
 					"presentation_rect" : [ 222.0, 33.5, 43.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 2400.0,
 							"parameter_mmin" : -2400.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
@@ -402,8 +410,7 @@
 							"parameter_shortname" : "Trans4",
 							"parameter_longname" : "Trans4",
 							"parameter_units" : "ct",
-							"parameter_unitstyle" : 9,
-							"parameter_mmax" : 2400.0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -414,6 +421,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Trans3",
 					"id" : "obj-199",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -425,6 +433,7 @@
 					"presentation_rect" : [ 174.0, 33.5, 43.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 2400.0,
 							"parameter_mmin" : -2400.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
@@ -432,8 +441,7 @@
 							"parameter_shortname" : "Trans3",
 							"parameter_longname" : "Trans3",
 							"parameter_units" : "ct",
-							"parameter_unitstyle" : 9,
-							"parameter_mmax" : 2400.0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -444,6 +452,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Mode3",
 					"id" : "obj-200",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -569,6 +578,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Mode2",
 					"id" : "obj-171",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -730,6 +740,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Resp2",
 					"id" : "obj-154",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -741,13 +752,13 @@
 					"presentation_rect" : [ 119.0, 98.5, 43.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 2400.0,
 							"parameter_mmin" : -2400.0,
 							"parameter_type" : 0,
 							"parameter_shortname" : "Resp2",
 							"parameter_longname" : "Resp2",
 							"parameter_units" : "ct",
-							"parameter_unitstyle" : 9,
-							"parameter_mmax" : 2400.0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -758,6 +769,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Resp1",
 					"id" : "obj-165",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -769,13 +781,13 @@
 					"presentation_rect" : [ 71.0, 98.5, 43.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 2400.0,
 							"parameter_mmin" : -2400.0,
 							"parameter_type" : 0,
 							"parameter_shortname" : "Resp1",
 							"parameter_longname" : "Resp1",
 							"parameter_units" : "ct",
-							"parameter_unitstyle" : 9,
-							"parameter_mmax" : 2400.0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -818,6 +830,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Freq2",
 					"id" : "obj-159",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -829,6 +842,7 @@
 					"presentation_rect" : [ 119.0, 62.5, 43.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 22000.0,
 							"parameter_mmin" : 20.0,
 							"parameter_initial" : [ 250 ],
 							"parameter_type" : 0,
@@ -837,8 +851,7 @@
 							"parameter_longname" : "Freq2",
 							"parameter_units" : "ct",
 							"parameter_exponent" : 3.333,
-							"parameter_unitstyle" : 3,
-							"parameter_mmax" : 22000.0
+							"parameter_unitstyle" : 3
 						}
 
 					}
@@ -849,6 +862,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Freq1",
 					"id" : "obj-160",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -860,6 +874,7 @@
 					"presentation_rect" : [ 71.0, 62.5, 43.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 22000.0,
 							"parameter_mmin" : 20.0,
 							"parameter_initial" : [ 250 ],
 							"parameter_type" : 0,
@@ -868,8 +883,7 @@
 							"parameter_longname" : "Freq1",
 							"parameter_units" : "ct",
 							"parameter_exponent" : 3.333,
-							"parameter_unitstyle" : 3,
-							"parameter_mmax" : 22000.0
+							"parameter_unitstyle" : 3
 						}
 
 					}
@@ -912,6 +926,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Trans2",
 					"id" : "obj-153",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -923,6 +938,7 @@
 					"presentation_rect" : [ 119.0, 32.5, 43.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 2400.0,
 							"parameter_mmin" : -2400.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
@@ -930,8 +946,7 @@
 							"parameter_shortname" : "Trans2",
 							"parameter_longname" : "Trans2",
 							"parameter_units" : "ct",
-							"parameter_unitstyle" : 9,
-							"parameter_mmax" : 2400.0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -942,6 +957,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Trans1",
 					"id" : "obj-152",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -953,6 +969,7 @@
 					"presentation_rect" : [ 71.0, 32.5, 43.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 2400.0,
 							"parameter_mmin" : -2400.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
@@ -960,8 +977,7 @@
 							"parameter_shortname" : "Trans1",
 							"parameter_longname" : "Trans1",
 							"parameter_units" : "ct",
-							"parameter_unitstyle" : 9,
-							"parameter_mmax" : 2400.0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -972,6 +988,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Mode1",
 					"id" : "obj-150",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -1086,6 +1103,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Ingain",
 					"clip_size" : 1,
 					"display_range" : [ -70.0, 30.0 ],
 					"id" : "obj-149",
@@ -1100,14 +1118,14 @@
 					"prototypename" : "M4L.live.gain~.V.extended",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 30.0,
 							"parameter_mmin" : -70.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Ingain",
 							"parameter_longname" : "Ingain",
-							"parameter_unitstyle" : 4,
-							"parameter_mmax" : 30.0
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -1157,7 +1175,7 @@
 					"patching_rect" : [ 428.5, 671.5, 95.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 929.5, 3.0, 95.0, 27.0 ],
-					"text" : "1psy"
+					"text" : "#1"
 				}
 
 			}
@@ -1235,7 +1253,6 @@
 					"presentation_rect" : [ 929.5, 151.5, 95.0, 16.0 ],
 					"prototypename" : "M4L.black",
 					"rounded" : 12.0,
-					"text" : "Default",
 					"textcolor" : [ 0.909804, 0.909804, 0.909804, 1.0 ]
 				}
 
@@ -1535,10 +1552,10 @@
 						"PitchModMax" : [ 500.0 ],
 						"PitchModMaxTrans" : [ 200.0 ],
 						"PitchModMin" : [ 200.0 ],
-						"Resp1" : [ 0.0 ],
-						"Resp2" : [ 0.0 ],
-						"Resp3" : [ 0.0 ],
-						"Resp4" : [ 0.0 ],
+						"Resp1" : [ -2400.0 ],
+						"Resp2" : [ -2400.0 ],
+						"Resp3" : [ -2400.0 ],
+						"Resp4" : [ -2400.0 ],
 						"SpeedMod" : [ 0.0 ],
 						"SpeedModMax" : [ 50.0 ],
 						"SpeedModMaxDel" : [ 100.0 ],
@@ -1550,7 +1567,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u256001810"
+					"varname" : "u784073527"
 				}
 
 			}
@@ -1581,6 +1598,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "FilterMode",
 					"id" : "obj-127",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -1729,6 +1747,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "FilterGain",
 					"id" : "obj-130",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -1740,14 +1759,14 @@
 					"presentation_rect" : [ 817.5, 25.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 80.0,
 							"parameter_mmin" : -80.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FilterGain",
 							"parameter_longname" : "FilterGain",
-							"parameter_unitstyle" : 4,
-							"parameter_mmax" : 80.0
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -1758,6 +1777,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "FilterFreq",
 					"id" : "obj-133",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -1769,13 +1789,13 @@
 					"presentation_rect" : [ 689.5, 25.0, 49.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 22050.0,
 							"parameter_initial" : [ 1000.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FilterFreq",
 							"parameter_longname" : "FilterFreq",
-							"parameter_unitstyle" : 3,
-							"parameter_mmax" : 22050.0
+							"parameter_unitstyle" : 3
 						}
 
 					}
@@ -1786,6 +1806,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "FilterQ",
 					"id" : "obj-146",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -1797,6 +1818,7 @@
 					"presentation_rect" : [ 753.5, 25.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 22000.0,
 							"parameter_initial" : [ 0.3 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
@@ -1804,8 +1826,7 @@
 							"parameter_longname" : "FilterQ",
 							"parameter_units" : "q",
 							"parameter_exponent" : 5.0,
-							"parameter_unitstyle" : 1,
-							"parameter_mmax" : 22000.0
+							"parameter_unitstyle" : 1
 						}
 
 					}
@@ -1845,6 +1866,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Outgain",
 					"clip_size" : 1,
 					"display_range" : [ -70.0, 30.0 ],
 					"id" : "obj-104",
@@ -1859,14 +1881,14 @@
 					"prototypename" : "M4L.live.gain~.V.extended",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 30.0,
 							"parameter_mmin" : -70.0,
 							"parameter_initial" : [ -70 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Outgain",
 							"parameter_longname" : "Outgain",
-							"parameter_unitstyle" : 4,
-							"parameter_mmax" : 30.0
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -2428,7 +2450,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Adjust gain of harmonizer 1",
+					"annotation" : "Gain1",
 					"clip_size" : 1,
 					"display_range" : [ -70.0, 30.0 ],
 					"id" : "obj-128",
@@ -2443,14 +2465,14 @@
 					"prototypename" : "M4L.live.gain~.V.extended",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 12.0,
 							"parameter_mmin" : -70.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Gain1",
 							"parameter_longname" : "Gain1",
-							"parameter_unitstyle" : 4,
-							"parameter_mmax" : 12.0
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -2479,7 +2501,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Maximum ramp time",
+					"annotation" : "PitchModMax",
 					"id" : "obj-122",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -2492,6 +2514,7 @@
 					"prototypename" : "Respect",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 3000.0,
 							"parameter_initial" : [ 500.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
@@ -2499,8 +2522,7 @@
 							"parameter_longname" : "PitchModMax",
 							"parameter_units" : "mc",
 							"parameter_steps" : 301,
-							"parameter_unitstyle" : 2,
-							"parameter_mmax" : 3000.0
+							"parameter_unitstyle" : 2
 						}
 
 					}
@@ -2511,7 +2533,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Minimum ramp time",
+					"annotation" : "PitchModMin",
 					"id" : "obj-123",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -2524,6 +2546,7 @@
 					"prototypename" : "Respect",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 3000.0,
 							"parameter_initial" : [ 200.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
@@ -2531,8 +2554,7 @@
 							"parameter_longname" : "PitchModMin",
 							"parameter_units" : "mc",
 							"parameter_steps" : 301,
-							"parameter_unitstyle" : 2,
-							"parameter_mmax" : 3000.0
+							"parameter_unitstyle" : 2
 						}
 
 					}
@@ -2543,7 +2565,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Max transposition",
+					"annotation" : "PitchModMaxTrans",
 					"id" : "obj-124",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -2556,14 +2578,14 @@
 					"prototypename" : "Respect",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 2400.0,
 							"parameter_initial" : [ 200.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "PitchModMaxTrans",
 							"parameter_longname" : "PitchModMaxTrans",
 							"parameter_units" : "ct",
-							"parameter_unitstyle" : 9,
-							"parameter_mmax" : 2400.0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -2574,7 +2596,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Enable random pitch modulation",
+					"annotation" : "PitchMod",
 					"automation" : "Off",
 					"automationon" : "On",
 					"id" : "obj-125",
@@ -2588,13 +2610,13 @@
 					"presentation_rect" : [ 583.0, 38.0, 32.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "PitchMod",
 							"parameter_longname" : "PitchMod",
-							"parameter_enum" : [ "Off", "On" ],
-							"parameter_mmax" : 1.0
+							"parameter_enum" : [ "Off", "On" ]
 						}
 
 					}
@@ -2635,7 +2657,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Maximum speed",
+					"annotation" : "SpeedModMax",
 					"id" : "obj-93",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -2648,14 +2670,14 @@
 					"prototypename" : "Respect",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 100.0,
 							"parameter_initial" : [ 50 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "SpeedModMax",
 							"parameter_longname" : "SpeedModMax",
 							"parameter_units" : "mc",
-							"parameter_unitstyle" : 5,
-							"parameter_mmax" : 100.0
+							"parameter_unitstyle" : 5
 						}
 
 					}
@@ -2666,7 +2688,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Minimum speed",
+					"annotation" : "SpeedModMin",
 					"id" : "obj-92",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -2679,14 +2701,14 @@
 					"prototypename" : "Respect",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 100.0,
 							"parameter_initial" : [ 20 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "SpeedModMin",
 							"parameter_longname" : "SpeedModMin",
 							"parameter_units" : "mc",
-							"parameter_unitstyle" : 5,
-							"parameter_mmax" : 100.0
+							"parameter_unitstyle" : 5
 						}
 
 					}
@@ -2697,7 +2719,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Max delay time",
+					"annotation" : "SpeedModMaxDel",
 					"id" : "obj-91",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -2710,6 +2732,7 @@
 					"prototypename" : "Respect",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 3000.0,
 							"parameter_initial" : [ 100.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
@@ -2717,8 +2740,7 @@
 							"parameter_longname" : "SpeedModMaxDel",
 							"parameter_units" : "mc",
 							"parameter_steps" : 301,
-							"parameter_unitstyle" : 2,
-							"parameter_mmax" : 3000.0
+							"parameter_unitstyle" : 2
 						}
 
 					}
@@ -2729,7 +2751,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Enable random speed modulation",
+					"annotation" : "SpeedMod",
 					"automation" : "Off",
 					"automationon" : "On",
 					"id" : "obj-90",
@@ -2743,13 +2765,13 @@
 					"presentation_rect" : [ 479.0, 38.0, 32.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "SpeedMod",
 							"parameter_longname" : "SpeedMod",
-							"parameter_enum" : [ "Off", "On" ],
-							"parameter_mmax" : 1.0
+							"parameter_enum" : [ "Off", "On" ]
 						}
 
 					}
@@ -2773,8 +2795,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 25.0, 69.0, 133.0, 200.0 ],
@@ -2979,8 +3002,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 25.0, 69.0, 133.0, 200.0 ],
@@ -3185,8 +3209,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 25.0, 69.0, 133.0, 200.0 ],
@@ -3391,8 +3416,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 25.0, 69.0, 133.0, 200.0 ],
@@ -3586,7 +3612,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Adjust delay of harmonizer 4",
+					"annotation" : "Del4",
 					"id" : "obj-60",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -3599,6 +3625,7 @@
 					"prototypename" : "Respect",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 3000.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
@@ -3606,8 +3633,7 @@
 							"parameter_longname" : "Del4",
 							"parameter_units" : "mc",
 							"parameter_steps" : 301,
-							"parameter_unitstyle" : 2,
-							"parameter_mmax" : 3000.0
+							"parameter_unitstyle" : 2
 						}
 
 					}
@@ -3618,7 +3644,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Adjust delay of harmonizer 3",
+					"annotation" : "Del3",
 					"id" : "obj-61",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -3631,6 +3657,7 @@
 					"prototypename" : "Respect",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 3000.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
@@ -3638,8 +3665,7 @@
 							"parameter_longname" : "Del3",
 							"parameter_units" : "mc",
 							"parameter_steps" : 301,
-							"parameter_unitstyle" : 2,
-							"parameter_mmax" : 3000.0
+							"parameter_unitstyle" : 2
 						}
 
 					}
@@ -3650,7 +3676,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Adjust delay of harmonizer 2",
+					"annotation" : "Del2",
 					"id" : "obj-62",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -3663,6 +3689,7 @@
 					"prototypename" : "Respect",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 3000.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
@@ -3670,8 +3697,7 @@
 							"parameter_longname" : "Del2",
 							"parameter_units" : "mc",
 							"parameter_steps" : 301,
-							"parameter_unitstyle" : 2,
-							"parameter_mmax" : 3000.0
+							"parameter_unitstyle" : 2
 						}
 
 					}
@@ -3710,7 +3736,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Adjust delay of harmonizer 1",
+					"annotation" : "Del1",
 					"id" : "obj-66",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -3723,6 +3749,7 @@
 					"prototypename" : "Respect",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 3000.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
@@ -3730,8 +3757,7 @@
 							"parameter_longname" : "Del1",
 							"parameter_units" : "mc",
 							"parameter_steps" : 301,
-							"parameter_unitstyle" : 2,
-							"parameter_mmax" : 3000.0
+							"parameter_unitstyle" : 2
 						}
 
 					}
@@ -3770,7 +3796,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Adjust panning of harmonizer 4",
+					"annotation" : "Pan4",
 					"id" : "obj-31",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -3783,14 +3809,14 @@
 					"prototypename" : "pan",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 50.0,
 							"parameter_mmin" : -50.0,
 							"parameter_initial" : [ 50 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Pan4",
 							"parameter_longname" : "Pan4",
-							"parameter_unitstyle" : 6,
-							"parameter_mmax" : 50.0
+							"parameter_unitstyle" : 6
 						}
 
 					}
@@ -3816,7 +3842,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Adjust panning of harmonizer 3",
+					"annotation" : "Pan3",
 					"id" : "obj-47",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -3829,14 +3855,14 @@
 					"prototypename" : "pan",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 50.0,
 							"parameter_mmin" : -50.0,
 							"parameter_initial" : [ 20 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Pan3",
 							"parameter_longname" : "Pan3",
-							"parameter_unitstyle" : 6,
-							"parameter_mmax" : 50.0
+							"parameter_unitstyle" : 6
 						}
 
 					}
@@ -3862,7 +3888,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Adjust panning of harmonizer 2",
+					"annotation" : "Pan2",
 					"id" : "obj-54",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -3875,14 +3901,14 @@
 					"prototypename" : "pan",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 50.0,
 							"parameter_mmin" : -50.0,
 							"parameter_initial" : [ -20 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Pan2",
 							"parameter_longname" : "Pan2",
-							"parameter_unitstyle" : 6,
-							"parameter_mmax" : 50.0
+							"parameter_unitstyle" : 6
 						}
 
 					}
@@ -3908,7 +3934,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Adjust panning of harmonizer 1",
+					"annotation" : "Pan1",
 					"id" : "obj-56",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -3921,14 +3947,14 @@
 					"prototypename" : "pan",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 50.0,
 							"parameter_mmin" : -50.0,
 							"parameter_initial" : [ -50 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Pan1",
 							"parameter_longname" : "Pan1",
-							"parameter_unitstyle" : 6,
-							"parameter_mmax" : 50.0
+							"parameter_unitstyle" : 6
 						}
 
 					}
@@ -3954,7 +3980,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Adjust gain of harmonizer 4",
+					"annotation" : "Gain4",
 					"clip_size" : 1,
 					"display_range" : [ -70.0, 30.0 ],
 					"id" : "obj-67",
@@ -3969,14 +3995,14 @@
 					"prototypename" : "M4L.live.gain~.V.extended",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 12.0,
 							"parameter_mmin" : -70.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Gain4",
 							"parameter_longname" : "Gain4",
-							"parameter_unitstyle" : 4,
-							"parameter_mmax" : 12.0
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -3987,7 +4013,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Adjust gain of harmonizer 3",
+					"annotation" : "Gain3",
 					"clip_size" : 1,
 					"display_range" : [ -70.0, 30.0 ],
 					"id" : "obj-69",
@@ -4002,14 +4028,14 @@
 					"prototypename" : "M4L.live.gain~.V.extended",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 12.0,
 							"parameter_mmin" : -70.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Gain3",
 							"parameter_longname" : "Gain3",
-							"parameter_unitstyle" : 4,
-							"parameter_mmax" : 12.0
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -4020,7 +4046,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Adjust gain of harmonizer 2",
+					"annotation" : "Gain2",
 					"clip_size" : 1,
 					"display_range" : [ -70.0, 30.0 ],
 					"id" : "obj-70",
@@ -4035,14 +4061,14 @@
 					"prototypename" : "M4L.live.gain~.V.extended",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 12.0,
 							"parameter_mmin" : -70.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Gain2",
 							"parameter_longname" : "Gain2",
-							"parameter_unitstyle" : 4,
-							"parameter_mmax" : 12.0
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -4053,7 +4079,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Adjust the balance between direct and effect signals",
+					"annotation" : "Dry/Wet",
 					"id" : "obj-73",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -4065,13 +4091,13 @@
 					"presentation_rect" : [ 868.0, 3.0, 53.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 100.0,
 							"parameter_initial" : [ 100 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Dry/Wet",
 							"parameter_longname" : "Dry/Wet",
-							"parameter_unitstyle" : 5,
-							"parameter_mmax" : 100.0
+							"parameter_unitstyle" : 5
 						}
 
 					}
@@ -4222,7 +4248,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 74.75, 36.0, 18.0, 18.0 ]
 				}
 
@@ -4234,7 +4260,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 42.75, 36.0, 18.0, 18.0 ]
 				}
 
@@ -5947,6 +5973,92 @@
 					"source" : [ "obj-95", 0 ]
 				}
 
+			}
+ ],
+		"parameters" : 		{
+			"obj-146" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-93" : [ "SpeedModMax", "SpeedModMax", 0 ],
+			"obj-199" : [ "Trans3", "Trans3", 0 ],
+			"obj-66" : [ "Del1", "Del1", 0 ],
+			"obj-159" : [ "Freq2", "Freq2", 0 ],
+			"obj-69" : [ "Gain3", "Gain3", 0 ],
+			"obj-183" : [ "Mode4", "Mode4", 0 ],
+			"obj-125" : [ "PitchMod", "PitchMod", 0 ],
+			"obj-154" : [ "Resp2", "Resp2", 0 ],
+			"obj-149" : [ "Ingain", "Ingain", 0 ],
+			"obj-91" : [ "SpeedModMaxDel", "SpeedModMaxDel", 0 ],
+			"obj-198" : [ "Trans4", "Trans4", 0 ],
+			"obj-62" : [ "Del2", "Del2", 0 ],
+			"obj-195" : [ "Freq3", "Freq3", 0 ],
+			"obj-67" : [ "Gain4", "Gain4", 0 ],
+			"obj-56" : [ "Pan1", "Pan1", 0 ],
+			"obj-122" : [ "PitchModMax", "PitchModMax", 0 ],
+			"obj-207" : [ "Resp3", "Resp3", 0 ],
+			"obj-133" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-104" : [ "Outgain", "Outgain", 0 ],
+			"obj-92" : [ "SpeedModMin", "SpeedModMin", 0 ],
+			"obj-61" : [ "Del3", "Del3", 0 ],
+			"obj-194" : [ "Freq4", "Freq4", 0 ],
+			"obj-150" : [ "Mode1", "Mode1", 0 ],
+			"obj-54" : [ "Pan2", "Pan2", 0 ],
+			"obj-124" : [ "PitchModMaxTrans", "PitchModMaxTrans", 0 ],
+			"obj-206" : [ "Resp4", "Resp4", 0 ],
+			"obj-130" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-152" : [ "Trans1", "Trans1", 0 ],
+			"obj-60" : [ "Del4", "Del4", 0 ],
+			"obj-128" : [ "Gain1", "Gain1", 0 ],
+			"obj-171" : [ "Mode2", "Mode2", 0 ],
+			"obj-47" : [ "Pan3", "Pan3", 0 ],
+			"obj-123" : [ "PitchModMin", "PitchModMin", 0 ],
+			"obj-127" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-90" : [ "SpeedMod", "SpeedMod", 0 ],
+			"obj-73" : [ "Dry/Wet", "Dry/Wet", 0 ],
+			"obj-153" : [ "Trans2", "Trans2", 0 ],
+			"obj-160" : [ "Freq1", "Freq1", 0 ],
+			"obj-70" : [ "Gain2", "Gain2", 0 ],
+			"obj-200" : [ "Mode3", "Mode3", 0 ],
+			"obj-31" : [ "Pan4", "Pan4", 0 ],
+			"obj-165" : [ "Resp1", "Resp1", 0 ]
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "M4L.bal2~.maxpat",
+				"bootpath" : "/Applications/Max 6.1/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1/patches/m4l-patches/Tools resources",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "M4L.pan1~.maxpat",
+				"bootpath" : "/Applications/Max 6.1/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1/patches/m4l-patches/Tools resources",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Psychoirtrist4Preset.json",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"patcherrelativepath" : "../../JSON",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.m.fgraph.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.m.preset.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "psychoirtrist~.mxo",
+				"type" : "iLaX"
 			}
  ]
 	}

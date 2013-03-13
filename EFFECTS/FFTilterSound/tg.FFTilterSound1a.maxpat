@@ -3,11 +3,12 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 8
+			"minor" : 1,
+			"revision" : 0,
+			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 248.0, 44.0, 725.0, 171.0 ],
+		"rect" : [ 53.0, 44.0, 725.0, 171.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -17,7 +18,7 @@
 		"gridonopen" : 0,
 		"gridsize" : [ 15.0, 15.0 ],
 		"gridsnaponopen" : 0,
-		"statusbarvisible" : 2,
+		"statusbarvisible" : 1,
 		"toolbarvisible" : 0,
 		"boxanimatetime" : 200,
 		"imprint" : 0,
@@ -270,6 +271,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Shift",
 					"id" : "obj-23",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -299,6 +301,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Stretch",
 					"id" : "obj-19",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -329,6 +332,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Pow",
 					"id" : "obj-18",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -401,6 +405,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "FilterMode",
 					"id" : "obj-4",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -482,6 +487,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Mean",
 					"id" : "obj-157",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -567,6 +573,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "iSlope",
 					"id" : "obj-258",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -592,6 +599,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "iDuration",
 					"fontname" : "Arial Bold",
 					"id" : "obj-146",
 					"maxclass" : "live.dial",
@@ -638,6 +646,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "iGrain",
 					"id" : "obj-128",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -683,6 +692,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "iPow",
 					"id" : "obj-112",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -711,6 +721,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Denoise",
 					"fontname" : "Arial Bold",
 					"id" : "obj-100",
 					"maxclass" : "live.dial",
@@ -855,6 +866,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Noise",
 					"automation" : "Off",
 					"automationon" : "On",
 					"id" : "obj-7",
@@ -960,6 +972,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "ForceFilter",
 					"id" : "obj-127",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -1001,8 +1014,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 25.0, 69.0, 640.0, 480.0 ],
@@ -1409,6 +1423,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "InverseSource",
 					"automation" : "Normal",
 					"automationon" : "Inverse",
 					"id" : "obj-96",
@@ -1487,6 +1502,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "SourceGain",
 					"clip_size" : 1,
 					"display_range" : [ -70.0, 30.0 ],
 					"id" : "obj-114",
@@ -1561,6 +1577,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "ReceiveEnable",
 					"automation" : "Off",
 					"automationon" : "On",
 					"id" : "obj-118",
@@ -1934,7 +1951,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u059006209"
+					"varname" : "u770007875"
 				}
 
 			}
@@ -2054,6 +2071,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "FilterGain",
 					"id" : "obj-67",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -2083,6 +2101,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "FilterFreq",
 					"id" : "obj-70",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -2111,6 +2130,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "FilterQ",
 					"id" : "obj-72",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -2122,6 +2142,7 @@
 					"presentation_rect" : [ 442.0, 20.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_units" : "q",
 							"parameter_exponent" : 5.0,
 							"parameter_unitstyle" : 1,
 							"parameter_mmax" : 22000.0,
@@ -2129,8 +2150,7 @@
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FilterQ",
-							"parameter_longname" : "FilterQ",
-							"parameter_units" : "q"
+							"parameter_longname" : "FilterQ"
 						}
 
 					}
@@ -2241,6 +2261,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Freeze",
 					"automation" : "freeze",
 					"automationon" : "freeze",
 					"id" : "obj-101",
@@ -2271,6 +2292,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "FeedMax",
 					"fontname" : "Arial Bold",
 					"id" : "obj-98",
 					"maxclass" : "live.dial",
@@ -2300,6 +2322,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "DelMax",
 					"fontname" : "Arial Bold",
 					"id" : "obj-89",
 					"maxclass" : "live.dial",
@@ -2330,6 +2353,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Outgain",
 					"clip_size" : 1,
 					"display_range" : [ -70.0, 30.0 ],
 					"id" : "obj-14",
@@ -2362,6 +2386,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Dry/wet",
 					"id" : "obj-12",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -2423,6 +2448,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "FiltGain",
 					"clip_size" : 1,
 					"display_range" : [ -70.0, 30.0 ],
 					"id" : "obj-123",
@@ -3476,37 +3502,37 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-157" : [ "Mean", "Mean", 0 ],
-			"obj-128" : [ "iGrain", "iGrain", 0 ],
-			"obj-7" : [ "Noise", "Noise", 0 ],
-			"obj-4" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-118" : [ "ReceiveEnable", "ReceiveEnable", 0 ],
-			"obj-18" : [ "Pow", "Pow", 0 ],
-			"obj-112" : [ "iPow", "iPow", 0 ],
 			"obj-100" : [ "Denoise", "Denoise", 0 ],
-			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-101" : [ "Freeze", "Freeze", 0 ],
-			"obj-89" : [ "DelMax", "DelMax", 0 ],
-			"obj-98" : [ "FeedMax", "FeedMax", 0 ],
 			"obj-123" : [ "FiltGain", "FiltGain", 0 ],
+			"obj-118" : [ "ReceiveEnable", "ReceiveEnable", 0 ],
+			"obj-112" : [ "iPow", "iPow", 0 ],
+			"obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-127" : [ "ForceFilter", "ForceFilter", 0 ],
 			"obj-114" : [ "SourceGain", "SourceGain", 0 ],
 			"obj-258" : [ "iSlope", "iSlope", 0 ],
-			"obj-121" : [ "Filter", "Filter", 0 ],
 			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-127" : [ "ForceFilter", "ForceFilter", 0 ],
-			"obj-19" : [ "Stretch", "Stretch", 0 ],
-			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-89" : [ "DelMax", "DelMax", 0 ],
+			"obj-23" : [ "Shift", "Shift", 0 ],
 			"obj-96" : [ "InverseSource", "InverseSource", 0 ],
+			"obj-101" : [ "Freeze", "Freeze", 0 ],
+			"obj-19" : [ "Stretch", "Stretch", 0 ],
+			"obj-18" : [ "Pow", "Pow", 0 ],
+			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-157" : [ "Mean", "Mean", 0 ],
 			"obj-146" : [ "iDuration", "iDuration", 0 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-23" : [ "Shift", "Shift", 0 ]
+			"obj-4" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-7" : [ "Noise", "Noise", 0 ],
+			"obj-128" : [ "iGrain", "iGrain", 0 ],
+			"obj-98" : [ "FeedMax", "FeedMax", 0 ],
+			"obj-121" : [ "Filter", "Filter", 0 ],
+			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-72" : [ "FilterQ", "FilterQ", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max6/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3525,23 +3551,16 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "AtodB",
-				"bootpath" : "/Applications/Max6/patches/docs/refpages/max-ref",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/docs/refpages/max-ref",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "M4L.gain2~.maxpat",
-				"bootpath" : "/Applications/Max6/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.SpecDelGenInterpolAnalysis1.pfft.maxpat",
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/FFTilterSound",
-				"patcherrelativepath" : "",
+				"patcherrelativepath" : "./",
 				"type" : "JSON",
 				"implicit" : 1
 			}

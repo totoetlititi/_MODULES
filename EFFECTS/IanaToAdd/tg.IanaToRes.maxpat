@@ -3,8 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 8
+			"minor" : 1,
+			"revision" : 0,
+			"architecture" : "x86"
 		}
 ,
 		"rect" : [ 97.0, 44.0, 1259.0, 172.0 ],
@@ -17,7 +18,7 @@
 		"gridonopen" : 0,
 		"gridsize" : [ 8.0, 8.0 ],
 		"gridsnaponopen" : 0,
-		"statusbarvisible" : 2,
+		"statusbarvisible" : 1,
 		"toolbarvisible" : 0,
 		"boxanimatetime" : 200,
 		"imprint" : 0,
@@ -40,8 +41,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 856.0, 118.0, 684.0, 830.0 ],
@@ -385,8 +387,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 8
+											"minor" : 1,
+											"revision" : 0,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 425.0, 142.0, 1001.0, 657.0 ],
@@ -1608,8 +1611,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 856.0, 118.0, 684.0, 830.0 ],
@@ -1953,8 +1957,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 8
+											"minor" : 1,
+											"revision" : 0,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 425.0, 142.0, 1001.0, 657.0 ],
@@ -3401,6 +3406,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Ingain",
 					"id" : "obj-233",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -3412,14 +3418,14 @@
 					"presentation_rect" : [ 818.5, 6.0, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Ingain",
-							"parameter_longname" : "Ingain",
 							"parameter_unitstyle" : 4,
 							"parameter_mmax" : 60.0,
 							"parameter_mmin" : -60.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Ingain",
+							"parameter_longname" : "Ingain"
 						}
 
 					}
@@ -3444,7 +3450,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Orders whether or not to keep partials under the threshold of hearing",
+					"annotation" : "resClear",
 					"automation" : "Off",
 					"automationon" : "On",
 					"id" : "obj-231",
@@ -3459,14 +3465,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "resClear",
-							"parameter_longname" : "resClear",
 							"parameter_speedlim" : 0.0,
 							"parameter_enum" : [ "Off", "On" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "resClear",
+							"parameter_longname" : "resClear"
 						}
 
 					}
@@ -3598,7 +3604,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Sets the rate of the analysis auto-triggering",
+					"annotation" : "Jitter",
 					"appearance" : 1,
 					"id" : "obj-226",
 					"maxclass" : "live.numbox",
@@ -3611,14 +3617,14 @@
 					"presentation_rect" : [ 104.0, 70.0, 48.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Jitter",
-							"parameter_longname" : "Jitter",
 							"parameter_exponent" : 2.0,
 							"parameter_unitstyle" : 2,
 							"parameter_mmax" : 3000.0,
 							"parameter_initial" : [ 60 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Jitter",
+							"parameter_longname" : "Jitter"
 						}
 
 					}
@@ -3645,7 +3651,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Orders whether or not to keep partials under the threshold of hearing",
+					"annotation" : "envPower",
 					"automation" : "Off",
 					"automationon" : "On",
 					"id" : "obj-222",
@@ -3660,14 +3666,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "envPower",
-							"parameter_longname" : "envPower",
 							"parameter_speedlim" : 0.0,
 							"parameter_enum" : [ "Off", "On" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_type" : 2,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "envPower",
+							"parameter_longname" : "envPower"
 						}
 
 					}
@@ -3680,6 +3686,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "resBwCoeff",
 					"appearance" : 1,
 					"id" : "obj-221",
 					"maxclass" : "live.numbox",
@@ -3692,15 +3699,15 @@
 					"presentation_rect" : [ 838.0, 96.167236, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "resBwCoeff",
-							"parameter_longname" : "resBwCoeff",
 							"parameter_units" : "x",
 							"parameter_unitstyle" : 9,
 							"parameter_mmax" : 1.0,
 							"parameter_mmin" : 0.000001,
 							"parameter_initial" : [ 0.03 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "resBwCoeff",
+							"parameter_longname" : "resBwCoeff"
 						}
 
 					}
@@ -3739,6 +3746,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "resStep",
 					"appearance" : 1,
 					"id" : "obj-207",
 					"maxclass" : "live.numbox",
@@ -3751,15 +3759,15 @@
 					"presentation_rect" : [ 838.0, 80.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "resStep",
-							"parameter_longname" : "resStep",
 							"parameter_units" : "x",
 							"parameter_unitstyle" : 1,
 							"parameter_mmax" : 100.0,
 							"parameter_mmin" : 1.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "resStep",
+							"parameter_longname" : "resStep"
 						}
 
 					}
@@ -3770,6 +3778,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "resInterp",
 					"appearance" : 1,
 					"id" : "obj-203",
 					"maxclass" : "live.numbox",
@@ -3782,15 +3791,15 @@
 					"presentation_rect" : [ 838.0, 128.167236, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "resInterp",
-							"parameter_longname" : "resInterp",
 							"parameter_units" : "x",
 							"parameter_exponent" : 3.333,
 							"parameter_unitstyle" : 9,
 							"parameter_mmax" : 100.0,
 							"parameter_initial" : [ 0.5 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "resInterp",
+							"parameter_longname" : "resInterp"
 						}
 
 					}
@@ -3900,6 +3909,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "meters-SL",
 					"candicane2" : [ 0.145098, 0.203922, 0.356863, 1.0 ],
 					"candicane3" : [ 0.290196, 0.411765, 0.713726, 1.0 ],
 					"candicane4" : [ 0.439216, 0.619608, 0.070588, 1.0 ],
@@ -4013,6 +4023,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "resVoices",
 					"appearance" : 1,
 					"id" : "obj-103",
 					"maxclass" : "live.numbox",
@@ -4025,14 +4036,14 @@
 					"presentation_rect" : [ 838.0, 112.167236, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "resVoices",
-							"parameter_longname" : "resVoices",
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 32.0,
 							"parameter_mmin" : 1.0,
 							"parameter_initial" : [ 8 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "resVoices",
+							"parameter_longname" : "resVoices"
 						}
 
 					}
@@ -4111,8 +4122,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 856.0, 118.0, 684.0, 830.0 ],
@@ -4456,8 +4468,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 8
+											"minor" : 1,
+											"revision" : 0,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 425.0, 142.0, 1001.0, 657.0 ],
@@ -5759,8 +5772,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 355.0, 75.0, 729.0, 563.0 ],
@@ -6183,8 +6197,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 8
+											"minor" : 1,
+											"revision" : 0,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 596.0, 291.0, 553.0, 474.0 ],
@@ -6350,8 +6365,9 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 6,
-															"minor" : 0,
-															"revision" : 8
+															"minor" : 1,
+															"revision" : 0,
+															"architecture" : "x86"
 														}
 ,
 														"rect" : [ 50.0, 94.0, 506.0, 446.0 ],
@@ -6563,8 +6579,9 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 6,
-																			"minor" : 0,
-																			"revision" : 8
+																			"minor" : 1,
+																			"revision" : 0,
+																			"architecture" : "x86"
 																		}
 ,
 																		"rect" : [ 75.0, 119.0, 383.0, 321.0 ],
@@ -7784,7 +7801,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Orders whether or not to keep partials under the threshold of hearing",
+					"annotation" : "envStretch",
 					"automation" : "Off",
 					"automationon" : "On",
 					"id" : "obj-148",
@@ -7799,14 +7816,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "envStretch",
-							"parameter_longname" : "envStretch",
 							"parameter_speedlim" : 0.0,
 							"parameter_enum" : [ "Off", "On" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_type" : 2,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "envStretch",
+							"parameter_longname" : "envStretch"
 						}
 
 					}
@@ -7819,6 +7836,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "envFactor",
 					"appearance" : 1,
 					"id" : "obj-150",
 					"maxclass" : "live.numbox",
@@ -7831,15 +7849,15 @@
 					"presentation_rect" : [ 703.0, 72.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "envFactor",
-							"parameter_longname" : "envFactor",
 							"parameter_units" : "x",
 							"parameter_exponent" : 3.333,
 							"parameter_unitstyle" : 9,
 							"parameter_mmax" : 100.0,
 							"parameter_initial" : [ 8 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "envFactor",
+							"parameter_longname" : "envFactor"
 						}
 
 					}
@@ -7850,7 +7868,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Sets the rate of the analysis auto-triggering",
+					"annotation" : "envRate",
 					"appearance" : 1,
 					"id" : "obj-183",
 					"maxclass" : "live.numbox",
@@ -7863,15 +7881,15 @@
 					"presentation_rect" : [ 703.0, 56.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "envRate",
-							"parameter_longname" : "envRate",
 							"parameter_exponent" : 3.333,
 							"parameter_unitstyle" : 2,
 							"parameter_mmax" : 3000.0,
 							"parameter_mmin" : 5.0,
 							"parameter_initial" : [ 10 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "envRate",
+							"parameter_longname" : "envRate"
 						}
 
 					}
@@ -7882,7 +7900,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Output pitch-shifting in Herz",
+					"annotation" : "envCutoff",
 					"appearance" : 1,
 					"id" : "obj-184",
 					"maxclass" : "live.numbox",
@@ -7895,14 +7913,14 @@
 					"presentation_rect" : [ 703.0, 40.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "envCutoff",
-							"parameter_longname" : "envCutoff",
 							"parameter_exponent" : 2.0,
 							"parameter_unitstyle" : 3,
 							"parameter_mmax" : 1000.0,
 							"parameter_initial" : [ 50 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "envCutoff",
+							"parameter_longname" : "envCutoff"
 						}
 
 					}
@@ -8265,6 +8283,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Outgain",
 					"clip_size" : 1,
 					"display_range" : [ -70.0, 30.0 ],
 					"id" : "obj-165",
@@ -8279,14 +8298,14 @@
 					"prototypename" : "M4L.live.gain~.V.extended",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Outgain",
-							"parameter_longname" : "Outgain",
 							"parameter_unitstyle" : 4,
 							"parameter_mmax" : 30.0,
 							"parameter_mmin" : -70.0,
 							"parameter_initial" : [ -70 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Outgain",
+							"parameter_longname" : "Outgain"
 						}
 
 					}
@@ -8529,7 +8548,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u659004575"
+					"varname" : "u213000769"
 				}
 
 			}
@@ -8560,6 +8579,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "FilterMode",
 					"id" : "obj-152",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -8571,12 +8591,12 @@
 					"presentation_rect" : [ 1013.857178, 4.0, 71.642853, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "FilterMode",
-							"parameter_longname" : "FilterMode",
 							"parameter_enum" : [ "display", "lowpass", "highpass", "bandpass", "bandstop", "peaknotch", "lowshelf", "highshelf", "resonant", "allpass" ],
 							"parameter_initial" : [ 5.0 ],
 							"parameter_type" : 2,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "FilterMode",
+							"parameter_longname" : "FilterMode"
 						}
 
 					}
@@ -8706,6 +8726,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "FilterGain",
 					"id" : "obj-160",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -8717,14 +8738,14 @@
 					"presentation_rect" : [ 1045.5, 20.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "FilterGain",
-							"parameter_longname" : "FilterGain",
 							"parameter_unitstyle" : 4,
 							"parameter_mmax" : 80.0,
 							"parameter_mmin" : -80.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "FilterGain",
+							"parameter_longname" : "FilterGain"
 						}
 
 					}
@@ -8735,6 +8756,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "FilterFreq",
 					"id" : "obj-161",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -8746,13 +8768,13 @@
 					"presentation_rect" : [ 917.5, 20.0, 49.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "FilterFreq",
-							"parameter_longname" : "FilterFreq",
 							"parameter_unitstyle" : 3,
 							"parameter_mmax" : 22050.0,
 							"parameter_initial" : [ 1000.0 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "FilterFreq",
+							"parameter_longname" : "FilterFreq"
 						}
 
 					}
@@ -8763,6 +8785,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "FilterQ",
 					"id" : "obj-162",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -8774,15 +8797,15 @@
 					"presentation_rect" : [ 981.5, 20.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "FilterQ",
-							"parameter_longname" : "FilterQ",
 							"parameter_units" : "q",
 							"parameter_exponent" : 5.0,
 							"parameter_unitstyle" : 1,
 							"parameter_mmax" : 22000.0,
 							"parameter_initial" : [ 0.3 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "FilterQ",
+							"parameter_longname" : "FilterQ"
 						}
 
 					}
@@ -8850,8 +8873,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 560.0, 190.0, 326.0, 233.0 ],
@@ -9263,7 +9287,7 @@
 , 			{
 				"box" : 				{
 					"activebgoncolor" : [ 0.396078, 1.0, 0.396078, 1.0 ],
-					"annotation" : "Allows to send partials lists remotely to a Iana To MIDI device using the named data bus.",
+					"annotation" : "SendData",
 					"automation" : "Off",
 					"automationon" : "On",
 					"id" : "obj-66",
@@ -9278,14 +9302,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "SendData",
-							"parameter_longname" : "SendData",
 							"parameter_speedlim" : 0.0,
 							"parameter_enum" : [ "Off", "On" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "SendData",
+							"parameter_longname" : "SendData"
 						}
 
 					}
@@ -9312,7 +9336,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Partials analysis can be sent remotely from the Iana Additive device to the Iana To MIDI device using a named data bus.",
+					"annotation" : "Send",
 					"border" : 1.0,
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
@@ -9332,12 +9356,12 @@
 					"rounded" : 0.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Send",
-							"parameter_longname" : "Send",
 							"parameter_initial" : [ "nowhere" ],
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_shortname" : "Send",
+							"parameter_longname" : "Send"
 						}
 
 					}
@@ -9488,7 +9512,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Sets the balance between the signal being analyzed and the additive resynthesis",
+					"annotation" : "Dry/wet",
 					"id" : "obj-10",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -9500,13 +9524,13 @@
 					"presentation_rect" : [ 1096.5, 3.0, 48.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Dry/wet",
-							"parameter_longname" : "Dry/wet",
 							"parameter_unitstyle" : 5,
 							"parameter_mmax" : 100.0,
 							"parameter_initial" : [ 100 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Dry/wet",
+							"parameter_longname" : "Dry/wet"
 						}
 
 					}
@@ -9528,8 +9552,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 560.0, 190.0, 456.0, 369.0 ],
@@ -10313,7 +10338,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "This tuning allows sometimes to get rid of clicks on slow machines",
+					"annotation" : "SpeedFactor",
 					"appearance" : 1,
 					"id" : "obj-74",
 					"maxclass" : "live.numbox",
@@ -10326,14 +10351,14 @@
 					"presentation_rect" : [ 184.0, 6.0, 32.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "SpeedFactor",
-							"parameter_longname" : "SpeedFactor",
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 8.0,
 							"parameter_mmin" : 1.0,
 							"parameter_initial" : [ 8 ],
 							"parameter_type" : 1,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "SpeedFactor",
+							"parameter_longname" : "SpeedFactor"
 						}
 
 					}
@@ -10585,7 +10610,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Select which input audio channel(s) to analyze",
+					"annotation" : "InputChannels",
 					"id" : "obj-123",
 					"maxclass" : "live.tab",
 					"numinlets" : 1,
@@ -10597,13 +10622,13 @@
 					"presentation_rect" : [ 64.0, 4.0, 56.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "InputChannels",
-							"parameter_longname" : "InputChannels",
 							"parameter_enum" : [ "L", "R", "LR" ],
 							"parameter_unitstyle" : 0,
 							"parameter_initial" : [ 2 ],
 							"parameter_type" : 2,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "InputChannels",
+							"parameter_longname" : "InputChannels"
 						}
 
 					}
@@ -10627,8 +10652,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 974.0, 189.0, 559.0, 786.0 ],
@@ -11988,7 +12014,7 @@
 , 			{
 				"box" : 				{
 					"activebgoncolor" : [ 0.984314, 0.819608, 0.05098, 1.0 ],
-					"annotation" : "Sync the analysis auto-triggering to the transport",
+					"annotation" : "Sync",
 					"automation" : "Off",
 					"automationon" : "On",
 					"id" : "obj-81",
@@ -12003,14 +12029,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Sync",
-							"parameter_longname" : "Sync",
 							"parameter_speedlim" : 0.0,
 							"parameter_enum" : [ "Off", "On" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Sync",
+							"parameter_longname" : "Sync"
 						}
 
 					}
@@ -12185,7 +12211,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Sets the rate of the analysis auto-triggering",
+					"annotation" : "Rate",
 					"appearance" : 1,
 					"id" : "obj-50",
 					"maxclass" : "live.numbox",
@@ -12198,14 +12224,14 @@
 					"presentation_rect" : [ 104.0, 52.0, 48.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Rate",
-							"parameter_longname" : "Rate",
 							"parameter_unitstyle" : 2,
 							"parameter_mmax" : 3000.0,
 							"parameter_mmin" : 20.0,
 							"parameter_initial" : [ 60 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Rate",
+							"parameter_longname" : "Rate"
 						}
 
 					}
@@ -12216,7 +12242,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Enables automatic analysis triggering",
+					"annotation" : "Metronome",
 					"automation" : "Off",
 					"automationon" : "On",
 					"id" : "obj-49",
@@ -12231,14 +12257,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Metronome",
-							"parameter_longname" : "Metronome",
 							"parameter_speedlim" : 0.0,
 							"parameter_enum" : [ "Off", "On" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Metronome",
+							"parameter_longname" : "Metronome"
 						}
 
 					}
@@ -12283,7 +12309,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Orders whether or not to keep partials under the threshold of hearing",
+					"annotation" : "HearingThreshold",
 					"automation" : "Off",
 					"automationon" : "On",
 					"id" : "obj-44",
@@ -12298,14 +12324,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "HearingThreshold",
-							"parameter_longname" : "HearingThreshold",
 							"parameter_speedlim" : 0.0,
 							"parameter_enum" : [ "Off", "On" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_type" : 2,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "HearingThreshold",
+							"parameter_longname" : "HearingThreshold"
 						}
 
 					}
@@ -12334,7 +12360,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Output pitch-shifting in Herz",
+					"annotation" : "Shift",
 					"appearance" : 1,
 					"id" : "obj-41",
 					"maxclass" : "live.numbox",
@@ -12347,14 +12373,14 @@
 					"presentation_rect" : [ 408.0, 146.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Shift",
-							"parameter_longname" : "Shift",
 							"parameter_unitstyle" : 3,
 							"parameter_mmax" : 10000.0,
 							"parameter_mmin" : -10000.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Shift",
+							"parameter_longname" : "Shift"
 						}
 
 					}
@@ -12381,7 +12407,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Output transposition in semi-tones",
+					"annotation" : "Transpose",
 					"appearance" : 1,
 					"id" : "obj-39",
 					"maxclass" : "live.numbox",
@@ -12394,15 +12420,15 @@
 					"presentation_rect" : [ 408.0, 130.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Transpose",
-							"parameter_longname" : "Transpose",
 							"parameter_units" : "st",
 							"parameter_unitstyle" : 9,
 							"parameter_mmax" : 24.0,
 							"parameter_mmin" : -24.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Transpose",
+							"parameter_longname" : "Transpose"
 						}
 
 					}
@@ -12429,7 +12455,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Output level in dBs",
+					"annotation" : "Level",
 					"appearance" : 1,
 					"id" : "obj-37",
 					"maxclass" : "live.numbox",
@@ -12442,14 +12468,14 @@
 					"presentation_rect" : [ 408.0, 114.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Level",
-							"parameter_longname" : "Level",
 							"parameter_unitstyle" : 4,
 							"parameter_mmax" : 24.0,
 							"parameter_mmin" : -70.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Level",
+							"parameter_longname" : "Level"
 						}
 
 					}
@@ -12476,7 +12502,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Sets how many partials to output",
+					"annotation" : "MaxPartials",
 					"appearance" : 1,
 					"id" : "obj-36",
 					"maxclass" : "live.numbox",
@@ -12489,14 +12515,14 @@
 					"presentation_rect" : [ 408.0, 98.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "MaxPartials",
-							"parameter_longname" : "MaxPartials",
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 200.0,
 							"parameter_mmin" : 1.0,
 							"parameter_initial" : [ 40 ],
 							"parameter_type" : 1,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "MaxPartials",
+							"parameter_longname" : "MaxPartials"
 						}
 
 					}
@@ -12539,7 +12565,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Selects wheter to send all partials or only those percieved according to the theory. LX = perceived level",
+					"annotation" : "Output",
 					"id" : "obj-34",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -12551,12 +12577,12 @@
 					"presentation_rect" : [ 408.0, 66.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Output",
-							"parameter_longname" : "Output",
 							"parameter_enum" : [ "all_peaks", "LX_peaks" ],
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Output",
+							"parameter_longname" : "Output"
 						}
 
 					}
@@ -12583,7 +12609,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Content of the lists sent for each partial. F = frequency, L = Level, LX = perceived level, WS = weight",
+					"annotation" : "Content",
 					"id" : "obj-31",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -12595,12 +12621,12 @@
 					"presentation_rect" : [ 408.0, 82.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Content",
-							"parameter_longname" : "Content",
 							"parameter_enum" : [ "list_nfL", "list_nfLLX", "list_nfLWS" ],
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Content",
+							"parameter_longname" : "Content"
 						}
 
 					}
@@ -12627,7 +12653,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Ordering of the partials before sending them to the output. This order is specially important when the synthesizer is not capable to synthesize all detected partials. F = frequency, L = Level, LX = perceived level, WS = weight.",
+					"annotation" : "Ordering",
 					"id" : "obj-30",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -12639,12 +12665,12 @@
 					"presentation_rect" : [ 408.0, 50.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Ordering",
-							"parameter_longname" : "Ordering",
 							"parameter_enum" : [ "f_order", "L_order", "LX_order", "WS_L_order", "WS_LX_order" ],
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Ordering",
+							"parameter_longname" : "Ordering"
 						}
 
 					}
@@ -12655,7 +12681,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Reference level used to ajust for psychoacoustical absolute values",
+					"annotation" : "RefLevel",
 					"appearance" : 1,
 					"id" : "obj-27",
 					"maxclass" : "live.numbox",
@@ -12668,14 +12694,14 @@
 					"presentation_rect" : [ 256.0, 130.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "RefLevel",
-							"parameter_longname" : "RefLevel",
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 300.0,
 							"parameter_mmin" : -90.0,
 							"parameter_initial" : [ 90 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "RefLevel",
+							"parameter_longname" : "RefLevel"
 						}
 
 					}
@@ -12702,7 +12728,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "The number of points checked to the left and to the right of a frequency bin when searching for peaks",
+					"annotation" : "Width",
 					"appearance" : 1,
 					"id" : "obj-26",
 					"maxclass" : "live.numbox",
@@ -12715,14 +12741,14 @@
 					"presentation_rect" : [ 256.0, 98.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Width",
-							"parameter_longname" : "Width",
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 16.0,
 							"parameter_mmin" : 1.0,
 							"parameter_initial" : [ 2 ],
 							"parameter_type" : 1,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Width",
+							"parameter_longname" : "Width"
 						}
 
 					}
@@ -12749,7 +12775,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Threshold used by peaks detection algorithm (only of use when width is > 1)",
+					"annotation" : "Threshold",
 					"appearance" : 1,
 					"id" : "obj-23",
 					"maxclass" : "live.numbox",
@@ -12762,13 +12788,13 @@
 					"presentation_rect" : [ 256.0, 114.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Threshold",
-							"parameter_longname" : "Threshold",
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 16.0,
 							"parameter_initial" : [ 2 ],
 							"parameter_type" : 1,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Threshold",
+							"parameter_longname" : "Threshold"
 						}
 
 					}
@@ -12811,7 +12837,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Maximum number of partials to search in the spectrum",
+					"annotation" : "MaxPeaks",
 					"appearance" : 1,
 					"id" : "obj-19",
 					"maxclass" : "live.numbox",
@@ -12824,14 +12850,14 @@
 					"presentation_rect" : [ 256.0, 82.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "MaxPeaks",
-							"parameter_longname" : "MaxPeaks",
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 200.0,
 							"parameter_mmin" : 1.0,
 							"parameter_initial" : [ 100 ],
 							"parameter_type" : 1,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "MaxPeaks",
+							"parameter_longname" : "MaxPeaks"
 						}
 
 					}
@@ -12858,7 +12884,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Last peak (highest frequency bin) to search",
+					"annotation" : "LastToSearch",
 					"appearance" : 1,
 					"id" : "obj-18",
 					"maxclass" : "live.numbox",
@@ -12871,13 +12897,13 @@
 					"presentation_rect" : [ 256.0, 66.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "LastToSearch",
-							"parameter_longname" : "LastToSearch",
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 8192.0,
 							"parameter_initial" : [ 1024 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "LastToSearch",
+							"parameter_longname" : "LastToSearch"
 						}
 
 					}
@@ -12888,7 +12914,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "First peak (lowest frequency bin) to search",
+					"annotation" : "FirstToSearch",
 					"appearance" : 1,
 					"id" : "obj-16",
 					"maxclass" : "live.numbox",
@@ -12901,13 +12927,13 @@
 					"presentation_rect" : [ 256.0, 50.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "FirstToSearch",
-							"parameter_longname" : "FirstToSearch",
 							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 8192.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "FirstToSearch",
+							"parameter_longname" : "FirstToSearch"
 						}
 
 					}
@@ -12966,7 +12992,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Downsampling factor for the analysis",
+					"annotation" : "Downsampling",
 					"id" : "obj-9",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -12978,12 +13004,12 @@
 					"presentation_rect" : [ 88.0, 146.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Downsampling",
-							"parameter_longname" : "Downsampling",
 							"parameter_enum" : [ "1", "2", "4" ],
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "Downsampling",
+							"parameter_longname" : "Downsampling"
 						}
 
 					}
@@ -13010,7 +13036,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Sets the type of window for the FFT analysis",
+					"annotation" : "WindowType",
 					"id" : "obj-7",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -13022,12 +13048,12 @@
 					"presentation_rect" : [ 88.0, 130.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "WindowType",
-							"parameter_longname" : "WindowType",
 							"parameter_enum" : [ "hanning", "hamming", "blackman", "cosine", "triangle", "rectangle" ],
 							"parameter_initial" : [ 2.0 ],
 							"parameter_type" : 2,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "WindowType",
+							"parameter_longname" : "WindowType"
 						}
 
 					}
@@ -13070,7 +13096,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Sets the size of the FFT analysis in samples.",
+					"annotation" : "FFTsize",
 					"id" : "obj-3",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -13082,12 +13108,12 @@
 					"presentation_rect" : [ 88.0, 114.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "FFTsize",
-							"parameter_longname" : "FFTsize",
 							"parameter_enum" : [ "128", "256", "512", "1024", "2048", "4096", "8192", "16384" ],
 							"parameter_initial" : [ 4 ],
 							"parameter_type" : 2,
-							"parameter_initial_enable" : 1
+							"parameter_initial_enable" : 1,
+							"parameter_shortname" : "FFTsize",
+							"parameter_longname" : "FFTsize"
 						}
 
 					}
@@ -15258,61 +15284,54 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-41" : [ "Shift", "Shift", 0 ],
-			"obj-39" : [ "Transpose", "Transpose", 0 ],
-			"obj-183" : [ "envRate", "envRate", 0 ],
-			"obj-3" : [ "FFTsize", "FFTsize", 0 ],
-			"obj-203" : [ "resInterp", "resInterp", 0 ],
-			"obj-31" : [ "Content", "Content", 0 ],
-			"obj-161" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-233" : [ "Ingain", "Ingain", 0 ],
-			"obj-19" : [ "MaxPeaks", "MaxPeaks", 0 ],
-			"obj-74" : [ "SpeedFactor", "SpeedFactor", 0 ],
-			"obj-162" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-7" : [ "WindowType", "WindowType", 0 ],
-			"obj-148" : [ "envStretch", "envStretch", 0 ],
-			"obj-207" : [ "resStep", "resStep", 0 ],
-			"obj-160" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-123" : [ "InputChannels", "InputChannels", 0 ],
-			"obj-49" : [ "Metronome", "Metronome", 0 ],
-			"obj-27" : [ "RefLevel", "RefLevel", 0 ],
-			"obj-81" : [ "Sync", "Sync", 0 ],
-			"obj-184" : [ "envCutoff", "envCutoff", 0 ],
-			"obj-103" : [ "resVoices", "resVoices", 0 ],
-			"obj-152" : [ "FilterMode", "FilterMode", 0 ],
 			"obj-18" : [ "LastToSearch", "LastToSearch", 0 ],
 			"obj-30" : [ "Ordering", "Ordering", 0 ],
 			"obj-47" : [ "Send", "Send", 0 ],
 			"obj-23" : [ "Threshold", "Threshold", 0 ],
 			"obj-150" : [ "envFactor", "envFactor", 0 ],
 			"obj-221" : [ "resBwCoeff", "resBwCoeff", 0 ],
-			"obj-226" : [ "Jitter", "Jitter", 0 ],
-			"obj-9" : [ "Downsampling", "Downsampling", 0 ],
+			"obj-3" : [ "FFTsize", "FFTsize", 0 ],
 			"obj-16" : [ "FirstToSearch", "FirstToSearch", 0 ],
 			"obj-37" : [ "Level", "Level", 0 ],
-			"obj-34" : [ "Output", "Output", 0 ],
 			"obj-165" : [ "Outgain", "Outgain", 0 ],
 			"obj-66" : [ "SendData", "SendData", 0 ],
+			"obj-39" : [ "Transpose", "Transpose", 0 ],
 			"obj-222" : [ "envPower", "envPower", 0 ],
 			"obj-231" : [ "resClear", "resClear", 0 ],
-			"obj-10" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-161" : [ "FilterFreq", "FilterFreq", 0 ],
 			"obj-44" : [ "HearingThreshold", "HearingThreshold", 0 ],
 			"obj-36" : [ "MaxPartials", "MaxPartials", 0 ],
+			"obj-34" : [ "Output", "Output", 0 ],
+			"obj-41" : [ "Shift", "Shift", 0 ],
+			"obj-26" : [ "Width", "Width", 0 ],
+			"obj-183" : [ "envRate", "envRate", 0 ],
+			"obj-203" : [ "resInterp", "resInterp", 0 ],
+			"obj-160" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-233" : [ "Ingain", "Ingain", 0 ],
+			"obj-19" : [ "MaxPeaks", "MaxPeaks", 0 ],
 			"obj-50" : [ "Rate", "Rate", 0 ],
-			"obj-26" : [ "Width", "Width", 0 ]
+			"obj-74" : [ "SpeedFactor", "SpeedFactor", 0 ],
+			"obj-7" : [ "WindowType", "WindowType", 0 ],
+			"obj-148" : [ "envStretch", "envStretch", 0 ],
+			"obj-207" : [ "resStep", "resStep", 0 ],
+			"obj-9" : [ "Downsampling", "Downsampling", 0 ],
+			"obj-152" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-123" : [ "InputChannels", "InputChannels", 0 ],
+			"obj-49" : [ "Metronome", "Metronome", 0 ],
+			"obj-27" : [ "RefLevel", "RefLevel", 0 ],
+			"obj-81" : [ "Sync", "Sync", 0 ],
+			"obj-184" : [ "envCutoff", "envCutoff", 0 ],
+			"obj-31" : [ "Content", "Content", 0 ],
+			"obj-103" : [ "resVoices", "resVoices", 0 ],
+			"obj-226" : [ "Jitter", "Jitter", 0 ],
+			"obj-10" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-162" : [ "FilterQ", "FilterQ", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "AtodB",
-				"bootpath" : "/Applications/Max6/patches/docs/refpages/max-ref",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/docs/refpages/max-ref",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max6/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -15340,14 +15359,14 @@
 , 			{
 				"name" : "tg.vstretch.pfft~.maxpat",
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/_Resonators",
-				"patcherrelativepath" : "../_Resonators",
+				"patcherrelativepath" : "./_Resonators",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.resonForIana.poly.maxpat",
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/_Resonators",
-				"patcherrelativepath" : "../_Resonators",
+				"patcherrelativepath" : "./_Resonators",
 				"type" : "JSON",
 				"implicit" : 1
 			}

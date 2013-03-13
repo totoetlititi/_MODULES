@@ -3,8 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 8
+			"minor" : 1,
+			"revision" : 0,
+			"architecture" : "x86"
 		}
 ,
 		"rect" : [ 41.0, 44.0, 645.0, 179.0 ],
@@ -17,7 +18,7 @@
 		"gridonopen" : 0,
 		"gridsize" : [ 15.0, 15.0 ],
 		"gridsnaponopen" : 0,
-		"statusbarvisible" : 2,
+		"statusbarvisible" : 1,
 		"toolbarvisible" : 0,
 		"boxanimatetime" : 200,
 		"imprint" : 0,
@@ -426,6 +427,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "PhraseDuration",
 					"border" : 1.0,
 					"fontface" : 1,
 					"fontname" : "Arial",
@@ -509,6 +511,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "SilenceDuration",
 					"border" : 1.0,
 					"fontface" : 1,
 					"fontname" : "Arial",
@@ -714,6 +717,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "ReceiveFrom",
 					"border" : 1.0,
 					"fontface" : 1,
 					"fontname" : "Arial",
@@ -794,6 +798,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "VibAmp",
 					"border" : 1.0,
 					"fontface" : 1,
 					"fontname" : "Arial",
@@ -874,6 +879,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "VibFreq",
 					"border" : 1.0,
 					"fontface" : 1,
 					"fontname" : "Arial",
@@ -926,6 +932,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Metro",
 					"automation" : "Off",
 					"automationon" : "On",
 					"id" : "obj-116",
@@ -1018,6 +1025,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Speed",
 					"border" : 1.0,
 					"fontface" : 1,
 					"fontname" : "Arial",
@@ -1128,6 +1136,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "ListMax",
 					"id" : "obj-94",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -1157,6 +1166,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "ListMin",
 					"id" : "obj-93",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -1195,8 +1205,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 64.0, 369.0, 640.0, 480.0 ],
@@ -1598,6 +1609,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "CycPar",
 					"id" : "obj-27",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -2264,7 +2276,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u061003408"
+					"varname" : "u015001305"
 				}
 
 			}
@@ -2440,6 +2452,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "FilterMode",
 					"id" : "obj-42",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -2588,6 +2601,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "FilterGain",
 					"id" : "obj-67",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -2617,6 +2631,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "FilterFreq",
 					"id" : "obj-70",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -2645,6 +2660,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "FilterQ",
 					"id" : "obj-72",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -2656,6 +2672,7 @@
 					"presentation_rect" : [ 353.5, 28.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_units" : "q",
 							"parameter_exponent" : 5.0,
 							"parameter_unitstyle" : 1,
 							"parameter_mmax" : 22000.0,
@@ -2663,8 +2680,7 @@
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FilterQ",
-							"parameter_longname" : "FilterQ",
-							"parameter_units" : "q"
+							"parameter_longname" : "FilterQ"
 						}
 
 					}
@@ -2800,6 +2816,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Outgain",
 					"clip_size" : 1,
 					"display_range" : [ -70.0, 30.0 ],
 					"id" : "obj-14",
@@ -2832,6 +2849,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Dry/wet",
 					"id" : "obj-12",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -4258,28 +4276,28 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-94" : [ "ListMax", "ListMax", 0 ],
-			"obj-125" : [ "VibAmp", "VibAmp", 0 ],
-			"obj-116" : [ "Metro", "Metro", 0 ],
-			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-93" : [ "ListMin", "ListMin", 0 ],
-			"obj-121" : [ "VibFreq", "VibFreq", 0 ],
-			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ],
 			"obj-20" : [ "PhraseDuration", "PhraseDuration", 0 ],
-			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-121" : [ "VibFreq", "VibFreq", 0 ],
+			"obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-116" : [ "Metro", "Metro", 0 ],
 			"obj-129" : [ "ReceiveFrom", "ReceiveFrom", 0 ],
-			"obj-188" : [ "Speed", "Speed", 0 ],
-			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
 			"obj-27" : [ "CycPar", "CycPar", 0 ],
 			"obj-15" : [ "SilenceDuration", "SilenceDuration", 0 ],
+			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-94" : [ "ListMax", "ListMax", 0 ],
+			"obj-188" : [ "Speed", "Speed", 0 ],
+			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-93" : [ "ListMin", "ListMin", 0 ],
+			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-125" : [ "VibAmp", "VibAmp", 0 ],
 			"obj-72" : [ "FilterQ", "FilterQ", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max6/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -4305,13 +4323,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "AtodB",
-				"bootpath" : "/Applications/Max6/patches/docs/refpages/max-ref",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/docs/refpages/max-ref",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "tg.random.maxpat",
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
@@ -4327,8 +4338,8 @@
 			}
 , 			{
 				"name" : "M4L.bal1~.maxpat",
-				"bootpath" : "/Applications/Max6/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}

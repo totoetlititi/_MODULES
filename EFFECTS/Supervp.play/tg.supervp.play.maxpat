@@ -3,8 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 8
+			"minor" : 1,
+			"revision" : 0,
+			"architecture" : "x86"
 		}
 ,
 		"rect" : [ 200.0, 44.0, 1238.0, 173.0 ],
@@ -17,7 +18,7 @@
 		"gridonopen" : 0,
 		"gridsize" : [ 15.0, 15.0 ],
 		"gridsnaponopen" : 0,
-		"statusbarvisible" : 2,
+		"statusbarvisible" : 1,
 		"toolbarvisible" : 0,
 		"boxanimatetime" : 200,
 		"imprint" : 0,
@@ -339,8 +340,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 25.0, 69.0, 640.0, 480.0 ],
@@ -1095,6 +1097,7 @@
 , 			{
 				"box" : 				{
 					"activebgoncolor" : [ 1.0, 0.5, 0.0, 1.0 ],
+					"annotation" : "BufAction",
 					"id" : "obj-314",
 					"maxclass" : "live.tab",
 					"numinlets" : 1,
@@ -1107,13 +1110,13 @@
 					"rounded" : 8.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "Stop", "Play", "Record", "RecPlay", "ArmRec", "ArmRecPlay" ],
-							"parameter_unitstyle" : 0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "BufAction",
-							"parameter_longname" : "BufAction"
+							"parameter_longname" : "BufAction",
+							"parameter_enum" : [ "Stop", "Play", "Record", "RecPlay", "ArmRec", "ArmRecPlay" ],
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -1165,8 +1168,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 0.0, 85.0, 1636.0, 780.0 ],
@@ -1335,8 +1339,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 8
+											"minor" : 1,
+											"revision" : 0,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 314.0, 403.0, 451.0, 445.0 ],
@@ -1524,8 +1529,9 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 6,
-															"minor" : 0,
-															"revision" : 8
+															"minor" : 1,
+															"revision" : 0,
+															"architecture" : "x86"
 														}
 ,
 														"rect" : [ 25.0, 69.0, 640.0, 480.0 ],
@@ -2362,8 +2368,8 @@
 									"id" : "obj-32",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 8,
-									"outlettype" : [ "float", "list", "float", "float", "float", "float", "float", "" ],
+									"numoutlets" : 9,
+									"outlettype" : [ "float", "list", "float", "float", "float", "float", "float", "", "int" ],
 									"patching_rect" : [ 643.821167, 439.0, 100.0, 18.0 ],
 									"text" : "info~ #0.buffer~"
 								}
@@ -4442,8 +4448,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 25.0, 69.0, 640.0, 480.0 ],
@@ -4694,6 +4701,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "BufSync",
 					"automation" : "Off",
 					"automationon" : "On",
 					"id" : "obj-354",
@@ -4708,12 +4716,12 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_speedlim" : 0.0,
-							"parameter_enum" : [ "Off", "On" ],
 							"parameter_mmax" : 1.0,
 							"parameter_type" : 2,
 							"parameter_shortname" : "BufSync",
-							"parameter_longname" : "BufSync"
+							"parameter_longname" : "BufSync",
+							"parameter_speedlim" : 0.0,
+							"parameter_enum" : [ "Off", "On" ]
 						}
 
 					}
@@ -4751,8 +4759,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 1006.0, 520.0, 640.0, 480.0 ],
@@ -5083,6 +5092,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "BufSet",
 					"fontname" : "Arial",
 					"fontsize" : 9.0,
 					"frgb" : 0.0,
@@ -5149,6 +5159,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "BufEnd",
 					"appearance" : 1,
 					"id" : "obj-326",
 					"maxclass" : "live.numbox",
@@ -5161,16 +5172,16 @@
 					"presentation_rect" : [ 406.5, 106.5, 36.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_speedlim" : 0.0,
-							"parameter_exponent" : 3.333,
-							"parameter_unitstyle" : 1,
 							"parameter_mmax" : 60000.0,
 							"parameter_initial" : [ 30000 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "BufEnd",
 							"parameter_longname" : "BufEnd",
-							"parameter_units" : "v"
+							"parameter_units" : "v",
+							"parameter_speedlim" : 0.0,
+							"parameter_exponent" : 3.333,
+							"parameter_unitstyle" : 1
 						}
 
 					}
@@ -5197,6 +5208,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "BufBegin",
 					"appearance" : 1,
 					"id" : "obj-324",
 					"maxclass" : "live.numbox",
@@ -5209,16 +5221,16 @@
 					"presentation_rect" : [ 406.5, 77.5, 36.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_speedlim" : 0.0,
-							"parameter_exponent" : 3.333,
-							"parameter_unitstyle" : 1,
 							"parameter_mmax" : 60000.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "BufBegin",
 							"parameter_longname" : "BufBegin",
-							"parameter_units" : "v"
+							"parameter_units" : "v",
+							"parameter_speedlim" : 0.0,
+							"parameter_exponent" : 3.333,
+							"parameter_unitstyle" : 1
 						}
 
 					}
@@ -5240,8 +5252,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 25.0, 69.0, 640.0, 480.0 ],
@@ -5708,8 +5721,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 25.0, 69.0, 640.0, 480.0 ],
@@ -6043,6 +6057,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Buf",
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"frgb" : 0.0,
@@ -6074,6 +6089,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "BufReplace",
 					"fontname" : "Arial",
 					"fontsize" : 9.0,
 					"frgb" : 0.0,
@@ -6295,6 +6311,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "fade-out",
 					"appearance" : 1,
 					"id" : "obj-97",
 					"maxclass" : "live.numbox",
@@ -6307,16 +6324,16 @@
 					"presentation_rect" : [ 350.0, 81.5, 39.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_speedlim" : 0.0,
-							"parameter_exponent" : 4.0,
-							"parameter_unitstyle" : 1,
 							"parameter_mmax" : 30000.0,
 							"parameter_initial" : [ 10 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "fade-out",
 							"parameter_longname" : "fade-out",
-							"parameter_units" : "v"
+							"parameter_units" : "v",
+							"parameter_speedlim" : 0.0,
+							"parameter_exponent" : 4.0,
+							"parameter_unitstyle" : 1
 						}
 
 					}
@@ -6327,6 +6344,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "fade-in",
 					"appearance" : 1,
 					"id" : "obj-100",
 					"maxclass" : "live.numbox",
@@ -6339,16 +6357,16 @@
 					"presentation_rect" : [ 350.0, 48.0, 39.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_speedlim" : 0.0,
-							"parameter_exponent" : 4.0,
-							"parameter_unitstyle" : 1,
 							"parameter_mmax" : 30000.0,
 							"parameter_initial" : [ 10 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "fade-in",
 							"parameter_longname" : "fade-in",
-							"parameter_units" : "v"
+							"parameter_units" : "v",
+							"parameter_speedlim" : 0.0,
+							"parameter_exponent" : 4.0,
+							"parameter_unitstyle" : 1
 						}
 
 					}
@@ -6359,6 +6377,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "nb-shots",
 					"appearance" : 1,
 					"id" : "obj-25",
 					"maxclass" : "live.numbox",
@@ -6371,15 +6390,15 @@
 					"presentation_rect" : [ 406.5, 48.0, 36.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_speedlim" : 0.0,
-							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 100.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_type" : 1,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "nb-shots",
 							"parameter_longname" : "nb-shots",
-							"parameter_units" : "v"
+							"parameter_units" : "v",
+							"parameter_speedlim" : 0.0,
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -6390,6 +6409,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "BufSize",
 					"appearance" : 1,
 					"id" : "obj-26",
 					"maxclass" : "live.numbox",
@@ -6402,16 +6422,16 @@
 					"presentation_rect" : [ 68.0, 48.0, 57.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_speedlim" : 0.0,
-							"parameter_exponent" : 3.333,
-							"parameter_unitstyle" : 2,
 							"parameter_mmax" : 60000.0,
 							"parameter_initial" : [ 30000 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "BufSize",
 							"parameter_longname" : "BufSize",
-							"parameter_units" : "v"
+							"parameter_units" : "v",
+							"parameter_speedlim" : 0.0,
+							"parameter_exponent" : 3.333,
+							"parameter_unitstyle" : 2
 						}
 
 					}
@@ -6422,6 +6442,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "BufSpeed",
 					"appearance" : 1,
 					"id" : "obj-185",
 					"maxclass" : "live.numbox",
@@ -6434,16 +6455,16 @@
 					"presentation_rect" : [ 406.5, 136.5, 36.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_speedlim" : 0.0,
-							"parameter_exponent" : 2.0,
-							"parameter_unitstyle" : 1,
 							"parameter_mmax" : 10.0,
 							"parameter_initial" : [ 1.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "BufSpeed",
 							"parameter_longname" : "BufSpeed",
-							"parameter_units" : "v"
+							"parameter_units" : "v",
+							"parameter_speedlim" : 0.0,
+							"parameter_exponent" : 2.0,
+							"parameter_unitstyle" : 1
 						}
 
 					}
@@ -6532,6 +6553,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "BufLoop",
 					"automation" : "Off",
 					"automationon" : "On",
 					"id" : "obj-3",
@@ -6546,12 +6568,12 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_speedlim" : 0.0,
-							"parameter_enum" : [ "Off", "On" ],
 							"parameter_mmax" : 1.0,
 							"parameter_type" : 2,
 							"parameter_shortname" : "BufLoop",
-							"parameter_longname" : "BufLoop"
+							"parameter_longname" : "BufLoop",
+							"parameter_speedlim" : 0.0,
+							"parameter_enum" : [ "Off", "On" ]
 						}
 
 					}
@@ -6660,8 +6682,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 261.0, 207.0, 424.0, 245.0 ],
@@ -7024,8 +7047,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 477.0, 268.0, 424.0, 310.0 ],
@@ -7526,8 +7550,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 569.0, 44.0, 466.0, 303.0 ],
@@ -8122,8 +8147,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 229.0, 229.0, 607.0, 375.0 ],
@@ -8977,7 +9003,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Oversamples the incoming signal by the given factor before processing. The default setting of 0, equivalent to no oversampling, is fine for most cases. The quality difference achieved with oversampling is mostly noticeable with complex material with a broad frequency spectrum such as a full mix or a instrument such as the piano.",
+					"annotation" : "FFTOversamp",
 					"id" : "obj-90",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -8989,13 +9015,13 @@
 					"presentation_rect" : [ 674.5, 17.5, 53.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_defer" : 1,
-							"parameter_enum" : [ "0", "1", "2", "3", "4" ],
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FFTOversamp",
-							"parameter_longname" : "FFTOversamp"
+							"parameter_longname" : "FFTOversamp",
+							"parameter_defer" : 1,
+							"parameter_enum" : [ "0", "1", "2", "3", "4" ]
 						}
 
 					}
@@ -9022,7 +9048,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "This determines how much extraction windows overlap during a given time-frame, in other terms, the update rate of the analysis for a given window size. Increasing this setting usually gives better results but also leads to more CPU resources being used, as more data has to be analyzed.",
+					"annotation" : "Oversampling",
 					"id" : "obj-96",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -9034,13 +9060,13 @@
 					"presentation_rect" : [ 610.5, 17.5, 53.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_defer" : 1,
-							"parameter_enum" : [ "3", "3.5", "4", "4.5", "5", "6" ],
 							"parameter_initial" : [ 2 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Oversampling",
-							"parameter_longname" : "Oversampling"
+							"parameter_longname" : "Oversampling",
+							"parameter_defer" : 1,
+							"parameter_enum" : [ "3", "3.5", "4", "4.5", "5", "6" ]
 						}
 
 					}
@@ -9067,7 +9093,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Determines the time frame base (in samples) used to extract time-localized data in time from the incoming material. As general guidance, window size should be small for fast tempos and larger for slow music.",
+					"annotation" : "WindowSize",
 					"id" : "obj-105",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -9079,13 +9105,13 @@
 					"presentation_rect" : [ 546.5, 17.5, 53.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_defer" : 1,
-							"parameter_enum" : [ "512", "750", "1024", "1250", "1500", "1750", "2048", "2250", "2500", "2750", "3000", "3500", "4096", "5000", "6000", "7000", "8192" ],
 							"parameter_initial" : [ 6.0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "WindowSize",
-							"parameter_longname" : "WindowSize"
+							"parameter_longname" : "WindowSize",
+							"parameter_defer" : 1,
+							"parameter_enum" : [ "512", "750", "1024", "1250", "1500", "1750", "2048", "2250", "2500", "2750", "3000", "3500", "4096", "5000", "6000", "7000", "8192" ]
 						}
 
 					}
@@ -9128,7 +9154,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Preserve stereo image",
+					"annotation" : "PreserveStereo",
 					"appearance" : 1,
 					"automation" : "off",
 					"automationon" : "on",
@@ -9144,15 +9170,15 @@
 					"presentation_rect" : [ 810.5, 21.5, 69.0, 11.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_order" : 1,
-							"parameter_defer" : 1,
-							"parameter_enum" : [ "off", "on" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "PreserveStereo",
-							"parameter_longname" : "PreserveStereo"
+							"parameter_longname" : "PreserveStereo",
+							"parameter_order" : 1,
+							"parameter_defer" : 1,
+							"parameter_enum" : [ "off", "on" ]
 						}
 
 					}
@@ -9165,7 +9191,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Toggles transient processing on and off. You can disable transient processing if you don’t need to treat transient separately from other processes - such as transposition and time stretching, which will allow you to gain a little CPU.",
+					"annotation" : "PreserveTransients",
 					"appearance" : 1,
 					"automation" : "off",
 					"automationon" : "on",
@@ -9181,15 +9207,15 @@
 					"presentation_rect" : [ 810.5, 5.5, 69.0, 11.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_order" : 1,
-							"parameter_defer" : 1,
-							"parameter_enum" : [ "off", "on" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1.0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "PreserveTransients",
-							"parameter_longname" : "PreserveTransients"
+							"parameter_longname" : "PreserveTransients",
+							"parameter_order" : 1,
+							"parameter_defer" : 1,
+							"parameter_enum" : [ "off", "on" ]
 						}
 
 					}
@@ -9220,7 +9246,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Sets the amount of allowed error, in terms of statistical content, at the analyzer stage. This controls how the pitched and noise content are allowed to overlap. Most of the time you can leave this at the default value of 0.1 (10%).",
+					"annotation" : "RemixError",
 					"fontface" : 0,
 					"id" : "obj-114",
 					"maxclass" : "live.slider",
@@ -9233,14 +9259,14 @@
 					"presentation_rect" : [ 823.5, 67.5, 37.0, 95.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_defer" : 1,
-							"parameter_unitstyle" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0.1 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "RemixError",
-							"parameter_longname" : "RemixError"
+							"parameter_longname" : "RemixError",
+							"parameter_defer" : 1,
+							"parameter_unitstyle" : 1
 						}
 
 					}
@@ -9251,7 +9277,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "This setting allows to relax the transient detection scheme by the given amount, to let more of the tail of a transient pass through. The effect is similar to that of the release control found on a classical compressor.",
+					"annotation" : "RemixRelax",
 					"fontface" : 0,
 					"id" : "obj-115",
 					"maxclass" : "live.slider",
@@ -9264,14 +9290,14 @@
 					"presentation_rect" : [ 790.5, 67.5, 36.0, 95.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_defer" : 1,
-							"parameter_unitstyle" : 2,
 							"parameter_mmax" : 100.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "RemixRelax",
-							"parameter_longname" : "RemixRelax"
+							"parameter_longname" : "RemixRelax",
+							"parameter_defer" : 1,
+							"parameter_unitstyle" : 2
 						}
 
 					}
@@ -9282,7 +9308,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Sets the amplitude of the transients components, which have a rapidly changing energy profile. In other words, this is the attack or percussive phase of a sound, if any. Note that Transients are only computed when the transient preservation is turned on.",
+					"annotation" : "RemixTransients",
 					"fontface" : 0,
 					"id" : "obj-116",
 					"maxclass" : "live.slider",
@@ -9295,14 +9321,14 @@
 					"presentation_rect" : [ 754.5, 67.5, 37.0, 95.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_defer" : 1,
-							"parameter_unitstyle" : 1,
 							"parameter_mmax" : 2.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "RemixTransients",
-							"parameter_longname" : "RemixTransients"
+							"parameter_longname" : "RemixTransients",
+							"parameter_defer" : 1,
+							"parameter_unitstyle" : 1
 						}
 
 					}
@@ -9313,7 +9339,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Sets the amplitude of the noise components -  i.e. anything that doesn’t have a defined pitch and does not possess a transient quality.",
+					"annotation" : "RemixNoise",
 					"fontface" : 0,
 					"id" : "obj-117",
 					"maxclass" : "live.slider",
@@ -9326,14 +9352,14 @@
 					"presentation_rect" : [ 719.5, 67.5, 37.0, 95.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_defer" : 1,
-							"parameter_unitstyle" : 1,
 							"parameter_mmax" : 2.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "RemixNoise",
-							"parameter_longname" : "RemixNoise"
+							"parameter_longname" : "RemixNoise",
+							"parameter_defer" : 1,
+							"parameter_unitstyle" : 1
 						}
 
 					}
@@ -9344,7 +9370,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Sets the amplitude of the sinusoidal components. This channel contains the pitched material part, with or without modification.",
+					"annotation" : "RemixSinus",
 					"fontface" : 0,
 					"id" : "obj-119",
 					"maxclass" : "live.slider",
@@ -9357,14 +9383,14 @@
 					"presentation_rect" : [ 684.5, 67.5, 37.0, 95.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_defer" : 1,
-							"parameter_unitstyle" : 1,
 							"parameter_mmax" : 2.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "RemixSinus",
-							"parameter_longname" : "RemixSinus"
+							"parameter_longname" : "RemixSinus",
+							"parameter_defer" : 1,
+							"parameter_unitstyle" : 1
 						}
 
 					}
@@ -9375,7 +9401,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Sets the resynthesis engine for the sinusoidal part",
+					"annotation" : "RemixMode",
 					"id" : "obj-120",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -9387,13 +9413,13 @@
 					"presentation_rect" : [ 798.5, 45.5, 60.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_defer" : 1,
-							"parameter_enum" : [ "vocoder", "additive" ],
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "RemixMode",
-							"parameter_longname" : "RemixMode"
+							"parameter_longname" : "RemixMode",
+							"parameter_defer" : 1,
+							"parameter_enum" : [ "vocoder", "additive" ]
 						}
 
 					}
@@ -9420,7 +9446,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Enables/disables the Remix effect.",
+					"annotation" : "RemixEnable",
 					"automation" : "off",
 					"automationon" : "on",
 					"id" : "obj-122",
@@ -9434,14 +9460,14 @@
 					"presentation_rect" : [ 726.5, 45.5, 28.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_defer" : 1,
-							"parameter_enum" : [ "off", "on" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "RemixEnable",
-							"parameter_longname" : "RemixEnable"
+							"parameter_longname" : "RemixEnable",
+							"parameter_defer" : 1,
+							"parameter_enum" : [ "off", "on" ]
 						}
 
 					}
@@ -9471,7 +9497,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Sets wether or not the spectral envelope is preserved when the global pitch is transposed, and when the transposition of the spectral envelope is disabled.",
+					"annotation" : "EnvPreserve",
 					"appearance" : 1,
 					"automation" : "off",
 					"automationon" : "on",
@@ -9487,15 +9513,15 @@
 					"presentation_rect" : [ 615.5, 47.5, 58.0, 11.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_order" : 1,
-							"parameter_defer" : 1,
-							"parameter_enum" : [ "off", "on" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "EnvPreserve",
-							"parameter_longname" : "EnvPreserve"
+							"parameter_longname" : "EnvPreserve",
+							"parameter_order" : 1,
+							"parameter_defer" : 1,
+							"parameter_enum" : [ "off", "on" ]
 						}
 
 					}
@@ -9573,7 +9599,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Applies a compression/expansion to the spectral envelope , thus changing the global timbre.",
+					"annotation" : "EnvScale",
 					"id" : "obj-133",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -9585,14 +9611,14 @@
 					"presentation_rect" : [ 564.5, 121.5, 44.0, 42.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_defer" : 1,
-							"parameter_unitstyle" : 1,
 							"parameter_mmax" : 2.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "EnvScale",
-							"parameter_longname" : "EnvScale"
+							"parameter_longname" : "EnvScale",
+							"parameter_defer" : 1,
+							"parameter_unitstyle" : 1
 						}
 
 					}
@@ -9605,7 +9631,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Enables/disables spectral envelope compression/expansion",
+					"annotation" : "EnvScaleEnable",
 					"automation" : "off",
 					"automationon" : "on",
 					"id" : "obj-146",
@@ -9619,14 +9645,14 @@
 					"presentation_rect" : [ 530.5, 137.5, 28.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_defer" : 1,
-							"parameter_enum" : [ "off", "on" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "EnvScaleEnable",
-							"parameter_longname" : "EnvScaleEnable"
+							"parameter_longname" : "EnvScaleEnable",
+							"parameter_defer" : 1,
+							"parameter_enum" : [ "off", "on" ]
 						}
 
 					}
@@ -9639,7 +9665,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Enables/disables spectral envelope transposition",
+					"annotation" : "EnvTranspEnable",
 					"automation" : "off",
 					"automationon" : "on",
 					"id" : "obj-147",
@@ -9653,14 +9679,14 @@
 					"presentation_rect" : [ 530.5, 81.5, 28.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_defer" : 1,
-							"parameter_enum" : [ "off", "on" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "EnvTranspEnable",
-							"parameter_longname" : "EnvTranspEnable"
+							"parameter_longname" : "EnvTranspEnable",
+							"parameter_defer" : 1,
+							"parameter_enum" : [ "off", "on" ]
 						}
 
 					}
@@ -9673,7 +9699,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Determines the order or number of coefficients used in the LPC prediction algorithm. The higher this settings, the better the LPC can adapt to the hills and valleys in the spectral envelope, but this also increases the chance of over-adapting to the short-term variations in the signal, which may lead to artifacts.",
+					"annotation" : "EnvLpcOrder",
 					"appearance" : 1,
 					"id" : "obj-148",
 					"maxclass" : "live.numbox",
@@ -9686,14 +9712,14 @@
 					"presentation_rect" : [ 615.5, 145.5, 56.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_defer" : 1,
-							"parameter_unitstyle" : 0,
 							"parameter_mmax" : 1000.0,
 							"parameter_initial" : [ 12 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "EnvLpcOrder",
-							"parameter_longname" : "EnvLpcOrder"
+							"parameter_longname" : "EnvLpcOrder",
+							"parameter_defer" : 1,
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -9720,7 +9746,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "When True Envelope mode is selected, this sets the maximum allowed fundamental frequency to track, depending on the input material. Avoid setting this unnecessarily high as this might increase the possibility of tracking errors.",
+					"annotation" : "EnvMaxFreq",
 					"appearance" : 1,
 					"id" : "obj-150",
 					"maxclass" : "live.numbox",
@@ -9733,14 +9759,14 @@
 					"presentation_rect" : [ 615.5, 113.5, 56.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_defer" : 1,
-							"parameter_unitstyle" : 3,
 							"parameter_mmax" : 4000.0,
 							"parameter_initial" : [ 500 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "EnvMaxFreq",
-							"parameter_longname" : "EnvMaxFreq"
+							"parameter_longname" : "EnvMaxFreq",
+							"parameter_defer" : 1,
+							"parameter_unitstyle" : 3
 						}
 
 					}
@@ -9783,7 +9809,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Sets track analysis to True Envelope mode, an advanced proprietary IRCAM algorithm or to LPC (Linear Predictive Coding, for filter coefficients prediction) mode, which is a classic source-filter estimation method.",
+					"annotation" : "EnvMode",
 					"bordercolor" : [ 0.101961, 0.121569, 0.172549, 0.74902 ],
 					"focusbordercolor" : [ 0.101961, 0.121569, 0.172549, 0.74902 ],
 					"id" : "obj-153",
@@ -9797,13 +9823,13 @@
 					"presentation_rect" : [ 615.5, 81.5, 56.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_defer" : 1,
-							"parameter_enum" : [ "trueenv", "lpc" ],
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "EnvMode",
-							"parameter_longname" : "EnvMode"
+							"parameter_longname" : "EnvMode",
+							"parameter_defer" : 1,
+							"parameter_enum" : [ "trueenv", "lpc" ]
 						}
 
 					}
@@ -9832,7 +9858,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Applies a global frequency-shift of the formant content, independently of pitched and transient content.",
+					"annotation" : "EnvTransp",
 					"id" : "obj-156",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -9844,9 +9870,6 @@
 					"presentation_rect" : [ 558.5, 65.5, 56.0, 42.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_defer" : 1,
-							"parameter_steps" : 193,
-							"parameter_unitstyle" : 9,
 							"parameter_mmax" : 2400.0,
 							"parameter_mmin" : -2400.0,
 							"parameter_initial" : [ 0.0 ],
@@ -9854,7 +9877,10 @@
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "EnvTransp",
 							"parameter_longname" : "EnvTransp",
-							"parameter_units" : "ct"
+							"parameter_units" : "ct",
+							"parameter_defer" : 1,
+							"parameter_steps" : 193,
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -9867,7 +9893,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Sets the internal analysis/re-synthesis engine type to use. - time (for time-domain): highest quality and CPU utilization - freq (for frequency-domain): lowest CPU utilization, performs best when pitching up  - auto: selects best setting for lowest CPU utilization and best quality depending on the transposition value",
+					"annotation" : "TranspMode",
 					"id" : "obj-157",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -9879,13 +9905,13 @@
 					"presentation_rect" : [ 468.5, 145.5, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_defer" : 1,
-							"parameter_enum" : [ "time", "freq", "auto" ],
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "TranspMode",
-							"parameter_longname" : "TranspMode"
+							"parameter_longname" : "TranspMode",
+							"parameter_defer" : 1,
+							"parameter_enum" : [ "time", "freq", "auto" ]
 						}
 
 					}
@@ -9896,7 +9922,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Enables/disables global transposition",
+					"annotation" : "TranspEnable",
 					"automation" : "off",
 					"automationon" : "on",
 					"id" : "obj-162",
@@ -9910,14 +9936,14 @@
 					"presentation_rect" : [ 473.5, 63.5, 30.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_defer" : 1,
-							"parameter_enum" : [ "off", "on" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1.0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "TranspEnable",
-							"parameter_longname" : "TranspEnable"
+							"parameter_longname" : "TranspEnable",
+							"parameter_defer" : 1,
+							"parameter_enum" : [ "off", "on" ]
 						}
 
 					}
@@ -9930,7 +9956,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Applies a global transposition, also known as pitch-shift to the incoming audio, expressed in cents. This affects the pitched content only, preserving formant and transient content.",
+					"annotation" : "Transpose",
 					"id" : "obj-163",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -9942,9 +9968,6 @@
 					"presentation_rect" : [ 462.5, 85.5, 56.0, 42.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_defer" : 1,
-							"parameter_steps" : 193,
-							"parameter_unitstyle" : 9,
 							"parameter_mmax" : 2400.0,
 							"parameter_mmin" : -2400.0,
 							"parameter_initial" : [ 0.0 ],
@@ -9952,7 +9975,10 @@
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Transpose",
 							"parameter_longname" : "Transpose",
-							"parameter_units" : "ct"
+							"parameter_units" : "ct",
+							"parameter_defer" : 1,
+							"parameter_steps" : 193,
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -9965,7 +9991,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Preserve waveform",
+					"annotation" : "PreserveWaveform",
 					"appearance" : 1,
 					"automation" : "off",
 					"automationon" : "on",
@@ -9981,15 +10007,15 @@
 					"presentation_rect" : [ 746.5, 21.5, 69.0, 11.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_order" : 1,
-							"parameter_defer" : 1,
-							"parameter_enum" : [ "off", "on" ],
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "PreserveWaveform",
-							"parameter_longname" : "PreserveWaveform"
+							"parameter_longname" : "PreserveWaveform",
+							"parameter_order" : 1,
+							"parameter_defer" : 1,
+							"parameter_enum" : [ "off", "on" ]
 						}
 
 					}
@@ -10033,6 +10059,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "FilterMode",
 					"id" : "obj-42",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -10044,12 +10071,12 @@
 					"presentation_rect" : [ 989.357178, 4.5, 71.642853, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "display", "lowpass", "highpass", "bandpass", "bandstop", "peaknotch", "lowshelf", "highshelf", "resonant", "allpass" ],
 							"parameter_initial" : [ 5.0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FilterMode",
-							"parameter_longname" : "FilterMode"
+							"parameter_longname" : "FilterMode",
+							"parameter_enum" : [ "display", "lowpass", "highpass", "bandpass", "bandstop", "peaknotch", "lowshelf", "highshelf", "resonant", "allpass" ]
 						}
 
 					}
@@ -10181,6 +10208,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "FilterGain",
 					"id" : "obj-67",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -10192,14 +10220,14 @@
 					"presentation_rect" : [ 1021.0, 20.5, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_unitstyle" : 4,
 							"parameter_mmax" : 80.0,
 							"parameter_mmin" : -80.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FilterGain",
-							"parameter_longname" : "FilterGain"
+							"parameter_longname" : "FilterGain",
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -10210,6 +10238,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "FilterFreq",
 					"id" : "obj-70",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -10221,13 +10250,13 @@
 					"presentation_rect" : [ 893.0, 20.5, 49.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_unitstyle" : 3,
 							"parameter_mmax" : 22050.0,
 							"parameter_initial" : [ 1000.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FilterFreq",
-							"parameter_longname" : "FilterFreq"
+							"parameter_longname" : "FilterFreq",
+							"parameter_unitstyle" : 3
 						}
 
 					}
@@ -10238,6 +10267,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "FilterQ",
 					"id" : "obj-72",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -10249,15 +10279,15 @@
 					"presentation_rect" : [ 957.0, 20.5, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_exponent" : 5.0,
-							"parameter_unitstyle" : 1,
 							"parameter_mmax" : 22000.0,
 							"parameter_initial" : [ 0.3 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FilterQ",
 							"parameter_longname" : "FilterQ",
-							"parameter_units" : "q"
+							"parameter_units" : "q",
+							"parameter_exponent" : 5.0,
+							"parameter_unitstyle" : 1
 						}
 
 					}
@@ -10512,7 +10542,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u647009109"
+					"varname" : "u532074542"
 				}
 
 			}
@@ -10653,6 +10683,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Outgain",
 					"clip_size" : 1,
 					"display_range" : [ -70.0, 30.0 ],
 					"id" : "obj-14",
@@ -10667,14 +10698,14 @@
 					"prototypename" : "M4L.live.gain~.V.extended",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_unitstyle" : 4,
 							"parameter_mmax" : 30.0,
 							"parameter_mmin" : -70.0,
 							"parameter_initial" : [ -70 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Outgain",
-							"parameter_longname" : "Outgain"
+							"parameter_longname" : "Outgain",
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -10685,6 +10716,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Dry/wet",
 					"id" : "obj-12",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -10697,13 +10729,13 @@
 					"prototypename" : "amount",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_unitstyle" : 5,
 							"parameter_mmax" : 100.0,
 							"parameter_initial" : [ 100 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Dry/wet",
-							"parameter_longname" : "Dry/wet"
+							"parameter_longname" : "Dry/wet",
+							"parameter_unitstyle" : 5
 						}
 
 					}
@@ -10728,6 +10760,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Ingain",
 					"clip_size" : 1,
 					"display_range" : [ -70.0, 30.0 ],
 					"id" : "obj-8",
@@ -10742,14 +10775,14 @@
 					"prototypename" : "M4L.live.gain~.V.extended",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_unitstyle" : 4,
 							"parameter_mmax" : 30.0,
 							"parameter_mmin" : -70.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Ingain",
-							"parameter_longname" : "Ingain"
+							"parameter_longname" : "Ingain",
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -12351,56 +12384,56 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-185" : [ "BufSpeed", "BufSpeed", 0 ],
-			"obj-124" : [ "EnvPreserve", "EnvPreserve", 1 ],
-			"obj-90" : [ "FFTOversamp", "FFTOversamp", 0 ],
-			"obj-122" : [ "RemixEnable", "RemixEnable", 0 ],
-			"obj-119" : [ "RemixSinus", "RemixSinus", 0 ],
-			"obj-105" : [ "WindowSize", "WindowSize", 0 ],
-			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-3" : [ "BufLoop", "BufLoop", 0 ],
 			"obj-354" : [ "BufSync", "BufSync", 0 ],
+			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
 			"obj-133" : [ "EnvScale", "EnvScale", 0 ],
 			"obj-96" : [ "Oversampling", "Oversampling", 0 ],
 			"obj-114" : [ "RemixError", "RemixError", 0 ],
 			"obj-116" : [ "RemixTransients", "RemixTransients", 0 ],
 			"obj-100" : [ "fade-in", "fade-in", 0 ],
-			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
 			"obj-286" : [ "Buf", "Buf", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ],
 			"obj-255" : [ "BufReplace", "BufReplace", 0 ],
+			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
 			"obj-148" : [ "EnvLpcOrder", "EnvLpcOrder", 0 ],
+			"obj-8" : [ "Ingain", "Ingain", 0 ],
 			"obj-146" : [ "EnvScaleEnable", "EnvScaleEnable", 0 ],
 			"obj-111" : [ "PreserveStereo", "PreserveStereo", 1 ],
 			"obj-120" : [ "RemixMode", "RemixMode", 0 ],
 			"obj-162" : [ "TranspEnable", "TranspEnable", 0 ],
 			"obj-97" : [ "fade-out", "fade-out", 0 ],
-			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
 			"obj-314" : [ "BufAction", "BufAction", 0 ],
 			"obj-331" : [ "BufSet", "BufSet", 0 ],
+			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
 			"obj-150" : [ "EnvMaxFreq", "EnvMaxFreq", 0 ],
+			"obj-14" : [ "Outgain", "Outgain", 0 ],
 			"obj-156" : [ "EnvTransp", "EnvTransp", 0 ],
 			"obj-112" : [ "PreserveTransients", "PreserveTransients", 1 ],
 			"obj-117" : [ "RemixNoise", "RemixNoise", 0 ],
 			"obj-157" : [ "TranspMode", "TranspMode", 0 ],
 			"obj-25" : [ "nb-shots", "nb-shots", 0 ],
-			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
 			"obj-324" : [ "BufBegin", "BufBegin", 0 ],
 			"obj-26" : [ "BufSize", "BufSize", 0 ],
+			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
 			"obj-153" : [ "EnvMode", "EnvMode", 0 ],
 			"obj-147" : [ "EnvTranspEnable", "EnvTranspEnable", 0 ],
 			"obj-164" : [ "PreserveWaveform", "PreserveWaveform", 1 ],
 			"obj-115" : [ "RemixRelax", "RemixRelax", 0 ],
 			"obj-163" : [ "Transpose", "Transpose", 0 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-326" : [ "BufEnd", "BufEnd", 0 ]
+			"obj-326" : [ "BufEnd", "BufEnd", 0 ],
+			"obj-185" : [ "BufSpeed", "BufSpeed", 0 ],
+			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-124" : [ "EnvPreserve", "EnvPreserve", 1 ],
+			"obj-90" : [ "FFTOversamp", "FFTOversamp", 0 ],
+			"obj-122" : [ "RemixEnable", "RemixEnable", 0 ],
+			"obj-119" : [ "RemixSinus", "RemixSinus", 0 ],
+			"obj-105" : [ "WindowSize", "WindowSize", 0 ],
+			"obj-3" : [ "BufLoop", "BufLoop", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max6/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -12416,13 +12449,6 @@
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "AtodB",
-				"bootpath" : "/Applications/Max6/patches/docs/refpages/max-ref",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/docs/refpages/max-ref",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{

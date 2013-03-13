@@ -1,0 +1,41 @@
+{
+	"pattrstorage" : 	{
+		"name" : "YinRandPreset",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "Default",
+				"data" : 				{
+					"Boost" : [ 50.0 ],
+					"Dry/wet" : [ 100.0 ],
+					"EnvFol" : [ 0.0 ],
+					"EnvMax" : [ -10.0 ],
+					"EnvMin" : [ -50.0 ],
+					"FilterFreq" : [ 1000.0 ],
+					"FilterGain" : [ 0.0 ],
+					"FilterMode" : [ 5.0 ],
+					"FilterQ" : [ 0.3 ],
+					"Freq" : [ 50.0 ],
+					"HighEnable" : [ 1.0 ],
+					"HighFreq" : [ 4000.0 ],
+					"HighGain" : [ 0.0 ],
+					"Ingain" : [ 0.0 ],
+					"LowEnable" : [ 1.0 ],
+					"LowFreq" : [ 1000.0 ],
+					"LowGain" : [ 0.0 ],
+					"MidEnable" : [ 1.0 ],
+					"MidGain" : [ 0.0 ],
+					"Modulate" : [ 0.0 ],
+					"Outgain" : [ -70.0 ],
+					"Quality" : [ 60.0 ],
+					"UnvoicedGain" : [ 0.0 ],
+					"VoicedGain" : [ 0.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
