@@ -3,8 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 8
+			"minor" : 1,
+			"revision" : 0,
+			"architecture" : "x86"
 		}
 ,
 		"rect" : [ 63.0, 44.0, 371.0, 343.0 ],
@@ -27,6 +28,20 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 161.0, 129.0, 96.0, 18.0 ],
+					"text" : "s #1Dumpout"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
@@ -54,8 +69,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 25.0, 69.0, 306.0, 291.0 ],
@@ -90,8 +106,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 8
+											"minor" : 1,
+											"revision" : 0,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
@@ -629,8 +646,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 8
+											"minor" : 1,
+											"revision" : 0,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
@@ -1248,10 +1266,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 69.0, 241.0, 40.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out~ 2"
 				}
 
@@ -1269,8 +1283,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 25.0, 69.0, 337.0, 273.0 ],
@@ -1512,10 +1527,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 23.0, 241.0, 40.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out~ 1"
 				}
 
@@ -1545,10 +1556,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 92.0, 34.0, 34.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in~ 2"
 				}
 
@@ -1563,10 +1570,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 23.0, 34.0, 34.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in~ 1"
 				}
 
@@ -1578,6 +1581,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 3 ]
 				}
 
 			}
@@ -1674,62 +1686,62 @@
  ],
 		"parameters" : 		{
 			"obj-1::obj-326" : [ "BufEnd", "BufEnd", 0 ],
+			"obj-1::obj-148" : [ "EnvLpcOrder", "EnvLpcOrder", 0 ],
+			"obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-1::obj-146" : [ "EnvScaleEnable", "EnvScaleEnable", 0 ],
+			"obj-1::obj-111" : [ "PreserveStereo", "PreserveStereo", 1 ],
+			"obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-1::obj-163" : [ "Transpose", "Transpose", 0 ],
+			"obj-1::obj-120" : [ "RemixMode", "RemixMode", 0 ],
+			"obj-1::obj-105" : [ "WindowSize", "WindowSize", 0 ],
+			"obj-1::obj-26" : [ "BufSize", "BufSize", 0 ],
+			"obj-1::obj-286" : [ "Buf", "Buf", 0 ],
+			"obj-1::obj-255" : [ "BufReplace", "BufReplace", 0 ],
+			"obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-1::obj-150" : [ "EnvMaxFreq", "EnvMaxFreq", 0 ],
+			"obj-1::obj-156" : [ "EnvTransp", "EnvTransp", 0 ],
+			"obj-1::obj-112" : [ "PreserveTransients", "PreserveTransients", 1 ],
+			"obj-1::obj-117" : [ "RemixNoise", "RemixNoise", 0 ],
+			"obj-1::obj-100" : [ "fade-in", "fade-in", 0 ],
+			"obj-1::obj-331" : [ "BufSet", "BufSet", 0 ],
+			"obj-1::obj-153" : [ "EnvMode", "EnvMode", 0 ],
+			"obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-1::obj-147" : [ "EnvTranspEnable", "EnvTranspEnable", 0 ],
+			"obj-1::obj-164" : [ "PreserveWaveform", "PreserveWaveform", 1 ],
+			"obj-1::obj-115" : [ "RemixRelax", "RemixRelax", 0 ],
+			"obj-1::obj-97" : [ "fade-out", "fade-out", 0 ],
+			"obj-1::obj-314" : [ "BufAction", "BufAction", 0 ],
 			"obj-1::obj-185" : [ "BufSpeed", "BufSpeed", 0 ],
 			"obj-1::obj-124" : [ "EnvPreserve", "EnvPreserve", 1 ],
+			"obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-1::obj-8" : [ "Ingain", "Ingain", 0 ],
 			"obj-1::obj-90" : [ "FFTOversamp", "FFTOversamp", 0 ],
 			"obj-1::obj-122" : [ "RemixEnable", "RemixEnable", 0 ],
 			"obj-1::obj-119" : [ "RemixSinus", "RemixSinus", 0 ],
-			"obj-1::obj-105" : [ "WindowSize", "WindowSize", 0 ],
-			"obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
 			"obj-1::obj-3" : [ "BufLoop", "BufLoop", 0 ],
+			"obj-1::obj-25" : [ "nb-shots", "nb-shots", 0 ],
+			"obj-1::obj-157" : [ "TranspMode", "TranspMode", 0 ],
+			"obj-1::obj-324" : [ "BufBegin", "BufBegin", 0 ],
 			"obj-1::obj-354" : [ "BufSync", "BufSync", 0 ],
 			"obj-1::obj-133" : [ "EnvScale", "EnvScale", 0 ],
 			"obj-1::obj-96" : [ "Oversampling", "Oversampling", 0 ],
 			"obj-1::obj-114" : [ "RemixError", "RemixError", 0 ],
 			"obj-1::obj-116" : [ "RemixTransients", "RemixTransients", 0 ],
-			"obj-1::obj-100" : [ "fade-in", "fade-in", 0 ],
-			"obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-1::obj-286" : [ "Buf", "Buf", 0 ],
-			"obj-1::obj-255" : [ "BufReplace", "BufReplace", 0 ],
-			"obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-1::obj-148" : [ "EnvLpcOrder", "EnvLpcOrder", 0 ],
-			"obj-1::obj-146" : [ "EnvScaleEnable", "EnvScaleEnable", 0 ],
-			"obj-1::obj-111" : [ "PreserveStereo", "PreserveStereo", 1 ],
-			"obj-1::obj-120" : [ "RemixMode", "RemixMode", 0 ],
-			"obj-1::obj-162" : [ "TranspEnable", "TranspEnable", 0 ],
-			"obj-1::obj-97" : [ "fade-out", "fade-out", 0 ],
-			"obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-1::obj-314" : [ "BufAction", "BufAction", 0 ],
-			"obj-1::obj-331" : [ "BufSet", "BufSet", 0 ],
-			"obj-1::obj-150" : [ "EnvMaxFreq", "EnvMaxFreq", 0 ],
-			"obj-1::obj-156" : [ "EnvTransp", "EnvTransp", 0 ],
-			"obj-1::obj-112" : [ "PreserveTransients", "PreserveTransients", 1 ],
-			"obj-1::obj-117" : [ "RemixNoise", "RemixNoise", 0 ],
-			"obj-1::obj-157" : [ "TranspMode", "TranspMode", 0 ],
-			"obj-1::obj-25" : [ "nb-shots", "nb-shots", 0 ],
-			"obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-1::obj-324" : [ "BufBegin", "BufBegin", 0 ],
-			"obj-1::obj-26" : [ "BufSize", "BufSize", 0 ],
-			"obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-1::obj-153" : [ "EnvMode", "EnvMode", 0 ],
-			"obj-1::obj-147" : [ "EnvTranspEnable", "EnvTranspEnable", 0 ],
-			"obj-1::obj-164" : [ "PreserveWaveform", "PreserveWaveform", 1 ],
-			"obj-1::obj-115" : [ "RemixRelax", "RemixRelax", 0 ],
-			"obj-1::obj-163" : [ "Transpose", "Transpose", 0 ],
-			"obj-1::obj-8" : [ "Ingain", "Ingain", 0 ]
+			"obj-1::obj-162" : [ "TranspEnable", "TranspEnable", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "tg.supervp.play.maxpat",
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Supervp.play",
-				"patcherrelativepath" : "",
+				"patcherrelativepath" : "./",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max6/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1745,13 +1757,6 @@
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "AtodB",
-				"bootpath" : "/Applications/Max6/patches/docs/refpages/max-ref",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/docs/refpages/max-ref",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{

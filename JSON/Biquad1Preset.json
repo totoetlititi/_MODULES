@@ -1,0 +1,24 @@
+{
+	"pattrstorage" : 	{
+		"name" : "Biquad1Preset",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "Default",
+				"data" : 				{
+					"Dry/wet" : [ 100.0 ],
+					"FilterFreq" : [ 1000.0 ],
+					"FilterGain" : [ 0.0 ],
+					"FilterMode" : [ 5.0 ],
+					"FilterQ" : [ 0.3 ],
+					"Ingain" : [ 0.0 ],
+					"Outgain" : [ -70.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

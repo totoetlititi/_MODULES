@@ -3,8 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 8
+			"minor" : 1,
+			"revision" : 0,
+			"architecture" : "x86"
 		}
 ,
 		"rect" : [ 66.0, 44.0, 341.0, 352.0 ],
@@ -28,6 +29,20 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 161.0, 107.0, 96.0, 18.0 ],
+					"text" : "s #1Dumpout"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-40",
@@ -39,8 +54,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 25.0, 69.0, 306.0, 291.0 ],
@@ -75,8 +91,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 8
+											"minor" : 1,
+											"revision" : 0,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
@@ -614,8 +631,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 8
+											"minor" : 1,
+											"revision" : 0,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
@@ -1233,10 +1251,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 69.0, 254.0, 40.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out~ 2"
 				}
 
@@ -1254,8 +1268,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 25.0, 69.0, 337.0, 273.0 ],
@@ -1497,10 +1512,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 23.0, 254.0, 40.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out~ 1"
 				}
 
@@ -1547,10 +1558,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 92.0, 34.0, 34.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in~ 2"
 				}
 
@@ -1565,10 +1572,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 23.0, 34.0, 34.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in~ 1"
 				}
 
@@ -1630,6 +1633,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-40", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1675,53 +1687,53 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-5::obj-191" : [ "4feed", "4feed", 0 ],
-			"obj-5::obj-208" : [ "Clear", "Clear", 0 ],
-			"obj-5::obj-28" : [ "Filters", "Filters", 0 ],
-			"obj-5::obj-186" : [ "Automate", "Automate", 0 ],
+			"obj-5::obj-192" : [ "4delay", "4delay", 0 ],
+			"obj-5::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
 			"obj-5::obj-14" : [ "Outgain", "Outgain", 0 ],
 			"obj-5::obj-108" : [ "1delay", "1delay", 0 ],
 			"obj-5::obj-112" : [ "1side", "1side", 0 ],
 			"obj-5::obj-161" : [ "2pan", "2pan", 0 ],
+			"obj-5::obj-173" : [ "3freq", "3freq", 0 ],
+			"obj-5::obj-191" : [ "4feed", "4feed", 0 ],
+			"obj-5::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-5::obj-208" : [ "Clear", "Clear", 0 ],
+			"obj-5::obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-5::obj-186" : [ "Automate", "Automate", 0 ],
+			"obj-5::obj-115" : [ "1feed", "1feed", 0 ],
+			"obj-5::obj-163" : [ "2delay", "2delay", 0 ],
 			"obj-5::obj-174" : [ "3gain", "3gain", 0 ],
 			"obj-5::obj-187" : [ "4freq", "4freq", 0 ],
 			"obj-5::obj-126" : [ "Delay", "Delay", 0 ],
-			"obj-5::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-5::obj-115" : [ "1feed", "1feed", 0 ],
-			"obj-5::obj-163" : [ "2delay", "2delay", 0 ],
-			"obj-5::obj-175" : [ "3pan", "3pan", 0 ],
-			"obj-5::obj-188" : [ "4gain", "4gain", 0 ],
-			"obj-5::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-5::obj-158" : [ "Feedbacks", "Feedbacks", 0 ],
 			"obj-5::obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-5::obj-158" : [ "Feedbacks", "Feedbacks", 0 ],
 			"obj-5::obj-113" : [ "1freq", "1freq", 0 ],
 			"obj-5::obj-162" : [ "2feed", "2feed", 0 ],
 			"obj-5::obj-177" : [ "3delay", "3delay", 0 ],
-			"obj-5::obj-172" : [ "3side", "3side", 0 ],
-			"obj-5::obj-190" : [ "4pan", "4pan", 0 ],
+			"obj-5::obj-28" : [ "Filters", "Filters", 0 ],
+			"obj-5::obj-175" : [ "3pan", "3pan", 0 ],
+			"obj-5::obj-188" : [ "4gain", "4gain", 0 ],
 			"obj-5::obj-206" : [ "Feedback", "Feedback", 0 ],
 			"obj-5::obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-5::obj-159" : [ "2freq", "2freq", 0 ],
-			"obj-5::obj-176" : [ "3feed", "3feed", 0 ],
-			"obj-5::obj-192" : [ "4delay", "4delay", 0 ],
-			"obj-5::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
 			"obj-5::obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-5::obj-159" : [ "2freq", "2freq", 0 ],
+			"obj-5::obj-172" : [ "3side", "3side", 0 ],
+			"obj-5::obj-190" : [ "4pan", "4pan", 0 ],
 			"obj-5::obj-114" : [ "1pan", "1pan", 0 ],
 			"obj-5::obj-160" : [ "2gain", "2gain", 0 ],
-			"obj-5::obj-173" : [ "3freq", "3freq", 0 ]
+			"obj-5::obj-176" : [ "3feed", "3feed", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "tg.HarmX4.maxpat",
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/HarmX4",
-				"patcherrelativepath" : "",
+				"patcherrelativepath" : "./",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max6/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1737,13 +1749,6 @@
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "AtodB",
-				"bootpath" : "/Applications/Max6/patches/docs/refpages/max-ref",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max6/patches/docs/refpages/max-ref",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{

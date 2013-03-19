@@ -29,6 +29,20 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 158.0, 124.0, 96.0, 18.0 ],
+					"text" : "s #1Dumpout"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-1",
@@ -1252,10 +1266,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 66.0, 230.0, 40.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out~ 2"
 				}
 
@@ -1517,10 +1527,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 20.0, 230.0, 40.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out~ 1"
 				}
 
@@ -1550,10 +1556,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 89.0, 39.0, 34.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in~ 2"
 				}
 
@@ -1568,10 +1570,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 20.0, 39.0, 34.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in~ 1"
 				}
 
@@ -1583,6 +1581,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 3 ]
 				}
 
 			}
@@ -1678,30 +1685,30 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-91" : [ "EnvMin", "EnvMin", 0 ],
-			"obj-1::obj-18" : [ "LowEnable", "LowEnable", 0 ],
-			"obj-1::obj-55" : [ "Modulate", "Modulate", 0 ],
-			"obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-1::obj-101" : [ "Freq", "Freq", 0 ],
-			"obj-1::obj-130" : [ "LowFreq", "LowFreq", 0 ],
-			"obj-1::obj-37" : [ "Quality", "Quality", 0 ],
-			"obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
 			"obj-1::obj-21" : [ "Boost", "Boost", 0 ],
+			"obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
 			"obj-1::obj-129" : [ "HighEnable", "HighEnable", 0 ],
-			"obj-1::obj-133" : [ "LowGain", "LowGain", 0 ],
-			"obj-1::obj-31" : [ "UnvoicedGain", "UnvoicedGain", 0 ],
-			"obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-1::obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-1::obj-57" : [ "EnvFol", "EnvFol", 0 ],
-			"obj-1::obj-19" : [ "HighFreq", "HighFreq", 0 ],
-			"obj-1::obj-2" : [ "MidEnable", "MidEnable", 0 ],
-			"obj-1::obj-28" : [ "VoicedGain", "VoicedGain", 0 ],
-			"obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-1::obj-90" : [ "EnvMax", "EnvMax", 0 ],
-			"obj-1::obj-20" : [ "HighGain", "HighGain", 0 ],
-			"obj-1::obj-132" : [ "MidGain", "MidGain", 0 ],
+			"obj-1::obj-130" : [ "LowFreq", "LowFreq", 0 ],
+			"obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
 			"obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ]
+			"obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-1::obj-19" : [ "HighFreq", "HighFreq", 0 ],
+			"obj-1::obj-133" : [ "LowGain", "LowGain", 0 ],
+			"obj-1::obj-37" : [ "Quality", "Quality", 0 ],
+			"obj-1::obj-57" : [ "EnvFol", "EnvFol", 0 ],
+			"obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-1::obj-20" : [ "HighGain", "HighGain", 0 ],
+			"obj-1::obj-2" : [ "MidEnable", "MidEnable", 0 ],
+			"obj-1::obj-31" : [ "UnvoicedGain", "UnvoicedGain", 0 ],
+			"obj-1::obj-90" : [ "EnvMax", "EnvMax", 0 ],
+			"obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-1::obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-1::obj-132" : [ "MidGain", "MidGain", 0 ],
+			"obj-1::obj-28" : [ "VoicedGain", "VoicedGain", 0 ],
+			"obj-1::obj-91" : [ "EnvMin", "EnvMin", 0 ],
+			"obj-1::obj-101" : [ "Freq", "Freq", 0 ],
+			"obj-1::obj-18" : [ "LowEnable", "LowEnable", 0 ],
+			"obj-1::obj-55" : [ "Modulate", "Modulate", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

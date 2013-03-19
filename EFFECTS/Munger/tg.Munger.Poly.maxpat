@@ -29,6 +29,20 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 158.0, 118.0, 96.0, 18.0 ],
+					"text" : "s #1Dumpout"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-1",
@@ -1252,6 +1266,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 66.0, 230.0, 40.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 2"
 				}
 
@@ -1513,6 +1531,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 20.0, 230.0, 40.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 1"
 				}
 
@@ -1542,6 +1564,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 89.0, 39.0, 34.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in~ 2"
 				}
 
@@ -1556,6 +1582,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 20.0, 39.0, 34.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in~ 1"
 				}
 
@@ -1567,6 +1597,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 3 ]
 				}
 
 			}
@@ -1662,35 +1701,35 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-1::obj-116" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-1::obj-133" : [ "Outgain", "Outgain", 0 ],
+			"obj-1::obj-47" : [ "Gain", "Gain", 0 ],
+			"obj-1::obj-34" : [ "RampTime", "RampTime", 0 ],
+			"obj-1::obj-63" : [ "SizeVar", "SizeVar", 0 ],
+			"obj-1::obj-43" : [ "TranspVar", "TranspVar", 0 ],
+			"obj-1::obj-146" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-1::obj-115" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-1::obj-70" : [ "Clear", "Clear", 0 ],
+			"obj-1::obj-52" : [ "GainVar", "GainVar", 0 ],
+			"obj-1::obj-36" : [ "RandPosition", "RandPosition", 1 ],
+			"obj-1::obj-55" : [ "StereoSpread", "StereoSpread", 0 ],
+			"obj-1::obj-18" : [ "Voices", "Voices", 0 ],
 			"obj-1::obj-113" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-1::obj-6" : [ "BufferSize", "BufferSize", 0 ],
+			"obj-1::obj-19" : [ "MaxVoices", "MaxVoices", 0 ],
+			"obj-1::obj-30" : [ "Record", "Record", 0 ],
+			"obj-1::obj-75" : [ "Transp", "Transp", 0 ],
+			"obj-1::obj-117" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-1::obj-148" : [ "Ingain", "Ingain", 0 ],
+			"obj-1::obj-8" : [ "Direction", "Direction", 0 ],
+			"obj-1::obj-31" : [ "MinSize", "MinSize", 0 ],
+			"obj-1::obj-58" : [ "Separ", "Separ", 0 ],
 			"obj-1::obj-67" : [ "TranspMode", "TranspMode", 1 ],
 			"obj-1::obj-65" : [ "Size", "Size", 0 ],
-			"obj-1::obj-75" : [ "Transp", "Transp", 0 ],
-			"obj-1::obj-61" : [ "SeparVar", "SeparVar", 0 ],
-			"obj-1::obj-8" : [ "Direction", "Direction", 0 ],
-			"obj-1::obj-52" : [ "GainVar", "GainVar", 0 ],
-			"obj-1::obj-100" : [ "TranspScale", "Scale", 0 ],
-			"obj-1::obj-146" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-1::obj-117" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-1::obj-43" : [ "TranspVar", "TranspVar", 0 ],
-			"obj-1::obj-58" : [ "Separ", "Separ", 0 ],
-			"obj-1::obj-6" : [ "BufferSize", "BufferSize", 0 ],
-			"obj-1::obj-148" : [ "Ingain", "Ingain", 0 ],
-			"obj-1::obj-18" : [ "Voices", "Voices", 0 ],
-			"obj-1::obj-116" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-1::obj-70" : [ "Clear", "Clear", 0 ],
-			"obj-1::obj-34" : [ "RampTime", "RampTime", 0 ],
-			"obj-1::obj-133" : [ "Outgain", "Outgain", 0 ],
-			"obj-1::obj-19" : [ "MaxVoices", "MaxVoices", 0 ],
-			"obj-1::obj-115" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-1::obj-63" : [ "SizeVar", "SizeVar", 0 ],
-			"obj-1::obj-31" : [ "MinSize", "MinSize", 0 ],
 			"obj-1::obj-109" : [ "Fade", "Fade", 0 ],
-			"obj-1::obj-55" : [ "StereoSpread", "StereoSpread", 0 ],
-			"obj-1::obj-30" : [ "Record", "Record", 0 ],
-			"obj-1::obj-47" : [ "Gain", "Gain", 0 ],
-			"obj-1::obj-36" : [ "RandPosition", "RandPosition", 1 ],
-			"obj-1::obj-35" : [ "Position", "Position", 0 ]
+			"obj-1::obj-35" : [ "Position", "Position", 0 ],
+			"obj-1::obj-61" : [ "SeparVar", "SeparVar", 0 ],
+			"obj-1::obj-72" : [ "TranspScale", "TranspScale", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -1708,7 +1747,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "FreqShift4Preset.json",
+				"name" : "MungerPreset.json",
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
 				"patcherrelativepath" : "../../JSON",
 				"type" : "JSON",

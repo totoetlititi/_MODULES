@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 814.0, 44.0, 791.0, 823.0 ],
+		"rect" : [ 814.0, 44.0, 757.0, 611.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -31,6 +31,78 @@
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
+					"id" : "obj-165",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 128.0, 373.0, 133.0, 27.0 ],
+					"text" : ";\r1fra.storage recall Test1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"frgb" : 0.0,
+					"id" : "obj-12",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 128.0, 355.0, 41.0, 18.0 ],
+					"text" : "Preset"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"frgb" : 0.0,
+					"id" : "obj-10",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 128.0, 294.0, 25.0, 18.0 ],
+					"text" : "Init"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-2",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 128.0, 312.0, 109.0, 27.0 ],
+					"text" : ";\r1fra.INIT bang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-5",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 535.0, 257.0, 83.0, 16.0 ],
+					"text" : "setrange 0 100"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
 					"id" : "obj-8",
 					"linecount" : 2,
 					"maxclass" : "message",
@@ -38,7 +110,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 181.0, 218.0, 109.0, 27.0 ],
-					"text" : ";\r1KOA.interface open"
+					"text" : ";\r1fra.interface open"
 				}
 
 			}
@@ -51,7 +123,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 403.0, 231.0, 50.0, 16.0 ],
+					"patching_rect" : [ 377.0, 241.0, 34.0, 16.0 ],
 					"text" : "clear"
 				}
 
@@ -61,13 +133,13 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-11",
-					"linecount" : 6,
+					"linecount" : 5,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 375.0, 75.0, 278.0, 72.0 ],
-					"text" : ";\r1KOA Denoise 6.565382, Dry/wet 100., FilterFreq 1000., FilterGain 0., FilterQ 0.3, Freeze 0., Grain 0., Ingain 0., LinkSmooth 1., Metro 1., MetroMode 0., MetroSyncNb 4., MetroSyncUnit 13., MetroTime 1984.296997, Outgain 0, Scale 1., Shift 0, Smooth 2000., Stereo 1.,"
+					"patching_rect" : [ 375.0, 75.0, 309.0, 60.0 ],
+					"text" : ";\r1fra Dry/wet 100., FilterFreq 1000., FilterGain 0., FilterMode 5., FilterQ 0.3, Ingain 0., Outgain -70., ampVar 0., bufferSize 30., declick 0., direction 0., dropOut 0., feedback 0., repet 0., speed 3.8,"
 				}
 
 			}
@@ -277,7 +349,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 403.0, 404.0, 64.0, 18.0 ],
+					"patching_rect" : [ 411.333344, 398.0, 64.0, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial Bold",
@@ -318,7 +390,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 451.0, 428.0, 19.0, 18.0 ],
+					"patching_rect" : [ 459.333344, 422.0, 19.0, 18.0 ],
 					"text" : "ct"
 				}
 
@@ -333,7 +405,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 403.0, 428.0, 48.0, 18.0 ],
+					"patching_rect" : [ 411.333344, 422.0, 48.0, 18.0 ],
 					"prototypename" : "Live",
 					"triscale" : 0.75
 				}
@@ -349,8 +421,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 403.0, 452.0, 97.0, 27.0 ],
-					"text" : ";\r1KOA Denoise $1"
+					"patching_rect" : [ 411.333344, 447.0, 97.0, 27.0 ],
+					"text" : ";\r1fra repet $1"
 				}
 
 			}
@@ -368,7 +440,7 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints_with_curve" : [ 10.638297, 0.0, 0, 0.0, 2925.531982, 100.0, 0, 0.395, 3776.595703, 45.880001, 0, 0.0, 5904.255371, 88.120003, 0, 0.0, 7180.851074, 22.120001, 0, -0.345, 10000.0, 1.0, 0, -0.7 ],
+					"addpoints_with_curve" : [ 10.638297, -1.0101, 0, 0.0, 2925.531982, 100.0, 0, 0.395, 3776.595703, 45.333332, 0, 0.0, 5904.255371, 88.0, 0, 0.0, 7180.851074, 21.333334, 0, -0.345, 10000.0, 0.0, 0, -0.7 ],
 					"domain" : 10000.0,
 					"id" : "obj-19",
 					"linecolor" : [ 0.333333, 0.333333, 0.333333, 1.0 ],
@@ -380,7 +452,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 351.0, 289.0, 200.0, 100.0 ],
 					"pointcolor" : [ 0.290196, 0.611765, 0.380392, 1.0 ],
-					"range" : [ 1.0, 100.0 ]
+					"range" : [ 0.0, 100.0 ]
 				}
 
 			}
@@ -390,7 +462,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 18.0, 569.0, 45.0, 45.0 ]
+					"patching_rect" : [ 18.0, 422.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -402,7 +474,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 18.0, 389.0, 48.0, 136.0 ],
+					"patching_rect" : [ 18.0, 257.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_unitstyle" : 4,
@@ -444,8 +516,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 18.0, 218.0, 161.0, 29.0 ],
-					"text" : "poly~ tg.FreezeKoala.Poly 1 args 1KOA",
+					"patching_rect" : [ 18.0, 218.0, 151.0, 29.0 ],
+					"text" : "poly~ tg.Fragulator.Poly 1 args 1fra",
 					"varname" : "poly~"
 				}
 
@@ -528,6 +600,15 @@
 					"destination" : [ "obj-19", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -552,44 +633,39 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-1.1::obj-5::obj-24" : [ "MetroTime", "MetroTime", 0 ],
-			"obj-1.1::obj-5::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
-			"obj-1.1::obj-5::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-1.1::obj-5::obj-101" : [ "Freeze", "Freeze", 0 ],
-			"obj-1.1::obj-5::obj-6" : [ "Metro", "Metro", 0 ],
-			"obj-1.1::obj-5::obj-158" : [ "Shift", "Shift", 0 ],
-			"obj-1.1::obj-5::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-1.1::obj-5::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-1.1::obj-5::obj-27" : [ "MetroMode", "MetroMode", 1 ],
-			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
-			"obj-1.1::obj-5::obj-99" : [ "Smooth", "Smooth", 0 ],
-			"obj-1.1::obj-5::obj-42" : [ "FilterMode", "FilterMode", 0 ],
 			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
-			"obj-1.1::obj-5::obj-98" : [ "Denoise", "Denoise", 0 ],
-			"obj-1.1::obj-5::obj-76" : [ "MetroSyncNb", "MetroSyncNb", 0 ],
-			"obj-1.1::obj-5::obj-49" : [ "Stereo", "Stereo", 0 ],
 			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
-			"obj-1.1::obj-5::obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-1.1::obj-5::obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-1.1::obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-1.1::obj-1::obj-51" : [ "bufferSize", "bufferSize", 0 ],
+			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
+			"obj-1.1::obj-1::obj-49" : [ "feedback", "feedback", 0 ],
+			"obj-1.1::obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-1.1::obj-1::obj-55" : [ "repet", "repet", 0 ],
 			"obj-7::obj-50" : [ "Play", "Play", 0 ],
-			"obj-1.1::obj-5::obj-89" : [ "Grain", "Grain", 0 ],
-			"obj-1.1::obj-5::obj-33" : [ "MetroSyncUnit", "MetroSyncUnit", 0 ],
-			"obj-1.1::obj-5::obj-159" : [ "Scale", "Scale", 0 ],
-			"obj-1.1::obj-5::obj-26" : [ "LinkSmooth", "LinkSmooth", 0 ]
+			"obj-1.1::obj-1::obj-48" : [ "speed", "speed", 0 ],
+			"obj-1.1::obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
+			"obj-1.1::obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-1.1::obj-1::obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-1.1::obj-1::obj-54" : [ "ampVar", "ampVar", 0 ],
+			"obj-1.1::obj-1::obj-50" : [ "declick", "declick", 0 ],
+			"obj-1.1::obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-1.1::obj-1::obj-57" : [ "dropOut", "dropOut", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-1.1::obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-1.1::obj-1::obj-47" : [ "direction", "direction", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "tg.FreezeKoala.Poly.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/FreezeKoala",
+				"name" : "tg.Fragulator.Poly.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Fragulator",
 				"patcherrelativepath" : "./",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "tg.FreezeKoala.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/FreezeKoala",
+				"name" : "tg.Fragulator.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Fragulator",
 				"patcherrelativepath" : "./",
 				"type" : "JSON",
 				"implicit" : 1
@@ -602,21 +678,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "tg.freeze-1i.pfft.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/FreezeKoala",
-				"patcherrelativepath" : "./",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.freezeKoalaModuleForFFT.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/FreezeKoala",
-				"patcherrelativepath" : "./",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "FreezeKoalaPreset.json",
+				"name" : "FragulatorPreset.json",
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
 				"patcherrelativepath" : "../../JSON",
 				"type" : "JSON",
@@ -633,6 +695,13 @@
 				"name" : "tg.m.preset.maxpat",
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "frag.StutterPshift22~.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Fragulator",
+				"patcherrelativepath" : "./",
 				"type" : "JSON",
 				"implicit" : 1
 			}
