@@ -1,0 +1,75 @@
+{
+	"pattrstorage" : 	{
+		"name" : "ChromaDelayPreset",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "Default",
+				"data" : 				{
+					"Chord" : [ -1 ],
+					"Dry/wet" : [ 100.0 ],
+					"Envelope" : [ -0.05 ],
+					"Feedback" : [ 33.0 ],
+					"FilterFreq" : [ 1000.0 ],
+					"FilterGain" : [ 0.0 ],
+					"FilterMode" : [ 5.0 ],
+					"FilterQ" : [ 0.3 ],
+					"Flush" : [ 0.0 ],
+					"ForceFilter" : [ 1.0 ],
+					"HarmModel" : [ 0.0 ],
+					"Harmonics" : [ 15.0 ],
+					"Ingain" : [ 0.0 ],
+					"InterpMode" : [ 0.0 ],
+					"InterpTime" : [ 1000.0 ],
+					"MaxDelay" : [ 2000.0 ],
+					"Outgain" : [ -70.0 ],
+					"PanL" : [ -50.0 ],
+					"PanR" : [ 50.0 ],
+					"Receive" : [ "1Chro.Notes" ],
+					"ReceiveChord" : [ 1.0 ],
+					"Shift" : [ 1.0 ],
+					"Stretch" : [ 2.0 ],
+					"Tune" : [ 440.0 ],
+					"Variance" : [ 0.5 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"name" : "Test1",
+				"data" : 				{
+					"Chord" : [ 56, 6, 63, 40, 74, 52, 89, 59 ],
+					"Dry/wet" : [ 100.0 ],
+					"Envelope" : [ -0.05 ],
+					"Feedback" : [ 33.0 ],
+					"FilterFreq" : [ 1000.0 ],
+					"FilterGain" : [ 0.0 ],
+					"FilterMode" : [ 5.0 ],
+					"FilterQ" : [ 0.3 ],
+					"Flush" : [ 0.0 ],
+					"ForceFilter" : [ 1.0 ],
+					"HarmModel" : [ 0.0 ],
+					"Harmonics" : [ 15.0 ],
+					"Ingain" : [ 0.0 ],
+					"InterpMode" : [ 1.0 ],
+					"InterpTime" : [ 1000.0 ],
+					"MaxDelay" : [ 2000.0 ],
+					"Outgain" : [ -1.049602 ],
+					"PanL" : [ -50.0 ],
+					"PanR" : [ 50.0 ],
+					"Receive" : [ "1Chro.Notes" ],
+					"ReceiveChord" : [ 1.0 ],
+					"Shift" : [ 1.0 ],
+					"Stretch" : [ 2.0 ],
+					"Tune" : [ 440.0 ],
+					"Variance" : [ 0.5 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
