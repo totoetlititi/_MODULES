@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 0,
+			"revision" : 1,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 44.0, 1263.0, 177.0 ],
+		"rect" : [ 0.0, 44.0, 1277.0, 178.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -29,6 +29,59 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 9.0,
+					"frgb" : 0.0,
+					"id" : "obj-74",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 412.833313, 727.0, 51.0, 27.0 ],
+					"text" : "PRESET for Live"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-75",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 380.333313, 709.5, 39.0, 16.0 ],
+					"text" : "set $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-80",
+					"maxclass" : "live.numbox",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 380.333313, 734.0, 36.0, 15.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_type" : 1,
+							"parameter_shortname" : "PRESET",
+							"parameter_longname" : "PRESET",
+							"parameter_steps" : 1,
+							"parameter_unitstyle" : 0
+						}
+
+					}
+,
+					"varname" : "PRESET"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
@@ -147,6 +200,7 @@
 					"presentation_rect" : [ 1167.5, 151.5, 95.0, 16.0 ],
 					"prototypename" : "M4L.black",
 					"rounded" : 12.0,
+					"text" : "Default",
 					"textcolor" : [ 0.909804, 0.909804, 0.909804, 1.0 ]
 				}
 
@@ -473,7 +527,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x86"
 						}
 ,
@@ -521,7 +575,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 929.333496, 508.0, 53.0, 27.0 ],
-									"text" : "0.145833 0.854167"
+									"text" : "0.261895 0.738105"
 								}
 
 							}
@@ -2745,7 +2799,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x86"
 						}
 ,
@@ -3980,12 +4034,12 @@
 					"presentation_rect" : [ 355.000122, 29.5, 164.0, 92.5 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_shortname" : "Filters",
-							"parameter_longname" : "Filters"
+							"parameter_longname" : "Filters",
+							"parameter_initial" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
 						}
 
 					}
@@ -4027,12 +4081,12 @@
 					"presentation_rect" : [ 189.333374, 130.0, 68.166382, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Slope",
 							"parameter_longname" : "Slope",
-							"parameter_enum" : [ "Lin", "Co", "Sin" ]
+							"parameter_enum" : [ "Lin", "Co", "Sin" ],
+							"parameter_initial" : [ 0.0 ]
 						}
 
 					}
@@ -4077,15 +4131,15 @@
 					"presentation_rect" : [ 189.333374, 19.0, 51.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FadeOut",
 							"parameter_longname" : "FadeOut",
 							"parameter_units" : "v",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 0.0 ]
 						}
 
 					}
@@ -4297,12 +4351,12 @@
 					"presentation_rect" : [ 154.333374, 86.0, 86.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Automate",
 							"parameter_longname" : "Automate",
-							"parameter_enum" : [ "Filters", "Delays", "Feedbacks" ]
+							"parameter_enum" : [ "Filters", "Delays", "Feedbacks" ],
+							"parameter_initial" : [ 0.0 ]
 						}
 
 					}
@@ -4518,14 +4572,14 @@
 					"presentation_rect" : [ 795.0, 142.0, 39.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 256.0,
-							"parameter_initial" : [ 10.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FeedDrunkStep",
 							"parameter_longname" : "FeedDrunkStep",
 							"parameter_units" : "v",
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_mmax" : 256.0,
+							"parameter_initial" : [ 10.0 ]
 						}
 
 					}
@@ -4554,15 +4608,15 @@
 					"presentation_rect" : [ 732.5, 142.0, 60.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FeedDrunk",
 							"parameter_longname" : "FeedDrunk",
 							"parameter_units" : "v",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 0.0 ]
 						}
 
 					}
@@ -4587,7 +4641,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x86"
 						}
 ,
@@ -4929,14 +4983,14 @@
 					"presentation_rect" : [ 609.833496, 142.0, 39.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 256.0,
-							"parameter_initial" : [ 10.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "DelDrunkStep",
 							"parameter_longname" : "DelDrunkStep",
 							"parameter_units" : "v",
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_mmax" : 256.0,
+							"parameter_initial" : [ 10.0 ]
 						}
 
 					}
@@ -4965,15 +5019,15 @@
 					"presentation_rect" : [ 547.333496, 142.0, 60.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "DelDrunk",
 							"parameter_longname" : "DelDrunk",
 							"parameter_units" : "v",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 0.0 ]
 						}
 
 					}
@@ -4998,7 +5052,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x86"
 						}
 ,
@@ -5420,15 +5474,15 @@
 					"presentation_rect" : [ 369.000122, 142.0, 60.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FiltDrunk",
 							"parameter_longname" : "FiltDrunk",
 							"parameter_units" : "v",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 0.0 ]
 						}
 
 					}
@@ -5453,7 +5507,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x86"
 						}
 ,
@@ -5784,15 +5838,15 @@
 					"presentation_rect" : [ 100.500061, 19.0, 53.666687, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Metro",
 							"parameter_longname" : "Metro",
 							"parameter_units" : "v",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 0.0 ]
 						}
 
 					}
@@ -6042,15 +6096,15 @@
 					"presentation_rect" : [ 271.500122, 143.5, 61.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "ForceFeed",
 							"parameter_longname" : "ForceFeed",
 							"parameter_units" : "v",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 0 ]
 						}
 
 					}
@@ -6076,14 +6130,14 @@
 					"presentation_rect" : [ 431.500122, 142.0, 39.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 256.0,
-							"parameter_initial" : [ 10.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FiltDrunkStep",
 							"parameter_longname" : "FiltDrunkStep",
 							"parameter_units" : "v",
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_mmax" : 256.0,
+							"parameter_initial" : [ 10.0 ]
 						}
 
 					}
@@ -6107,15 +6161,15 @@
 					"presentation_rect" : [ 222.499756, 148.5, 35.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 10.0,
-							"parameter_initial" : [ 1.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Pow",
 							"parameter_longname" : "Pow",
 							"parameter_units" : "v",
 							"parameter_exponent" : 3.333,
-							"parameter_unitstyle" : 1
+							"parameter_unitstyle" : 1,
+							"parameter_mmax" : 10.0,
+							"parameter_initial" : [ 1.0 ]
 						}
 
 					}
@@ -6139,15 +6193,15 @@
 					"presentation_rect" : [ 189.333374, 55.0, 51.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 20000.0,
-							"parameter_initial" : [ 20.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Grain",
 							"parameter_longname" : "Grain",
 							"parameter_units" : "v",
 							"parameter_exponent" : 3.3333,
-							"parameter_unitstyle" : 2
+							"parameter_unitstyle" : 2,
+							"parameter_mmax" : 20000.0,
+							"parameter_initial" : [ 20.0 ]
 						}
 
 					}
@@ -6171,15 +6225,15 @@
 					"presentation_rect" : [ 138.416656, 130.0, 35.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 512.0,
-							"parameter_mmin" : 1.0,
-							"parameter_initial" : [ 10.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "SizeMax",
 							"parameter_longname" : "SizeMax",
 							"parameter_units" : "v",
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_mmax" : 512.0,
+							"parameter_mmin" : 1.0,
+							"parameter_initial" : [ 10.0 ]
 						}
 
 					}
@@ -6203,15 +6257,15 @@
 					"presentation_rect" : [ 138.416656, 148.5, 35.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 512.0,
-							"parameter_mmin" : 1.0,
-							"parameter_initial" : [ 10.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "SizeMin",
 							"parameter_longname" : "SizeMin",
 							"parameter_units" : "v",
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_mmax" : 512.0,
+							"parameter_mmin" : 1.0,
+							"parameter_initial" : [ 10.0 ]
 						}
 
 					}
@@ -6235,15 +6289,15 @@
 					"presentation_rect" : [ 100.500061, 130.0, 35.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 512.0,
-							"parameter_mmin" : 1.0,
-							"parameter_initial" : [ 512.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "BandsMax",
 							"parameter_longname" : "BandsMax",
 							"parameter_units" : "v",
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_mmax" : 512.0,
+							"parameter_mmin" : 1.0,
+							"parameter_initial" : [ 512.0 ]
 						}
 
 					}
@@ -6267,15 +6321,15 @@
 					"presentation_rect" : [ 100.500061, 148.5, 35.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 512.0,
-							"parameter_mmin" : 1.0,
-							"parameter_initial" : [ 1.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "BandsMin",
 							"parameter_longname" : "BandsMin",
 							"parameter_units" : "v",
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_mmax" : 512.0,
+							"parameter_mmin" : 1.0,
+							"parameter_initial" : [ 1.0 ]
 						}
 
 					}
@@ -6299,15 +6353,15 @@
 					"presentation_rect" : [ 100.500061, 37.0, 53.666687, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 20000.0,
-							"parameter_initial" : [ 2000.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "TimeMax",
 							"parameter_longname" : "TimeMax",
 							"parameter_units" : "v",
 							"parameter_exponent" : 3.3333,
-							"parameter_unitstyle" : 2
+							"parameter_unitstyle" : 2,
+							"parameter_mmax" : 20000.0,
+							"parameter_initial" : [ 2000.0 ]
 						}
 
 					}
@@ -6331,15 +6385,15 @@
 					"presentation_rect" : [ 100.500061, 55.0, 53.666687, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 20000.0,
-							"parameter_initial" : [ 2000.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "TimeMin",
 							"parameter_longname" : "TimeMin",
 							"parameter_units" : "v",
 							"parameter_exponent" : 3.3333,
-							"parameter_unitstyle" : 2
+							"parameter_unitstyle" : 2,
+							"parameter_mmax" : 20000.0,
+							"parameter_initial" : [ 2000.0 ]
 						}
 
 					}
@@ -6368,15 +6422,15 @@
 					"presentation_rect" : [ 271.500122, 121.5, 61.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "ForceFilt",
 							"parameter_longname" : "ForceFilt",
 							"parameter_units" : "v",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 0.0 ]
 						}
 
 					}
@@ -6401,15 +6455,15 @@
 					"presentation_rect" : [ 278.500122, 7.0, 47.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 10000.0,
-							"parameter_initial" : [ 5000 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "DelMax",
 							"parameter_longname" : "DelMax",
 							"parameter_speedlim" : 0.0,
 							"parameter_exponent" : 2.0,
-							"parameter_unitstyle" : 2
+							"parameter_unitstyle" : 2,
+							"parameter_mmax" : 10000.0,
+							"parameter_initial" : [ 5000 ]
 						}
 
 					}
@@ -6433,14 +6487,14 @@
 					"presentation_rect" : [ 278.500122, 63.0, 47.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 99.0,
-							"parameter_initial" : [ 50 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FeedMax",
 							"parameter_longname" : "FeedMax",
 							"parameter_speedlim" : 0.0,
-							"parameter_unitstyle" : 5
+							"parameter_unitstyle" : 5,
+							"parameter_mmax" : 99.0,
+							"parameter_initial" : [ 50 ]
 						}
 
 					}
@@ -6507,12 +6561,12 @@
 					"presentation_rect" : [ 1020.357178, 4.0, 71.642853, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 5.0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FilterMode",
 							"parameter_longname" : "FilterMode",
-							"parameter_enum" : [ "display", "lowpass", "highpass", "bandpass", "bandstop", "peaknotch", "lowshelf", "highshelf", "resonant", "allpass" ]
+							"parameter_enum" : [ "display", "lowpass", "highpass", "bandpass", "bandstop", "peaknotch", "lowshelf", "highshelf", "resonant", "allpass" ],
+							"parameter_initial" : [ 5.0 ]
 						}
 
 					}
@@ -6656,14 +6710,14 @@
 					"presentation_rect" : [ 1052.0, 20.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 80.0,
-							"parameter_mmin" : -80.0,
-							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FilterGain",
 							"parameter_longname" : "FilterGain",
-							"parameter_unitstyle" : 4
+							"parameter_unitstyle" : 4,
+							"parameter_mmax" : 80.0,
+							"parameter_mmin" : -80.0,
+							"parameter_initial" : [ 0.0 ]
 						}
 
 					}
@@ -6686,13 +6740,13 @@
 					"presentation_rect" : [ 924.0, 20.0, 49.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 22050.0,
-							"parameter_initial" : [ 1000.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FilterFreq",
 							"parameter_longname" : "FilterFreq",
-							"parameter_unitstyle" : 3
+							"parameter_unitstyle" : 3,
+							"parameter_mmax" : 22050.0,
+							"parameter_initial" : [ 1000.0 ]
 						}
 
 					}
@@ -6715,15 +6769,15 @@
 					"presentation_rect" : [ 988.0, 20.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 22000.0,
-							"parameter_initial" : [ 0.3 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FilterQ",
 							"parameter_longname" : "FilterQ",
 							"parameter_units" : "q",
 							"parameter_exponent" : 5.0,
-							"parameter_unitstyle" : 1
+							"parameter_unitstyle" : 1,
+							"parameter_mmax" : 22000.0,
+							"parameter_initial" : [ 0.3 ]
 						}
 
 					}
@@ -6966,7 +7020,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u128074033"
+					"varname" : "u365002741"
 				}
 
 			}
@@ -7122,14 +7176,14 @@
 					"prototypename" : "M4L.live.gain~.V.extended",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 30.0,
-							"parameter_mmin" : -70.0,
-							"parameter_initial" : [ -70 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Outgain",
 							"parameter_longname" : "Outgain",
-							"parameter_unitstyle" : 4
+							"parameter_unitstyle" : 4,
+							"parameter_mmax" : 30.0,
+							"parameter_mmin" : -70.0,
+							"parameter_initial" : [ -70 ]
 						}
 
 					}
@@ -7153,13 +7207,13 @@
 					"prototypename" : "amount",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 100.0,
-							"parameter_initial" : [ 100 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Dry/wet",
 							"parameter_longname" : "Dry/wet",
-							"parameter_unitstyle" : 5
+							"parameter_unitstyle" : 5,
+							"parameter_mmax" : 100.0,
+							"parameter_initial" : [ 100 ]
 						}
 
 					}
@@ -7199,14 +7253,14 @@
 					"prototypename" : "M4L.live.gain~.V.extended",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 30.0,
-							"parameter_mmin" : -70.0,
-							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Ingain",
 							"parameter_longname" : "Ingain",
-							"parameter_unitstyle" : 4
+							"parameter_unitstyle" : 4,
+							"parameter_mmax" : 30.0,
+							"parameter_mmin" : -70.0,
+							"parameter_initial" : [ 0.0 ]
 						}
 
 					}
@@ -7460,6 +7514,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-143", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-80", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-143", 1 ]
 				}
 
 			}
@@ -7909,6 +7972,15 @@
 				"patchline" : 				{
 					"color" : [ 0.0, 0.0, 0.0, 0.05 ],
 					"destination" : [ "obj-11", 3 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-22", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-75", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-22", 1 ]
@@ -8387,6 +8459,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-80", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-75", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-44", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -8400,6 +8481,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-80", 0 ]
 				}
 
 			}
@@ -8460,38 +8550,39 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-55" : [ "DelMax", "DelMax", 0 ],
-			"obj-624" : [ "FeedDrunkStep", "FeedDrunkStep", 0 ],
-			"obj-60" : [ "ForceFeed", "ForceFeed", 0 ],
-			"obj-249" : [ "SizeMax", "SizeMax", 0 ],
 			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-255" : [ "Grain", "Grain", 0 ],
+			"obj-186" : [ "Automate", "Automate", 0 ],
+			"obj-55" : [ "DelMax", "DelMax", 0 ],
+			"obj-158" : [ "Feedbacks", "Feedbacks", 0 ],
+			"obj-262" : [ "Pow", "Pow", 0 ],
+			"obj-231" : [ "TimeMin", "TimeMin", 0 ],
+			"obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
 			"obj-240" : [ "BandsMax", "BandsMax", 0 ],
 			"obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-146" : [ "FadeOut", "FadeOut", 0 ],
-			"obj-56" : [ "FeedMax", "FeedMax", 0 ],
-			"obj-54" : [ "ForceFilt", "ForceFilt", 0 ],
-			"obj-415" : [ "Slope", "Slope", 0 ],
-			"obj-252" : [ "SizeMin", "SizeMin", 0 ],
-			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-237" : [ "BandsMin", "BandsMin", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-158" : [ "Feedbacks", "Feedbacks", 0 ],
-			"obj-255" : [ "Grain", "Grain", 0 ],
-			"obj-234" : [ "TimeMax", "TimeMax", 0 ],
-			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-558" : [ "DelDrunk", "DelDrunk", 0 ],
-			"obj-207" : [ "FiltDrunk", "FiltDrunk", 0 ],
-			"obj-198" : [ "Metro", "Metro", 0 ],
-			"obj-231" : [ "TimeMin", "TimeMin", 0 ],
-			"obj-186" : [ "Automate", "Automate", 0 ],
 			"obj-155" : [ "Delays", "Delays", 0 ],
-			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-557" : [ "DelDrunkStep", "DelDrunkStep", 0 ],
+			"obj-207" : [ "FiltDrunk", "FiltDrunk", 0 ],
+			"obj-249" : [ "SizeMax", "SizeMax", 0 ],
+			"obj-146" : [ "FadeOut", "FadeOut", 0 ],
 			"obj-28" : [ "Filters", "Filters", 0 ],
+			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-237" : [ "BandsMin", "BandsMin", 0 ],
 			"obj-625" : [ "FeedDrunk", "FeedDrunk", 0 ],
 			"obj-267" : [ "FiltDrunkStep", "FiltDrunkStep", 0 ],
-			"obj-262" : [ "Pow", "Pow", 0 ]
+			"obj-252" : [ "SizeMin", "SizeMin", 0 ],
+			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-558" : [ "DelDrunk", "DelDrunk", 0 ],
+			"obj-198" : [ "Metro", "Metro", 0 ],
+			"obj-624" : [ "FeedDrunkStep", "FeedDrunkStep", 0 ],
+			"obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-60" : [ "ForceFeed", "ForceFeed", 0 ],
+			"obj-415" : [ "Slope", "Slope", 0 ],
+			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-557" : [ "DelDrunkStep", "DelDrunkStep", 0 ],
+			"obj-56" : [ "FeedMax", "FeedMax", 0 ],
+			"obj-54" : [ "ForceFilt", "ForceFilt", 0 ],
+			"obj-234" : [ "TimeMax", "TimeMax", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -8518,7 +8609,7 @@
 , 			{
 				"name" : "tg.SpectralDelay.gen.pfft.maxpat",
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/SpectralDelay",
-				"patcherrelativepath" : "./",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}

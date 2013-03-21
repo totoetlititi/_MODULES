@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 0,
+			"revision" : 1,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 52.0, 1412.0, 173.0 ],
+		"rect" : [ 0.0, 52.0, 1415.0, 178.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
@@ -29,6 +29,59 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 9.0,
+					"frgb" : 0.0,
+					"id" : "obj-63",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1359.0, 524.5, 51.0, 27.0 ],
+					"text" : "PRESET for Live"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-122",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1326.5, 507.0, 39.0, 16.0 ],
+					"text" : "set $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-125",
+					"maxclass" : "live.numbox",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 1326.5, 531.5, 36.0, 15.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_type" : 1,
+							"parameter_shortname" : "PRESET",
+							"parameter_longname" : "PRESET",
+							"parameter_steps" : 1,
+							"parameter_unitstyle" : 0
+						}
+
+					}
+,
+					"varname" : "PRESET"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
@@ -314,14 +367,14 @@
 					"presentation_rect" : [ 681.0, 146.75, 46.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_mmin" : -1.0,
-							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Error",
 							"parameter_longname" : "Error",
-							"parameter_unitstyle" : 1
+							"parameter_unitstyle" : 1,
+							"parameter_mmax" : 1.0,
+							"parameter_mmin" : -1.0,
+							"parameter_initial" : [ 0 ]
 						}
 
 					}
@@ -443,12 +496,12 @@
 					"presentation_rect" : [ 992.0, 76.75, 60.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 2 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "ArpegeEnv",
 							"parameter_longname" : "ArpegeEnv",
-							"parameter_enum" : [ "none", "tri", "rect", "cresc", "decresc", "hamming", "adsr" ]
+							"parameter_enum" : [ "none", "tri", "rect", "cresc", "decresc", "hamming", "adsr" ],
+							"parameter_initial" : [ 2 ]
 						}
 
 					}
@@ -620,13 +673,13 @@
 					"presentation_rect" : [ 1007.0, 146.75, 45.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1000.0,
-							"parameter_initial" : [ 10.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "ArpegeR",
 							"parameter_longname" : "ArpegeR",
-							"parameter_unitstyle" : 2
+							"parameter_unitstyle" : 2,
+							"parameter_mmax" : 1000.0,
+							"parameter_initial" : [ 10.0 ]
 						}
 
 					}
@@ -651,13 +704,13 @@
 					"presentation_rect" : [ 1007.0, 130.75, 45.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 100.0,
-							"parameter_initial" : [ 100 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "ArpegeS",
 							"parameter_longname" : "ArpegeS",
-							"parameter_unitstyle" : 5
+							"parameter_unitstyle" : 5,
+							"parameter_mmax" : 100.0,
+							"parameter_initial" : [ 100 ]
 						}
 
 					}
@@ -682,13 +735,13 @@
 					"presentation_rect" : [ 1007.0, 114.75, 45.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1000.0,
-							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "ArpegeD",
 							"parameter_longname" : "ArpegeD",
-							"parameter_unitstyle" : 2
+							"parameter_unitstyle" : 2,
+							"parameter_mmax" : 1000.0,
+							"parameter_initial" : [ 0.0 ]
 						}
 
 					}
@@ -713,13 +766,13 @@
 					"presentation_rect" : [ 1007.0, 98.75, 45.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1000.0,
-							"parameter_initial" : [ 10.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "ArpegeA",
 							"parameter_longname" : "ArpegeA",
-							"parameter_unitstyle" : 2
+							"parameter_unitstyle" : 2,
+							"parameter_mmax" : 1000.0,
+							"parameter_initial" : [ 10.0 ]
 						}
 
 					}
@@ -777,12 +830,12 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 2,
 							"parameter_shortname" : "Manual",
 							"parameter_longname" : "Manual",
-							"parameter_enum" : [ "Arm", "Trigger" ]
+							"parameter_enum" : [ "Arm", "Trigger" ],
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 0.0 ]
 						}
 
 					}
@@ -1092,12 +1145,12 @@
 					"presentation_rect" : [ 752.5, 146.75, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 60 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "ArpegeBasePitch",
 							"parameter_longname" : "ArpegeBasePitch",
-							"parameter_unitstyle" : 1
+							"parameter_unitstyle" : 1,
+							"parameter_initial" : [ 60 ]
 						}
 
 					}
@@ -1123,14 +1176,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 1 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "ArpegeInput",
 							"parameter_longname" : "ArpegeInput",
 							"parameter_speedlim" : 0.0,
-							"parameter_enum" : [ "Off", "On" ]
+							"parameter_enum" : [ "Off", "On" ],
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 1 ]
 						}
 
 					}
@@ -1172,14 +1225,14 @@
 					"presentation_rect" : [ 913.942383, 130.5, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 200.0,
-							"parameter_mmin" : 1.0,
-							"parameter_initial" : [ 10 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "ArpegeNbNotes",
 							"parameter_longname" : "ArpegeNbNotes",
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_mmax" : 200.0,
+							"parameter_mmin" : 1.0,
+							"parameter_initial" : [ 10 ]
 						}
 
 					}
@@ -1205,14 +1258,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 1 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "ArpegeDir",
 							"parameter_longname" : "ArpegeDir",
 							"parameter_speedlim" : 0.0,
-							"parameter_enum" : [ "Off", "On" ]
+							"parameter_enum" : [ "Off", "On" ],
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 1 ]
 						}
 
 					}
@@ -1240,14 +1293,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "ArpegeDirRand",
 							"parameter_longname" : "ArpegeDirRand",
 							"parameter_speedlim" : 0.0,
-							"parameter_enum" : [ "Off", "On" ]
+							"parameter_enum" : [ "Off", "On" ],
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 0 ]
 						}
 
 					}
@@ -1310,11 +1363,11 @@
 					"rounded" : 0.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ "random", 100, 200, 300 ],
 							"parameter_type" : 3,
 							"parameter_invisible" : 1,
 							"parameter_shortname" : "MetroValues",
-							"parameter_longname" : "MetroValues"
+							"parameter_longname" : "MetroValues",
+							"parameter_initial" : [ "random", 100, 200, 300 ]
 						}
 
 					}
@@ -1355,14 +1408,14 @@
 					"presentation_rect" : [ 913.942383, 68.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 10000.0,
-							"parameter_mmin" : 10.0,
-							"parameter_initial" : [ 100 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "ArpegeMetroSpeed",
 							"parameter_longname" : "ArpegeMetroSpeed",
-							"parameter_unitstyle" : 1
+							"parameter_unitstyle" : 1,
+							"parameter_mmax" : 10000.0,
+							"parameter_mmin" : 10.0,
+							"parameter_initial" : [ 100 ]
 						}
 
 					}
@@ -1388,14 +1441,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "ArpegeMetroRand",
 							"parameter_longname" : "ArpegeMetroRand",
 							"parameter_speedlim" : 0.0,
-							"parameter_enum" : [ "Off", "On" ]
+							"parameter_enum" : [ "Off", "On" ],
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 0 ]
 						}
 
 					}
@@ -1437,15 +1490,15 @@
 					"presentation_rect" : [ 913.942383, 115.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 10000.0,
-							"parameter_mmin" : 10.0,
-							"parameter_initial" : [ 100 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "ArpegeSampleSize",
 							"parameter_longname" : "ArpegeSampleSize",
 							"parameter_exponent" : 2.0,
-							"parameter_unitstyle" : 2
+							"parameter_unitstyle" : 2,
+							"parameter_mmax" : 10000.0,
+							"parameter_mmin" : 10.0,
+							"parameter_initial" : [ 100 ]
 						}
 
 					}
@@ -1471,14 +1524,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "ArpegePower",
 							"parameter_longname" : "ArpegePower",
 							"parameter_speedlim" : 0.0,
-							"parameter_enum" : [ "Off", "On" ]
+							"parameter_enum" : [ "Off", "On" ],
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 0 ]
 						}
 
 					}
@@ -1564,7 +1617,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x86"
 						}
 ,
@@ -1943,7 +1996,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x86"
 						}
 ,
@@ -2414,7 +2467,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x86"
 						}
 ,
@@ -2764,12 +2817,12 @@
 					"patching_rect" : [ 475.313934, 766.0, 46.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ "<none>" ],
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_shortname" : "ArpegeBuf",
-							"parameter_longname" : "ArpegeBuf"
+							"parameter_longname" : "ArpegeBuf",
+							"parameter_initial" : [ "<none>" ]
 						}
 
 					}
@@ -2908,7 +2961,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x86"
 						}
 ,
@@ -4762,7 +4815,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 0,
+											"revision" : 1,
 											"architecture" : "x86"
 										}
 ,
@@ -5063,7 +5116,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 0,
+											"revision" : 1,
 											"architecture" : "x86"
 										}
 ,
@@ -8064,14 +8117,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Fiddle",
 							"parameter_longname" : "Fiddle",
 							"parameter_speedlim" : 0.0,
-							"parameter_enum" : [ "Off", "On" ]
+							"parameter_enum" : [ "Off", "On" ],
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 0 ]
 						}
 
 					}
@@ -8127,7 +8180,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x86"
 						}
 ,
@@ -8444,14 +8497,14 @@
 					"prototypename" : "M4L.live.gain~.V.extended",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 30.0,
-							"parameter_mmin" : -70.0,
-							"parameter_initial" : [ -70 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Outgain",
 							"parameter_longname" : "Outgain",
-							"parameter_unitstyle" : 4
+							"parameter_unitstyle" : 4,
+							"parameter_mmax" : 30.0,
+							"parameter_mmin" : -70.0,
+							"parameter_initial" : [ -70 ]
 						}
 
 					}
@@ -8618,7 +8671,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1374.0, 452.5, 72.0, 29.0 ],
+					"patching_rect" : [ 1374.0, 429.5, 72.0, 29.0 ],
 					"text" : "Messages to parameters"
 				}
 
@@ -8631,7 +8684,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1350.0, 452.5, 17.0, 17.0 ]
+					"patching_rect" : [ 1350.0, 429.5, 17.0, 17.0 ]
 				}
 
 			}
@@ -8646,7 +8699,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 1350.0, 484.5, 91.0, 29.0 ],
+					"patching_rect" : [ 1350.0, 461.5, 91.0, 29.0 ],
 					"restore" : 					{
 						"AmpSmooth" : [ 0.0 ],
 						"ArpegeA" : [ 10.0 ],
@@ -8706,7 +8759,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u766070704"
+					"varname" : "u217005875"
 				}
 
 			}
@@ -8749,12 +8802,12 @@
 					"presentation_rect" : [ 1162.857178, 2.0, 71.642853, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 5.0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FilterMode",
 							"parameter_longname" : "FilterMode",
-							"parameter_enum" : [ "display", "lowpass", "highpass", "bandpass", "bandstop", "peaknotch", "lowshelf", "highshelf", "resonant", "allpass" ]
+							"parameter_enum" : [ "display", "lowpass", "highpass", "bandpass", "bandstop", "peaknotch", "lowshelf", "highshelf", "resonant", "allpass" ],
+							"parameter_initial" : [ 5.0 ]
 						}
 
 					}
@@ -8896,14 +8949,14 @@
 					"presentation_rect" : [ 1194.5, 18.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 80.0,
-							"parameter_mmin" : -80.0,
-							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FilterGain",
 							"parameter_longname" : "FilterGain",
-							"parameter_unitstyle" : 4
+							"parameter_unitstyle" : 4,
+							"parameter_mmax" : 80.0,
+							"parameter_mmin" : -80.0,
+							"parameter_initial" : [ 0.0 ]
 						}
 
 					}
@@ -8926,13 +8979,13 @@
 					"presentation_rect" : [ 1066.5, 18.0, 49.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 22050.0,
-							"parameter_initial" : [ 1000.0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FilterFreq",
 							"parameter_longname" : "FilterFreq",
-							"parameter_unitstyle" : 3
+							"parameter_unitstyle" : 3,
+							"parameter_mmax" : 22050.0,
+							"parameter_initial" : [ 1000.0 ]
 						}
 
 					}
@@ -8955,15 +9008,15 @@
 					"presentation_rect" : [ 1130.5, 18.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 22000.0,
-							"parameter_initial" : [ 0.3 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FilterQ",
 							"parameter_longname" : "FilterQ",
 							"parameter_units" : "q",
 							"parameter_exponent" : 5.0,
-							"parameter_unitstyle" : 1
+							"parameter_unitstyle" : 1,
+							"parameter_mmax" : 22000.0,
+							"parameter_initial" : [ 0.3 ]
 						}
 
 					}
@@ -9032,7 +9085,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x86"
 						}
 ,
@@ -9460,14 +9513,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "SendData",
 							"parameter_longname" : "SendData",
 							"parameter_speedlim" : 0.0,
-							"parameter_enum" : [ "Off", "On" ]
+							"parameter_enum" : [ "Off", "On" ],
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 0 ]
 						}
 
 					}
@@ -9514,12 +9567,12 @@
 					"rounded" : 0.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ "nowhere" ],
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_shortname" : "Send",
-							"parameter_longname" : "Send"
+							"parameter_longname" : "Send",
+							"parameter_initial" : [ "nowhere" ]
 						}
 
 					}
@@ -9668,7 +9721,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x86"
 						}
 ,
@@ -11166,14 +11219,14 @@
 					"presentation_rect" : [ 665.0, 96.0, 48.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 3000.0,
-							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "AmpSmooth",
 							"parameter_longname" : "AmpSmooth",
 							"parameter_steps" : 301,
-							"parameter_unitstyle" : 2
+							"parameter_unitstyle" : 2,
+							"parameter_mmax" : 3000.0,
+							"parameter_initial" : [ 0 ]
 						}
 
 					}
@@ -11196,14 +11249,14 @@
 					"presentation_rect" : [ 665.0, 43.0, 48.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 3000.0,
-							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FreqSmooth",
 							"parameter_longname" : "FreqSmooth",
 							"parameter_steps" : 301,
-							"parameter_unitstyle" : 2
+							"parameter_unitstyle" : 2,
+							"parameter_mmax" : 3000.0,
+							"parameter_initial" : [ 0 ]
 						}
 
 					}
@@ -11229,14 +11282,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Monitor",
 							"parameter_longname" : "Monitor",
 							"parameter_speedlim" : 0.0,
-							"parameter_enum" : [ "Off", "On" ]
+							"parameter_enum" : [ "Off", "On" ],
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 0 ]
 						}
 
 					}
@@ -11261,13 +11314,13 @@
 					"presentation_rect" : [ 1245.5, 1.0, 48.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 100.0,
-							"parameter_initial" : [ 100 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Dry/wet",
 							"parameter_longname" : "Dry/wet",
-							"parameter_unitstyle" : 5
+							"parameter_unitstyle" : 5,
+							"parameter_mmax" : 100.0,
+							"parameter_initial" : [ 100 ]
 						}
 
 					}
@@ -11290,7 +11343,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x86"
 						}
 ,
@@ -12088,14 +12141,14 @@
 					"presentation_rect" : [ 184.0, 6.0, 32.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 8.0,
-							"parameter_mmin" : 1.0,
-							"parameter_initial" : [ 8 ],
 							"parameter_type" : 1,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "SpeedFactor",
 							"parameter_longname" : "SpeedFactor",
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_mmax" : 8.0,
+							"parameter_mmin" : 1.0,
+							"parameter_initial" : [ 8 ]
 						}
 
 					}
@@ -12387,13 +12440,13 @@
 					"presentation_rect" : [ 64.0, 4.0, 56.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 2 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "InputChannels",
 							"parameter_longname" : "InputChannels",
 							"parameter_enum" : [ "L", "R", "LR" ],
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_initial" : [ 2 ]
 						}
 
 					}
@@ -12418,7 +12471,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x86"
 						}
 ,
@@ -13565,14 +13618,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Sync",
 							"parameter_longname" : "Sync",
 							"parameter_speedlim" : 0.0,
-							"parameter_enum" : [ "Off", "On" ]
+							"parameter_enum" : [ "Off", "On" ],
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 0 ]
 						}
 
 					}
@@ -13760,15 +13813,15 @@
 					"presentation_rect" : [ 74.0, 52.0, 48.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 3000.0,
-							"parameter_mmin" : 20.0,
-							"parameter_initial" : [ 60 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Rate",
 							"parameter_longname" : "Rate",
 							"parameter_steps" : 597,
-							"parameter_unitstyle" : 2
+							"parameter_unitstyle" : 2,
+							"parameter_mmax" : 3000.0,
+							"parameter_mmin" : 20.0,
+							"parameter_initial" : [ 60 ]
 						}
 
 					}
@@ -13794,14 +13847,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Metronome",
 							"parameter_longname" : "Metronome",
 							"parameter_speedlim" : 0.0,
-							"parameter_enum" : [ "Off", "On" ]
+							"parameter_enum" : [ "Off", "On" ],
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 0 ]
 						}
 
 					}
@@ -13861,14 +13914,14 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 1 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "HearingThreshold",
 							"parameter_longname" : "HearingThreshold",
 							"parameter_speedlim" : 0.0,
-							"parameter_enum" : [ "Off", "On" ]
+							"parameter_enum" : [ "Off", "On" ],
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 1 ]
 						}
 
 					}
@@ -13910,14 +13963,14 @@
 					"presentation_rect" : [ 408.0, 146.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 10000.0,
-							"parameter_mmin" : -10000.0,
-							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Shift",
 							"parameter_longname" : "Shift",
-							"parameter_unitstyle" : 3
+							"parameter_unitstyle" : 3,
+							"parameter_mmax" : 10000.0,
+							"parameter_mmin" : -10000.0,
+							"parameter_initial" : [ 0 ]
 						}
 
 					}
@@ -13957,16 +14010,16 @@
 					"presentation_rect" : [ 408.0, 130.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 24.0,
-							"parameter_mmin" : -24.0,
-							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Transpose",
 							"parameter_longname" : "Transpose",
 							"parameter_units" : "st",
 							"parameter_steps" : 961,
-							"parameter_unitstyle" : 9
+							"parameter_unitstyle" : 9,
+							"parameter_mmax" : 24.0,
+							"parameter_mmin" : -24.0,
+							"parameter_initial" : [ 0 ]
 						}
 
 					}
@@ -14006,14 +14059,14 @@
 					"presentation_rect" : [ 408.0, 114.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 24.0,
-							"parameter_mmin" : -70.0,
-							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Level",
 							"parameter_longname" : "Level",
-							"parameter_unitstyle" : 4
+							"parameter_unitstyle" : 4,
+							"parameter_mmax" : 24.0,
+							"parameter_mmin" : -70.0,
+							"parameter_initial" : [ 0 ]
 						}
 
 					}
@@ -14053,14 +14106,14 @@
 					"presentation_rect" : [ 408.0, 98.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 200.0,
-							"parameter_mmin" : 1.0,
-							"parameter_initial" : [ 40 ],
 							"parameter_type" : 1,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "MaxPartials",
 							"parameter_longname" : "MaxPartials",
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_mmax" : 200.0,
+							"parameter_mmin" : 1.0,
+							"parameter_initial" : [ 40 ]
 						}
 
 					}
@@ -14115,12 +14168,12 @@
 					"presentation_rect" : [ 408.0, 66.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Output",
 							"parameter_longname" : "Output",
-							"parameter_enum" : [ "all_peaks", "LX_peaks" ]
+							"parameter_enum" : [ "all_peaks", "LX_peaks" ],
+							"parameter_initial" : [ 0 ]
 						}
 
 					}
@@ -14159,12 +14212,12 @@
 					"presentation_rect" : [ 408.0, 82.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Content",
 							"parameter_longname" : "Content",
-							"parameter_enum" : [ "list_nfL", "list_nfLLX", "list_nfLWS" ]
+							"parameter_enum" : [ "list_nfL", "list_nfLLX", "list_nfLWS" ],
+							"parameter_initial" : [ 0 ]
 						}
 
 					}
@@ -14203,12 +14256,12 @@
 					"presentation_rect" : [ 408.0, 50.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Ordering",
 							"parameter_longname" : "Ordering",
-							"parameter_enum" : [ "f_order", "L_order", "LX_order", "WS_L_order", "WS_LX_order" ]
+							"parameter_enum" : [ "f_order", "L_order", "LX_order", "WS_L_order", "WS_LX_order" ],
+							"parameter_initial" : [ 0 ]
 						}
 
 					}
@@ -14232,14 +14285,14 @@
 					"presentation_rect" : [ 256.0, 130.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 300.0,
-							"parameter_mmin" : -90.0,
-							"parameter_initial" : [ 90 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "RefLevel",
 							"parameter_longname" : "RefLevel",
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_mmax" : 300.0,
+							"parameter_mmin" : -90.0,
+							"parameter_initial" : [ 90 ]
 						}
 
 					}
@@ -14279,14 +14332,14 @@
 					"presentation_rect" : [ 256.0, 98.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 16.0,
-							"parameter_mmin" : 1.0,
-							"parameter_initial" : [ 2 ],
 							"parameter_type" : 1,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Width",
 							"parameter_longname" : "Width",
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_mmax" : 16.0,
+							"parameter_mmin" : 1.0,
+							"parameter_initial" : [ 2 ]
 						}
 
 					}
@@ -14326,13 +14379,13 @@
 					"presentation_rect" : [ 256.0, 114.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 16.0,
-							"parameter_initial" : [ 2 ],
 							"parameter_type" : 1,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Threshold",
 							"parameter_longname" : "Threshold",
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_mmax" : 16.0,
+							"parameter_initial" : [ 2 ]
 						}
 
 					}
@@ -14388,14 +14441,14 @@
 					"presentation_rect" : [ 256.0, 82.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 200.0,
-							"parameter_mmin" : 1.0,
-							"parameter_initial" : [ 100 ],
 							"parameter_type" : 1,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "MaxPeaks",
 							"parameter_longname" : "MaxPeaks",
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_mmax" : 200.0,
+							"parameter_mmin" : 1.0,
+							"parameter_initial" : [ 100 ]
 						}
 
 					}
@@ -14435,13 +14488,13 @@
 					"presentation_rect" : [ 256.0, 66.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 8192.0,
-							"parameter_initial" : [ 1024 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "LastToSearch",
 							"parameter_longname" : "LastToSearch",
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_mmax" : 8192.0,
+							"parameter_initial" : [ 1024 ]
 						}
 
 					}
@@ -14465,13 +14518,13 @@
 					"presentation_rect" : [ 256.0, 50.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 8192.0,
-							"parameter_initial" : [ 0 ],
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FirstToSearch",
 							"parameter_longname" : "FirstToSearch",
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_mmax" : 8192.0,
+							"parameter_initial" : [ 0 ]
 						}
 
 					}
@@ -14542,12 +14595,12 @@
 					"presentation_rect" : [ 88.0, 146.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "Downsampling",
 							"parameter_longname" : "Downsampling",
-							"parameter_enum" : [ "1", "2", "4" ]
+							"parameter_enum" : [ "1", "2", "4" ],
+							"parameter_initial" : [ 0 ]
 						}
 
 					}
@@ -14586,12 +14639,12 @@
 					"presentation_rect" : [ 88.0, 130.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 2.0 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "WindowType",
 							"parameter_longname" : "WindowType",
-							"parameter_enum" : [ "hanning", "hamming", "blackman", "cosine", "triangle", "rectangle" ]
+							"parameter_enum" : [ "hanning", "hamming", "blackman", "cosine", "triangle", "rectangle" ],
+							"parameter_initial" : [ 2.0 ]
 						}
 
 					}
@@ -14646,12 +14699,12 @@
 					"presentation_rect" : [ 88.0, 114.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 4 ],
 							"parameter_type" : 2,
 							"parameter_initial_enable" : 1,
 							"parameter_shortname" : "FFTSize",
 							"parameter_longname" : "FFTSize",
-							"parameter_enum" : [ "128", "256", "512", "1024", "2048", "4096", "8192", "16384" ]
+							"parameter_enum" : [ "128", "256", "512", "1024", "2048", "4096", "8192", "16384" ],
+							"parameter_initial" : [ 4 ]
 						}
 
 					}
@@ -14893,6 +14946,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-125", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-112", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-67", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -14966,10 +15028,28 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-125", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-122", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-129", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-123", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-242", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-125", 0 ]
 				}
 
 			}
@@ -16055,6 +16135,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-122", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-242", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"color" : [ 0.0, 0.0, 0.0, 0.05 ],
 					"destination" : [ "obj-241", 4 ],
 					"disabled" : 0,
@@ -16906,61 +16995,62 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-162" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-36" : [ "MaxPartials", "MaxPartials", 0 ],
-			"obj-30" : [ "Ordering", "Ordering", 0 ],
-			"obj-41" : [ "Shift", "Shift", 0 ],
-			"obj-296" : [ "ArpegeA", "ArpegeA", 0 ],
-			"obj-278" : [ "ArpegeD", "ArpegeD", 0 ],
-			"obj-184" : [ "ArpegeMetroRand", "ArpegeMetroRand", 0 ],
-			"obj-274" : [ "ArpegeS", "ArpegeS", 0 ],
-			"obj-3" : [ "FFTSize", "FFTSize", 0 ],
-			"obj-10" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-123" : [ "InputChannels", "InputChannels", 0 ],
-			"obj-19" : [ "MaxPeaks", "MaxPeaks", 0 ],
-			"obj-50" : [ "Rate", "Rate", 0 ],
-			"obj-34" : [ "Output", "Output", 0 ],
-			"obj-74" : [ "SpeedFactor", "SpeedFactor", 0 ],
-			"obj-201" : [ "ArpegeBasePitch", "ArpegeBasePitch", 0 ],
-			"obj-31" : [ "Content", "Content", 0 ],
-			"obj-196" : [ "ArpegeDir", "ArpegeDir", 0 ],
-			"obj-187" : [ "ArpegeMetroSpeed", "ArpegeMetroSpeed", 0 ],
 			"obj-182" : [ "ArpegeSampleSize", "ArpegeSampleSize", 0 ],
 			"obj-171" : [ "Fiddle", "Fiddle", 0 ],
-			"obj-161" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-81" : [ "Sync", "Sync", 0 ],
 			"obj-18" : [ "LastToSearch", "LastToSearch", 0 ],
-			"obj-188" : [ "MetroValues", "MetroValues", 0 ],
-			"obj-165" : [ "Outgain", "Outgain", 0 ],
-			"obj-27" : [ "RefLevel", "RefLevel", 0 ],
-			"obj-23" : [ "Threshold", "Threshold", 0 ],
+			"obj-49" : [ "Metronome", "Metronome", 0 ],
+			"obj-47" : [ "Send", "Send", 0 ],
+			"obj-7" : [ "WindowType", "WindowType", 0 ],
+			"obj-10" : [ "Dry/wet", "Dry/wet", 0 ],
 			"obj-286" : [ "ArpegeBuf", "ArpegeBuf", 0 ],
 			"obj-195" : [ "ArpegeDirRand", "ArpegeDirRand", 0 ],
 			"obj-198" : [ "ArpegeNbNotes", "ArpegeNbNotes", 0 ],
+			"obj-125" : [ "PRESET", "PRESET", 0 ],
 			"obj-194" : [ "ArpegeTranspMode", "ArpegeTranspMode", 0 ],
 			"obj-16" : [ "FirstToSearch", "FirstToSearch", 0 ],
-			"obj-160" : [ "FilterGain", "FilterGain", 0 ],
 			"obj-37" : [ "Level", "Level", 0 ],
-			"obj-49" : [ "Metronome", "Metronome", 0 ],
-			"obj-47" : [ "Send", "Send", 0 ],
-			"obj-26" : [ "Width", "Width", 0 ],
-			"obj-39" : [ "Transpose", "Transpose", 0 ],
+			"obj-22" : [ "Monitor", "Monitor", 0 ],
+			"obj-66" : [ "SendData", "SendData", 0 ],
+			"obj-161" : [ "FilterFreq", "FilterFreq", 0 ],
 			"obj-255" : [ "ArpegeBufReplace", "ArpegeBufReplace", 0 ],
+			"obj-34" : [ "Output", "Output", 0 ],
 			"obj-226" : [ "ArpegeEnv", "ArpegeEnv", 0 ],
 			"obj-181" : [ "ArpegePower", "ArpegePower", 0 ],
-			"obj-81" : [ "Sync", "Sync", 0 ],
+			"obj-31" : [ "Content", "Content", 0 ],
 			"obj-9" : [ "Downsampling", "Downsampling", 0 ],
 			"obj-99" : [ "FreqSmooth", "FreqSmooth", 0 ],
 			"obj-213" : [ "Manual", "Manual", 0 ],
-			"obj-152" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-22" : [ "Monitor", "Monitor", 0 ],
-			"obj-66" : [ "SendData", "SendData", 0 ],
-			"obj-7" : [ "WindowType", "WindowType", 0 ],
+			"obj-36" : [ "MaxPartials", "MaxPartials", 0 ],
+			"obj-30" : [ "Ordering", "Ordering", 0 ],
+			"obj-74" : [ "SpeedFactor", "SpeedFactor", 0 ],
+			"obj-160" : [ "FilterGain", "FilterGain", 0 ],
 			"obj-103" : [ "AmpSmooth", "AmpSmooth", 0 ],
 			"obj-331" : [ "ArpegeBufSet", "ArpegeBufSet", 0 ],
 			"obj-199" : [ "ArpegeInput", "ArpegeInput", 0 ],
 			"obj-224" : [ "ArpegeR", "ArpegeR", 0 ],
 			"obj-232" : [ "Error", "Error", 0 ],
-			"obj-44" : [ "HearingThreshold", "HearingThreshold", 0 ]
+			"obj-44" : [ "HearingThreshold", "HearingThreshold", 0 ],
+			"obj-19" : [ "MaxPeaks", "MaxPeaks", 0 ],
+			"obj-50" : [ "Rate", "Rate", 0 ],
+			"obj-23" : [ "Threshold", "Threshold", 0 ],
+			"obj-152" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-165" : [ "Outgain", "Outgain", 0 ],
+			"obj-296" : [ "ArpegeA", "ArpegeA", 0 ],
+			"obj-278" : [ "ArpegeD", "ArpegeD", 0 ],
+			"obj-184" : [ "ArpegeMetroRand", "ArpegeMetroRand", 0 ],
+			"obj-274" : [ "ArpegeS", "ArpegeS", 0 ],
+			"obj-3" : [ "FFTSize", "FFTSize", 0 ],
+			"obj-123" : [ "InputChannels", "InputChannels", 0 ],
+			"obj-188" : [ "MetroValues", "MetroValues", 0 ],
+			"obj-27" : [ "RefLevel", "RefLevel", 0 ],
+			"obj-26" : [ "Width", "Width", 0 ],
+			"obj-162" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-201" : [ "ArpegeBasePitch", "ArpegeBasePitch", 0 ],
+			"obj-41" : [ "Shift", "Shift", 0 ],
+			"obj-196" : [ "ArpegeDir", "ArpegeDir", 0 ],
+			"obj-187" : [ "ArpegeMetroSpeed", "ArpegeMetroSpeed", 0 ],
+			"obj-39" : [ "Transpose", "Transpose", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -16994,14 +17084,14 @@
 , 			{
 				"name" : "tg.samplingHarm.maxpat",
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/_Samplor",
-				"patcherrelativepath" : "./_Samplor",
+				"patcherrelativepath" : "../_Samplor",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.samplingGizmo1.maxpat",
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/_Samplor",
-				"patcherrelativepath" : "./_Samplor",
+				"patcherrelativepath" : "../_Samplor",
 				"type" : "JSON",
 				"implicit" : 1
 			}
