@@ -36,8 +36,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 546.0, 518.0, 38.0, 18.0 ],
-					"presentation_rect" : [ 541.5, 514.0, 0.0, 0.0 ],
+					"patching_rect" : [ 299.5, 485.0, 38.0, 18.0 ],
 					"text" : "interp"
 				}
 
@@ -51,37 +50,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 424.5, 518.0, 33.0, 18.0 ],
-					"presentation_rect" : [ 420.0, 514.0, 0.0, 0.0 ],
-					"text" : "gliss"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"frgb" : 0.0,
-					"id" : "obj-42",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 253.5, 518.0, 38.0, 18.0 ],
-					"presentation_rect" : [ 253.0, 519.0, 0.0, 0.0 ],
-					"text" : "interp"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"frgb" : 0.0,
-					"id" : "obj-41",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 132.0, 518.0, 33.0, 18.0 ],
+					"patching_rect" : [ 178.0, 485.0, 33.0, 18.0 ],
 					"text" : "gliss"
 				}
 
@@ -97,7 +66,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 128.0, 417.5, 121.0, 27.0 ],
-					"presentation_rect" : [ 159.0, 393.0, 0.0, 0.0 ],
 					"text" : ";\r1Chro Flush 1"
 				}
 
@@ -112,8 +80,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 548.0, 536.0, 104.0, 38.0 ],
-					"presentation_rect" : [ 505.0, 540.0, 0.0, 0.0 ],
+					"patching_rect" : [ 301.5, 503.0, 104.0, 38.0 ],
 					"text" : ";\r1Chro Flush 1;\r1Chro InterpMode 1"
 				}
 
@@ -128,9 +95,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 377.0, 536.0, 128.0, 49.0 ],
-					"presentation_rect" : [ 374.0, 540.0, 0.0, 0.0 ],
-					"text" : ";\r1Chro Flush 1;\r1Chro Chord 63 1 64 1;\r1Chro InterpMode 2"
+					"patching_rect" : [ 130.5, 503.0, 128.0, 49.0 ],
+					"text" : ";\r1Chro Flush 1;\r1Chro Chord 63 64;\r1Chro InterpMode 2"
 				}
 
 			}
@@ -139,14 +105,13 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-31",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 377.0, 645.0, 122.0, 38.0 ],
-					"presentation_rect" : [ 374.0, 649.0, 0.0, 0.0 ],
-					"text" : ";\r1Chro Flush 1;\r1Chro Chord 63 1 64 1"
+					"patching_rect" : [ 130.5, 612.0, 122.0, 27.0 ],
+					"text" : ";\r1Chro Chord 63 64"
 				}
 
 			}
@@ -155,14 +120,13 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-32",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 377.0, 599.0, 122.0, 38.0 ],
-					"presentation_rect" : [ 374.0, 603.0, 0.0, 0.0 ],
-					"text" : ";\r1Chro Flush 1;\r1Chro Chord 81 1 83 1"
+					"patching_rect" : [ 130.5, 566.0, 122.0, 27.0 ],
+					"text" : ";\r1Chro Chord 81 83"
 				}
 
 			}
@@ -171,14 +135,13 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-33",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 548.0, 641.5, 122.0, 38.0 ],
-					"presentation_rect" : [ 505.0, 645.5, 0.0, 0.0 ],
-					"text" : ";\r1Chro Flush 1;\r1Chro Chord 63 1 64 1"
+					"patching_rect" : [ 301.5, 608.5, 122.0, 27.0 ],
+					"text" : ";\r1Chro Chord 63 64"
 				}
 
 			}
@@ -187,108 +150,13 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-34",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 548.0, 589.5, 122.0, 38.0 ],
-					"presentation_rect" : [ 505.0, 593.5, 0.0, 0.0 ],
-					"text" : ";\r1Chro Flush 1;\r1Chro Chord 81 1 83 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-22",
-					"linecount" : 3,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 218.0, 536.0, 104.0, 38.0 ],
-					"presentation_rect" : [ 354.0, 546.0, 0.0, 0.0 ],
-					"text" : ";\r1Chro.Flush bang;\r1Chro InterpMode 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-20",
-					"linecount" : 4,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 87.0, 536.0, 121.0, 49.0 ],
-					"presentation_rect" : [ 316.0, 608.5, 0.0, 0.0 ],
-					"text" : ";\r1Chro.Flush bang;\r1Chro.Notes 63 1 64 1;\r1Chro InterpMode 2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-15",
-					"linecount" : 3,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 87.0, 645.0, 114.0, 38.0 ],
-					"presentation_rect" : [ 164.0, 571.5, 0.0, 0.0 ],
-					"text" : ";\r1Chro.Flush bang;\r1Chro.Notes 63 1 64 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-13",
-					"linecount" : 3,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 87.0, 599.0, 114.0, 38.0 ],
-					"presentation_rect" : [ 151.0, 479.5, 0.0, 0.0 ],
-					"text" : ";\r1Chro.Flush bang;\r1Chro.Notes 81 1 83 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-105",
-					"linecount" : 3,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 218.0, 641.5, 114.0, 38.0 ],
-					"text" : ";\r1Chro.Flush bang;\r1Chro.Notes 63 1 64 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-99",
-					"linecount" : 3,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 218.0, 589.5, 114.0, 38.0 ],
-					"text" : ";\r1Chro.Flush bang;\r1Chro.Notes 81 1 83 1"
+					"patching_rect" : [ 301.5, 556.5, 122.0, 27.0 ],
+					"text" : ";\r1Chro Chord 81 83"
 				}
 
 			}
@@ -743,13 +611,13 @@
 					"patching_rect" : [ 18.0, 257.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmin" : -70.0,
+							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 0,
 							"parameter_shortname" : "live.gain~",
 							"parameter_longname" : "live.gain~",
 							"parameter_unitstyle" : 4,
-							"parameter_mmax" : 6.0,
-							"parameter_mmin" : -70.0,
-							"parameter_initial" : [ 0.0 ]
+							"parameter_mmax" : 6.0
 						}
 
 					}
@@ -899,37 +767,38 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-7::obj-50" : [ "Play", "Play", 0 ],
-			"obj-1.1::obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-1.1::obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-1.1::obj-1::obj-48" : [ "speed", "speed", 0 ],
-			"obj-1.1::obj-1::obj-82" : [ "InterpTime", "InterpTime", 0 ],
-			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
-			"obj-1.1::obj-1::obj-47" : [ "direction", "direction", 0 ],
 			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
-			"obj-1.1::obj-1::obj-77" : [ "Chord", "Chord", 0 ],
-			"obj-1.1::obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-1.1::obj-1::obj-80" : [ "Envelope", "Envelope", 0 ],
-			"obj-1.1::obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-1.1::obj-1::obj-83" : [ "Stretch", "Stretch", 0 ],
-			"obj-1.1::obj-1::obj-53" : [ "Tune", "Tune", 0 ],
-			"obj-1.1::obj-1::obj-76" : [ "InterpMode", "InterpMode", 0 ],
-			"obj-1.1::obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-1.1::obj-1::obj-89" : [ "PanL", "PanL", 0 ],
-			"obj-1.1::obj-1::obj-66" : [ "ReceiveChord", "ReceiveChord", 0 ],
+			"obj-1.1::obj-1::obj-20" : [ "PRESET", "PRESET", 0 ],
 			"obj-1.1::obj-1::obj-54" : [ "ampVar", "ampVar", 0 ],
 			"obj-1.1::obj-1::obj-55" : [ "repet", "repet", 0 ],
-			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
-			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
-			"obj-1.1::obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-1.1::obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-1.1::obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ],
 			"obj-1.1::obj-1::obj-88" : [ "PanR", "PanR", 0 ],
+			"obj-1.1::obj-1::obj-83" : [ "Stretch", "Stretch", 0 ],
+			"obj-1.1::obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-1.1::obj-1::obj-76" : [ "InterpMode", "InterpMode", 0 ],
+			"obj-1.1::obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-1.1::obj-1::obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
+			"obj-1.1::obj-1::obj-80" : [ "Envelope", "Envelope", 0 ],
+			"obj-1.1::obj-1::obj-82" : [ "InterpTime", "InterpTime", 0 ],
+			"obj-1.1::obj-1::obj-66" : [ "ReceiveChord", "ReceiveChord", 0 ],
+			"obj-1.1::obj-1::obj-48" : [ "speed", "speed", 0 ],
+			"obj-1.1::obj-1::obj-47" : [ "direction", "direction", 0 ],
+			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
 			"obj-1.1::obj-1::obj-46" : [ "Flush", "Flush", 0 ],
-			"obj-1.1::obj-1::obj-49" : [ "feedback", "feedback", 0 ],
-			"obj-1.1::obj-1::obj-44" : [ "HarmModel", "HarmModel", 0 ],
+			"obj-1.1::obj-1::obj-21" : [ "Chord", "Chord", 0 ],
+			"obj-1.1::obj-1::obj-53" : [ "Tune", "Tune", 0 ],
 			"obj-1.1::obj-1::obj-60" : [ "ForceFilter", "ForceFilter", 0 ],
-			"obj-1.1::obj-1::obj-81" : [ "Shift", "Shift", 0 ]
+			"obj-1.1::obj-1::obj-81" : [ "Shift", "Shift", 0 ],
+			"obj-7::obj-50" : [ "Play", "Play", 0 ],
+			"obj-1.1::obj-1::obj-49" : [ "feedback", "feedback", 0 ],
+			"obj-1.1::obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-1.1::obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-1.1::obj-1::obj-44" : [ "HarmModel", "HarmModel", 0 ],
+			"obj-1.1::obj-1::obj-89" : [ "PanL", "PanL", 0 ],
+			"obj-7::obj-6" : [ "Folder", "Folder", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
