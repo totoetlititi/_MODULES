@@ -1365,7 +1365,7 @@
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "spat.pan @numoutputs 6 @type vbap2d"
+					"text" : "spat.pan @numoutputs 8 @type vbap2d"
 				}
 
 			}
