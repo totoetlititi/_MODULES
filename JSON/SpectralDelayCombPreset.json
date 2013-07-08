@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "SpectralDelayComb",
+		"name" : "SpectralDelayCombPreset",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -31,7 +31,7 @@
 					"Grain" : [ 20.0 ],
 					"Ingain" : [ 0.0 ],
 					"Metro" : [ 0.0 ],
-					"Outgain" : [ -70.0 ],
+					"Outgain" : [ -127.0 ],
 					"Pow" : [ 1.0 ],
 					"SizeMax" : [ 10.0 ],
 					"SizeMin" : [ 10.0 ],

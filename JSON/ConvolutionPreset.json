@@ -14,7 +14,7 @@
 					"Ingain1" : [ 0.0 ],
 					"Ingain2" : [ 0.0 ],
 					"Morph" : [ 100.0 ],
-					"Outgain" : [ -70.0 ],
+					"Outgain" : [ -127.0 ],
 					"ReceiveEnable" : [ 1.0 ],
 					"ReceiveSource2" : [ "none" ]
 				}

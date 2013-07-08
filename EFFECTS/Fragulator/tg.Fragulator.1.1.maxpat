@@ -557,6 +557,7 @@
 					"presentation_rect" : [ 548.5, 151.5, 95.0, 16.0 ],
 					"prototypename" : "M4L.black",
 					"rounded" : 12.0,
+					"text" : "Default",
 					"textcolor" : [ 0.909804, 0.909804, 0.909804, 1.0 ]
 				}
 
@@ -843,7 +844,7 @@
 						"FilterMode" : [ 5.0 ],
 						"FilterQ" : [ 0.3 ],
 						"Ingain" : [ 0.0 ],
-						"Outgain" : [ -70.0 ],
+						"Outgain" : [ -127.0 ],
 						"ampVar" : [ 0.0 ],
 						"bufferSize" : [ 30.0 ],
 						"declick" : [ 0.0 ],
@@ -855,7 +856,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u279032464"
+					"varname" : "u570025851"
 				}
 
 			}
@@ -1258,10 +1259,10 @@
 							"parameter_longname" : "Outgain",
 							"parameter_shortname" : "Outgain",
 							"parameter_type" : 0,
-							"parameter_mmin" : -70.0,
-							"parameter_mmax" : 30.0,
+							"parameter_mmin" : -127.0,
+							"parameter_mmax" : 20.0,
 							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ -70 ],
+							"parameter_initial" : [ -127 ],
 							"parameter_unitstyle" : 4
 						}
 
@@ -1919,22 +1920,22 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-47" : [ "direction", "direction", 0 ],
-			"obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-50" : [ "declick", "declick", 0 ],
+			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
 			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-47" : [ "direction", "direction", 0 ],
+			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
 			"obj-14" : [ "Outgain", "Outgain", 0 ],
 			"obj-57" : [ "dropOut", "dropOut", 0 ],
 			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-8" : [ "Ingain", "Ingain", 0 ],
 			"obj-48" : [ "speed", "speed", 0 ],
 			"obj-54" : [ "ampVar", "ampVar", 0 ],
 			"obj-49" : [ "feedback", "feedback", 0 ],
-			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-80" : [ "PRESET", "PRESET", 0 ],
 			"obj-51" : [ "bufferSize", "bufferSize", 0 ],
-			"obj-55" : [ "repet", "repet", 0 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-50" : [ "declick", "declick", 0 ]
+			"obj-55" : [ "repet", "repet", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -1946,28 +1947,28 @@
 			}
 , 			{
 				"name" : "FragulatorPreset.json",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
 				"patcherrelativepath" : "../../JSON",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.fgraph.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "frag.StutterPshift22~.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Fragulator",
+				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Fragulator",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

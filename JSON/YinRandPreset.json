@@ -26,7 +26,7 @@
 					"MidEnable" : [ 1.0 ],
 					"MidGain" : [ 0.0 ],
 					"Modulate" : [ 0.0 ],
-					"Outgain" : [ -70.0 ],
+					"Outgain" : [ -127.0 ],
 					"Quality" : [ 60.0 ],
 					"UnvoicedGain" : [ 0.0 ],
 					"VoicedGain" : [ 0.0 ]

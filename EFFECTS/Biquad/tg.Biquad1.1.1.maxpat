@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 63.0, 44.0, 413.0, 176.0 ],
+		"rect" : [ 51.0, 342.0, 413.0, 176.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -474,11 +474,11 @@
 						"FilterMode" : [ 5.0 ],
 						"FilterQ" : [ 0.3 ],
 						"Ingain" : [ 0.0 ],
-						"Outgain" : [ -70.0 ]
+						"Outgain" : [ -48.380951 ]
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u289026924"
+					"varname" : "u731029081"
 				}
 
 			}
@@ -869,10 +869,10 @@
 							"parameter_longname" : "Outgain",
 							"parameter_shortname" : "Outgain",
 							"parameter_type" : 0,
-							"parameter_mmin" : -70.0,
-							"parameter_mmax" : 30.0,
+							"parameter_mmin" : -127.0,
+							"parameter_mmax" : 20.0,
 							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ -70 ],
+							"parameter_initial" : [ -127 ],
 							"parameter_unitstyle" : 4
 						}
 
@@ -1422,14 +1422,14 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
 			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
 			"obj-14" : [ "Outgain", "Outgain", 0 ],
 			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
 			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-8" : [ "Ingain", "Ingain", 0 ]
+			"obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-80" : [ "PRESET", "PRESET", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -1441,21 +1441,21 @@
 			}
 , 			{
 				"name" : "Biquad1Preset.json",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
 				"patcherrelativepath" : "../../JSON",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.fgraph.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1

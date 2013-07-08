@@ -29,6 +29,63 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-50",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1164.75, 755.165527, 100.0, 18.0 ],
+					"text" : "prepend Outgain"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-51",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1164.75, 779.165527, 100.0, 18.0 ],
+					"text" : "s #1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-52",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1164.75, 721.165527, 100.0, 18.0 ],
+					"text" : "r #1.Outgain"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-53",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1164.75, 695.165527, 100.0, 18.0 ],
+					"text" : "s #1.Outgain"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-47",
 					"maxclass" : "live.meter~",
 					"numinlets" : 1,
@@ -60,8 +117,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 811.640625, 845.667236, 25.0, 25.0 ],
-					"presentation_rect" : [ 825.171875, 844.667236, 0.0, 0.0 ]
+					"patching_rect" : [ 811.640625, 845.667236, 25.0, 25.0 ]
 				}
 
 			}
@@ -75,7 +131,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 811.640625, 789.667236, 32.5, 18.0 ],
-					"presentation_rect" : [ 825.171875, 788.667236, 0.0, 0.0 ],
 					"text" : "*~"
 				}
 
@@ -87,8 +142,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 696.40625, 845.667236, 25.0, 25.0 ],
-					"presentation_rect" : [ 705.171875, 844.667236, 0.0, 0.0 ]
+					"patching_rect" : [ 696.40625, 845.667236, 25.0, 25.0 ]
 				}
 
 			}
@@ -102,7 +156,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 696.40625, 789.667236, 32.5, 18.0 ],
-					"presentation_rect" : [ 705.171875, 788.667236, 0.0, 0.0 ],
 					"text" : "*~"
 				}
 
@@ -399,8 +452,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1176.0, 40.0, 52.0, 38.0 ],
-					"text" : "source 6 doppler 0"
+					"patching_rect" : [ 1176.0, 40.0, 40.0, 38.0 ],
+					"text" : "source 6 air 1"
 				}
 
 			}
@@ -973,7 +1026,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 504.0, 153.0, 50.5, 18.0 ],
-									"presentation_rect" : [ 504.0, 155.0, 0.0, 0.0 ],
 									"text" : "*~"
 								}
 
@@ -988,7 +1040,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 435.0, 153.0, 50.5, 18.0 ],
-									"presentation_rect" : [ 435.0, 155.0, 0.0, 0.0 ],
 									"text" : "*~"
 								}
 
@@ -1001,8 +1052,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 435.0, 18.0, 25.0, 25.0 ],
-									"presentation_rect" : [ 435.0, 20.0, 0.0, 0.0 ]
+									"patching_rect" : [ 435.0, 18.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -1014,8 +1064,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 504.0, 18.0, 25.0, 25.0 ],
-									"presentation_rect" : [ 504.0, 20.0, 0.0, 0.0 ]
+									"patching_rect" : [ 504.0, 18.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -1026,8 +1075,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 435.0, 198.0, 25.0, 25.0 ],
-									"presentation_rect" : [ 435.0, 200.0, 0.0, 0.0 ]
+									"patching_rect" : [ 435.0, 198.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -1038,8 +1086,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 504.0, 198.0, 25.0, 25.0 ],
-									"presentation_rect" : [ 504.0, 200.0, 0.0, 0.0 ]
+									"patching_rect" : [ 504.0, 198.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -4504,6 +4551,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-459", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-460", 7 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4608,6 +4664,24 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-51", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-50", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-50", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-52", 0 ]
 				}
 
 			}
@@ -4858,139 +4932,139 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-5::obj-225" : [ "warm[5]", "warm", 0 ],
-			"obj-28::obj-28" : [ "width[1]", "width", 0 ],
-			"obj-5::obj-71" : [ "az[5]", "az", 0 ],
-			"obj-20::obj-65" : [ "air[2]", "air", 0 ],
-			"obj-20::obj-32" : [ "pres[2]", "pres", 0 ],
-			"obj-27::obj-225" : [ "warm", "warm", 0 ],
-			"obj-13::obj-46" : [ "reverb[4]", "reverb", 0 ],
-			"obj-20::obj-61" : [ "yaw[2]", "yaw", 0 ],
-			"obj-13::obj-41" : [ "bril[4]", "bril", 0 ],
-			"obj-13::obj-44" : [ "revp[4]", "revp", 0 ],
-			"obj-459" : [ "Outgain[5]", "Outgain", 0 ],
-			"obj-8::obj-3" : [ "mute[1]", "mute", 0 ],
-			"obj-8::obj-440" : [ "heaviness[1]", "heaviness", 0 ],
-			"obj-21::obj-37" : [ "prer[3]", "prer", 0 ],
-			"obj-19::obj-440" : [ "heaviness", "heaviness", 0 ],
-			"obj-21::obj-5" : [ "Input[3]", "Input", 0 ],
-			"obj-5::obj-28" : [ "width[5]", "width", 0 ],
-			"obj-21::obj-65" : [ "air[3]", "air", 0 ],
+			"obj-28::obj-5" : [ "Input[1]", "Input", 0 ],
+			"obj-19::obj-95" : [ "infinite", "infinite", 0 ],
 			"obj-28::obj-71" : [ "az[1]", "az", 0 ],
-			"obj-5::obj-46" : [ "reverb[5]", "reverb", 0 ],
-			"obj-28::obj-50" : [ "rename[1]", "rename", 0 ],
-			"obj-27::obj-61" : [ "yaw", "yaw", 0 ],
-			"obj-5::obj-41" : [ "bril[5]", "bril", 0 ],
-			"obj-20::obj-37" : [ "prer[2]", "prer", 0 ],
-			"obj-13::obj-28" : [ "width[4]", "width", 0 ],
-			"obj-20::obj-56" : [ "aperture[2]", "aperture", 0 ],
-			"obj-13::obj-225" : [ "warm[4]", "warm", 0 ],
-			"obj-20::obj-71" : [ "az[2]", "az", 0 ],
-			"obj-13::obj-5" : [ "Input[4]", "Input", 0 ],
-			"obj-28::obj-46" : [ "reverb[1]", "reverb", 0 ],
-			"obj-13::obj-32" : [ "pres[4]", "pres", 0 ],
-			"obj-8::obj-446" : [ "liveness[1]", "liveness", 0 ],
-			"obj-21::obj-81" : [ "env[3]", "env", 0 ],
-			"obj-27::obj-65" : [ "air", "air", 0 ],
-			"obj-5::obj-50" : [ "rename[5]", "rename", 0 ],
-			"obj-21::obj-75" : [ "dist[3]", "dist", 0 ],
-			"obj-28::obj-61" : [ "yaw[1]", "yaw", 0 ],
-			"obj-5::obj-61" : [ "yaw[5]", "yaw", 0 ],
-			"obj-21::obj-41" : [ "bril[3]", "bril", 0 ],
-			"obj-28::obj-81" : [ "env[1]", "env", 0 ],
+			"obj-27::obj-225" : [ "warm", "warm", 0 ],
+			"obj-21::obj-46" : [ "reverb[3]", "reverb", 0 ],
+			"obj-21::obj-50" : [ "rename[3]", "rename", 0 ],
+			"obj-459" : [ "Outgain[5]", "Outgain", 0 ],
 			"obj-5::obj-5" : [ "Input[5]", "Input", 0 ],
-			"obj-20::obj-81" : [ "env[2]", "env", 0 ],
-			"obj-28::obj-41" : [ "bril[1]", "bril", 0 ],
-			"obj-27::obj-41" : [ "bril", "bril", 0 ],
+			"obj-21::obj-81" : [ "env[3]", "env", 0 ],
+			"obj-5::obj-46" : [ "reverb[5]", "reverb", 0 ],
+			"obj-21::obj-37" : [ "prer[3]", "prer", 0 ],
 			"obj-5::obj-215" : [ "doppler[5]", "doppler", 0 ],
-			"obj-20::obj-75" : [ "dist[2]", "dist", 0 ],
-			"obj-13::obj-50" : [ "rename[4]", "rename", 0 ],
-			"obj-20::obj-44" : [ "revp[2]", "revp", 0 ],
-			"obj-13::obj-37" : [ "prer[4]", "prer", 0 ],
 			"obj-20::obj-28" : [ "width[2]", "width", 0 ],
+			"obj-20::obj-215" : [ "doppler[2]", "doppler", 0 ],
+			"obj-13::obj-28" : [ "width[4]", "width", 0 ],
+			"obj-20::obj-50" : [ "rename[2]", "rename", 0 ],
+			"obj-13::obj-71" : [ "az[4]", "az", 0 ],
+			"obj-27::obj-37" : [ "prer", "prer", 0 ],
 			"obj-13::obj-61" : [ "yaw[4]", "yaw", 0 ],
+			"obj-28::obj-225" : [ "warm[1]", "warm", 0 ],
+			"obj-28::obj-46" : [ "reverb[1]", "reverb", 0 ],
+			"obj-27::obj-56" : [ "aperture", "aperture", 0 ],
+			"obj-27::obj-215" : [ "doppler", "doppler", 0 ],
+			"obj-8::obj-440" : [ "heaviness[1]", "heaviness", 0 ],
+			"obj-28::obj-28" : [ "width[1]", "width", 0 ],
+			"obj-21::obj-65" : [ "air[3]", "air", 0 ],
+			"obj-27::obj-50" : [ "rename", "rename", 0 ],
+			"obj-21::obj-32" : [ "pres[3]", "pres", 0 ],
+			"obj-5::obj-71" : [ "az[5]", "az", 0 ],
+			"obj-21::obj-215" : [ "doppler[3]", "doppler", 0 ],
+			"obj-5::obj-37" : [ "prer[5]", "prer", 0 ],
+			"obj-5::obj-41" : [ "bril[5]", "bril", 0 ],
+			"obj-20::obj-46" : [ "reverb[2]", "reverb", 0 ],
+			"obj-20::obj-44" : [ "revp[2]", "revp", 0 ],
+			"obj-13::obj-225" : [ "warm[4]", "warm", 0 ],
+			"obj-20::obj-75" : [ "dist[2]", "dist", 0 ],
+			"obj-13::obj-46" : [ "reverb[4]", "reverb", 0 ],
+			"obj-13::obj-75" : [ "dist[4]", "dist", 0 ],
+			"obj-28::obj-37" : [ "prer[1]", "prer", 0 ],
+			"obj-8::obj-3" : [ "mute[1]", "mute", 0 ],
+			"obj-19::obj-440" : [ "heaviness", "heaviness", 0 ],
+			"obj-28::obj-41" : [ "bril[1]", "bril", 0 ],
+			"obj-8::obj-443" : [ "reverberance[1]", "reverberance", 0 ],
+			"obj-28::obj-50" : [ "rename[1]", "rename", 0 ],
+			"obj-27::obj-75" : [ "dist", "dist", 0 ],
+			"obj-21::obj-44" : [ "revp[3]", "revp", 0 ],
+			"obj-5::obj-56" : [ "aperture[5]", "aperture", 0 ],
+			"obj-21::obj-61" : [ "yaw[3]", "yaw", 0 ],
+			"obj-5::obj-61" : [ "yaw[5]", "yaw", 0 ],
+			"obj-21::obj-5" : [ "Input[3]", "Input", 0 ],
+			"obj-5::obj-225" : [ "warm[5]", "warm", 0 ],
+			"obj-5::obj-75" : [ "dist[5]", "dist", 0 ],
+			"obj-20::obj-56" : [ "aperture[2]", "aperture", 0 ],
+			"obj-13::obj-50" : [ "rename[4]", "rename", 0 ],
+			"obj-20::obj-32" : [ "pres[2]", "pres", 0 ],
+			"obj-13::obj-81" : [ "env[4]", "env", 0 ],
+			"obj-20::obj-65" : [ "air[2]", "air", 0 ],
+			"obj-13::obj-56" : [ "aperture[4]", "aperture", 0 ],
+			"obj-13::obj-37" : [ "prer[4]", "prer", 0 ],
+			"obj-28::obj-81" : [ "env[1]", "env", 0 ],
+			"obj-27::obj-65" : [ "air", "air", 0 ],
+			"obj-28::obj-215" : [ "doppler[1]", "doppler", 0 ],
+			"obj-8::obj-95" : [ "infinite[1]", "infinite", 0 ],
+			"obj-28::obj-75" : [ "dist[1]", "dist", 0 ],
+			"obj-27::obj-41" : [ "bril", "bril", 0 ],
+			"obj-21::obj-28" : [ "width[3]", "width", 0 ],
+			"obj-21::obj-75" : [ "dist[3]", "dist", 0 ],
+			"obj-5::obj-81" : [ "env[5]", "env", 0 ],
+			"obj-21::obj-56" : [ "aperture[3]", "aperture", 0 ],
+			"obj-5::obj-50" : [ "rename[5]", "rename", 0 ],
+			"obj-5::obj-28" : [ "width[5]", "width", 0 ],
+			"obj-20::obj-37" : [ "prer[2]", "prer", 0 ],
+			"obj-13::obj-65" : [ "air[4]", "air", 0 ],
+			"obj-20::obj-71" : [ "az[2]", "az", 0 ],
+			"obj-27::obj-46" : [ "reverb", "reverb", 0 ],
+			"obj-27::obj-44" : [ "revp", "revp", 0 ],
+			"obj-13::obj-32" : [ "pres[4]", "pres", 0 ],
+			"obj-20::obj-41" : [ "bril[2]", "bril", 0 ],
+			"obj-13::obj-44" : [ "revp[4]", "revp", 0 ],
+			"obj-28::obj-32" : [ "pres[1]", "pres", 0 ],
+			"obj-27::obj-71" : [ "az", "az", 0 ],
 			"obj-28::obj-44" : [ "revp[1]", "revp", 0 ],
 			"obj-27::obj-28" : [ "width", "width", 0 ],
-			"obj-21::obj-71" : [ "az[3]", "az", 0 ],
-			"obj-21::obj-56" : [ "aperture[3]", "aperture", 0 ],
-			"obj-5::obj-81" : [ "env[5]", "env", 0 ],
-			"obj-19::obj-443" : [ "reverberance", "reverberance", 0 ],
-			"obj-21::obj-44" : [ "revp[3]", "revp", 0 ],
-			"obj-28::obj-32" : [ "pres[1]", "pres", 0 ],
-			"obj-5::obj-32" : [ "pres[5]", "pres", 0 ],
-			"obj-21::obj-50" : [ "rename[3]", "rename", 0 ],
-			"obj-28::obj-56" : [ "aperture[1]", "aperture", 0 ],
-			"obj-5::obj-44" : [ "revp[5]", "revp", 0 ],
-			"obj-19::obj-446" : [ "liveness", "liveness", 0 ],
-			"obj-20::obj-225" : [ "warm[2]", "warm", 0 ],
-			"obj-28::obj-75" : [ "dist[1]", "dist", 0 ],
-			"obj-20::obj-50" : [ "rename[2]", "rename", 0 ],
-			"obj-13::obj-56" : [ "aperture[4]", "aperture", 0 ],
-			"obj-20::obj-215" : [ "doppler[2]", "doppler", 0 ],
-			"obj-27::obj-44" : [ "revp", "revp", 0 ],
-			"obj-13::obj-215" : [ "doppler[4]", "doppler", 0 ],
-			"obj-13::obj-65" : [ "air[4]", "air", 0 ],
-			"obj-28::obj-225" : [ "warm[1]", "warm", 0 ],
-			"obj-27::obj-75" : [ "dist", "dist", 0 ],
-			"obj-27::obj-71" : [ "az", "az", 0 ],
-			"obj-8::obj-95" : [ "infinite[1]", "infinite", 0 ],
-			"obj-21::obj-215" : [ "doppler[3]", "doppler", 0 ],
-			"obj-21::obj-61" : [ "yaw[3]", "yaw", 0 ],
-			"obj-27::obj-215" : [ "doppler", "doppler", 0 ],
-			"obj-5::obj-56" : [ "aperture[5]", "aperture", 0 ],
-			"obj-19::obj-95" : [ "infinite", "infinite", 0 ],
-			"obj-21::obj-32" : [ "pres[3]", "pres", 0 ],
-			"obj-28::obj-215" : [ "doppler[1]", "doppler", 0 ],
-			"obj-5::obj-75" : [ "dist[5]", "dist", 0 ],
-			"obj-28::obj-37" : [ "prer[1]", "prer", 0 ],
-			"obj-5::obj-65" : [ "air[5]", "air", 0 ],
-			"obj-20::obj-46" : [ "reverb[2]", "reverb", 0 ],
-			"obj-20::obj-41" : [ "bril[2]", "bril", 0 ],
-			"obj-13::obj-75" : [ "dist[4]", "dist", 0 ],
-			"obj-20::obj-5" : [ "Input[2]", "Input", 0 ],
-			"obj-27::obj-81" : [ "env", "env", 0 ],
-			"obj-13::obj-71" : [ "az[4]", "az", 0 ],
-			"obj-13::obj-81" : [ "env[4]", "env", 0 ],
+			"obj-8::obj-446" : [ "liveness[1]", "liveness", 0 ],
 			"obj-28::obj-65" : [ "air[1]", "air", 0 ],
-			"obj-27::obj-37" : [ "prer", "prer", 0 ],
+			"obj-28::obj-56" : [ "aperture[1]", "aperture", 0 ],
 			"obj-27::obj-5" : [ "Input", "Input", 0 ],
-			"obj-27::obj-32" : [ "pres", "pres", 0 ],
-			"obj-8::obj-443" : [ "reverberance[1]", "reverberance", 0 ],
-			"obj-19::obj-3" : [ "mute", "mute", 0 ],
-			"obj-27::obj-50" : [ "rename", "rename", 0 ],
-			"obj-21::obj-28" : [ "width[3]", "width", 0 ],
+			"obj-27::obj-61" : [ "yaw", "yaw", 0 ],
+			"obj-19::obj-446" : [ "liveness", "liveness", 0 ],
+			"obj-19::obj-443" : [ "reverberance", "reverberance", 0 ],
+			"obj-21::obj-41" : [ "bril[3]", "bril", 0 ],
+			"obj-5::obj-32" : [ "pres[5]", "pres", 0 ],
 			"obj-21::obj-225" : [ "warm[3]", "warm", 0 ],
-			"obj-27::obj-56" : [ "aperture", "aperture", 0 ],
-			"obj-5::obj-37" : [ "prer[5]", "prer", 0 ],
-			"obj-21::obj-46" : [ "reverb[3]", "reverb", 0 ],
-			"obj-28::obj-5" : [ "Input[1]", "Input", 0 ],
-			"obj-27::obj-46" : [ "reverb", "reverb", 0 ]
+			"obj-5::obj-65" : [ "air[5]", "air", 0 ],
+			"obj-21::obj-71" : [ "az[3]", "az", 0 ],
+			"obj-5::obj-44" : [ "revp[5]", "revp", 0 ],
+			"obj-20::obj-5" : [ "Input[2]", "Input", 0 ],
+			"obj-19::obj-3" : [ "mute", "mute", 0 ],
+			"obj-20::obj-81" : [ "env[2]", "env", 0 ],
+			"obj-27::obj-32" : [ "pres", "pres", 0 ],
+			"obj-13::obj-41" : [ "bril[4]", "bril", 0 ],
+			"obj-20::obj-225" : [ "warm[2]", "warm", 0 ],
+			"obj-27::obj-81" : [ "env", "env", 0 ],
+			"obj-13::obj-215" : [ "doppler[4]", "doppler", 0 ],
+			"obj-20::obj-61" : [ "yaw[2]", "yaw", 0 ],
+			"obj-13::obj-5" : [ "Input[4]", "Input", 0 ],
+			"obj-28::obj-61" : [ "yaw[1]", "yaw", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "tg.spat_1s.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Spat",
+				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Spat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Spat6s2rPreset.json",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
 				"patcherrelativepath" : "../../JSON",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.spat_1r.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Spat",
+				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Spat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

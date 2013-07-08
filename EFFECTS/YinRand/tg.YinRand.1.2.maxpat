@@ -4164,14 +4164,14 @@
 						"MidEnable" : [ 1.0 ],
 						"MidGain" : [ 0.0 ],
 						"Modulate" : [ 0.0 ],
-						"Outgain" : [ -70.0 ],
+						"Outgain" : [ -127.0 ],
 						"Quality" : [ 60.0 ],
 						"UnvoicedGain" : [ 0.0 ],
 						"VoicedGain" : [ 0.0 ]
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u287004102"
+					"varname" : "u712010728"
 				}
 
 			}
@@ -4584,10 +4584,10 @@
 							"parameter_longname" : "Outgain",
 							"parameter_shortname" : "Outgain",
 							"parameter_type" : 0,
-							"parameter_mmin" : -70.0,
-							"parameter_mmax" : 30.0,
+							"parameter_mmin" : -127.0,
+							"parameter_mmax" : 20.0,
 							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ -70 ],
+							"parameter_initial" : [ -127 ],
 							"parameter_unitstyle" : 4
 						}
 
@@ -5925,31 +5925,31 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-80" : [ "PRESET", "PRESET", 0 ],
-			"obj-21" : [ "Boost", "Boost", 0 ],
-			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-129" : [ "HighEnable", "HighEnable", 0 ],
-			"obj-130" : [ "LowFreq", "LowFreq", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ],
 			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-19" : [ "HighFreq", "HighFreq", 0 ],
-			"obj-133" : [ "LowGain", "LowGain", 0 ],
-			"obj-37" : [ "Quality", "Quality", 0 ],
-			"obj-57" : [ "EnvFol", "EnvFol", 0 ],
-			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-20" : [ "HighGain", "HighGain", 0 ],
-			"obj-2" : [ "MidEnable", "MidEnable", 0 ],
-			"obj-31" : [ "UnvoicedGain", "UnvoicedGain", 0 ],
-			"obj-90" : [ "EnvMax", "EnvMax", 0 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
 			"obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-57" : [ "EnvFol", "EnvFol", 0 ],
+			"obj-20" : [ "HighGain", "HighGain", 0 ],
 			"obj-132" : [ "MidGain", "MidGain", 0 ],
-			"obj-28" : [ "VoicedGain", "VoicedGain", 0 ],
-			"obj-91" : [ "EnvMin", "EnvMin", 0 ],
-			"obj-101" : [ "Freq", "Freq", 0 ],
+			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-90" : [ "EnvMax", "EnvMax", 0 ],
+			"obj-14" : [ "Outgain", "Outgain", 0 ],
 			"obj-18" : [ "LowEnable", "LowEnable", 0 ],
-			"obj-55" : [ "Modulate", "Modulate", 0 ]
+			"obj-55" : [ "Modulate", "Modulate", 0 ],
+			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-91" : [ "EnvMin", "EnvMin", 0 ],
+			"obj-130" : [ "LowFreq", "LowFreq", 0 ],
+			"obj-37" : [ "Quality", "Quality", 0 ],
+			"obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-129" : [ "HighEnable", "HighEnable", 0 ],
+			"obj-133" : [ "LowGain", "LowGain", 0 ],
+			"obj-31" : [ "UnvoicedGain", "UnvoicedGain", 0 ],
+			"obj-101" : [ "Freq", "Freq", 0 ],
+			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-21" : [ "Boost", "Boost", 0 ],
+			"obj-19" : [ "HighFreq", "HighFreq", 0 ],
+			"obj-2" : [ "MidEnable", "MidEnable", 0 ],
+			"obj-28" : [ "VoicedGain", "VoicedGain", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

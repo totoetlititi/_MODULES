@@ -12,7 +12,7 @@
 					"FilterMode" : [ 5.0 ],
 					"FilterQ" : [ 0.3 ],
 					"Ingain" : [ 0.0 ],
-					"Outgain" : [ -70.0 ],
+					"Outgain" : [ -127.0 ],
 					"Quality" : [ 0.65 ],
 					"Smooth" : [ 5.0 ],
 					"Transp" : [ 0.0 ]

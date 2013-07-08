@@ -20,7 +20,7 @@
 					"Ingain" : [ 0.0 ],
 					"MaxVoices" : [ 20.0 ],
 					"MinSize" : [ 5.0 ],
-					"Outgain" : [ -70.0 ],
+					"Outgain" : [ -127.0 ],
 					"Position" : [ 0.0 ],
 					"RampTime" : [ 50.0 ],
 					"RandPosition" : [ 1.0 ],

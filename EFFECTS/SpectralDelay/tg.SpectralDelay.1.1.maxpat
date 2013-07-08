@@ -200,6 +200,7 @@
 					"presentation_rect" : [ 1167.5, 151.5, 95.0, 16.0 ],
 					"prototypename" : "M4L.black",
 					"rounded" : 12.0,
+					"text" : "Default",
 					"textcolor" : [ 0.909804, 0.909804, 0.909804, 1.0 ]
 				}
 
@@ -6998,7 +6999,7 @@
 						"Grain" : [ 20.0 ],
 						"Ingain" : [ 0.0 ],
 						"Metro" : [ 0.0 ],
-						"Outgain" : [ -70.0 ],
+						"Outgain" : [ -127.0 ],
 						"Pow" : [ 1.0 ],
 						"SizeMax" : [ 10.0 ],
 						"SizeMin" : [ 10.0 ],
@@ -7008,7 +7009,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u595014322"
+					"varname" : "u138025569"
 				}
 
 			}
@@ -7142,10 +7143,10 @@
 							"parameter_longname" : "Outgain",
 							"parameter_shortname" : "Outgain",
 							"parameter_type" : 0,
-							"parameter_mmin" : -70.0,
-							"parameter_mmax" : 30.0,
+							"parameter_mmin" : -127.0,
+							"parameter_mmax" : 20.0,
 							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ -70 ],
+							"parameter_initial" : [ -127 ],
 							"parameter_unitstyle" : 4
 						}
 
@@ -8442,39 +8443,39 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-234" : [ "TimeMax", "TimeMax", 0 ],
-			"obj-80" : [ "PRESET", "PRESET", 0 ],
-			"obj-198" : [ "Metro", "Metro", 0 ],
-			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-557" : [ "DelDrunkStep", "DelDrunkStep", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-624" : [ "FeedDrunkStep", "FeedDrunkStep", 0 ],
-			"obj-207" : [ "FiltDrunk", "FiltDrunk", 0 ],
-			"obj-262" : [ "Pow", "Pow", 0 ],
-			"obj-231" : [ "TimeMin", "TimeMin", 0 ],
-			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
 			"obj-186" : [ "Automate", "Automate", 0 ],
 			"obj-55" : [ "DelMax", "DelMax", 0 ],
 			"obj-56" : [ "FeedMax", "FeedMax", 0 ],
-			"obj-267" : [ "FiltDrunkStep", "FiltDrunkStep", 0 ],
+			"obj-60" : [ "ForceFeed", "ForceFeed", 0 ],
 			"obj-249" : [ "SizeMax", "SizeMax", 0 ],
-			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
 			"obj-240" : [ "BandsMax", "BandsMax", 0 ],
 			"obj-155" : [ "Delays", "Delays", 0 ],
 			"obj-158" : [ "Feedbacks", "Feedbacks", 0 ],
-			"obj-28" : [ "Filters", "Filters", 0 ],
+			"obj-54" : [ "ForceFilt", "ForceFilt", 0 ],
 			"obj-252" : [ "SizeMin", "SizeMin", 0 ],
-			"obj-255" : [ "Grain", "Grain", 0 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
 			"obj-237" : [ "BandsMin", "BandsMin", 0 ],
-			"obj-8" : [ "Ingain", "Ingain", 0 ],
 			"obj-146" : [ "FadeOut", "FadeOut", 0 ],
-			"obj-60" : [ "ForceFeed", "ForceFeed", 0 ],
+			"obj-207" : [ "FiltDrunk", "FiltDrunk", 0 ],
+			"obj-255" : [ "Grain", "Grain", 0 ],
 			"obj-415" : [ "Slope", "Slope", 0 ],
+			"obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-8" : [ "Ingain", "Ingain", 0 ],
 			"obj-558" : [ "DelDrunk", "DelDrunk", 0 ],
 			"obj-625" : [ "FeedDrunk", "FeedDrunk", 0 ],
-			"obj-54" : [ "ForceFilt", "ForceFilt", 0 ]
+			"obj-267" : [ "FiltDrunkStep", "FiltDrunkStep", 0 ],
+			"obj-198" : [ "Metro", "Metro", 0 ],
+			"obj-234" : [ "TimeMax", "TimeMax", 0 ],
+			"obj-557" : [ "DelDrunkStep", "DelDrunkStep", 0 ],
+			"obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-624" : [ "FeedDrunkStep", "FeedDrunkStep", 0 ],
+			"obj-28" : [ "Filters", "Filters", 0 ],
+			"obj-262" : [ "Pow", "Pow", 0 ],
+			"obj-231" : [ "TimeMin", "TimeMin", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -8486,28 +8487,28 @@
 			}
 , 			{
 				"name" : "SpectralDelayCombPreset.json",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
 				"patcherrelativepath" : "../../JSON",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.fgraph.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.SpectralDelay.gen.1.1.pfft.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/SpectralDelay",
+				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/SpectralDelay",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1

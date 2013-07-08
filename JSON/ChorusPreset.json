@@ -1,0 +1,28 @@
+{
+	"pattrstorage" : 	{
+		"name" : "ChorusPreset",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "Default",
+				"data" : 				{
+					"Center" : [ 100.0 ],
+					"Depth" : [ 1.0 ],
+					"Dry/wet" : [ 100.0 ],
+					"Feed" : [ 0.0 ],
+					"FilterFreq" : [ 1000.0 ],
+					"FilterGain" : [ 0.0 ],
+					"FilterMode" : [ 5.0 ],
+					"FilterQ" : [ 0.3 ],
+					"Freq" : [ 1.0 ],
+					"Ingain" : [ 0.0 ],
+					"Outgain" : [ -127.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

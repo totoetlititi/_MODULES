@@ -38,7 +38,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 66.166672, 293.667236, 67.0, 18.0 ],
-					"presentation_rect" : [ 68.0, 291.0, 0.0, 0.0 ],
 					"text" : "delay~ 1024"
 				}
 
@@ -839,6 +838,7 @@
 					"presentation_rect" : [ 726.0, 151.5, 95.0, 16.0 ],
 					"prototypename" : "M4L.black",
 					"rounded" : 12.0,
+					"text" : "Default",
 					"textcolor" : [ 0.909804, 0.909804, 0.909804, 1.0 ]
 				}
 
@@ -13828,11 +13828,11 @@
 						"FilterMode" : [ 5.0 ],
 						"FilterQ" : [ 0.3 ],
 						"Ingain" : [ 0.0 ],
-						"Outgain" : [ -70.0 ]
+						"Outgain" : [ -127.0 ]
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u307029560"
+					"varname" : "u478023526"
 				}
 
 			}
@@ -14257,10 +14257,10 @@
 							"parameter_longname" : "Outgain",
 							"parameter_shortname" : "Outgain",
 							"parameter_type" : 0,
-							"parameter_mmin" : -70.0,
-							"parameter_mmax" : 30.0,
+							"parameter_mmin" : -127.0,
+							"parameter_mmax" : 20.0,
 							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ -70 ],
+							"parameter_initial" : [ -127 ],
 							"parameter_unitstyle" : 4
 						}
 
@@ -15787,41 +15787,41 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-161" : [ "2pan", "2pan", 0 ],
-			"obj-174" : [ "3gain", "3gain", 0 ],
-			"obj-80" : [ "PRESET", "PRESET", 0 ],
-			"obj-126" : [ "Delay", "Delay", 0 ],
-			"obj-158" : [ "2shift", "2shift", 0 ],
-			"obj-187" : [ "4trans", "4trans", 0 ],
-			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-115" : [ "1feed", "1feed", 0 ],
-			"obj-163" : [ "2delay", "2delay", 0 ],
-			"obj-175" : [ "3pan", "3pan", 0 ],
-			"obj-188" : [ "4gain", "4gain", 0 ],
-			"obj-206" : [ "Feedback", "Feedback", 0 ],
-			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-159" : [ "2trans", "2trans", 0 ],
-			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-162" : [ "2feed", "2feed", 0 ],
-			"obj-177" : [ "3delay", "3delay", 0 ],
-			"obj-190" : [ "4pan", "4pan", 0 ],
-			"obj-172" : [ "3shift", "3shift", 0 ],
-			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-28" : [ "1gain", "1gain", 0 ],
-			"obj-176" : [ "3feed", "3feed", 0 ],
-			"obj-192" : [ "4delay", "4delay", 0 ],
-			"obj-112" : [ "1shift", "1shift", 0 ],
-			"obj-173" : [ "3trans", "3trans", 0 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-8" : [ "Ingain", "Ingain", 0 ],
 			"obj-114" : [ "1pan", "1pan", 0 ],
 			"obj-160" : [ "2gain", "2gain", 0 ],
+			"obj-176" : [ "3feed", "3feed", 0 ],
+			"obj-192" : [ "4delay", "4delay", 0 ],
+			"obj-187" : [ "4trans", "4trans", 0 ],
+			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-112" : [ "1shift", "1shift", 0 ],
+			"obj-161" : [ "2pan", "2pan", 0 ],
+			"obj-174" : [ "3gain", "3gain", 0 ],
+			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
 			"obj-191" : [ "4feed", "4feed", 0 ],
-			"obj-208" : [ "Clear", "Clear", 0 ],
+			"obj-126" : [ "Delay", "Delay", 0 ],
+			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
 			"obj-113" : [ "1trans", "1trans", 0 ],
+			"obj-158" : [ "2shift", "2shift", 0 ],
+			"obj-175" : [ "3pan", "3pan", 0 ],
+			"obj-188" : [ "4gain", "4gain", 0 ],
+			"obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-108" : [ "1delay", "1delay", 0 ],
+			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-115" : [ "1feed", "1feed", 0 ],
+			"obj-163" : [ "2delay", "2delay", 0 ],
+			"obj-208" : [ "Clear", "Clear", 0 ],
+			"obj-159" : [ "2trans", "2trans", 0 ],
+			"obj-172" : [ "3shift", "3shift", 0 ],
+			"obj-190" : [ "4pan", "4pan", 0 ],
+			"obj-28" : [ "1gain", "1gain", 0 ],
+			"obj-162" : [ "2feed", "2feed", 0 ],
+			"obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-177" : [ "3delay", "3delay", 0 ],
+			"obj-173" : [ "3trans", "3trans", 0 ],
 			"obj-186" : [ "4shift", "4shift", 0 ],
-			"obj-108" : [ "1delay", "1delay", 0 ]
+			"obj-206" : [ "Feedback", "Feedback", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -15833,42 +15833,42 @@
 			}
 , 			{
 				"name" : "GizmoX4Preset.json",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
 				"patcherrelativepath" : "../../JSON",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.fgraph.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.line~.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/dsp.components",
+				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/dsp.components",
 				"patcherrelativepath" : "../../../dsp.components",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "x.pan.1.2~.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/Poletti",
+				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/Poletti",
 				"patcherrelativepath" : "../../../../Poletti",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.gizmo.pfft.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/GizmoX4",
+				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/GizmoX4",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1

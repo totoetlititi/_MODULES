@@ -29,6 +29,20 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-7",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 638.56958, 89.0, 34.0, 16.0 ],
+					"text" : "clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-38",
 					"maxclass" : "button",
 					"numinlets" : 1,
@@ -609,7 +623,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1192.06958, 522.5, 63.0, 18.0 ],
+					"patching_rect" : [ 722.56958, 98.5, 63.0, 18.0 ],
 					"text" : "r #0.size"
 				}
 
@@ -678,10 +692,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 138.56958, 32.0, 28.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in 1"
 				}
 
@@ -737,11 +747,11 @@
 					"fontsize" : 10.0,
 					"id" : "obj-189",
 					"maxclass" : "newobj",
-					"numinlets" : 11,
-					"numoutlets" : 11,
-					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 138.56958, 53.5, 519.0, 18.0 ],
-					"text" : "route iSlope iDuration iGrain iPow Stretch Shift Pow Freeze Denoise Mean"
+					"numinlets" : 12,
+					"numoutlets" : 12,
+					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "" ],
+					"patching_rect" : [ 138.56958, 53.5, 569.0, 18.0 ],
+					"text" : "route iSlope iDuration iGrain iPow Stretch Shift Pow Freeze Denoise Mean Clear"
 				}
 
 			}
@@ -819,7 +829,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 217.0, 394.0, 50.0, 16.0 ],
-									"text" : "0. 1."
+									"text" : "0.5 0.5"
 								}
 
 							}
@@ -2394,7 +2404,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 1192.06958, 573.5, 178.0, 18.0 ],
+					"patching_rect" : [ 722.56958, 149.5, 178.0, 18.0 ],
 					"text" : "buffer~ #1.Buffer1 @samps 4096"
 				}
 
@@ -2408,7 +2418,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1192.06958, 549.0, 84.0, 16.0 ],
+					"patching_rect" : [ 722.56958, 125.0, 84.0, 16.0 ],
 					"text" : "sizeinsamps $1"
 				}
 
@@ -2827,10 +2837,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1094.56958, 492.5, 34.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out 1"
 				}
 
@@ -4589,7 +4595,7 @@
 					"destination" : [ "obj-198", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-189", 10 ]
+					"source" : [ "obj-189", 11 ]
 				}
 
 			}
@@ -4635,6 +4641,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-189", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-189", 10 ]
 				}
 
 			}
@@ -5154,6 +5169,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-131", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-79", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -5250,11 +5274,6 @@
 					"source" : [ "obj-87", 0 ]
 				}
 
-			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "cv.jit.mean.mxo",
-				"type" : "iLaX"
 			}
  ]
 	}
