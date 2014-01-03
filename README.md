@@ -2,6 +2,7 @@ _MODULES
 ========
 
 TG toolbox 2013/2014
+
 ____
 Effects	
 -------
@@ -76,7 +77,8 @@ Effects
 
 ###YinToSin	
 - requires: Ircam [MaxSoundBox](http://forumnet.ircam.fr/product/max-sound-box) library, [UCSD](http://crca-archive.ucsd.edu/~tapel/software.html) library.
-____
+
+_____
 Tools	
 -------
 ###_Buffers	
