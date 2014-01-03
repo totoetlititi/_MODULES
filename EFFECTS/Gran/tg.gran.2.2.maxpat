@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 4.0, 579.0, 926.0, 177.0 ],
+		"rect" : [ 72.0, 44.0, 926.0, 177.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -943,7 +943,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -1957,7 +1957,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -3956,7 +3956,7 @@
 					"fontsize" : 12.0,
 					"framecolor" : [ 0.498039, 0.52549, 0.576471, 0.0 ],
 					"id" : "obj-23",
-					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export" ],
+					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export", ",", "<separator>", ",", "(Recall)", ",", "(undefined)", ",", "Default" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -4059,7 +4059,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 7,
 					"numoutlets" : 8,
-					"outlettype" : [ "", "", "", "", "", "", "", "" ],
+					"outlettype" : [ "", "", "int", "", "", "", "", "" ],
 					"patching_rect" : [ 884.086365, 562.167236, 121.666664, 18.0 ],
 					"text" : "tg.m.preset #1"
 				}
@@ -4427,6 +4427,8 @@
 					"annotation" : "BufAction",
 					"id" : "obj-314",
 					"maxclass" : "live.tab",
+					"num_lines_patching" : 0,
+					"num_lines_presentation" : 3,
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "float" ],
@@ -4482,7 +4484,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -4872,7 +4874,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 6,
 											"architecture" : "x86"
 										}
 ,
@@ -5163,7 +5165,7 @@
 														"appversion" : 														{
 															"major" : 6,
 															"minor" : 1,
-															"revision" : 3,
+															"revision" : 6,
 															"architecture" : "x86"
 														}
 ,
@@ -7977,7 +7979,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -8469,7 +8471,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -9819,7 +9821,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u311003396"
+					"varname" : "u727000112"
 				}
 
 			}
@@ -11425,43 +11427,43 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-26" : [ "BufSize", "BufSize", 0 ],
-			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-354" : [ "BufSync", "BufSync", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-56" : [ "Stretch", "Stretch", 0 ],
-			"obj-185" : [ "BufSpeed", "BufSpeed", 0 ],
-			"obj-79" : [ "ModeFp", "ModeFp", 0 ],
-			"obj-324" : [ "BufBegin", "BufBegin", 0 ],
-			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-77" : [ "Ecart", "Ecart", 0 ],
-			"obj-114" : [ "Position", "Position", 0 ],
-			"obj-80" : [ "PRESET", "PRESET", 0 ],
-			"obj-314" : [ "BufAction", "BufAction", 0 ],
-			"obj-60" : [ "Posran", "Posran", 0 ],
-			"obj-326" : [ "BufEnd", "BufEnd", 0 ],
-			"obj-255" : [ "BufReplace", "BufReplace", 0 ],
-			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-103" : [ "ForceLoop", "ForceLoop", 0 ],
 			"obj-69" : [ "Aleaoct", "Aleaoct", 0 ],
-			"obj-62" : [ "Dur", "Dur", 0 ],
-			"obj-100" : [ "RecFadeIn", "RecFadeIn", 0 ],
+			"obj-79" : [ "ModeFp", "ModeFp", 0 ],
 			"obj-3" : [ "BufLoop", "BufLoop", 0 ],
-			"obj-53" : [ "Reset", "Reset", 0 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-331" : [ "BufSet", "BufSet", 0 ],
+			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-62" : [ "Dur", "Dur", 0 ],
+			"obj-60" : [ "Posran", "Posran", 0 ],
+			"obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-255" : [ "BufReplace", "BufReplace", 0 ],
+			"obj-14" : [ "Outgain", "Outgain", 0 ],
 			"obj-25" : [ "nb-shots", "nb-shots", 0 ],
+			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-314" : [ "BufAction", "BufAction", 0 ],
+			"obj-77" : [ "Ecart", "Ecart", 0 ],
+			"obj-100" : [ "RecFadeIn", "RecFadeIn", 0 ],
+			"obj-114" : [ "Position", "Position", 0 ],
+			"obj-331" : [ "BufSet", "BufSet", 0 ],
+			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
 			"obj-64" : [ "Transp", "Transp", 0 ],
+			"obj-56" : [ "Stretch", "Stretch", 0 ],
+			"obj-103" : [ "ForceLoop", "ForceLoop", 0 ],
+			"obj-324" : [ "BufBegin", "BufBegin", 0 ],
+			"obj-97" : [ "RecFadeOut", "RecFadeOut", 0 ],
+			"obj-26" : [ "BufSize", "BufSize", 0 ],
+			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-53" : [ "Reset", "Reset", 0 ],
 			"obj-73" : [ "Frac", "Frac", 0 ],
-			"obj-97" : [ "RecFadeOut", "RecFadeOut", 0 ]
+			"obj-326" : [ "BufEnd", "BufEnd", 0 ],
+			"obj-354" : [ "BufSync", "BufSync", 0 ],
+			"obj-185" : [ "BufSpeed", "BufSpeed", 0 ],
+			"obj-8" : [ "Ingain", "Ingain", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}

@@ -1,0 +1,40 @@
+{
+	"pattrstorage" : 	{
+		"name" : "ResonatorInterpPreset",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "Default",
+				"data" : 				{
+					"1active" : [ 0.0 ],
+					"1ampscale" : [ 0.0 ],
+					"1model" : [ 0.0 ],
+					"1rescale" : [ 1.0 ],
+					"2active" : [ 0.0 ],
+					"2ampscale" : [ 0.0 ],
+					"2model" : [ 0.0 ],
+					"2rescale" : [ 1.0 ],
+					"2transp" : [ 1.0 ],
+					"Dry/wet" : [ 100.0 ],
+					"FilterFreq" : [ 1000.0 ],
+					"FilterGain" : [ 0.0 ],
+					"FilterMode" : [ 5.0 ],
+					"FilterQ" : [ 0.3 ],
+					"Ingain" : [ 0.0 ],
+					"Outgain" : [ -127.0 ],
+					"clear" : [ 0.0 ],
+					"jitterDecay" : [ 0.0 ],
+					"jitterFreq" : [ 0.0 ],
+					"jitterGain" : [ 0.0 ],
+					"mixInterp" : [ 0.0 ],
+					"transp" : [ 1.0 ],
+					"trig" : [ 0.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

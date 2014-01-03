@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
@@ -95,7 +95,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -441,7 +441,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 6,
 											"architecture" : "x86"
 										}
 ,
@@ -1125,7 +1125,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 121.5, 573.0, 361.0, 18.0 ],
-									"text" : "chant_autobw"
+									"text" : "tg.chant_autobw"
 								}
 
 							}
@@ -1665,7 +1665,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -2011,7 +2011,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 6,
 											"architecture" : "x86"
 										}
 ,
@@ -2695,7 +2695,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 121.5, 573.0, 361.0, 18.0 ],
-									"text" : "chant_autobw"
+									"text" : "tg.chant_autobw"
 								}
 
 							}
@@ -4176,7 +4176,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -4522,7 +4522,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 6,
 											"architecture" : "x86"
 										}
 ,
@@ -5206,7 +5206,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 121.5, 573.0, 361.0, 18.0 ],
-									"text" : "chant_autobw"
+									"text" : "tg.chant_autobw"
 								}
 
 							}
@@ -5826,7 +5826,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -6251,7 +6251,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 6,
 											"architecture" : "x86"
 										}
 ,
@@ -6419,7 +6419,7 @@
 														"appversion" : 														{
 															"major" : 6,
 															"minor" : 1,
-															"revision" : 3,
+															"revision" : 6,
 															"architecture" : "x86"
 														}
 ,
@@ -6633,7 +6633,7 @@
 																		"appversion" : 																		{
 																			"major" : 6,
 																			"minor" : 1,
-																			"revision" : 3,
+																			"revision" : 6,
 																			"architecture" : "x86"
 																		}
 ,
@@ -8035,7 +8035,7 @@
 					"fontsize" : 12.0,
 					"framecolor" : [ 0.498039, 0.52549, 0.576471, 0.0 ],
 					"id" : "obj-236",
-					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export" ],
+					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export", ",", "<separator>", ",", "(Recall)", ",", "(undefined)", ",", "Default" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -8138,7 +8138,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 7,
 					"numoutlets" : 8,
-					"outlettype" : [ "", "", "", "", "", "", "", "" ],
+					"outlettype" : [ "", "", "int", "", "", "", "", "" ],
 					"patching_rect" : [ 1080.0, 652.165527, 121.666664, 18.0 ],
 					"text" : "tg.m.preset #1"
 				}
@@ -8601,7 +8601,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u264000570"
+					"varname" : "u880019639"
 				}
 
 			}
@@ -8927,7 +8927,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -9606,7 +9606,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -10666,6 +10666,8 @@
 					"annotation" : "InputChannels",
 					"id" : "obj-123",
 					"maxclass" : "live.tab",
+					"num_lines_patching" : 1,
+					"num_lines_presentation" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "float" ],
@@ -10706,7 +10708,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -15373,55 +15375,55 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-10" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-123" : [ "InputChannels", "InputChannels", 0 ],
-			"obj-233" : [ "Ingain", "Ingain", 0 ],
-			"obj-19" : [ "MaxPeaks", "MaxPeaks", 0 ],
+			"obj-41" : [ "Shift", "Shift", 0 ],
+			"obj-3" : [ "FFTsize", "FFTsize", 0 ],
+			"obj-37" : [ "Level", "Level", 0 ],
 			"obj-50" : [ "Rate", "Rate", 0 ],
 			"obj-81" : [ "Sync", "Sync", 0 ],
-			"obj-41" : [ "Shift", "Shift", 0 ],
 			"obj-150" : [ "envFactor", "envFactor", 0 ],
 			"obj-221" : [ "resBwCoeff", "resBwCoeff", 0 ],
 			"obj-161" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-18" : [ "LastToSearch", "LastToSearch", 0 ],
+			"obj-34" : [ "Output", "Output", 0 ],
+			"obj-63" : [ "PRESET", "PRESET", 0 ],
 			"obj-165" : [ "Outgain", "Outgain", 0 ],
+			"obj-16" : [ "FirstToSearch", "FirstToSearch", 0 ],
+			"obj-36" : [ "MaxPartials", "MaxPartials", 0 ],
 			"obj-27" : [ "RefLevel", "RefLevel", 0 ],
 			"obj-23" : [ "Threshold", "Threshold", 0 ],
-			"obj-226" : [ "Jitter", "Jitter", 0 ],
 			"obj-222" : [ "envPower", "envPower", 0 ],
 			"obj-231" : [ "resClear", "resClear", 0 ],
-			"obj-31" : [ "Content", "Content", 0 ],
-			"obj-16" : [ "FirstToSearch", "FirstToSearch", 0 ],
-			"obj-37" : [ "Level", "Level", 0 ],
 			"obj-160" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-49" : [ "Metronome", "Metronome", 0 ],
-			"obj-47" : [ "Send", "Send", 0 ],
-			"obj-39" : [ "Transpose", "Transpose", 0 ],
-			"obj-183" : [ "envRate", "envRate", 0 ],
-			"obj-203" : [ "resInterp", "resInterp", 0 ],
-			"obj-63" : [ "PRESET", "PRESET", 0 ],
-			"obj-9" : [ "Downsampling", "Downsampling", 0 ],
-			"obj-152" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-66" : [ "SendData", "SendData", 0 ],
-			"obj-26" : [ "Width", "Width", 0 ],
-			"obj-3" : [ "FFTsize", "FFTsize", 0 ],
-			"obj-148" : [ "envStretch", "envStretch", 0 ],
-			"obj-207" : [ "resStep", "resStep", 0 ],
 			"obj-44" : [ "HearingThreshold", "HearingThreshold", 0 ],
-			"obj-36" : [ "MaxPartials", "MaxPartials", 0 ],
-			"obj-34" : [ "Output", "Output", 0 ],
+			"obj-19" : [ "MaxPeaks", "MaxPeaks", 0 ],
+			"obj-47" : [ "Send", "Send", 0 ],
+			"obj-26" : [ "Width", "Width", 0 ],
+			"obj-183" : [ "envRate", "envRate", 0 ],
+			"obj-39" : [ "Transpose", "Transpose", 0 ],
+			"obj-203" : [ "resInterp", "resInterp", 0 ],
+			"obj-152" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-123" : [ "InputChannels", "InputChannels", 0 ],
+			"obj-49" : [ "Metronome", "Metronome", 0 ],
+			"obj-66" : [ "SendData", "SendData", 0 ],
+			"obj-31" : [ "Content", "Content", 0 ],
+			"obj-226" : [ "Jitter", "Jitter", 0 ],
+			"obj-7" : [ "WindowType", "WindowType", 0 ],
+			"obj-148" : [ "envStretch", "envStretch", 0 ],
+			"obj-10" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-207" : [ "resStep", "resStep", 0 ],
 			"obj-162" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-9" : [ "Downsampling", "Downsampling", 0 ],
+			"obj-18" : [ "LastToSearch", "LastToSearch", 0 ],
 			"obj-30" : [ "Ordering", "Ordering", 0 ],
 			"obj-74" : [ "SpeedFactor", "SpeedFactor", 0 ],
-			"obj-7" : [ "WindowType", "WindowType", 0 ],
 			"obj-184" : [ "envCutoff", "envCutoff", 0 ],
+			"obj-233" : [ "Ingain", "Ingain", 0 ],
 			"obj-103" : [ "resVoices", "resVoices", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -15454,6 +15456,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "tg.chant_autobw.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "tg.resonForIana.poly.maxpat",
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/_Resonators",
 				"patcherrelativepath" : "../_Resonators",
@@ -15466,10 +15475,6 @@
 			}
 , 			{
 				"name" : "vstretch~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "chant_autobw.mxo",
 				"type" : "iLaX"
 			}
 , 			{
