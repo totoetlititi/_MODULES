@@ -17,7 +17,7 @@ Effects
 ###Comb	
 	
 ###Compressor	
-- requires: irc.compressor~ external, from Ircam-Extras library.
+- requires: IRCAM [Spat](http://forumnet.ircam.fr/product/spat/) library.	
 	
 
 ###Convolution	

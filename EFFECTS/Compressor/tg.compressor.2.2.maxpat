@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 161.0, 44.0, 624.0, 173.0 ],
+		"rect" : [ 71.0, 476.0, 624.0, 173.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -606,7 +606,7 @@
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "irc.compressor~ @numchannels 2"
+					"text" : "spat.compressor~ @numchannels 2"
 				}
 
 			}
@@ -706,7 +706,7 @@
 					"patching_rect" : [ 627.0, 465.667236, 36.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "PRESET",
+							"parameter_longname" : "PRESET[2]",
 							"parameter_shortname" : "PRESET",
 							"parameter_type" : 1,
 							"parameter_unitstyle" : 0,
@@ -760,7 +760,7 @@
 					"patching_rect" : [ 507.5, 357.667236, 95.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 520.5, 3.0, 95.0, 27.0 ],
-					"text" : "#1"
+					"text" : "1comp"
 				}
 
 			}
@@ -772,7 +772,7 @@
 					"fontsize" : 12.0,
 					"framecolor" : [ 0.498039, 0.52549, 0.576471, 0.0 ],
 					"id" : "obj-86",
-					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export" ],
+					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export", ",", "<separator>", ",", "(Recall)", ",", "(undefined)" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -875,7 +875,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 7,
 					"numoutlets" : 8,
-					"outlettype" : [ "", "", "", "", "", "", "", "" ],
+					"outlettype" : [ "", "", "int", "", "", "", "", "" ],
 					"patching_rect" : [ 504.5, 534.667236, 126.666687, 18.0 ],
 					"text" : "tg.m.preset #1"
 				}
@@ -1052,9 +1052,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 504.5, 627.667236, 165.0, 29.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 218, 50, 606, 257 ],
+						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
-						"storage_rect" : [ 220, 49, 871, 244 ]
+						"storage_rect" : [ 365, 44, 816, 172 ]
 					}
 ,
 					"text" : "pattrstorage CompressorPreset @savemode 2 @autowatch 1",
@@ -1132,10 +1132,10 @@
 					"patching_rect" : [ 635.5, 385.667236, 91.0, 29.0 ],
 					"restore" : 					{
 						"Attack" : [ 10.0 ],
-						"CompRatio" : [ 1.0 ],
-						"CompThresh" : [ 0.0 ],
+						"CompRatio" : [ 6.0 ],
+						"CompThresh" : [ -6.0 ],
 						"Dry/wet" : [ 100.0 ],
-						"ExpRatio" : [ 1.0 ],
+						"ExpRatio" : [ 0.811024 ],
 						"ExpThresh" : [ -16.0 ],
 						"FilterFreq" : [ 1000.0 ],
 						"FilterGain" : [ 0.0 ],
@@ -1144,12 +1144,12 @@
 						"Ingain" : [ 0.0 ],
 						"Lookahead" : [ 10.0 ],
 						"Makeup" : [ 0.0 ],
-						"Outgain" : [ -127.0 ],
+						"Outgain" : [ 0.0 ],
 						"Release" : [ 30.0 ]
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u316000812"
+					"varname" : "u395009384"
 				}
 
 			}
@@ -1192,7 +1192,7 @@
 					"presentation_rect" : [ 373.357178, 10.0, 71.642853, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "FilterMode",
+							"parameter_longname" : "FilterMode[2]",
 							"parameter_shortname" : "FilterMode",
 							"parameter_type" : 2,
 							"parameter_enum" : [ "display", "lowpass", "highpass", "bandpass", "bandstop", "peaknotch", "lowshelf", "highshelf", "resonant", "allpass" ],
@@ -1341,7 +1341,7 @@
 					"presentation_rect" : [ 405.0, 26.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "FilterGain",
+							"parameter_longname" : "FilterGain[2]",
 							"parameter_shortname" : "FilterGain",
 							"parameter_type" : 0,
 							"parameter_mmin" : -80.0,
@@ -1371,7 +1371,7 @@
 					"presentation_rect" : [ 277.0, 26.0, 49.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "FilterFreq",
+							"parameter_longname" : "FilterFreq[2]",
 							"parameter_shortname" : "FilterFreq",
 							"parameter_type" : 0,
 							"parameter_mmax" : 22050.0,
@@ -1400,7 +1400,7 @@
 					"presentation_rect" : [ 341.0, 26.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "FilterQ",
+							"parameter_longname" : "FilterQ[2]",
 							"parameter_shortname" : "FilterQ",
 							"parameter_type" : 0,
 							"parameter_mmax" : 22000.0,
@@ -1513,7 +1513,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 66.166672, 20.0, 25.0, 25.0 ]
 				}
 
@@ -1525,7 +1525,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 38.416668, 20.0, 25.0, 25.0 ]
 				}
 
@@ -1571,7 +1571,7 @@
 					"prototypename" : "M4L.live.gain~.V.extended",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Outgain",
+							"parameter_longname" : "Outgain[2]",
 							"parameter_shortname" : "Outgain",
 							"parameter_type" : 0,
 							"parameter_mmin" : -127.0,
@@ -1602,7 +1602,7 @@
 					"prototypename" : "amount",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Dry/wet",
+							"parameter_longname" : "Dry/wet[2]",
 							"parameter_shortname" : "Dry/wet",
 							"parameter_type" : 0,
 							"parameter_mmax" : 100.0,
@@ -1648,7 +1648,7 @@
 					"prototypename" : "M4L.live.gain~.V.extended",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Ingain",
+							"parameter_longname" : "Ingain[2]",
 							"parameter_shortname" : "Ingain",
 							"parameter_type" : 0,
 							"parameter_mmin" : -70.0,
@@ -2356,51 +2356,6 @@
 					"source" : [ "obj-86", 1 ]
 				}
 
-			}
- ],
-		"parameters" : 		{
-			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-33" : [ "ExpRatio", "ExpRatio", 0 ],
-			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-34" : [ "Lookahead", "Lookahead", 0 ],
-			"obj-44" : [ "ExpThresh", "ExpThresh", 0 ],
-			"obj-47" : [ "Release", "Release", 0 ],
-			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-80" : [ "PRESET", "PRESET", 0 ],
-			"obj-49" : [ "Attack", "Attack", 0 ],
-			"obj-48" : [ "Makeup", "Makeup", 0 ],
-			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-24" : [ "CompRatio", "CompRatio", 0 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-31" : [ "CompThresh", "CompThresh", 0 ]
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.m.fgraph.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "irc.compressor~.mxo",
-				"type" : "iLaX"
 			}
  ]
 	}
