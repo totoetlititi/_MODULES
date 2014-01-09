@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
@@ -28,6 +28,35 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"frgb" : 0.0,
+					"id" : "obj-11",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 185.0, 318.0, 34.0, 18.0 ],
+					"presentation_rect" : [ 185.0, 319.5, 0.0, 0.0 ],
+					"text" : "init"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"frgb" : 0.0,
+					"id" : "obj-10",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 185.0, 260.5, 34.0, 18.0 ],
+					"text" : "open"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
@@ -58,6 +87,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-9",
@@ -88,6 +118,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-8",
@@ -96,7 +127,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 185.0, 293.0, 113.0, 27.0 ],
+					"patching_rect" : [ 185.0, 278.5, 113.0, 27.0 ],
 					"text" : ";\r1SVPt.interface open"
 				}
 
@@ -129,7 +160,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -614,84 +645,98 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1.1::obj-1::obj-42" : [ "FilterMode[26]", "FilterMode", 0 ],
-			"obj-1.1::obj-1::obj-133" : [ "EnvScale", "EnvScale", 0 ],
-			"obj-1.1::obj-1::obj-96" : [ "Oversampling", "Oversampling", 0 ],
 			"obj-1.1::obj-1::obj-114" : [ "RemixError", "RemixError", 0 ],
 			"obj-1.1::obj-1::obj-116" : [ "RemixTransients", "RemixTransients", 0 ],
-			"obj-1.1::obj-1::obj-72" : [ "FilterQ[26]", "FilterQ", 0 ],
-			"obj-1.1::obj-1::obj-148" : [ "EnvLpcOrder", "EnvLpcOrder", 0 ],
-			"obj-1.1::obj-1::obj-70" : [ "FilterFreq[26]", "FilterFreq", 0 ],
-			"obj-1.1::obj-1::obj-146" : [ "EnvScaleEnable", "EnvScaleEnable", 0 ],
-			"obj-1.1::obj-1::obj-111" : [ "PreserveStereo", "PreserveStereo", 1 ],
-			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
-			"obj-1.1::obj-1::obj-80" : [ "PRESET[7]", "PRESET", 0 ],
-			"obj-1.1::obj-1::obj-120" : [ "RemixMode", "RemixMode", 0 ],
-			"obj-1.1::obj-1::obj-162" : [ "TranspEnable", "TranspEnable", 0 ],
-			"obj-1.1::obj-1::obj-14" : [ "Outgain[27]", "Outgain", 0 ],
-			"obj-1.1::obj-1::obj-150" : [ "EnvMaxFreq", "EnvMaxFreq", 0 ],
-			"obj-1.1::obj-1::obj-12" : [ "Dry/wet[26]", "Dry/wet", 0 ],
-			"obj-1.1::obj-1::obj-156" : [ "EnvTransp", "EnvTransp", 0 ],
-			"obj-1.1::obj-1::obj-112" : [ "PreserveTransients", "PreserveTransients", 1 ],
-			"obj-1.1::obj-1::obj-117" : [ "RemixNoise", "RemixNoise", 0 ],
-			"obj-1.1::obj-1::obj-157" : [ "TranspMode[8]", "TranspMode", 0 ],
-			"obj-1.1::obj-1::obj-163" : [ "Transpose", "Transpose", 0 ],
-			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
-			"obj-1.1::obj-1::obj-153" : [ "EnvMode", "EnvMode", 0 ],
-			"obj-1.1::obj-1::obj-147" : [ "EnvTranspEnable", "EnvTranspEnable", 0 ],
-			"obj-1.1::obj-1::obj-164" : [ "PreserveWaveform", "PreserveWaveform", 1 ],
-			"obj-1.1::obj-1::obj-115" : [ "RemixRelax", "RemixRelax", 0 ],
-			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
-			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
-			"obj-1.1::obj-1::obj-105" : [ "WindowSize", "WindowSize", 0 ],
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-1.1::obj-1::obj-67" : [ "FilterGain[26]", "FilterGain", 0 ],
 			"obj-1.1::obj-1::obj-124" : [ "EnvPreserve", "EnvPreserve", 1 ],
-			"obj-1.1::obj-1::obj-90" : [ "FFTOversamp", "FFTOversamp", 0 ],
+			"obj-1.1::obj-1::obj-111" : [ "PreserveStereo", "PreserveStereo", 1 ],
+			"obj-1.1::obj-1::obj-67" : [ "FilterGain[26]", "FilterGain", 0 ],
+			"obj-1.1::obj-1::obj-163" : [ "Transpose", "Transpose", 0 ],
+			"obj-7::obj-50" : [ "Play", "Play", 0 ],
+			"obj-1.1::obj-1::obj-96" : [ "Oversampling", "Oversampling", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-1.1::obj-1::obj-120" : [ "RemixMode", "RemixMode", 0 ],
+			"obj-1.1::obj-1::obj-133" : [ "EnvScale", "EnvScale", 0 ],
+			"obj-1.1::obj-1::obj-164" : [ "PreserveWaveform", "PreserveWaveform", 1 ],
+			"obj-1.1::obj-1::obj-105" : [ "WindowSize", "WindowSize", 0 ],
+			"obj-1.1::obj-1::obj-70" : [ "FilterFreq[26]", "FilterFreq", 0 ],
+			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
+			"obj-1.1::obj-1::obj-42" : [ "FilterMode[26]", "FilterMode", 0 ],
+			"obj-1.1::obj-1::obj-148" : [ "EnvLpcOrder", "EnvLpcOrder", 0 ],
+			"obj-1.1::obj-1::obj-117" : [ "RemixNoise", "RemixNoise", 0 ],
+			"obj-1.1::obj-1::obj-156" : [ "EnvTransp", "EnvTransp", 0 ],
+			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
+			"obj-1.1::obj-1::obj-157" : [ "TranspMode[8]", "TranspMode", 0 ],
+			"obj-1.1::obj-1::obj-72" : [ "FilterQ[26]", "FilterQ", 0 ],
+			"obj-1.1::obj-1::obj-146" : [ "EnvScaleEnable", "EnvScaleEnable", 0 ],
+			"obj-1.1::obj-1::obj-150" : [ "EnvMaxFreq", "EnvMaxFreq", 0 ],
+			"obj-1.1::obj-1::obj-115" : [ "RemixRelax", "RemixRelax", 0 ],
+			"obj-1.1::obj-1::obj-147" : [ "EnvTranspEnable", "EnvTranspEnable", 0 ],
 			"obj-1.1::obj-1::obj-122" : [ "RemixEnable", "RemixEnable", 0 ],
+			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
+			"obj-1.1::obj-1::obj-14" : [ "Outgain[27]", "Outgain", 0 ],
+			"obj-1.1::obj-1::obj-12" : [ "Dry/wet[26]", "Dry/wet", 0 ],
+			"obj-1.1::obj-1::obj-112" : [ "PreserveTransients", "PreserveTransients", 1 ],
+			"obj-1.1::obj-1::obj-153" : [ "EnvMode", "EnvMode", 0 ],
 			"obj-1.1::obj-1::obj-119" : [ "RemixSinus", "RemixSinus", 0 ],
-			"obj-1.1::obj-1::obj-8" : [ "Ingain[28]", "Ingain", 0 ],
-			"obj-7::obj-50" : [ "Play", "Play", 0 ]
+			"obj-1.1::obj-1::obj-90" : [ "FFTOversamp", "FFTOversamp", 0 ],
+			"obj-1.1::obj-1::obj-162" : [ "TranspEnable", "TranspEnable", 0 ],
+			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
+			"obj-1.1::obj-1::obj-80" : [ "PRESET[7]", "PRESET", 0 ],
+			"obj-1.1::obj-1::obj-8" : [ "Ingain[28]", "Ingain", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "tg.supervp.trans.1.1.Poly.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Supervp.play",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/SuperVP",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "tg.MuteThispoly1.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "tg.supervp.trans.1.1.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Supervp.play",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/SuperVP",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "M4L.bal1~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "SupervpTransPreset.json",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"patcherrelativepath" : "../../JSON",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.fgraph.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "FMA.SoundPlayer~.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/IRCAM/ForumMaxApps-All/Utilities",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/IRCAM/ForumMaxApps-All/Utilities",
 				"patcherrelativepath" : "../../../../IRCAM/ForumMaxApps-All/Utilities",
 				"type" : "JSON",
 				"implicit" : 1

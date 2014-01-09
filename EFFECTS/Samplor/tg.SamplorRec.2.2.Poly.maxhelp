@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
@@ -28,6 +28,21 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"frgb" : 0.0,
+					"id" : "obj-21",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 99.5, 298.0, 36.0, 18.0 ],
+					"presentation_rect" : [ 100.5, 300.5, 0.0, 0.0 ],
+					"text" : "Open"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
@@ -55,7 +70,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -179,7 +194,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 6,
 											"architecture" : "x86"
 										}
 ,
@@ -875,7 +890,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 6,
 											"architecture" : "x86"
 										}
 ,
@@ -1555,7 +1570,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 6,
 											"architecture" : "x86"
 										}
 ,
@@ -2391,7 +2406,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 6,
 											"architecture" : "x86"
 										}
 ,
@@ -2802,9 +2817,9 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 									"bgoncolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"bgovercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"bgovercolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 									"bgoveroncolor" : [ 0.0, 0.917647, 0.0, 1.0 ],
 									"fontname" : "Arial Bold",
 									"fontsize" : 18.0,
@@ -2953,7 +2968,7 @@
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
 									"id" : "obj-166",
-									"items" : [ "IAC Driver Bus 1", ",", "to Max 1", ",", "to Max 2", ",", "Automap MIDI", ",", "Automap Propellerhead", ",", "Automap Logic Mixer" ],
+									"items" : [ "IAC Driver Bus 1", ",", "Network Session 1", ",", "to Max 1", ",", "to Max 2" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -3505,7 +3520,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 6,
 											"architecture" : "x86"
 										}
 ,
@@ -4987,7 +5002,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 6,
 											"architecture" : "x86"
 										}
 ,
@@ -5362,14 +5377,14 @@
 									"fontsize" : 12.0,
 									"hint" : "Choose a score to load",
 									"id" : "obj-27",
-									"items" : "<empty>",
+									"items" : "Section02.asco",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 1288.0, 816.0, 114.0, 20.0 ],
-									"prefix" : "notfound",
+									"prefix" : "Macintosh HD:/Users/goepfer/Documents/PATCH/Parra/Monodrame/PATCH/ANTESCOFO/",
 									"presentation" : 1,
 									"presentation_rect" : [ 504.0, 112.0, 200.0, 20.0 ],
 									"types" : "TEXT"
@@ -5544,7 +5559,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 6,
 											"architecture" : "x86"
 										}
 ,
@@ -5843,9 +5858,9 @@
 									"fontsize" : 10.0,
 									"id" : "obj-85",
 									"maxclass" : "newobj",
-									"numinlets" : 1,
+									"numinlets" : 2,
 									"numoutlets" : 7,
-									"outlettype" : [ "", "float", "symbol", "float", "float", "int", "symbol" ],
+									"outlettype" : [ "", "float", "symbol", "float", "float", "int", "bang" ],
 									"patching_rect" : [ 120.0, 80.0, 835.0, 18.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 8.0, 304.0, 310.0, 18.0 ],
@@ -7540,7 +7555,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.0, 417.5, 121.0, 27.0 ],
+					"patching_rect" : [ 99.5, 472.0, 121.0, 27.0 ],
 					"text" : ";\r2samp Flush 1"
 				}
 
@@ -7555,7 +7570,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.0, 373.0, 133.0, 38.0 ],
+					"patching_rect" : [ 99.5, 427.5, 133.0, 38.0 ],
 					"text" : ";\r2samp.storage recall Test1"
 				}
 
@@ -7569,7 +7584,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 355.0, 41.0, 18.0 ],
+					"patching_rect" : [ 99.5, 409.5, 41.0, 18.0 ],
 					"text" : "Preset"
 				}
 
@@ -7583,13 +7598,14 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 294.0, 25.0, 18.0 ],
+					"patching_rect" : [ 99.5, 348.5, 25.0, 18.0 ],
 					"text" : "Init"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-2",
@@ -7598,22 +7614,23 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.0, 311.5, 109.0, 27.0 ],
+					"patching_rect" : [ 99.5, 366.0, 109.0, 27.0 ],
 					"text" : ";\r2samp.INIT bang"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-8",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 181.0, 218.0, 109.0, 38.0 ],
+					"patching_rect" : [ 99.5, 316.0, 113.0, 27.0 ],
 					"text" : ";\r2samp.interface open"
 				}
 
@@ -7769,37 +7786,37 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1.1::obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-1.1::obj-1::obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-1.1::obj-1::obj-27" : [ "BufSize", "BufSize", 0 ],
-			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
-			"obj-1.1::obj-1::obj-80" : [ "Envelope", "Envelope", 0 ],
-			"obj-1.1::obj-1::obj-56" : [ "ReadFadeOut[2]", "ReadFadeOut", 0 ],
+			"obj-1.1::obj-1::obj-97" : [ "RecFadeOut", "RecFadeOut", 0 ],
 			"obj-1.1::obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-7::obj-50" : [ "Play", "Play", 0 ],
+			"obj-1.1::obj-1::obj-37" : [ "BufLoop", "BufLoop", 0 ],
 			"obj-1.1::obj-1::obj-354" : [ "BufSync", "BufSync", 0 ],
-			"obj-1.1::obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-1.1::obj-1::obj-185" : [ "BufSpeed", "BufSpeed", 0 ],
-			"obj-1.1::obj-1::obj-324" : [ "BufBegin", "BufBegin", 0 ],
+			"obj-1.1::obj-1::obj-26" : [ "nb-shots", "nb-shots", 0 ],
+			"obj-1.1::obj-1::obj-56" : [ "ReadFadeOut[2]", "ReadFadeOut", 0 ],
 			"obj-1.1::obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-1.1::obj-1::obj-54" : [ "ampVar", "ampVar", 0 ],
-			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
-			"obj-1.1::obj-1::obj-63" : [ "ReadFadeIn", "ReadFadeIn", 0 ],
+			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
 			"obj-1.1::obj-1::obj-314" : [ "BufAction", "BufAction", 0 ],
-			"obj-1.1::obj-1::obj-326" : [ "BufEnd", "BufEnd", 0 ],
 			"obj-1.1::obj-1::obj-255" : [ "BufReplace", "BufReplace", 0 ],
 			"obj-1.1::obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-7::obj-50" : [ "Play", "Play", 0 ],
-			"obj-1.1::obj-1::obj-62" : [ "ReadFadeOut", "ReadFadeOut", 0 ],
-			"obj-1.1::obj-1::obj-100" : [ "RecFadeIn", "RecFadeIn", 0 ],
-			"obj-1.1::obj-1::obj-37" : [ "BufLoop", "BufLoop", 0 ],
+			"obj-1.1::obj-1::obj-63" : [ "ReadFadeIn", "ReadFadeIn", 0 ],
+			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
 			"obj-1.1::obj-1::obj-331" : [ "BufSet", "BufSet", 0 ],
 			"obj-1.1::obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-1.1::obj-1::obj-26" : [ "nb-shots", "nb-shots", 0 ],
-			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
-			"obj-1.1::obj-1::obj-52" : [ "ReadFadeOut[1]", "ReadFadeOut", 0 ],
-			"obj-1.1::obj-1::obj-97" : [ "RecFadeOut", "RecFadeOut", 0 ]
+			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
+			"obj-1.1::obj-1::obj-324" : [ "BufBegin", "BufBegin", 0 ],
+			"obj-1.1::obj-1::obj-27" : [ "BufSize", "BufSize", 0 ],
+			"obj-1.1::obj-1::obj-62" : [ "ReadFadeOut", "ReadFadeOut", 0 ],
+			"obj-1.1::obj-1::obj-100" : [ "RecFadeIn", "RecFadeIn", 0 ],
+			"obj-1.1::obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-1.1::obj-1::obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
+			"obj-1.1::obj-1::obj-80" : [ "Envelope", "Envelope", 0 ],
+			"obj-1.1::obj-1::obj-326" : [ "BufEnd", "BufEnd", 0 ],
+			"obj-1.1::obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-1.1::obj-1::obj-185" : [ "BufSpeed", "BufSpeed", 0 ],
+			"obj-1.1::obj-1::obj-52" : [ "ReadFadeOut[1]", "ReadFadeOut", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -7825,8 +7842,8 @@
 			}
 , 			{
 				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}

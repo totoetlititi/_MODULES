@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 814.0, 44.0, 791.0, 823.0 ],
+		"rect" : [ 814.0, 44.0, 791.0, 573.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -31,13 +31,28 @@
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
+					"frgb" : 0.0,
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 128.0, 271.0, 36.0, 18.0 ],
+					"presentation_rect" : [ 128.0, 273.0, 0.0, 0.0 ],
+					"text" : "Open"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
 					"id" : "obj-165",
 					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.0, 373.0, 133.0, 27.0 ],
+					"patching_rect" : [ 128.0, 405.0, 133.0, 27.0 ],
 					"text" : ";\r1hrm.storage recall Test1"
 				}
 
@@ -51,7 +66,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 355.0, 41.0, 18.0 ],
+					"patching_rect" : [ 128.0, 387.0, 41.0, 18.0 ],
 					"text" : "Preset"
 				}
 
@@ -65,13 +80,14 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 294.0, 25.0, 18.0 ],
+					"patching_rect" : [ 128.0, 326.0, 25.0, 18.0 ],
 					"text" : "Init"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-2",
@@ -80,7 +96,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.0, 312.0, 109.0, 27.0 ],
+					"patching_rect" : [ 128.0, 344.0, 109.0, 27.0 ],
 					"text" : ";\r1hrm.INIT bang"
 				}
 
@@ -102,6 +118,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-8",
@@ -110,7 +127,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 181.0, 218.0, 109.0, 27.0 ],
+					"patching_rect" : [ 128.0, 289.0, 109.0, 27.0 ],
 					"text" : ";\r1hrm.interface open"
 				}
 
@@ -158,7 +175,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -634,47 +651,47 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1.1::obj-5::obj-161" : [ "2pan", "2pan", 0 ],
-			"obj-1.1::obj-5::obj-174" : [ "3gain", "3gain", 0 ],
-			"obj-1.1::obj-5::obj-187" : [ "4freq", "4freq", 0 ],
-			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
-			"obj-1.1::obj-5::obj-80" : [ "PRESET", "PRESET", 0 ],
-			"obj-1.1::obj-5::obj-126" : [ "Delay", "Delay", 0 ],
-			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
 			"obj-1.1::obj-5::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-1.1::obj-5::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-1.1::obj-5::obj-115" : [ "1feed", "1feed", 0 ],
+			"obj-1.1::obj-5::obj-114" : [ "1pan", "1pan", 0 ],
+			"obj-1.1::obj-5::obj-161" : [ "2pan", "2pan", 0 ],
+			"obj-7::obj-50" : [ "Play", "Play", 0 ],
+			"obj-1.1::obj-5::obj-174" : [ "3gain", "3gain", 0 ],
+			"obj-1.1::obj-5::obj-208" : [ "Clear", "Clear", 0 ],
+			"obj-1.1::obj-5::obj-187" : [ "4freq", "4freq", 0 ],
+			"obj-1.1::obj-5::obj-113" : [ "1freq", "1freq", 0 ],
+			"obj-1.1::obj-5::obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-1.1::obj-5::obj-158" : [ "Feedbacks", "Feedbacks", 0 ],
 			"obj-1.1::obj-5::obj-163" : [ "2delay", "2delay", 0 ],
+			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
 			"obj-1.1::obj-5::obj-175" : [ "3pan", "3pan", 0 ],
 			"obj-1.1::obj-5::obj-188" : [ "4gain", "4gain", 0 ],
 			"obj-1.1::obj-5::obj-206" : [ "Feedback", "Feedback", 0 ],
-			"obj-1.1::obj-5::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-1.1::obj-5::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-1.1::obj-5::obj-186" : [ "Automate", "Automate", 0 ],
-			"obj-1.1::obj-5::obj-113" : [ "1freq", "1freq", 0 ],
+			"obj-1.1::obj-5::obj-108" : [ "1delay", "1delay", 0 ],
+			"obj-1.1::obj-5::obj-28" : [ "Filters", "Filters", 0 ],
+			"obj-1.1::obj-5::obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-1.1::obj-5::obj-126" : [ "Delay", "Delay", 0 ],
 			"obj-1.1::obj-5::obj-162" : [ "2feed", "2feed", 0 ],
+			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
 			"obj-1.1::obj-5::obj-177" : [ "3delay", "3delay", 0 ],
 			"obj-1.1::obj-5::obj-172" : [ "3side", "3side", 0 ],
 			"obj-1.1::obj-5::obj-190" : [ "4pan", "4pan", 0 ],
-			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
-			"obj-1.1::obj-5::obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-1.1::obj-5::obj-158" : [ "Feedbacks", "Feedbacks", 0 ],
-			"obj-1.1::obj-5::obj-28" : [ "Filters", "Filters", 0 ],
+			"obj-1.1::obj-5::obj-115" : [ "1feed", "1feed", 0 ],
+			"obj-1.1::obj-5::obj-72" : [ "FilterQ", "FilterQ", 0 ],
 			"obj-1.1::obj-5::obj-159" : [ "2freq", "2freq", 0 ],
+			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
 			"obj-1.1::obj-5::obj-176" : [ "3feed", "3feed", 0 ],
 			"obj-1.1::obj-5::obj-192" : [ "4delay", "4delay", 0 ],
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-1.1::obj-5::obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
+			"obj-1.1::obj-5::obj-112" : [ "1side", "1side", 0 ],
+			"obj-1.1::obj-5::obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-1.1::obj-5::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
 			"obj-1.1::obj-5::obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-1.1::obj-5::obj-114" : [ "1pan", "1pan", 0 ],
+			"obj-1.1::obj-5::obj-186" : [ "Automate", "Automate", 0 ],
 			"obj-1.1::obj-5::obj-160" : [ "2gain", "2gain", 0 ],
+			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
 			"obj-1.1::obj-5::obj-173" : [ "3freq", "3freq", 0 ],
 			"obj-1.1::obj-5::obj-191" : [ "4feed", "4feed", 0 ],
-			"obj-1.1::obj-5::obj-208" : [ "Clear", "Clear", 0 ],
-			"obj-7::obj-50" : [ "Play", "Play", 0 ],
-			"obj-1.1::obj-5::obj-108" : [ "1delay", "1delay", 0 ],
-			"obj-1.1::obj-5::obj-112" : [ "1side", "1side", 0 ]
+			"obj-1.1::obj-5::obj-14" : [ "Outgain", "Outgain", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -693,8 +710,8 @@
 			}
 , 			{
 				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -714,20 +731,20 @@
 			}
 , 			{
 				"name" : "tg.line~.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/dsp.components",
-				"patcherrelativepath" : "../../../dsp.components",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "x.pan.1.2~.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/Poletti",
-				"patcherrelativepath" : "../../../../Poletti",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/_Tools",
+				"patcherrelativepath" : "../_Tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.preset.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.MuteThispoly2.maxpat",
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",

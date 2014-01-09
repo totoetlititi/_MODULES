@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 814.0, 44.0, 791.0, 823.0 ],
+		"rect" : [ 477.0, 44.0, 686.0, 537.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -31,13 +31,28 @@
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
+					"frgb" : 0.0,
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 112.0, 282.0, 36.0, 18.0 ],
+					"presentation_rect" : [ 112.0, 278.0, 0.0, 0.0 ],
+					"text" : "Open"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
 					"id" : "obj-165",
 					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.0, 373.0, 133.0, 38.0 ],
+					"patching_rect" : [ 112.0, 416.0, 133.0, 38.0 ],
 					"text" : ";\r1comb.storage recall Test1"
 				}
 
@@ -51,7 +66,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 355.0, 41.0, 18.0 ],
+					"patching_rect" : [ 112.0, 398.0, 41.0, 18.0 ],
 					"text" : "Preset"
 				}
 
@@ -65,13 +80,14 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 294.0, 25.0, 18.0 ],
+					"patching_rect" : [ 112.0, 337.0, 25.0, 18.0 ],
 					"text" : "Init"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-2",
@@ -80,7 +96,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.0, 311.5, 109.0, 27.0 ],
+					"patching_rect" : [ 112.0, 354.5, 109.0, 27.0 ],
 					"text" : ";\r1comb.INIT bang"
 				}
 
@@ -101,15 +117,16 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-8",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 181.0, 218.0, 109.0, 38.0 ],
+					"patching_rect" : [ 112.0, 300.0, 114.0, 27.0 ],
 					"text" : ";\r1comb.interface open"
 				}
 
@@ -142,7 +159,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -600,71 +617,78 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
-			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
 			"obj-1.1::obj-5::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
 			"obj-7::obj-50" : [ "Play", "Play", 0 ],
-			"obj-1.1::obj-5::obj-80" : [ "PRESET", "PRESET", 0 ],
-			"obj-1.1::obj-5::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-1.1::obj-5::obj-108" : [ "1delay", "1delay", 0 ],
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-1.1::obj-5::obj-113" : [ "1freq", "1freq", 0 ],
-			"obj-1.1::obj-5::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-1.1::obj-5::obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-1.1::obj-5::obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
+			"obj-1.1::obj-5::obj-108" : [ "1delay", "1delay", 0 ],
+			"obj-1.1::obj-5::obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
 			"obj-1.1::obj-5::obj-115" : [ "1feed", "1feed", 0 ],
-			"obj-1.1::obj-5::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-1.1::obj-5::obj-112" : [ "1side", "1side", 0 ],
 			"obj-1.1::obj-5::obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
+			"obj-1.1::obj-5::obj-112" : [ "1side", "1side", 0 ],
+			"obj-1.1::obj-5::obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-1.1::obj-5::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
 			"obj-1.1::obj-5::obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-7::obj-39" : [ "Loop", "Loop", 0 ]
+			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
+			"obj-1.1::obj-5::obj-14" : [ "Outgain", "Outgain", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "tg.Comb.1.1.Poly.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/CombX4",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Comb",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.Comb.1.1.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/CombX4",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Comb",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "M4L.bal1~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CombPreset.json",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
 				"patcherrelativepath" : "../../JSON",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.fgraph.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.MuteThispoly1.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "FMA.SoundPlayer~.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/IRCAM/ForumMaxApps-All/Utilities",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/IRCAM/ForumMaxApps-All/Utilities",
 				"patcherrelativepath" : "../../../../IRCAM/ForumMaxApps-All/Utilities",
 				"type" : "JSON",
 				"implicit" : 1

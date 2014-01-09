@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
@@ -104,6 +104,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-2",
@@ -119,6 +120,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-8",
@@ -175,7 +177,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -651,51 +653,58 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1.1::obj-1::obj-234" : [ "TimeMax", "TimeMax", 0 ],
-			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
-			"obj-1.1::obj-1::obj-80" : [ "PRESET", "PRESET", 0 ],
-			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
-			"obj-1.1::obj-1::obj-198" : [ "Metro", "Metro", 0 ],
 			"obj-1.1::obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-1.1::obj-1::obj-557" : [ "DelDrunkStep", "DelDrunkStep", 0 ],
-			"obj-1.1::obj-1::obj-624" : [ "FeedDrunkStep", "FeedDrunkStep", 0 ],
-			"obj-1.1::obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-1.1::obj-1::obj-207" : [ "FiltDrunk", "FiltDrunk", 0 ],
-			"obj-1.1::obj-1::obj-262" : [ "Pow", "Pow", 0 ],
-			"obj-1.1::obj-1::obj-231" : [ "TimeMin", "TimeMin", 0 ],
-			"obj-1.1::obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-1.1::obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-1.1::obj-1::obj-186" : [ "Automate", "Automate", 0 ],
-			"obj-1.1::obj-1::obj-55" : [ "DelMax", "DelMax", 0 ],
-			"obj-1.1::obj-1::obj-56" : [ "FeedMax", "FeedMax", 0 ],
-			"obj-1.1::obj-1::obj-267" : [ "FiltDrunkStep", "FiltDrunkStep", 0 ],
-			"obj-1.1::obj-1::obj-249" : [ "SizeMax", "SizeMax", 0 ],
-			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
-			"obj-1.1::obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-1.1::obj-1::obj-240" : [ "BandsMax", "BandsMax", 0 ],
-			"obj-1.1::obj-1::obj-155" : [ "Delays", "Delays", 0 ],
-			"obj-1.1::obj-1::obj-158" : [ "Feedbacks", "Feedbacks", 0 ],
-			"obj-1.1::obj-1::obj-28" : [ "Filters", "Filters", 0 ],
-			"obj-1.1::obj-1::obj-252" : [ "SizeMin", "SizeMin", 0 ],
-			"obj-1.1::obj-1::obj-255" : [ "Grain", "Grain", 0 ],
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-1.1::obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
-			"obj-1.1::obj-1::obj-237" : [ "BandsMin", "BandsMin", 0 ],
-			"obj-1.1::obj-1::obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-1.1::obj-1::obj-146" : [ "FadeOut", "FadeOut", 0 ],
-			"obj-1.1::obj-1::obj-60" : [ "ForceFeed", "ForceFeed", 0 ],
-			"obj-1.1::obj-1::obj-415" : [ "Slope", "Slope", 0 ],
 			"obj-7::obj-50" : [ "Play", "Play", 0 ],
 			"obj-1.1::obj-1::obj-558" : [ "DelDrunk", "DelDrunk", 0 ],
+			"obj-1.1::obj-1::obj-267" : [ "FiltDrunkStep", "FiltDrunkStep", 0 ],
+			"obj-1.1::obj-1::obj-415" : [ "Slope", "Slope", 0 ],
+			"obj-1.1::obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-1.1::obj-1::obj-158" : [ "Feedbacks", "Feedbacks", 0 ],
+			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
+			"obj-1.1::obj-1::obj-557" : [ "DelDrunkStep", "DelDrunkStep", 0 ],
+			"obj-1.1::obj-1::obj-60" : [ "ForceFeed", "ForceFeed", 0 ],
+			"obj-1.1::obj-1::obj-28" : [ "Filters", "Filters", 0 ],
+			"obj-1.1::obj-1::obj-55" : [ "DelMax", "DelMax", 0 ],
+			"obj-1.1::obj-1::obj-262" : [ "Pow", "Pow", 0 ],
+			"obj-1.1::obj-1::obj-255" : [ "Grain", "Grain", 0 ],
+			"obj-1.1::obj-1::obj-234" : [ "TimeMax", "TimeMax", 0 ],
+			"obj-1.1::obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
 			"obj-1.1::obj-1::obj-625" : [ "FeedDrunk", "FeedDrunk", 0 ],
-			"obj-1.1::obj-1::obj-54" : [ "ForceFilt", "ForceFilt", 0 ]
+			"obj-1.1::obj-1::obj-54" : [ "ForceFilt", "ForceFilt", 0 ],
+			"obj-1.1::obj-1::obj-155" : [ "Delays", "Delays", 0 ],
+			"obj-1.1::obj-1::obj-231" : [ "TimeMin", "TimeMin", 0 ],
+			"obj-1.1::obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-1.1::obj-1::obj-56" : [ "FeedMax", "FeedMax", 0 ],
+			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
+			"obj-1.1::obj-1::obj-146" : [ "FadeOut", "FadeOut", 0 ],
+			"obj-1.1::obj-1::obj-240" : [ "BandsMax", "BandsMax", 0 ],
+			"obj-1.1::obj-1::obj-624" : [ "FeedDrunkStep", "FeedDrunkStep", 0 ],
+			"obj-1.1::obj-1::obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-1.1::obj-1::obj-249" : [ "SizeMax", "SizeMax", 0 ],
+			"obj-1.1::obj-1::obj-198" : [ "Metro", "Metro", 0 ],
+			"obj-1.1::obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-1.1::obj-1::obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-1.1::obj-1::obj-186" : [ "Automate", "Automate", 0 ],
+			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
+			"obj-1.1::obj-1::obj-237" : [ "BandsMin", "BandsMin", 0 ],
+			"obj-1.1::obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-1.1::obj-1::obj-207" : [ "FiltDrunk", "FiltDrunk", 0 ],
+			"obj-1.1::obj-1::obj-252" : [ "SizeMin", "SizeMin", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "tg.SpectralDelay.2.2.Poly.maxpat",
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/SpectralDelay",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.MuteThispoly2.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -708,8 +717,8 @@
 			}
 , 			{
 				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}

@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
@@ -31,13 +31,28 @@
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
+					"frgb" : 0.0,
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 121.0, 283.0, 36.0, 18.0 ],
+					"presentation_rect" : [ 128.0, 303.0, 0.0, 0.0 ],
+					"text" : "Open"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
 					"id" : "obj-171",
 					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.0, 439.5, 175.0, 27.0 ],
+					"patching_rect" : [ 121.0, 483.5, 175.0, 27.0 ],
 					"text" : ";\r1Ysin.storage recall Test1 2000 0.5"
 				}
 
@@ -54,7 +69,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 128.0, 547.0, 50.0, 18.0 ]
+					"patching_rect" : [ 121.0, 591.0, 50.0, 18.0 ]
 				}
 
 			}
@@ -68,7 +83,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.0, 577.5, 184.0, 27.0 ],
+					"patching_rect" : [ 121.0, 621.5, 184.0, 27.0 ],
 					"text" : ";\r1Ysin.storage recall Test1 Default $1"
 				}
 
@@ -83,7 +98,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.0, 510.5, 158.0, 27.0 ],
+					"patching_rect" : [ 121.0, 554.5, 158.0, 27.0 ],
 					"text" : ";\r1Ysin.storage recall Test1 2000"
 				}
 
@@ -98,7 +113,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.0, 474.5, 161.0, 27.0 ],
+					"patching_rect" : [ 121.0, 518.5, 161.0, 27.0 ],
 					"text" : ";\r1Ysin.storage recall Default 678"
 				}
 
@@ -113,7 +128,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.0, 373.0, 133.0, 27.0 ],
+					"patching_rect" : [ 121.0, 417.0, 133.0, 27.0 ],
 					"text" : ";\r1Ysin.storage recall Test1"
 				}
 
@@ -128,7 +143,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.0, 406.5, 142.0, 27.0 ],
+					"patching_rect" : [ 121.0, 450.5, 142.0, 27.0 ],
 					"text" : ";\r1Ysin.storage recall Default"
 				}
 
@@ -142,7 +157,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 355.0, 41.0, 18.0 ],
+					"patching_rect" : [ 121.0, 399.0, 41.0, 18.0 ],
 					"text" : "Preset"
 				}
 
@@ -156,13 +171,14 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 294.0, 25.0, 18.0 ],
+					"patching_rect" : [ 121.0, 338.0, 25.0, 18.0 ],
 					"text" : "Init"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-2",
@@ -171,7 +187,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.0, 312.0, 109.0, 27.0 ],
+					"patching_rect" : [ 121.0, 356.0, 109.0, 27.0 ],
 					"text" : ";\r1Ysin.INIT bang"
 				}
 
@@ -192,6 +208,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-8",
@@ -200,7 +217,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 181.0, 218.0, 109.0, 27.0 ],
+					"patching_rect" : [ 121.0, 301.0, 109.0, 27.0 ],
 					"text" : ";\r1Ysin.interface open"
 				}
 
@@ -248,7 +265,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -724,29 +741,36 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
-			"obj-1.1::obj-1::obj-26" : [ "PRESET", "PRESET", 0 ],
 			"obj-1.1::obj-1::obj-19" : [ "Smooth", "Smooth", 0 ],
-			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
 			"obj-1.1::obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-1.1::obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-1.1::obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-7::obj-50" : [ "Play", "Play", 0 ],
 			"obj-1.1::obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-1.1::obj-1::obj-18" : [ "Quality", "Quality", 0 ],
-			"obj-1.1::obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-1.1::obj-1::obj-23" : [ "Transp", "Transp", 0 ],
 			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-1.1::obj-1::obj-23" : [ "Transp", "Transp", 0 ],
+			"obj-1.1::obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
 			"obj-1.1::obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
+			"obj-1.1::obj-1::obj-18" : [ "Quality", "Quality", 0 ],
+			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
+			"obj-1.1::obj-1::obj-26" : [ "PRESET", "PRESET", 0 ],
+			"obj-1.1::obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
 			"obj-1.1::obj-1::obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
 			"obj-7::obj-65" : [ "Transp[1]", "Transp", 0 ],
-			"obj-7::obj-50" : [ "Play", "Play", 0 ]
+			"obj-1.1::obj-1::obj-14" : [ "Outgain", "Outgain", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "tg.YinToSin.1.1.Poly.maxpat",
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/YinToSin",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.MuteThispoly1.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -759,8 +783,8 @@
 			}
 , 			{
 				"name" : "M4L.bal1~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}

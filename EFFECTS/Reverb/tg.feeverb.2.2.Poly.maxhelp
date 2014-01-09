@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
@@ -28,6 +28,21 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"frgb" : 0.0,
+					"id" : "obj-11",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 128.0, 251.0, 41.0, 18.0 ],
+					"presentation_rect" : [ 128.0, 251.0, 0.0, 0.0 ],
+					"text" : "Open"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
@@ -133,13 +148,14 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 294.0, 25.0, 18.0 ],
+					"patching_rect" : [ 128.0, 302.0, 25.0, 18.0 ],
 					"text" : "Init"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-2",
@@ -148,7 +164,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.0, 312.0, 109.0, 27.0 ],
+					"patching_rect" : [ 128.0, 320.0, 109.0, 27.0 ],
 					"text" : ";\r1rev.INIT bang"
 				}
 
@@ -170,6 +186,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-8",
@@ -178,7 +195,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 181.0, 218.0, 109.0, 27.0 ],
+					"patching_rect" : [ 128.0, 269.0, 109.0, 27.0 ],
 					"text" : ";\r1rev.interface open"
 				}
 
@@ -211,7 +228,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -741,31 +758,28 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1.1::obj-1::obj-64" : [ "FilterInQ", "FilterInQ", 0 ],
-			"obj-1.1::obj-1::obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-1.1::obj-1::obj-62" : [ "FilterInGain", "FilterInGain", 0 ],
+			"obj-7::obj-50" : [ "Play", "Play", 0 ],
+			"obj-1.1::obj-1::obj-47" : [ "Gain[1]", "Gain", 0 ],
+			"obj-1.1::obj-1::obj-70" : [ "Clear", "Clear", 0 ],
+			"obj-1.1::obj-1::obj-63" : [ "SizeVar", "SizeVar", 0 ],
+			"obj-1.1::obj-1::obj-53" : [ "FilterInMode", "FilterInMode", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-1.1::obj-1::obj-19" : [ "MaxVoices", "MaxVoices", 0 ],
 			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
 			"obj-1.1::obj-1::obj-25" : [ "Tail", "Tail", 0 ],
-			"obj-1.1::obj-1::obj-37" : [ "Revtime", "Revtime", 0 ],
-			"obj-1.1::obj-1::obj-67" : [ "TranspMode", "TranspMode", 0 ],
-			"obj-1.1::obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-1.1::obj-1::obj-62" : [ "FilterInGain", "FilterInGain", 0 ],
-			"obj-1.1::obj-1::obj-41" : [ "Roomsize", "Roomsize", 0 ],
-			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
-			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
-			"obj-1.1::obj-1::obj-8" : [ "Direction", "Direction", 0 ],
-			"obj-1.1::obj-1::obj-47" : [ "Gain[1]", "Gain", 0 ],
+			"obj-1.1::obj-1::obj-64" : [ "FilterInQ", "FilterInQ", 0 ],
+			"obj-1.1::obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
 			"obj-1.1::obj-1::obj-72" : [ "TranspScale", "TranspScale", 0 ],
-			"obj-1.1::obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-7::obj-50" : [ "Play", "Play", 0 ],
-			"obj-1.1::obj-1::obj-63" : [ "SizeVar", "SizeVar", 0 ],
-			"obj-1.1::obj-1::obj-53" : [ "FilterInMode", "FilterInMode", 0 ],
-			"obj-1.1::obj-1::obj-33" : [ "Early", "Early", 0 ],
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-1.1::obj-1::obj-70" : [ "Clear", "Clear", 0 ],
-			"obj-1.1::obj-1::obj-44" : [ "Damping", "Damping", 0 ],
+			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
 			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
-			"obj-1.1::obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ]
+			"obj-1.1::obj-1::obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-1.1::obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-1.1::obj-1::obj-8" : [ "Direction", "Direction", 0 ],
+			"obj-1.1::obj-1::obj-44" : [ "Damping", "Damping", 0 ],
+			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
+			"obj-1.1::obj-1::obj-67" : [ "TranspMode", "TranspMode", 0 ],
+			"obj-1.1::obj-1::obj-14" : [ "Outgain", "Outgain", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -791,8 +805,8 @@
 			}
 , 			{
 				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -808,6 +822,13 @@
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "freeverb.gendsp",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Reverb",
+				"patcherrelativepath" : ".",
+				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{

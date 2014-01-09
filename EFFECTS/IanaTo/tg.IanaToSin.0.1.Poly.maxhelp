@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
@@ -70,6 +70,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-14",
@@ -85,6 +86,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-11",
@@ -180,7 +182,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -1242,7 +1244,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -1866,7 +1868,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 6,
 											"architecture" : "x86"
 										}
 ,
@@ -3494,6 +3496,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-9",
@@ -3523,6 +3526,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-8",
@@ -3564,7 +3568,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -4148,113 +4152,114 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1.1::obj-5::obj-34" : [ "Output", "Output", 0 ],
-			"obj-1.1::obj-5::obj-31" : [ "Content", "Content", 0 ],
-			"obj-88.1::obj-1::obj-129" : [ "ReceiveFrom[1]", "ReceiveFrom", 0 ],
-			"obj-84::obj-93" : [ "ListMin", "ListMin", 0 ],
-			"obj-88.1::obj-1::obj-93" : [ "ListMin[1]", "ListMin", 0 ],
-			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
-			"obj-84::obj-121" : [ "VibFreq", "VibFreq", 0 ],
-			"obj-1.1::obj-5::obj-125" : [ "PRESET", "PRESET", 0 ],
-			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
-			"obj-88.1::obj-1::obj-116" : [ "Metro", "Metro", 0 ],
-			"obj-1.1::obj-5::obj-296" : [ "ArpegeA", "ArpegeA", 0 ],
-			"obj-1.1::obj-5::obj-278" : [ "ArpegeD", "ArpegeD", 0 ],
-			"obj-1.1::obj-5::obj-162" : [ "TranspEnable", "TranspEnable", 0 ],
-			"obj-1.1::obj-5::obj-184" : [ "ArpegeMetroRand", "ArpegeMetroRand", 0 ],
-			"obj-1.1::obj-5::obj-161" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-1.1::obj-5::obj-274" : [ "ArpegeS", "ArpegeS", 0 ],
-			"obj-88.1::obj-1::obj-14" : [ "Outgain[1]", "Outgain", 0 ],
-			"obj-1.1::obj-5::obj-171" : [ "Fiddle", "Fiddle", 0 ],
-			"obj-1.1::obj-5::obj-81" : [ "Sync", "Sync", 0 ],
-			"obj-1.1::obj-5::obj-165" : [ "Outgain", "Outgain", 0 ],
-			"obj-1.1::obj-5::obj-18" : [ "LastToSearch", "LastToSearch", 0 ],
-			"obj-1.1::obj-5::obj-49" : [ "Metronome", "Metronome", 0 ],
-			"obj-1.1::obj-5::obj-47" : [ "Send", "Send", 0 ],
-			"obj-1.1::obj-5::obj-213" : [ "Manual", "Manual", 0 ],
-			"obj-1.1::obj-5::obj-7" : [ "WindowType", "WindowType", 0 ],
-			"obj-88.1::obj-1::obj-121" : [ "VibFreq[1]", "VibFreq", 0 ],
-			"obj-88.1::obj-1::obj-20" : [ "PhraseDuration", "PhraseDuration", 0 ],
-			"obj-88.1::obj-1::obj-125" : [ "VibAmp[1]", "VibAmp", 0 ],
-			"obj-84::obj-38" : [ "CycleParab", "CycleParab", 0 ],
-			"obj-89" : [ "live.gain~[3]", "live.gain~", 0 ],
-			"obj-1.1::obj-5::obj-201" : [ "ArpegeBasePitch", "ArpegeBasePitch", 0 ],
-			"obj-1.1::obj-5::obj-196" : [ "ArpegeDir", "ArpegeDir", 0 ],
-			"obj-1.1::obj-5::obj-10" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-1.1::obj-5::obj-39" : [ "Transpose", "Transpose", 0 ],
-			"obj-1.1::obj-5::obj-232" : [ "Error", "Error", 0 ],
-			"obj-1.1::obj-5::obj-187" : [ "ArpegeMetroSpeed", "ArpegeMetroSpeed", 0 ],
-			"obj-1.1::obj-5::obj-160" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-88.1::obj-1::obj-67" : [ "FilterGain[1]", "FilterGain", 0 ],
-			"obj-1.1::obj-5::obj-182" : [ "ArpegeSampleSize", "ArpegeSampleSize", 0 ],
-			"obj-88.1::obj-1::obj-88" : [ "PRESET[1]", "PRESET", 0 ],
-			"obj-1.1::obj-5::obj-16" : [ "FirstToSearch", "FirstToSearch", 0 ],
-			"obj-1.1::obj-5::obj-37" : [ "Level", "Level", 0 ],
-			"obj-1.1::obj-5::obj-22" : [ "Monitor", "Monitor", 0 ],
-			"obj-1.1::obj-5::obj-66" : [ "SendData", "SendData", 0 ],
-			"obj-1.1::obj-5::obj-26" : [ "BufSize", "BufSize", 0 ],
-			"obj-88.1::obj-1::obj-188" : [ "Speed[1]", "Speed", 0 ],
-			"obj-84::obj-129" : [ "ReceiveFrom", "ReceiveFrom", 0 ],
-			"obj-84::obj-188" : [ "Speed", "Speed", 0 ],
-			"obj-1.1::obj-5::obj-286" : [ "ArpegeBuf", "ArpegeBuf", 0 ],
-			"obj-1.1::obj-5::obj-195" : [ "ArpegeDirRand", "ArpegeDirRand", 0 ],
-			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
-			"obj-1.1::obj-5::obj-198" : [ "ArpegeNbNotes", "ArpegeNbNotes", 0 ],
-			"obj-1.1::obj-5::obj-152" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-1.1::obj-5::obj-194" : [ "ArpegeTranspMode", "ArpegeTranspMode", 0 ],
-			"obj-1.1::obj-5::obj-99" : [ "FreqSmooth", "FSmooth", 0 ],
-			"obj-1.1::obj-5::obj-36" : [ "MaxPartials", "MaxPartials", 0 ],
-			"obj-1.1::obj-5::obj-30" : [ "Ordering", "Ordering", 0 ],
-			"obj-1.1::obj-5::obj-74" : [ "SpeedFactor", "SpeedFactor", 0 ],
-			"obj-1.1::obj-5::obj-3" : [ "BufLoop", "BufLoop", 0 ],
-			"obj-88.1::obj-1::obj-94" : [ "ListMax[1]", "ListMax", 0 ],
-			"obj-88.1::obj-1::obj-27" : [ "CycPar", "CycPar", 0 ],
-			"obj-88.1::obj-1::obj-15" : [ "SilenceDuration", "SilenceDuration", 0 ],
-			"obj-84::obj-116" : [ "Metronome[1]", "Metronome", 0 ],
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-1.1::obj-5::obj-255" : [ "ArpegeBufReplace", "ArpegeBufReplace", 0 ],
 			"obj-1.1::obj-5::obj-226" : [ "ArpegeEnv", "ArpegeEnv", 0 ],
-			"obj-88.1::obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-1.1::obj-5::obj-161" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-1.1::obj-5::obj-36" : [ "MaxPartials", "MaxPartials", 0 ],
 			"obj-1.1::obj-5::obj-181" : [ "ArpegePower", "ArpegePower", 0 ],
-			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
-			"obj-88.1::obj-1::obj-70" : [ "FilterFreq[1]", "FilterFreq", 0 ],
-			"obj-1.1::obj-5::obj-9" : [ "Downsampling", "Downsampling", 0 ],
-			"obj-1.1::obj-5::obj-44" : [ "HearingThreshold", "HearingThreshold", 0 ],
-			"obj-1.1::obj-5::obj-19" : [ "MaxPeaks", "MaxPeaks", 0 ],
-			"obj-1.1::obj-5::obj-50" : [ "Rate", "Rate", 0 ],
-			"obj-1.1::obj-5::obj-23" : [ "Threshold", "Threshold", 0 ],
-			"obj-84::obj-94" : [ "ListMax", "ListMax", 0 ],
-			"obj-84::obj-125" : [ "VibAmp", "VibAmp", 0 ],
-			"obj-1.1::obj-5::obj-41" : [ "Shift", "Shift", 0 ],
+			"obj-1.1::obj-5::obj-27" : [ "RefLevel", "RefLevel", 0 ],
+			"obj-88.1::obj-1::obj-27" : [ "CycPar", "CycPar", 0 ],
+			"obj-1.1::obj-5::obj-39" : [ "Transpose", "Transpose", 0 ],
+			"obj-1.1::obj-5::obj-31" : [ "Content", "Content", 0 ],
 			"obj-7::obj-50" : [ "Play", "Play", 0 ],
-			"obj-1.1::obj-5::obj-103" : [ "AmpSmooth", "ASmooth", 0 ],
+			"obj-84::obj-125" : [ "VibAmp", "VibAmp", 0 ],
+			"obj-1.1::obj-5::obj-34" : [ "Output", "Output", 0 ],
+			"obj-1.1::obj-5::obj-3" : [ "BufLoop", "BufLoop", 0 ],
+			"obj-1.1::obj-5::obj-99" : [ "FreqSmooth", "FSmooth", 0 ],
+			"obj-88.1::obj-1::obj-188" : [ "Speed[1]", "Speed", 0 ],
 			"obj-1.1::obj-5::obj-331" : [ "ArpegeBufSet", "ArpegeBufSet", 0 ],
 			"obj-1.1::obj-5::obj-199" : [ "ArpegeInput", "ArpegeInput", 0 ],
-			"obj-88.1::obj-1::obj-42" : [ "FilterMode[1]", "FilterMode", 0 ],
+			"obj-1.1::obj-5::obj-19" : [ "MaxPeaks", "MaxPeaks", 0 ],
+			"obj-1.1::obj-5::obj-160" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-88.1::obj-1::obj-70" : [ "FilterFreq[1]", "FilterFreq", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-1.1::obj-5::obj-66" : [ "SendData", "SendData", 0 ],
 			"obj-1.1::obj-5::obj-224" : [ "ArpegeR", "ArpegeR", 0 ],
+			"obj-1.1::obj-5::obj-171" : [ "Fiddle", "Fiddle", 0 ],
+			"obj-84::obj-94" : [ "ListMax", "ListMax", 0 ],
+			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
+			"obj-84::obj-121" : [ "VibFreq", "VibFreq", 0 ],
+			"obj-88.1::obj-1::obj-20" : [ "PhraseDuration", "PhraseDuration", 0 ],
+			"obj-1.1::obj-5::obj-232" : [ "Error", "Error", 0 ],
+			"obj-84::obj-116" : [ "Metronome[1]", "Metronome", 0 ],
+			"obj-1.1::obj-5::obj-41" : [ "Shift", "Shift", 0 ],
+			"obj-88.1::obj-1::obj-129" : [ "ReceiveFrom[1]", "ReceiveFrom", 0 ],
+			"obj-1.1::obj-5::obj-44" : [ "HearingThreshold", "HearingThreshold", 0 ],
+			"obj-1.1::obj-5::obj-296" : [ "ArpegeA", "ArpegeA", 0 ],
+			"obj-1.1::obj-5::obj-47" : [ "Send", "Send", 0 ],
+			"obj-88.1::obj-1::obj-93" : [ "ListMin[1]", "ListMin", 0 ],
 			"obj-1.1::obj-5::obj-123" : [ "InputChannels", "InputChannels", 0 ],
+			"obj-1.1::obj-5::obj-278" : [ "ArpegeD", "ArpegeD", 0 ],
+			"obj-1.1::obj-5::obj-152" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-1.1::obj-5::obj-22" : [ "Monitor", "Monitor", 0 ],
+			"obj-1.1::obj-5::obj-184" : [ "ArpegeMetroRand", "ArpegeMetroRand", 0 ],
+			"obj-88.1::obj-1::obj-42" : [ "FilterMode[1]", "FilterMode", 0 ],
+			"obj-1.1::obj-5::obj-274" : [ "ArpegeS", "ArpegeS", 0 ],
+			"obj-1.1::obj-5::obj-74" : [ "SpeedFactor", "SpeedFactor", 0 ],
 			"obj-1.1::obj-5::obj-188" : [ "MetroValues", "MetroValues", 0 ],
-			"obj-1.1::obj-5::obj-27" : [ "RefLevel", "RefLevel", 0 ]
+			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
+			"obj-84::obj-93" : [ "ListMin", "ListMin", 0 ],
+			"obj-88.1::obj-1::obj-15" : [ "SilenceDuration", "SilenceDuration", 0 ],
+			"obj-89" : [ "live.gain~[3]", "live.gain~", 0 ],
+			"obj-1.1::obj-5::obj-103" : [ "AmpSmooth", "ASmooth", 0 ],
+			"obj-88.1::obj-1::obj-125" : [ "VibAmp[1]", "VibAmp", 0 ],
+			"obj-1.1::obj-5::obj-201" : [ "ArpegeBasePitch", "ArpegeBasePitch", 0 ],
+			"obj-88.1::obj-1::obj-88" : [ "PRESET[1]", "PRESET", 0 ],
+			"obj-1.1::obj-5::obj-196" : [ "ArpegeDir", "ArpegeDir", 0 ],
+			"obj-1.1::obj-5::obj-18" : [ "LastToSearch", "LastToSearch", 0 ],
+			"obj-1.1::obj-5::obj-187" : [ "ArpegeMetroSpeed", "ArpegeMetroSpeed", 0 ],
+			"obj-1.1::obj-5::obj-30" : [ "Ordering", "Ordering", 0 ],
+			"obj-88.1::obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-88.1::obj-1::obj-67" : [ "FilterGain[1]", "FilterGain", 0 ],
+			"obj-1.1::obj-5::obj-182" : [ "ArpegeSampleSize", "ArpegeSampleSize", 0 ],
+			"obj-1.1::obj-5::obj-23" : [ "Threshold", "Threshold", 0 ],
+			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
+			"obj-84::obj-129" : [ "ReceiveFrom", "ReceiveFrom", 0 ],
+			"obj-84::obj-188" : [ "Speed", "Speed", 0 ],
+			"obj-1.1::obj-5::obj-81" : [ "Sync", "Sync", 0 ],
+			"obj-1.1::obj-5::obj-26" : [ "BufSize", "BufSize", 0 ],
+			"obj-1.1::obj-5::obj-125" : [ "PRESET", "PRESET", 0 ],
+			"obj-1.1::obj-5::obj-9" : [ "Downsampling", "Downsampling", 0 ],
+			"obj-88.1::obj-1::obj-94" : [ "ListMax[1]", "ListMax", 0 ],
+			"obj-1.1::obj-5::obj-286" : [ "ArpegeBuf", "ArpegeBuf", 0 ],
+			"obj-88.1::obj-1::obj-116" : [ "Metro", "Metro", 0 ],
+			"obj-1.1::obj-5::obj-37" : [ "Level", "Level", 0 ],
+			"obj-1.1::obj-5::obj-195" : [ "ArpegeDirRand", "ArpegeDirRand", 0 ],
+			"obj-1.1::obj-5::obj-10" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-1.1::obj-5::obj-198" : [ "ArpegeNbNotes", "ArpegeNbNotes", 0 ],
+			"obj-1.1::obj-5::obj-50" : [ "Rate", "Rate", 0 ],
+			"obj-88.1::obj-1::obj-14" : [ "Outgain[1]", "Outgain", 0 ],
+			"obj-1.1::obj-5::obj-194" : [ "ArpegeTranspMode", "ArpegeTranspMode", 0 ],
+			"obj-1.1::obj-5::obj-7" : [ "WindowType", "WindowType", 0 ],
+			"obj-1.1::obj-5::obj-148" : [ "synthFader", "synthFader", 0 ],
+			"obj-1.1::obj-5::obj-162" : [ "TranspEnable", "TranspEnable", 0 ],
+			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
+			"obj-1.1::obj-5::obj-213" : [ "Manual", "Manual", 0 ],
+			"obj-1.1::obj-5::obj-165" : [ "Outgain", "Outgain", 0 ],
+			"obj-84::obj-38" : [ "CycleParab", "CycleParab", 0 ],
+			"obj-1.1::obj-5::obj-49" : [ "Metronome", "Metronome", 0 ],
+			"obj-1.1::obj-5::obj-16" : [ "FirstToSearch", "FirstToSearch", 0 ],
+			"obj-88.1::obj-1::obj-121" : [ "VibFreq[1]", "VibFreq", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "tg.IanaToAdd.2.2.Poly.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/IanaToAdd",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/IanaTo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.IanaToAdd.2.2.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/IanaToAdd",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/IanaTo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -4267,13 +4272,6 @@
 			}
 , 			{
 				"name" : "tg.m.fgraph.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.random.maxpat",
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
@@ -4294,14 +4292,28 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "gizmo_loadme.maxpat",
-				"bootpath" : "/Applications/Max 6.1.3/Cycling '74/msp-help",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.3/Cycling '74/msp-help",
+				"name" : "gizmo.2.2.pfft.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/IanaTo",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.random.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.preset.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.MuteThispoly2.maxpat",
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
@@ -4323,21 +4335,28 @@
 			}
 , 			{
 				"name" : "M4L.bal1~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.IanaToSin.0.1.Poly.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/IanaToAdd",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/IanaTo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "tg.MuteThispoly1.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "tg.IanaToSin.0.1.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/IanaToAdd",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/IanaTo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

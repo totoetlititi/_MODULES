@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
@@ -59,6 +59,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-2",
@@ -74,6 +75,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-8",
@@ -115,7 +117,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -591,44 +593,44 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1.1::obj-1::obj-96" : [ "QRand", "QRand", 0 ],
-			"obj-1.1::obj-1::obj-208" : [ "QRandValueMin", "QRandValueMin", 0 ],
-			"obj-1.1::obj-1::obj-99" : [ "Freq23", "Freq23", 0 ],
-			"obj-1.1::obj-1::obj-193" : [ "DelayRand", "DelayRand", 0 ],
-			"obj-1.1::obj-1::obj-154" : [ "DelayRandValueMin", "DelayRandValueMin", 0 ],
-			"obj-1.1::obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-1.1::obj-1::obj-80" : [ "PRESET", "PRESET", 0 ],
-			"obj-1.1::obj-1::obj-160" : [ "FreqPresetMetro", "FreqPresetMetro", 0 ],
-			"obj-1.1::obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-1.1::obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
 			"obj-1.1::obj-1::obj-183" : [ "DelayRandMetro", "DelayRandMetro", 0 ],
-			"obj-1.1::obj-1::obj-186" : [ "QRandMetroMin", "QRandMetroMin", 0 ],
-			"obj-1.1::obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-1.1::obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
-			"obj-1.1::obj-1::obj-168" : [ "FreqPresetMetroMax", "FreqPresetMetroMax", 0 ],
-			"obj-1.1::obj-1::obj-209" : [ "FreqPresetList", "FreqPresetList", 0 ],
-			"obj-1.1::obj-1::obj-180" : [ "DelayRandMetroMax", "DelayRandMetroMax", 0 ],
-			"obj-1.1::obj-1::obj-51" : [ "Feedback", "Feedback", 0 ],
-			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
 			"obj-7::obj-50" : [ "Play", "Play", 0 ],
-			"obj-1.1::obj-1::obj-82" : [ "FreqPreset", "FreqPreset", 0 ],
-			"obj-1.1::obj-1::obj-31" : [ "Freq17", "Freq17", 0 ],
+			"obj-1.1::obj-1::obj-160" : [ "FreqPresetMetro", "FreqPresetMetro", 0 ],
+			"obj-1.1::obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-1.1::obj-1::obj-180" : [ "DelayRandMetroMax", "DelayRandMetroMax", 0 ],
+			"obj-1.1::obj-1::obj-259" : [ "Q", "Q", 0 ],
 			"obj-1.1::obj-1::obj-103" : [ "Freq21", "Freq21", 0 ],
-			"obj-1.1::obj-1::obj-170" : [ "FreqPresetMetroMin", "FreqPresetMetroMin", 0 ],
+			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
+			"obj-1.1::obj-1::obj-51" : [ "Feedback", "Feedback", 0 ],
+			"obj-1.1::obj-1::obj-168" : [ "FreqPresetMetroMax", "FreqPresetMetroMax", 0 ],
+			"obj-1.1::obj-1::obj-186" : [ "QRandMetroMin", "QRandMetroMin", 0 ],
+			"obj-1.1::obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
 			"obj-1.1::obj-1::obj-53" : [ "Delay", "Delay", 0 ],
 			"obj-1.1::obj-1::obj-178" : [ "DelayRandMetroMin", "DelayRandMetroMin", 0 ],
-			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
-			"obj-1.1::obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-1.1::obj-1::obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-1.1::obj-1::obj-31" : [ "Freq17", "Freq17", 0 ],
+			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
+			"obj-1.1::obj-1::obj-170" : [ "FreqPresetMetroMin", "FreqPresetMetroMin", 0 ],
 			"obj-1.1::obj-1::obj-207" : [ "QRandValueMax", "QRandValueMax", 0 ],
-			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
-			"obj-1.1::obj-1::obj-56" : [ "FeedMax", "FeedMax", 0 ],
 			"obj-1.1::obj-1::obj-133" : [ "DelayMax", "DelayMax", 0 ],
+			"obj-1.1::obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
 			"obj-1.1::obj-1::obj-155" : [ "DelayRandValueMax", "DelayRandValueMax", 0 ],
-			"obj-1.1::obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-1.1::obj-1::obj-259" : [ "Q", "Q", 0 ],
-			"obj-1.1::obj-1::obj-114" : [ "QMax", "QMax", 0 ]
+			"obj-1.1::obj-1::obj-56" : [ "FeedMax", "FeedMax", 0 ],
+			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
+			"obj-1.1::obj-1::obj-99" : [ "Freq23", "Freq23", 0 ],
+			"obj-1.1::obj-1::obj-209" : [ "FreqPresetList", "FreqPresetList", 0 ],
+			"obj-1.1::obj-1::obj-96" : [ "QRand", "QRand", 0 ],
+			"obj-1.1::obj-1::obj-208" : [ "QRandValueMin", "QRandValueMin", 0 ],
+			"obj-1.1::obj-1::obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-1.1::obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-1.1::obj-1::obj-193" : [ "DelayRand", "DelayRand", 0 ],
+			"obj-1.1::obj-1::obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-1.1::obj-1::obj-154" : [ "DelayRandValueMin", "DelayRandValueMin", 0 ],
+			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
+			"obj-1.1::obj-1::obj-114" : [ "QMax", "QMax", 0 ],
+			"obj-1.1::obj-1::obj-82" : [ "FreqPreset", "FreqPreset", 0 ],
+			"obj-1.1::obj-1::obj-14" : [ "Outgain", "Outgain", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -654,8 +656,8 @@
 			}
 , 			{
 				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max 6.1/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}

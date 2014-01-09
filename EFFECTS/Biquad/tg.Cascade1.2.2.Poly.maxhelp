@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
@@ -29,28 +29,16 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-17",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 161.0, 257.0, 20.0, 20.0 ],
-					"presentation_rect" : [ 161.0, 260.0, 0.0, 0.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
-					"id" : "obj-18",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 161.0, 285.0, 36.0, 18.0 ],
-					"presentation_rect" : [ 161.0, 288.0, 0.0, 0.0 ],
-					"text" : "delay"
+					"frgb" : 0.0,
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 128.0, 270.5, 36.0, 18.0 ],
+					"presentation_rect" : [ 128.0, 273.0, 0.0, 0.0 ],
+					"text" : "Open"
 				}
 
 			}
@@ -104,7 +92,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.0, 373.0, 133.0, 27.0 ],
+					"patching_rect" : [ 128.0, 393.0, 133.0, 27.0 ],
 					"text" : ";\r1cas.storage recall Test1"
 				}
 
@@ -118,7 +106,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 355.0, 41.0, 18.0 ],
+					"patching_rect" : [ 128.0, 375.0, 41.0, 18.0 ],
 					"text" : "Preset"
 				}
 
@@ -132,13 +120,14 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 294.0, 25.0, 18.0 ],
+					"patching_rect" : [ 128.0, 321.0, 25.0, 18.0 ],
 					"text" : "Init"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-2",
@@ -147,7 +136,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.0, 312.0, 109.0, 27.0 ],
+					"patching_rect" : [ 128.0, 339.0, 109.0, 27.0 ],
 					"text" : ";\r1cas.INIT bang"
 				}
 
@@ -169,6 +158,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-8",
@@ -177,7 +167,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 195.0, 218.0, 109.0, 27.0 ],
+					"patching_rect" : [ 128.0, 288.5, 109.0, 27.0 ],
 					"text" : ";\r1cas.interface open"
 				}
 
@@ -225,7 +215,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -629,24 +619,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-17", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -737,41 +709,41 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1.1::obj-1::obj-157" : [ "Filter2", "Filter2", 0 ],
-			"obj-7::obj-50" : [ "Play", "Play", 0 ],
-			"obj-1.1::obj-1::obj-63" : [ "Freq2", "Freq2", 0 ],
-			"obj-1.1::obj-1::obj-83" : [ "Freq4", "Freq4", 0 ],
-			"obj-1.1::obj-1::obj-91" : [ "Gain4", "Gain4", 0 ],
-			"obj-1.1::obj-1::obj-174" : [ "Mode4", "Mode4", 0 ],
-			"obj-1.1::obj-1::obj-95" : [ "q4", "q4", 0 ],
-			"obj-1.1::obj-1::obj-88" : [ "Feed", "Feed", 0 ],
-			"obj-1.1::obj-1::obj-164" : [ "Filter3", "Filter3", 0 ],
-			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
-			"obj-1.1::obj-1::obj-77" : [ "Freq3", "Freq3", 0 ],
-			"obj-1.1::obj-1::obj-81" : [ "Freq5", "Freq5", 0 ],
-			"obj-1.1::obj-1::obj-181" : [ "Mode5", "Mode5", 0 ],
-			"obj-1.1::obj-1::obj-93" : [ "q5", "q5", 0 ],
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-1.1::obj-1::obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-1.1::obj-1::obj-80" : [ "PRESET", "PRESET", 0 ],
-			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
-			"obj-1.1::obj-1::obj-171" : [ "Filter4", "Filter4", 0 ],
+			"obj-1.1::obj-1::obj-116" : [ "Filter1", "Filter1", 0 ],
+			"obj-1.1::obj-1::obj-26" : [ "Freq1", "Freq1", 0 ],
 			"obj-1.1::obj-1::obj-25" : [ "Gain1", "Gain1", 0 ],
 			"obj-1.1::obj-1::obj-20" : [ "Mode1", "Mode1", 0 ],
 			"obj-1.1::obj-1::obj-27" : [ "q1", "q1", 0 ],
-			"obj-1.1::obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
-			"obj-1.1::obj-1::obj-178" : [ "Filter5", "Filter5", 0 ],
+			"obj-7::obj-50" : [ "Play", "Play", 0 ],
+			"obj-1.1::obj-1::obj-157" : [ "Filter2", "Filter2", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-1.1::obj-1::obj-63" : [ "Freq2", "Freq2", 0 ],
 			"obj-1.1::obj-1::obj-62" : [ "Gain2", "Gain2", 0 ],
 			"obj-1.1::obj-1::obj-160" : [ "Mode2", "Mode2", 0 ],
 			"obj-1.1::obj-1::obj-64" : [ "q2", "q2", 0 ],
-			"obj-1.1::obj-1::obj-116" : [ "Filter1", "Filter1", 0 ],
-			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
-			"obj-1.1::obj-1::obj-26" : [ "Freq1", "Freq1", 0 ],
+			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
+			"obj-1.1::obj-1::obj-88" : [ "Feed", "Feed", 0 ],
+			"obj-1.1::obj-1::obj-164" : [ "Filter3", "Filter3", 0 ],
+			"obj-1.1::obj-1::obj-77" : [ "Freq3", "Freq3", 0 ],
 			"obj-1.1::obj-1::obj-76" : [ "Gain3", "Gain3", 0 ],
 			"obj-1.1::obj-1::obj-167" : [ "Mode3", "Mode3", 0 ],
+			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
 			"obj-1.1::obj-1::obj-78" : [ "q3", "q3", 0 ],
-			"obj-1.1::obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ]
+			"obj-1.1::obj-1::obj-171" : [ "Filter4", "Filter4", 0 ],
+			"obj-1.1::obj-1::obj-83" : [ "Freq4", "Freq4", 0 ],
+			"obj-1.1::obj-1::obj-91" : [ "Gain4", "Gain4", 0 ],
+			"obj-1.1::obj-1::obj-174" : [ "Mode4", "Mode4", 0 ],
+			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
+			"obj-1.1::obj-1::obj-95" : [ "q4", "q4", 0 ],
+			"obj-1.1::obj-1::obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-1.1::obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-1.1::obj-1::obj-178" : [ "Filter5", "Filter5", 0 ],
+			"obj-1.1::obj-1::obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-1.1::obj-1::obj-81" : [ "Freq5", "Freq5", 0 ],
+			"obj-1.1::obj-1::obj-181" : [ "Mode5", "Mode5", 0 ],
+			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
+			"obj-1.1::obj-1::obj-93" : [ "q5", "q5", 0 ],
+			"obj-1.1::obj-1::obj-14" : [ "Outgain", "Outgain", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -797,8 +769,8 @@
 			}
 , 			{
 				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}

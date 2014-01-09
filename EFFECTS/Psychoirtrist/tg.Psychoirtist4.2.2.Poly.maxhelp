@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
@@ -32,17 +32,33 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"frgb" : 0.0,
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 113.0, 293.5, 36.0, 18.0 ],
+					"presentation_rect" : [ 113.0, 298.5, 0.0, 0.0 ],
+					"text" : "Open"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"frgb" : 0.0,
 					"id" : "obj-10",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 294.0, 25.0, 18.0 ],
+					"patching_rect" : [ 113.0, 348.5, 25.0, 18.0 ],
 					"text" : "Init"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-2",
@@ -51,7 +67,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.0, 311.5, 109.0, 27.0 ],
+					"patching_rect" : [ 113.0, 366.0, 109.0, 27.0 ],
 					"text" : ";\r1psy.INIT bang"
 				}
 
@@ -73,6 +89,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-8",
@@ -81,7 +98,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 181.0, 218.0, 109.0, 27.0 ],
+					"patching_rect" : [ 113.0, 311.5, 109.0, 27.0 ],
 					"text" : ";\r1psy.interface open"
 				}
 
@@ -129,7 +146,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -605,62 +622,69 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1.1::obj-1::obj-171" : [ "Mode2", "Mode2", 0 ],
-			"obj-1.1::obj-1::obj-47" : [ "Pan3", "Pan3", 0 ],
-			"obj-1.1::obj-1::obj-123" : [ "PitchModMin", "PitchModMin", 0 ],
-			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
-			"obj-1.1::obj-1::obj-23" : [ "PRESET", "PRESET", 0 ],
-			"obj-1.1::obj-1::obj-90" : [ "SpeedMod", "SpeedMod", 0 ],
-			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
-			"obj-1.1::obj-1::obj-153" : [ "Trans2", "Trans2", 0 ],
 			"obj-1.1::obj-1::obj-133" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-1.1::obj-1::obj-104" : [ "Outgain", "Outgain", 0 ],
-			"obj-1.1::obj-1::obj-66" : [ "Del1", "Del1", 0 ],
 			"obj-1.1::obj-1::obj-160" : [ "Freq1", "Freq1", 0 ],
-			"obj-1.1::obj-1::obj-70" : [ "Gain2", "Gain2", 0 ],
-			"obj-1.1::obj-1::obj-200" : [ "Mode3", "Mode3", 0 ],
-			"obj-1.1::obj-1::obj-31" : [ "Pan4", "Pan4", 0 ],
-			"obj-1.1::obj-1::obj-165" : [ "Resp1", "Resp1", 0 ],
-			"obj-1.1::obj-1::obj-93" : [ "SpeedModMax", "SpeedModMax", 0 ],
-			"obj-1.1::obj-1::obj-199" : [ "Trans3", "Trans3", 0 ],
-			"obj-1.1::obj-1::obj-130" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-1.1::obj-1::obj-62" : [ "Del2", "Del2", 0 ],
-			"obj-1.1::obj-1::obj-159" : [ "Freq2", "Freq2", 0 ],
-			"obj-1.1::obj-1::obj-69" : [ "Gain3", "Gain3", 0 ],
-			"obj-1.1::obj-1::obj-183" : [ "Mode4", "Mode4", 0 ],
+			"obj-1.1::obj-1::obj-128" : [ "Gain1", "Gain1", 0 ],
+			"obj-1.1::obj-1::obj-73" : [ "Dry/Wet", "Dry/Wet", 0 ],
+			"obj-1.1::obj-1::obj-150" : [ "Mode1", "Mode1", 0 ],
 			"obj-1.1::obj-1::obj-125" : [ "PitchMod", "PitchMod", 0 ],
+			"obj-7::obj-50" : [ "Play", "Play", 0 ],
 			"obj-1.1::obj-1::obj-154" : [ "Resp2", "Resp2", 0 ],
 			"obj-1.1::obj-1::obj-91" : [ "SpeedModMaxDel", "SpeedModMaxDel", 0 ],
 			"obj-1.1::obj-1::obj-198" : [ "Trans4", "Trans4", 0 ],
-			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
-			"obj-1.1::obj-1::obj-127" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-1.1::obj-1::obj-61" : [ "Del3", "Del3", 0 ],
-			"obj-1.1::obj-1::obj-195" : [ "Freq3", "Freq3", 0 ],
-			"obj-1.1::obj-1::obj-67" : [ "Gain4", "Gain4", 0 ],
+			"obj-1.1::obj-1::obj-130" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-1.1::obj-1::obj-159" : [ "Freq2", "Freq2", 0 ],
+			"obj-1.1::obj-1::obj-66" : [ "Del1", "Del1", 0 ],
+			"obj-1.1::obj-1::obj-70" : [ "Gain2", "Gain2", 0 ],
 			"obj-1.1::obj-1::obj-56" : [ "Pan1", "Pan1", 0 ],
+			"obj-1.1::obj-1::obj-171" : [ "Mode2", "Mode2", 0 ],
 			"obj-1.1::obj-1::obj-122" : [ "PitchModMax", "PitchModMax", 0 ],
+			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
 			"obj-1.1::obj-1::obj-207" : [ "Resp3", "Resp3", 0 ],
 			"obj-1.1::obj-1::obj-92" : [ "SpeedModMin", "SpeedModMin", 0 ],
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-1.1::obj-1::obj-146" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
-			"obj-1.1::obj-1::obj-149" : [ "Ingain", "Ingain", 0 ],
-			"obj-1.1::obj-1::obj-60" : [ "Del4", "Del4", 0 ],
-			"obj-1.1::obj-1::obj-194" : [ "Freq4", "Freq4", 0 ],
-			"obj-1.1::obj-1::obj-150" : [ "Mode1", "Mode1", 0 ],
+			"obj-1.1::obj-1::obj-127" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-1.1::obj-1::obj-195" : [ "Freq3", "Freq3", 0 ],
+			"obj-1.1::obj-1::obj-69" : [ "Gain3", "Gain3", 0 ],
+			"obj-1.1::obj-1::obj-62" : [ "Del2", "Del2", 0 ],
+			"obj-1.1::obj-1::obj-200" : [ "Mode3", "Mode3", 0 ],
 			"obj-1.1::obj-1::obj-54" : [ "Pan2", "Pan2", 0 ],
+			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
 			"obj-1.1::obj-1::obj-124" : [ "PitchModMaxTrans", "PitchModMaxTrans", 0 ],
 			"obj-1.1::obj-1::obj-206" : [ "Resp4", "Resp4", 0 ],
-			"obj-7::obj-50" : [ "Play", "Play", 0 ],
 			"obj-1.1::obj-1::obj-152" : [ "Trans1", "Trans1", 0 ],
-			"obj-1.1::obj-1::obj-73" : [ "Dry/Wet", "Dry/Wet", 0 ],
-			"obj-1.1::obj-1::obj-128" : [ "Gain1", "Gain1", 0 ]
+			"obj-1.1::obj-1::obj-146" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-1.1::obj-1::obj-194" : [ "Freq4", "Freq4", 0 ],
+			"obj-1.1::obj-1::obj-61" : [ "Del3", "Del3", 0 ],
+			"obj-1.1::obj-1::obj-67" : [ "Gain4", "Gain4", 0 ],
+			"obj-1.1::obj-1::obj-183" : [ "Mode4", "Mode4", 0 ],
+			"obj-1.1::obj-1::obj-47" : [ "Pan3", "Pan3", 0 ],
+			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
+			"obj-1.1::obj-1::obj-123" : [ "PitchModMin", "PitchModMin", 0 ],
+			"obj-1.1::obj-1::obj-90" : [ "SpeedMod", "SpeedMod", 0 ],
+			"obj-1.1::obj-1::obj-153" : [ "Trans2", "Trans2", 0 ],
+			"obj-1.1::obj-1::obj-23" : [ "PRESET", "PRESET", 0 ],
+			"obj-1.1::obj-1::obj-149" : [ "Ingain", "Ingain", 0 ],
+			"obj-1.1::obj-1::obj-60" : [ "Del4", "Del4", 0 ],
+			"obj-1.1::obj-1::obj-31" : [ "Pan4", "Pan4", 0 ],
+			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
+			"obj-1.1::obj-1::obj-165" : [ "Resp1", "Resp1", 0 ],
+			"obj-1.1::obj-1::obj-93" : [ "SpeedModMax", "SpeedModMax", 0 ],
+			"obj-1.1::obj-1::obj-199" : [ "Trans3", "Trans3", 0 ],
+			"obj-1.1::obj-1::obj-104" : [ "Outgain", "Outgain", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "tg.Psychoirtist4.2.2.Poly.maxpat",
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Psychoirtrist",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.MuteThispoly2.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -673,15 +697,15 @@
 			}
 , 			{
 				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "M4L.pan1~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}

@@ -40,7 +40,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 551.0, 513.5, 113.0, 33.0 ],
-					"presentation_rect" : [ 563.0, 500.0, 0.0, 0.0 ],
 					"text" : "3) start interpolation !"
 				}
 
@@ -57,8 +56,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 514.0, 449.0, 153.0, 55.0 ],
-					"presentation_rect" : [ 563.0, 452.0, 0.0, 0.0 ],
+					"patching_rect" : [ 514.0, 449.0, 156.0, 55.0 ],
 					"text" : "2) interpolation step 50 (by default interpolation rate is 100ms, so 50 * 100ms >> 5000ms) "
 				}
 
@@ -75,7 +73,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 613.0, 422.0, 54.0, 22.0 ],
-					"presentation_rect" : [ 561.0, 401.5, 0.0, 0.0 ],
 					"text" : "1) init"
 				}
 
@@ -90,7 +87,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 507.0, 386.0, 236.0, 20.0 ],
-					"presentation_rect" : [ 328.5, 321.0, 0.0, 0.0 ],
 					"text" : "Interpolation between default vowels"
 				}
 
@@ -146,7 +142,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 667.0, 596.5, 85.0, 27.0 ],
-					"presentation_rect" : [ 328.5, 475.5, 0.0, 0.0 ],
 					"text" : ";\r1res model $1"
 				}
 
@@ -162,7 +157,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 667.0, 463.0, 85.0, 38.0 ],
-					"presentation_rect" : [ 328.5, 400.5, 0.0, 0.0 ],
 					"text" : ";\r1res Outgain 0, interpsteps 50"
 				}
 
@@ -178,7 +172,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 667.0, 422.0, 85.0, 27.0 ],
-					"presentation_rect" : [ 332.0, 358.5, 0.0, 0.0 ],
 					"text" : ";\r1res.INIT bang"
 				}
 
@@ -193,7 +186,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 535.0, 148.0, 198.0, 18.0 ],
-					"presentation_rect" : [ 608.0, 167.0, 0.0, 0.0 ],
 					"text" : "do a clear between 2 \"differents\" model"
 				}
 
@@ -208,7 +200,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 528.5, 243.0, 198.0, 18.0 ],
-					"presentation_rect" : [ 628.0, 250.0, 0.0, 0.0 ],
 					"text" : "recall a preset from another reson bank"
 				}
 
@@ -237,7 +228,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 507.0, 271.0, 100.0, 18.0 ],
-					"presentation_rect" : [ 564.0, 274.0, 0.0, 0.0 ],
 					"text" : "delay 100"
 				}
 
@@ -249,8 +239,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 507.0, 243.0, 20.0, 20.0 ],
-					"presentation_rect" : [ 564.0, 246.0, 0.0, 0.0 ]
+					"patching_rect" : [ 507.0, 243.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -264,7 +253,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 507.0, 176.0, 100.0, 18.0 ],
-					"presentation_rect" : [ 563.0, 194.0, 0.0, 0.0 ],
 					"text" : "delay 100"
 				}
 
@@ -276,8 +264,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 507.0, 148.0, 20.0, 20.0 ],
-					"presentation_rect" : [ 563.0, 166.0, 0.0, 0.0 ]
+					"patching_rect" : [ 507.0, 148.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -489,6 +476,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-2",
@@ -504,6 +492,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-8",
@@ -577,7 +566,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 18.0, 218.0, 145.5, 29.0 ],
+					"patching_rect" : [ 18.0, 218.0, 147.0, 29.0 ],
 					"text" : "poly~ tg.resonator.2.2.Poly 1 args 1res",
 					"varname" : "poly~"
 				}
@@ -820,40 +809,40 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-1.1::obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-1.1::obj-1::obj-20" : [ "ampscale", "ampscale", 0 ],
-			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
-			"obj-1.1::obj-1::obj-101" : [ "interpauto", "interpauto", 0 ],
-			"obj-1.1::obj-1::obj-43" : [ "vibfreq", "vibfreq", 0 ],
-			"obj-1.1::obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-1.1::obj-1::obj-19" : [ "corner", "corner", 0 ],
-			"obj-7::obj-50" : [ "Play", "Play", 0 ],
-			"obj-1.1::obj-1::obj-98" : [ "interpsteps", "interpsteps", 0 ],
-			"obj-1.1::obj-1::obj-52" : [ "transp", "transp", 0 ],
+			"obj-1.1::obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-1.1::obj-1::obj-64" : [ "rescale", "rescale", 0 ],
 			"obj-1.1::obj-1::obj-24" : [ "vibsize", "vibsize", 0 ],
+			"obj-7::obj-50" : [ "Play", "Play", 0 ],
+			"obj-1.1::obj-1::obj-225" : [ "interp", "interp", 0 ],
+			"obj-1.1::obj-1::obj-101" : [ "interpauto", "interpauto", 0 ],
+			"obj-1.1::obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-1.1::obj-1::obj-43" : [ "vibfreq", "vibfreq", 0 ],
+			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
 			"obj-1.1::obj-1::obj-116" : [ "clear", "clear", 0 ],
+			"obj-1.1::obj-1::obj-19" : [ "corner", "corner", 0 ],
+			"obj-1.1::obj-1::obj-21" : [ "pitchbase", "pitchbase", 0 ],
+			"obj-1.1::obj-1::obj-98" : [ "interpsteps", "interpsteps", 0 ],
+			"obj-1.1::obj-1::obj-18" : [ "slope", "slope", 0 ],
+			"obj-1.1::obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-1.1::obj-1::obj-106" : [ "model", "model", 0 ],
+			"obj-1.1::obj-1::obj-52" : [ "transp", "transp", 0 ],
+			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
 			"obj-1.1::obj-1::obj-33" : [ "modelCollName", "modelCollName", 0 ],
 			"obj-1.1::obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-1.1::obj-1::obj-215" : [ "formant", "formant", 0 ],
-			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
-			"obj-1.1::obj-1::obj-21" : [ "pitchbase", "pitchbase", 0 ],
-			"obj-1.1::obj-1::obj-46" : [ "vibsmooth", "vibsmooth", 0 ],
-			"obj-1.1::obj-1::obj-225" : [ "interp", "interp", 0 ],
-			"obj-1.1::obj-1::obj-106" : [ "model", "model", 0 ],
-			"obj-1.1::obj-1::obj-80" : [ "PRESET", "PRESET", 0 ],
-			"obj-1.1::obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-1.1::obj-1::obj-61" : [ "pitch", "pitch", 0 ],
-			"obj-1.1::obj-1::obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-1.1::obj-1::obj-55" : [ "inharm", "inharm", 0 ],
-			"obj-1.1::obj-1::obj-64" : [ "rescale", "rescale", 0 ],
-			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
-			"obj-1.1::obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-1.1::obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
-			"obj-1.1::obj-1::obj-93" : [ "interp-rate", "interp-rate", 0 ],
+			"obj-1.1::obj-1::obj-20" : [ "ampscale", "ampscale", 0 ],
 			"obj-1.1::obj-1::obj-22" : [ "vibdepth", "vibdepth", 0 ],
-			"obj-1.1::obj-1::obj-18" : [ "slope", "slope", 0 ]
+			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
+			"obj-1.1::obj-1::obj-61" : [ "pitch", "pitch", 0 ],
+			"obj-1.1::obj-1::obj-55" : [ "inharm", "inharm", 0 ],
+			"obj-1.1::obj-1::obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-1.1::obj-1::obj-215" : [ "formant", "formant", 0 ],
+			"obj-1.1::obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-1.1::obj-1::obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-1.1::obj-1::obj-46" : [ "vibsmooth", "vibsmooth", 0 ],
+			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
+			"obj-1.1::obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-1.1::obj-1::obj-93" : [ "interp-rate", "interp-rate", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -903,13 +892,6 @@
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "collVowels",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Resonator",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
