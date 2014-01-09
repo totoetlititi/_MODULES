@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 60.0, 44.0, 701.0, 173.0 ],
+		"rect" : [ 202.0, 44.0, 701.0, 173.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -1119,10 +1119,10 @@
 							"parameter_longname" : "jitterDecay",
 							"parameter_shortname" : "jitterDecay",
 							"parameter_type" : 0,
-							"parameter_mmax" : 10.0,
+							"parameter_mmax" : 100.0,
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0.0 ],
-							"parameter_unitstyle" : 1
+							"parameter_unitstyle" : 5
 						}
 
 					}
@@ -1148,10 +1148,10 @@
 							"parameter_longname" : "jitterGain",
 							"parameter_shortname" : "jitterGain",
 							"parameter_type" : 0,
-							"parameter_mmax" : 2.0,
+							"parameter_mmax" : 100.0,
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0.0 ],
-							"parameter_unitstyle" : 9,
+							"parameter_unitstyle" : 5,
 							"parameter_units" : "x"
 						}
 
@@ -1223,10 +1223,10 @@
 							"parameter_longname" : "jitterFreq",
 							"parameter_shortname" : "jitterFreq",
 							"parameter_type" : 0,
-							"parameter_mmax" : 2000.0,
+							"parameter_mmax" : 100.0,
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0.0 ],
-							"parameter_unitstyle" : 3,
+							"parameter_unitstyle" : 5,
 							"parameter_exponent" : 2.0
 						}
 
@@ -2102,7 +2102,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u236004291"
+					"varname" : "u828017440"
 				}
 
 			}
@@ -3714,30 +3714,30 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-19" : [ "jitterDecay", "jitterDecay", 0 ],
-			"obj-130" : [ "transp", "transp", 0 ],
-			"obj-150" : [ "1model", "1model", 0 ],
-			"obj-179" : [ "2rescale", "2rescale", 0 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-80" : [ "PRESET", "PRESET", 0 ],
-			"obj-112" : [ "jitterFreq", "jitterFreq", 0 ],
 			"obj-127" : [ "1rescale", "1rescale", 0 ],
-			"obj-181" : [ "2transp", "2transp", 0 ],
-			"obj-196" : [ "clear", "clear", 0 ],
-			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-117" : [ "jitterGain", "jitterGain", 0 ],
-			"obj-175" : [ "2active", "2active", 0 ],
 			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-193" : [ "mixInterp", "mixInterp", 0 ],
+			"obj-181" : [ "2transp", "2transp", 0 ],
+			"obj-150" : [ "1model", "1model", 0 ],
 			"obj-205" : [ "trig", "trig", 0 ],
-			"obj-105" : [ "1active", "1active", 0 ],
 			"obj-177" : [ "2ampscale", "2ampscale", 0 ],
 			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-123" : [ "1ampscale", "1ampscale", 0 ],
+			"obj-196" : [ "clear", "clear", 0 ],
 			"obj-182" : [ "2model", "2model", 0 ],
-			"obj-42" : [ "FilterMode", "FilterMode", 0 ]
+			"obj-19" : [ "jitterDecay", "jitterDecay", 0 ],
+			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-130" : [ "transp", "transp", 0 ],
+			"obj-123" : [ "1ampscale", "1ampscale", 0 ],
+			"obj-105" : [ "1active", "1active", 0 ],
+			"obj-112" : [ "jitterFreq", "jitterFreq", 0 ],
+			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-175" : [ "2active", "2active", 0 ],
+			"obj-117" : [ "jitterGain", "jitterGain", 0 ],
+			"obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-179" : [ "2rescale", "2rescale", 0 ],
+			"obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-193" : [ "mixInterp", "mixInterp", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
