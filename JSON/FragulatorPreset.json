@@ -36,14 +36,14 @@
 					"FilterQ" : [ 0.3 ],
 					"Ingain" : [ 0.0 ],
 					"Outgain" : [ 0.0 ],
-					"ampVar" : [ 0.755906 ],
-					"bufferSize" : [ 224.370071 ],
-					"declick" : [ 1.0 ],
-					"direction" : [ 0.0 ],
-					"dropOut" : [ 0.03937 ],
-					"feedback" : [ 0.0 ],
-					"repet" : [ 0.0 ],
-					"speed" : [ 0.95 ]
+					"ampVar" : [  ],
+					"bufferSize" : [  ],
+					"declick" : [  ],
+					"direction" : [  ],
+					"dropOut" : [  ],
+					"feedback" : [  ],
+					"repet" : [  ],
+					"speed" : [  ]
 				}
 
 			}
