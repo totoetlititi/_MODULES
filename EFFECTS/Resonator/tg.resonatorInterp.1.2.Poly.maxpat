@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 271.0, 519.0, 320.0, 306.0 ],
+		"rect" : [ 530.0, 44.0, 320.0, 306.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -39,20 +39,6 @@
 					"patching_rect" : [ 20.0, 74.0, 157.0, 18.0 ],
 					"text" : "tg.resonatorInterp.1.2 #1",
 					"varname" : "tg.resonatorInterp.1.2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-5",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 158.0, 118.0, 96.0, 18.0 ],
-					"text" : "s #1Dumpout"
 				}
 
 			}
@@ -105,10 +91,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 66.0, 230.0, 40.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out~ 2"
 				}
 
@@ -370,26 +352,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 20.0, 230.0, 40.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out~ 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-4",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 158.0, 39.0, 96.0, 18.0 ],
-					"text" : "r #1"
 				}
 
 			}
@@ -403,10 +366,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 20.0, 39.0, 34.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in~ 1"
 				}
 
@@ -418,15 +377,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -486,15 +436,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-6", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-54", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -513,30 +454,30 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-6::obj-193" : [ "mixInterp", "mixInterp", 0 ],
+			"obj-6::obj-150" : [ "1model", "1model", 0 ],
+			"obj-6::obj-42" : [ "FilterMode", "FilterMode", 0 ],
 			"obj-6::obj-179" : [ "2rescale", "2rescale", 0 ],
-			"obj-6::obj-182" : [ "2model", "2model", 0 ],
-			"obj-6::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-6::obj-19" : [ "jitterDecay", "jitterDecay", 0 ],
-			"obj-6::obj-127" : [ "1rescale", "1rescale", 0 ],
-			"obj-6::obj-80" : [ "PRESET", "PRESET", 0 ],
-			"obj-6::obj-123" : [ "1ampscale", "1ampscale", 0 ],
-			"obj-6::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-6::obj-177" : [ "2ampscale", "2ampscale", 0 ],
 			"obj-6::obj-205" : [ "trig", "trig", 0 ],
 			"obj-6::obj-196" : [ "clear", "clear", 0 ],
-			"obj-6::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-6::obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-6::obj-193" : [ "mixInterp", "mixInterp", 0 ],
-			"obj-6::obj-181" : [ "2transp", "2transp", 0 ],
-			"obj-6::obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-6::obj-105" : [ "1active", "1active", 0 ],
-			"obj-6::obj-112" : [ "jitterFreq", "jitterFreq", 0 ],
-			"obj-6::obj-130" : [ "1transp", "1transp", 0 ],
-			"obj-6::obj-150" : [ "1model", "1model", 0 ],
-			"obj-6::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-6::obj-127" : [ "1rescale", "1rescale", 0 ],
 			"obj-6::obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-6::obj-181" : [ "2transp", "2transp", 0 ],
+			"obj-6::obj-19" : [ "jitterDecay", "jitterDecay", 0 ],
+			"obj-6::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-6::obj-8" : [ "Ingain", "Ingain", 0 ],
 			"obj-6::obj-175" : [ "2active", "2active", 0 ],
-			"obj-6::obj-117" : [ "jitterGain", "jitterGain", 0 ]
+			"obj-6::obj-130" : [ "1transp", "1transp", 0 ],
+			"obj-6::obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-6::obj-112" : [ "jitterFreq", "jitterFreq", 0 ],
+			"obj-6::obj-105" : [ "1active", "1active", 0 ],
+			"obj-6::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-6::obj-177" : [ "2ampscale", "2ampscale", 0 ],
+			"obj-6::obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-6::obj-117" : [ "jitterGain", "jitterGain", 0 ],
+			"obj-6::obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-6::obj-123" : [ "1ampscale", "1ampscale", 0 ],
+			"obj-6::obj-182" : [ "2model", "2model", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -561,6 +502,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "ResonatorInterpPreset.json",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"patcherrelativepath" : "../../JSON",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "tg.m.fgraph.maxpat",
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
@@ -576,8 +524,8 @@
 			}
 , 			{
 				"name" : "resonatorsPoly1d.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/PATCH/Barriere/NY/PATCH",
-				"patcherrelativepath" : "../../../../../PATCH/Barriere/NY/PATCH",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Resonator",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}

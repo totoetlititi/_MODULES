@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 451.0, 44.0, 354.0, 174.0 ],
+		"rect" : [ 451.0, 44.0, 352.0, 175.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
@@ -28,7 +28,7 @@
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
-		"globalpatchername" : "1spat[1][1][1][1][1][6][6][6][5][5][2][6][12][6][6][6][6]",
+		"globalpatchername" : "1spat[1][1][1][1][1][6][6][6][5][5][2][6][12][6][6][6][6][14]",
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Arial Bold",
@@ -39,7 +39,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 412.0, 752.832764, 100.0, 18.0 ],
-					"presentation_rect" : [ 413.5, 752.832764, 0.0, 0.0 ],
 					"text" : "prepend source #2"
 				}
 
@@ -688,20 +687,6 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-8",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 827.0, 241.5, 96.0, 18.0 ],
-					"text" : "s #1Dumpout"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-58",
@@ -725,21 +710,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 470.0, 319.5, 89.0, 16.0 ],
 					"text" : "priority pres 5"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-2",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 723.0, 29.0, 100.0, 18.0 ],
-					"text" : "r #1"
 				}
 
 			}
@@ -1141,7 +1111,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u052004791"
+					"varname" : "u066007559"
 				}
 
 			}
@@ -3058,15 +3028,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-101", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-11", 5 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"color" : [ 0.0, 0.0, 0.0, 0.05 ],
 					"destination" : [ "obj-13", 0 ],
 					"disabled" : 0,
@@ -3091,6 +3052,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-11", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-60", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-11", 5 ]
 				}
 
 			}
@@ -3465,15 +3435,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-60", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -3991,15 +3952,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-89", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4018,24 +3970,24 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-41" : [ "bril", "bril", 0 ],
-			"obj-46" : [ "reverb", "reverb", 0 ],
-			"obj-5" : [ "Input", "Input", 0 ],
-			"obj-51" : [ "spread", "spread", 0 ],
 			"obj-65" : [ "air", "air", 0 ],
-			"obj-75" : [ "dist", "dist", 0 ],
-			"obj-50" : [ "rename", "rename", 0 ],
 			"obj-55" : [ "elev", "elev", 0 ],
 			"obj-37" : [ "prer", "prer", 0 ],
 			"obj-28" : [ "width", "width", 0 ],
-			"obj-225" : [ "warm", "warm", 0 ],
-			"obj-56" : [ "aperture", "aperture", 0 ],
 			"obj-61" : [ "yaw", "yaw", 0 ],
+			"obj-51" : [ "spread", "spread", 0 ],
 			"obj-44" : [ "revp", "revp", 0 ],
-			"obj-71" : [ "az", "az", 0 ],
-			"obj-215" : [ "doppler", "doppler", 0 ],
+			"obj-41" : [ "bril", "bril", 0 ],
 			"obj-32" : [ "pres", "pres", 0 ],
-			"obj-81" : [ "env", "env", 0 ]
+			"obj-5" : [ "Input", "Input", 0 ],
+			"obj-81" : [ "env", "env", 0 ],
+			"obj-215" : [ "doppler", "doppler", 0 ],
+			"obj-56" : [ "aperture", "aperture", 0 ],
+			"obj-50" : [ "rename", "rename", 0 ],
+			"obj-225" : [ "warm", "warm", 0 ],
+			"obj-71" : [ "az", "az", 0 ],
+			"obj-75" : [ "dist", "dist", 0 ],
+			"obj-46" : [ "reverb", "reverb", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

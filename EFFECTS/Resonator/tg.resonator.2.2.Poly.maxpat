@@ -29,20 +29,6 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-5",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 158.0, 118.0, 96.0, 18.0 ],
-					"text" : "s #1Dumpout"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-1",
@@ -51,7 +37,8 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "", "" ],
 					"patching_rect" : [ 20.0, 85.0, 157.0, 18.0 ],
-					"text" : "tg.resonator.2.2 #1"
+					"text" : "tg.resonator.2.2 #1",
+					"varname" : "tg.resonator.2.2"
 				}
 
 			}
@@ -104,10 +91,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 66.0, 230.0, 40.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out~ 2"
 				}
 
@@ -369,26 +352,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 20.0, 230.0, 40.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out~ 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-4",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 158.0, 39.0, 96.0, 18.0 ],
-					"text" : "r #1"
 				}
 
 			}
@@ -402,10 +366,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 89.0, 39.0, 34.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in~ 2"
 				}
 
@@ -420,10 +380,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 20.0, 39.0, 34.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in~ 1"
 				}
 
@@ -435,15 +391,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-1", 3 ]
 				}
 
 			}
@@ -480,15 +427,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -539,33 +477,34 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-1::obj-20" : [ "ampscale", "ampscale", 0 ],
-			"obj-1::obj-101" : [ "interpauto", "interpauto", 0 ],
+			"obj-1::obj-55" : [ "inharm", "inharm", 0 ],
+			"obj-1::obj-93" : [ "interp-rate", "interp-rate", 0 ],
 			"obj-1::obj-43" : [ "vibfreq", "vibfreq", 0 ],
-			"obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-1::obj-19" : [ "corner", "corner", 0 ],
-			"obj-1::obj-98" : [ "interpsteps", "interpsteps", 0 ],
-			"obj-1::obj-52" : [ "transp", "transp", 0 ],
-			"obj-1::obj-24" : [ "vibsize", "vibsize", 0 ],
-			"obj-1::obj-33" : [ "modelCollName", "modelCollName", 0 ],
 			"obj-1::obj-106" : [ "interpsteps[1]", "interpsteps", 0 ],
-			"obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-1::obj-215" : [ "formant", "formant", 0 ],
-			"obj-1::obj-21" : [ "pitchbase", "pitchbase", 0 ],
-			"obj-1::obj-46" : [ "vibsmooth", "vibsmooth", 0 ],
-			"obj-1::obj-225" : [ "interp", "interp", 0 ],
-			"obj-1::obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-1::obj-64" : [ "rescale", "rescale", 0 ],
+			"obj-1::obj-101" : [ "interpauto", "interpauto", 0 ],
+			"obj-1::obj-52" : [ "transp", "transp", 0 ],
+			"obj-1::obj-116" : [ "clear", "clear", 0 ],
 			"obj-1::obj-61" : [ "pitch", "pitch", 0 ],
+			"obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-1::obj-98" : [ "interpsteps", "interpsteps", 0 ],
+			"obj-1::obj-22" : [ "vibdepth", "vibdepth", 0 ],
+			"obj-1::obj-18" : [ "slope", "slope", 0 ],
 			"obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
 			"obj-1::obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-1::obj-55" : [ "inharm", "inharm", 0 ],
-			"obj-1::obj-64" : [ "rescale", "rescale", 0 ],
+			"obj-1::obj-19" : [ "corner", "corner", 0 ],
+			"obj-1::obj-21" : [ "pitchbase", "pitchbase", 0 ],
+			"obj-1::obj-33" : [ "modelCollName", "modelCollName", 0 ],
+			"obj-1::obj-215" : [ "formant", "formant", 0 ],
+			"obj-1::obj-46" : [ "vibsmooth", "vibsmooth", 0 ],
+			"obj-1::obj-80" : [ "PRESET", "PRESET", 0 ],
 			"obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
 			"obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-1::obj-93" : [ "interp-rate", "interp-rate", 0 ],
-			"obj-1::obj-22" : [ "vibdepth", "vibdepth", 0 ],
-			"obj-1::obj-18" : [ "slope", "slope", 0 ]
+			"obj-1::obj-20" : [ "ampscale", "ampscale", 0 ],
+			"obj-1::obj-225" : [ "interp", "interp", 0 ],
+			"obj-1::obj-24" : [ "vibsize", "vibsize", 0 ],
+			"obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

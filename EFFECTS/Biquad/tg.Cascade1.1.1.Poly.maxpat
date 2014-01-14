@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
@@ -29,20 +29,6 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-5",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 158.0, 118.0, 96.0, 18.0 ],
-					"text" : "s #1Dumpout"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-1",
@@ -50,7 +36,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "", "" ],
-					"patching_rect" : [ 20.0, 85.0, 157.0, 18.0 ],
+					"patching_rect" : [ 20.0, 85.0, 203.0, 18.0 ],
 					"text" : "tg.Cascade1.1.1 #1",
 					"varname" : "tg.FreqShift"
 				}
@@ -110,7 +96,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -295,21 +281,6 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-4",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 158.0, 39.0, 96.0, 18.0 ],
-					"text" : "r #1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-2",
@@ -334,15 +305,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-1", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-54", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -356,15 +318,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -397,68 +350,68 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-171" : [ "Filter4", "Filter4", 0 ],
-			"obj-1::obj-25" : [ "Gain1", "Gain1", 0 ],
-			"obj-1::obj-27" : [ "q1", "q1", 0 ],
-			"obj-1::obj-160" : [ "Mode2", "Mode2", 0 ],
-			"obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
 			"obj-1::obj-178" : [ "Filter5", "Filter5", 0 ],
-			"obj-1::obj-26" : [ "Freq1", "Freq1", 0 ],
-			"obj-1::obj-62" : [ "Gain2", "Gain2", 0 ],
-			"obj-1::obj-64" : [ "q2", "q2", 0 ],
-			"obj-1::obj-167" : [ "Mode3", "Mode3", 0 ],
-			"obj-1::obj-116" : [ "Filter1", "Filter1", 0 ],
 			"obj-1::obj-81" : [ "Freq5", "Freq5", 0 ],
-			"obj-1::obj-63" : [ "Freq2", "Freq2", 0 ],
-			"obj-1::obj-76" : [ "Gain3", "Gain3", 0 ],
-			"obj-1::obj-78" : [ "q3", "q3", 0 ],
-			"obj-1::obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-1::obj-174" : [ "Mode4", "Mode4", 0 ],
-			"obj-1::obj-80" : [ "PRESET", "PRESET", 0 ],
-			"obj-1::obj-157" : [ "Filter2", "Filter2", 0 ],
 			"obj-1::obj-88" : [ "Gain5", "Gain5", 0 ],
-			"obj-1::obj-77" : [ "Freq3", "Freq3", 0 ],
-			"obj-1::obj-95" : [ "q4", "q4", 0 ],
-			"obj-1::obj-91" : [ "Gain4", "Gain4", 0 ],
-			"obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-1::obj-164" : [ "Filter3", "Filter3", 0 ],
 			"obj-1::obj-181" : [ "Mode5", "Mode5", 0 ],
-			"obj-1::obj-83" : [ "Freq4", "Freq4", 0 ],
 			"obj-1::obj-93" : [ "q5", "q5", 0 ],
-			"obj-1::obj-20" : [ "Mode1", "Mode1", 0 ]
+			"obj-1::obj-116" : [ "Filter1", "Filter1", 0 ],
+			"obj-1::obj-26" : [ "Freq1", "Freq1", 0 ],
+			"obj-1::obj-25" : [ "Gain1", "Gain1", 0 ],
+			"obj-1::obj-20" : [ "Mode1", "Mode1", 0 ],
+			"obj-1::obj-27" : [ "q1", "q1", 0 ],
+			"obj-1::obj-157" : [ "Filter2", "Filter2", 0 ],
+			"obj-1::obj-63" : [ "Freq2", "Freq2", 0 ],
+			"obj-1::obj-62" : [ "Gain2", "Gain2", 0 ],
+			"obj-1::obj-160" : [ "Mode2", "Mode2", 0 ],
+			"obj-1::obj-64" : [ "q2", "q2", 0 ],
+			"obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-1::obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-1::obj-164" : [ "Filter3", "Filter3", 0 ],
+			"obj-1::obj-77" : [ "Freq3", "Freq3", 0 ],
+			"obj-1::obj-76" : [ "Gain3", "Gain3", 0 ],
+			"obj-1::obj-167" : [ "Mode3", "Mode3", 0 ],
+			"obj-1::obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-1::obj-78" : [ "q3", "q3", 0 ],
+			"obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-1::obj-171" : [ "Filter4", "Filter4", 0 ],
+			"obj-1::obj-83" : [ "Freq4", "Freq4", 0 ],
+			"obj-1::obj-91" : [ "Gain4", "Gain4", 0 ],
+			"obj-1::obj-174" : [ "Mode4", "Mode4", 0 ],
+			"obj-1::obj-95" : [ "q4", "q4", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "tg.MuteThispoly1.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.Cascade1.1.1.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Biquad",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Biquad",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "M4L.bal1~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CascadePreset.json",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
 				"patcherrelativepath" : "../../JSON",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1

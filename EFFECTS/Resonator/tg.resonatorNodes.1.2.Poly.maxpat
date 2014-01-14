@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 271.0, 519.0, 320.0, 306.0 ],
+		"rect" : [ 352.0, 44.0, 320.0, 306.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -39,20 +39,6 @@
 					"patching_rect" : [ 20.0, 75.5, 157.0, 18.0 ],
 					"text" : "tg.resonatorNodes.1.2 #1",
 					"varname" : "tg.resonatorNodes.1.2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-5",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 158.0, 118.0, 96.0, 18.0 ],
-					"text" : "s #1Dumpout"
 				}
 
 			}
@@ -105,6 +91,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 66.0, 230.0, 40.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 2"
 				}
 
@@ -366,22 +356,11 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 20.0, 230.0, 40.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-4",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 158.0, 39.0, 96.0, 18.0 ],
-					"text" : "r #1"
 				}
 
 			}
@@ -395,6 +374,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 20.0, 39.0, 34.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in~ 1"
 				}
 
@@ -406,15 +389,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-1", 3 ]
 				}
 
 			}
@@ -442,15 +416,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -501,94 +466,94 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-120::obj-20" : [ "ampscale[6]", "ampscale", 0 ],
-			"obj-1::obj-22::obj-20" : [ "ampscale[12]", "ampscale", 0 ],
-			"obj-1::obj-32::obj-64" : [ "rescale[7]", "rescale", 0 ],
-			"obj-1::obj-21::obj-20" : [ "ampscale[11]", "ampscale", 0 ],
-			"obj-1::obj-70" : [ "FilterFreq[1]", "FilterFreq", 0 ],
-			"obj-1::obj-120::obj-150" : [ "model[3]", "model", 0 ],
-			"obj-1::obj-21::obj-150" : [ "model[7]", "model", 0 ],
-			"obj-1::obj-27::obj-24" : [ "toggle[10]", "toggle", 0 ],
-			"obj-1::obj-32::obj-20" : [ "ampscale[9]", "ampscale", 0 ],
-			"obj-1::obj-28::obj-150" : [ "model[9]", "model", 0 ],
-			"obj-1::obj-117" : [ "jitterGain[1]", "jitterGain", 0 ],
-			"obj-1::obj-300" : [ "Expand", "Expand", 0 ],
-			"obj-1::obj-322" : [ "ShakeSize", "ShakeSize", 0 ],
-			"obj-1::obj-119::obj-64" : [ "rescale[2]", "rescale", 0 ],
-			"obj-1::obj-34::obj-24" : [ "toggle[4]", "toggle", 0 ],
-			"obj-1::obj-2::obj-150" : [ "model[5]", "model", 0 ],
-			"obj-1::obj-33::obj-31" : [ "transp[7]", "transp", 0 ],
-			"obj-1::obj-42" : [ "FilterMode[1]", "FilterMode", 0 ],
-			"obj-1::obj-34::obj-20" : [ "ampscale[7]", "ampscale", 0 ],
-			"obj-1::obj-1::obj-20" : [ "ampscale[5]", "ampscale", 0 ],
-			"obj-1::obj-27::obj-64" : [ "rescale[12]", "rescale", 0 ],
-			"obj-1::obj-32::obj-31" : [ "transp[6]", "transp", 0 ],
-			"obj-1::obj-33::obj-20" : [ "ampscale[10]", "ampscale", 0 ],
-			"obj-1::obj-193" : [ "mixInterp[1]", "mixInterp", 0 ],
+			"obj-1::obj-98" : [ "10toggle", "10toggle", 0 ],
 			"obj-1::obj-72" : [ "FilterQ[1]", "FilterQ", 0 ],
-			"obj-1::obj-33::obj-150" : [ "model[23]", "model", 0 ],
-			"obj-1::obj-2::obj-20" : [ "ampscale[8]", "ampscale", 0 ],
-			"obj-1::obj-34::obj-64" : [ "rescale[4]", "rescale", 0 ],
-			"obj-1::obj-27::obj-31" : [ "transp[16]", "transp", 0 ],
-			"obj-1::obj-79" : [ "InitPos", "InitPos", 0 ],
-			"obj-1::obj-1::obj-24" : [ "toggle[21]", "toggle", 0 ],
-			"obj-1::obj-2::obj-31" : [ "transp[5]", "transp", 0 ],
-			"obj-1::obj-22::obj-150" : [ "model[8]", "model", 0 ],
-			"obj-1::obj-27::obj-20" : [ "ampscale[14]", "ampscale", 0 ],
-			"obj-1::obj-76" : [ "ShiftX", "ShiftX", 0 ],
-			"obj-1::obj-113::obj-31" : [ "transp[1]", "transp", 0 ],
-			"obj-1::obj-21::obj-24" : [ "toggle[7]", "toggle", 0 ],
-			"obj-1::obj-80" : [ "PRESET[1]", "PRESET", 0 ],
-			"obj-1::obj-113::obj-150" : [ "model[1]", "model", 0 ],
-			"obj-1::obj-34::obj-31" : [ "transp[4]", "transp", 0 ],
-			"obj-1::obj-21::obj-31" : [ "transp[13]", "transp", 0 ],
-			"obj-1::obj-33::obj-24" : [ "toggle[22]", "toggle", 0 ],
-			"obj-1::obj-120::obj-31" : [ "transp[3]", "transp", 0 ],
-			"obj-1::obj-28::obj-64" : [ "rescale[11]", "rescale", 0 ],
-			"obj-1::obj-27::obj-150" : [ "model[10]", "model", 0 ],
-			"obj-1::obj-22::obj-24" : [ "toggle[8]", "toggle", 0 ],
+			"obj-1::obj-33" : [ "11toggle", "11toggle", 0 ],
+			"obj-1::obj-21" : [ "12toggle", "12toggle", 0 ],
+			"obj-1::obj-42" : [ "FilterMode[1]", "FilterMode", 0 ],
+			"obj-1::obj-177" : [ "3model", "3model", 0 ],
 			"obj-1::obj-48" : [ "Azimuth", "Azimuth", 1 ],
-			"obj-1::obj-33::obj-64" : [ "rescale[8]", "rescale", 0 ],
+			"obj-1::obj-89" : [ "Nodes", "Nodes", 0 ],
+			"obj-1::obj-170" : [ "4model", "4model", 0 ],
+			"obj-1::obj-309" : [ "Shake", "Shake", 0 ],
+			"obj-1::obj-163" : [ "5model", "5model", 0 ],
+			"obj-1::obj-49" : [ "Sort", "Sort", 0 ],
+			"obj-1::obj-156" : [ "6model", "6model", 0 ],
+			"obj-1::obj-149" : [ "7model", "7model", 0 ],
+			"obj-1::obj-129" : [ "8model", "8model", 0 ],
+			"obj-1::obj-192" : [ "1model", "1model", 0 ],
+			"obj-1::obj-182" : [ "2rescale", "2rescale", 0 ],
+			"obj-1::obj-120" : [ "9model", "9model", 0 ],
+			"obj-1::obj-101" : [ "10transp", "10transp", 0 ],
+			"obj-1::obj-205" : [ "trig[1]", "trig", 0 ],
+			"obj-1::obj-14" : [ "Outgain[1]", "Outgain", 0 ],
+			"obj-1::obj-108" : [ "11transp", "11transp", 0 ],
+			"obj-1::obj-117" : [ "jitterGain[1]", "jitterGain", 0 ],
+			"obj-1::obj-27" : [ "12transp", "12transp", 0 ],
+			"obj-1::obj-47" : [ "Distance", "Distance", 1 ],
+			"obj-1::obj-175" : [ "3rescale", "3rescale", 0 ],
+			"obj-1::obj-318" : [ "ShakePos", "ShakePos", 0 ],
+			"obj-1::obj-168" : [ "4rescale", "4rescale", 0 ],
+			"obj-1::obj-161" : [ "5rescale", "5rescale", 0 ],
+			"obj-1::obj-305" : [ "Spread", "Spread", 0 ],
+			"obj-1::obj-154" : [ "6rescale", "6rescale", 0 ],
+			"obj-1::obj-147" : [ "7rescale", "7rescale", 0 ],
+			"obj-1::obj-127" : [ "8rescale", "8rescale", 0 ],
+			"obj-1::obj-190" : [ "1rescale", "1rescale", 0 ],
+			"obj-1::obj-183" : [ "2transp", "2transp", 0 ],
+			"obj-1::obj-95" : [ "9rescale", "9rescale", 0 ],
+			"obj-1::obj-99" : [ "10ampscale", "10ampscale", 0 ],
+			"obj-1::obj-67" : [ "FilterGain[1]", "FilterGain", 0 ],
+			"obj-1::obj-34" : [ "11ampscale", "11ampscale", 0 ],
+			"obj-1::obj-113" : [ "12ampscale", "12ampscale", 0 ],
 			"obj-1::obj-12" : [ "Dry/wet[1]", "Dry/wet", 0 ],
+			"obj-1::obj-187" : [ "1toggle", "1toggle", 0 ],
+			"obj-1::obj-173" : [ "3toggle", "3toggle", 0 ],
+			"obj-1::obj-300" : [ "Expand", "Expand", 0 ],
+			"obj-1::obj-166" : [ "4toggle", "4toggle", 0 ],
+			"obj-1::obj-322" : [ "ShakeSize", "ShakeSize", 0 ],
+			"obj-1::obj-159" : [ "5toggle", "5toggle", 0 ],
+			"obj-1::obj-152" : [ "6toggle", "6toggle", 0 ],
+			"obj-1::obj-133" : [ "7toggle", "7toggle", 0 ],
+			"obj-1::obj-125" : [ "8toggle", "8toggle", 0 ],
+			"obj-1::obj-191" : [ "1transp", "1transp", 0 ],
+			"obj-1::obj-93" : [ "9toggle", "9toggle", 0 ],
+			"obj-1::obj-196" : [ "clear[1]", "clear", 0 ],
+			"obj-1::obj-65" : [ "10model", "10model", 0 ],
+			"obj-1::obj-60" : [ "11model", "11model", 0 ],
+			"obj-1::obj-193" : [ "mixInterp[1]", "mixInterp", 0 ],
+			"obj-1::obj-8" : [ "Ingain[1]", "Ingain", 0 ],
+			"obj-1::obj-28" : [ "12model", "12model", 0 ],
+			"obj-1::obj-180" : [ "2toggle", "2toggle", 0 ],
+			"obj-1::obj-176" : [ "3transp", "3transp", 0 ],
+			"obj-1::obj-79" : [ "InitPos", "InitPos", 0 ],
+			"obj-1::obj-76" : [ "ShiftX", "ShiftX", 0 ],
+			"obj-1::obj-81" : [ "Edit", "Edit", 0 ],
+			"obj-1::obj-169" : [ "4transp", "4transp", 0 ],
+			"obj-1::obj-162" : [ "5transp", "5transp", 0 ],
+			"obj-1::obj-155" : [ "6transp", "6transp", 0 ],
+			"obj-1::obj-148" : [ "7transp", "7transp", 0 ],
+			"obj-1::obj-128" : [ "8transp", "8transp", 0 ],
+			"obj-1::obj-181" : [ "2ampscale", "2ampscale", 0 ],
+			"obj-1::obj-119" : [ "9transp", "9transp", 0 ],
+			"obj-1::obj-112" : [ "jitterFreq[1]", "jitterFreq", 0 ],
+			"obj-1::obj-100" : [ "10rescale", "10rescale", 0 ],
+			"obj-1::obj-70" : [ "FilterFreq[1]", "FilterFreq", 0 ],
+			"obj-1::obj-57" : [ "11rescale", "11rescale", 0 ],
+			"obj-1::obj-19" : [ "jitterDecay[1]", "jitterDecay", 0 ],
+			"obj-1::obj-22" : [ "12rescale", "12rescale", 0 ],
+			"obj-1::obj-80" : [ "PRESET[1]", "PRESET", 0 ],
+			"obj-1::obj-174" : [ "3ampscale", "3ampscale", 0 ],
+			"obj-1::obj-167" : [ "4ampscale", "4ampscale", 0 ],
 			"obj-1::obj-303" : [ "Rotate", "Rotate", 0 ],
 			"obj-1::obj-298" : [ "ShiftY", "ShiftY", 0 ],
-			"obj-1::obj-119::obj-20" : [ "ampscale[2]", "ampscale", 0 ],
-			"obj-1::obj-2::obj-64" : [ "rescale[5]", "rescale", 0 ],
-			"obj-1::obj-19" : [ "jitterDecay[1]", "jitterDecay", 0 ],
-			"obj-1::obj-113::obj-24" : [ "toggle[1]", "toggle", 0 ],
-			"obj-1::obj-113::obj-20" : [ "ampscale[1]", "ampscale", 0 ],
-			"obj-1::obj-119::obj-31" : [ "transp[2]", "transp", 0 ],
-			"obj-1::obj-67" : [ "FilterGain[1]", "FilterGain", 0 ],
-			"obj-1::obj-205" : [ "trig[1]", "trig", 0 ],
-			"obj-1::obj-1::obj-64" : [ "rescale[6]", "rescale", 0 ],
-			"obj-1::obj-1::obj-31" : [ "transp[12]", "transp", 0 ],
-			"obj-1::obj-1::obj-150" : [ "model[22]", "model", 0 ],
-			"obj-1::obj-22::obj-64" : [ "rescale[10]", "rescale", 0 ],
-			"obj-1::obj-34::obj-150" : [ "model[4]", "model", 0 ],
-			"obj-1::obj-21::obj-64" : [ "rescale[9]", "rescale", 0 ],
-			"obj-1::obj-47" : [ "Distance", "Distance", 1 ],
-			"obj-1::obj-112" : [ "jitterFreq[1]", "jitterFreq", 0 ],
-			"obj-1::obj-309" : [ "Shake", "Shake", 0 ],
-			"obj-1::obj-28::obj-31" : [ "transp[15]", "transp", 0 ],
-			"obj-1::obj-49" : [ "Sort", "Sort", 0 ],
-			"obj-1::obj-119::obj-150" : [ "model[2]", "model", 0 ],
-			"obj-1::obj-28::obj-20" : [ "ampscale[13]", "ampscale", 0 ],
-			"obj-1::obj-113::obj-64" : [ "rescale[1]", "rescale", 0 ],
-			"obj-1::obj-32::obj-24" : [ "toggle[6]", "toggle", 0 ],
-			"obj-1::obj-89" : [ "Nodes", "Nodes", 0 ],
-			"obj-1::obj-81" : [ "Edit", "Edit", 0 ],
-			"obj-1::obj-2::obj-24" : [ "toggle[5]", "toggle", 0 ],
-			"obj-1::obj-196" : [ "clear[1]", "clear", 0 ],
-			"obj-1::obj-120::obj-64" : [ "rescale[3]", "rescale", 0 ],
-			"obj-1::obj-32::obj-150" : [ "model[6]", "model", 0 ],
-			"obj-1::obj-28::obj-24" : [ "toggle[9]", "toggle", 0 ],
-			"obj-1::obj-14" : [ "Outgain[1]", "Outgain", 0 ],
-			"obj-1::obj-120::obj-24" : [ "toggle[3]", "toggle", 0 ],
-			"obj-1::obj-318" : [ "ShakePos", "ShakePos", 0 ],
-			"obj-1::obj-119::obj-24" : [ "toggle[2]", "toggle", 0 ],
-			"obj-1::obj-8" : [ "Ingain[1]", "Ingain", 0 ],
-			"obj-1::obj-305" : [ "Spread", "Spread", 0 ],
-			"obj-1::obj-22::obj-31" : [ "transp[14]", "transp", 0 ]
+			"obj-1::obj-160" : [ "5ampscale", "5ampscale", 0 ],
+			"obj-1::obj-153" : [ "6ampscale", "6ampscale", 0 ],
+			"obj-1::obj-146" : [ "7ampscale", "7ampscale", 0 ],
+			"obj-1::obj-126" : [ "8ampscale", "8ampscale", 0 ],
+			"obj-1::obj-188" : [ "1ampscale", "1ampscale", 0 ],
+			"obj-1::obj-184" : [ "2model", "2model", 0 ],
+			"obj-1::obj-94" : [ "9ampscale", "9ampscale", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -634,7 +599,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "bpatcherResonNodes1a.maxpat",
+				"name" : "ResonatorNodesPreset.json",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"patcherrelativepath" : "../../JSON",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "makeListResonNodes.maxpat",
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Resonator",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

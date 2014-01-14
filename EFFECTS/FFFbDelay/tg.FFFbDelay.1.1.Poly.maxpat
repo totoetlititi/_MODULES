@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
@@ -29,20 +29,6 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-5",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 158.0, 118.0, 96.0, 18.0 ],
-					"text" : "s #1Dumpout"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-1",
@@ -50,7 +36,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "", "" ],
-					"patching_rect" : [ 20.0, 85.0, 157.0, 18.0 ],
+					"patching_rect" : [ 20.0, 67.0, 203.0, 18.0 ],
 					"text" : "tg.FFFbDelay.1.1 #1",
 					"varname" : "tg.FreqShift"
 				}
@@ -110,7 +96,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -295,21 +281,6 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-4",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 158.0, 39.0, 96.0, 18.0 ],
-					"text" : "r #1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-2",
@@ -334,15 +305,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-1", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-54", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -356,15 +318,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -397,50 +350,50 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-97" : [ "Freq24", "Freq24", 0 ],
+			"obj-1::obj-183" : [ "DelayRandMetro", "DelayRandMetro", 0 ],
+			"obj-1::obj-77" : [ "Freq10", "Freq10", 0 ],
 			"obj-1::obj-91" : [ "Freq15", "Freq15", 0 ],
-			"obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-1::obj-61" : [ "Freq1", "Freq1", 0 ],
-			"obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-1::obj-193" : [ "DelayRand", "DelayRand", 0 ],
-			"obj-1::obj-51" : [ "Feedback", "Feedback", 0 ],
-			"obj-1::obj-178" : [ "DelayRandMetroMin", "DelayRandMetroMin", 0 ],
+			"obj-1::obj-69" : [ "Freq5", "Freq5", 0 ],
 			"obj-1::obj-105" : [ "Freq20", "Freq20", 0 ],
+			"obj-1::obj-71" : [ "Freq6", "Freq6", 0 ],
 			"obj-1::obj-114" : [ "QMax", "QMax", 0 ],
+			"obj-1::obj-49" : [ "Delay", "Delay", 0 ],
+			"obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
 			"obj-1::obj-180" : [ "DelayRandMetroMax", "DelayRandMetroMax", 0 ],
+			"obj-1::obj-37" : [ "Freq11", "Freq11", 0 ],
+			"obj-1::obj-89" : [ "Freq16", "Freq16", 0 ],
+			"obj-1::obj-61" : [ "Freq1", "Freq1", 0 ],
+			"obj-1::obj-103" : [ "Freq21", "Freq21", 0 ],
+			"obj-1::obj-83" : [ "Freq7", "Freq7", 0 ],
+			"obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-1::obj-178" : [ "DelayRandMetroMin", "DelayRandMetroMin", 0 ],
+			"obj-1::obj-73" : [ "Freq12", "Freq12", 0 ],
+			"obj-1::obj-31" : [ "Freq17", "Freq17", 0 ],
+			"obj-1::obj-63" : [ "Freq2", "Freq2", 0 ],
 			"obj-1::obj-101" : [ "Freq22", "Freq22", 0 ],
-			"obj-1::obj-44" : [ "Q", "Q", 0 ],
-			"obj-1::obj-79" : [ "Freq9", "Freq9", 0 ],
+			"obj-1::obj-81" : [ "Freq8", "Freq8", 0 ],
+			"obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-1::obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-1::obj-51" : [ "Feedback", "Feedback", 0 ],
+			"obj-1::obj-133" : [ "DelayMax", "DelayMax", 0 ],
+			"obj-1::obj-155" : [ "DelayRandValueMax", "DelayRandValueMax", 0 ],
+			"obj-1::obj-95" : [ "Freq13", "Freq13", 0 ],
 			"obj-1::obj-65" : [ "Freq3", "Freq3", 0 ],
 			"obj-1::obj-85" : [ "Freq18", "Freq18", 0 ],
-			"obj-1::obj-73" : [ "Freq12", "Freq12", 0 ],
-			"obj-1::obj-155" : [ "DelayRandValueMax", "DelayRandValueMax", 0 ],
-			"obj-1::obj-83" : [ "Freq7", "Freq7", 0 ],
-			"obj-1::obj-93" : [ "Freq14", "Freq14", 0 ],
-			"obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-1::obj-89" : [ "Freq16", "Freq16", 0 ],
-			"obj-1::obj-133" : [ "DelayMax", "DelayMax", 0 ],
-			"obj-1::obj-69" : [ "Freq5", "Freq5", 0 ],
 			"obj-1::obj-99" : [ "Freq23", "Freq23", 0 ],
-			"obj-1::obj-56" : [ "Gain", "Gain", 0 ],
-			"obj-1::obj-183" : [ "DelayRandMetro", "DelayRandMetro", 0 ],
-			"obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
 			"obj-1::obj-80" : [ "PRESET", "PRESET", 0 ],
-			"obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-1::obj-77" : [ "Freq10", "Freq10", 0 ],
-			"obj-1::obj-28" : [ "Freq19", "Freq19", 0 ],
-			"obj-1::obj-103" : [ "Freq21", "Freq21", 0 ],
-			"obj-1::obj-95" : [ "Freq13", "Freq13", 0 ],
-			"obj-1::obj-81" : [ "Freq8", "Freq8", 0 ],
-			"obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-1::obj-63" : [ "Freq2", "Freq2", 0 ],
-			"obj-1::obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-1::obj-31" : [ "Freq17", "Freq17", 0 ],
-			"obj-1::obj-37" : [ "Freq11", "Freq11", 0 ],
-			"obj-1::obj-43" : [ "Freq4", "Freq4", 0 ],
+			"obj-1::obj-79" : [ "Freq9", "Freq9", 0 ],
+			"obj-1::obj-44" : [ "Q", "Q", 0 ],
+			"obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-1::obj-193" : [ "DelayRand", "DelayRand", 0 ],
 			"obj-1::obj-154" : [ "DelayRandValueMin", "DelayRandValueMin", 0 ],
-			"obj-1::obj-49" : [ "Delay", "Delay", 0 ],
-			"obj-1::obj-71" : [ "Freq6", "Freq6", 0 ]
+			"obj-1::obj-93" : [ "Freq14", "Freq14", 0 ],
+			"obj-1::obj-43" : [ "Freq4", "Freq4", 0 ],
+			"obj-1::obj-28" : [ "Freq19", "Freq19", 0 ],
+			"obj-1::obj-97" : [ "Freq24", "Freq24", 0 ],
+			"obj-1::obj-56" : [ "Gain", "Gain", 0 ],
+			"obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -459,8 +412,8 @@
 			}
 , 			{
 				"name" : "M4L.bal1~.maxpat",
-				"bootpath" : "/Applications/Max 6.1/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}

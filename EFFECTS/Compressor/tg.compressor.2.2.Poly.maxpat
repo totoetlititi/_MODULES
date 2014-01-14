@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
@@ -28,20 +28,6 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
-				"box" : 				{
-					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-5",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 158.0, 118.0, 96.0, 18.0 ],
-					"text" : "s #1Dumpout"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
@@ -127,7 +113,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -380,21 +366,6 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-4",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 158.0, 39.0, 96.0, 18.0 ],
-					"text" : "r #1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-3",
@@ -441,15 +412,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-1", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-54", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -481,15 +443,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -540,61 +493,61 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-1::obj-49" : [ "live.numbox", "live.numbox", 0 ],
-			"obj-1::obj-34" : [ "live.numbox[2]", "live.numbox", 0 ],
-			"obj-1::obj-24" : [ "live.numbox[4]", "live.numbox", 0 ],
-			"obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-1::obj-33" : [ "live.numbox[6]", "live.numbox", 0 ],
 			"obj-1::obj-47" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-1::obj-31" : [ "live.numbox[3]", "live.numbox", 0 ],
+			"obj-1::obj-44" : [ "live.numbox[5]", "live.numbox", 0 ],
+			"obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-1::obj-34" : [ "live.numbox[2]", "live.numbox", 0 ],
 			"obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
 			"obj-1::obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-1::obj-48" : [ "live.numbox[7]", "live.numbox", 0 ],
+			"obj-1::obj-24" : [ "live.numbox[4]", "live.numbox", 0 ],
+			"obj-1::obj-80" : [ "PRESET", "PRESET", 0 ],
 			"obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
 			"obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-1::obj-44" : [ "live.numbox[5]", "live.numbox", 0 ],
-			"obj-1::obj-33" : [ "live.numbox[6]", "live.numbox", 0 ],
-			"obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-1::obj-31" : [ "live.numbox[3]", "live.numbox", 0 ],
-			"obj-1::obj-80" : [ "PRESET", "PRESET", 0 ]
+			"obj-1::obj-48" : [ "live.numbox[7]", "live.numbox", 0 ],
+			"obj-1::obj-49" : [ "live.numbox", "live.numbox", 0 ],
+			"obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "tg.MuteThispoly2.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.compressor.2.2.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Compressor",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Compressor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.fgraph.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "irc.compressor~.mxo",
+				"name" : "spat.compressor~.mxo",
 				"type" : "iLaX"
 			}
  ]

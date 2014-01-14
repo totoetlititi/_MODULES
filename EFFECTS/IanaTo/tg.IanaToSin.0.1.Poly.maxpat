@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
@@ -28,20 +28,6 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
-				"box" : 				{
-					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-5",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 161.0, 101.0, 96.0, 18.0 ],
-					"text" : "s #1Dumpout"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
@@ -112,7 +98,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -291,26 +277,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 23.0, 213.0, 40.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out~ 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-4",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 23.0, 34.0, 96.0, 18.0 ],
-					"text" : "r #1"
 				}
 
 			}
@@ -326,28 +293,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-1", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-54", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -380,77 +329,77 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-129" : [ "ReceiveFrom", "ReceiveFrom", 0 ],
-			"obj-1::obj-188" : [ "Speed", "Speed", 0 ],
-			"obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-1::obj-27" : [ "CycPar", "CycPar", 0 ],
-			"obj-1::obj-15" : [ "SilenceDuration", "SilenceDuration", 0 ],
 			"obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-1::obj-94" : [ "ListMax", "ListMax", 0 ],
-			"obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-1::obj-125" : [ "VibAmp", "VibAmp", 0 ],
+			"obj-1::obj-129" : [ "ReceiveFrom", "ReceiveFrom", 0 ],
+			"obj-1::obj-27" : [ "CycPar", "CycPar", 0 ],
 			"obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-1::obj-15" : [ "SilenceDuration", "SilenceDuration", 0 ],
+			"obj-1::obj-188" : [ "Speed", "Speed", 0 ],
 			"obj-1::obj-116" : [ "Metro", "Metro", 0 ],
-			"obj-1::obj-93" : [ "ListMin", "ListMin", 0 ],
-			"obj-1::obj-121" : [ "VibFreq", "VibFreq", 0 ],
+			"obj-1::obj-94" : [ "ListMax", "ListMax", 0 ],
+			"obj-1::obj-125" : [ "VibAmp", "VibAmp", 0 ],
 			"obj-1::obj-88" : [ "PRESET", "PRESET", 0 ],
-			"obj-1::obj-20" : [ "PhraseDuration", "PhraseDuration", 0 ]
+			"obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-1::obj-93" : [ "ListMin", "ListMin", 0 ],
+			"obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-1::obj-121" : [ "VibFreq", "VibFreq", 0 ],
+			"obj-1::obj-20" : [ "PhraseDuration", "PhraseDuration", 0 ],
+			"obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "tg.MuteThispoly1.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.IanaToSin.0.1.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/IanaToAdd",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/IanaTo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "IanaToSinPreset.json",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
 				"patcherrelativepath" : "../../JSON",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.fgraph.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.random.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.randomMetro.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "M4L.bal1~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
