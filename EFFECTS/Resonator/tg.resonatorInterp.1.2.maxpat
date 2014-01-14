@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 202.0, 44.0, 701.0, 173.0 ],
+		"rect" : [ 24.0, 259.0, 701.0, 173.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -1256,12 +1256,13 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-20",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "" ],
-					"patching_rect" : [ 93.583344, 326.0, 148.0, 18.0 ],
-					"text" : "poly~ resonatorsPoly1d 64"
+					"patching_rect" : [ 93.583344, 326.0, 148.0, 29.0 ],
+					"text" : "poly~ resonatorsPoly1d 64 @parallel 1"
 				}
 
 			}
@@ -1730,7 +1731,7 @@
 					"patching_rect" : [ 536.785706, 453.667236, 95.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 600.499939, 3.0, 95.0, 27.0 ],
-					"text" : "#1"
+					"text" : "1resi"
 				}
 
 			}
@@ -1997,7 +1998,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 533.785706, 723.667236, 157.666687, 40.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 218, 50, 606, 257 ],
+						"client_rect" : [ 532, 44, 1117, 954 ],
 						"parameter_enable" : 0,
 						"storage_rect" : [ 220, 49, 871, 244 ]
 					}
@@ -2076,13 +2077,13 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 664.785706, 481.667236, 91.0, 29.0 ],
 					"restore" : 					{
-						"1active" : [ 0.0 ],
+						"1active" : [ 1.0 ],
 						"1ampscale" : [ 0.0 ],
-						"1model" : [ 0.0 ],
+						"1model" : [ 325.0 ],
 						"1rescale" : [ 1.0 ],
-						"2active" : [ 0.0 ],
+						"2active" : [ 1.0 ],
 						"2ampscale" : [ 0.0 ],
-						"2model" : [ 0.0 ],
+						"2model" : [ 322.0 ],
 						"2rescale" : [ 1.0 ],
 						"2transp" : [ 1.0 ],
 						"Dry/wet" : [ 100.0 ],
@@ -2091,18 +2092,18 @@
 						"FilterMode" : [ 5.0 ],
 						"FilterQ" : [ 0.3 ],
 						"Ingain" : [ 0.0 ],
-						"Outgain" : [ -127.0 ],
+						"Outgain" : [ 0.0 ],
 						"clear" : [ 0.0 ],
 						"jitterDecay" : [ 0.0 ],
 						"jitterFreq" : [ 0.0 ],
 						"jitterGain" : [ 0.0 ],
 						"mixInterp" : [ 1000.0 ],
 						"transp" : [ 1.0 ],
-						"trig" : [ 0.0 ]
+						"trig" : [ 1.0 ]
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u828017440"
+					"varname" : "u465003851"
 				}
 
 			}
@@ -2455,7 +2456,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 38.750004, 124.0, 25.0, 25.0 ]
 				}
 
@@ -3711,77 +3712,6 @@
 					"source" : [ "obj-86", 1 ]
 				}
 
-			}
- ],
-		"parameters" : 		{
-			"obj-127" : [ "1rescale", "1rescale", 0 ],
-			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-181" : [ "2transp", "2transp", 0 ],
-			"obj-150" : [ "1model", "1model", 0 ],
-			"obj-205" : [ "trig", "trig", 0 ],
-			"obj-177" : [ "2ampscale", "2ampscale", 0 ],
-			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-196" : [ "clear", "clear", 0 ],
-			"obj-182" : [ "2model", "2model", 0 ],
-			"obj-19" : [ "jitterDecay", "jitterDecay", 0 ],
-			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-130" : [ "transp", "transp", 0 ],
-			"obj-123" : [ "1ampscale", "1ampscale", 0 ],
-			"obj-105" : [ "1active", "1active", 0 ],
-			"obj-112" : [ "jitterFreq", "jitterFreq", 0 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-175" : [ "2active", "2active", 0 ],
-			"obj-117" : [ "jitterGain", "jitterGain", 0 ],
-			"obj-80" : [ "PRESET", "PRESET", 0 ],
-			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-179" : [ "2rescale", "2rescale", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-193" : [ "mixInterp", "mixInterp", 0 ]
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ResonatorInterpPreset.json",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
-				"patcherrelativepath" : "../../JSON",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.m.fgraph.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "resonatorsPoly1d.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Resonator",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "resonators~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "res-transform.mxo",
-				"type" : "iLaX"
 			}
  ]
 	}
