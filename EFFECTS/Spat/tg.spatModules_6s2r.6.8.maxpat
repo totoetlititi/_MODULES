@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
@@ -189,7 +189,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -452,8 +452,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1176.0, 40.0, 40.0, 38.0 ],
-					"text" : "source 6 air 1"
+					"patching_rect" : [ 1176.0, 40.0, 44.0, 38.0 ],
+					"text" : "source 6 name #16"
 				}
 
 			}
@@ -609,8 +609,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1253.0, 598.332764, 92.0, 105.0 ],
-					"text" : ";\n#2.INIT bang;\n#3.INIT bang;\n#4.INIT bang;\n#5.INIT bang;\n#6.INIT bang;\n#7.INIT bang;\n#8.INIT bang;\n#9.INIT bang;"
+					"patching_rect" : [ 1253.0, 598.332764, 95.0, 105.0 ],
+					"text" : ";\n#11.INIT bang;\n#12.INIT bang;\n#13.INIT bang;\n#14.INIT bang;\n#15.INIT bang;\n#16.INIT bang;\n#2.INIT bang;\n#3.INIT bang;"
 				}
 
 			}
@@ -743,7 +743,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "#7" ],
+					"args" : [ "#16", 1, "#0" ],
 					"id" : "obj-27",
 					"maxclass" : "bpatcher",
 					"name" : "tg.spat_1s.maxpat",
@@ -759,7 +759,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "#6" ],
+					"args" : [ "#15", 1, "#0" ],
 					"id" : "obj-28",
 					"maxclass" : "bpatcher",
 					"name" : "tg.spat_1s.maxpat",
@@ -775,7 +775,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "#5" ],
+					"args" : [ "#14", 1, "#0" ],
 					"id" : "obj-20",
 					"maxclass" : "bpatcher",
 					"name" : "tg.spat_1s.maxpat",
@@ -791,7 +791,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "#4" ],
+					"args" : [ "#13", 1, "#0" ],
 					"id" : "obj-21",
 					"maxclass" : "bpatcher",
 					"name" : "tg.spat_1s.maxpat",
@@ -807,7 +807,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "#9" ],
+					"args" : [ "#3" ],
 					"id" : "obj-19",
 					"maxclass" : "bpatcher",
 					"name" : "tg.spat_1r.maxpat",
@@ -879,7 +879,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "#8" ],
+					"args" : [ "#2" ],
 					"id" : "obj-8",
 					"maxclass" : "bpatcher",
 					"name" : "tg.spat_1r.maxpat",
@@ -965,7 +965,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "#3" ],
+					"args" : [ "#12", 1, "#0" ],
 					"id" : "obj-13",
 					"maxclass" : "bpatcher",
 					"name" : "tg.spat_1s.maxpat",
@@ -993,7 +993,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -1281,7 +1281,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 6,
 											"architecture" : "x86"
 										}
 ,
@@ -1818,7 +1818,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 6,
 											"architecture" : "x86"
 										}
 ,
@@ -2957,7 +2957,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "#2" ],
+					"args" : [ "#11", 1, "#0" ],
 					"id" : "obj-5",
 					"maxclass" : "bpatcher",
 					"name" : "tg.spat_1s.maxpat",
@@ -3094,7 +3094,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -3144,7 +3144,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 6,
 											"architecture" : "x86"
 										}
 ,
@@ -4932,139 +4932,151 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-28::obj-5" : [ "Input[1]", "Input", 0 ],
-			"obj-19::obj-95" : [ "infinite", "infinite", 0 ],
-			"obj-28::obj-71" : [ "az[1]", "az", 0 ],
-			"obj-27::obj-225" : [ "warm", "warm", 0 ],
-			"obj-21::obj-46" : [ "reverb[3]", "reverb", 0 ],
-			"obj-21::obj-50" : [ "rename[3]", "rename", 0 ],
-			"obj-459" : [ "Outgain[5]", "Outgain", 0 ],
-			"obj-5::obj-5" : [ "Input[5]", "Input", 0 ],
-			"obj-21::obj-81" : [ "env[3]", "env", 0 ],
-			"obj-5::obj-46" : [ "reverb[5]", "reverb", 0 ],
-			"obj-21::obj-37" : [ "prer[3]", "prer", 0 ],
-			"obj-5::obj-215" : [ "doppler[5]", "doppler", 0 ],
-			"obj-20::obj-28" : [ "width[2]", "width", 0 ],
-			"obj-20::obj-215" : [ "doppler[2]", "doppler", 0 ],
-			"obj-13::obj-28" : [ "width[4]", "width", 0 ],
-			"obj-20::obj-50" : [ "rename[2]", "rename", 0 ],
-			"obj-13::obj-71" : [ "az[4]", "az", 0 ],
-			"obj-27::obj-37" : [ "prer", "prer", 0 ],
-			"obj-13::obj-61" : [ "yaw[4]", "yaw", 0 ],
+			"obj-19::obj-443" : [ "reverberance", "reverberance", 0 ],
+			"obj-19::obj-446" : [ "liveness", "liveness", 0 ],
+			"obj-21::obj-28" : [ "width[3]", "width", 0 ],
+			"obj-20::obj-65" : [ "air[2]", "air", 0 ],
+			"obj-28::obj-41" : [ "bril[1]", "bril", 0 ],
+			"obj-27::obj-65" : [ "air", "air", 0 ],
 			"obj-28::obj-225" : [ "warm[1]", "warm", 0 ],
-			"obj-28::obj-46" : [ "reverb[1]", "reverb", 0 ],
-			"obj-27::obj-56" : [ "aperture", "aperture", 0 ],
-			"obj-27::obj-215" : [ "doppler", "doppler", 0 ],
+			"obj-13::obj-5" : [ "Input[4]", "Input", 0 ],
+			"obj-20::obj-46" : [ "reverb[2]", "reverb", 0 ],
+			"obj-28::obj-56" : [ "aperture[1]", "aperture", 0 ],
+			"obj-5::obj-55" : [ "elev", "elev", 0 ],
+			"obj-13::obj-28" : [ "width[4]", "width", 0 ],
+			"obj-28::obj-55" : [ "elev[4]", "elev", 0 ],
+			"obj-28::obj-81" : [ "env[1]", "env", 0 ],
+			"obj-27::obj-37" : [ "prer", "prer", 0 ],
+			"obj-5::obj-50" : [ "rename[5]", "rename", 0 ],
+			"obj-21::obj-46" : [ "reverb[3]", "reverb", 0 ],
+			"obj-21::obj-44" : [ "revp[3]", "revp", 0 ],
+			"obj-5::obj-61" : [ "yaw[5]", "yaw", 0 ],
+			"obj-8::obj-446" : [ "liveness[1]", "liveness", 0 ],
+			"obj-21::obj-41" : [ "bril[3]", "bril", 0 ],
+			"obj-5::obj-65" : [ "air[5]", "air", 0 ],
+			"obj-21::obj-81" : [ "env[3]", "env", 0 ],
+			"obj-27::obj-28" : [ "width", "width", 0 ],
+			"obj-20::obj-28" : [ "width[2]", "width", 0 ],
+			"obj-28::obj-215" : [ "doppler[1]", "doppler", 0 ],
+			"obj-13::obj-50" : [ "rename[4]", "rename", 0 ],
+			"obj-20::obj-50" : [ "rename[2]", "rename", 0 ],
+			"obj-28::obj-65" : [ "air[1]", "air", 0 ],
+			"obj-13::obj-215" : [ "doppler[4]", "doppler", 0 ],
+			"obj-20::obj-37" : [ "prer[2]", "prer", 0 ],
+			"obj-28::obj-51" : [ "spread[4]", "spread", 0 ],
+			"obj-27::obj-61" : [ "yaw", "yaw", 0 ],
+			"obj-13::obj-41" : [ "bril[4]", "bril", 0 ],
+			"obj-13::obj-75" : [ "dist[4]", "dist", 0 ],
+			"obj-5::obj-51" : [ "spread", "spread", 0 ],
+			"obj-20::obj-5" : [ "Input[2]", "Input", 0 ],
+			"obj-28::obj-50" : [ "rename[1]", "rename", 0 ],
+			"obj-21::obj-51" : [ "spread[2]", "spread", 0 ],
+			"obj-27::obj-44" : [ "revp", "revp", 0 ],
+			"obj-5::obj-46" : [ "reverb[5]", "reverb", 0 ],
+			"obj-5::obj-44" : [ "revp[5]", "revp", 0 ],
+			"obj-19::obj-3" : [ "mute", "mute", 0 ],
+			"obj-20::obj-55" : [ "elev[3]", "elev", 0 ],
+			"obj-5::obj-81" : [ "env[5]", "env", 0 ],
 			"obj-8::obj-440" : [ "heaviness[1]", "heaviness", 0 ],
-			"obj-28::obj-28" : [ "width[1]", "width", 0 ],
-			"obj-21::obj-65" : [ "air[3]", "air", 0 ],
-			"obj-27::obj-50" : [ "rename", "rename", 0 ],
-			"obj-21::obj-32" : [ "pres[3]", "pres", 0 ],
-			"obj-5::obj-71" : [ "az[5]", "az", 0 ],
+			"obj-19::obj-95" : [ "infinite", "infinite", 0 ],
+			"obj-5::obj-225" : [ "warm[5]", "warm", 0 ],
+			"obj-21::obj-56" : [ "aperture[3]", "aperture", 0 ],
+			"obj-21::obj-75" : [ "dist[3]", "dist", 0 ],
+			"obj-20::obj-75" : [ "dist[2]", "dist", 0 ],
+			"obj-28::obj-61" : [ "yaw[1]", "yaw", 0 ],
+			"obj-13::obj-225" : [ "warm[4]", "warm", 0 ],
+			"obj-13::obj-65" : [ "air[4]", "air", 0 ],
+			"obj-20::obj-81" : [ "env[2]", "env", 0 ],
+			"obj-13::obj-51" : [ "spread[1]", "spread", 0 ],
+			"obj-13::obj-71" : [ "az[4]", "az", 0 ],
+			"obj-20::obj-41" : [ "bril[2]", "bril", 0 ],
+			"obj-28::obj-44" : [ "revp[1]", "revp", 0 ],
+			"obj-27::obj-41" : [ "bril", "bril", 0 ],
+			"obj-13::obj-81" : [ "env[4]", "env", 0 ],
+			"obj-20::obj-44" : [ "revp[2]", "revp", 0 ],
+			"obj-28::obj-5" : [ "Input[1]", "Input", 0 ],
+			"obj-27::obj-5" : [ "Input", "Input", 0 ],
+			"obj-27::obj-32" : [ "pres", "pres", 0 ],
+			"obj-27::obj-51" : [ "spread[5]", "spread", 0 ],
+			"obj-27::obj-81" : [ "env", "env", 0 ],
+			"obj-21::obj-61" : [ "yaw[3]", "yaw", 0 ],
+			"obj-27::obj-215" : [ "doppler", "doppler", 0 ],
 			"obj-21::obj-215" : [ "doppler[3]", "doppler", 0 ],
 			"obj-5::obj-37" : [ "prer[5]", "prer", 0 ],
-			"obj-5::obj-41" : [ "bril[5]", "bril", 0 ],
-			"obj-20::obj-46" : [ "reverb[2]", "reverb", 0 ],
-			"obj-20::obj-44" : [ "revp[2]", "revp", 0 ],
-			"obj-13::obj-225" : [ "warm[4]", "warm", 0 ],
-			"obj-20::obj-75" : [ "dist[2]", "dist", 0 ],
-			"obj-13::obj-46" : [ "reverb[4]", "reverb", 0 ],
-			"obj-13::obj-75" : [ "dist[4]", "dist", 0 ],
-			"obj-28::obj-37" : [ "prer[1]", "prer", 0 ],
-			"obj-8::obj-3" : [ "mute[1]", "mute", 0 ],
-			"obj-19::obj-440" : [ "heaviness", "heaviness", 0 ],
-			"obj-28::obj-41" : [ "bril[1]", "bril", 0 ],
-			"obj-8::obj-443" : [ "reverberance[1]", "reverberance", 0 ],
-			"obj-28::obj-50" : [ "rename[1]", "rename", 0 ],
-			"obj-27::obj-75" : [ "dist", "dist", 0 ],
-			"obj-21::obj-44" : [ "revp[3]", "revp", 0 ],
-			"obj-5::obj-56" : [ "aperture[5]", "aperture", 0 ],
-			"obj-21::obj-61" : [ "yaw[3]", "yaw", 0 ],
-			"obj-5::obj-61" : [ "yaw[5]", "yaw", 0 ],
-			"obj-21::obj-5" : [ "Input[3]", "Input", 0 ],
-			"obj-5::obj-225" : [ "warm[5]", "warm", 0 ],
-			"obj-5::obj-75" : [ "dist[5]", "dist", 0 ],
-			"obj-20::obj-56" : [ "aperture[2]", "aperture", 0 ],
-			"obj-13::obj-50" : [ "rename[4]", "rename", 0 ],
-			"obj-20::obj-32" : [ "pres[2]", "pres", 0 ],
-			"obj-13::obj-81" : [ "env[4]", "env", 0 ],
-			"obj-20::obj-65" : [ "air[2]", "air", 0 ],
-			"obj-13::obj-56" : [ "aperture[4]", "aperture", 0 ],
-			"obj-13::obj-37" : [ "prer[4]", "prer", 0 ],
-			"obj-28::obj-81" : [ "env[1]", "env", 0 ],
-			"obj-27::obj-65" : [ "air", "air", 0 ],
-			"obj-28::obj-215" : [ "doppler[1]", "doppler", 0 ],
 			"obj-8::obj-95" : [ "infinite[1]", "infinite", 0 ],
+			"obj-19::obj-440" : [ "heaviness", "heaviness", 0 ],
+			"obj-21::obj-37" : [ "prer[3]", "prer", 0 ],
+			"obj-5::obj-75" : [ "dist[5]", "dist", 0 ],
+			"obj-21::obj-65" : [ "air[3]", "air", 0 ],
+			"obj-13::obj-55" : [ "elev[1]", "elev", 0 ],
+			"obj-21::obj-55" : [ "elev[2]", "elev", 0 ],
+			"obj-27::obj-56" : [ "aperture", "aperture", 0 ],
 			"obj-28::obj-75" : [ "dist[1]", "dist", 0 ],
-			"obj-27::obj-41" : [ "bril", "bril", 0 ],
-			"obj-21::obj-28" : [ "width[3]", "width", 0 ],
-			"obj-21::obj-75" : [ "dist[3]", "dist", 0 ],
-			"obj-5::obj-81" : [ "env[5]", "env", 0 ],
-			"obj-21::obj-56" : [ "aperture[3]", "aperture", 0 ],
-			"obj-5::obj-50" : [ "rename[5]", "rename", 0 ],
-			"obj-5::obj-28" : [ "width[5]", "width", 0 ],
-			"obj-20::obj-37" : [ "prer[2]", "prer", 0 ],
-			"obj-13::obj-65" : [ "air[4]", "air", 0 ],
-			"obj-20::obj-71" : [ "az[2]", "az", 0 ],
-			"obj-27::obj-46" : [ "reverb", "reverb", 0 ],
-			"obj-27::obj-44" : [ "revp", "revp", 0 ],
+			"obj-27::obj-50" : [ "rename", "rename", 0 ],
+			"obj-13::obj-46" : [ "reverb[4]", "reverb", 0 ],
+			"obj-20::obj-215" : [ "doppler[2]", "doppler", 0 ],
+			"obj-28::obj-46" : [ "reverb[1]", "reverb", 0 ],
+			"obj-13::obj-37" : [ "prer[4]", "prer", 0 ],
 			"obj-13::obj-32" : [ "pres[4]", "pres", 0 ],
-			"obj-20::obj-41" : [ "bril[2]", "bril", 0 ],
-			"obj-13::obj-44" : [ "revp[4]", "revp", 0 ],
-			"obj-28::obj-32" : [ "pres[1]", "pres", 0 ],
-			"obj-27::obj-71" : [ "az", "az", 0 ],
-			"obj-28::obj-44" : [ "revp[1]", "revp", 0 ],
-			"obj-27::obj-28" : [ "width", "width", 0 ],
-			"obj-8::obj-446" : [ "liveness[1]", "liveness", 0 ],
-			"obj-28::obj-65" : [ "air[1]", "air", 0 ],
-			"obj-28::obj-56" : [ "aperture[1]", "aperture", 0 ],
-			"obj-27::obj-5" : [ "Input", "Input", 0 ],
-			"obj-27::obj-61" : [ "yaw", "yaw", 0 ],
-			"obj-19::obj-446" : [ "liveness", "liveness", 0 ],
-			"obj-19::obj-443" : [ "reverberance", "reverberance", 0 ],
-			"obj-21::obj-41" : [ "bril[3]", "bril", 0 ],
-			"obj-5::obj-32" : [ "pres[5]", "pres", 0 ],
+			"obj-28::obj-37" : [ "prer[1]", "prer", 0 ],
+			"obj-27::obj-225" : [ "warm", "warm", 0 ],
+			"obj-27::obj-55" : [ "elev[5]", "elev", 0 ],
+			"obj-5::obj-5" : [ "Input[5]", "Input", 0 ],
+			"obj-5::obj-41" : [ "bril[5]", "bril", 0 ],
 			"obj-21::obj-225" : [ "warm[3]", "warm", 0 ],
-			"obj-5::obj-65" : [ "air[5]", "air", 0 ],
-			"obj-21::obj-71" : [ "az[3]", "az", 0 ],
-			"obj-5::obj-44" : [ "revp[5]", "revp", 0 ],
-			"obj-20::obj-5" : [ "Input[2]", "Input", 0 ],
-			"obj-19::obj-3" : [ "mute", "mute", 0 ],
-			"obj-20::obj-81" : [ "env[2]", "env", 0 ],
-			"obj-27::obj-32" : [ "pres", "pres", 0 ],
-			"obj-13::obj-41" : [ "bril[4]", "bril", 0 ],
-			"obj-20::obj-225" : [ "warm[2]", "warm", 0 ],
-			"obj-27::obj-81" : [ "env", "env", 0 ],
-			"obj-13::obj-215" : [ "doppler[4]", "doppler", 0 ],
+			"obj-5::obj-28" : [ "width[5]", "width", 0 ],
+			"obj-8::obj-443" : [ "reverberance[1]", "reverberance", 0 ],
 			"obj-20::obj-61" : [ "yaw[2]", "yaw", 0 ],
-			"obj-13::obj-5" : [ "Input[4]", "Input", 0 ],
-			"obj-28::obj-61" : [ "yaw[1]", "yaw", 0 ]
+			"obj-28::obj-71" : [ "az[1]", "az", 0 ],
+			"obj-5::obj-71" : [ "az[5]", "az", 0 ],
+			"obj-21::obj-50" : [ "rename[3]", "rename", 0 ],
+			"obj-20::obj-71" : [ "az[2]", "az", 0 ],
+			"obj-28::obj-28" : [ "width[1]", "width", 0 ],
+			"obj-13::obj-44" : [ "revp[4]", "revp", 0 ],
+			"obj-13::obj-56" : [ "aperture[4]", "aperture", 0 ],
+			"obj-20::obj-56" : [ "aperture[2]", "aperture", 0 ],
+			"obj-27::obj-71" : [ "az", "az", 0 ],
+			"obj-13::obj-61" : [ "yaw[4]", "yaw", 0 ],
+			"obj-459" : [ "Outgain[5]", "Outgain", 0 ],
+			"obj-20::obj-225" : [ "warm[2]", "warm", 0 ],
+			"obj-28::obj-32" : [ "pres[1]", "pres", 0 ],
+			"obj-20::obj-32" : [ "pres[2]", "pres", 0 ],
+			"obj-27::obj-75" : [ "dist", "dist", 0 ],
+			"obj-5::obj-56" : [ "aperture[5]", "aperture", 0 ],
+			"obj-21::obj-5" : [ "Input[3]", "Input", 0 ],
+			"obj-21::obj-32" : [ "pres[3]", "pres", 0 ],
+			"obj-5::obj-32" : [ "pres[5]", "pres", 0 ],
+			"obj-8::obj-3" : [ "mute[1]", "mute", 0 ],
+			"obj-20::obj-51" : [ "spread[3]", "spread", 0 ],
+			"obj-27::obj-46" : [ "reverb", "reverb", 0 ],
+			"obj-5::obj-215" : [ "doppler[5]", "doppler", 0 ],
+			"obj-21::obj-71" : [ "az[3]", "az", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "tg.spat_1s.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Spat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Spat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Spat6s2rPreset.json",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
 				"patcherrelativepath" : "../../JSON",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.spat_1r.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Spat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Spat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
