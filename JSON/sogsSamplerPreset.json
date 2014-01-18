@@ -1,0 +1,38 @@
+{
+	"pattrstorage" : 	{
+		"name" : "sogsSamplerPreset",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "Default",
+				"data" : 				{
+					"Attack" : [ 20.0 ],
+					"Direction" : [ 0.0 ],
+					"FilterFreq" : [ 1000.0 ],
+					"FilterGain" : [ 0.0 ],
+					"FilterMode" : [ 5.0 ],
+					"FilterQ" : [ 0.3 ],
+					"GrainSize" : [ 120.0 ],
+					"OnsetVar" : [ 5.0 ],
+					"Outgain" : [ -127.0 ],
+					"Overlap" : [ 6.0 ],
+					"PitchVar" : [ 0.0 ],
+					"Release" : [ 20.0 ],
+					"amp" : [ 1.0 ],
+					"buffer" : [ "<empty>" ],
+					"clear" : [ 0.0 ],
+					"duration" : [ 1000.0 ],
+					"offset" : [ 0.0 ],
+					"steal" : [ 0.0 ],
+					"stretch" : [ 1.0 ],
+					"transp" : [ 1.0 ],
+					"trig" : [ 0.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
