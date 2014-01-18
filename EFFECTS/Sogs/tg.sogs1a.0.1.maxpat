@@ -93,7 +93,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
-					"patching_rect" : [ 943.125, 470.667236, 44.0, 29.0 ],
+					"patching_rect" : [ 943.125, 470.667236, 46.0, 29.0 ],
 					"text" : "unpack s f"
 				}
 
@@ -662,32 +662,6 @@
 						"digest" : "",
 						"tags" : "",
 						"boxes" : [ 							{
-								"box" : 								{
-									"fontname" : "Arial Bold",
-									"fontsize" : 10.0,
-									"id" : "obj-34",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 388.0, 200.0, 100.0, 18.0 ],
-									"text" : "print clip"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial Bold",
-									"fontsize" : 10.0,
-									"id" : "obj-29",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 388.0, 145.0, 100.0, 18.0 ],
-									"text" : "print reg"
-								}
-
-							}
-, 							{
 								"box" : 								{
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
@@ -1499,15 +1473,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-29", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-24", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-42", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -1654,15 +1619,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-21", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-5", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-34", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-5", 0 ]
@@ -1858,6 +1814,7 @@
 					"bgcolor" : [ 0.094118, 0.113725, 0.137255, 0.0 ],
 					"bordercolor" : [ 0.666667, 0.698039, 0.717647, 0.0 ],
 					"buffername" : "#0-Audio",
+					"chanoffset" : 0,
 					"fontsize" : 9.0,
 					"gridcolor" : [ 0.666667, 0.698039, 0.717647, 0.0 ],
 					"id" : "obj-22",
@@ -6829,7 +6786,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u924009454"
+					"varname" : "u593005574"
 				}
 
 			}
@@ -8341,31 +8298,31 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-81" : [ "Play", "Play", 0 ],
 			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-61" : [ "Overlap", "Overlap", 0 ],
-			"obj-20" : [ "SelectAll", "SelectAll", 0 ],
-			"obj-31" : [ "buffer", "buffer", 0 ],
-			"obj-80" : [ "PRESET[1]", "PRESET", 0 ],
-			"obj-68" : [ "Attack", "Attack", 0 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-79" : [ "PitchTable", "PitchTable", 0 ],
-			"obj-62" : [ "Stretch", "Stretch", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-92" : [ "EnablePitchTable", "EnablePitchTable", 0 ],
-			"obj-66" : [ "Release", "Release", 0 ],
-			"obj-76" : [ "GrainSize", "GrainSize", 0 ],
-			"obj-91" : [ "PitchVar", "PitchVar", 0 ],
-			"obj-90" : [ "Trans", "Trans", 0 ],
-			"obj-73" : [ "Direction", "Direction", 0 ],
-			"obj-78" : [ "Freeze", "Freeze", 0 ],
-			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-30" : [ "Scrub", "Scrub", 0 ],
+			"obj-77" : [ "OnsetVar", "OnsetVar", 0 ],
 			"obj-83" : [ "InitPitchTable", "InitPitchTable", 0 ],
-			"obj-25" : [ "begin", "begin", 0 ],
+			"obj-66" : [ "Release", "Release", 0 ],
+			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-80" : [ "PRESET[1]", "PRESET", 0 ],
+			"obj-61" : [ "Overlap", "Overlap", 0 ],
+			"obj-79" : [ "PitchTable", "PitchTable", 0 ],
+			"obj-68" : [ "Attack", "Attack", 0 ],
+			"obj-91" : [ "PitchVar", "PitchVar", 0 ],
+			"obj-20" : [ "SelectAll", "SelectAll", 0 ],
+			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-73" : [ "Direction", "Direction", 0 ],
+			"obj-90" : [ "Trans", "Trans", 0 ],
 			"obj-8" : [ "end", "end", 0 ],
 			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-77" : [ "OnsetVar", "OnsetVar", 0 ],
-			"obj-30" : [ "Scrub", "Scrub", 0 ]
+			"obj-62" : [ "Stretch", "Stretch", 0 ],
+			"obj-31" : [ "buffer", "buffer", 0 ],
+			"obj-78" : [ "Freeze", "Freeze", 0 ],
+			"obj-76" : [ "GrainSize", "GrainSize", 0 ],
+			"obj-81" : [ "Play", "Play", 0 ],
+			"obj-92" : [ "EnablePitchTable", "EnablePitchTable", 0 ],
+			"obj-25" : [ "begin", "begin", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
