@@ -1,0 +1,40 @@
+{
+	"pattrstorage" : 	{
+		"name" : "gateUnvoicedPreset",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "Default",
+				"data" : 				{
+					"Dry/wet" : [ 100.0 ],
+					"FilterFreq" : [ 1000.0 ],
+					"FilterGain" : [ 0.0 ],
+					"FilterMode" : [ 5.0 ],
+					"FilterQ" : [ 0.3 ],
+					"Ingain" : [ 0.0 ],
+					"Outgain" : [ -127.0 ],
+					"RemixError" : [ 0.1 ],
+					"RemixMode" : [ 0.0 ],
+					"RemixNoise" : [ 0.0 ],
+					"RemixRelax" : [ 0.0 ],
+					"RemixSinus" : [ 0.0 ],
+					"RemixTransients" : [ 1.0 ],
+					"spread" : [ 0.0 ],
+					"spreadGainUnvoiced" : [ 0.0 ],
+					"spreadGainVoiced" : [ 0.0 ],
+					"svp" : [ 0.0 ],
+					"svpGain" : [ 0.0 ],
+					"threshFreq" : [ 1000.0 ],
+					"voicedThresh" : [ 0.4 ],
+					"yin" : [ 0.0 ],
+					"yinGainUnvoiced" : [ 0.0 ],
+					"yinGainVoiced" : [ 0.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
