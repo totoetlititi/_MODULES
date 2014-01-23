@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 22.0, 44.0, 654.0, 172.0 ],
+		"rect" : [ 319.0, 44.0, 652.0, 172.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -29,6 +29,20 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-26",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 867.0, 486.667236, 50.0, 16.0 ],
+					"text" : "$1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
@@ -555,7 +569,7 @@
 							"parameter_type" : 0,
 							"parameter_mmax" : 600000.0,
 							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ 0 ],
+							"parameter_initial" : [ 0.0 ],
 							"parameter_unitstyle" : 2,
 							"parameter_exponent" : 3.0
 						}
@@ -1508,7 +1522,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u365004719"
+					"varname" : "u631005069"
 				}
 
 			}
@@ -2042,7 +2056,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-78", 1 ],
+					"destination" : [ "obj-26", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-12", 0 ]
@@ -2282,6 +2296,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-78", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-26", 0 ]
 				}
 
 			}
@@ -2794,28 +2817,28 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-25" : [ "offset", "offset", 0 ],
 			"obj-61" : [ "Overlap", "Overlap", 0 ],
-			"obj-89" : [ "trig", "trig", 0 ],
-			"obj-68" : [ "buffer", "buffer", 0 ],
-			"obj-84" : [ "amp", "amp", 0 ],
-			"obj-80" : [ "PRESET[1]", "PRESET", 0 ],
-			"obj-21" : [ "clear", "clear", 0 ],
+			"obj-25" : [ "offset", "offset", 0 ],
 			"obj-54" : [ "Attack", "Attack", 0 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-53" : [ "Release", "Release", 0 ],
 			"obj-76" : [ "GrainSize", "GrainSize", 0 ],
 			"obj-91" : [ "PitchVar", "PitchVar", 0 ],
-			"obj-73" : [ "Direction", "Direction", 0 ],
-			"obj-82" : [ "transp", "transp", 0 ],
-			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-8" : [ "duration", "duration", 0 ],
-			"obj-88" : [ "stretch", "stretch", 0 ],
-			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-53" : [ "Release", "Release", 0 ],
+			"obj-68" : [ "buffer", "buffer", 0 ],
 			"obj-10" : [ "steal", "steal", 0 ],
-			"obj-77" : [ "OnsetVar", "OnsetVar", 0 ]
+			"obj-21" : [ "clear", "clear", 0 ],
+			"obj-8" : [ "duration", "duration", 0 ],
+			"obj-89" : [ "trig", "trig", 0 ],
+			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-77" : [ "OnsetVar", "OnsetVar", 0 ],
+			"obj-84" : [ "amp", "amp", 0 ],
+			"obj-73" : [ "Direction", "Direction", 0 ],
+			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-88" : [ "stretch", "stretch", 0 ],
+			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-82" : [ "transp", "transp", 0 ],
+			"obj-80" : [ "PRESET[1]", "PRESET", 0 ],
+			"obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-72" : [ "FilterQ", "FilterQ", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

@@ -51,7 +51,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "int" ],
-					"patching_rect" : [ 20.0, 158.0, 111.0, 18.0 ],
+					"patching_rect" : [ 20.0, 158.0, 117.0, 18.0 ],
 					"text" : "tg.MuteThispoly1 #1"
 				}
 
@@ -275,35 +275,16 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 20.0, 230.0, 40.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-2",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 20.0, 39.0, 34.0, 18.0 ],
-					"text" : "in~ 1"
 				}
 
 			}
  ],
 		"lines" : [ 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-40", 1 ],
 					"disabled" : 0,
@@ -347,67 +328,6 @@
 					"source" : [ "obj-54", 0 ]
 				}
 
-			}
- ],
-		"parameters" : 		{
-			"obj-3::obj-25" : [ "begin", "begin", 0 ],
-			"obj-3::obj-31" : [ "buffer[1]", "buffer", 0 ],
-			"obj-3::obj-72" : [ "FilterQ[1]", "FilterQ", 0 ],
-			"obj-3::obj-91" : [ "PitchVar[1]", "PitchVar", 0 ],
-			"obj-3::obj-73" : [ "Direction[1]", "Direction", 0 ],
-			"obj-3::obj-30" : [ "Scrub", "Scrub", 0 ],
-			"obj-3::obj-14" : [ "Outgain[1]", "Outgain", 0 ],
-			"obj-3::obj-66" : [ "Release[1]", "Release", 0 ],
-			"obj-3::obj-92" : [ "EnablePitchTable", "EnablePitchTable", 0 ],
-			"obj-3::obj-20" : [ "SelectAll", "SelectAll", 0 ],
-			"obj-3::obj-78" : [ "Freeze", "Freeze", 0 ],
-			"obj-3::obj-42" : [ "FilterMode[1]", "FilterMode", 0 ],
-			"obj-3::obj-61" : [ "Overlap[1]", "Overlap", 0 ],
-			"obj-3::obj-77" : [ "OnsetVar[1]", "OnsetVar", 0 ],
-			"obj-3::obj-83" : [ "InitPitchTable", "InitPitchTable", 0 ],
-			"obj-3::obj-80" : [ "PRESET[2]", "PRESET", 0 ],
-			"obj-3::obj-62" : [ "Stretch", "Stretch", 0 ],
-			"obj-3::obj-67" : [ "FilterGain[1]", "FilterGain", 0 ],
-			"obj-3::obj-68" : [ "Attack[1]", "Attack", 0 ],
-			"obj-3::obj-79" : [ "PitchTable", "PitchTable", 0 ],
-			"obj-3::obj-90" : [ "Trans", "Trans", 0 ],
-			"obj-3::obj-8" : [ "end", "end", 0 ],
-			"obj-3::obj-70" : [ "FilterFreq[1]", "FilterFreq", 0 ],
-			"obj-3::obj-76" : [ "GrainSize[1]", "GrainSize", 0 ],
-			"obj-3::obj-81" : [ "Play[1]", "Play[1]", 0 ]
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "tg.MuteThispoly1.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.sogs1a.0.1.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Sogs",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.m.fgraph.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sogs~.mxo",
-				"type" : "iLaX"
 			}
  ]
 	}

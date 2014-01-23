@@ -313,6 +313,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "coll",
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"frgb" : 0.0,
@@ -1176,6 +1177,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "debounce",
 					"id" : "obj-20",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -1228,6 +1230,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "gain",
 					"id" : "obj-22",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -1735,7 +1738,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u884008374"
+					"varname" : "u443005928"
 				}
 
 			}
@@ -3106,17 +3109,17 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-20" : [ "debounce", "debounce", 0 ],
 			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-80" : [ "PRESET", "PRESET", 0 ],
 			"obj-27" : [ "coll", "coll", 0 ],
-			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
 			"obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-14" : [ "Outgain", "Outgain", 0 ],
 			"obj-22" : [ "gain", "gain", 0 ],
-			"obj-67" : [ "FilterGain", "FilterGain", 0 ]
+			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-20" : [ "debounce", "debounce", 0 ],
+			"obj-42" : [ "FilterMode", "FilterMode", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

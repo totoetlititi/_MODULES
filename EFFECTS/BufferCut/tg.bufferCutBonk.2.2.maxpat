@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 98.0, 44.0, 874.0, 171.0 ],
+		"rect" : [ 98.0, 44.0, 875.0, 171.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -3017,8 +3017,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 1213.0, 163.0, 58.0, 18.0 ],
-					"text" : "tg.®metro"
+					"patching_rect" : [ 1213.0, 163.0, 87.0, 18.0 ],
+					"text" : "tg.randomMetro"
 				}
 
 			}
@@ -7281,7 +7281,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u488001703"
+					"varname" : "u270006222"
 				}
 
 			}
@@ -9740,35 +9740,35 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-68" : [ "Detune", "Detune", 0 ],
-			"obj-178" : [ "OverLap", "OverLap", 0 ],
 			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-184" : [ "PitchThresh", "PitchThresh", 0 ],
-			"obj-132" : [ "BonkMin", "BonkMin", 0 ],
-			"obj-121" : [ "BonkMonitorGain", "BonkMonitorGain", 0 ],
-			"obj-114" : [ "BonkSpeedlim", "BonkSpeedlim", 0 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-185" : [ "Pitch", "Pitch", 0 ],
-			"obj-69" : [ "Transp", "Transp", 0 ],
-			"obj-228" : [ "Duration", "Duration", 0 ],
-			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-18" : [ "TriggerMode", "TriggerMode", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-241" : [ "BonkMax", "BonkMax", 0 ],
-			"obj-30" : [ "MetroMax", "MetroMax", 0 ],
-			"obj-293" : [ "Action", "Action", 0 ],
-			"obj-80" : [ "PRESET", "PRESET", 0 ],
-			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-232" : [ "DurationThresh", "DurationThresh", 0 ],
 			"obj-237" : [ "BonkMonitor", "BonkMonitor", 0 ],
-			"obj-50" : [ "ReadMode", "ReadMode", 0 ],
-			"obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-228" : [ "Duration", "Duration", 0 ],
 			"obj-25" : [ "MetroMin", "MetroMin", 0 ],
-			"obj-216" : [ "BufSize", "BufSize", 0 ],
+			"obj-69" : [ "Transp", "Transp", 0 ],
+			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-293" : [ "Action", "Action", 0 ],
+			"obj-121" : [ "BonkMonitorGain", "BonkMonitorGain", 0 ],
+			"obj-232" : [ "DurationThresh", "DurationThresh", 0 ],
+			"obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-178" : [ "OverLap", "OverLap", 0 ],
+			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-241" : [ "BonkMax", "BonkMax", 0 ],
+			"obj-114" : [ "BonkSpeedlim", "BonkSpeedlim", 0 ],
 			"obj-110" : [ "Follow", "Follow", 0 ],
+			"obj-184" : [ "PitchThresh", "PitchThresh", 0 ],
+			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-132" : [ "BonkMin", "BonkMin", 0 ],
+			"obj-216" : [ "BufSize", "BufSize", 0 ],
+			"obj-218" : [ "Latence", "Latence", 0 ],
+			"obj-50" : [ "ReadMode", "ReadMode", 0 ],
 			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
 			"obj-239" : [ "BonkMinVel", "BonkMinVel", 0 ],
-			"obj-218" : [ "Latence", "Latence", 0 ]
+			"obj-68" : [ "Detune", "Detune", 0 ],
+			"obj-30" : [ "MetroMax", "MetroMax", 0 ],
+			"obj-18" : [ "TriggerMode", "TriggerMode", 0 ],
+			"obj-185" : [ "Pitch", "Pitch", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -9800,9 +9800,16 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "tg.®metro.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/ctrl.components",
-				"patcherrelativepath" : "../../../ctrl.components",
+				"name" : "tg.randomMetro.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.random.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}

@@ -51,7 +51,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "int" ],
-					"patching_rect" : [ 20.0, 158.0, 111.0, 18.0 ],
+					"patching_rect" : [ 20.0, 158.0, 123.0, 18.0 ],
 					"text" : "tg.MuteThispoly1 #1"
 				}
 
@@ -275,21 +275,11 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 20.0, 230.0, 40.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-2",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 20.0, 39.0, 34.0, 18.0 ],
-					"text" : "in~ 1"
 				}
 
 			}
@@ -309,15 +299,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -347,78 +328,6 @@
 					"source" : [ "obj-54", 0 ]
 				}
 
-			}
- ],
-		"parameters" : 		{
-			"obj-1::obj-73" : [ "Direction", "Direction", 0 ],
-			"obj-1::obj-76" : [ "GrainSize", "GrainSize", 0 ],
-			"obj-1::obj-84" : [ "amp", "amp", 0 ],
-			"obj-1::obj-25" : [ "offset", "offset", 0 ],
-			"obj-1::obj-10" : [ "steal", "steal", 0 ],
-			"obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-1::obj-77" : [ "OnsetVar", "OnsetVar", 0 ],
-			"obj-1::obj-68" : [ "buffer", "buffer", 0 ],
-			"obj-1::obj-8" : [ "duration", "duration", 0 ],
-			"obj-1::obj-21" : [ "clear", "clear", 0 ],
-			"obj-1::obj-53" : [ "Release", "Release", 0 ],
-			"obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-1::obj-88" : [ "stretch", "stretch", 0 ],
-			"obj-1::obj-82" : [ "transp", "transp", 0 ],
-			"obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-1::obj-61" : [ "Overlap", "Overlap", 0 ],
-			"obj-1::obj-89" : [ "trig", "trig", 0 ],
-			"obj-1::obj-80" : [ "PRESET[1]", "PRESET", 0 ],
-			"obj-1::obj-54" : [ "Attack", "Attack", 0 ],
-			"obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-1::obj-91" : [ "PitchVar", "PitchVar", 0 ]
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "tg.MuteThispoly1.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.sogsSampler.0.1.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Sogs",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sogsSamplerPreset.json",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
-				"patcherrelativepath" : "../../JSON",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.m.fgraph.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "polySogsSampler1.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Sogs",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sogs~.mxo",
-				"type" : "iLaX"
 			}
  ]
 	}
