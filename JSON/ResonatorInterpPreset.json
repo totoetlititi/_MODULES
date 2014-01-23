@@ -26,7 +26,9 @@
 					"jitterDecay" : [ 0.0 ],
 					"jitterFreq" : [ 0.0 ],
 					"jitterGain" : [ 0.0 ],
-					"mixInterp" : [ 0.0 ],
+					"mixInterp" : [ 1000.0 ],
+					"modelCollName" : [ "<default>" ],
+					"nbVoices" : [ 30.0 ],
 					"transp" : [ 1.0 ],
 					"trig" : [ 0.0 ]
 				}
