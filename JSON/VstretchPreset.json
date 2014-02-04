@@ -1,0 +1,33 @@
+{
+	"pattrstorage" : 	{
+		"name" : "VstretchPreset",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "Default",
+				"data" : 				{
+					"Dry/wet" : [ 100.0 ],
+					"FilterFreq" : [ 1000.0 ],
+					"FilterGain" : [ 0.0 ],
+					"FilterMode" : [ 5.0 ],
+					"FilterQ" : [ 0.3 ],
+					"Follower" : [ 1.0 ],
+					"Ingain" : [ 0.0 ],
+					"Input" : [ 0.0 ],
+					"Interval" : [ 50.0 ],
+					"Max" : [ 5.0 ],
+					"Min" : [ 0.5 ],
+					"Mode" : [ 0.0 ],
+					"Outgain" : [ -127.0 ],
+					"Sharp" : [ 0.0 ],
+					"Vstretch" : [ 0.0 ],
+					"Smooth" : [ 50.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

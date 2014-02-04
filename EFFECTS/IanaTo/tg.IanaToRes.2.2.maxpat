@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 97.0, 44.0, 1265.0, 175.0 ],
+		"rect" : [ 74.0, 44.0, 1260.0, 174.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
@@ -68,7 +68,7 @@
 					"patching_rect" : [ 1192.0, 594.165527, 36.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "PRESET",
+							"parameter_longname" : "PRESET[15]",
 							"parameter_shortname" : "PRESET",
 							"parameter_type" : 1,
 							"parameter_unitstyle" : 0,
@@ -3471,7 +3471,7 @@
 					"presentation_rect" : [ 818.5, 6.0, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Ingain",
+							"parameter_longname" : "Ingain[13]",
 							"parameter_shortname" : "Ingain",
 							"parameter_type" : 0,
 							"parameter_mmin" : -60.0,
@@ -3760,7 +3760,8 @@
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0.03 ],
 							"parameter_unitstyle" : 9,
-							"parameter_units" : "x"
+							"parameter_units" : "%fx",
+							"parameter_exponent" : 3.0
 						}
 
 					}
@@ -4158,7 +4159,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 143.0, 478.165527, 114.0, 40.0 ],
-					"text" : "poly~ tg.resonForIana.poly 32"
+					"text" : "poly~ tg.resonForIana.poly 32 @parallel 1"
 				}
 
 			}
@@ -8023,7 +8024,7 @@
 					"patching_rect" : [ 1083.0, 475.165527, 95.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1158.5, 3.0, 95.0, 27.0 ],
-					"text" : "#1"
+					"text" : "1ian"
 				}
 
 			}
@@ -8351,7 +8352,7 @@
 					"prototypename" : "M4L.live.gain~.V.extended",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Outgain",
+							"parameter_longname" : "Outgain[20]",
 							"parameter_shortname" : "Outgain",
 							"parameter_type" : 0,
 							"parameter_mmin" : -127.0,
@@ -8476,9 +8477,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1080.0, 783.165527, 157.0, 29.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 10, 59, 650, 299 ],
+						"client_rect" : [ 4, 44, 473, 809 ],
 						"parameter_enable" : 0,
-						"storage_rect" : [ 10, 59, 650, 299 ]
+						"storage_rect" : [ 766, 44, 1220, 302 ]
 					}
 ,
 					"text" : "pattrstorage IanaToResPreset @savemode 2 @autowatch 1",
@@ -8559,24 +8560,24 @@
 						"Downsampling" : [ 0.0 ],
 						"Dry/wet" : [ 100.0 ],
 						"FFTsize" : [ 4.0 ],
-						"FilterFreq" : [ 1000.0 ],
+						"FilterFreq" : [ 1166.369751 ],
 						"FilterGain" : [ 0.0 ],
 						"FilterMode" : [ 5.0 ],
 						"FilterQ" : [ 0.3 ],
 						"FirstToSearch" : [ 0.0 ],
 						"HearingThreshold" : [ 1.0 ],
-						"Ingain" : [ 0.0 ],
+						"Ingain" : [ 50.0 ],
 						"InputChannels" : [ 2.0 ],
-						"Jitter" : [ 60.0 ],
+						"Jitter" : [ 20.0 ],
 						"LastToSearch" : [ 1024.0 ],
 						"Level" : [ 0.0 ],
 						"MaxPartials" : [ 40.0 ],
 						"MaxPeaks" : [ 100.0 ],
-						"Metronome" : [ 0.0 ],
+						"Metronome" : [ 1.0 ],
 						"Ordering" : [ 0.0 ],
-						"Outgain" : [ -127.0 ],
+						"Outgain" : [ 0.0 ],
 						"Output" : [ 0.0 ],
-						"Rate" : [ 60.0 ],
+						"Rate" : [ 50.0 ],
 						"RefLevel" : [ 90.0 ],
 						"Send" : [ "nowhere" ],
 						"SendData" : [ 0.0 ],
@@ -8588,20 +8589,20 @@
 						"Width" : [ 2.0 ],
 						"WindowType" : [ 2.0 ],
 						"envCutoff" : [ 50.0 ],
-						"envFactor" : [ 8.0 ],
+						"envFactor" : [ 20.0 ],
 						"envPower" : [ 1.0 ],
 						"envRate" : [ 10.0 ],
 						"envStretch" : [ 1.0 ],
 						"meters-SL" : [ 250, 250 ],
-						"resBwCoeff" : [ 0.03 ],
+						"resBwCoeff" : [ 0.1 ],
 						"resClear" : [ 0.0 ],
-						"resInterp" : [ 0.5 ],
+						"resInterp" : [ 0.0 ],
 						"resStep" : [ 1.0 ],
-						"resVoices" : [ 8.0 ]
+						"resVoices" : [ 32.0 ]
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u880019639"
+					"varname" : "u596018418"
 				}
 
 			}
@@ -8644,7 +8645,7 @@
 					"presentation_rect" : [ 1013.857178, 4.0, 71.642853, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "FilterMode",
+							"parameter_longname" : "FilterMode[15]",
 							"parameter_shortname" : "FilterMode",
 							"parameter_type" : 2,
 							"parameter_enum" : [ "display", "lowpass", "highpass", "bandpass", "bandstop", "peaknotch", "lowshelf", "highshelf", "resonant", "allpass" ],
@@ -8791,7 +8792,7 @@
 					"presentation_rect" : [ 1045.5, 20.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "FilterGain",
+							"parameter_longname" : "FilterGain[15]",
 							"parameter_shortname" : "FilterGain",
 							"parameter_type" : 0,
 							"parameter_mmin" : -80.0,
@@ -8821,7 +8822,7 @@
 					"presentation_rect" : [ 917.5, 20.0, 49.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "FilterFreq",
+							"parameter_longname" : "FilterFreq[15]",
 							"parameter_shortname" : "FilterFreq",
 							"parameter_type" : 0,
 							"parameter_mmax" : 22050.0,
@@ -8850,7 +8851,7 @@
 					"presentation_rect" : [ 981.5, 20.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "FilterQ",
+							"parameter_longname" : "FilterQ[15]",
 							"parameter_shortname" : "FilterQ",
 							"parameter_type" : 0,
 							"parameter_mmax" : 22000.0,
@@ -8881,7 +8882,7 @@
 					"patching_rect" : [ 304.75, 825.5, 132.666626, 55.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 917.5, 37.0, 168.0, 120.0 ],
-					"setfilter" : [ 0, 5, 1, 1, 0, 1000.0, 1.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+					"setfilter" : [ 0, 5, 1, 1, 0, 1166.369751, 1.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 				}
 
 			}
@@ -9577,7 +9578,7 @@
 					"presentation_rect" : [ 1096.5, 3.0, 48.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Dry/wet",
+							"parameter_longname" : "Dry/wet[15]",
 							"parameter_shortname" : "Dry/wet",
 							"parameter_type" : 0,
 							"parameter_mmax" : 100.0,
@@ -10571,7 +10572,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 111.0, 24.832764, 18.0, 18.0 ]
 				}
 
@@ -10583,7 +10584,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 79.0, 24.832764, 18.0, 18.0 ]
 				}
 
@@ -12475,7 +12476,7 @@
 					"presentation_rect" : [ 408.0, 130.0, 64.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Transpose",
+							"parameter_longname" : "Transpose[2]",
 							"parameter_shortname" : "Transpose",
 							"parameter_type" : 0,
 							"parameter_mmin" : -24.0,
@@ -15372,130 +15373,6 @@
 					"source" : [ "obj-99", 0 ]
 				}
 
-			}
- ],
-		"parameters" : 		{
-			"obj-41" : [ "Shift", "Shift", 0 ],
-			"obj-3" : [ "FFTsize", "FFTsize", 0 ],
-			"obj-37" : [ "Level", "Level", 0 ],
-			"obj-50" : [ "Rate", "Rate", 0 ],
-			"obj-81" : [ "Sync", "Sync", 0 ],
-			"obj-150" : [ "envFactor", "envFactor", 0 ],
-			"obj-221" : [ "resBwCoeff", "resBwCoeff", 0 ],
-			"obj-161" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-34" : [ "Output", "Output", 0 ],
-			"obj-63" : [ "PRESET", "PRESET", 0 ],
-			"obj-165" : [ "Outgain", "Outgain", 0 ],
-			"obj-16" : [ "FirstToSearch", "FirstToSearch", 0 ],
-			"obj-36" : [ "MaxPartials", "MaxPartials", 0 ],
-			"obj-27" : [ "RefLevel", "RefLevel", 0 ],
-			"obj-23" : [ "Threshold", "Threshold", 0 ],
-			"obj-222" : [ "envPower", "envPower", 0 ],
-			"obj-231" : [ "resClear", "resClear", 0 ],
-			"obj-160" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-44" : [ "HearingThreshold", "HearingThreshold", 0 ],
-			"obj-19" : [ "MaxPeaks", "MaxPeaks", 0 ],
-			"obj-47" : [ "Send", "Send", 0 ],
-			"obj-26" : [ "Width", "Width", 0 ],
-			"obj-183" : [ "envRate", "envRate", 0 ],
-			"obj-39" : [ "Transpose", "Transpose", 0 ],
-			"obj-203" : [ "resInterp", "resInterp", 0 ],
-			"obj-152" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-123" : [ "InputChannels", "InputChannels", 0 ],
-			"obj-49" : [ "Metronome", "Metronome", 0 ],
-			"obj-66" : [ "SendData", "SendData", 0 ],
-			"obj-31" : [ "Content", "Content", 0 ],
-			"obj-226" : [ "Jitter", "Jitter", 0 ],
-			"obj-7" : [ "WindowType", "WindowType", 0 ],
-			"obj-148" : [ "envStretch", "envStretch", 0 ],
-			"obj-10" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-207" : [ "resStep", "resStep", 0 ],
-			"obj-162" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-9" : [ "Downsampling", "Downsampling", 0 ],
-			"obj-18" : [ "LastToSearch", "LastToSearch", 0 ],
-			"obj-30" : [ "Ordering", "Ordering", 0 ],
-			"obj-74" : [ "SpeedFactor", "SpeedFactor", 0 ],
-			"obj-184" : [ "envCutoff", "envCutoff", 0 ],
-			"obj-233" : [ "Ingain", "Ingain", 0 ],
-			"obj-103" : [ "resVoices", "resVoices", 0 ]
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "IanaToResPreset.json",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
-				"patcherrelativepath" : "../../JSON",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.m.fgraph.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.vstretch.pfft~.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/_Resonators",
-				"patcherrelativepath" : "../_Resonators",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.chant_autobw.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.resonForIana.poly.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/_Resonators",
-				"patcherrelativepath" : "../_Resonators",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "iana~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "vstretch~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "Lmult.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "interleave.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "resonators~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "res-transform.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "deinterleave.mxo",
-				"type" : "iLaX"
 			}
  ]
 	}
