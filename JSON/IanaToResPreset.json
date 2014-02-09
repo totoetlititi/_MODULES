@@ -43,12 +43,19 @@
 					"envPower" : [ 1.0 ],
 					"envRate" : [ 10.0 ],
 					"envStretch" : [ 1.0 ],
-					"meters-SL" : [ 250, 250 ],
 					"resBwCoeff" : [ 0.03 ],
 					"resClear" : [ 0.0 ],
 					"resInterp" : [ 0.5 ],
 					"resStep" : [ 1.0 ],
-					"resVoices" : [ 8.0 ]
+					"resVoices" : [ 8.0 ],
+					"CompRatio" : [ 1.0 ],
+					"CompThresh" : [ 0.0 ],
+					"CompAttack" : [ 10.0 ],
+					"CompRelease" : [ 30.0 ],
+					"CompLookahead" : [ 10.0 ],
+					"CompMakeup" : [ 0.0 ],
+					"CompExpThresh" : [ -16.0 ],
+					"CompExpRatio" : [ 1.0 ]
 				}
 
 			}
