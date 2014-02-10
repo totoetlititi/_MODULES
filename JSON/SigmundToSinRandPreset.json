@@ -13,13 +13,15 @@
 					"FilterMode" : [ 5.0 ],
 					"FilterQ" : [ 0.3 ],
 					"Ingain" : [ 0.0 ],
+					"LinkFilter" : [ 0.0 ],
+					"Noise" : [ 0.0 ],
 					"Outgain" : [ -127.0 ],
 					"PitchMax" : [ 48.0 ],
 					"PitchMin" : [ -48.0 ],
 					"Random" : [ 0.0 ],
 					"Smooth" : [ 5.0 ],
 					"TimeRND" : [ 100.0 ],
-					"TimeRND%" : [ 0.0 ],
+					"TimeRNDp" : [ 0.0 ],
 					"Transp" : [ 0.0 ]
 				}
 
