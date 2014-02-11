@@ -29,6 +29,96 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"frgb" : 0.0,
+					"id" : "obj-15",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 135.0, 452.0, 52.0, 18.0 ],
+					"presentation_rect" : [ 138.0, 455.0, 0.0, 0.0 ],
+					"text" : "Metro"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-16",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 135.0, 467.0, 109.0, 27.0 ],
+					"presentation_rect" : [ 138.0, 470.0, 0.0, 0.0 ],
+					"text" : ";\r1KOA Metro 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"frgb" : 0.0,
+					"id" : "obj-14",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 135.0, 404.0, 52.0, 18.0 ],
+					"presentation_rect" : [ 131.0, 405.0, 0.0, 0.0 ],
+					"text" : "Outgain"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"frgb" : 0.0,
+					"id" : "obj-13",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 135.0, 344.0, 52.0, 18.0 ],
+					"presentation_rect" : [ 138.0, 341.0, 0.0, 0.0 ],
+					"text" : "Init"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"frgb" : 0.0,
+					"id" : "obj-12",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 135.0, 289.0, 52.0, 18.0 ],
+					"text" : "Interface"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-9",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 135.0, 419.0, 109.0, 27.0 ],
+					"text" : ";\r1KOA Outgain 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
@@ -38,8 +128,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 135.0, 350.0, 109.0, 27.0 ],
-					"presentation_rect" : [ 94.0, 404.0, 0.0, 0.0 ],
+					"patching_rect" : [ 135.0, 362.0, 109.0, 27.0 ],
 					"text" : ";\r1KOA.INIT bang"
 				}
 
@@ -570,105 +659,123 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1.1::obj-5::obj-27" : [ "MetroMode", "MetroMode", 1 ],
 			"obj-1.1::obj-5::obj-99" : [ "Smooth", "Smooth", 0 ],
-			"obj-1.1::obj-5::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-1.1::obj-5::obj-122" : [ "FilterInGain", "FilterInGain", 0 ],
 			"obj-7::obj-50" : [ "Play", "Play", 0 ],
-			"obj-1.1::obj-5::obj-98" : [ "Denoise", "Denoise", 0 ],
-			"obj-1.1::obj-5::obj-76" : [ "MetroSyncNb", "MetroSyncNb", 0 ],
-			"obj-1.1::obj-5::obj-113" : [ "FilterInMode", "FilterInMode", 0 ],
-			"obj-1.1::obj-5::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-1.1::obj-5::obj-101" : [ "Freeze", "Freeze", 0 ],
-			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
-			"obj-1.1::obj-5::obj-158" : [ "Shift", "Shift", 0 ],
-			"obj-1.1::obj-5::obj-89" : [ "Grain", "Grain", 0 ],
+			"obj-1.1::obj-5::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-1.1::obj-5::obj-159" : [ "Scale", "Scale", 0 ],
+			"obj-1.1::obj-5::obj-127" : [ "EnvGain", "EnvGain", 0 ],
+			"obj-1.1::obj-5::obj-122" : [ "FilterInGain", "FilterInGain", 0 ],
+			"obj-1.1::obj-5::obj-8" : [ "Ingain", "Ingain", 0 ],
 			"obj-1.1::obj-5::obj-33" : [ "MetroSyncUnit", "MetroSyncUnit", 0 ],
-			"obj-1.1::obj-5::obj-124" : [ "FilterInQ", "FilterInQ", 0 ],
-			"obj-1.1::obj-5::obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
+			"obj-1.1::obj-5::obj-49" : [ "Stereo", "Stereo", 0 ],
+			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
+			"obj-1.1::obj-5::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-1.1::obj-5::obj-113" : [ "FilterInMode", "FilterInMode", 0 ],
 			"obj-1.1::obj-5::obj-26" : [ "LinkSmooth", "LinkSmooth", 0 ],
 			"obj-1.1::obj-5::obj-24" : [ "MetroTime", "MetroTime", 0 ],
-			"obj-1.1::obj-5::obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
-			"obj-1.1::obj-5::obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
+			"obj-1.1::obj-5::obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-1.1::obj-5::obj-124" : [ "FilterInQ", "FilterInQ", 0 ],
 			"obj-1.1::obj-5::obj-6" : [ "Metro", "Metro", 0 ],
-			"obj-1.1::obj-5::obj-123" : [ "FilterInFreq", "FilterInFreq", 0 ],
-			"obj-1.1::obj-5::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-1.1::obj-5::obj-49" : [ "Stereo", "Stereo", 0 ],
-			"obj-1.1::obj-5::obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-1.1::obj-5::obj-159" : [ "Scale", "Scale", 0 ],
+			"obj-1.1::obj-5::obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
+			"obj-1.1::obj-5::obj-129" : [ "EnvFadeOut", "EnvFadeOut", 0 ],
+			"obj-1.1::obj-5::obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-1.1::obj-5::obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-1.1::obj-5::obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-1.1::obj-5::obj-27" : [ "MetroMode", "MetroMode", 1 ],
+			"obj-1.1::obj-5::obj-128" : [ "EnvFadeIn", "EnvFadeIn", 0 ],
+			"obj-1.1::obj-5::obj-158" : [ "Shift", "Shift", 0 ],
 			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
-			"obj-1.1::obj-5::obj-14" : [ "Outgain", "Outgain", 0 ]
+			"obj-1.1::obj-5::obj-98" : [ "Denoise", "Denoise", 0 ],
+			"obj-1.1::obj-5::obj-90" : [ "EnvFol", "EnvFol", 1 ],
+			"obj-1.1::obj-5::obj-123" : [ "FilterInFreq", "FilterInFreq", 0 ],
+			"obj-1.1::obj-5::obj-89" : [ "Grain", "Grain", 0 ],
+			"obj-1.1::obj-5::obj-76" : [ "MetroSyncNb", "MetroSyncNb", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "tg.FreezeKoala.1.2.Poly.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/FreezeKoala",
+				"bootpath" : "/Users/production/Desktop/MONODRAME/LIBRARY/TG.tools/_MODULES/EFFECTS/FreezeKoala",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.FreezeKoala.1.2.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/FreezeKoala",
+				"bootpath" : "/Users/production/Desktop/MONODRAME/LIBRARY/TG.tools/_MODULES/EFFECTS/FreezeKoala",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../../Applications/Max 6.1/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.freeze-1i.1.2.pfft.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/FreezeKoala",
+				"bootpath" : "/Users/production/Desktop/MONODRAME/LIBRARY/TG.tools/_MODULES/EFFECTS/FreezeKoala",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.freezeKoalaModuleForFFT.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/FreezeKoala",
+				"bootpath" : "/Users/production/Desktop/MONODRAME/LIBRARY/TG.tools/_MODULES/EFFECTS/FreezeKoala",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "FreezeKoalaPreset.json",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"bootpath" : "/Users/production/Desktop/MONODRAME/LIBRARY/TG.tools/_MODULES/JSON",
 				"patcherrelativepath" : "../../JSON",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.fgraph.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/production/Desktop/MONODRAME/LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/production/Desktop/MONODRAME/LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "tg.atodb.maxpat",
+				"bootpath" : "/Users/production/Desktop/MONODRAME/LIBRARY/TG.tools/ctrl.components",
+				"patcherrelativepath" : "../../../ctrl.components",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.dbtoa.maxpat",
+				"bootpath" : "/Users/production/Desktop/MONODRAME/LIBRARY/TG.tools/ctrl.components",
+				"patcherrelativepath" : "../../../ctrl.components",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "tg.MuteThispoly2.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/production/Desktop/MONODRAME/LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "FMA.SoundPlayer~.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/IRCAM/ForumMaxApps-All/Utilities",
+				"bootpath" : "/Users/production/Desktop/MONODRAME/LIBRARY/IRCAM/ForumMaxApps-All/Utilities",
 				"patcherrelativepath" : "../../../../IRCAM/ForumMaxApps-All/Utilities",
 				"type" : "JSON",
 				"implicit" : 1
