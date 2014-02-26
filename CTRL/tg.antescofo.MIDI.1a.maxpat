@@ -8,9 +8,9 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 222.0, 44.0, 1403.0, 946.0 ],
+		"rect" : [ 413.0, 355.0, 1403.0, 1374.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-		"bglocked" : 1,
+		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 10.0,
 		"default_fontface" : 0,
@@ -29,6 +29,36 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-13",
+					"linecount" : 5,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 695.5, 582.5, 50.0, 60.0 ],
+					"text" : "gotocue ms271________Iana________"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 695.5, 450.0, 75.0, 18.0 ],
+					"text" : "r goto_label"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
@@ -691,7 +721,7 @@
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
 									"id" : "obj-15",
-									"items" : [ "ms72_____UltraLow&High____", ",", "ms81_____Mute_High____", ",", "ms87____Mute_Low___", ",", "ms195____UltraLow___", ",", "ms201____UltraHigh___", ",", "ms206_____UltraHigh___", ",", "ms228_____Stop_UltraLow&High___", ",", "ms271________Iana________", ",", "ms293________IanaOff________", ",", "ms295____UltraLowHigh___", ",", "ms305_____Stop_UltraLow___", ",", "ms307_____Stop_UltraHigh__Tape1___", ",", "m321_____UltraHigh&Low", ",", "ms325_____Pigeon____", ",", "ms336_____TapePigeon_1____", ",", "ms343_____StopTout____", ",", "ms354________Iana________", ",", "ms360________IanaOff__Tape3______", ",", "ms381_____UltraHigh&Low____", ",", "ms381_____Pigeon____", ",", "ms398_____StopTout____", ",", "ms400________Iana________", ",", "ms414________IanaOff__Tape5______", ",", "ms426_____Orchestration____", ",", "ms438_____Orchestration_STOP___Tape6_____", ",", "ms455_____Orchestration____", ",", "ms473____Orchestration_STOP____Iana________", ",", "ms487________IanaOff___Tape7_____", ",", "ms488________IanaON________", ",", "ms493________IanaOff________", ",", "ms558_____Orchestration____", ",", "ms582____Orchestration_STOP__RenforceLow&High______", ",", "ms604____Iana_ON________", ",", "ms645________IanaOff__BiqX_Off___Tape8___", ",", "ms676_____Orchestration____", ",", "ms697____Orchestration_STOP_________", ",", "ms746_____UltraHigh&Low____", ",", "ms754_____Pigeon____", ",", "ms769_____TapePigeon____", ",", "ms771_____StopTout____", ",", "ms778_____UltraHighLow&Pigeon____", ",", "ms782_____StopTout___Tape11____", ",", "ms915______Tape12________", ",", "ms946______Tape13________", ",", "ms960_____Orchestration____", ",", "ms1032________Iana________", ",", "ms1051________IanaOff________" ],
+									"items" : [ "ms72_____UltraLow&High____", ",", "ms81_____Mute_High____", ",", "ms87____Mute_Low___", ",", "ms271________Iana________", ",", "ms293________IanaOff________", ",", "ms310______Tape1______", ",", "ms321_____UltraHigh&Low", ",", "ms325_____Pigeon____", ",", "ms336_____TapePigeon_1____", ",", "ms343_____StopTout____", ",", "ms354________Iana________", ",", "ms360________IanaOff__Tape3______", ",", "ms381_____UltraHigh&Low____", ",", "ms386_____Pigeon2____", ",", "ms398_____StopTout____", ",", "ms400________Iana________", ",", "ms413________IanaOff__Tape5______", ",", "ms426_____Orchestration____", ",", "ms438_____Orchestration_STOP___Tape6_____", ",", "ms455_____Orchestration____", ",", "ms473____Orchestration_STOP____Iana________", ",", "ms486________IanaOff___Tape7_____", ",", "ms488________IanaON________", ",", "ms493________IanaOff________", ",", "ms558_____Orchestration____", ",", "ms583____Orchestration_STOP__RenforceLow&High______", ",", "ms604____Iana_ON________", ",", "ms645________IanaOff__BiqX_Off_______", ",", "ms648_________Tape8a_____", ",", "ms658_________Tape8b_____", ",", "ms676_____Orchestration____", ",", "ms697____Orchestration_STOP_________", ",", "ms746_____UltraHigh&Low____", ",", "ms754_____Pigeon_Conv____", ",", "ms769_____TapePigeon3____", ",", "ms771_____StopTout____", ",", "ms778_____UltraHighLow_Pigeon4_Conv___", ",", "ms783_____StopTout______", ",", "ms787______Tape11a____", ",", "ms801_______Tape11b____", ",", "ms915______Tape12________", ",", "ms947______Tape13a________", ",", "ms952______Tape13b________", ",", "ms962_____Orchestration____", ",", "ms1032________Iana________", ",", "ms1052________IanaOff________" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -720,7 +750,7 @@
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
 									"id" : "obj-163",
-									"items" : [ "ms72_____UltraLow&High____", ",", "ms81_____Mute_High____", ",", "ms87____Mute_Low___", ",", "ms195____UltraLow___", ",", "ms201____UltraHigh___", ",", "ms206_____UltraHigh___", ",", "ms228_____Stop_UltraLow&High___", ",", "ms271________Iana________", ",", "ms293________IanaOff________", ",", "ms295____UltraLowHigh___", ",", "ms305_____Stop_UltraLow___", ",", "ms307_____Stop_UltraHigh__Tape1___", ",", "m321_____UltraHigh&Low", ",", "ms325_____Pigeon____", ",", "ms336_____TapePigeon_1____", ",", "ms343_____StopTout____", ",", "ms354________Iana________", ",", "ms360________IanaOff__Tape3______", ",", "ms381_____UltraHigh&Low____", ",", "ms381_____Pigeon____", ",", "ms398_____StopTout____", ",", "ms400________Iana________", ",", "ms414________IanaOff__Tape5______", ",", "ms426_____Orchestration____", ",", "ms438_____Orchestration_STOP___Tape6_____", ",", "ms455_____Orchestration____", ",", "ms473____Orchestration_STOP____Iana________", ",", "ms487________IanaOff___Tape7_____", ",", "ms488________IanaON________", ",", "ms493________IanaOff________", ",", "ms558_____Orchestration____", ",", "ms582____Orchestration_STOP__RenforceLow&High______", ",", "ms604____Iana_ON________", ",", "ms645________IanaOff__BiqX_Off___Tape8___", ",", "ms676_____Orchestration____", ",", "ms697____Orchestration_STOP_________", ",", "ms746_____UltraHigh&Low____", ",", "ms754_____Pigeon____", ",", "ms769_____TapePigeon____", ",", "ms771_____StopTout____", ",", "ms778_____UltraHighLow&Pigeon____", ",", "ms782_____StopTout___Tape11____", ",", "ms915______Tape12________", ",", "ms946______Tape13________", ",", "ms960_____Orchestration____", ",", "ms1032________Iana________", ",", "ms1051________IanaOff________" ],
+									"items" : [ "ms72_____UltraLow&High____", ",", "ms81_____Mute_High____", ",", "ms87____Mute_Low___", ",", "ms271________Iana________", ",", "ms293________IanaOff________", ",", "ms310______Tape1______", ",", "ms321_____UltraHigh&Low", ",", "ms325_____Pigeon____", ",", "ms336_____TapePigeon_1____", ",", "ms343_____StopTout____", ",", "ms354________Iana________", ",", "ms360________IanaOff__Tape3______", ",", "ms381_____UltraHigh&Low____", ",", "ms386_____Pigeon2____", ",", "ms398_____StopTout____", ",", "ms400________Iana________", ",", "ms413________IanaOff__Tape5______", ",", "ms426_____Orchestration____", ",", "ms438_____Orchestration_STOP___Tape6_____", ",", "ms455_____Orchestration____", ",", "ms473____Orchestration_STOP____Iana________", ",", "ms486________IanaOff___Tape7_____", ",", "ms488________IanaON________", ",", "ms493________IanaOff________", ",", "ms558_____Orchestration____", ",", "ms583____Orchestration_STOP__RenforceLow&High______", ",", "ms604____Iana_ON________", ",", "ms645________IanaOff__BiqX_Off_______", ",", "ms648_________Tape8a_____", ",", "ms658_________Tape8b_____", ",", "ms676_____Orchestration____", ",", "ms697____Orchestration_STOP_________", ",", "ms746_____UltraHigh&Low____", ",", "ms754_____Pigeon_Conv____", ",", "ms769_____TapePigeon3____", ",", "ms771_____StopTout____", ",", "ms778_____UltraHighLow_Pigeon4_Conv___", ",", "ms783_____StopTout______", ",", "ms787______Tape11a____", ",", "ms801_______Tape11b____", ",", "ms915______Tape12________", ",", "ms947______Tape13a________", ",", "ms952______Tape13b________", ",", "ms962_____Orchestration____", ",", "ms1032________Iana________", ",", "ms1052________IanaOff________" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -1494,13 +1524,14 @@
 					"fontsize" : 10.0,
 					"frgb" : 0.0,
 					"id" : "obj-197",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1116.5, 24.0, 144.0, 18.0 ],
+					"patching_rect" : [ 1116.5, 24.0, 144.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 477.0, 272.0, 144.0, 18.0 ],
-					"text" : "7) KEYBOARD Shortcut >>>",
+					"presentation_rect" : [ 477.0, 299.0, 149.0, 18.0 ],
+					"text" : "7) KEYBOARD Shortcut   >>>",
 					"textcolor" : [ 1.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -1538,7 +1569,6 @@
 					"fontname" : "Arial Italic",
 					"fontsize" : 9.0,
 					"frgb" : 0.0,
-					"hidden" : 1,
 					"id" : "obj-189",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -1555,7 +1585,6 @@
 					"fontname" : "Arial Italic",
 					"fontsize" : 9.0,
 					"frgb" : 0.0,
-					"hidden" : 1,
 					"id" : "obj-188",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -1572,7 +1601,6 @@
 					"fontname" : "Arial Italic",
 					"fontsize" : 9.0,
 					"frgb" : 0.0,
-					"hidden" : 1,
 					"id" : "obj-185",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -1701,7 +1729,7 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-163",
-					"items" : [ "ms72_____UltraLow&High____", ",", "ms81_____Mute_High____", ",", "ms87____Mute_Low___", ",", "ms195____UltraLow___", ",", "ms201____UltraHigh___", ",", "ms206_____UltraHigh___", ",", "ms228_____Stop_UltraLow&High___", ",", "ms271________Iana________", ",", "ms293________IanaOff________", ",", "ms295____UltraLowHigh___", ",", "ms305_____Stop_UltraLow___", ",", "ms307_____Stop_UltraHigh__Tape1___", ",", "m321_____UltraHigh&Low", ",", "ms325_____Pigeon____", ",", "ms336_____TapePigeon_1____", ",", "ms343_____StopTout____", ",", "ms354________Iana________", ",", "ms360________IanaOff__Tape3______", ",", "ms381_____UltraHigh&Low____", ",", "ms381_____Pigeon____", ",", "ms398_____StopTout____", ",", "ms400________Iana________", ",", "ms414________IanaOff__Tape5______", ",", "ms426_____Orchestration____", ",", "ms438_____Orchestration_STOP___Tape6_____", ",", "ms455_____Orchestration____", ",", "ms473____Orchestration_STOP____Iana________", ",", "ms487________IanaOff___Tape7_____", ",", "ms488________IanaON________", ",", "ms493________IanaOff________", ",", "ms558_____Orchestration____", ",", "ms582____Orchestration_STOP__RenforceLow&High______", ",", "ms604____Iana_ON________", ",", "ms645________IanaOff__BiqX_Off___Tape8___", ",", "ms676_____Orchestration____", ",", "ms697____Orchestration_STOP_________", ",", "ms746_____UltraHigh&Low____", ",", "ms754_____Pigeon____", ",", "ms769_____TapePigeon____", ",", "ms771_____StopTout____", ",", "ms778_____UltraHighLow&Pigeon____", ",", "ms782_____StopTout___Tape11____", ",", "ms915______Tape12________", ",", "ms946______Tape13________", ",", "ms960_____Orchestration____", ",", "ms1032________Iana________", ",", "ms1051________IanaOff________" ],
+					"items" : [ "ms72_____UltraLow&High____", ",", "ms81_____Mute_High____", ",", "ms87____Mute_Low___", ",", "ms271________Iana________", ",", "ms293________IanaOff________", ",", "ms310______Tape1______", ",", "ms321_____UltraHigh&Low", ",", "ms325_____Pigeon____", ",", "ms336_____TapePigeon_1____", ",", "ms343_____StopTout____", ",", "ms354________Iana________", ",", "ms360________IanaOff__Tape3______", ",", "ms381_____UltraHigh&Low____", ",", "ms386_____Pigeon2____", ",", "ms398_____StopTout____", ",", "ms400________Iana________", ",", "ms413________IanaOff__Tape5______", ",", "ms426_____Orchestration____", ",", "ms438_____Orchestration_STOP___Tape6_____", ",", "ms455_____Orchestration____", ",", "ms473____Orchestration_STOP____Iana________", ",", "ms486________IanaOff___Tape7_____", ",", "ms488________IanaON________", ",", "ms493________IanaOff________", ",", "ms558_____Orchestration____", ",", "ms583____Orchestration_STOP__RenforceLow&High______", ",", "ms604____Iana_ON________", ",", "ms645________IanaOff__BiqX_Off_______", ",", "ms648_________Tape8a_____", ",", "ms658_________Tape8b_____", ",", "ms676_____Orchestration____", ",", "ms697____Orchestration_STOP_________", ",", "ms746_____UltraHigh&Low____", ",", "ms754_____Pigeon_Conv____", ",", "ms769_____TapePigeon3____", ",", "ms771_____StopTout____", ",", "ms778_____UltraHighLow_Pigeon4_Conv___", ",", "ms783_____StopTout______", ",", "ms787______Tape11a____", ",", "ms801_______Tape11b____", ",", "ms915______Tape12________", ",", "ms947______Tape13a________", ",", "ms952______Tape13b________", ",", "ms962_____Orchestration____", ",", "ms1032________Iana________", ",", "ms1052________IanaOff________" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1744,7 +1772,7 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-153",
-					"items" : [ "ms72_____UltraLow&High____", ",", "ms81_____Mute_High____", ",", "ms87____Mute_Low___", ",", "ms195____UltraLow___", ",", "ms201____UltraHigh___", ",", "ms206_____UltraHigh___", ",", "ms228_____Stop_UltraLow&High___", ",", "ms271________Iana________", ",", "ms293________IanaOff________", ",", "ms295____UltraLowHigh___", ",", "ms305_____Stop_UltraLow___", ",", "ms307_____Stop_UltraHigh__Tape1___", ",", "m321_____UltraHigh&Low", ",", "ms325_____Pigeon____", ",", "ms336_____TapePigeon_1____", ",", "ms343_____StopTout____", ",", "ms354________Iana________", ",", "ms360________IanaOff__Tape3______", ",", "ms381_____UltraHigh&Low____", ",", "ms381_____Pigeon____", ",", "ms398_____StopTout____", ",", "ms400________Iana________", ",", "ms414________IanaOff__Tape5______", ",", "ms426_____Orchestration____", ",", "ms438_____Orchestration_STOP___Tape6_____", ",", "ms455_____Orchestration____", ",", "ms473____Orchestration_STOP____Iana________", ",", "ms487________IanaOff___Tape7_____", ",", "ms488________IanaON________", ",", "ms493________IanaOff________", ",", "ms558_____Orchestration____", ",", "ms582____Orchestration_STOP__RenforceLow&High______", ",", "ms604____Iana_ON________", ",", "ms645________IanaOff__BiqX_Off___Tape8___", ",", "ms676_____Orchestration____", ",", "ms697____Orchestration_STOP_________", ",", "ms746_____UltraHigh&Low____", ",", "ms754_____Pigeon____", ",", "ms769_____TapePigeon____", ",", "ms771_____StopTout____", ",", "ms778_____UltraHighLow&Pigeon____", ",", "ms782_____StopTout___Tape11____", ",", "ms915______Tape12________", ",", "ms946______Tape13________", ",", "ms960_____Orchestration____", ",", "ms1032________Iana________", ",", "ms1051________IanaOff________" ],
+					"items" : [ "ms72_____UltraLow&High____", ",", "ms81_____Mute_High____", ",", "ms87____Mute_Low___", ",", "ms271________Iana________", ",", "ms293________IanaOff________", ",", "ms310______Tape1______", ",", "ms321_____UltraHigh&Low", ",", "ms325_____Pigeon____", ",", "ms336_____TapePigeon_1____", ",", "ms343_____StopTout____", ",", "ms354________Iana________", ",", "ms360________IanaOff__Tape3______", ",", "ms381_____UltraHigh&Low____", ",", "ms386_____Pigeon2____", ",", "ms398_____StopTout____", ",", "ms400________Iana________", ",", "ms413________IanaOff__Tape5______", ",", "ms426_____Orchestration____", ",", "ms438_____Orchestration_STOP___Tape6_____", ",", "ms455_____Orchestration____", ",", "ms473____Orchestration_STOP____Iana________", ",", "ms486________IanaOff___Tape7_____", ",", "ms488________IanaON________", ",", "ms493________IanaOff________", ",", "ms558_____Orchestration____", ",", "ms583____Orchestration_STOP__RenforceLow&High______", ",", "ms604____Iana_ON________", ",", "ms645________IanaOff__BiqX_Off_______", ",", "ms648_________Tape8a_____", ",", "ms658_________Tape8b_____", ",", "ms676_____Orchestration____", ",", "ms697____Orchestration_STOP_________", ",", "ms746_____UltraHigh&Low____", ",", "ms754_____Pigeon_Conv____", ",", "ms769_____TapePigeon3____", ",", "ms771_____StopTout____", ",", "ms778_____UltraHighLow_Pigeon4_Conv___", ",", "ms783_____StopTout______", ",", "ms787______Tape11a____", ",", "ms801_______Tape11b____", ",", "ms915______Tape12________", ",", "ms947______Tape13a________", ",", "ms952______Tape13b________", ",", "ms962_____Orchestration____", ",", "ms1032________Iana________", ",", "ms1052________IanaOff________" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1897,7 +1925,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 683.5, 392.5, 88.0, 18.0 ],
+					"patching_rect" : [ 683.5, 353.0, 88.0, 18.0 ],
 					"text" : "prepend symbol"
 				}
 
@@ -1907,13 +1935,13 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-28",
-					"items" : [ "ms72_____UltraLow&High____", ",", "ms81_____Mute_High____", ",", "ms87____Mute_Low___", ",", "ms195____UltraLow___", ",", "ms201____UltraHigh___", ",", "ms206_____UltraHigh___", ",", "ms228_____Stop_UltraLow&High___", ",", "ms271________Iana________", ",", "ms293________IanaOff________", ",", "ms295____UltraLowHigh___", ",", "ms305_____Stop_UltraLow___", ",", "ms307_____Stop_UltraHigh__Tape1___", ",", "m321_____UltraHigh&Low", ",", "ms325_____Pigeon____", ",", "ms336_____TapePigeon_1____", ",", "ms343_____StopTout____", ",", "ms354________Iana________", ",", "ms360________IanaOff__Tape3______", ",", "ms381_____UltraHigh&Low____", ",", "ms381_____Pigeon____", ",", "ms398_____StopTout____", ",", "ms400________Iana________", ",", "ms414________IanaOff__Tape5______", ",", "ms426_____Orchestration____", ",", "ms438_____Orchestration_STOP___Tape6_____", ",", "ms455_____Orchestration____", ",", "ms473____Orchestration_STOP____Iana________", ",", "ms487________IanaOff___Tape7_____", ",", "ms488________IanaON________", ",", "ms493________IanaOff________", ",", "ms558_____Orchestration____", ",", "ms582____Orchestration_STOP__RenforceLow&High______", ",", "ms604____Iana_ON________", ",", "ms645________IanaOff__BiqX_Off___Tape8___", ",", "ms676_____Orchestration____", ",", "ms697____Orchestration_STOP_________", ",", "ms746_____UltraHigh&Low____", ",", "ms754_____Pigeon____", ",", "ms769_____TapePigeon____", ",", "ms771_____StopTout____", ",", "ms778_____UltraHighLow&Pigeon____", ",", "ms782_____StopTout___Tape11____", ",", "ms915______Tape12________", ",", "ms946______Tape13________", ",", "ms960_____Orchestration____", ",", "ms1032________Iana________", ",", "ms1051________IanaOff________" ],
+					"items" : [ "ms72_____UltraLow&High____", ",", "ms81_____Mute_High____", ",", "ms87____Mute_Low___", ",", "ms271________Iana________", ",", "ms293________IanaOff________", ",", "ms310______Tape1______", ",", "ms321_____UltraHigh&Low", ",", "ms325_____Pigeon____", ",", "ms336_____TapePigeon_1____", ",", "ms343_____StopTout____", ",", "ms354________Iana________", ",", "ms360________IanaOff__Tape3______", ",", "ms381_____UltraHigh&Low____", ",", "ms386_____Pigeon2____", ",", "ms398_____StopTout____", ",", "ms400________Iana________", ",", "ms413________IanaOff__Tape5______", ",", "ms426_____Orchestration____", ",", "ms438_____Orchestration_STOP___Tape6_____", ",", "ms455_____Orchestration____", ",", "ms473____Orchestration_STOP____Iana________", ",", "ms486________IanaOff___Tape7_____", ",", "ms488________IanaON________", ",", "ms493________IanaOff________", ",", "ms558_____Orchestration____", ",", "ms583____Orchestration_STOP__RenforceLow&High______", ",", "ms604____Iana_ON________", ",", "ms645________IanaOff__BiqX_Off_______", ",", "ms648_________Tape8a_____", ",", "ms658_________Tape8b_____", ",", "ms676_____Orchestration____", ",", "ms697____Orchestration_STOP_________", ",", "ms746_____UltraHigh&Low____", ",", "ms754_____Pigeon_Conv____", ",", "ms769_____TapePigeon3____", ",", "ms771_____StopTout____", ",", "ms778_____UltraHighLow_Pigeon4_Conv___", ",", "ms783_____StopTout______", ",", "ms787______Tape11a____", ",", "ms801_______Tape11b____", ",", "ms915______Tape12________", ",", "ms947______Tape13a________", ",", "ms952______Tape13b________", ",", "ms962_____Orchestration____", ",", "ms1032________Iana________", ",", "ms1052________IanaOff________" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 683.5, 416.0, 100.0, 18.0 ]
+					"patching_rect" : [ 683.5, 376.5, 100.0, 18.0 ]
 				}
 
 			}
@@ -1931,7 +1959,7 @@
 					"patching_rect" : [ 292.0, 779.0, 221.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 45.5, 111.0, 413.0, 18.0 ],
-					"text" : "Next : ms1032________Iana________"
+					"text" : "Next : ms321_____UltraHigh&Low"
 				}
 
 			}
@@ -1972,7 +2000,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 649.0, 321.0, 95.0, 18.0 ],
+					"patching_rect" : [ 649.0, 290.0, 95.0, 18.0 ],
 					"text" : "r ant_menu_cues"
 				}
 
@@ -1987,7 +2015,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 683.5, 444.5, 111.0, 27.0 ],
+					"patching_rect" : [ 683.5, 405.0, 111.0, 27.0 ],
 					"text" : "set $1, clearchecks, checkitem $1 1"
 				}
 
@@ -2023,7 +2051,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1116.5, 42.0, 40.0, 16.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 629.0, 272.0, 48.0, 34.0 ],
+					"presentation_rect" : [ 629.0, 291.0, 48.0, 34.0 ],
 					"text" : "OFF",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"texton" : "ON",
@@ -2465,7 +2493,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 683.5, 350.5, 70.0, 18.0 ],
+					"patching_rect" : [ 683.5, 311.0, 70.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 168.0, 0.0, 70.0, 18.0 ],
 					"text" : "Go to Cues :",
@@ -2541,7 +2569,7 @@
 					"framecolor" : [ 0.827451, 0.827451, 0.827451, 1.0 ],
 					"hltcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 					"id" : "obj-110",
-					"items" : [ "ms72_____UltraLow&High____", ",", "ms81_____Mute_High____", ",", "ms87____Mute_Low___", ",", "ms195____UltraLow___", ",", "ms201____UltraHigh___", ",", "ms206_____UltraHigh___", ",", "ms228_____Stop_UltraLow&High___", ",", "ms271________Iana________", ",", "ms293________IanaOff________", ",", "ms295____UltraLowHigh___", ",", "ms305_____Stop_UltraLow___", ",", "ms307_____Stop_UltraHigh__Tape1___", ",", "m321_____UltraHigh&Low", ",", "ms325_____Pigeon____", ",", "ms336_____TapePigeon_1____", ",", "ms343_____StopTout____", ",", "ms354________Iana________", ",", "ms360________IanaOff__Tape3______", ",", "ms381_____UltraHigh&Low____", ",", "ms381_____Pigeon____", ",", "ms398_____StopTout____", ",", "ms400________Iana________", ",", "ms414________IanaOff__Tape5______", ",", "ms426_____Orchestration____", ",", "ms438_____Orchestration_STOP___Tape6_____", ",", "ms455_____Orchestration____", ",", "ms473____Orchestration_STOP____Iana________", ",", "ms487________IanaOff___Tape7_____", ",", "ms488________IanaON________", ",", "ms493________IanaOff________", ",", "ms558_____Orchestration____", ",", "ms582____Orchestration_STOP__RenforceLow&High______", ",", "ms604____Iana_ON________", ",", "ms645________IanaOff__BiqX_Off___Tape8___", ",", "ms676_____Orchestration____", ",", "ms697____Orchestration_STOP_________", ",", "ms746_____UltraHigh&Low____", ",", "ms754_____Pigeon____", ",", "ms769_____TapePigeon____", ",", "ms771_____StopTout____", ",", "ms778_____UltraHighLow&Pigeon____", ",", "ms782_____StopTout___Tape11____", ",", "ms915______Tape12________", ",", "ms946______Tape13________", ",", "ms960_____Orchestration____", ",", "ms1032________Iana________", ",", "ms1051________IanaOff________" ],
+					"items" : [ "ms72_____UltraLow&High____", ",", "ms81_____Mute_High____", ",", "ms87____Mute_Low___", ",", "ms271________Iana________", ",", "ms293________IanaOff________", ",", "ms310______Tape1______", ",", "ms321_____UltraHigh&Low", ",", "ms325_____Pigeon____", ",", "ms336_____TapePigeon_1____", ",", "ms343_____StopTout____", ",", "ms354________Iana________", ",", "ms360________IanaOff__Tape3______", ",", "ms381_____UltraHigh&Low____", ",", "ms386_____Pigeon2____", ",", "ms398_____StopTout____", ",", "ms400________Iana________", ",", "ms413________IanaOff__Tape5______", ",", "ms426_____Orchestration____", ",", "ms438_____Orchestration_STOP___Tape6_____", ",", "ms455_____Orchestration____", ",", "ms473____Orchestration_STOP____Iana________", ",", "ms486________IanaOff___Tape7_____", ",", "ms488________IanaON________", ",", "ms493________IanaOff________", ",", "ms558_____Orchestration____", ",", "ms583____Orchestration_STOP__RenforceLow&High______", ",", "ms604____Iana_ON________", ",", "ms645________IanaOff__BiqX_Off_______", ",", "ms648_________Tape8a_____", ",", "ms658_________Tape8b_____", ",", "ms676_____Orchestration____", ",", "ms697____Orchestration_STOP_________", ",", "ms746_____UltraHigh&Low____", ",", "ms754_____Pigeon_Conv____", ",", "ms769_____TapePigeon3____", ",", "ms771_____StopTout____", ",", "ms778_____UltraHighLow_Pigeon4_Conv___", ",", "ms783_____StopTout______", ",", "ms787______Tape11a____", ",", "ms801_______Tape11b____", ",", "ms915______Tape12________", ",", "ms947______Tape13a________", ",", "ms952______Tape13b________", ",", "ms962_____Orchestration____", ",", "ms1032________Iana________", ",", "ms1052________IanaOff________" ],
 					"labelclick" : 1,
 					"maxclass" : "umenu",
 					"numinlets" : 1,
@@ -2956,7 +2984,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 683.5, 368.5, 75.0, 18.0 ],
+					"patching_rect" : [ 683.5, 329.0, 75.0, 18.0 ],
 					"text" : "r cue_label"
 				}
 
@@ -2971,14 +2999,14 @@
 					"fontsize" : 12.0,
 					"hint" : "Choose a score to load",
 					"id" : "obj-27",
-					"items" : [ "Monodrame.asco", ",", "Monodrame.asco copy", ",", "Section02-old.asco", ",", "Section02.asco", ",", "Section02.asco copy", ",", "test.asco" ],
+					"items" : [ "Monodrame.asco", ",", "MonodrameSimulation.asco", ",", "ZeCueInScore.txt" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1140.5, 542.5, 114.0, 20.0 ],
-					"prefix" : "Macintosh HD:/Users/production/Desktop/MONODRAME/PATCH/ANTESCOFO/",
+					"prefix" : "Macintosh HD:/Users/production/Desktop/MONODRAME/CONCERT/ANTESCOFO/",
 					"presentation" : 1,
 					"presentation_rect" : [ 477.0, 112.0, 200.0, 20.0 ],
 					"types" : "TEXT"
@@ -3007,7 +3035,7 @@
 					"fontsize" : 12.0,
 					"hint" : "Select a cue",
 					"id" : "obj-33",
-					"items" : [ "ms72_____UltraLow&High____", ",", "ms81_____Mute_High____", ",", "ms87____Mute_Low___", ",", "ms195____UltraLow___", ",", "ms201____UltraHigh___", ",", "ms206_____UltraHigh___", ",", "ms228_____Stop_UltraLow&High___", ",", "ms271________Iana________", ",", "ms293________IanaOff________", ",", "ms295____UltraLowHigh___", ",", "ms305_____Stop_UltraLow___", ",", "ms307_____Stop_UltraHigh__Tape1___", ",", "m321_____UltraHigh&Low", ",", "ms325_____Pigeon____", ",", "ms336_____TapePigeon_1____", ",", "ms343_____StopTout____", ",", "ms354________Iana________", ",", "ms360________IanaOff__Tape3______", ",", "ms381_____UltraHigh&Low____", ",", "ms381_____Pigeon____", ",", "ms398_____StopTout____", ",", "ms400________Iana________", ",", "ms414________IanaOff__Tape5______", ",", "ms426_____Orchestration____", ",", "ms438_____Orchestration_STOP___Tape6_____", ",", "ms455_____Orchestration____", ",", "ms473____Orchestration_STOP____Iana________", ",", "ms487________IanaOff___Tape7_____", ",", "ms488________IanaON________", ",", "ms493________IanaOff________", ",", "ms558_____Orchestration____", ",", "ms582____Orchestration_STOP__RenforceLow&High______", ",", "ms604____Iana_ON________", ",", "ms645________IanaOff__BiqX_Off___Tape8___", ",", "ms676_____Orchestration____", ",", "ms697____Orchestration_STOP_________", ",", "ms746_____UltraHigh&Low____", ",", "ms754_____Pigeon____", ",", "ms769_____TapePigeon____", ",", "ms771_____StopTout____", ",", "ms778_____UltraHighLow&Pigeon____", ",", "ms782_____StopTout___Tape11____", ",", "ms915______Tape12________", ",", "ms946______Tape13________", ",", "ms960_____Orchestration____", ",", "ms1032________Iana________", ",", "ms1051________IanaOff________" ],
+					"items" : [ "ms72_____UltraLow&High____", ",", "ms81_____Mute_High____", ",", "ms87____Mute_Low___", ",", "ms271________Iana________", ",", "ms293________IanaOff________", ",", "ms310______Tape1______", ",", "ms321_____UltraHigh&Low", ",", "ms325_____Pigeon____", ",", "ms336_____TapePigeon_1____", ",", "ms343_____StopTout____", ",", "ms354________Iana________", ",", "ms360________IanaOff__Tape3______", ",", "ms381_____UltraHigh&Low____", ",", "ms386_____Pigeon2____", ",", "ms398_____StopTout____", ",", "ms400________Iana________", ",", "ms413________IanaOff__Tape5______", ",", "ms426_____Orchestration____", ",", "ms438_____Orchestration_STOP___Tape6_____", ",", "ms455_____Orchestration____", ",", "ms473____Orchestration_STOP____Iana________", ",", "ms486________IanaOff___Tape7_____", ",", "ms488________IanaON________", ",", "ms493________IanaOff________", ",", "ms558_____Orchestration____", ",", "ms583____Orchestration_STOP__RenforceLow&High______", ",", "ms604____Iana_ON________", ",", "ms645________IanaOff__BiqX_Off_______", ",", "ms648_________Tape8a_____", ",", "ms658_________Tape8b_____", ",", "ms676_____Orchestration____", ",", "ms697____Orchestration_STOP_________", ",", "ms746_____UltraHigh&Low____", ",", "ms754_____Pigeon_Conv____", ",", "ms769_____TapePigeon3____", ",", "ms771_____StopTout____", ",", "ms778_____UltraHighLow_Pigeon4_Conv___", ",", "ms783_____StopTout______", ",", "ms787______Tape11a____", ",", "ms801_______Tape11b____", ",", "ms915______Tape12________", ",", "ms947______Tape13a________", ",", "ms952______Tape13b________", ",", "ms962_____Orchestration____", ",", "ms1032________Iana________", ",", "ms1052________IanaOff________" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3101,15 +3129,15 @@
 					"fontsize" : 30.0,
 					"id" : "obj-75",
 					"ignoreclick" : 1,
-					"linecount" : 3,
+					"linecount" : 12,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 78.0, 697.0, 49.0, 105.0 ],
+					"patching_rect" : [ 78.0, 697.0, 49.0, 407.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.0, 20.0, 456.0, 38.0 ],
-					"text" : "wait....."
+					"text" : "ms310______Tape1______"
 				}
 
 			}
@@ -3226,6 +3254,7 @@
 			}
 , 			{
 				"box" : 				{
+					"background" : 1,
 					"bgcolor" : [ 0.572549, 0.615686, 0.658824, 0.0 ],
 					"border" : 1,
 					"bordercolor" : [ 0.572549, 0.615686, 0.658824, 1.0 ],
@@ -4162,6 +4191,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-110", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"color" : [ 1.0, 0.0, 1.0, 1.0 ],
 					"destination" : [ "obj-112", 1 ],
 					"disabled" : 0,
@@ -4409,6 +4447,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-13", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-86", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-184", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4496,11 +4543,6 @@
 					"source" : [ "obj-99", 0 ]
 				}
 
-			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "antescofo~.mxo",
-				"type" : "iLaX"
 			}
  ]
 	}
