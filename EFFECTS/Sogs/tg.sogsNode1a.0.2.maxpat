@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 118.0, 44.0, 916.0, 174.0 ],
+		"rect" : [ 75.0, 44.0, 922.0, 179.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -150,7 +150,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1221.25, 441.332764, 43.0, 18.0 ],
+					"patching_rect" : [ 1221.25, 441.332764, 55.0, 18.0 ],
 					"text" : "s #0init"
 				}
 
@@ -207,7 +207,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 88.916779, 231.5, 58.0, 18.0 ],
+					"patching_rect" : [ 88.916779, 231.5, 70.0, 18.0 ],
 					"text" : "s #0topoly"
 				}
 
@@ -222,7 +222,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 88.916779, 263.667236, 58.0, 18.0 ],
+					"patching_rect" : [ 88.916779, 263.667236, 68.0, 18.0 ],
 					"text" : "r #0topoly"
 				}
 
@@ -236,7 +236,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 660.229248, 473.5, 58.0, 18.0 ],
+					"patching_rect" : [ 660.229248, 473.5, 70.0, 18.0 ],
 					"text" : "s #0topoly"
 				}
 
@@ -250,7 +250,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 608.645874, 631.5, 58.0, 18.0 ],
+					"patching_rect" : [ 608.645874, 631.5, 70.0, 18.0 ],
 					"text" : "s #0topoly"
 				}
 
@@ -381,7 +381,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 466.229126, 37.332764, 43.0, 18.0 ],
+					"patching_rect" : [ 466.229126, 37.332764, 53.0, 18.0 ],
 					"text" : "r #0init"
 				}
 
@@ -632,7 +632,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "coll",
+					"annotation" : "Coll",
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"frgb" : 0.0,
@@ -647,8 +647,8 @@
 					"presentation_rect" : [ 6.0, 37.5, 132.5, 18.5 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "coll",
-							"parameter_shortname" : "coll",
+							"parameter_longname" : "Coll",
+							"parameter_shortname" : "Coll",
 							"parameter_type" : 3,
 							"parameter_invisible" : 1
 						}
@@ -10112,7 +10112,7 @@
 					"presentation_rect" : [ 394.026794, 101.0, 160.0, 54.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
-					"size" : 16
+					"size" : 5
 				}
 
 			}
@@ -10210,7 +10210,7 @@
 					"patching_rect" : [ 1131.0, 210.167236, 95.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 814.5, 3.999998, 95.0, 27.0 ],
-					"text" : "#1"
+					"text" : "1sogn"
 				}
 
 			}
@@ -10222,7 +10222,7 @@
 					"fontsize" : 12.0,
 					"framecolor" : [ 0.498039, 0.52549, 0.576471, 0.0 ],
 					"id" : "obj-86",
-					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export", ",", "<separator>", ",", "(Recall)", ",", "(undefined)", ",", "Default" ],
+					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export", ",", "<separator>", ",", "(Recall)", ",", "(undefined)", ",", "Default", ",", "Test1", ",", "3", ",", "(undefined)", ",", "5", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "30" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -10288,6 +10288,7 @@
 					"presentation_rect" : [ 814.5, 152.5, 95.0, 16.0 ],
 					"prototypename" : "M4L.black",
 					"rounded" : 12.0,
+					"text" : "Test1",
 					"textcolor" : [ 0.909804, 0.909804, 0.909804, 1.0 ]
 				}
 
@@ -10562,7 +10563,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u097011515"
+					"varname" : "u168008167"
 				}
 
 			}
@@ -12576,73 +12577,6 @@
 					"source" : [ "obj-99", 0 ]
 				}
 
-			}
- ],
-		"parameters" : 		{
-			"obj-47" : [ "Distance", "Distance", 1 ],
-			"obj-90" : [ "GrainSize", "GrainSize", 0 ],
-			"obj-92" : [ "Trans", "Trans", 0 ],
-			"obj-89" : [ "Nodes", "Nodes", 0 ],
-			"obj-76" : [ "ShiftX", "ShiftX", 0 ],
-			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-114" : [ "OnsetVar", "OnsetVar", 0 ],
-			"obj-322" : [ "ShakeSize", "ShakeSize", 0 ],
-			"obj-318" : [ "ShakePos", "ShakePos", 0 ],
-			"obj-300" : [ "Expand", "Expand", 0 ],
-			"obj-81" : [ "Edit", "Edit", 0 ],
-			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-80" : [ "PRESET", "PRESET", 0 ],
-			"obj-298" : [ "ShiftY", "ShiftY", 0 ],
-			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-83" : [ "Overlap", "Overlap", 0 ],
-			"obj-303" : [ "Rotate", "Rotate", 0 ],
-			"obj-305" : [ "Spread", "Spread", 0 ],
-			"obj-214" : [ "coll", "coll", 0 ],
-			"obj-48" : [ "Azimuth", "Azimuth", 1 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-91" : [ "PitchVar", "PitchVar", 0 ],
-			"obj-309" : [ "Shake", "Shake", 0 ]
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "tg.m.fgraph.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "polySogsSampler2.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Sogs",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "M4L.cross1~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sogsNode1a.json",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
-				"patcherrelativepath" : "../../JSON",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sogs~.mxo",
-				"type" : "iLaX"
 			}
  ]
 	}

@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 929.0, 329.0, 640.0, 343.0 ],
+		"rect" : [ 865.0, 316.0, 774.0, 465.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -31,6 +31,141 @@
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
+					"id" : "obj-15",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 346.0, 292.5, 149.0, 27.0 ],
+					"text" : ";\r1sogn Coll DRUM1.COLL"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-13",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 346.0, 256.5, 149.0, 27.0 ],
+					"text" : ";\r1sogn Coll DRUM1light.COLL"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"frgb" : 0.0,
+					"id" : "obj-14",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 346.0, 238.5, 29.0, 18.0 ],
+					"text" : "Coll"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"coll_data" : 					{
+						"count" : 5,
+						"data" : [ 							{
+								"key" : "BellPlate",
+								"value" : [ "DRUM1.1" ]
+							}
+, 							{
+								"key" : "Bongo1",
+								"value" : [ "DRUM1.2" ]
+							}
+, 							{
+								"key" : "Bongo2",
+								"value" : [ "DRUM1.3" ]
+							}
+, 							{
+								"key" : "Glockenspiel",
+								"value" : [ "DRUM1.6" ]
+							}
+, 							{
+								"key" : "LogDrum",
+								"value" : [ "DRUM1.7" ]
+							}
+ ]
+					}
+,
+					"color" : [ 1.0, 0.5, 0.0, 1.0 ],
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 564.0, 214.5, 117.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 564.0, 214.5, 100.0, 29.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 1
+					}
+,
+					"text" : "coll DRUM1light.COLL"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"frgb" : 0.0,
+					"id" : "obj-6",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 125.0, 292.5, 47.0, 18.0 ],
+					"text" : "Preset"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-5",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 125.0, 344.5, 153.0, 27.0 ],
+					"text" : ";\r1sogn.STORAGE preset Test1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-1",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 125.0, 310.5, 133.0, 27.0 ],
+					"text" : ";\r1sogn.STORAGE preset 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
 					"id" : "obj-9",
 					"maxclass" : "newobj",
 					"numinlets" : 5,
@@ -45,7 +180,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 88.0, 44.0, 834.0, 732.0 ],
+						"rect" : [ 846.0, 131.0, 834.0, 732.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 10.0,
@@ -999,7 +1134,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 262.0, 158.5, 264.000061, 18.0 ],
+					"patching_rect" : [ 319.0, 132.5, 264.000061, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial Bold",
@@ -1027,7 +1162,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 507.0, 124.5, 51.0, 20.0 ],
+					"patching_rect" : [ 564.0, 98.5, 51.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 234.666656, 83.5, 51.0, 20.0 ],
 					"text" : "clear"
@@ -1044,7 +1179,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 271.5, 103.5, 95.666664, 29.0 ],
+					"patching_rect" : [ 328.5, 77.5, 95.666664, 29.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 117.333344, 104.0, 95.666664, 29.0 ],
@@ -1131,7 +1266,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 507.0, 184.5, 106.0, 18.0 ],
+					"patching_rect" : [ 564.0, 158.5, 106.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 234.666656, 136.5, 100.0, 18.0 ],
 					"saved_object_attributes" : 					{
@@ -1149,7 +1284,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 262.0, 83.5, 114.666725, 69.0 ],
+					"patching_rect" : [ 319.0, 57.5, 114.666725, 69.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 87.333336, 83.5, 140.666672, 71.0 ]
 				}
@@ -1184,7 +1319,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 384.5, 120.0, 110.666687, 29.0 ],
+					"patching_rect" : [ 441.5, 94.0, 110.666687, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 234.666656, 110.0, 203.0, 18.0 ],
 					"saved_object_attributes" : 					{
@@ -1438,31 +1573,31 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-11.1::obj-2::obj-47" : [ "Distance", "Distance", 1 ],
 			"obj-11.1::obj-2::obj-90" : [ "GrainSize", "GrainSize", 0 ],
-			"obj-11.1::obj-2::obj-92" : [ "Trans", "Trans", 0 ],
 			"obj-11.1::obj-2::obj-89" : [ "Nodes", "Nodes", 0 ],
+			"obj-11.1::obj-2::obj-303" : [ "Rotate", "Rotate", 0 ],
+			"obj-11.1::obj-2::obj-67" : [ "FilterGain", "FilterGain", 0 ],
 			"obj-11.1::obj-2::obj-76" : [ "ShiftX", "ShiftX", 0 ],
-			"obj-11.1::obj-2::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
 			"obj-11.1::obj-2::obj-114" : [ "OnsetVar", "OnsetVar", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-11.1::obj-2::obj-305" : [ "Spread", "Spread", 0 ],
+			"obj-11.1::obj-2::obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-11.1::obj-2::obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-11.1::obj-2::obj-81" : [ "Edit", "Edit", 0 ],
+			"obj-11.1::obj-2::obj-83" : [ "Overlap", "Overlap", 0 ],
+			"obj-11.1::obj-2::obj-309" : [ "Shake", "Shake", 0 ],
+			"obj-11.1::obj-2::obj-72" : [ "FilterQ", "FilterQ", 0 ],
 			"obj-11.1::obj-2::obj-322" : [ "ShakeSize", "ShakeSize", 0 ],
 			"obj-11.1::obj-2::obj-318" : [ "ShakePos", "ShakePos", 0 ],
-			"obj-11.1::obj-2::obj-300" : [ "Expand", "Expand", 0 ],
-			"obj-11.1::obj-2::obj-81" : [ "Edit", "Edit", 0 ],
-			"obj-11.1::obj-2::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-11.1::obj-2::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-11.1::obj-2::obj-80" : [ "PRESET", "PRESET", 0 ],
-			"obj-11.1::obj-2::obj-298" : [ "ShiftY", "ShiftY", 0 ],
-			"obj-11.1::obj-2::obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-11.1::obj-2::obj-83" : [ "Overlap", "Overlap", 0 ],
-			"obj-11.1::obj-2::obj-303" : [ "Rotate", "Rotate", 0 ],
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-11.1::obj-2::obj-214" : [ "coll", "coll", 0 ],
-			"obj-11.1::obj-2::obj-305" : [ "Spread", "Spread", 0 ],
 			"obj-11.1::obj-2::obj-48" : [ "Azimuth", "Azimuth", 1 ],
-			"obj-11.1::obj-2::obj-72" : [ "FilterQ", "FilterQ", 0 ],
 			"obj-11.1::obj-2::obj-91" : [ "PitchVar", "PitchVar", 0 ],
-			"obj-11.1::obj-2::obj-309" : [ "Shake", "Shake", 0 ]
+			"obj-11.1::obj-2::obj-300" : [ "Expand", "Expand", 0 ],
+			"obj-11.1::obj-2::obj-298" : [ "ShiftY", "ShiftY", 0 ],
+			"obj-11.1::obj-2::obj-47" : [ "Distance", "Distance", 1 ],
+			"obj-11.1::obj-2::obj-92" : [ "Trans", "Trans", 0 ],
+			"obj-11.1::obj-2::obj-214" : [ "Coll", "Coll", 0 ],
+			"obj-11.1::obj-2::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-11.1::obj-2::obj-80" : [ "PRESET", "PRESET", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
