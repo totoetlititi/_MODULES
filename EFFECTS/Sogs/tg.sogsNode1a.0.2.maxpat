@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 75.0, 44.0, 922.0, 179.0 ],
+		"rect" : [ 75.0, 44.0, 916.0, 173.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -1224,7 +1224,7 @@
 						"embed" : 0
 					}
 ,
-					"text" : "coll size"
+					"text" : "coll #0size"
 				}
 
 			}
@@ -10112,7 +10112,7 @@
 					"presentation_rect" : [ 394.026794, 101.0, 160.0, 54.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
-					"size" : 5
+					"size" : 16
 				}
 
 			}
@@ -10210,7 +10210,7 @@
 					"patching_rect" : [ 1131.0, 210.167236, 95.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 814.5, 3.999998, 95.0, 27.0 ],
-					"text" : "1sogn"
+					"text" : "#1"
 				}
 
 			}
@@ -10288,7 +10288,6 @@
 					"presentation_rect" : [ 814.5, 152.5, 95.0, 16.0 ],
 					"prototypename" : "M4L.black",
 					"rounded" : 12.0,
-					"text" : "Test1",
 					"textcolor" : [ 0.909804, 0.909804, 0.909804, 1.0 ]
 				}
 
@@ -10563,7 +10562,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u168008167"
+					"varname" : "u743004380"
 				}
 
 			}
@@ -12577,6 +12576,73 @@
 					"source" : [ "obj-99", 0 ]
 				}
 
+			}
+ ],
+		"parameters" : 		{
+			"obj-114" : [ "OnsetVar", "OnsetVar", 0 ],
+			"obj-318" : [ "ShakePos", "ShakePos", 0 ],
+			"obj-305" : [ "Spread", "Spread", 0 ],
+			"obj-214" : [ "Coll", "Coll", 0 ],
+			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-300" : [ "Expand", "Expand", 0 ],
+			"obj-81" : [ "Edit", "Edit", 0 ],
+			"obj-83" : [ "Overlap", "Overlap", 0 ],
+			"obj-322" : [ "ShakeSize", "ShakeSize", 0 ],
+			"obj-92" : [ "Trans", "Trans", 0 ],
+			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-90" : [ "GrainSize", "GrainSize", 0 ],
+			"obj-91" : [ "PitchVar", "PitchVar", 0 ],
+			"obj-76" : [ "ShiftX", "ShiftX", 0 ],
+			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-89" : [ "Nodes", "Nodes", 0 ],
+			"obj-303" : [ "Rotate", "Rotate", 0 ],
+			"obj-298" : [ "ShiftY", "ShiftY", 0 ],
+			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-48" : [ "Azimuth", "Azimuth", 1 ],
+			"obj-309" : [ "Shake", "Shake", 0 ],
+			"obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-47" : [ "Distance", "Distance", 1 ]
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "tg.m.fgraph.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.m.preset.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "polySogsSampler2.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Sogs",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "M4L.cross1~.maxpat",
+				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sogsNode1a.json",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"patcherrelativepath" : "../../JSON",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sogs~.mxo",
+				"type" : "iLaX"
 			}
  ]
 	}
