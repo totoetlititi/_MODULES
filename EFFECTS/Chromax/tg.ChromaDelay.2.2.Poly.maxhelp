@@ -31,13 +31,28 @@
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
+					"id" : "obj-13",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 18.0, 210.0, 178.0, 29.0 ],
+					"text" : "poly~ tg.ChromaDelay.2.2.Poly 1 args 1Chro",
+					"varname" : "poly~[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
 					"frgb" : 0.0,
 					"id" : "obj-9",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 128.0, 261.0, 36.0, 18.0 ],
-					"presentation_rect" : [ 128.0, 260.0, 0.0, 0.0 ],
 					"text" : "Open"
 				}
 
@@ -283,13 +298,13 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-11",
-					"linecount" : 5,
+					"linecount" : 7,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 375.0, 75.0, 309.0, 60.0 ],
-					"text" : ";\r1fra Dry/wet 100., FilterFreq 1000., FilterGain 0., FilterMode 5., FilterQ 0.3, Ingain 0., Outgain -70., ampVar 0., bufferSize 30., declick 0., direction 0., dropOut 0., feedback 0., repet 0., speed 3.8,"
+					"patching_rect" : [ 375.0, 75.0, 315.0, 83.0 ],
+					"text" : ";\r1Chro Chord 0 0 0, Dry/wet 100., Envelope -0.05, Feedback 33., FilterFreq 1000., FilterGain 0., FilterMode 5., FilterQ 0.3, Flush 0., ForceFilter 1., HarmModel 0., Harmonics 15., Ingain 0., InterpMode 0., InterpTime 1000., MaxDelay 2000., Outgain -127., PanL -50., PanR 50., Receive 1Chro.Notes, ReceiveChord 0., Shift 1., Stretch 2., Tune 440., Variance 0.5"
 				}
 
 			}
@@ -656,29 +671,13 @@
 				}
 
 			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-1",
-					"linecount" : 2,
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 18.0, 218.0, 162.0, 29.0 ],
-					"text" : "poly~ tg.ChromaDelay.2.2.Poly 1 args 1Chro",
-					"varname" : "poly~"
-				}
-
-			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-1", 1 ]
+					"source" : [ "obj-13", 1 ]
 				}
 
 			}
@@ -687,7 +686,7 @@
 					"destination" : [ "obj-3", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-1", 0 ]
+					"source" : [ "obj-13", 0 ]
 				}
 
 			}
@@ -765,7 +764,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 1 ],
+					"destination" : [ "obj-13", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-7", 1 ]
@@ -774,7 +773,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-13", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-7", 0 ]
@@ -783,41 +782,48 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1.1::obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-7::obj-50" : [ "Play", "Play", 0 ],
-			"obj-1.1::obj-1::obj-82" : [ "InterpTime", "InterpTime", 0 ],
-			"obj-1.1::obj-1::obj-66" : [ "ReceiveChord", "ReceiveChord", 0 ],
-			"obj-1.1::obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-1.1::obj-1::obj-54" : [ "ampVar", "ampVar", 0 ],
-			"obj-1.1::obj-1::obj-49" : [ "feedback", "feedback", 0 ],
-			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
-			"obj-1.1::obj-1::obj-81" : [ "Shift", "Shift", 0 ],
-			"obj-1.1::obj-1::obj-48" : [ "speed", "speed", 0 ],
-			"obj-1.1::obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-1.1::obj-1::obj-55" : [ "repet", "repet", 0 ],
-			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
-			"obj-1.1::obj-1::obj-60" : [ "ForceFilter", "ForceFilter", 0 ],
-			"obj-1.1::obj-1::obj-53" : [ "Tune", "Tune", 0 ],
-			"obj-1.1::obj-1::obj-89" : [ "PanL", "PanL", 0 ],
-			"obj-1.1::obj-1::obj-83" : [ "Stretch", "Stretch", 0 ],
-			"obj-1.1::obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-1.1::obj-1::obj-46" : [ "Flush", "Flush", 0 ],
+			"obj-13.1::obj-1::obj-66" : [ "ReceiveChord[1]", "ReceiveChord", 0 ],
 			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
-			"obj-1.1::obj-1::obj-44" : [ "HarmModel", "HarmModel", 0 ],
-			"obj-1.1::obj-1::obj-88" : [ "PanR", "PanR", 0 ],
-			"obj-1.1::obj-1::obj-20" : [ "PRESET", "PRESET", 0 ],
-			"obj-1.1::obj-1::obj-21" : [ "Chord", "Chord", 0 ],
-			"obj-1.1::obj-1::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-1.1::obj-1::obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-1.1::obj-1::obj-47" : [ "direction", "direction", 0 ],
-			"obj-1.1::obj-1::obj-76" : [ "InterpMode", "InterpMode", 0 ],
+			"obj-13.1::obj-1::obj-46" : [ "Flush[1]", "Flush", 0 ],
+			"obj-13.1::obj-1::obj-83" : [ "Stretch[1]", "Stretch", 0 ],
+			"obj-13.1::obj-1::obj-55" : [ "Feedback", "Feedback", 0 ],
+			"obj-13.1::obj-1::obj-14" : [ "Outgain[120]", "Outgain", 0 ],
+			"obj-13.1::obj-1::obj-47" : [ "Receive", "Receive", 0 ],
+			"obj-13.1::obj-1::obj-49" : [ "Variance", "Variance", 0 ],
+			"obj-13.1::obj-1::obj-88" : [ "PanR[1]", "PanR", 0 ],
+			"obj-7::obj-50" : [ "Play", "Play", 0 ],
+			"obj-13.1::obj-1::obj-21" : [ "Chord[1]", "Chord", 0 ],
+			"obj-13.1::obj-1::obj-42" : [ "FilterMode[101]", "FilterMode", 0 ],
+			"obj-13.1::obj-1::obj-12" : [ "Dry/wet[98]", "Dry/wet", 0 ],
+			"obj-13.1::obj-1::obj-76" : [ "InterpMode[1]", "InterpMode", 0 ],
+			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
+			"obj-13.1::obj-1::obj-67" : [ "FilterGain[101]", "FilterGain", 0 ],
+			"obj-13.1::obj-1::obj-81" : [ "Shift[1]", "Shift", 0 ],
+			"obj-13.1::obj-1::obj-54" : [ "MaxDelay", "MaxDelay", 0 ],
+			"obj-13.1::obj-1::obj-53" : [ "Tune[1]", "Tune", 0 ],
+			"obj-13.1::obj-1::obj-89" : [ "PanL[1]", "PanL", 0 ],
+			"obj-13.1::obj-1::obj-44" : [ "HarmModel[1]", "HarmModel", 0 ],
+			"obj-13.1::obj-1::obj-70" : [ "FilterFreq[34]", "FilterFreq", 0 ],
+			"obj-13.1::obj-1::obj-60" : [ "ForceFilter[1]", "ForceFilter", 0 ],
+			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
 			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
-			"obj-1.1::obj-1::obj-80" : [ "Envelope", "Envelope", 0 ],
-			"obj-1.1::obj-1::obj-14" : [ "Outgain", "Outgain", 0 ]
+			"obj-13.1::obj-1::obj-20" : [ "PRESET[95]", "PRESET", 0 ],
+			"obj-13.1::obj-1::obj-82" : [ "InterpTime[1]", "InterpTime", 0 ],
+			"obj-13.1::obj-1::obj-72" : [ "FilterQ[97]", "FilterQ", 0 ],
+			"obj-13.1::obj-1::obj-48" : [ "Harmonics", "Harmonics", 0 ],
+			"obj-13.1::obj-1::obj-8" : [ "Ingain[96]", "Ingain", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-13.1::obj-1::obj-80" : [ "Envelope[1]", "Envelope", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "FMA.SoundPlayer~.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/IRCAM/ForumMaxApps-All/Utilities",
+				"patcherrelativepath" : "../../../../IRCAM/ForumMaxApps-All/Utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "tg.ChromaDelay.2.2.Poly.maxpat",
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Chromax",
 				"patcherrelativepath" : ".",
@@ -877,13 +883,6 @@
 				"name" : "M4L.pan2~.maxpat",
 				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
 				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "FMA.SoundPlayer~.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/IRCAM/ForumMaxApps-All/Utilities",
-				"patcherrelativepath" : "../../../../IRCAM/ForumMaxApps-All/Utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
