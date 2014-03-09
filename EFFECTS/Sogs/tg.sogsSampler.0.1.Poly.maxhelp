@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 180.0, 219.0, 1130.0, 722.0 ],
+		"rect" : [ 190.0, 166.0, 1130.0, 722.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -28,6 +28,122 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"frgb" : 0.0,
+					"id" : "obj-71",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 788.0, 563.0, 197.0, 18.0 ],
+					"text" : "with variable transposition & amplitude"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"frgb" : 0.0,
+					"id" : "obj-70",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 788.0, 514.0, 137.0, 18.0 ],
+					"text" : "with variable stretch"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"frgb" : 0.0,
+					"id" : "obj-69",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 788.0, 457.5, 137.0, 18.0 ],
+					"text" : "with variable transposition"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"frgb" : 0.0,
+					"id" : "obj-68",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 788.0, 402.0, 47.0, 18.0 ],
+					"text" : "normal "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-66",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 788.0, 419.5, 193.0, 27.0 ],
+					"text" : ";\r1sogs.NOTE 0 PIGEONS.8 0 2000 1 1 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-62",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 788.0, 580.5, 304.0, 27.0 ],
+					"text" : ";\r1sogs.NOTE 0 PIGEONS.8 0 2000 \"1 0 0.2 2000\" \"0 0 5 2000\" 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-61",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 788.0, 475.0, 253.0, 27.0 ],
+					"text" : ";\r1sogs.NOTE 0 PIGEONS.8 0 2000 \"1 0 0.2 2000\" 1 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-60",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 788.0, 530.0, 270.0, 27.0 ],
+					"text" : ";\r1sogs.NOTE 0 PIGEONS.8 0 5000 1 1 \"1 0 1 500 0.01 0\""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
@@ -999,7 +1115,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 747.5, 456.0, 264.000061, 18.0 ],
+					"patching_rect" : [ 763.5, 207.5, 264.000061, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial Bold",
@@ -1027,7 +1143,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 992.5, 422.0, 51.0, 20.0 ],
+					"patching_rect" : [ 1008.5, 173.5, 51.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 189.666656, 38.5, 51.0, 20.0 ],
 					"text" : "clear"
@@ -1044,7 +1160,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 757.0, 401.0, 95.666664, 29.0 ],
+					"patching_rect" : [ 773.0, 152.5, 95.666664, 29.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 72.333344, 59.0, 95.666664, 29.0 ],
@@ -1062,7 +1178,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 992.5, 482.0, 106.0, 18.0 ],
+					"patching_rect" : [ 1008.5, 233.5, 106.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 189.666656, 91.5, 100.0, 29.0 ],
@@ -1081,7 +1197,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 747.5, 381.0, 114.666725, 69.0 ],
+					"patching_rect" : [ 763.5, 132.5, 114.666725, 69.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 42.333336, 38.5, 140.666672, 71.0 ]
 				}
@@ -1090,162 +1206,22 @@
 , 			{
 				"box" : 				{
 					"embed_buffers" : 					{
-						"PIGEONS.1" : "AILE-Detector-1.aif",
-						"PIGEONS.2" : "AILE-Detector-10.aif",
-						"PIGEONS.3" : "AILE-Detector-100.aif",
-						"PIGEONS.4" : "AILE-Detector-101.aif",
-						"PIGEONS.5" : "AILE-Detector-102.aif",
-						"PIGEONS.6" : "AILE-Detector-103.aif",
-						"PIGEONS.7" : "AILE-Detector-104.aif",
-						"PIGEONS.8" : "AILE-Detector-105.aif",
-						"PIGEONS.9" : "AILE-Detector-106.aif",
-						"PIGEONS.10" : "AILE-Detector-107.aif",
-						"PIGEONS.11" : "AILE-Detector-108.aif",
-						"PIGEONS.12" : "AILE-Detector-109.aif",
-						"PIGEONS.13" : "AILE-Detector-11.aif",
-						"PIGEONS.14" : "AILE-Detector-110.aif",
-						"PIGEONS.15" : "AILE-Detector-111.aif",
-						"PIGEONS.16" : "AILE-Detector-112.aif",
-						"PIGEONS.17" : "AILE-Detector-113.aif",
-						"PIGEONS.18" : "AILE-Detector-114.aif",
-						"PIGEONS.19" : "AILE-Detector-115.aif",
-						"PIGEONS.20" : "AILE-Detector-116.aif",
-						"PIGEONS.21" : "AILE-Detector-117.aif",
-						"PIGEONS.22" : "AILE-Detector-118.aif",
-						"PIGEONS.23" : "AILE-Detector-119.aif",
-						"PIGEONS.24" : "AILE-Detector-12.aif",
-						"PIGEONS.25" : "AILE-Detector-120.aif",
-						"PIGEONS.26" : "AILE-Detector-121.aif",
-						"PIGEONS.27" : "AILE-Detector-122.aif",
-						"PIGEONS.28" : "AILE-Detector-123.aif",
-						"PIGEONS.29" : "AILE-Detector-124.aif",
-						"PIGEONS.30" : "AILE-Detector-125.aif",
-						"PIGEONS.31" : "AILE-Detector-126.aif",
-						"PIGEONS.32" : "AILE-Detector-127.aif",
-						"PIGEONS.33" : "AILE-Detector-128.aif",
-						"PIGEONS.34" : "AILE-Detector-129.aif",
-						"PIGEONS.35" : "AILE-Detector-13.aif",
-						"PIGEONS.36" : "AILE-Detector-130.aif",
-						"PIGEONS.37" : "AILE-Detector-131.aif",
-						"PIGEONS.38" : "AILE-Detector-132.aif",
-						"PIGEONS.39" : "AILE-Detector-133.aif",
-						"PIGEONS.40" : "AILE-Detector-134.aif",
-						"PIGEONS.41" : "AILE-Detector-135.aif",
-						"PIGEONS.42" : "AILE-Detector-136.aif",
-						"PIGEONS.43" : "AILE-Detector-137.aif",
-						"PIGEONS.44" : "AILE-Detector-138.aif",
-						"PIGEONS.45" : "AILE-Detector-139.aif",
-						"PIGEONS.46" : "AILE-Detector-14.aif",
-						"PIGEONS.47" : "AILE-Detector-140.aif",
-						"PIGEONS.48" : "AILE-Detector-141.aif",
-						"PIGEONS.49" : "AILE-Detector-142.aif",
-						"PIGEONS.50" : "AILE-Detector-143.aif",
-						"PIGEONS.51" : "AILE-Detector-144.aif",
-						"PIGEONS.52" : "AILE-Detector-145.aif",
-						"PIGEONS.53" : "AILE-Detector-146.aif",
-						"PIGEONS.54" : "AILE-Detector-147.aif",
-						"PIGEONS.55" : "AILE-Detector-148.aif",
-						"PIGEONS.56" : "AILE-Detector-149.aif",
-						"PIGEONS.57" : "AILE-Detector-15.aif",
-						"PIGEONS.58" : "AILE-Detector-150.aif",
-						"PIGEONS.59" : "AILE-Detector-151.aif",
-						"PIGEONS.60" : "AILE-Detector-152.aif",
-						"PIGEONS.61" : "AILE-Detector-153.aif",
-						"PIGEONS.62" : "AILE-Detector-154.aif",
-						"PIGEONS.63" : "AILE-Detector-155.aif",
-						"PIGEONS.64" : "AILE-Detector-156.aif",
-						"PIGEONS.65" : "AILE-Detector-16.aif",
-						"PIGEONS.66" : "AILE-Detector-17.aif",
-						"PIGEONS.67" : "AILE-Detector-18.aif",
-						"PIGEONS.68" : "AILE-Detector-19.aif",
-						"PIGEONS.69" : "AILE-Detector-2.aif",
-						"PIGEONS.70" : "AILE-Detector-20.aif",
-						"PIGEONS.71" : "AILE-Detector-21.aif",
-						"PIGEONS.72" : "AILE-Detector-22.aif",
-						"PIGEONS.73" : "AILE-Detector-23.aif",
-						"PIGEONS.74" : "AILE-Detector-24.aif",
-						"PIGEONS.75" : "AILE-Detector-25.aif",
-						"PIGEONS.76" : "AILE-Detector-26.aif",
-						"PIGEONS.77" : "AILE-Detector-27.aif",
-						"PIGEONS.78" : "AILE-Detector-28.aif",
-						"PIGEONS.79" : "AILE-Detector-29.aif",
-						"PIGEONS.80" : "AILE-Detector-3.aif",
-						"PIGEONS.81" : "AILE-Detector-30.aif",
-						"PIGEONS.82" : "AILE-Detector-31.aif",
-						"PIGEONS.83" : "AILE-Detector-32.aif",
-						"PIGEONS.84" : "AILE-Detector-33.aif",
-						"PIGEONS.85" : "AILE-Detector-34.aif",
-						"PIGEONS.86" : "AILE-Detector-35.aif",
-						"PIGEONS.87" : "AILE-Detector-36.aif",
-						"PIGEONS.88" : "AILE-Detector-37.aif",
-						"PIGEONS.89" : "AILE-Detector-38.aif",
-						"PIGEONS.90" : "AILE-Detector-39.aif",
-						"PIGEONS.91" : "AILE-Detector-4.aif",
-						"PIGEONS.92" : "AILE-Detector-40.aif",
-						"PIGEONS.93" : "AILE-Detector-41.aif",
-						"PIGEONS.94" : "AILE-Detector-42.aif",
-						"PIGEONS.95" : "AILE-Detector-43.aif",
-						"PIGEONS.96" : "AILE-Detector-44.aif",
-						"PIGEONS.97" : "AILE-Detector-45.aif",
-						"PIGEONS.98" : "AILE-Detector-46.aif",
-						"PIGEONS.99" : "AILE-Detector-47.aif",
-						"PIGEONS.100" : "AILE-Detector-48.aif",
-						"PIGEONS.101" : "AILE-Detector-49.aif",
-						"PIGEONS.102" : "AILE-Detector-5.aif",
-						"PIGEONS.103" : "AILE-Detector-50.aif",
-						"PIGEONS.104" : "AILE-Detector-51.aif",
-						"PIGEONS.105" : "AILE-Detector-52.aif",
-						"PIGEONS.106" : "AILE-Detector-53.aif",
-						"PIGEONS.107" : "AILE-Detector-54.aif",
-						"PIGEONS.108" : "AILE-Detector-55.aif",
-						"PIGEONS.109" : "AILE-Detector-56.aif",
-						"PIGEONS.110" : "AILE-Detector-57.aif",
-						"PIGEONS.111" : "AILE-Detector-58.aif",
-						"PIGEONS.112" : "AILE-Detector-59.aif",
-						"PIGEONS.113" : "AILE-Detector-6.aif",
-						"PIGEONS.114" : "AILE-Detector-60.aif",
-						"PIGEONS.115" : "AILE-Detector-61.aif",
-						"PIGEONS.116" : "AILE-Detector-62.aif",
-						"PIGEONS.117" : "AILE-Detector-63.aif",
-						"PIGEONS.118" : "AILE-Detector-64.aif",
-						"PIGEONS.119" : "AILE-Detector-65.aif",
-						"PIGEONS.120" : "AILE-Detector-66.aif",
-						"PIGEONS.121" : "AILE-Detector-67.aif",
-						"PIGEONS.122" : "AILE-Detector-68.aif",
-						"PIGEONS.123" : "AILE-Detector-69.aif",
-						"PIGEONS.124" : "AILE-Detector-7.aif",
-						"PIGEONS.125" : "AILE-Detector-70.aif",
-						"PIGEONS.126" : "AILE-Detector-71.aif",
-						"PIGEONS.127" : "AILE-Detector-72.aif",
-						"PIGEONS.128" : "AILE-Detector-73.aif",
-						"PIGEONS.129" : "AILE-Detector-74.aif",
-						"PIGEONS.130" : "AILE-Detector-75.aif",
-						"PIGEONS.131" : "AILE-Detector-76.aif",
-						"PIGEONS.132" : "AILE-Detector-77.aif",
-						"PIGEONS.133" : "AILE-Detector-78.aif",
-						"PIGEONS.134" : "AILE-Detector-79.aif",
-						"PIGEONS.135" : "AILE-Detector-8.aif",
-						"PIGEONS.136" : "AILE-Detector-80.aif",
-						"PIGEONS.137" : "AILE-Detector-81.aif",
-						"PIGEONS.138" : "AILE-Detector-82.aif",
-						"PIGEONS.139" : "AILE-Detector-83.aif",
-						"PIGEONS.140" : "AILE-Detector-84.aif",
-						"PIGEONS.141" : "AILE-Detector-85.aif",
-						"PIGEONS.142" : "AILE-Detector-86.aif",
-						"PIGEONS.143" : "AILE-Detector-87.aif",
-						"PIGEONS.144" : "AILE-Detector-88.aif",
-						"PIGEONS.145" : "AILE-Detector-89.aif",
-						"PIGEONS.146" : "AILE-Detector-9.aif",
-						"PIGEONS.147" : "AILE-Detector-90.aif",
-						"PIGEONS.148" : "AILE-Detector-91.aif",
-						"PIGEONS.149" : "AILE-Detector-92.aif",
-						"PIGEONS.150" : "AILE-Detector-93.aif",
-						"PIGEONS.151" : "AILE-Detector-94.aif",
-						"PIGEONS.152" : "AILE-Detector-95.aif",
-						"PIGEONS.153" : "AILE-Detector-96.aif",
-						"PIGEONS.154" : "AILE-Detector-97.aif",
-						"PIGEONS.155" : "AILE-Detector-98.aif",
-						"PIGEONS.156" : "AILE-Detector-99.aif"
+						"PIGEONS.1" : "BellPlate.aiff",
+						"PIGEONS.2" : "Bongo1.aiff",
+						"PIGEONS.3" : "Bongo2.aiff",
+						"PIGEONS.4" : "ChineseCymbal.aiff",
+						"PIGEONS.5" : "CoreanGong.aiff",
+						"PIGEONS.6" : "Glockenspiel.aiff",
+						"PIGEONS.7" : "LogDrum.aiff",
+						"PIGEONS.8" : "LowCowbell.aiff",
+						"PIGEONS.9" : "SnareDrum.aiff",
+						"PIGEONS.10" : "Stone.aiff",
+						"PIGEONS.11" : "TempleBlock1.aiff",
+						"PIGEONS.12" : "TempleBlock2.aiff",
+						"PIGEONS.13" : "TempleBlock3.aiff",
+						"PIGEONS.14" : "TempleBlock4.aiff",
+						"PIGEONS.15" : "Timpani.aiff",
+						"PIGEONS.16" : "Triangle.aiff"
 					}
 ,
 					"fontname" : "Arial Bold",
@@ -1256,7 +1232,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 870.0, 417.5, 110.666687, 29.0 ],
+					"patching_rect" : [ 886.0, 169.0, 110.666687, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 189.666656, 65.0, 203.0, 18.0 ],
 					"saved_object_attributes" : 					{
@@ -1264,51 +1240,6 @@
 					}
 ,
 					"text" : "polybuffer~ PIGEONS @embed 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-54",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 803.0, 621.0, 153.0, 27.0 ],
-					"text" : ";\r1sogs buffer PIGEONS.144"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-53",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 803.0, 577.5, 153.0, 27.0 ],
-					"text" : ";\r1sogs buffer PIGEONS.143"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-42",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 803.0, 536.5, 153.0, 27.0 ],
-					"text" : ";\r1sogs buffer AILE-Detector-87"
 				}
 
 			}
@@ -2340,44 +2271,44 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-18.1::obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-1.1::obj-1::obj-12" : [ "clear[1]", "clear", 0 ],
-			"obj-18.1::obj-1::obj-77" : [ "OnsetVar", "OnsetVar", 0 ],
-			"obj-18.1::obj-1::obj-82" : [ "transp", "transp", 0 ],
-			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
-			"obj-18.1::obj-1::obj-89" : [ "trig", "trig", 0 ],
+			"obj-18.1::obj-1::obj-88" : [ "stretch", "stretch", 0 ],
+			"obj-7::obj-50" : [ "Play", "Play", 0 ],
+			"obj-32" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-1.1::obj-1::obj-48" : [ "buffersDuration", "buffersDuration", 0 ],
 			"obj-18.1::obj-1::obj-25" : [ "offset", "offset", 0 ],
-			"obj-18.1::obj-1::obj-53" : [ "Release", "Release", 0 ],
-			"obj-18.1::obj-1::obj-10" : [ "steal", "steal", 0 ],
+			"obj-18.1::obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
+			"obj-18.1::obj-1::obj-77" : [ "OnsetVar", "OnsetVar", 0 ],
 			"obj-1.1::obj-1::obj-18" : [ "record", "record", 0 ],
+			"obj-1.1::obj-1::obj-47" : [ "nbBuffers", "nbBuffers", 0 ],
+			"obj-1.1::obj-1::obj-72" : [ "clear", "clear", 0 ],
+			"obj-18.1::obj-1::obj-84" : [ "amp", "amp", 0 ],
+			"obj-18.1::obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-18.1::obj-1::obj-61" : [ "Overlap", "Overlap", 0 ],
+			"obj-1.1::obj-1::obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-18.1::obj-1::obj-8" : [ "duration", "duration", 0 ],
+			"obj-18.1::obj-1::obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-18.1::obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-18.1::obj-1::obj-54" : [ "Attack", "Attack", 0 ],
+			"obj-18.1::obj-1::obj-91" : [ "PitchVar", "PitchVar", 0 ],
+			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
+			"obj-18.1::obj-1::obj-68" : [ "buffer", "buffer", 0 ],
+			"obj-18.1::obj-1::obj-21" : [ "clear[3]", "clear", 0 ],
 			"obj-18.1::obj-1::obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-1.1::obj-1::obj-12" : [ "clear[1]", "clear", 0 ],
+			"obj-18.1::obj-1::obj-89" : [ "trig", "trig", 0 ],
+			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
+			"obj-18.1::obj-1::obj-73" : [ "Direction", "Direction", 0 ],
+			"obj-18.1::obj-1::obj-10" : [ "steal", "steal", 0 ],
+			"obj-1.1::obj-1::obj-26" : [ "release", "release", 0 ],
+			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
+			"obj-18.1::obj-1::obj-53" : [ "Release", "Release", 0 ],
+			"obj-18.1::obj-1::obj-80" : [ "PRESET[1]", "PRESET", 0 ],
+			"obj-18.1::obj-1::obj-82" : [ "transp", "transp", 0 ],
 			"obj-1.1::obj-1::obj-25" : [ "attack", "attack", 0 ],
 			"obj-1.1::obj-1::obj-29" : [ "clear[2]", "clear", 0 ],
-			"obj-18.1::obj-1::obj-80" : [ "PRESET[1]", "PRESET", 0 ],
-			"obj-1.1::obj-1::obj-80" : [ "PRESET", "PRESET", 0 ],
-			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
-			"obj-1.1::obj-1::obj-72" : [ "clear", "clear", 0 ],
-			"obj-18.1::obj-1::obj-61" : [ "Overlap", "Overlap", 0 ],
-			"obj-1.1::obj-1::obj-48" : [ "buffersDuration", "buffersDuration", 0 ],
 			"obj-1.1::obj-1::obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-18.1::obj-1::obj-54" : [ "Attack", "Attack", 0 ],
-			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
-			"obj-18.1::obj-1::obj-91" : [ "PitchVar", "PitchVar", 0 ],
-			"obj-32" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-18.1::obj-1::obj-21" : [ "clear[3]", "clear", 0 ],
-			"obj-18.1::obj-1::obj-84" : [ "amp", "amp", 0 ],
-			"obj-1.1::obj-1::obj-47" : [ "nbBuffers", "nbBuffers", 0 ],
-			"obj-18.1::obj-1::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-18.1::obj-1::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-1.1::obj-1::obj-26" : [ "release", "release", 0 ],
-			"obj-18.1::obj-1::obj-73" : [ "Direction", "Direction", 0 ],
-			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
-			"obj-18.1::obj-1::obj-88" : [ "stretch", "stretch", 0 ],
-			"obj-18.1::obj-1::obj-8" : [ "duration", "duration", 0 ],
-			"obj-18.1::obj-1::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-18.1::obj-1::obj-68" : [ "buffer", "buffer", 0 ],
-			"obj-18.1::obj-1::obj-76" : [ "GrainSize", "GrainSize", 0 ],
-			"obj-7::obj-50" : [ "Play", "Play", 0 ]
+			"obj-18.1::obj-1::obj-76" : [ "GrainSize", "GrainSize", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -2454,6 +2385,13 @@
 				"name" : "polySogsSampler1.maxpat",
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Sogs",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.line.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/ctrl.components",
+				"patcherrelativepath" : "../../../ctrl.components",
 				"type" : "JSON",
 				"implicit" : 1
 			}
