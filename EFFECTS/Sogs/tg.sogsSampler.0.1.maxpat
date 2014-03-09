@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 319.0, 44.0, 652.0, 172.0 ],
+		"rect" : [ 319.0, 44.0, 654.0, 172.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -1267,7 +1267,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 7,
 					"numoutlets" : 8,
-					"outlettype" : [ "", "", "int", "", "", "", "", "" ],
+					"outlettype" : [ "", "", "", "", "", "", "", "" ],
 					"patching_rect" : [ 552.5, 555.667236, 126.666687, 18.0 ],
 					"text" : "tg.m.preset #1"
 				}
@@ -1417,7 +1417,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 552.5, 648.667236, 169.0, 29.0 ],
+					"patching_rect" : [ 552.5, 687.667236, 169.0, 29.0 ],
 					"saved_object_attributes" : 					{
 						"client_rect" : [ 218, 50, 606, 257 ],
 						"parameter_enable" : 0,
@@ -1522,7 +1522,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u631005069"
+					"varname" : "u692001916"
 				}
 
 			}
@@ -2427,6 +2427,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-23", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-45", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-306", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2817,28 +2826,28 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-61" : [ "Overlap", "Overlap", 0 ],
-			"obj-25" : [ "offset", "offset", 0 ],
-			"obj-54" : [ "Attack", "Attack", 0 ],
-			"obj-76" : [ "GrainSize", "GrainSize", 0 ],
-			"obj-91" : [ "PitchVar", "PitchVar", 0 ],
-			"obj-53" : [ "Release", "Release", 0 ],
-			"obj-68" : [ "buffer", "buffer", 0 ],
-			"obj-10" : [ "steal", "steal", 0 ],
-			"obj-21" : [ "clear", "clear", 0 ],
-			"obj-8" : [ "duration", "duration", 0 ],
-			"obj-89" : [ "trig", "trig", 0 ],
-			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-77" : [ "OnsetVar", "OnsetVar", 0 ],
-			"obj-84" : [ "amp", "amp", 0 ],
-			"obj-73" : [ "Direction", "Direction", 0 ],
-			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
 			"obj-88" : [ "stretch", "stretch", 0 ],
+			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-25" : [ "offset", "offset", 0 ],
+			"obj-77" : [ "OnsetVar", "OnsetVar", 0 ],
+			"obj-21" : [ "clear", "clear", 0 ],
+			"obj-84" : [ "amp", "amp", 0 ],
+			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-61" : [ "Overlap", "Overlap", 0 ],
+			"obj-8" : [ "duration", "duration", 0 ],
 			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-82" : [ "transp", "transp", 0 ],
-			"obj-80" : [ "PRESET[1]", "PRESET", 0 ],
 			"obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ]
+			"obj-54" : [ "Attack", "Attack", 0 ],
+			"obj-91" : [ "PitchVar", "PitchVar", 0 ],
+			"obj-68" : [ "buffer", "buffer", 0 ],
+			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-89" : [ "trig", "trig", 0 ],
+			"obj-73" : [ "Direction", "Direction", 0 ],
+			"obj-10" : [ "steal", "steal", 0 ],
+			"obj-53" : [ "Release", "Release", 0 ],
+			"obj-80" : [ "PRESET[1]", "PRESET", 0 ],
+			"obj-82" : [ "transp", "transp", 0 ],
+			"obj-76" : [ "GrainSize", "GrainSize", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
