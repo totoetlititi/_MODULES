@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 114.0, 44.0, 1566.0, 890.0 ],
+		"rect" : [ 114.0, 552.0, 1566.0, 890.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -300,6 +300,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 139.0, 732.667236, 40.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 2"
 				}
 
@@ -398,6 +402,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 406.200012, 699.665527, 34.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out 1"
 				}
 
@@ -488,6 +496,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 445.800018, 28.667236, 34.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in 1"
 				}
 
@@ -857,11 +869,12 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-10",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 360.200012, 354.0, 67.0, 18.0 ],
+					"patching_rect" : [ 360.200012, 357.167236, 53.0, 29.0 ],
 					"text" : "clip 0.01 10."
 				}
 
@@ -871,11 +884,12 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-9",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 304.399994, 378.667236, 56.0, 18.0 ],
+					"patching_rect" : [ 304.399994, 357.167236, 42.0, 29.0 ],
 					"text" : "clip 0. 10."
 				}
 
@@ -885,12 +899,13 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-8",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 248.600006, 343.667236, 75.0, 18.0 ],
-					"text" : "clip 10 22000."
+					"patching_rect" : [ 248.600006, 357.167236, 51.0, 29.0 ],
+					"text" : "clip 50 12000."
 				}
 
 			}
@@ -3102,7 +3117,7 @@
 							}
 , 							{
 								"key" : "CoreanGong",
-								"value" : [ 113.309998, 0.0, 28.328299, 308.48999, 0.0, 77.123489, 417.869995, 0.0, 104.467293, 598.700012, 0.0, 149.675583, 716.200012, 0.0, 179.050003, 1034.5, 0.0, 258.624695, 1166.060059, 0.0, 291.513794, 1507.550049, 0.0, 376.88797, 8600.0, 0.0, 1.0, 8700.0, 0.0, 1.0, 8800.0, 0.0, 1.0, 9000.0, 0.0, 1.0, 9100.0, 0.0, 1.0, 9200.0, 0.0, 1.0, 9300.0, 0.0, 1.0, 9400.0, 0.0, 1.0, 9500.0, 0.0, 1.0, 9600.0, 0.0, 1.0, 9700.0, 0.0, 1.0, 9800.0, 0.0, 1.0, 9900.0, 0.0, 1.0, 9700.0, 0.0, 1.0, 9800.0, 0.0, 1.0, 9800.0, 0.0, 1.0, 9900.0, 0.0, 1.0, 10000.0, 0.0, 1.0 ]
+								"value" : [ 113.309998, 35.146393, 1.0, 308.48999, 39.396984, 1.0, 417.869995, 0.0, 1.0, 598.700012, 48.754177, 1.0, 716.200012, 0.0, 1.0, 1034.5, 51.294868, 1.0, 1166.060059, 0.0, 1.0, 1507.550049, 36.652828, 1.0, 8600.0, 0.0, 1.0, 8700.0, 0.0, 1.0, 8800.0, 0.0, 1.0, 9000.0, 0.0, 1.0, 9100.0, 0.0, 1.0, 9200.0, 0.0, 1.0, 9300.0, 0.0, 1.0, 9400.0, 0.0, 1.0, 9500.0, 0.0, 1.0, 9600.0, 0.0, 1.0, 9700.0, 0.0, 1.0, 9800.0, 0.0, 1.0, 9900.0, 0.0, 1.0, 9700.0, 0.0, 1.0, 9800.0, 0.0, 1.0, 9800.0, 0.0, 1.0, 9900.0, 0.0, 1.0, 10000.0, 0.0, 1.0 ]
 							}
 , 							{
 								"key" : "Triangle",
@@ -3697,6 +3712,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 90.0, 732.667236, 40.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 1"
 				}
 
@@ -3725,6 +3744,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 518.200012, 28.667236, 34.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in 2"
 				}
 
@@ -3739,6 +3762,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 90.0, 194.0, 34.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in~ 1"
 				}
 
@@ -6661,15 +6688,6 @@
 					"source" : [ "obj-99", 0 ]
 				}
 
-			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "resonators~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "res-transform.mxo",
-				"type" : "iLaX"
 			}
  ]
 	}
