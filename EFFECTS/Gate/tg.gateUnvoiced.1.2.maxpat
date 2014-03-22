@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 240.0, 44.0, 886.0, 172.0 ],
+		"rect" : [ 240.0, 44.0, 887.0, 172.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -29,6 +29,34 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-73",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 668.5, 180.334473, 75.0, 18.0 ],
+					"text" : "s #1.YIN.OUT"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-61",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1116.875, 242.0, 98.0, 18.0 ],
+					"text" : "s #1.SPREAD.OUT"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
@@ -79,7 +107,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "", "" ],
-					"patching_rect" : [ 1134.0, 274.0, 100.0, 18.0 ],
+					"patching_rect" : [ 939.874939, 72.0, 100.0, 18.0 ],
 					"text" : "adsr~ 5 0 1 5"
 				}
 
@@ -121,7 +149,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 980.374939, 399.0, 32.5, 18.0 ],
+					"patching_rect" : [ 980.374939, 399.0, 46.0, 18.0 ],
 					"text" : "*~"
 				}
 
@@ -135,7 +163,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 861.083252, 399.0, 32.5, 18.0 ],
+					"patching_rect" : [ 861.083252, 399.0, 46.0, 18.0 ],
 					"text" : "*~"
 				}
 
@@ -546,7 +574,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1134.0, 235.5, 49.166687, 15.0 ],
+					"patching_rect" : [ 939.874939, 33.5, 49.166687, 15.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 431.416626, 2.0, 49.166687, 15.0 ],
 					"prototypename" : "onoff",
@@ -751,7 +779,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 993.874939, 126.0, 75.0, 18.0 ],
+					"patching_rect" : [ 993.874939, 126.0, 35.0, 18.0 ],
 					"text" : "sqrt~"
 				}
 
@@ -1872,7 +1900,7 @@
 					"fontsize" : 12.0,
 					"framecolor" : [ 0.498039, 0.52549, 0.576471, 0.0 ],
 					"id" : "obj-86",
-					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export", ",", "<separator>", ",", "(Recall)", ",", "(undefined)" ],
+					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export", ",", "<separator>", ",", "(Recall)", ",", "(undefined)", ",", "Default" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1975,7 +2003,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 7,
 					"numoutlets" : 8,
-					"outlettype" : [ "", "", "int", "", "", "", "", "" ],
+					"outlettype" : [ "", "", "", "", "", "", "", "" ],
 					"patching_rect" : [ 730.083252, 803.5, 126.666687, 18.0 ],
 					"text" : "tg.m.preset #1"
 				}
@@ -2001,7 +2029,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "preset", "int", "preset", "int" ],
 					"patching_rect" : [ 735.083252, 690.5, 92.5, 69.0 ],
-					"pattrstorage" : "FragulatorPreset",
+					"pattrstorage" : "gateUnvoicedPreset",
 					"presentation" : 1,
 					"presentation_rect" : [ 785.5, 67.0, 92.5, 69.0 ],
 					"prototypename" : "M4L.H",
@@ -2127,6 +2155,7 @@
 			}
 , 			{
 				"box" : 				{
+					"autorestore" : "gateUnvoicedPreset.json",
 					"color" : [ 0.239216, 0.643137, 0.709804, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
@@ -2243,7 +2272,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u665008166"
+					"varname" : "u868008753"
 				}
 
 			}
@@ -3173,6 +3202,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-73", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -3471,6 +3509,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-49", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-61", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-49", 0 ]
@@ -3896,29 +3943,29 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-80" : [ "PRESET[1]", "PRESET", 0 ],
 			"obj-25" : [ "RemixSinus", "RemixSinus", 0 ],
-			"obj-85" : [ "yinGainVoiced", "yinGainVoiced", 0 ],
+			"obj-62" : [ "svpGain", "svpGain", 0 ],
 			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
 			"obj-2" : [ "RemixError", "RemixError", 0 ],
 			"obj-22" : [ "RemixTransients", "RemixTransients", 0 ],
-			"obj-80" : [ "PRESET[1]", "PRESET", 0 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-64" : [ "spreadGainUnvoiced", "spreadGainUnvoiced", 0 ],
-			"obj-32" : [ "RemixMode", "RemixMode", 0 ],
-			"obj-33" : [ "spreadGainVoiced", "spreadGainVoiced", 0 ],
-			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-62" : [ "svpGain", "svpGain", 0 ],
-			"obj-24" : [ "RemixNoise", "RemixNoise", 0 ],
 			"obj-52" : [ "threshFreq", "threshFreq", 0 ],
-			"obj-57" : [ "spread", "spread", 0 ],
 			"obj-105" : [ "svp", "svp", 0 ],
-			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-63" : [ "yinGainUnvoiced", "yinGainUnvoiced", 0 ],
-			"obj-18" : [ "RemixRelax", "RemixRelax", 0 ],
+			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-32" : [ "RemixMode", "RemixMode", 0 ],
+			"obj-57" : [ "spread", "spread", 0 ],
 			"obj-78" : [ "voicedThresh", "voicedThresh", 0 ],
-			"obj-8" : [ "Ingain", "Ingain", 0 ],
 			"obj-71" : [ "yin", "yin", 0 ],
+			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-24" : [ "RemixNoise", "RemixNoise", 0 ],
+			"obj-64" : [ "spreadGainUnvoiced", "spreadGainUnvoiced", 0 ],
+			"obj-63" : [ "yinGainUnvoiced", "yinGainUnvoiced", 0 ],
+			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-18" : [ "RemixRelax", "RemixRelax", 0 ],
+			"obj-33" : [ "spreadGainVoiced", "spreadGainVoiced", 0 ],
+			"obj-85" : [ "yinGainVoiced", "yinGainVoiced", 0 ],
 			"obj-67" : [ "FilterGain", "FilterGain", 0 ]
 		}
 ,
@@ -3926,6 +3973,13 @@
 				"name" : "M4L.bal2~.maxpat",
 				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
 				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "gateUnvoicedPreset.json",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"patcherrelativepath" : "../../JSON",
 				"type" : "JSON",
 				"implicit" : 1
 			}
