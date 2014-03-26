@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 6,
+			"revision" : 7,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 234.0, 44.0, 1033.0, 175.0 ],
+		"rect" : [ 107.0, 44.0, 1032.0, 174.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
@@ -128,7 +128,7 @@
 					"patching_rect" : [ 542.5, 798.0, 36.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "PRESET",
+							"parameter_longname" : "PRESET[6]",
 							"parameter_shortname" : "PRESET",
 							"parameter_type" : 1,
 							"parameter_unitstyle" : 0,
@@ -1680,7 +1680,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u968004415"
+					"varname" : "u833000282"
 				}
 
 			}
@@ -2909,7 +2909,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -3116,7 +3116,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -3323,7 +3323,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -3530,7 +3530,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -3745,8 +3745,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0 ],
 							"parameter_unitstyle" : 2,
-							"parameter_units" : "mc",
-							"parameter_steps" : 301
+							"parameter_units" : "mc"
 						}
 
 					}
@@ -3777,8 +3776,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0 ],
 							"parameter_unitstyle" : 2,
-							"parameter_units" : "mc",
-							"parameter_steps" : 301
+							"parameter_units" : "mc"
 						}
 
 					}
@@ -3809,8 +3807,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0 ],
 							"parameter_unitstyle" : 2,
-							"parameter_units" : "mc",
-							"parameter_steps" : 301
+							"parameter_units" : "mc"
 						}
 
 					}
@@ -3869,8 +3866,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0 ],
 							"parameter_unitstyle" : 2,
-							"parameter_units" : "mc",
-							"parameter_steps" : 301
+							"parameter_units" : "mc"
 						}
 
 					}
@@ -5277,6 +5273,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-184", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-194", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -5452,6 +5457,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-200", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-201", 0 ]
 				}
 
 			}
@@ -6161,63 +6175,63 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-160" : [ "Freq1", "Freq1", 0 ],
-			"obj-150" : [ "Mode1", "Mode1", 0 ],
+			"obj-70" : [ "Gain2", "Gain2", 0 ],
+			"obj-171" : [ "Mode2", "Mode2", 0 ],
 			"obj-54" : [ "Pan2", "Pan2", 0 ],
-			"obj-123" : [ "PitchModMin", "PitchModMin", 0 ],
-			"obj-154" : [ "Resp2", "Resp2", 0 ],
-			"obj-90" : [ "SpeedMod", "SpeedMod", 0 ],
-			"obj-23" : [ "PRESET", "PRESET", 0 ],
+			"obj-124" : [ "PitchModMaxTrans", "PitchModMaxTrans", 0 ],
+			"obj-206" : [ "Resp4", "Resp4", 0 ],
+			"obj-152" : [ "Trans1", "Trans1", 0 ],
 			"obj-66" : [ "Del1", "Del1", 0 ],
-			"obj-104" : [ "Outgain", "Outgain", 0 ],
 			"obj-133" : [ "FilterFreq", "FilterFreq", 0 ],
 			"obj-159" : [ "Freq2", "Freq2", 0 ],
-			"obj-171" : [ "Mode2", "Mode2", 0 ],
+			"obj-69" : [ "Gain3", "Gain3", 0 ],
+			"obj-200" : [ "Mode3", "Mode3", 0 ],
 			"obj-47" : [ "Pan3", "Pan3", 0 ],
-			"obj-199" : [ "Trans3", "Trans3", 0 ],
-			"obj-125" : [ "PitchMod", "PitchMod", 0 ],
-			"obj-93" : [ "SpeedModMax", "SpeedModMax", 0 ],
+			"obj-123" : [ "PitchModMin", "PitchModMin", 0 ],
+			"obj-90" : [ "SpeedMod", "SpeedMod", 0 ],
+			"obj-153" : [ "Trans2", "Trans2", 0 ],
 			"obj-62" : [ "Del2", "Del2", 0 ],
 			"obj-130" : [ "FilterGain", "FilterGain", 0 ],
 			"obj-195" : [ "Freq3", "Freq3", 0 ],
-			"obj-200" : [ "Mode3", "Mode3", 0 ],
-			"obj-128" : [ "Gain1", "Gain1", 0 ],
+			"obj-67" : [ "Gain4", "Gain4", 0 ],
+			"obj-183" : [ "Mode4", "Mode4", 0 ],
 			"obj-31" : [ "Pan4", "Pan4", 0 ],
-			"obj-152" : [ "Trans1", "Trans1", 0 ],
-			"obj-207" : [ "Resp3", "Resp3", 0 ],
-			"obj-92" : [ "SpeedModMin", "SpeedModMin", 0 ],
+			"obj-165" : [ "Resp1", "Resp1", 0 ],
+			"obj-93" : [ "SpeedModMax", "SpeedModMax", 0 ],
+			"obj-199" : [ "Trans3", "Trans3", 0 ],
 			"obj-61" : [ "Del3", "Del3", 0 ],
-			"obj-70" : [ "Gain2", "Gain2", 0 ],
+			"obj-23" : [ "PRESET[6]", "PRESET", 0 ],
 			"obj-127" : [ "FilterMode", "FilterMode", 0 ],
 			"obj-194" : [ "Freq4", "Freq4", 0 ],
-			"obj-183" : [ "Mode4", "Mode4", 0 ],
-			"obj-165" : [ "Resp1", "Resp1", 0 ],
-			"obj-124" : [ "PitchModMaxTrans", "PitchModMaxTrans", 0 ],
+			"obj-149" : [ "Ingain", "Ingain", 0 ],
+			"obj-104" : [ "Outgain", "Outgain", 0 ],
+			"obj-125" : [ "PitchMod", "PitchMod", 0 ],
+			"obj-154" : [ "Resp2", "Resp2", 0 ],
+			"obj-91" : [ "SpeedModMaxDel", "SpeedModMaxDel", 0 ],
 			"obj-198" : [ "Trans4", "Trans4", 0 ],
-			"obj-69" : [ "Gain3", "Gain3", 0 ],
 			"obj-60" : [ "Del4", "Del4", 0 ],
 			"obj-146" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-149" : [ "Ingain", "Ingain", 0 ],
+			"obj-128" : [ "Gain1", "Gain1", 0 ],
+			"obj-150" : [ "Mode1", "Mode1", 0 ],
 			"obj-56" : [ "Pan1", "Pan1", 0 ],
-			"obj-153" : [ "Trans2", "Trans2", 0 ],
 			"obj-122" : [ "PitchModMax", "PitchModMax", 0 ],
-			"obj-206" : [ "Resp4", "Resp4", 0 ],
-			"obj-67" : [ "Gain4", "Gain4", 0 ],
-			"obj-91" : [ "SpeedModMaxDel", "SpeedModMaxDel", 0 ],
-			"obj-73" : [ "Dry/Wet", "Dry/Wet", 0 ]
+			"obj-207" : [ "Resp3", "Resp3", 0 ],
+			"obj-92" : [ "SpeedModMin", "SpeedModMin", 0 ],
+			"obj-73" : [ "Dry/Wet", "Dry/Wet", 0 ],
+			"obj-160" : [ "Freq1", "Freq1", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1.7/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.7/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "M4L.pan1~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1.7/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.7/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
