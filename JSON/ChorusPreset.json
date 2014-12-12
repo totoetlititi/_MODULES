@@ -20,6 +20,25 @@
 				}
 
 			}
+,
+			"2" : 			{
+				"id" : 2,
+				"name" : "Example1",
+				"data" : 				{
+					"Center" : [ 197.246201 ],
+					"Depth" : [ 3.322047 ],
+					"Dry/wet" : [ 100.0 ],
+					"Feed" : [ 0.480315 ],
+					"FilterFreq" : [ 1765.68103 ],
+					"FilterGain" : [ 9.918169 ],
+					"FilterMode" : [ 8.0 ],
+					"FilterQ" : [ 1.519283 ],
+					"Freq" : [ 6.599485 ],
+					"Ingain" : [ 0.0 ],
+					"Outgain" : [ 0.0 ]
+				}
+
+			}
 
 		}
 
