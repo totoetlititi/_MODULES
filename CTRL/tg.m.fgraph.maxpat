@@ -2,30 +2,40 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 6,
+			"major" : 7,
 			"minor" : 0,
-			"revision" : 8
+			"revision" : 1,
+			"architecture" : "x86",
+			"modernui" : 1
 		}
 ,
-		"rect" : [ 25.0, 69.0, 640.0, 480.0 ],
+		"rect" : [ 935.0, 78.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial Bold",
-		"gridonopen" : 0,
+		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 0,
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
 		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
-		"imprint" : 0,
 		"enablehscroll" : 1,
 		"enablevscroll" : 1,
 		"devicewidth" : 0.0,
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Arial Bold",
@@ -35,7 +45,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 58.583313, 164.0, 52.0, 18.0 ],
+					"patching_rect" : [ 68.583328, 197.0, 52.0, 20.0 ],
+					"style" : "",
 					"text" : "deferlow"
 				}
 
@@ -45,13 +56,13 @@
 					"bubble" : 1,
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-33",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 74.0, 101.0, 191.0, 33.0 ],
+					"style" : "",
 					"text" : "because filtergraph~ outputs something when audio is on..."
 				}
 
@@ -65,7 +76,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "float" ],
-					"patching_rect" : [ 38.0, 94.0, 36.0, 18.0 ],
+					"patching_rect" : [ 38.0, 94.0, 36.0, 20.0 ],
+					"style" : "",
 					"text" : "t 1 f"
 				}
 
@@ -79,7 +91,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 38.0, 116.0, 36.0, 18.0 ],
+					"patching_rect" : [ 38.0, 116.0, 36.0, 20.0 ],
+					"style" : "",
 					"text" : "gate"
 				}
 
@@ -93,7 +106,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 85.583313, 214.832764, 39.0, 16.0 ],
+					"patching_rect" : [ 85.583313, 257.0, 39.0, 20.0 ],
+					"style" : "",
 					"text" : "set $1"
 				}
 
@@ -107,7 +121,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 133.166626, 214.832764, 39.0, 16.0 ],
+					"patching_rect" : [ 133.166626, 257.0, 39.0, 20.0 ],
+					"style" : "",
 					"text" : "set $1"
 				}
 
@@ -121,7 +136,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 38.0, 214.832764, 39.0, 16.0 ],
+					"patching_rect" : [ 38.0, 257.0, 39.0, 20.0 ],
+					"style" : "",
 					"text" : "set $1"
 				}
 
@@ -135,7 +151,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "float", "float", "float" ],
-					"patching_rect" : [ 38.0, 188.832764, 114.166626, 18.0 ],
+					"patching_rect" : [ 38.0, 231.0, 114.166626, 20.0 ],
+					"style" : "",
 					"text" : "unpack 0. 0. 0."
 				}
 
@@ -149,7 +166,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 38.0, 139.5, 113.166656, 18.0 ],
+					"patching_rect" : [ 38.0, 139.5, 113.166656, 20.0 ],
+					"style" : "",
 					"text" : "pack 0. 0. 0."
 				}
 
@@ -163,7 +181,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 84.97226, 66.0, 38.0, 18.0 ],
+					"patching_rect" : [ 84.97226, 66.0, 38.0, 20.0 ],
+					"style" : "",
 					"text" : "atodb"
 				}
 
@@ -176,7 +195,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 38.0, 34.0, 25.0, 25.0 ]
+					"patching_rect" : [ 38.0, 34.0, 25.0, 25.0 ],
+					"style" : ""
 				}
 
 			}
@@ -188,7 +208,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 84.97226, 34.0, 25.0, 25.0 ]
+					"patching_rect" : [ 84.97226, 34.0, 25.0, 25.0 ],
+					"style" : ""
 				}
 
 			}
@@ -200,7 +221,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 132.0, 34.0, 25.0, 25.0 ]
+					"patching_rect" : [ 132.0, 34.0, 25.0, 25.0 ],
+					"style" : ""
 				}
 
 			}
@@ -211,7 +233,8 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 38.0, 290.832764, 25.0, 25.0 ]
+					"patching_rect" : [ 38.0, 333.0, 25.0, 25.0 ],
+					"style" : ""
 				}
 
 			}
@@ -222,7 +245,8 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 85.583313, 290.832764, 25.0, 25.0 ]
+					"patching_rect" : [ 85.583313, 333.0, 25.0, 25.0 ],
+					"style" : ""
 				}
 
 			}
@@ -233,7 +257,8 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 133.166626, 290.832764, 25.0, 25.0 ]
+					"patching_rect" : [ 133.166626, 333.0, 25.0, 25.0 ],
+					"style" : ""
 				}
 
 			}
@@ -258,7 +283,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-38", 0 ],
+					"destination" : [ "obj-26", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-24", 0 ]
@@ -357,15 +382,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-38", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -374,14 +390,8 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "AtodB",
-				"bootpath" : "/Applications/Max6/patches/docs/refpages/max-ref",
-				"patcherrelativepath" : "../../../../../../../Applications/Max6/patches/docs/refpages/max-ref",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
- ]
+		"dependency_cache" : [  ],
+		"embedsnapshot" : 0
 	}
 
 }

@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 6,
+			"revision" : 9,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 54.0, 44.0, 1433.0, 925.0 ],
+		"rect" : [ 62.0, 278.0, 1433.0, 925.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -357,7 +357,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -841,7 +841,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -1316,7 +1316,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -1545,7 +1545,7 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-53",
-					"items" : [ "(undefined)", ",", "Default" ],
+					"items" : [ "(undefined)", ",", "Default", ",", "Test1" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1583,7 +1583,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -1919,11 +1919,11 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 627.0, 50.0, 607.0, 924.0 ],
+						"rect" : [ 1083.0, 188.0, 607.0, 924.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 10.0,
@@ -1943,6 +1943,36 @@
 						"digest" : "",
 						"tags" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Arial Bold",
+									"fontsize" : 10.0,
+									"frgb" : 0.0,
+									"id" : "obj-30",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 117.5, 852.0, 154.0, 40.0 ],
+									"text" : "to correct textedit bug, which does not display correctly commas"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial Bold",
+									"fontsize" : 10.0,
+									"id" : "obj-28",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "bang", "bang" ],
+									"patching_rect" : [ 117.5, 834.0, 100.0, 18.0 ],
+									"save" : [ "#N", "qlist", ";", "#X", "insert", "1conv", "Dry/wet", 100.0, "_comma_", "FilterFreq", 951.835754, "_comma_", "FilterGain", 10.078773, "_comma_", "FilterMode", 5.0, "_comma_", "FilterQ", 0.3, "_comma_", "Ingain1", 0.0, "_comma_", "Ingain2", 0.0, "_comma_", "Morph", 100.0, "_comma_", "Outgain", -36.169086, "_comma_", "ReceiveEnable", 1.0, "_comma_", "ReceiveSource2", "none", ";" ],
+									"text" : "qlist"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
@@ -2306,7 +2336,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 6,
+											"revision" : 9,
 											"architecture" : "x86"
 										}
 ,
@@ -2392,7 +2422,7 @@
 													"fontsize" : 10.0,
 													"frgb" : 0.0,
 													"id" : "obj-6",
-													"linecount" : 7,
+													"linecount" : 24,
 													"maxclass" : "textedit",
 													"numinlets" : 1,
 													"numoutlets" : 4,
@@ -2400,8 +2430,9 @@
 													"parameter_enable" : 0,
 													"patching_rect" : [ 285.0, 129.0, 54.0, 375.0 ],
 													"presentation" : 1,
+													"presentation_linecount" : 3,
 													"presentation_rect" : [ 1.0, 1.0, 415.0, 302.0 ],
-													"text" : "1sf Soundbank ALLSOUND, Outgain -48.019154, trig 1."
+													"text" : "1conv Dry/wet 100., FilterFreq 951.835754, FilterGain 10.078773, FilterMode 5., FilterQ 0.3, Ingain1 0., Ingain2 0., Morph 100., Outgain -36.169086, ReceiveEnable 1., ReceiveSource2 none"
 												}
 
 											}
@@ -3051,6 +3082,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-28", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-4", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -3381,7 +3421,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 684.25, 728.0, 85.0, 18.0 ],
+					"patching_rect" : [ 684.25, 728.0, 87.0, 18.0 ],
 					"text" : "loadmess #1"
 				}
 

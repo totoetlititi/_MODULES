@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 7,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 243.0, 135.0, 1239.0, 172.0 ],
+		"rect" : [ 67.0, 44.0, 1239.0, 173.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -80,7 +80,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.0, 436.0, 84.0, 18.0 ],
+					"patching_rect" : [ 128.0, 436.0, 88.0, 18.0 ],
 					"text" : "r #1.EFFECT"
 				}
 
@@ -161,7 +161,7 @@
 					"presentation_rect" : [ 396.5, 91.5, 45.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "ReadFadeOut[1]",
+							"parameter_longname" : "ReadFadeOut",
 							"parameter_shortname" : "ReadFadeOut",
 							"parameter_type" : 0,
 							"parameter_mmax" : 30000.0,
@@ -194,7 +194,7 @@
 					"presentation_rect" : [ 347.0, 91.5, 45.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "ReadFadeIn[1]",
+							"parameter_longname" : "ReadFadeIn",
 							"parameter_shortname" : "ReadFadeIn",
 							"parameter_type" : 0,
 							"parameter_mmax" : 30000.0,
@@ -266,7 +266,7 @@
 					"patching_rect" : [ 930.575439, 745.572266, 36.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "PRESET[41]",
+							"parameter_longname" : "PRESET[7]",
 							"parameter_shortname" : "PRESET",
 							"parameter_type" : 1,
 							"parameter_unitstyle" : 0,
@@ -320,7 +320,7 @@
 					"patching_rect" : [ 811.386719, 632.5, 95.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1137.5, 3.5, 95.0, 27.0 ],
-					"text" : "#1"
+					"text" : "1SVPP"
 				}
 
 			}
@@ -332,7 +332,7 @@
 					"fontsize" : 12.0,
 					"framecolor" : [ 0.498039, 0.52549, 0.576471, 0.0 ],
 					"id" : "obj-23",
-					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export" ],
+					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export", ",", "<separator>", ",", "(Recall)", ",", "(undefined)", ",", "Default" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -398,7 +398,6 @@
 					"presentation_rect" : [ 1137.5, 152.0, 95.0, 16.0 ],
 					"prototypename" : "M4L.black",
 					"rounded" : 12.0,
-					"text" : "Default",
 					"textcolor" : [ 0.909804, 0.909804, 0.909804, 1.0 ]
 				}
 
@@ -579,7 +578,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -1370,6 +1369,8 @@
 					"annotation" : "BufAction",
 					"id" : "obj-314",
 					"maxclass" : "live.tab",
+					"num_lines_patching" : 6,
+					"num_lines_presentation" : 3,
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "float" ],
@@ -1380,7 +1381,7 @@
 					"rounded" : 8.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "BufAction[1]",
+							"parameter_longname" : "BufAction",
 							"parameter_shortname" : "BufAction",
 							"parameter_type" : 2,
 							"parameter_enum" : [ "Stop", "Play", "Record", "RecPlay", "ArmRec", "ArmRecPlay" ],
@@ -1439,11 +1440,11 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 44.0, 143.0, 1636.0, 780.0 ],
+						"rect" : [ 284.0, 44.0, 1636.0, 780.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 10.0,
@@ -1462,6 +1463,7 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"color" : [ 0.0, 1.0, 1.0, 1.0 ],
@@ -1612,7 +1614,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 7,
 											"architecture" : "x86"
 										}
 ,
@@ -1802,7 +1804,7 @@
 														"appversion" : 														{
 															"major" : 6,
 															"minor" : 1,
-															"revision" : 3,
+															"revision" : 7,
 															"architecture" : "x86"
 														}
 ,
@@ -2417,8 +2419,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 721.237915, 119.0, 115.0, 16.0 ],
-									"text" : "Set #1.buffer~"
+									"patching_rect" : [ 721.237915, 119.0, 517.0, 16.0 ],
+									"text" : "replace \"Macintosh HD:/Users/goepfer/Documents/PATCH/Barriere/Leap/SOUNDS/alone_long.aif\" 0 -1 2"
 								}
 
 							}
@@ -4581,7 +4583,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -4848,7 +4850,7 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "BufSync[1]",
+							"parameter_longname" : "BufSync",
 							"parameter_shortname" : "BufSync",
 							"parameter_type" : 2,
 							"parameter_mmax" : 1.0,
@@ -4892,7 +4894,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -4960,7 +4962,7 @@
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
 									"id" : "obj-268",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
@@ -5239,10 +5241,11 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 787.024597, 87.5, 47.0, 27.0 ],
 					"presentation" : 1,
+					"presentation_linecount" : 2,
 					"presentation_rect" : [ 68.0, 70.0, 57.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "BufSet[1]",
+							"parameter_longname" : "BufSet",
 							"parameter_shortname" : "BufSet",
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
@@ -5252,7 +5255,7 @@
 
 					}
 ,
-					"text" : "#1.buffer~",
+					"text" : "1SVPP.buffer~",
 					"varname" : "BufSet"
 				}
 
@@ -5303,7 +5306,7 @@
 					"presentation_rect" : [ 396.5, 61.5, 45.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "BufEnd[1]",
+							"parameter_longname" : "BufEnd",
 							"parameter_shortname" : "BufEnd",
 							"parameter_type" : 0,
 							"parameter_mmax" : 60000.0,
@@ -5352,7 +5355,7 @@
 					"presentation_rect" : [ 347.0, 61.5, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "BufBegin[1]",
+							"parameter_longname" : "BufBegin",
 							"parameter_shortname" : "BufBegin",
 							"parameter_type" : 0,
 							"parameter_mmax" : 60000.0,
@@ -5384,7 +5387,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -5853,7 +5856,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -6203,7 +6206,7 @@
 					"patching_rect" : [ 847.841248, 106.5, 46.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Buf[1]",
+							"parameter_longname" : "Buf",
 							"parameter_shortname" : "Buf",
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
@@ -6226,6 +6229,7 @@
 					"frgb" : 0.0,
 					"id" : "obj-255",
 					"keymode" : 1,
+					"linecount" : 11,
 					"lines" : 1,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
@@ -6234,10 +6238,11 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 705.852356, 27.5, 50.0, 18.0 ],
 					"presentation" : 1,
+					"presentation_linecount" : 8,
 					"presentation_rect" : [ 68.0, 105.0, 59.0, 48.5 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "BufReplace[1]",
+							"parameter_longname" : "BufReplace",
 							"parameter_shortname" : "BufReplace",
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
@@ -6247,7 +6252,7 @@
 
 					}
 ,
-					"text" : "<none>",
+					"text" : "\"Macintosh HD:/Users/goepfer/Documents/PATCH/Barriere/Leap/SOUNDS/alone_long.aif\"",
 					"varname" : "BufReplace"
 				}
 
@@ -6445,7 +6450,7 @@
 					"presentation_rect" : [ 396.5, 150.5, 45.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "RecFadeOut[1]",
+							"parameter_longname" : "RecFadeOut",
 							"parameter_shortname" : "RecFadeOut",
 							"parameter_type" : 0,
 							"parameter_mmax" : 30000.0,
@@ -6478,7 +6483,7 @@
 					"presentation_rect" : [ 347.0, 150.5, 45.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "RecFadeIn[1]",
+							"parameter_longname" : "RecFadeIn",
 							"parameter_shortname" : "RecFadeIn",
 							"parameter_type" : 0,
 							"parameter_mmax" : 30000.0,
@@ -6511,7 +6516,7 @@
 					"presentation_rect" : [ 347.0, 30.5, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "nb-shots[1]",
+							"parameter_longname" : "nb-shots",
 							"parameter_shortname" : "nb-shots",
 							"parameter_type" : 1,
 							"parameter_mmax" : 100.0,
@@ -6543,7 +6548,7 @@
 					"presentation_rect" : [ 68.0, 36.5, 57.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "BufSize[1]",
+							"parameter_longname" : "BufSize",
 							"parameter_shortname" : "BufSize",
 							"parameter_type" : 0,
 							"parameter_mmax" : 60000.0,
@@ -6576,7 +6581,7 @@
 					"presentation_rect" : [ 396.5, 30.5, 45.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "BufSpeed[1]",
+							"parameter_longname" : "BufSpeed",
 							"parameter_shortname" : "BufSpeed",
 							"parameter_type" : 0,
 							"parameter_mmax" : 10.0,
@@ -6689,7 +6694,7 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "BufLoop[1]",
+							"parameter_longname" : "BufLoop",
 							"parameter_shortname" : "BufLoop",
 							"parameter_type" : 2,
 							"parameter_mmax" : 1.0,
@@ -6803,7 +6808,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -7168,7 +7173,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -7671,7 +7676,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -8268,7 +8273,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -9135,7 +9140,7 @@
 					"presentation_rect" : [ 674.5, 17.5, 53.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "FFTOversamp[20]",
+							"parameter_longname" : "FFTOversamp",
 							"parameter_shortname" : "FFTOversamp",
 							"parameter_type" : 2,
 							"parameter_enum" : [ "0", "1", "2", "3", "4" ],
@@ -9180,7 +9185,7 @@
 					"presentation_rect" : [ 610.5, 17.5, 53.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Oversampling[20]",
+							"parameter_longname" : "Oversampling",
 							"parameter_shortname" : "Oversampling",
 							"parameter_type" : 2,
 							"parameter_enum" : [ "3", "3.5", "4", "4.5", "5", "6" ],
@@ -9225,7 +9230,7 @@
 					"presentation_rect" : [ 546.5, 17.5, 53.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "WindowSize[20]",
+							"parameter_longname" : "WindowSize",
 							"parameter_shortname" : "WindowSize",
 							"parameter_type" : 2,
 							"parameter_enum" : [ "512", "750", "1024", "1250", "1500", "1750", "2048", "2250", "2500", "2750", "3000", "3500", "4096", "5000", "6000", "7000", "8192" ],
@@ -9291,7 +9296,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_order" : 1,
-							"parameter_longname" : "PreserveStereo[20]",
+							"parameter_longname" : "PreserveStereo",
 							"parameter_shortname" : "PreserveStereo",
 							"parameter_type" : 2,
 							"parameter_mmax" : 1.0,
@@ -9328,7 +9333,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_order" : 1,
-							"parameter_longname" : "PreserveTransients[20]",
+							"parameter_longname" : "PreserveTransients",
 							"parameter_shortname" : "PreserveTransients",
 							"parameter_type" : 2,
 							"parameter_mmax" : 1.0,
@@ -9379,7 +9384,7 @@
 					"presentation_rect" : [ 823.5, 67.5, 37.0, 95.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "RemixError[20]",
+							"parameter_longname" : "RemixError",
 							"parameter_shortname" : "RemixError",
 							"parameter_type" : 0,
 							"parameter_mmax" : 1.0,
@@ -9410,7 +9415,7 @@
 					"presentation_rect" : [ 790.5, 67.5, 36.0, 95.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "RemixRelax[20]",
+							"parameter_longname" : "RemixRelax",
 							"parameter_shortname" : "RemixRelax",
 							"parameter_type" : 0,
 							"parameter_mmax" : 100.0,
@@ -9441,7 +9446,7 @@
 					"presentation_rect" : [ 754.5, 67.5, 37.0, 95.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "RemixTransients[20]",
+							"parameter_longname" : "RemixTransients",
 							"parameter_shortname" : "RemixTransients",
 							"parameter_type" : 0,
 							"parameter_mmax" : 2.0,
@@ -9472,7 +9477,7 @@
 					"presentation_rect" : [ 719.5, 67.5, 37.0, 95.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "RemixNoise[20]",
+							"parameter_longname" : "RemixNoise",
 							"parameter_shortname" : "RemixNoise",
 							"parameter_type" : 0,
 							"parameter_mmax" : 2.0,
@@ -9503,7 +9508,7 @@
 					"presentation_rect" : [ 684.5, 67.5, 37.0, 95.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "RemixSinus[20]",
+							"parameter_longname" : "RemixSinus",
 							"parameter_shortname" : "RemixSinus",
 							"parameter_type" : 0,
 							"parameter_mmax" : 2.0,
@@ -9533,7 +9538,7 @@
 					"presentation_rect" : [ 798.5, 45.5, 60.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "RemixMode[14]",
+							"parameter_longname" : "RemixMode",
 							"parameter_shortname" : "RemixMode",
 							"parameter_type" : 2,
 							"parameter_enum" : [ "vocoder", "additive" ],
@@ -9580,7 +9585,7 @@
 					"presentation_rect" : [ 726.5, 45.5, 28.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "RemixEnable[14]",
+							"parameter_longname" : "RemixEnable",
 							"parameter_shortname" : "RemixEnable",
 							"parameter_type" : 2,
 							"parameter_mmax" : 1.0,
@@ -9634,7 +9639,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_order" : 1,
-							"parameter_longname" : "EnvPreserve[14]",
+							"parameter_longname" : "EnvPreserve",
 							"parameter_shortname" : "EnvPreserve",
 							"parameter_type" : 2,
 							"parameter_mmax" : 1.0,
@@ -9731,7 +9736,7 @@
 					"presentation_rect" : [ 564.5, 121.5, 44.0, 42.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "EnvScale[14]",
+							"parameter_longname" : "EnvScale",
 							"parameter_shortname" : "EnvScale",
 							"parameter_type" : 0,
 							"parameter_mmax" : 2.0,
@@ -9765,7 +9770,7 @@
 					"presentation_rect" : [ 530.5, 137.5, 28.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "EnvScaleEnable[14]",
+							"parameter_longname" : "EnvScaleEnable",
 							"parameter_shortname" : "EnvScaleEnable",
 							"parameter_type" : 2,
 							"parameter_mmax" : 1.0,
@@ -9799,7 +9804,7 @@
 					"presentation_rect" : [ 530.5, 81.5, 28.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "EnvTranspEnable[14]",
+							"parameter_longname" : "EnvTranspEnable",
 							"parameter_shortname" : "EnvTranspEnable",
 							"parameter_type" : 2,
 							"parameter_mmax" : 1.0,
@@ -9832,7 +9837,7 @@
 					"presentation_rect" : [ 615.5, 145.5, 56.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "EnvLpcOrder[14]",
+							"parameter_longname" : "EnvLpcOrder",
 							"parameter_shortname" : "EnvLpcOrder",
 							"parameter_type" : 0,
 							"parameter_mmax" : 1000.0,
@@ -9879,7 +9884,7 @@
 					"presentation_rect" : [ 615.5, 113.5, 56.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "EnvMaxFreq[14]",
+							"parameter_longname" : "EnvMaxFreq",
 							"parameter_shortname" : "EnvMaxFreq",
 							"parameter_type" : 0,
 							"parameter_mmax" : 4000.0,
@@ -9943,7 +9948,7 @@
 					"presentation_rect" : [ 615.5, 81.5, 56.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "EnvMode[14]",
+							"parameter_longname" : "EnvMode",
 							"parameter_shortname" : "EnvMode",
 							"parameter_type" : 2,
 							"parameter_enum" : [ "trueenv", "lpc" ],
@@ -9990,7 +9995,7 @@
 					"presentation_rect" : [ 558.5, 65.5, 56.0, 42.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "EnvTransp[14]",
+							"parameter_longname" : "EnvTransp",
 							"parameter_shortname" : "EnvTransp",
 							"parameter_type" : 0,
 							"parameter_mmin" : -2400.0,
@@ -10025,7 +10030,7 @@
 					"presentation_rect" : [ 468.5, 145.5, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "TranspMode[2]",
+							"parameter_longname" : "TranspMode[8]",
 							"parameter_shortname" : "TranspMode",
 							"parameter_type" : 2,
 							"parameter_enum" : [ "time", "freq", "auto" ],
@@ -10056,7 +10061,7 @@
 					"presentation_rect" : [ 473.5, 63.5, 30.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "TranspEnable[14]",
+							"parameter_longname" : "TranspEnable",
 							"parameter_shortname" : "TranspEnable",
 							"parameter_type" : 2,
 							"parameter_mmax" : 1.0,
@@ -10088,7 +10093,7 @@
 					"presentation_rect" : [ 462.5, 85.5, 56.0, 42.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Transpose[14]",
+							"parameter_longname" : "Transpose",
 							"parameter_shortname" : "Transpose",
 							"parameter_type" : 0,
 							"parameter_mmin" : -2400.0,
@@ -10128,7 +10133,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_order" : 1,
-							"parameter_longname" : "PreserveWaveform[14]",
+							"parameter_longname" : "PreserveWaveform",
 							"parameter_shortname" : "PreserveWaveform",
 							"parameter_type" : 2,
 							"parameter_mmax" : 1.0,
@@ -10191,7 +10196,7 @@
 					"presentation_rect" : [ 989.357178, 4.5, 71.642853, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "FilterMode[43]",
+							"parameter_longname" : "FilterMode[26]",
 							"parameter_shortname" : "FilterMode",
 							"parameter_type" : 2,
 							"parameter_enum" : [ "display", "lowpass", "highpass", "bandpass", "bandstop", "peaknotch", "lowshelf", "highshelf", "resonant", "allpass" ],
@@ -10340,7 +10345,7 @@
 					"presentation_rect" : [ 1021.0, 20.5, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "FilterGain[43]",
+							"parameter_longname" : "FilterGain[26]",
 							"parameter_shortname" : "FilterGain",
 							"parameter_type" : 0,
 							"parameter_mmin" : -80.0,
@@ -10370,7 +10375,7 @@
 					"presentation_rect" : [ 893.0, 20.5, 49.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "FilterFreq[43]",
+							"parameter_longname" : "FilterFreq[26]",
 							"parameter_shortname" : "FilterFreq",
 							"parameter_type" : 0,
 							"parameter_mmax" : 22050.0,
@@ -10399,7 +10404,7 @@
 					"presentation_rect" : [ 957.0, 20.5, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "FilterQ[43]",
+							"parameter_longname" : "FilterQ[26]",
 							"parameter_shortname" : "FilterQ",
 							"parameter_type" : 0,
 							"parameter_mmax" : 22000.0,
@@ -10621,35 +10626,35 @@
 					"patching_rect" : [ 943.075562, 685.0, 91.0, 29.0 ],
 					"restore" : 					{
 						"Buf" : [ "<none>" ],
-						"BufAction" : [ 0.0 ],
+						"BufAction" : [ 1.0 ],
 						"BufBegin" : [ 0.0 ],
-						"BufEnd" : [ 30000.001953 ],
+						"BufEnd" : [ 60000.0 ],
 						"BufLoop" : [ 0.0 ],
-						"BufReplace" : [ "<none>" ],
-						"BufSet" : [ "#1.buffer~" ],
+						"BufReplace" : [ "Macintosh HD:/Users/goepfer/Documents/PATCH/Barriere/Leap/SOUNDS/alone_long.aif" ],
+						"BufSet" : [ "1SVPP.buffer~" ],
 						"BufSize" : [ 30000.0 ],
 						"BufSpeed" : [ 1.0 ],
 						"BufSync" : [ 0.0 ],
 						"Dry/wet" : [ 100.0 ],
 						"EnvLpcOrder" : [ 12.0 ],
 						"EnvMaxFreq" : [ 500.0 ],
-						"EnvMode" : [ 0.0 ],
+						"EnvMode" : [ 1.0 ],
 						"EnvPreserve" : [ 1.0 ],
 						"EnvScale" : [ 1.0 ],
 						"EnvScaleEnable" : [ 0.0 ],
-						"EnvTransp" : [ 0.0 ],
-						"EnvTranspEnable" : [ 0.0 ],
+						"EnvTransp" : [ 525.0 ],
+						"EnvTranspEnable" : [ 1.0 ],
 						"FFTOversamp" : [ 0.0 ],
 						"FilterFreq" : [ 1000.0 ],
 						"FilterGain" : [ 0.0 ],
 						"FilterMode" : [ 5.0 ],
 						"FilterQ" : [ 0.3 ],
 						"Ingain" : [ 0.0 ],
-						"Outgain" : [ -127.0 ],
-						"Oversampling" : [ 2.0 ],
+						"Outgain" : [ 0.0 ],
+						"Oversampling" : [ 5.0 ],
 						"PreserveStereo" : [ 0.0 ],
 						"PreserveTransients" : [ 1.0 ],
-						"PreserveWaveform" : [ 0.0 ],
+						"PreserveWaveform" : [ 1.0 ],
 						"ReadFadeIn" : [ 5.0 ],
 						"ReadFadeOut" : [ 5.0 ],
 						"RecFadeIn" : [ 10.0 ],
@@ -10662,14 +10667,14 @@
 						"RemixSinus" : [ 1.0 ],
 						"RemixTransients" : [ 1.0 ],
 						"TranspEnable" : [ 1.0 ],
-						"TranspMode" : [ 0.0 ],
-						"Transpose" : [ 0.0 ],
-						"WindowSize" : [ 6.0 ],
+						"TranspMode" : [ 2.0 ],
+						"Transpose" : [ 375.0 ],
+						"WindowSize" : [ 10.0 ],
 						"nb-shots" : [ 1.0 ]
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u593030177"
+					"varname" : "u635000476"
 				}
 
 			}
@@ -10731,7 +10736,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 38.416668, 39.0, 25.0, 25.0 ]
 				}
 
@@ -10790,7 +10795,7 @@
 					"prototypename" : "M4L.live.gain~.V.extended",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Outgain[43]",
+							"parameter_longname" : "Outgain[27]",
 							"parameter_shortname" : "Outgain",
 							"parameter_type" : 0,
 							"parameter_mmin" : -127.0,
@@ -10821,7 +10826,7 @@
 					"prototypename" : "amount",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Dry/wet[42]",
+							"parameter_longname" : "Dry/wet[26]",
 							"parameter_shortname" : "Dry/wet",
 							"parameter_type" : 0,
 							"parameter_mmax" : 100.0,
@@ -10868,7 +10873,7 @@
 					"prototypename" : "M4L.live.gain~.V.extended",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Ingain[38]",
+							"parameter_longname" : "Ingain[28]",
 							"parameter_shortname" : "Ingain",
 							"parameter_type" : 0,
 							"parameter_mmin" : -70.0,
@@ -12501,100 +12506,6 @@
 					"source" : [ "obj-97", 0 ]
 				}
 
-			}
- ],
-		"parameters" : 		{
-			"obj-62" : [ "ReadFadeOut[1]", "ReadFadeOut", 0 ],
-			"obj-96" : [ "Oversampling[20]", "Oversampling", 0 ],
-			"obj-150" : [ "EnvMaxFreq[14]", "EnvMaxFreq", 0 ],
-			"obj-324" : [ "BufBegin[1]", "BufBegin", 0 ],
-			"obj-14" : [ "Outgain[43]", "Outgain", 0 ],
-			"obj-8" : [ "Ingain[38]", "Ingain", 0 ],
-			"obj-100" : [ "RecFadeIn[1]", "RecFadeIn", 0 ],
-			"obj-164" : [ "PreserveWaveform[14]", "PreserveWaveform", 1 ],
-			"obj-117" : [ "RemixNoise[20]", "RemixNoise", 0 ],
-			"obj-72" : [ "FilterQ[43]", "FilterQ", 0 ],
-			"obj-148" : [ "EnvLpcOrder[14]", "EnvLpcOrder", 0 ],
-			"obj-326" : [ "BufEnd[1]", "BufEnd", 0 ],
-			"obj-97" : [ "RecFadeOut[1]", "RecFadeOut", 0 ],
-			"obj-163" : [ "Transpose[14]", "Transpose", 0 ],
-			"obj-354" : [ "BufSync[1]", "BufSync", 0 ],
-			"obj-70" : [ "FilterFreq[43]", "FilterFreq", 0 ],
-			"obj-116" : [ "RemixTransients[20]", "RemixTransients", 0 ],
-			"obj-255" : [ "BufReplace[1]", "BufReplace", 0 ],
-			"obj-147" : [ "EnvTranspEnable[14]", "EnvTranspEnable", 0 ],
-			"obj-314" : [ "BufAction[1]", "BufAction", 0 ],
-			"obj-124" : [ "EnvPreserve[14]", "EnvPreserve", 1 ],
-			"obj-162" : [ "TranspEnable[14]", "TranspEnable", 0 ],
-			"obj-112" : [ "PreserveTransients[20]", "PreserveTransients", 1 ],
-			"obj-42" : [ "FilterMode[43]", "FilterMode", 0 ],
-			"obj-185" : [ "BufSpeed[1]", "BufSpeed", 0 ],
-			"obj-115" : [ "RemixRelax[20]", "RemixRelax", 0 ],
-			"obj-67" : [ "FilterGain[43]", "FilterGain", 0 ],
-			"obj-286" : [ "Buf[1]", "Buf", 0 ],
-			"obj-146" : [ "EnvScaleEnable[14]", "EnvScaleEnable", 0 ],
-			"obj-331" : [ "BufSet[1]", "BufSet", 0 ],
-			"obj-122" : [ "RemixEnable[14]", "RemixEnable", 0 ],
-			"obj-80" : [ "PRESET[41]", "PRESET", 0 ],
-			"obj-157" : [ "TranspMode[2]", "TranspMode", 0 ],
-			"obj-111" : [ "PreserveStereo[20]", "PreserveStereo", 1 ],
-			"obj-26" : [ "BufSize[1]", "BufSize", 0 ],
-			"obj-114" : [ "RemixError[20]", "RemixError", 0 ],
-			"obj-133" : [ "EnvScale[14]", "EnvScale", 0 ],
-			"obj-120" : [ "RemixMode[14]", "RemixMode", 0 ],
-			"obj-90" : [ "FFTOversamp[20]", "FFTOversamp", 0 ],
-			"obj-153" : [ "EnvMode[14]", "EnvMode", 0 ],
-			"obj-63" : [ "ReadFadeIn[1]", "ReadFadeIn", 0 ],
-			"obj-156" : [ "EnvTransp[14]", "EnvTransp", 0 ],
-			"obj-12" : [ "Dry/wet[42]", "Dry/wet", 0 ],
-			"obj-105" : [ "WindowSize[20]", "WindowSize", 0 ],
-			"obj-25" : [ "nb-shots[1]", "nb-shots", 0 ],
-			"obj-3" : [ "BufLoop[1]", "BufLoop", 0 ],
-			"obj-119" : [ "RemixSinus[20]", "RemixSinus", 0 ]
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "M4L.bal1~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.3/patches/m4l-patches/Tools resources",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "SupervpPlayPreset.json",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
-				"patcherrelativepath" : "../../JSON",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.m.fgraph.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.m.waveform_MONO.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "/Users/production/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "supervp.play~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "fiddle~.mxo",
-				"type" : "iLaX"
 			}
  ]
 	}

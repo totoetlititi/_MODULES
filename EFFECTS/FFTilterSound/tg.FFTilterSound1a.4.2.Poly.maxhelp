@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 6,
+			"revision" : 9,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 388.0, 334.0, 703.0, 571.0 ],
+		"rect" : [ 445.0, 315.0, 703.0, 571.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -29,6 +29,21 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"args" : [ "@File", "cherokee.aif" ],
+					"id" : "obj-5",
+					"maxclass" : "bpatcher",
+					"name" : "FMA.SoundPlayer~.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "signal", "signal", "" ],
+					"patching_rect" : [ 303.0, 62.0, 272.0, 136.0 ],
+					"presentation_rect" : [ 308.0, 60.0, 0.0, 0.0 ],
+					"varname" : "Fma.SoundPlayer~[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"frgb" : 0.0,
@@ -37,7 +52,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 120.0, 344.0, 34.0, 18.0 ],
-					"presentation_rect" : [ 118.0, 347.0, 0.0, 0.0 ],
 					"text" : "Init"
 				}
 
@@ -68,7 +82,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 120.0, 362.0, 113.0, 27.0 ],
-					"presentation_rect" : [ 120.0, 359.0, 0.0, 0.0 ],
 					"text" : ";\r1FFTf.INIT bang"
 				}
 
@@ -113,7 +126,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 375.0, 75.0, 278.0, 72.0 ],
+					"patching_rect" : [ 303.0, 489.0, 278.0, 72.0 ],
 					"text" : ";\r1FFTf Denoise 6.565382, Dry/wet 100., FilterFreq 1000., FilterGain 0., FilterQ 0.3, Freeze 0., Grain 0., Ingain 0., LinkSmooth 1., Metro 1., MetroMode 0., MetroSyncNb 4., MetroSyncUnit 13., MetroTime 1984.296997, Outgain 0, Scale 1., Shift 0, Smooth 2000., Stereo 1.,"
 				}
 
@@ -132,7 +145,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -572,6 +585,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 3 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 2 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -599,38 +630,43 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1.1::obj-5::obj-128" : [ "iGrain", "iGrain", 0 ],
-			"obj-1.1::obj-5::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-1.1::obj-5::obj-114" : [ "RemixError", "Error", 0 ],
+			"obj-1.1::obj-5::obj-114" : [ "SourceGain", "SourceGain", 0 ],
+			"obj-1.1::obj-5::obj-258" : [ "iSlope", "iSlope", 0 ],
+			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
+			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
+			"obj-1.1::obj-5::obj-98" : [ "FeedMax", "FeedMax", 0 ],
+			"obj-1.1::obj-5::obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-5::obj-65" : [ "Transp[1]", "Transp", 0 ],
+			"obj-1.1::obj-5::obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-1.1::obj-5::obj-19" : [ "Stretch", "Stretch", 0 ],
+			"obj-5::obj-50" : [ "Play[1]", "Play", 0 ],
+			"obj-5::obj-39" : [ "Loop[1]", "Loop", 0 ],
+			"obj-1.1::obj-5::obj-121" : [ "Filter", "Filter", 0 ],
+			"obj-1.1::obj-5::obj-101" : [ "Freeze", "Freeze", 0 ],
 			"obj-7::obj-50" : [ "Play", "Play", 0 ],
-			"obj-1.1::obj-5::obj-96" : [ "Oversampling", "Oversampling", 0 ],
-			"obj-1.1::obj-5::obj-7" : [ "Noise", "Noise", 0 ],
+			"obj-1.1::obj-5::obj-123" : [ "FiltGain", "FiltGain", 0 ],
+			"obj-1.1::obj-5::obj-127" : [ "ForceFilter", "ForceFilter", 0 ],
+			"obj-1.1::obj-5::obj-18" : [ "Pow", "Pow", 0 ],
+			"obj-1.1::obj-5::obj-146" : [ "iDuration", "iDuration", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
+			"obj-1.1::obj-5::obj-89" : [ "DelMax", "DelMax", 0 ],
+			"obj-1.1::obj-5::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-1.1::obj-5::obj-96" : [ "InverseSource", "InverseSource", 0 ],
+			"obj-5::obj-6" : [ "Folder[1]", "Folder", 0 ],
+			"obj-1.1::obj-5::obj-118" : [ "ReceiveEnable", "ReceiveEnable", 0 ],
+			"obj-5::obj-82" : [ "Gain[1]", "Gain", 0 ],
+			"obj-1.1::obj-5::obj-128" : [ "iGrain", "iGrain", 0 ],
 			"obj-1.1::obj-5::obj-100" : [ "Denoise", "Denoise", 0 ],
 			"obj-1.1::obj-5::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-1.1::obj-5::obj-101" : [ "Freeze", "Freeze", 0 ],
-			"obj-7::obj-65" : [ "Transp", "Transp", 0 ],
-			"obj-1.1::obj-5::obj-23" : [ "Shift", "Shift", 0 ],
-			"obj-1.1::obj-5::obj-89" : [ "DelMax", "DelMax", 0 ],
-			"obj-1.1::obj-5::obj-18" : [ "Pow", "Pow", 0 ],
-			"obj-1.1::obj-5::obj-258" : [ "iSlope", "iSlope", 0 ],
-			"obj-1.1::obj-5::obj-4" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
-			"obj-1.1::obj-5::obj-146" : [ "EnvScaleEnable", "EnvScaleEnable", 0 ],
-			"obj-1.1::obj-5::obj-127" : [ "ForceFilter", "ForceFilter", 0 ],
-			"obj-1.1::obj-5::obj-19" : [ "Stretch", "Stretch", 0 ],
-			"obj-1.1::obj-5::obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-1.1::obj-5::obj-123" : [ "FilterGain[1]", "Filter", 0 ],
-			"obj-1.1::obj-5::obj-98" : [ "FeedMax", "FeedMax", 0 ],
-			"obj-7::obj-82" : [ "Gain", "Gain", 0 ],
-			"obj-1.1::obj-5::obj-112" : [ "PreserveTransients", "PreserveTransients", 1 ],
-			"obj-1.1::obj-5::obj-121" : [ "Filter", "Filter", 0 ],
+			"obj-1.1::obj-5::obj-157" : [ "Mean", "Mean", 0 ],
 			"obj-1.1::obj-5::obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-1.1::obj-5::obj-23" : [ "Shift", "Shift", 0 ],
+			"obj-1.1::obj-5::obj-112" : [ "iPow", "iPow", 0 ],
+			"obj-7::obj-6" : [ "Folder", "Folder", 0 ],
 			"obj-1.1::obj-5::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-7::obj-39" : [ "Loop", "Loop", 0 ],
-			"obj-1.1::obj-5::obj-157" : [ "TranspMode", "TranspMode", 0 ],
-			"obj-1.1::obj-5::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-1.1::obj-5::obj-118" : [ "ReceiveEnable", "ReceiveEnable", 0 ]
+			"obj-1.1::obj-5::obj-4" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-1.1::obj-5::obj-7" : [ "Noise", "Noise", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -649,8 +685,8 @@
 			}
 , 			{
 				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -663,8 +699,8 @@
 			}
 , 			{
 				"name" : "M4L.gain2~.maxpat",
-				"bootpath" : "/Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1.6/patches/m4l-patches/Tools resources",
+				"bootpath" : "/Applications/Max 6.1/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1/patches/m4l-patches/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}

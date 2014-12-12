@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 6,
+			"revision" : 7,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 8.0, 44.0, 916.0, 173.0 ],
+		"rect" : [ 8.0, 44.0, 921.0, 178.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -32,12 +32,26 @@
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"outlettype" : [ "", "", "", "", "" ],
+					"patching_rect" : [ 308.750061, 55.334473, 100.0, 18.0 ],
+					"text" : "regexp (.+\\\\.).+"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
 					"frgb" : 0.0,
 					"id" : "obj-54",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 115.583221, 127.0, 72.0, 18.0 ],
+					"patching_rect" : [ 295.583221, 327.5, 24.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 100.791611, 147.0, 35.0, 18.0 ],
 					"text" : "dB",
@@ -54,7 +68,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 6.0, 127.0, 72.0, 18.0 ],
+					"patching_rect" : [ 176.083374, 327.5, 72.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 6.0, 147.0, 59.0, 18.0 ],
 					"text" : "current >>",
@@ -71,7 +85,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 114.0, 70.0, 72.0, 18.0 ],
+					"patching_rect" : [ 160.916779, 308.5, 19.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 100.791611, 97.0, 35.0, 18.0 ],
 					"text" : "ct",
@@ -88,7 +102,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 68.5, 72.0, 18.0 ],
+					"patching_rect" : [ 54.916779, 308.5, 72.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 6.0, 97.0, 59.0, 18.0 ],
 					"text" : "current >>",
@@ -124,7 +138,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -414,7 +428,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -683,7 +697,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -1230,7 +1244,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -1807,7 +1821,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "" ],
 					"patching_rect" : [ 54.916779, 427.5, 73.833313, 29.0 ],
-					"text" : "samplor~ 2 20"
+					"text" : "samplor~ 2 50"
 				}
 
 			}
@@ -1938,6 +1952,7 @@
 			}
 , 			{
 				"box" : 				{
+					"autorestore" : "samplorNode1a.json",
 					"color" : [ 0.239216, 0.643137, 0.709804, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
@@ -2155,75 +2170,6 @@
 			}
 , 			{
 				"box" : 				{
-					"coll_data" : 					{
-						"count" : 16,
-						"data" : [ 							{
-								"key" : "BellPlate",
-								"value" : [ "DRUM1.1" ]
-							}
-, 							{
-								"key" : "Bongo1",
-								"value" : [ "DRUM1.2" ]
-							}
-, 							{
-								"key" : "Bongo2",
-								"value" : [ "DRUM1.3" ]
-							}
-, 							{
-								"key" : "ChineseCymbal",
-								"value" : [ "DRUM1.4" ]
-							}
-, 							{
-								"key" : "CoreanGong",
-								"value" : [ "DRUM1.5" ]
-							}
-, 							{
-								"key" : "Glockenspiel",
-								"value" : [ "DRUM1.6" ]
-							}
-, 							{
-								"key" : "LogDrum",
-								"value" : [ "DRUM1.7" ]
-							}
-, 							{
-								"key" : "LowCowbell",
-								"value" : [ "DRUM1.8" ]
-							}
-, 							{
-								"key" : "SnareDrum",
-								"value" : [ "DRUM1.9" ]
-							}
-, 							{
-								"key" : "Stone",
-								"value" : [ "DRUM1.10" ]
-							}
-, 							{
-								"key" : "TempleBlock1",
-								"value" : [ "DRUM1.11" ]
-							}
-, 							{
-								"key" : "TempleBlock2",
-								"value" : [ "DRUM1.12" ]
-							}
-, 							{
-								"key" : "TempleBlock3",
-								"value" : [ "DRUM1.13" ]
-							}
-, 							{
-								"key" : "TempleBlock4",
-								"value" : [ "DRUM1.14" ]
-							}
-, 							{
-								"key" : "Timpani",
-								"value" : [ "DRUM1.15" ]
-							}
-, 							{
-								"key" : "Triangle",
-								"value" : [ "DRUM1.16" ]
-							}
- ]
-					}
-,
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-31",
@@ -2233,7 +2179,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 466.229126, 234.667236, 128.416687, 18.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 1
+						"embed" : 0
 					}
 ,
 					"text" : "coll #0coll"
@@ -2293,7 +2239,7 @@
 
 					}
 ,
-					"text" : "DRUM1.COLL",
+					"text" : "VOICES.COLL",
 					"varname" : "Coll"
 				}
 
@@ -2403,7 +2349,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 878.25, 470.167236, 59.5, 18.0 ],
+					"patching_rect" : [ 878.25, 470.167236, 69.5, 18.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0
 					}
@@ -2633,7 +2579,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -2911,7 +2857,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 6,
+											"revision" : 7,
 											"architecture" : "x86"
 										}
 ,
@@ -4190,7 +4136,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -4428,7 +4374,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 6,
+											"revision" : 7,
 											"architecture" : "x86"
 										}
 ,
@@ -5275,7 +5221,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -5513,7 +5459,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 6,
+											"revision" : 7,
 											"architecture" : "x86"
 										}
 ,
@@ -6452,7 +6398,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -7216,7 +7162,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -7995,7 +7941,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -8971,7 +8917,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -9050,7 +8996,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 488.0, 200.0, 59.0, 72.0 ],
-									"text" : "1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+									"text" : "1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1"
 								}
 
 							}
@@ -9266,7 +9212,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 6,
+											"revision" : 7,
 											"architecture" : "x86"
 										}
 ,
@@ -11296,7 +11242,7 @@
 					"presentation_rect" : [ 394.026794, 101.0, 160.0, 54.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
-					"size" : 16
+					"size" : 64
 				}
 
 			}
@@ -11394,7 +11340,7 @@
 					"patching_rect" : [ 1131.0, 210.167236, 95.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 814.5, 3.999998, 95.0, 27.0 ],
-					"text" : "#1"
+					"text" : "1samn"
 				}
 
 			}
@@ -11406,7 +11352,7 @@
 					"fontsize" : 12.0,
 					"framecolor" : [ 0.498039, 0.52549, 0.576471, 0.0 ],
 					"id" : "obj-86",
-					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export", ",", "<separator>", ",", "(Recall)", ",", "(undefined)" ],
+					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export", ",", "<separator>", ",", "(Recall)", ",", "(undefined)", ",", "Default" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -11730,14 +11676,14 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 1259.0, 238.167236, 91.0, 29.0 ],
 					"restore" : 					{
-						"Azimuth" : [ 0.0 ],
-						"Coll" : [ "DRUM1.COLL" ],
-						"Distance" : [ 0.0 ],
-						"FilterFreq" : [ 1000.0 ],
-						"FilterGain" : [ 0.0 ],
-						"FilterMode" : [ 5.0 ],
+						"Azimuth" : [ 84.0 ],
+						"Coll" : [ "VOICES.COLL" ],
+						"Distance" : [ 0.543121 ],
+						"FilterFreq" : [ 8190.275391 ],
+						"FilterGain" : [ 0.06924 ],
+						"FilterMode" : [ 1.0 ],
 						"FilterQ" : [ 0.3 ],
-						"Outgain" : [ -127.0 ],
+						"Outgain" : [ 0.0 ],
 						"Transp" : [ 0.0 ],
 						"TranspRange" : [ 0.0 ],
 						"Vel" : [ 0.0 ],
@@ -11746,7 +11692,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u051001552"
+					"varname" : "u201007886"
 				}
 
 			}
@@ -12028,7 +11974,7 @@
 					"patching_rect" : [ 228.833435, 657.332764, 132.666626, 55.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 571.0, 44.0, 168.0, 120.0 ],
-					"setfilter" : [ 0, 5, 1, 1, 0, 1000.0, 1.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+					"setfilter" : [ 0, 1, 1, 1, 0, 8190.275391, 1.008003, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 				}
 
 			}
@@ -12884,6 +12830,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-103", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-2", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -12933,6 +12888,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-204", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-205", 0 ]
 				}
 
 			}
@@ -13774,59 +13738,6 @@
 					"source" : [ "obj-99", 0 ]
 				}
 
-			}
- ],
-		"parameters" : 		{
-			"obj-318" : [ "ShakePos", "ShakePos", 0 ],
-			"obj-305" : [ "Spread", "Spread", 0 ],
-			"obj-214" : [ "Coll", "Coll", 0 ],
-			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-300" : [ "Expand", "Expand", 0 ],
-			"obj-81" : [ "Edit", "Edit", 0 ],
-			"obj-322" : [ "ShakeSize", "ShakeSize", 0 ],
-			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-76" : [ "ShiftX", "ShiftX", 0 ],
-			"obj-161" : [ "Vel", "Vel", 1 ],
-			"obj-215" : [ "linkVel", "linkVel", 0 ],
-			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-89" : [ "Nodes", "Nodes", 0 ],
-			"obj-303" : [ "Rotate", "Rotate", 0 ],
-			"obj-298" : [ "ShiftY", "ShiftY", 0 ],
-			"obj-169" : [ "Transp", "Transp", 1 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-48" : [ "Azimuth", "Azimuth", 1 ],
-			"obj-162" : [ "VelRange", "VelRange", 1 ],
-			"obj-309" : [ "Shake", "Shake", 0 ],
-			"obj-168" : [ "TranspRange", "TranspRange", 1 ],
-			"obj-80" : [ "PRESET", "PRESET", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-47" : [ "Distance", "Distance", 1 ]
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "tg.m.fgraph.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.random.maxpat",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "samplor~.mxo",
-				"type" : "iLaX"
 			}
  ]
 	}

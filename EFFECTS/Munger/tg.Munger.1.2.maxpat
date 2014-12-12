@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 9,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 86.0, 44.0, 828.0, 172.0 ],
+		"rect" : [ 86.0, 44.0, 826.0, 174.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -275,7 +275,7 @@
 					"patching_rect" : [ 1050.0, 510.0, 95.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 723.5, 3.0, 95.0, 27.0 ],
-					"text" : "1mng"
+					"text" : "#1"
 				}
 
 			}
@@ -287,7 +287,7 @@
 					"fontsize" : 12.0,
 					"framecolor" : [ 0.498039, 0.52549, 0.576471, 0.0 ],
 					"id" : "obj-66",
-					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export" ],
+					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export", ",", "<separator>", ",", "(Recall)", ",", "(undefined)", ",", "Default", ",", "Test1" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -648,9 +648,9 @@
 						"Ingain" : [ 0.0 ],
 						"MaxVoices" : [ 20.0 ],
 						"MinSize" : [ 5.0 ],
-						"Outgain" : [ -5.764303 ],
+						"Outgain" : [ -127.0 ],
 						"Position" : [ 0.0 ],
-						"RampTime" : [ 50.0 ],
+						"RampTime" : [ 1.0 ],
 						"RandPosition" : [ 1.0 ],
 						"Record" : [ 1.0 ],
 						"Separ" : [ 10.0 ],
@@ -659,14 +659,14 @@
 						"SizeVar" : [ 10.0 ],
 						"StereoSpread" : [ 50.0 ],
 						"Transp" : [ 0.0 ],
-						"TranspMode" : [ 1.0 ],
+						"TranspMode" : [ 0.0 ],
 						"TranspScale" : [ -24, -12, 0, 12, 24 ],
 						"TranspVar" : [ 0.0 ],
 						"Voices" : [ 10.0 ]
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u295002706"
+					"varname" : "u807003676"
 				}
 
 			}
@@ -1030,7 +1030,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 55.25, 33.0, 25.0, 25.0 ]
 				}
 
@@ -1200,7 +1200,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -2760,8 +2760,7 @@
 							"parameter_mmax" : 1000.0,
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 50 ],
-							"parameter_unitstyle" : 2,
-							"parameter_steps" : 201
+							"parameter_unitstyle" : 2
 						}
 
 					}
@@ -4362,6 +4361,72 @@
 					"source" : [ "obj-95", 1 ]
 				}
 
+			}
+ ],
+		"parameters" : 		{
+			"obj-8" : [ "Direction", "Direction", 0 ],
+			"obj-65" : [ "Size", "Size", 0 ],
+			"obj-35" : [ "Position", "Position", 0 ],
+			"obj-61" : [ "SeparVar", "SeparVar", 0 ],
+			"obj-18" : [ "Voices", "Voices", 0 ],
+			"obj-113" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-109" : [ "Fade", "Fade", 0 ],
+			"obj-34" : [ "RampTime", "RampTime", 0 ],
+			"obj-63" : [ "SizeVar", "SizeVar", 0 ],
+			"obj-117" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-70" : [ "Clear", "Clear", 0 ],
+			"obj-67" : [ "TranspMode", "TranspMode", 0 ],
+			"obj-75" : [ "Transp", "Transp", 0 ],
+			"obj-52" : [ "GainVar", "GainVar", 0 ],
+			"obj-36" : [ "RandPosition", "RandPosition", 1 ],
+			"obj-55" : [ "StereoSpread", "StereoSpread", 0 ],
+			"obj-148" : [ "Ingain", "Ingain", 0 ],
+			"obj-19" : [ "MaxVoices", "MaxVoices", 0 ],
+			"obj-146" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-30" : [ "Record", "Record", 0 ],
+			"obj-72" : [ "TranspScale", "TranspScale", 0 ],
+			"obj-116" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-133" : [ "Outgain", "Outgain", 0 ],
+			"obj-47" : [ "Gain", "Gain", 0 ],
+			"obj-6" : [ "BufferSize", "BufferSize", 0 ],
+			"obj-31" : [ "MinSize", "MinSize", 0 ],
+			"obj-151" : [ "PRESET", "PRESET", 0 ],
+			"obj-58" : [ "Separ", "Separ", 0 ],
+			"obj-43" : [ "TranspVar", "TranspVar", 0 ],
+			"obj-115" : [ "FilterGain", "FilterGain", 0 ]
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "M4L.bal2~.maxpat",
+				"bootpath" : "/Applications/Max 6.1/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1/patches/m4l-patches/Tools resources",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MungerPreset.json",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"patcherrelativepath" : "../../JSON",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.m.fgraph.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.m.preset.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "munger~.mxo",
+				"type" : "iLaX"
 			}
  ]
 	}
