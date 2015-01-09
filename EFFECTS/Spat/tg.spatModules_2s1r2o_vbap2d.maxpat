@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 6,
+			"revision" : 9,
 			"architecture" : "x86"
 		}
 ,
@@ -56,7 +56,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -751,36 +751,6 @@
 					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
-					"id" : "obj-63",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 336.782501, 237.0, 100.0, 18.0 ],
-					"text" : "r #0toSpat2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-62",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 295.125, 13.0, 100.0, 18.0 ],
-					"text" : "r #0toSpat1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
 					"id" : "obj-57",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -877,7 +847,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -1390,7 +1360,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -1456,7 +1426,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 6,
+											"revision" : 9,
 											"architecture" : "x86"
 										}
 ,
@@ -1993,7 +1963,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 6,
+											"revision" : 9,
 											"architecture" : "x86"
 										}
 ,
@@ -2908,7 +2878,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -2958,7 +2928,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 6,
+											"revision" : 9,
 											"architecture" : "x86"
 										}
 ,
@@ -4112,24 +4082,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-62", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-13", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-63", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-399", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4265,76 +4217,76 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-13::obj-61" : [ "yaw[1]", "yaw", 0 ],
+			"obj-13::obj-50" : [ "rename[1]", "rename", 0 ],
+			"obj-8::obj-446" : [ "liveness", "liveness", 0 ],
+			"obj-8::obj-3" : [ "mute", "mute", 0 ],
+			"obj-13::obj-65" : [ "air[1]", "air", 0 ],
+			"obj-36" : [ "interpolation", "interpolation", 0 ],
+			"obj-5::obj-37" : [ "prer", "prer", 0 ],
+			"obj-13::obj-56" : [ "aperture[1]", "aperture", 0 ],
+			"obj-5::obj-28" : [ "width", "width", 0 ],
+			"obj-5::obj-65" : [ "air", "air", 0 ],
+			"obj-13::obj-32" : [ "pres[1]", "pres", 0 ],
+			"obj-5::obj-56" : [ "aperture", "aperture", 0 ],
+			"obj-5::obj-55" : [ "elev", "elev", 0 ],
+			"obj-13::obj-81" : [ "env[1]", "env", 0 ],
+			"obj-5::obj-71" : [ "az", "az", 0 ],
+			"obj-5::obj-215" : [ "doppler", "doppler", 0 ],
+			"obj-5::obj-44" : [ "revp", "revp", 0 ],
+			"obj-5::obj-62" : [ "Input", "Input", 0 ],
+			"obj-13::obj-44" : [ "revp[1]", "revp", 0 ],
+			"obj-5::obj-61" : [ "yaw", "yaw", 0 ],
+			"obj-13::obj-62" : [ "Input[1]", "Input", 0 ],
+			"obj-459" : [ "Outgain[5]", "Outgain", 0 ],
 			"obj-5::obj-51" : [ "spread", "spread", 0 ],
 			"obj-13::obj-51" : [ "spread[1]", "spread", 0 ],
-			"obj-8::obj-446" : [ "liveness", "liveness", 0 ],
-			"obj-13::obj-55" : [ "elev[1]", "elev", 0 ],
-			"obj-5::obj-28" : [ "width", "width", 0 ],
-			"obj-13::obj-215" : [ "doppler[1]", "doppler", 0 ],
-			"obj-5::obj-46" : [ "reverb", "reverb", 0 ],
-			"obj-5::obj-32" : [ "pres", "pres", 0 ],
-			"obj-13::obj-28" : [ "width[1]", "width", 0 ],
-			"obj-13::obj-61" : [ "yaw[1]", "yaw", 0 ],
-			"obj-8::obj-95" : [ "infinite", "infinite", 0 ],
-			"obj-459" : [ "Outgain[5]", "Outgain", 0 ],
-			"obj-5::obj-75" : [ "dist", "dist", 0 ],
-			"obj-5::obj-225" : [ "warm", "warm", 0 ],
-			"obj-13::obj-71" : [ "az[1]", "az", 0 ],
-			"obj-13::obj-44" : [ "revp[1]", "revp", 0 ],
-			"obj-13::obj-56" : [ "aperture[1]", "aperture", 0 ],
-			"obj-5::obj-44" : [ "revp", "revp", 0 ],
-			"obj-8::obj-3" : [ "mute", "mute", 0 ],
-			"obj-8::obj-440" : [ "heaviness", "heaviness", 0 ],
-			"obj-5::obj-56" : [ "aperture", "aperture", 0 ],
-			"obj-8::obj-443" : [ "reverberance", "reverberance", 0 ],
-			"obj-5::obj-37" : [ "prer", "prer", 0 ],
-			"obj-13::obj-225" : [ "warm[1]", "warm", 0 ],
-			"obj-13::obj-37" : [ "prer[1]", "prer", 0 ],
-			"obj-5::obj-5" : [ "Input", "Input", 0 ],
-			"obj-5::obj-71" : [ "az", "az", 0 ],
-			"obj-5::obj-50" : [ "rename", "rename", 0 ],
-			"obj-13::obj-50" : [ "rename[1]", "rename", 0 ],
-			"obj-5::obj-215" : [ "doppler", "doppler", 0 ],
-			"obj-13::obj-5" : [ "Input[1]", "Input", 0 ],
-			"obj-13::obj-32" : [ "pres[1]", "pres", 0 ],
-			"obj-13::obj-41" : [ "bril[1]", "bril", 0 ],
-			"obj-36" : [ "interpolation", "interpolation", 0 ],
-			"obj-5::obj-61" : [ "yaw", "yaw", 0 ],
-			"obj-13::obj-65" : [ "air[1]", "air", 0 ],
-			"obj-5::obj-65" : [ "air", "air", 0 ],
-			"obj-13::obj-46" : [ "reverb[1]", "reverb", 0 ],
-			"obj-13::obj-81" : [ "env[1]", "env", 0 ],
-			"obj-5::obj-81" : [ "env", "env", 0 ],
-			"obj-5::obj-41" : [ "bril", "bril", 0 ],
 			"obj-45" : [ "speedlimOper", "speedlimOper", 0 ],
 			"obj-13::obj-75" : [ "dist[1]", "dist", 0 ],
-			"obj-5::obj-55" : [ "elev", "elev", 0 ]
+			"obj-5::obj-81" : [ "env", "env", 0 ],
+			"obj-5::obj-75" : [ "dist", "dist", 0 ],
+			"obj-13::obj-41" : [ "bril[1]", "bril", 0 ],
+			"obj-8::obj-443" : [ "reverberance", "reverberance", 0 ],
+			"obj-8::obj-95" : [ "infinite", "infinite", 0 ],
+			"obj-5::obj-66" : [ "reverb", "reverb", 0 ],
+			"obj-5::obj-225" : [ "warm", "warm", 0 ],
+			"obj-13::obj-215" : [ "doppler[1]", "doppler", 0 ],
+			"obj-5::obj-41" : [ "bril", "bril", 0 ],
+			"obj-13::obj-28" : [ "width[1]", "width", 0 ],
+			"obj-13::obj-71" : [ "az[1]", "az", 0 ],
+			"obj-5::obj-32" : [ "pres", "pres", 0 ],
+			"obj-13::obj-55" : [ "elev[1]", "elev", 0 ],
+			"obj-8::obj-440" : [ "heaviness", "heaviness", 0 ],
+			"obj-5::obj-50" : [ "rename", "rename", 0 ],
+			"obj-13::obj-225" : [ "warm[1]", "warm", 0 ],
+			"obj-13::obj-37" : [ "prer[1]", "prer", 0 ],
+			"obj-13::obj-66" : [ "reverb[1]", "reverb", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "tg.spat_1s.maxpat",
-				"bootpath" : "/Users/production/Desktop/MONODRAME/LIBRARY/TG.tools/_MODULES/EFFECTS/Spat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Spat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Spat6s2rPreset.json",
-				"bootpath" : "/Users/production/Desktop/MONODRAME/LIBRARY/TG.tools/_MODULES/JSON",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
 				"patcherrelativepath" : "../../JSON",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "/Users/production/Desktop/MONODRAME/LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.spat_1r.maxpat",
-				"bootpath" : "/Users/production/Desktop/MONODRAME/LIBRARY/TG.tools/_MODULES/EFFECTS/Spat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Spat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
