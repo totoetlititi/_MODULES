@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 663.0, 200.0, 1158.0, 928.0 ],
+		"rect" : [ 663.0, 200.0, 354.0, 173.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
@@ -28,7 +28,7 @@
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
-		"globalpatchername" : "1spat[1][1][1][1][1][6][6][6][5][5][2][6][12][6][6][6][6][14][8][6][6]",
+		"globalpatchername" : "1spat[1][1][1][1][1][6][6][6][5][5][2][6][12][6][6][6][6][14][8][6][6][12]",
 		"boxes" : [ 			{
 				"box" : 				{
 					"color" : [ 0.0, 1.0, 0.0, 1.0 ],
@@ -40,7 +40,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 38.5, 140.5, 100.0, 18.0 ],
-					"presentation_rect" : [ 819.285645, 751.5, 0.0, 0.0 ],
 					"text" : "receive"
 				}
 
@@ -1266,7 +1265,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u053008779"
+					"varname" : "u474012316"
 				}
 
 			}
@@ -4235,13 +4234,13 @@
 			"obj-41" : [ "bril", "bril", 0 ],
 			"obj-65" : [ "air", "air", 0 ],
 			"obj-225" : [ "warm", "warm", 0 ],
-			"obj-37" : [ "prer", "prer", 0 ],
 			"obj-215" : [ "doppler", "doppler", 0 ],
+			"obj-37" : [ "prer", "prer", 0 ],
 			"obj-75" : [ "dist", "dist", 0 ],
-			"obj-55" : [ "elev", "elev", 0 ],
 			"obj-56" : [ "aperture", "aperture", 0 ],
-			"obj-28" : [ "width", "width", 0 ],
-			"obj-32" : [ "pres", "pres", 0 ]
+			"obj-32" : [ "pres", "pres", 0 ],
+			"obj-55" : [ "elev", "elev", 0 ],
+			"obj-28" : [ "width", "width", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
