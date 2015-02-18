@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 9,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 77.0, 383.0, 1062.0, 481.0 ],
-		"bglocked" : 0,
+		"rect" : [ 668.0, 552.0, 1062.0, 481.0 ],
+		"bglocked" : 1,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
 		"default_fontface" : 0,
@@ -454,6 +454,23 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 104.0, 209.0, 25.0, 25.0 ],
 					"varname" : "out1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"fontname" : "Arial Bold",
+					"fontsize" : 24.0,
+					"frgb" : 0.0,
+					"id" : "obj-44",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 15.0, 25.0, 347.0, 60.0 ],
+					"text" : "DELETE ADC~ OBJECT BEFORE SAVING !!!!!!",
+					"textcolor" : [ 1.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
