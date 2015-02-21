@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 418.0, 103.0, 1392.0, 920.0 ],
+		"rect" : [ 418.0, 103.0, 524.0, 172.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -1108,7 +1108,7 @@
 					"patching_rect" : [ 686.0, 596.332703, 95.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 422.5, 3.0, 95.0, 27.0 ],
-					"text" : "---"
+					"text" : "#1"
 				}
 
 			}
@@ -1453,7 +1453,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u408000415"
+					"varname" : "u686030938"
 				}
 
 			}
@@ -1560,7 +1560,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 58.166672, 86.0, 25.0, 25.0 ]
 				}
 
@@ -1572,7 +1572,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 30.416668, 86.0, 25.0, 25.0 ]
 				}
 
@@ -2827,6 +2827,50 @@
 					"source" : [ "obj-91", 0 ]
 				}
 
+			}
+ ],
+		"parameters" : 		{
+			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-79" : [ "Freq", "Freq", 0 ],
+			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-84" : [ "Center", "Center", 0 ],
+			"obj-82" : [ "Depth", "Depth", 0 ],
+			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-88" : [ "Feed", "Feed", 0 ]
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "M4L.bal2~.maxpat",
+				"bootpath" : "/Applications/Max 6.1/patches/m4l-patches/Tools resources",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1/patches/m4l-patches/Tools resources",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ChorusPreset.json",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"patcherrelativepath" : "../../JSON",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.m.preset.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.m.fgraph1.maxpat",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
 			}
  ]
 	}
