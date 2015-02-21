@@ -1,0 +1,41 @@
+{
+	"pattrstorage" : 	{
+		"name" : "RingmodPreset",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "Default",
+				"data" : 				{
+					"Dry/wet" : [ 100.0 ],
+					"FilterFreq" : [ 1000.0 ],
+					"FilterGain" : [ 0.0 ],
+					"FilterMode" : [ 5.0 ],
+					"FilterQ" : [ 0.3 ],
+					"Freq" : [ 0.0 ],
+					"Ingain" : [ 0.0 ],
+					"Outgain" : [ -127.0 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"name" : "Test1",
+				"data" : 				{
+					"Dry/wet" : [ 100.0 ],
+					"FilterFreq" : [ 1000.0 ],
+					"FilterGain" : [ 0.0 ],
+					"FilterMode" : [ 5.0 ],
+					"FilterQ" : [ 0.3 ],
+					"Freq" : [ 28.105965 ],
+					"Ingain" : [ 0.0 ],
+					"Outgain" : [ 0.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
