@@ -149,6 +149,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-78",
+					"ignoreclick" : 1,
 					"maxclass" : "dropfile",
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -1288,7 +1289,7 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 12.0,
 					"id" : "obj-86",
-					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export", ",", "<separator>", ",", "(Recall)", ",", "(undefined)" ],
+					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export", ",", "<separator>", ",", "(Recall)", ",", "(undefined)", ",", "Default" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1410,7 +1411,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "preset", "int", "preset", "int" ],
 					"patching_rect" : [ 708.5, 153.0, 92.5, 69.0 ],
-					"pattrstorage" : "SamplorLooperPreset",
+					"pattrstorage" : "SimpleLooperPreset",
 					"presentation" : 1,
 					"presentation_rect" : [ 731.5, 69.0, 92.5, 69.0 ],
 					"prototypename" : "M4L.H",
@@ -1507,6 +1508,7 @@
 			}
 , 			{
 				"box" : 				{
+					"autorestore" : "SimpleLooperPreset.json",
 					"color" : [ 0.239216, 0.643137, 0.709804, 1.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
@@ -1612,7 +1614,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u959000709"
+					"varname" : "u094021713"
 				}
 
 			}
@@ -2792,20 +2794,27 @@
  ],
 		"parameters" : 		{
 			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-134" : [ "Buffer", "Buffer", 0 ],
-			"obj-34" : [ "Start", "Start", 0 ],
 			"obj-30" : [ "Begin", "Begin", 0 ],
 			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-28" : [ "End", "End", 0 ],
-			"obj-164" : [ "Disto", "Disto", 0 ],
-			"obj-24" : [ "Speed", "Speed", 0 ],
+			"obj-134" : [ "Buffer", "Buffer", 0 ],
 			"obj-146" : [ "Replace", "Replace", 0 ],
+			"obj-164" : [ "Disto", "Disto", 0 ],
+			"obj-34" : [ "Start", "Start", 0 ],
 			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-24" : [ "Speed", "Speed", 0 ],
+			"obj-28" : [ "End", "End", 0 ],
 			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
 			"obj-14" : [ "Outgain", "Outgain", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "SimpleLooperPreset.json",
+				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
+				"patcherrelativepath" : "../../JSON",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "tg.m.preset.maxpat",
 				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
