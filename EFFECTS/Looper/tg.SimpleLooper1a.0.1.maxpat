@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 131.0, 44.0, 832.0, 173.0 ],
+		"rect" : [ 2005.0, 44.0, 833.0, 173.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -29,6 +29,20 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-44",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 102.75, 153.0, 100.0, 29.0 ],
+					"text" : "print mlqksdmlqksdml"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
@@ -103,11 +117,6 @@
 					"align" : 0,
 					"bgcolor" : [ 0.666667, 0.698039, 0.717647, 0.0 ],
 					"bgoncolor" : [ 0.666667, 0.698039, 0.717647, 0.0 ],
-					"bgovercolor" : [ 0.666667, 0.698039, 0.717647, 0.0 ],
-					"bgoveroncolor" : [ 0.666667, 0.698039, 0.717647, 0.0 ],
-					"border" : 1,
-					"bordercolor" : [ 0.666667, 0.698039, 0.717647, 0.0 ],
-					"borderoncolor" : [ 0.666667, 0.698039, 0.717647, 0.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-25",
@@ -120,13 +129,11 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 5.299988, 102.25, 43.0, 13.5 ],
 					"prototypename" : "M4L.display",
-					"rounded" : 0.0,
 					"text" : "Buffer",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"texton" : "Text",
 					"textoncolor" : [ 0.301961, 0.337255, 0.403922, 1.0 ],
-					"textovercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"textoveroncolor" : [ 0.301961, 0.337255, 0.403922, 1.0 ]
+					"textovercolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -165,11 +172,6 @@
 					"align" : 0,
 					"bgcolor" : [ 0.666667, 0.698039, 0.717647, 0.0 ],
 					"bgoncolor" : [ 0.666667, 0.698039, 0.717647, 0.0 ],
-					"bgovercolor" : [ 0.666667, 0.698039, 0.717647, 0.0 ],
-					"bgoveroncolor" : [ 0.666667, 0.698039, 0.717647, 0.0 ],
-					"border" : 1,
-					"bordercolor" : [ 0.666667, 0.698039, 0.717647, 0.0 ],
-					"borderoncolor" : [ 0.666667, 0.698039, 0.717647, 0.0 ],
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-169",
@@ -182,13 +184,11 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 5.299988, 7.0, 51.0, 21.5 ],
 					"prototypename" : "M4L.display",
-					"rounded" : 0.0,
 					"text" : "Replace",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"texton" : "Text",
 					"textoncolor" : [ 0.301961, 0.337255, 0.403922, 1.0 ],
-					"textovercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"textoveroncolor" : [ 0.301961, 0.337255, 0.403922, 1.0 ]
+					"textovercolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -241,11 +241,6 @@
 				"box" : 				{
 					"bgcolor" : [ 0.568627, 0.619608, 0.662745, 1.0 ],
 					"bgoncolor" : [ 0.921569, 0.94902, 0.05098, 1.0 ],
-					"bgovercolor" : [ 0.568627, 0.619608, 0.662745, 1.0 ],
-					"bgoveroncolor" : [ 0.921569, 0.94902, 0.05098, 1.0 ],
-					"border" : 1,
-					"bordercolor" : [ 0.301961, 0.337255, 0.403922, 1.0 ],
-					"borderoncolor" : [ 0.301961, 0.337255, 0.403922, 1.0 ],
 					"fontface" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
@@ -255,17 +250,15 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 128.450012, 188.0, 32.0, 15.0 ],
+					"patching_rect" : [ 128.450012, 188.0, 50.0, 16.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 81.299988, 7.0, 51.0, 15.0 ],
 					"prototypename" : "M4L.toggle",
-					"rounded" : 0.0,
 					"text" : "Replace",
 					"textcolor" : [ 0.101961, 0.121569, 0.172549, 1.0 ],
 					"texton" : "Trig",
 					"textoncolor" : [ 0.101961, 0.121569, 0.172549, 1.0 ],
-					"textovercolor" : [ 0.101961, 0.121569, 0.172549, 1.0 ],
-					"textoveroncolor" : [ 0.101961, 0.121569, 0.172549, 1.0 ]
+					"textovercolor" : [ 0.101961, 0.121569, 0.172549, 1.0 ]
 				}
 
 			}
@@ -366,7 +359,7 @@
 
 					}
 ,
-					"text" : "<none>",
+					"text" : "0",
 					"varname" : "Replace"
 				}
 
@@ -1018,15 +1011,11 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.094118, 0.113725, 0.137255, 1.0 ],
-					"bordercolor" : [ 0.301961, 0.337255, 0.403922, 1.0 ],
 					"buffername" : "#1_BUF",
 					"fontsize" : 9.0,
 					"frozen_box_attributes" : [ "outmode" ],
 					"gridcolor" : [ 0.301961, 0.337255, 0.403922, 0.501961 ],
 					"id" : "obj-33",
-					"labelbgcolor" : [ 0.094118, 0.113725, 0.137255, 1.0 ],
-					"labeltextcolor" : [ 0.666667, 0.698039, 0.717647, 1.0 ],
-					"linecolor" : [ 0.301961, 0.337255, 0.403922, 0.501961 ],
 					"maxclass" : "waveform~",
 					"numinlets" : 5,
 					"numoutlets" : 6,
@@ -1289,7 +1278,7 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 12.0,
 					"id" : "obj-86",
-					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export", ",", "<separator>", ",", "(Recall)", ",", "(undefined)", ",", "Default" ],
+					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "store", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export", ",", "<separator>", ",", "(Recall)", ",", "(undefined)", ",", "s12s2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1413,7 +1402,7 @@
 					"patching_rect" : [ 708.5, 153.0, 92.5, 69.0 ],
 					"pattrstorage" : "SimpleLooperPreset",
 					"presentation" : 1,
-					"presentation_rect" : [ 731.5, 69.0, 92.5, 69.0 ],
+					"presentation_rect" : [ 731.5, 70.0, 92.5, 69.0 ],
 					"prototypename" : "M4L.H",
 					"stored1" : [ 0.494118, 0.556863, 0.607843, 1.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -1608,13 +1597,13 @@
 						"FilterMode" : [ 5.0 ],
 						"FilterQ" : [ 0.3 ],
 						"Outgain" : [ -127.0 ],
-						"Replace" : [ "<none>" ],
+						"Replace" : [ 0 ],
 						"Speed" : [ 1.0 ],
 						"Start" : [ 0.0 ]
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u094021713"
+					"varname" : "u273000692"
 				}
 
 			}
@@ -2153,6 +2142,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-154", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-154", 1 ]
@@ -2793,24 +2791,24 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
 			"obj-30" : [ "Begin", "Begin", 0 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-134" : [ "Buffer", "Buffer", 0 ],
+			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-28" : [ "End", "End", 0 ],
 			"obj-146" : [ "Replace", "Replace", 0 ],
+			"obj-134" : [ "Buffer", "Buffer", 0 ],
+			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
 			"obj-164" : [ "Disto", "Disto", 0 ],
-			"obj-34" : [ "Start", "Start", 0 ],
+			"obj-14" : [ "Outgain", "Outgain", 0 ],
 			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
 			"obj-24" : [ "Speed", "Speed", 0 ],
-			"obj-28" : [ "End", "End", 0 ],
 			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ]
+			"obj-34" : [ "Start", "Start", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "SimpleLooperPreset.json",
-				"bootpath" : "/Users/goepfer/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
-				"patcherrelativepath" : "../../JSON",
+				"bootpath" : "/Users/goepfer/Documents/PATCH/Glerup/PATCH/JSON",
+				"patcherrelativepath" : "../../../../../PATCH/Glerup/PATCH/JSON",
 				"type" : "JSON",
 				"implicit" : 1
 			}

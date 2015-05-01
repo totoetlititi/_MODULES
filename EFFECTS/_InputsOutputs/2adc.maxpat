@@ -382,7 +382,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 665.333374, 136.0, 113.0, 18.0 ],
-					"text" : "qmetro 500 @active 1"
+					"text" : "metro 500 @active 1"
 				}
 
 			}
@@ -1394,14 +1394,7 @@
 				}
 
 			}
- ],
-		"parameters" : 		{
-			"obj-68" : [ "live.numbox[27]", "live.numbox[8]", 0 ],
-			"obj-45" : [ "function[1]", "function", 0 ],
-			"obj-64" : [ "live.menu[1]", "live.menu", 0 ]
-		}
-,
-		"dependency_cache" : [  ]
+ ]
 	}
 
 }
