@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 1,
+			"revision" : 4,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 228.0, 44.0, 827.0, 174.0 ],
+		"rect" : [ 228.0, 44.0, 831.0, 175.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -354,6 +354,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_color" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -362,7 +363,7 @@
 					"bgfillcolor_type" : "color",
 					"fontsize" : 12.0,
 					"id" : "obj-86",
-					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export", ",", "<separator>", ",", "(Recall)", ",", "(undefined)", ",", "Default" ],
+					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "store", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export", ",", "<separator>", ",", "(Recall)", ",", "(undefined)", ",", "Default" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -880,7 +881,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 4,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1558,7 +1559,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 4,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1619,7 +1620,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 4,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -2724,7 +2725,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 4,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -3205,7 +3206,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 4,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -3447,7 +3448,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 4,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -4685,7 +4686,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 4,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -4746,7 +4747,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 4,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -5851,7 +5852,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 4,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -6332,7 +6333,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 4,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -6574,7 +6575,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 4,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -7812,7 +7813,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 4,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -7873,7 +7874,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 4,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -8978,7 +8979,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 4,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -9459,7 +9460,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 4,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -9701,7 +9702,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 4,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -10939,7 +10940,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 4,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -11000,7 +11001,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 4,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -12105,7 +12106,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 4,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -12586,7 +12587,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 4,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -12828,7 +12829,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 4,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -14307,7 +14308,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u560009226"
+					"varname" : "u210002159"
 				}
 
 			}
@@ -15685,6 +15686,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-127", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"color" : [ 0.0, 0.0, 0.0, 0.1 ],
 					"destination" : [ "obj-189", 7 ],
 					"disabled" : 0,
@@ -15951,75 +15961,70 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-126" : [ "Delay", "Delay", 0 ],
-			"obj-28" : [ "1gain", "1gain", 0 ],
-			"obj-159" : [ "2trans", "2trans", 0 ],
-			"obj-176" : [ "3feed", "3feed", 0 ],
-			"obj-190" : [ "4pan", "4pan", 0 ],
-			"obj-112" : [ "1wsize", "1wsize", 0 ],
-			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-208" : [ "Clear", "Clear", 0 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-8" : [ "Ingain", "Ingain", 0 ],
-			"obj-114" : [ "1pan", "1pan", 0 ],
-			"obj-163" : [ "2delay", "2delay", 0 ],
-			"obj-174" : [ "3gain", "3gain", 0 ],
-			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-158" : [ "2wsize", "2wsize", 0 ],
 			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
 			"obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-162" : [ "2feed", "2feed", 0 ],
-			"obj-173" : [ "3trans", "3trans", 0 ],
-			"obj-175" : [ "3pan", "3pan", 0 ],
-			"obj-192" : [ "4delay", "4delay", 0 ],
-			"obj-172" : [ "3wsize", "3wsize", 0 ],
-			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-108" : [ "1delay", "1delay", 0 ],
-			"obj-160" : [ "2gain", "2gain", 0 ],
-			"obj-206" : [ "Feedback", "Feedback", 0 ],
-			"obj-191" : [ "4feed", "4feed", 0 ],
-			"obj-186" : [ "4wsize", "4wsize", 0 ],
-			"obj-80" : [ "PRESET", "PRESET", 0 ],
-			"obj-115" : [ "1feed", "1feed", 0 ],
-			"obj-161" : [ "2pan", "2pan", 0 ],
 			"obj-113" : [ "1trans", "1trans", 0 ],
+			"obj-161" : [ "2pan", "2pan", 0 ],
+			"obj-174" : [ "3gain", "3gain", 0 ],
+			"obj-191" : [ "4feed", "4feed", 0 ],
+			"obj-208" : [ "Clear", "Clear", 0 ],
+			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-108" : [ "1delay", "1delay", 0 ],
+			"obj-112" : [ "1wsize", "1wsize", 0 ],
+			"obj-159" : [ "2trans", "2trans", 0 ],
+			"obj-175" : [ "3pan", "3pan", 0 ],
+			"obj-188" : [ "4gain", "4gain", 0 ],
+			"obj-126" : [ "Delay", "Delay", 0 ],
+			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-115" : [ "1feed", "1feed", 0 ],
+			"obj-163" : [ "2delay", "2delay", 0 ],
+			"obj-158" : [ "2wsize", "2wsize", 0 ],
+			"obj-173" : [ "3trans", "3trans", 0 ],
+			"obj-190" : [ "4pan", "4pan", 0 ],
+			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-28" : [ "1gain", "1gain", 0 ],
+			"obj-162" : [ "2feed", "2feed", 0 ],
 			"obj-177" : [ "3delay", "3delay", 0 ],
+			"obj-172" : [ "3wsize", "3wsize", 0 ],
 			"obj-187" : [ "4trans", "4trans", 0 ],
-			"obj-188" : [ "4gain", "4gain", 0 ]
+			"obj-206" : [ "Feedback", "Feedback", 0 ],
+			"obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-114" : [ "1pan", "1pan", 0 ],
+			"obj-160" : [ "2gain", "2gain", 0 ],
+			"obj-176" : [ "3feed", "3feed", 0 ],
+			"obj-192" : [ "4delay", "4delay", 0 ],
+			"obj-186" : [ "4wsize", "4wsize", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max.app/Contents/Resources/C74/patchers/m4l/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max.app/Contents/Resources/C74/patchers/m4l/Tools resources",
+				"bootpath" : "C74:/patchers/m4l/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "HarmX4Preset.json",
-				"bootpath" : "~/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
-				"patcherrelativepath" : "../../JSON",
+				"bootpath" : "~/Documents/MAX-LIBRARY/TG.tools/JSON",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.line~.maxpat",
 				"bootpath" : "~/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/_Tools",
-				"patcherrelativepath" : "../_Tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.preset.maxpat",
 				"bootpath" : "~/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.fgraph1.maxpat",
 				"bootpath" : "~/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
