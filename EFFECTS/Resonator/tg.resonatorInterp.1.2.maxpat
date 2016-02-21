@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 1,
+			"revision" : 6,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 303.0, 44.0, 704.0, 174.0 ],
+		"rect" : [ 303.0, 44.0, 701.0, 171.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -38,6 +38,74 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"annotation" : "squelch",
+					"automation" : "Off",
+					"automationon" : "On",
+					"id" : "obj-63",
+					"maxclass" : "live.text",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 474.583344, 95.332764, 31.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 160.166748, 148.0, 50.833252, 15.0 ],
+					"prototypename" : "onoff",
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "squelch",
+							"parameter_shortname" : "squelch",
+							"parameter_type" : 2,
+							"parameter_mmax" : 1.0,
+							"parameter_enum" : [ "Off", "On" ],
+							"parameter_initial_enable" : 1,
+							"parameter_initial" : [ 0 ],
+							"parameter_speedlim" : 0.0
+						}
+
+					}
+,
+					"text" : "squelch",
+					"texton" : "squelch",
+					"varname" : "squelch"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-65",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 474.583344, 113.0, 33.0, 20.0 ],
+					"presentation_rect" : [ 474.583344, 110.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "sel 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-77",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 474.583344, 136.0, 79.0, 31.0 ],
+					"presentation_rect" : [ 474.583344, 133.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "target 0, squelch bang"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontface" : 0,
 					"fontname" : "Arial Bold",
@@ -557,7 +625,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 6,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -4421,7 +4489,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 429.583344, 141.332764, 31.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 161.916595, 148.0, 31.0, 15.0 ],
+					"presentation_rect" : [ 125.5, 148.0, 31.0, 15.0 ],
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -4503,7 +4571,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 6,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -4820,7 +4888,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 222.583344, 466.832764, 41.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 309.0, 148.0, 25.5, 20.0 ],
+					"presentation_rect" : [ 309.0, 148.0, 26.0, 20.0 ],
 					"style" : "",
 					"textcolor" : [ 0.301961, 0.337255, 0.403922, 1.0 ],
 					"triangle" : 0,
@@ -5888,6 +5956,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_color" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -5896,7 +5965,7 @@
 					"bgfillcolor_type" : "color",
 					"fontsize" : 12.0,
 					"id" : "obj-86",
-					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export", ",", "<separator>", ",", "(Recall)", ",", "(undefined)", ",", "Default" ],
+					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "store", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export", ",", "<separator>", ",", "(Recall)", ",", "(undefined)", ",", "1" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -6246,12 +6315,13 @@
 						"mixInterp" : [ 1000.0 ],
 						"modelCollName" : [ "<default>" ],
 						"nbVoices" : [ 30.0 ],
+						"squelch" : [ 0.0 ],
 						"trig" : [ 0.0 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u516014585"
+					"varname" : "u022003879"
 				}
 
 			}
@@ -7815,10 +7885,28 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-65", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-63", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-62", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-64", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-77", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-65", 0 ]
 				}
 
 			}
@@ -7936,6 +8024,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-20", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-77", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -7973,66 +8070,62 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-43" : [ "modelCollName", "modelCollName", 0 ],
+			"obj-177" : [ "2ampscale", "2ampscale", 0 ],
+			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-117" : [ "jitterGain", "jitterGain", 0 ],
+			"obj-63" : [ "squelch", "squelch", 0 ],
 			"obj-106" : [ "1model", "1model", 0 ],
 			"obj-71" : [ "2model", "2model", 0 ],
-			"obj-117" : [ "jitterGain", "jitterGain", 0 ],
-			"obj-205" : [ "trig", "trig", 0 ],
 			"obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-43" : [ "modelCollName", "modelCollName", 0 ],
+			"obj-19" : [ "jitterDecay", "jitterDecay", 0 ],
+			"obj-196" : [ "clear", "clear", 0 ],
 			"obj-127" : [ "1rescale", "1rescale", 0 ],
 			"obj-179" : [ "2rescale", "2rescale", 0 ],
 			"obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-193" : [ "mixInterp", "mixInterp", 0 ],
-			"obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-196" : [ "clear", "clear", 0 ],
-			"obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-37" : [ "nbVoices", "nbVoices", 0 ],
 			"obj-130" : [ "1transp", "1transp", 0 ],
 			"obj-181" : [ "2transp", "2transp", 0 ],
-			"obj-37" : [ "nbVoices", "nbVoices", 0 ],
-			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-72" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-205" : [ "trig", "trig", 0 ],
+			"obj-193" : [ "mixInterp", "mixInterp", 0 ],
 			"obj-105" : [ "1active", "1active", 0 ],
 			"obj-175" : [ "2active", "2active", 0 ],
-			"obj-19" : [ "jitterDecay", "jitterDecay", 0 ],
+			"obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-112" : [ "jitterFreq", "jitterFreq", 0 ],
 			"obj-80" : [ "PRESET", "PRESET", 0 ],
-			"obj-123" : [ "1ampscale", "1ampscale", 0 ],
-			"obj-177" : [ "2ampscale", "2ampscale", 0 ],
-			"obj-112" : [ "jitterFreq", "jitterFreq", 0 ]
+			"obj-123" : [ "1ampscale", "1ampscale", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "/Applications/Max.app/Contents/Resources/C74/patchers/m4l/Tools resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max.app/Contents/Resources/C74/patchers/m4l/Tools resources",
+				"bootpath" : "C74:/patchers/m4l/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ResonatorInterpPreset.json",
-				"bootpath" : "~/Documents/MAX-LIBRARY/TG.tools/_MODULES/JSON",
-				"patcherrelativepath" : "../../JSON",
+				"bootpath" : "~/JBB/Projets/Ekstasis/Ekstasis Max files/lib/specific objects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "~/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
+				"bootpath" : "~/JBB/Max Libraries/Current Libs/TG_MODULES-master/_MODULES-master/CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "resonatorsPoly1d.maxpat",
-				"bootpath" : "~/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/Resonator",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/JBB/Max Libraries/Current Libs/TG_MODULES-master/_MODULES-master/EFFECTS/Resonator",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.fgraph1.maxpat",
-				"bootpath" : "~/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
+				"bootpath" : "~/JBB/Max Libraries/Current Libs/TG_MODULES-master/_MODULES-master/CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
