@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 141.0, 78.0, 1301.0, 980.0 ],
+		"rect" : [ 348.0, 46.0, 692.0, 415.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -38,6 +38,553 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgcolor" : [ 0.666667, 0.698039, 0.717647, 0.0 ],
+					"blinkcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+					"id" : "obj-8",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"outlinecolor" : [ 1.0, 0.403922, 0.0, 0.0 ],
+					"patching_rect" : [ 1075.5, 891.5, 17.0, 17.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 554.0, 188.0, 10.0, 10.0 ],
+					"prototypename" : "M4L.orange",
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-203",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 7,
+							"minor" : 2,
+							"revision" : 0,
+							"architecture" : "x86",
+							"modernui" : 1
+						}
+,
+						"rect" : [ 25.0, 69.0, 397.0, 343.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 10.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial Bold",
+						"gridonopen" : 1,
+						"gridsize" : [ 8.0, 8.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Arial Bold",
+									"fontsize" : 10.0,
+									"id" : "obj-192",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 32.0, 200.0, 65.0, 18.0 ],
+									"style" : "",
+									"text" : "loadmess 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-184",
+									"maxclass" : "toggle",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 120.0, 144.0, 20.0, 20.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial Bold",
+									"fontsize" : 10.0,
+									"id" : "obj-182",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 120.0, 168.0, 41.0, 16.0 ],
+									"style" : "",
+									"text" : "$1 200"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial Bold",
+									"fontsize" : 10.0,
+									"id" : "obj-175",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 120.0, 192.0, 100.0, 18.0 ],
+									"style" : "",
+									"text" : "line 0. 50"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial Bold",
+									"fontsize" : 10.0,
+									"id" : "obj-173",
+									"linecount" : 3,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 120.0, 216.0, 97.0, 38.0 ],
+									"style" : "",
+									"text" : "bgcolor 1. $1 $1 1., bgovercolor 1. $1 $1 1."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial Bold",
+									"fontsize" : 10.0,
+									"id" : "obj-151",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 120.0, 120.0, 64.0, 18.0 ],
+									"style" : "",
+									"text" : "qmetro 500"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial Bold",
+									"fontsize" : 10.0,
+									"id" : "obj-122",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 120.0, 96.0, 32.5, 18.0 ],
+									"style" : "",
+									"text" : "== 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-195",
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 120.0, 36.0, 25.0, 25.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-196",
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 71.0, 292.0, 25.0, 25.0 ],
+									"style" : ""
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-151", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-122", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-184", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-151", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-196", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-173", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-173", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-175", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-175", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-182", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-182", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-184", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-196", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-192", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-122", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-195", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 928.5, 866.5, 46.0, 20.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"fontname" : "Arial Bold",
+						"fontsize" : 10.0,
+						"globalpatchername" : "",
+						"style" : "",
+						"tags" : ""
+					}
+,
+					"style" : "",
+					"text" : "p alerte"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"fontname" : "Arial Bold",
+					"fontsize" : 9.0,
+					"format" : 5,
+					"htricolor" : [ 0.87, 0.82, 0.24, 1.0 ],
+					"id" : "obj-100",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1016.5, 890.5, 53.0, 19.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 534.0, 188.0, 25.0, 19.0 ],
+					"style" : "",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"triangle" : 0,
+					"tricolor" : [ 0.75, 0.75, 0.75, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-194",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 824.5, 724.0, 56.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 478.0, 188.0, 56.0, 18.0 ],
+					"style" : "",
+					"text" : "6) MIDI",
+					"textcolor" : [ 1.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgoncolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+					"fontsize" : 18.0,
+					"id" : "obj-193",
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 928.5, 890.5, 40.0, 16.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 622.0, 188.0, 56.0, 34.0 ],
+					"style" : "",
+					"text" : "OFF",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"texton" : "ON",
+					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textovercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"usebgoncolor" : 1,
+					"usetextovercolor" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.568627, 0.619608, 0.662745, 1.0 ],
+					"bgoncolor" : [ 0.921569, 0.94902, 0.05098, 1.0 ],
+					"fontface" : 1,
+					"fontname" : "Arial",
+					"id" : "obj-170",
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 888.5, 746.5, 32.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 566.0, 188.0, 48.0, 15.0 ],
+					"prototypename" : "M4L.toggle",
+					"style" : "",
+					"text" : "refresh",
+					"textcolor" : [ 0.101961, 0.121569, 0.172549, 1.0 ],
+					"texton" : "Trig",
+					"textoncolor" : [ 0.101961, 0.121569, 0.172549, 1.0 ],
+					"textovercolor" : [ 0.101961, 0.121569, 0.172549, 1.0 ],
+					"usebgoncolor" : 1,
+					"usetextovercolor" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-167",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 928.5, 938.5, 113.0, 20.0 ],
+					"style" : "",
+					"text" : "s midi-keyboard-input"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"allowdrag" : 0,
+					"id" : "obj-166",
+					"items" : [ "Gestionnaire IAC Bus 1", ",", "Gestionnaire IAC IAC Bus 2", ",", "Network Session 1", ",", "Fireface 800 (10D) Port 1", ",", "to Max 1", ",", "to Max 2" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 904.5, 818.5, 100.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 478.0, 204.0, 136.0, 20.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-53",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 928.5, 914.5, 67.0, 20.0 ],
+					"style" : "",
+					"text" : "gate"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-96",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 976.5, 890.5, 33.0, 20.0 ],
+					"style" : "",
+					"text" : "pack"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-101",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 824.5, 890.5, 90.0, 20.0 ],
+					"style" : "",
+					"text" : "prepend symbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-104",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 824.5, 842.5, 140.0, 31.0 ],
+					"style" : "",
+					"text" : "\"Gestionnaire IAC IAC Bus 2\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-116",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 824.5, 746.5, 53.0, 20.0 ],
+					"style" : "",
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-117",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "bang" ],
+					"patching_rect" : [ 824.5, 770.5, 136.0, 20.0 ],
+					"style" : "",
+					"text" : "b 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-121",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 976.5, 842.5, 75.0, 20.0 ],
+					"style" : "",
+					"text" : "prepend port"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-124",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 904.5, 794.5, 56.0, 20.0 ],
+					"style" : "",
+					"text" : "midiinfo"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-148",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "int", "int" ],
+					"patching_rect" : [ 976.5, 866.5, 46.0, 20.0 ],
+					"style" : "",
+					"text" : "notein"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "newobj",
@@ -153,7 +700,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 969.25, 385.0, 82.0, 20.0 ],
+					"patching_rect" : [ 1512.0, 614.0, 82.0, 20.0 ],
 					"style" : "",
 					"text" : "loadmess set 1"
 				}
@@ -168,7 +715,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 917.25, 385.0, 39.0, 20.0 ],
+					"patching_rect" : [ 1493.75, 584.0, 39.0, 20.0 ],
 					"style" : "",
 					"text" : "set $1"
 				}
@@ -183,7 +730,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 917.25, 355.0, 61.0, 20.0 ],
+					"patching_rect" : [ 1493.75, 554.0, 61.0, 20.0 ],
 					"style" : "",
 					"text" : "route suivi"
 				}
@@ -199,7 +746,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 917.25, 329.0, 93.0, 20.0 ],
+					"patching_rect" : [ 1493.75, 528.0, 93.0, 20.0 ],
 					"style" : "",
 					"text" : "r antescofo-mess"
 				}
@@ -214,7 +761,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1058.75, 240.0, 100.0, 20.0 ],
+					"patching_rect" : [ 1599.5, 438.0, 100.0, 20.0 ],
 					"style" : "",
 					"text" : "loadmess 0"
 				}
@@ -242,7 +789,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1186.25, 495.0, 64.0, 17.0 ],
+					"patching_rect" : [ 1727.0, 693.0, 64.0, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 134.0, 229.0, 37.0, 17.0 ],
 					"style" : "",
@@ -261,7 +808,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1109.75, 324.0, 50.0, 20.0 ],
+					"patching_rect" : [ 1650.5, 522.0, 50.0, 20.0 ],
 					"style" : ""
 				}
 
@@ -288,7 +835,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1058.75, 378.0, 88.0, 16.0 ],
+					"patching_rect" : [ 1599.5, 576.0, 88.0, 16.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 233.5, 221.0, 73.0, 16.0 ],
 					"style" : "",
@@ -307,7 +854,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1058.75, 402.0, 57.0, 20.0 ],
+					"patching_rect" : [ 1599.5, 600.0, 57.0, 20.0 ],
 					"style" : "",
 					"text" : "nextevent"
 				}
@@ -333,14 +880,14 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-13",
-					"linecount" : 6,
+					"linecount" : 5,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 651.0, 577.5, 34.0, 76.0 ],
+					"patching_rect" : [ 651.0, 577.5, 34.0, 64.0 ],
 					"style" : "",
-					"text" : "gotocue measure1____#1"
+					"text" : "gotocue ms1___Koala1"
 				}
 
 			}
@@ -370,7 +917,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 928.25, 800.0, 87.0, 20.0 ],
+					"patching_rect" : [ 629.0, 835.5, 87.0, 20.0 ],
 					"style" : "",
 					"text" : "r RESET-END"
 				}
@@ -548,7 +1095,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 591.0, 713.5, 94.0, 20.0 ],
+					"patching_rect" : [ 1116.75, 450.5, 94.0, 20.0 ],
 					"style" : "",
 					"text" : "s ant_menu_cues"
 				}
@@ -563,7 +1110,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 917.25, 647.0, 95.0, 20.0 ],
+					"patching_rect" : [ 1493.75, 846.0, 95.0, 20.0 ],
 					"style" : "",
 					"text" : "s antescofo-mess"
 				}
@@ -578,7 +1125,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 521.75, 588.5, 35.0, 20.0 ],
+					"patching_rect" : [ 1047.5, 325.5, 35.0, 20.0 ],
 					"style" : "",
 					"text" : "defer"
 				}
@@ -607,7 +1154,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 521.75, 778.0, 95.0, 20.0 ],
+					"patching_rect" : [ 1047.5, 515.0, 95.0, 20.0 ],
 					"style" : "",
 					"text" : "s antescofo-mess"
 				}
@@ -1071,7 +1618,7 @@
 								"box" : 								{
 									"allowdrag" : 0,
 									"id" : "obj-15",
-									"items" : [ "measure1____intro1", ",", "measure4", ",", "measure5", ",", "Section1____measure6", ",", "measure13____section2", ",", "measure14", ",", "measure15", ",", "measure16", ",", "measure17", ",", "measure18", ",", "measure19", ",", "measure20", ",", "measure21", ",", "measure22", ",", "measure23____section5", ",", "measure24", ",", "measure25", ",", "measure26", ",", "measure27", ",", "measure29", ",", "measure30", ",", "measure31", ",", "measure32", ",", "measure33", ",", "measure34____section3", ",", "measure35", ",", "measure36", ",", "measure37", ",", "measure38", ",", "measure39", ",", "measure40", ",", "measure41", ",", "measure42", ",", "measure43", ",", "measure44", ",", "measure45", ",", "measure46", ",", "measure47", ",", "measure48", ",", "measure49", ",", "measure50", ",", "measure51", ",", "measure52", ",", "measure53", ",", "measure54", ",", "measure55", ",", "measure56", ",", "measure57", ",", "measure58", ",", "measure59", ",", "measure60", ",", "measure61", ",", "measure62", ",", "measure63", ",", "measure64", ",", "measure65", ",", "measure66", ",", "measure67", ",", "measure68____section2", ",", "measure69", ",", "measure70", ",", "measure71", ",", "measure72", ",", "measure73", ",", "measure74", ",", "measure75", ",", "measure76", ",", "measure77", ",", "measure78____section6", ",", "measure79", ",", "measure80", ",", "measure81", ",", "measure82", ",", "measure83", ",", "measure84____section1", ",", "measure90____section6", ",", "measure91", ",", "measure92", ",", "measure93", ",", "measure94", ",", "measure95", ",", "measure96____section4", ",", "measure97", ",", "measure98", ",", "measure99", ",", "measure100", ",", "measure101", ",", "measure102", ",", "measure103", ",", "measure104", ",", "measure105", ",", "measure106", ",", "measure107", ",", "measure108", ",", "measure109", ",", "measure110", ",", "measure111", ",", "measure112", ",", "measure113", ",", "measure114", ",", "measure115", ",", "measure116", ",", "measure117", ",", "measure118", ",", "measure119", ",", "measure120", ",", "measure121", ",", "measure122", ",", "measure123", ",", "measure124", ",", "measure125", ",", "measure126", ",", "measure127", ",", "measure128", ",", "measure129", ",", "measure130____section1", ",", "measure136____section5", ",", "measure137", ",", "measure138", ",", "measure139", ",", "measure140", ",", "measure142", ",", "measure143", ",", "measure144", ",", "measure145", ",", "measure146____section7", ",", "measure147", ",", "measure148", ",", "measure149", ",", "measure150", ",", "measure151", ",", "measure152", ",", "measure153", ",", "measure154", ",", "measure155", ",", "measure156", ",", "measure157____section6", ",", "measure158", ",", "measure159", ",", "measure160", ",", "measure161", ",", "measure162", ",", "measure163____section5", ",", "measure164", ",", "measure165", ",", "measure166", ",", "measure167", ",", "measure169", ",", "measure170", ",", "measure171", ",", "measure172", ",", "measure173", ",", "measure173____section8", ",", "measure174", ",", "measure175", ",", "measure176", ",", "measure178", ",", "measure179", ",", "measure180", ",", "measure181", ",", "measure182", ",", "measure183", ",", "measure184", ",", "measure185", ",", "measure186", ",", "measure187", ",", "measure188", ",", "measure189____section6", ",", "measure190", ",", "measure191", ",", "measure192", ",", "measure193", ",", "measure194", ",", "measure195____section9", ",", "measure196", ",", "measure197", ",", "measure198", ",", "measure199", ",", "measure200", ",", "measure201", ",", "measure202", ",", "measure204____section8", ",", "measure204", ",", "measure205", ",", "measure206", ",", "measure208", ",", "measure209", ",", "measure210", ",", "measure211", ",", "measure212", ",", "measure213", ",", "measure214", ",", "measure215", ",", "measure216", ",", "measure217", ",", "measure218", ",", "measure219", ",", "measure220____section2", ",", "measure221", ",", "measure222", ",", "measure223", ",", "measure224", ",", "measure225", ",", "measure226", ",", "measure227", ",", "measure228", ",", "measure229", ",", "measure230____section9", ",", "measure231", ",", "measure232", ",", "measure233", ",", "measure234", ",", "measure235", ",", "measure236", ",", "measure237", ",", "measure238____section4", ",", "measure239", ",", "measure240", ",", "measure241", ",", "measure242", ",", "measure243", ",", "measure244", ",", "measure245", ",", "measure246", ",", "measure247", ",", "measure248", ",", "measure249", ",", "measure250", ",", "measure251", ",", "measure252", ",", "measure253", ",", "measure254", ",", "measure255", ",", "measure256", ",", "measure257", ",", "measure258", ",", "measure259", ",", "measure260", ",", "measure261", ",", "measure262", ",", "measure263", ",", "measure264", ",", "measure265", ",", "measure266", ",", "measure267", ",", "measure268", ",", "measure269", ",", "measure270____section5", ",", "measure271", ",", "measure272", ",", "measure273", ",", "measure274", ",", "measure276", ",", "measure277", ",", "measure278", ",", "measure279", ",", "measure280", ",", "measure281____section10", ",", "measure282", ",", "measure283", ",", "measure284", ",", "measure285", ",", "measure286", ",", "measure287", ",", "measure288____section1", ",", "measure294____section10", ",", "measure295", ",", "measure296", ",", "measure297", ",", "measure298", ",", "measure299", ",", "measure300", ",", "measure301", ",", "measure302", ",", "measure303", ",", "measure304", ",", "measure305", ",", "measure307", ",", "measure308", ",", "measure309", ",", "measure310", ",", "measure311", ",", "measure312", ",", "measure313", ",", "measure314", ",", "measure315", ",", "measure316", ",", "measure317____section7", ",", "measure318", ",", "measure319", ",", "measure320", ",", "measure321", ",", "measure322", ",", "measure323", ",", "measure324", ",", "measure325", ",", "measure326", ",", "measure327", ",", "measure328____section3", ",", "measure329", ",", "measure330", ",", "measure331", ",", "measure332", ",", "measure333", ",", "measure334", ",", "measure335", ",", "measure336", ",", "measure337", ",", "measure338", ",", "measure339", ",", "measure340", ",", "measure341", ",", "measure342", ",", "measure343", ",", "measure344", ",", "measure345", ",", "measure346", ",", "measure347", ",", "measure348", ",", "measure349", ",", "measure350", ",", "measure351", ",", "measure352", ",", "measure353", ",", "measure354", ",", "measure355", ",", "measure356", ",", "measure357", ",", "measure358", ",", "measure359", ",", "measure360", ",", "measure361" ],
+									"items" : [ "ms1___Koala1", ",", "ms2___Prtm", ",", "ms8____ChordsSuivi___Stretch1", ",", "ms9", ",", "ms_10", ",", "ms11", ",", "ms12", ",", "ms13", ",", "ms14", ",", "ms15", ",", "ms16", ",", "ms17___Zebayce", ",", "ms18", ",", "ms19", ",", "ms20", ",", "ms21", ",", "ms22", ",", "ms23", ",", "ms24", ",", "ms25", ",", "ms26___Koala2", ",", "ms27", ",", "ms28___MetalsSounds", ",", "ms29", ",", "ms30_Stretch-End", ",", "ms32___MetalSound", ",", "ms34___Zebayce", ",", "ms38____ELASTIK", ",", "ms43____REC_BUFFER", ",", "ms45____STOP__REC_BUFFER", ",", "ms55____READ__REC_BUFFER", ",", "ms58____READ__REC_BUFFER", ",", "ms66___Stretch1___Gong", ",", "ms67", ",", "ms68", ",", "ms69", ",", "ms70", ",", "ms71", ",", "ms72", ",", "ms73", ",", "ms74", ",", "ms75", ",", "ms76", ",", "ms77", ",", "ms78", ",", "ms79____Stretch1-2", ",", "ms80", ",", "ms81____Stretch2-End", ",", "ms82", ",", "ms83___VC_Munger", ",", "ms84", ",", "ms85", ",", "ms86", ",", "ms87", ",", "ms88_Stretch-end", ",", "ms96___Piano-Fshift", ",", "ms97", ",", "m100", ",", "ms106___Stretch1", ",", "ms107", ",", "ms108", ",", "ms109", ",", "ms110", ",", "ms111", ",", "ms112___Zebayce_StopMunger", ",", "ms113", ",", "ms117___Soundfiles___StretchEnd", ",", "ms120___Samp", ",", "ms121___Samp", ",", "ms126_fin-suivi", ",", "ms127___Samp", ",", "ms127-3___Samp", ",", "ms130___Samp", ",", "ms131-4___Samp", ",", "ms141", ",", "ms141-4___Samp", ",", "ms142-4___Samp", ",", "ms143", ",", "ms152___Koala1", ",", "ms159", ",", "ms160", ",", "ms161___Stretch1", ",", "ms162", ",", "ms163", ",", "ms164", ",", "ms165", ",", "ms166", ",", "ms167", ",", "ms168", ",", "ms169", ",", "ms170", ",", "ms171", ",", "ms172", ",", "ms173", ",", "ms174", ",", "ms175", ",", "ms176", ",", "ms177", ",", "ms178", ",", "ms179", ",", "ms180", ",", "ms181", ",", "ms182", ",", "ms183", ",", "ms184", ",", "ms185", ",", "ms186", ",", "ms187", ",", "ms188-3-360", ",", "ms189___Stretch1-End", ",", "###___ms190____POLYCHORDS", ",", "ms197", ",", "ms200", ",", "ms201", ",", "ms202", ",", "ms202_3___Stretch1", ",", "ms203", ",", "ms204", ",", "ms205", ",", "ms206", ",", "ms207", ",", "ms208", ",", "ms209", ",", "ms210", ",", "ms211", ",", "ms212", ",", "ms213", ",", "ms214", ",", "ms215", ",", "ms216", ",", "ms217", ",", "ms218", ",", "ms219", ",", "ms220", ",", "ms221", ",", "ms222", ",", "ms223", ",", "ms224", ",", "ms225", ",", "ms226", ",", "ms227", ",", "ms228", ",", "ms229", ",", "ms230", ",", "ms231", ",", "ms234_fin-suivi", ",", "ms238", ",", "ms242", ",", "ms246", ",", "ms250", ",", "ms255____recul_Ondea___PB", ",", "ms258", ",", "ms267", ",", "ms268_____HALLU__DepartOk", ",", "ms280", ",", "ms280-3", ",", "ms287", ",", "ms294-4", ",", "ms303-2", ",", "ms309", ",", "ms315____FUSEES_1__Chromax", ",", "ms317", ",", "###___ms320____Prtm", ",", "ms321-1____Koala1", ",", "ms326-1", ",", "ms328-1", ",", "ms331-1", ",", "ms335-2", ",", "ms336-1", ",", "ms339-4", ",", "ms342-4", ",", "ms343-3", ",", "ms345-3", ",", "ms346-3", ",", "ms346-4", ",", "ms350-4", ",", "ms351-4", ",", "ms352-4", ",", "ms353-4", ",", "ms354-4", ",", "ms355-3", ",", "ms359-2", ",", "ms361-4", ",", "ms363-4", ",", "ms365-4", ",", "ms366-4", ",", "ms367-4", ",", "ms368-4", ",", "ms369-4", ",", "ms370-4", ",", "ms377", ",", "ms392_fff", ",", "ms393____CRESCSa", ",", "ms399_4____StretchRecOn", ",", "ms400_2____StretchRecOff", ",", "ms402____FUSEES_2", ",", "ms407____CRESCSb", ",", "ms415____Chute", ",", "ms419", ",", "ms423", ",", "ms427", ",", "ms431", ",", "ms435__", ",", "ms448", ",", "ms459___MungerLow", ",", "ms463", ",", "ms466" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -1101,7 +1648,7 @@
 								"box" : 								{
 									"allowdrag" : 0,
 									"id" : "obj-163",
-									"items" : [ "measure1____intro1", ",", "measure4", ",", "measure5", ",", "Section1____measure6", ",", "measure13____section2", ",", "measure14", ",", "measure15", ",", "measure16", ",", "measure17", ",", "measure18", ",", "measure19", ",", "measure20", ",", "measure21", ",", "measure22", ",", "measure23____section5", ",", "measure24", ",", "measure25", ",", "measure26", ",", "measure27", ",", "measure29", ",", "measure30", ",", "measure31", ",", "measure32", ",", "measure33", ",", "measure34____section3", ",", "measure35", ",", "measure36", ",", "measure37", ",", "measure38", ",", "measure39", ",", "measure40", ",", "measure41", ",", "measure42", ",", "measure43", ",", "measure44", ",", "measure45", ",", "measure46", ",", "measure47", ",", "measure48", ",", "measure49", ",", "measure50", ",", "measure51", ",", "measure52", ",", "measure53", ",", "measure54", ",", "measure55", ",", "measure56", ",", "measure57", ",", "measure58", ",", "measure59", ",", "measure60", ",", "measure61", ",", "measure62", ",", "measure63", ",", "measure64", ",", "measure65", ",", "measure66", ",", "measure67", ",", "measure68____section2", ",", "measure69", ",", "measure70", ",", "measure71", ",", "measure72", ",", "measure73", ",", "measure74", ",", "measure75", ",", "measure76", ",", "measure77", ",", "measure78____section6", ",", "measure79", ",", "measure80", ",", "measure81", ",", "measure82", ",", "measure83", ",", "measure84____section1", ",", "measure90____section6", ",", "measure91", ",", "measure92", ",", "measure93", ",", "measure94", ",", "measure95", ",", "measure96____section4", ",", "measure97", ",", "measure98", ",", "measure99", ",", "measure100", ",", "measure101", ",", "measure102", ",", "measure103", ",", "measure104", ",", "measure105", ",", "measure106", ",", "measure107", ",", "measure108", ",", "measure109", ",", "measure110", ",", "measure111", ",", "measure112", ",", "measure113", ",", "measure114", ",", "measure115", ",", "measure116", ",", "measure117", ",", "measure118", ",", "measure119", ",", "measure120", ",", "measure121", ",", "measure122", ",", "measure123", ",", "measure124", ",", "measure125", ",", "measure126", ",", "measure127", ",", "measure128", ",", "measure129", ",", "measure130____section1", ",", "measure136____section5", ",", "measure137", ",", "measure138", ",", "measure139", ",", "measure140", ",", "measure142", ",", "measure143", ",", "measure144", ",", "measure145", ",", "measure146____section7", ",", "measure147", ",", "measure148", ",", "measure149", ",", "measure150", ",", "measure151", ",", "measure152", ",", "measure153", ",", "measure154", ",", "measure155", ",", "measure156", ",", "measure157____section6", ",", "measure158", ",", "measure159", ",", "measure160", ",", "measure161", ",", "measure162", ",", "measure163____section5", ",", "measure164", ",", "measure165", ",", "measure166", ",", "measure167", ",", "measure169", ",", "measure170", ",", "measure171", ",", "measure172", ",", "measure173", ",", "measure173____section8", ",", "measure174", ",", "measure175", ",", "measure176", ",", "measure178", ",", "measure179", ",", "measure180", ",", "measure181", ",", "measure182", ",", "measure183", ",", "measure184", ",", "measure185", ",", "measure186", ",", "measure187", ",", "measure188", ",", "measure189____section6", ",", "measure190", ",", "measure191", ",", "measure192", ",", "measure193", ",", "measure194", ",", "measure195____section9", ",", "measure196", ",", "measure197", ",", "measure198", ",", "measure199", ",", "measure200", ",", "measure201", ",", "measure202", ",", "measure204____section8", ",", "measure204", ",", "measure205", ",", "measure206", ",", "measure208", ",", "measure209", ",", "measure210", ",", "measure211", ",", "measure212", ",", "measure213", ",", "measure214", ",", "measure215", ",", "measure216", ",", "measure217", ",", "measure218", ",", "measure219", ",", "measure220____section2", ",", "measure221", ",", "measure222", ",", "measure223", ",", "measure224", ",", "measure225", ",", "measure226", ",", "measure227", ",", "measure228", ",", "measure229", ",", "measure230____section9", ",", "measure231", ",", "measure232", ",", "measure233", ",", "measure234", ",", "measure235", ",", "measure236", ",", "measure237", ",", "measure238____section4", ",", "measure239", ",", "measure240", ",", "measure241", ",", "measure242", ",", "measure243", ",", "measure244", ",", "measure245", ",", "measure246", ",", "measure247", ",", "measure248", ",", "measure249", ",", "measure250", ",", "measure251", ",", "measure252", ",", "measure253", ",", "measure254", ",", "measure255", ",", "measure256", ",", "measure257", ",", "measure258", ",", "measure259", ",", "measure260", ",", "measure261", ",", "measure262", ",", "measure263", ",", "measure264", ",", "measure265", ",", "measure266", ",", "measure267", ",", "measure268", ",", "measure269", ",", "measure270____section5", ",", "measure271", ",", "measure272", ",", "measure273", ",", "measure274", ",", "measure276", ",", "measure277", ",", "measure278", ",", "measure279", ",", "measure280", ",", "measure281____section10", ",", "measure282", ",", "measure283", ",", "measure284", ",", "measure285", ",", "measure286", ",", "measure287", ",", "measure288____section1", ",", "measure294____section10", ",", "measure295", ",", "measure296", ",", "measure297", ",", "measure298", ",", "measure299", ",", "measure300", ",", "measure301", ",", "measure302", ",", "measure303", ",", "measure304", ",", "measure305", ",", "measure307", ",", "measure308", ",", "measure309", ",", "measure310", ",", "measure311", ",", "measure312", ",", "measure313", ",", "measure314", ",", "measure315", ",", "measure316", ",", "measure317____section7", ",", "measure318", ",", "measure319", ",", "measure320", ",", "measure321", ",", "measure322", ",", "measure323", ",", "measure324", ",", "measure325", ",", "measure326", ",", "measure327", ",", "measure328____section3", ",", "measure329", ",", "measure330", ",", "measure331", ",", "measure332", ",", "measure333", ",", "measure334", ",", "measure335", ",", "measure336", ",", "measure337", ",", "measure338", ",", "measure339", ",", "measure340", ",", "measure341", ",", "measure342", ",", "measure343", ",", "measure344", ",", "measure345", ",", "measure346", ",", "measure347", ",", "measure348", ",", "measure349", ",", "measure350", ",", "measure351", ",", "measure352", ",", "measure353", ",", "measure354", ",", "measure355", ",", "measure356", ",", "measure357", ",", "measure358", ",", "measure359", ",", "measure360", ",", "measure361" ],
+									"items" : [ "ms1___Koala1", ",", "ms2___Prtm", ",", "ms8____ChordsSuivi___Stretch1", ",", "ms9", ",", "ms_10", ",", "ms11", ",", "ms12", ",", "ms13", ",", "ms14", ",", "ms15", ",", "ms16", ",", "ms17___Zebayce", ",", "ms18", ",", "ms19", ",", "ms20", ",", "ms21", ",", "ms22", ",", "ms23", ",", "ms24", ",", "ms25", ",", "ms26___Koala2", ",", "ms27", ",", "ms28___MetalsSounds", ",", "ms29", ",", "ms30_Stretch-End", ",", "ms32___MetalSound", ",", "ms34___Zebayce", ",", "ms38____ELASTIK", ",", "ms43____REC_BUFFER", ",", "ms45____STOP__REC_BUFFER", ",", "ms55____READ__REC_BUFFER", ",", "ms58____READ__REC_BUFFER", ",", "ms66___Stretch1___Gong", ",", "ms67", ",", "ms68", ",", "ms69", ",", "ms70", ",", "ms71", ",", "ms72", ",", "ms73", ",", "ms74", ",", "ms75", ",", "ms76", ",", "ms77", ",", "ms78", ",", "ms79____Stretch1-2", ",", "ms80", ",", "ms81____Stretch2-End", ",", "ms82", ",", "ms83___VC_Munger", ",", "ms84", ",", "ms85", ",", "ms86", ",", "ms87", ",", "ms88_Stretch-end", ",", "ms96___Piano-Fshift", ",", "ms97", ",", "m100", ",", "ms106___Stretch1", ",", "ms107", ",", "ms108", ",", "ms109", ",", "ms110", ",", "ms111", ",", "ms112___Zebayce_StopMunger", ",", "ms113", ",", "ms117___Soundfiles___StretchEnd", ",", "ms120___Samp", ",", "ms121___Samp", ",", "ms126_fin-suivi", ",", "ms127___Samp", ",", "ms127-3___Samp", ",", "ms130___Samp", ",", "ms131-4___Samp", ",", "ms141", ",", "ms141-4___Samp", ",", "ms142-4___Samp", ",", "ms143", ",", "ms152___Koala1", ",", "ms159", ",", "ms160", ",", "ms161___Stretch1", ",", "ms162", ",", "ms163", ",", "ms164", ",", "ms165", ",", "ms166", ",", "ms167", ",", "ms168", ",", "ms169", ",", "ms170", ",", "ms171", ",", "ms172", ",", "ms173", ",", "ms174", ",", "ms175", ",", "ms176", ",", "ms177", ",", "ms178", ",", "ms179", ",", "ms180", ",", "ms181", ",", "ms182", ",", "ms183", ",", "ms184", ",", "ms185", ",", "ms186", ",", "ms187", ",", "ms188-3-360", ",", "ms189___Stretch1-End", ",", "###___ms190____POLYCHORDS", ",", "ms197", ",", "ms200", ",", "ms201", ",", "ms202", ",", "ms202_3___Stretch1", ",", "ms203", ",", "ms204", ",", "ms205", ",", "ms206", ",", "ms207", ",", "ms208", ",", "ms209", ",", "ms210", ",", "ms211", ",", "ms212", ",", "ms213", ",", "ms214", ",", "ms215", ",", "ms216", ",", "ms217", ",", "ms218", ",", "ms219", ",", "ms220", ",", "ms221", ",", "ms222", ",", "ms223", ",", "ms224", ",", "ms225", ",", "ms226", ",", "ms227", ",", "ms228", ",", "ms229", ",", "ms230", ",", "ms231", ",", "ms234_fin-suivi", ",", "ms238", ",", "ms242", ",", "ms246", ",", "ms250", ",", "ms255____recul_Ondea___PB", ",", "ms258", ",", "ms267", ",", "ms268_____HALLU__DepartOk", ",", "ms280", ",", "ms280-3", ",", "ms287", ",", "ms294-4", ",", "ms303-2", ",", "ms309", ",", "ms315____FUSEES_1__Chromax", ",", "ms317", ",", "###___ms320____Prtm", ",", "ms321-1____Koala1", ",", "ms326-1", ",", "ms328-1", ",", "ms331-1", ",", "ms335-2", ",", "ms336-1", ",", "ms339-4", ",", "ms342-4", ",", "ms343-3", ",", "ms345-3", ",", "ms346-3", ",", "ms346-4", ",", "ms350-4", ",", "ms351-4", ",", "ms352-4", ",", "ms353-4", ",", "ms354-4", ",", "ms355-3", ",", "ms359-2", ",", "ms361-4", ",", "ms363-4", ",", "ms365-4", ",", "ms366-4", ",", "ms367-4", ",", "ms368-4", ",", "ms369-4", ",", "ms370-4", ",", "ms377", ",", "ms392_fff", ",", "ms393____CRESCSa", ",", "ms399_4____StretchRecOn", ",", "ms400_2____StretchRecOff", ",", "ms402____FUSEES_2", ",", "ms407____CRESCSb", ",", "ms415____Chute", ",", "ms419", ",", "ms423", ",", "ms427", ",", "ms431", ",", "ms435__", ",", "ms448", ",", "ms459___MungerLow", ",", "ms463", ",", "ms466" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -1592,7 +2139,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 593.5, 870.5, 100.0, 20.0 ],
+					"patching_rect" : [ 753.5, 84.5, 100.0, 20.0 ],
 					"style" : "",
 					"text" : "print print"
 				}
@@ -1607,7 +2154,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 593.5, 845.5, 100.0, 20.0 ],
+					"patching_rect" : [ 753.5, 59.5, 100.0, 20.0 ],
 					"style" : "",
 					"text" : "r print"
 				}
@@ -1814,7 +2361,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 114.625, 879.5, 83.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 9.0, 6.0, 83.0, 18.0 ],
+					"presentation_rect" : [ 9.0, 10.0, 83.0, 18.0 ],
 					"style" : "",
 					"text" : "Current Event :"
 				}
@@ -1828,7 +2375,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 879.75, 688.5, 56.0, 18.0 ],
+					"patching_rect" : [ 580.5, 724.0, 56.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 478.0, 74.0, 74.0, 18.0 ],
 					"style" : "",
@@ -1884,9 +2431,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1075.25, 258.0, 149.0, 18.0 ],
+					"patching_rect" : [ 1616.0, 456.0, 149.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 478.0, 301.0, 149.0, 18.0 ],
+					"presentation_rect" : [ 478.0, 239.0, 149.0, 18.0 ],
 					"style" : "",
 					"text" : "7) KEYBOARD Shortcut   >>>",
 					"textcolor" : [ 1.0, 0.0, 0.0, 1.0 ]
@@ -1902,7 +2449,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 1154.75, 300.0, 32.5, 20.0 ],
+					"patching_rect" : [ 1695.5, 498.0, 32.5, 20.0 ],
 					"style" : "",
 					"text" : "!- 1"
 				}
@@ -1917,7 +2464,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1154.75, 324.0, 55.0, 20.0 ],
+					"patching_rect" : [ 1695.5, 522.0, 55.0, 20.0 ],
 					"style" : "",
 					"text" : "hidden $1"
 				}
@@ -1932,7 +2479,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1154.75, 348.0, 58.0, 17.0 ],
+					"patching_rect" : [ 1695.5, 546.0, 58.0, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 323.5, 204.0, 64.0, 17.0 ],
 					"style" : "",
@@ -1950,7 +2497,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1154.75, 385.0, 64.0, 17.0 ],
+					"patching_rect" : [ 1695.5, 583.0, 64.0, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 237.5, 204.0, 64.0, 17.0 ],
 					"style" : "",
@@ -1968,7 +2515,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1171.25, 438.0, 58.0, 17.0 ],
+					"patching_rect" : [ 1712.0, 636.0, 58.0, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 237.5, 237.0, 58.0, 17.0 ],
 					"style" : "",
@@ -1985,7 +2532,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1091.25, 422.0, 82.0, 18.0 ],
+					"patching_rect" : [ 1632.0, 620.0, 82.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 233.5, 170.0, 83.0, 18.0 ],
 					"style" : "",
@@ -2100,7 +2647,7 @@
 				"box" : 				{
 					"allowdrag" : 0,
 					"id" : "obj-163",
-					"items" : [ "measure1____intro1", ",", "measure4", ",", "measure5", ",", "Section1____measure6", ",", "measure13____section2", ",", "measure14", ",", "measure15", ",", "measure16", ",", "measure17", ",", "measure18", ",", "measure19", ",", "measure20", ",", "measure21", ",", "measure22", ",", "measure23____section5", ",", "measure24", ",", "measure25", ",", "measure26", ",", "measure27", ",", "measure29", ",", "measure30", ",", "measure31", ",", "measure32", ",", "measure33", ",", "measure34____section3", ",", "measure35", ",", "measure36", ",", "measure37", ",", "measure38", ",", "measure39", ",", "measure40", ",", "measure41", ",", "measure42", ",", "measure43", ",", "measure44", ",", "measure45", ",", "measure46", ",", "measure47", ",", "measure48", ",", "measure49", ",", "measure50", ",", "measure51", ",", "measure52", ",", "measure53", ",", "measure54", ",", "measure55", ",", "measure56", ",", "measure57", ",", "measure58", ",", "measure59", ",", "measure60", ",", "measure61", ",", "measure62", ",", "measure63", ",", "measure64", ",", "measure65", ",", "measure66", ",", "measure67", ",", "measure68____section2", ",", "measure69", ",", "measure70", ",", "measure71", ",", "measure72", ",", "measure73", ",", "measure74", ",", "measure75", ",", "measure76", ",", "measure77", ",", "measure78____section6", ",", "measure79", ",", "measure80", ",", "measure81", ",", "measure82", ",", "measure83", ",", "measure84____section1", ",", "measure90____section6", ",", "measure91", ",", "measure92", ",", "measure93", ",", "measure94", ",", "measure95", ",", "measure96____section4", ",", "measure97", ",", "measure98", ",", "measure99", ",", "measure100", ",", "measure101", ",", "measure102", ",", "measure103", ",", "measure104", ",", "measure105", ",", "measure106", ",", "measure107", ",", "measure108", ",", "measure109", ",", "measure110", ",", "measure111", ",", "measure112", ",", "measure113", ",", "measure114", ",", "measure115", ",", "measure116", ",", "measure117", ",", "measure118", ",", "measure119", ",", "measure120", ",", "measure121", ",", "measure122", ",", "measure123", ",", "measure124", ",", "measure125", ",", "measure126", ",", "measure127", ",", "measure128", ",", "measure129", ",", "measure130____section1", ",", "measure136____section5", ",", "measure137", ",", "measure138", ",", "measure139", ",", "measure140", ",", "measure142", ",", "measure143", ",", "measure144", ",", "measure145", ",", "measure146____section7", ",", "measure147", ",", "measure148", ",", "measure149", ",", "measure150", ",", "measure151", ",", "measure152", ",", "measure153", ",", "measure154", ",", "measure155", ",", "measure156", ",", "measure157____section6", ",", "measure158", ",", "measure159", ",", "measure160", ",", "measure161", ",", "measure162", ",", "measure163____section5", ",", "measure164", ",", "measure165", ",", "measure166", ",", "measure167", ",", "measure169", ",", "measure170", ",", "measure171", ",", "measure172", ",", "measure173", ",", "measure173____section8", ",", "measure174", ",", "measure175", ",", "measure176", ",", "measure178", ",", "measure179", ",", "measure180", ",", "measure181", ",", "measure182", ",", "measure183", ",", "measure184", ",", "measure185", ",", "measure186", ",", "measure187", ",", "measure188", ",", "measure189____section6", ",", "measure190", ",", "measure191", ",", "measure192", ",", "measure193", ",", "measure194", ",", "measure195____section9", ",", "measure196", ",", "measure197", ",", "measure198", ",", "measure199", ",", "measure200", ",", "measure201", ",", "measure202", ",", "measure204____section8", ",", "measure204", ",", "measure205", ",", "measure206", ",", "measure208", ",", "measure209", ",", "measure210", ",", "measure211", ",", "measure212", ",", "measure213", ",", "measure214", ",", "measure215", ",", "measure216", ",", "measure217", ",", "measure218", ",", "measure219", ",", "measure220____section2", ",", "measure221", ",", "measure222", ",", "measure223", ",", "measure224", ",", "measure225", ",", "measure226", ",", "measure227", ",", "measure228", ",", "measure229", ",", "measure230____section9", ",", "measure231", ",", "measure232", ",", "measure233", ",", "measure234", ",", "measure235", ",", "measure236", ",", "measure237", ",", "measure238____section4", ",", "measure239", ",", "measure240", ",", "measure241", ",", "measure242", ",", "measure243", ",", "measure244", ",", "measure245", ",", "measure246", ",", "measure247", ",", "measure248", ",", "measure249", ",", "measure250", ",", "measure251", ",", "measure252", ",", "measure253", ",", "measure254", ",", "measure255", ",", "measure256", ",", "measure257", ",", "measure258", ",", "measure259", ",", "measure260", ",", "measure261", ",", "measure262", ",", "measure263", ",", "measure264", ",", "measure265", ",", "measure266", ",", "measure267", ",", "measure268", ",", "measure269", ",", "measure270____section5", ",", "measure271", ",", "measure272", ",", "measure273", ",", "measure274", ",", "measure276", ",", "measure277", ",", "measure278", ",", "measure279", ",", "measure280", ",", "measure281____section10", ",", "measure282", ",", "measure283", ",", "measure284", ",", "measure285", ",", "measure286", ",", "measure287", ",", "measure288____section1", ",", "measure294____section10", ",", "measure295", ",", "measure296", ",", "measure297", ",", "measure298", ",", "measure299", ",", "measure300", ",", "measure301", ",", "measure302", ",", "measure303", ",", "measure304", ",", "measure305", ",", "measure307", ",", "measure308", ",", "measure309", ",", "measure310", ",", "measure311", ",", "measure312", ",", "measure313", ",", "measure314", ",", "measure315", ",", "measure316", ",", "measure317____section7", ",", "measure318", ",", "measure319", ",", "measure320", ",", "measure321", ",", "measure322", ",", "measure323", ",", "measure324", ",", "measure325", ",", "measure326", ",", "measure327", ",", "measure328____section3", ",", "measure329", ",", "measure330", ",", "measure331", ",", "measure332", ",", "measure333", ",", "measure334", ",", "measure335", ",", "measure336", ",", "measure337", ",", "measure338", ",", "measure339", ",", "measure340", ",", "measure341", ",", "measure342", ",", "measure343", ",", "measure344", ",", "measure345", ",", "measure346", ",", "measure347", ",", "measure348", ",", "measure349", ",", "measure350", ",", "measure351", ",", "measure352", ",", "measure353", ",", "measure354", ",", "measure355", ",", "measure356", ",", "measure357", ",", "measure358", ",", "measure359", ",", "measure360", ",", "measure361" ],
+					"items" : [ "ms1___Koala1", ",", "ms2___Prtm", ",", "ms8____ChordsSuivi___Stretch1", ",", "ms9", ",", "ms_10", ",", "ms11", ",", "ms12", ",", "ms13", ",", "ms14", ",", "ms15", ",", "ms16", ",", "ms17___Zebayce", ",", "ms18", ",", "ms19", ",", "ms20", ",", "ms21", ",", "ms22", ",", "ms23", ",", "ms24", ",", "ms25", ",", "ms26___Koala2", ",", "ms27", ",", "ms28___MetalsSounds", ",", "ms29", ",", "ms30_Stretch-End", ",", "ms32___MetalSound", ",", "ms34___Zebayce", ",", "ms38____ELASTIK", ",", "ms43____REC_BUFFER", ",", "ms45____STOP__REC_BUFFER", ",", "ms55____READ__REC_BUFFER", ",", "ms58____READ__REC_BUFFER", ",", "ms66___Stretch1___Gong", ",", "ms67", ",", "ms68", ",", "ms69", ",", "ms70", ",", "ms71", ",", "ms72", ",", "ms73", ",", "ms74", ",", "ms75", ",", "ms76", ",", "ms77", ",", "ms78", ",", "ms79____Stretch1-2", ",", "ms80", ",", "ms81____Stretch2-End", ",", "ms82", ",", "ms83___VC_Munger", ",", "ms84", ",", "ms85", ",", "ms86", ",", "ms87", ",", "ms88_Stretch-end", ",", "ms96___Piano-Fshift", ",", "ms97", ",", "m100", ",", "ms106___Stretch1", ",", "ms107", ",", "ms108", ",", "ms109", ",", "ms110", ",", "ms111", ",", "ms112___Zebayce_StopMunger", ",", "ms113", ",", "ms117___Soundfiles___StretchEnd", ",", "ms120___Samp", ",", "ms121___Samp", ",", "ms126_fin-suivi", ",", "ms127___Samp", ",", "ms127-3___Samp", ",", "ms130___Samp", ",", "ms131-4___Samp", ",", "ms141", ",", "ms141-4___Samp", ",", "ms142-4___Samp", ",", "ms143", ",", "ms152___Koala1", ",", "ms159", ",", "ms160", ",", "ms161___Stretch1", ",", "ms162", ",", "ms163", ",", "ms164", ",", "ms165", ",", "ms166", ",", "ms167", ",", "ms168", ",", "ms169", ",", "ms170", ",", "ms171", ",", "ms172", ",", "ms173", ",", "ms174", ",", "ms175", ",", "ms176", ",", "ms177", ",", "ms178", ",", "ms179", ",", "ms180", ",", "ms181", ",", "ms182", ",", "ms183", ",", "ms184", ",", "ms185", ",", "ms186", ",", "ms187", ",", "ms188-3-360", ",", "ms189___Stretch1-End", ",", "###___ms190____POLYCHORDS", ",", "ms197", ",", "ms200", ",", "ms201", ",", "ms202", ",", "ms202_3___Stretch1", ",", "ms203", ",", "ms204", ",", "ms205", ",", "ms206", ",", "ms207", ",", "ms208", ",", "ms209", ",", "ms210", ",", "ms211", ",", "ms212", ",", "ms213", ",", "ms214", ",", "ms215", ",", "ms216", ",", "ms217", ",", "ms218", ",", "ms219", ",", "ms220", ",", "ms221", ",", "ms222", ",", "ms223", ",", "ms224", ",", "ms225", ",", "ms226", ",", "ms227", ",", "ms228", ",", "ms229", ",", "ms230", ",", "ms231", ",", "ms234_fin-suivi", ",", "ms238", ",", "ms242", ",", "ms246", ",", "ms250", ",", "ms255____recul_Ondea___PB", ",", "ms258", ",", "ms267", ",", "ms268_____HALLU__DepartOk", ",", "ms280", ",", "ms280-3", ",", "ms287", ",", "ms294-4", ",", "ms303-2", ",", "ms309", ",", "ms315____FUSEES_1__Chromax", ",", "ms317", ",", "###___ms320____Prtm", ",", "ms321-1____Koala1", ",", "ms326-1", ",", "ms328-1", ",", "ms331-1", ",", "ms335-2", ",", "ms336-1", ",", "ms339-4", ",", "ms342-4", ",", "ms343-3", ",", "ms345-3", ",", "ms346-3", ",", "ms346-4", ",", "ms350-4", ",", "ms351-4", ",", "ms352-4", ",", "ms353-4", ",", "ms354-4", ",", "ms355-3", ",", "ms359-2", ",", "ms361-4", ",", "ms363-4", ",", "ms365-4", ",", "ms366-4", ",", "ms367-4", ",", "ms368-4", ",", "ms369-4", ",", "ms370-4", ",", "ms377", ",", "ms392_fff", ",", "ms393____CRESCSa", ",", "ms399_4____StretchRecOn", ",", "ms400_2____StretchRecOff", ",", "ms402____FUSEES_2", ",", "ms407____CRESCSb", ",", "ms415____Chute", ",", "ms419", ",", "ms423", ",", "ms427", ",", "ms431", ",", "ms435__", ",", "ms448", ",", "ms459___MungerLow", ",", "ms463", ",", "ms466" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2145,7 +2692,7 @@
 				"box" : 				{
 					"allowdrag" : 0,
 					"id" : "obj-153",
-					"items" : [ "measure1____intro1", ",", "measure4", ",", "measure5", ",", "Section1____measure6", ",", "measure13____section2", ",", "measure14", ",", "measure15", ",", "measure16", ",", "measure17", ",", "measure18", ",", "measure19", ",", "measure20", ",", "measure21", ",", "measure22", ",", "measure23____section5", ",", "measure24", ",", "measure25", ",", "measure26", ",", "measure27", ",", "measure29", ",", "measure30", ",", "measure31", ",", "measure32", ",", "measure33", ",", "measure34____section3", ",", "measure35", ",", "measure36", ",", "measure37", ",", "measure38", ",", "measure39", ",", "measure40", ",", "measure41", ",", "measure42", ",", "measure43", ",", "measure44", ",", "measure45", ",", "measure46", ",", "measure47", ",", "measure48", ",", "measure49", ",", "measure50", ",", "measure51", ",", "measure52", ",", "measure53", ",", "measure54", ",", "measure55", ",", "measure56", ",", "measure57", ",", "measure58", ",", "measure59", ",", "measure60", ",", "measure61", ",", "measure62", ",", "measure63", ",", "measure64", ",", "measure65", ",", "measure66", ",", "measure67", ",", "measure68____section2", ",", "measure69", ",", "measure70", ",", "measure71", ",", "measure72", ",", "measure73", ",", "measure74", ",", "measure75", ",", "measure76", ",", "measure77", ",", "measure78____section6", ",", "measure79", ",", "measure80", ",", "measure81", ",", "measure82", ",", "measure83", ",", "measure84____section1", ",", "measure90____section6", ",", "measure91", ",", "measure92", ",", "measure93", ",", "measure94", ",", "measure95", ",", "measure96____section4", ",", "measure97", ",", "measure98", ",", "measure99", ",", "measure100", ",", "measure101", ",", "measure102", ",", "measure103", ",", "measure104", ",", "measure105", ",", "measure106", ",", "measure107", ",", "measure108", ",", "measure109", ",", "measure110", ",", "measure111", ",", "measure112", ",", "measure113", ",", "measure114", ",", "measure115", ",", "measure116", ",", "measure117", ",", "measure118", ",", "measure119", ",", "measure120", ",", "measure121", ",", "measure122", ",", "measure123", ",", "measure124", ",", "measure125", ",", "measure126", ",", "measure127", ",", "measure128", ",", "measure129", ",", "measure130____section1", ",", "measure136____section5", ",", "measure137", ",", "measure138", ",", "measure139", ",", "measure140", ",", "measure142", ",", "measure143", ",", "measure144", ",", "measure145", ",", "measure146____section7", ",", "measure147", ",", "measure148", ",", "measure149", ",", "measure150", ",", "measure151", ",", "measure152", ",", "measure153", ",", "measure154", ",", "measure155", ",", "measure156", ",", "measure157____section6", ",", "measure158", ",", "measure159", ",", "measure160", ",", "measure161", ",", "measure162", ",", "measure163____section5", ",", "measure164", ",", "measure165", ",", "measure166", ",", "measure167", ",", "measure169", ",", "measure170", ",", "measure171", ",", "measure172", ",", "measure173", ",", "measure173____section8", ",", "measure174", ",", "measure175", ",", "measure176", ",", "measure178", ",", "measure179", ",", "measure180", ",", "measure181", ",", "measure182", ",", "measure183", ",", "measure184", ",", "measure185", ",", "measure186", ",", "measure187", ",", "measure188", ",", "measure189____section6", ",", "measure190", ",", "measure191", ",", "measure192", ",", "measure193", ",", "measure194", ",", "measure195____section9", ",", "measure196", ",", "measure197", ",", "measure198", ",", "measure199", ",", "measure200", ",", "measure201", ",", "measure202", ",", "measure204____section8", ",", "measure204", ",", "measure205", ",", "measure206", ",", "measure208", ",", "measure209", ",", "measure210", ",", "measure211", ",", "measure212", ",", "measure213", ",", "measure214", ",", "measure215", ",", "measure216", ",", "measure217", ",", "measure218", ",", "measure219", ",", "measure220____section2", ",", "measure221", ",", "measure222", ",", "measure223", ",", "measure224", ",", "measure225", ",", "measure226", ",", "measure227", ",", "measure228", ",", "measure229", ",", "measure230____section9", ",", "measure231", ",", "measure232", ",", "measure233", ",", "measure234", ",", "measure235", ",", "measure236", ",", "measure237", ",", "measure238____section4", ",", "measure239", ",", "measure240", ",", "measure241", ",", "measure242", ",", "measure243", ",", "measure244", ",", "measure245", ",", "measure246", ",", "measure247", ",", "measure248", ",", "measure249", ",", "measure250", ",", "measure251", ",", "measure252", ",", "measure253", ",", "measure254", ",", "measure255", ",", "measure256", ",", "measure257", ",", "measure258", ",", "measure259", ",", "measure260", ",", "measure261", ",", "measure262", ",", "measure263", ",", "measure264", ",", "measure265", ",", "measure266", ",", "measure267", ",", "measure268", ",", "measure269", ",", "measure270____section5", ",", "measure271", ",", "measure272", ",", "measure273", ",", "measure274", ",", "measure276", ",", "measure277", ",", "measure278", ",", "measure279", ",", "measure280", ",", "measure281____section10", ",", "measure282", ",", "measure283", ",", "measure284", ",", "measure285", ",", "measure286", ",", "measure287", ",", "measure288____section1", ",", "measure294____section10", ",", "measure295", ",", "measure296", ",", "measure297", ",", "measure298", ",", "measure299", ",", "measure300", ",", "measure301", ",", "measure302", ",", "measure303", ",", "measure304", ",", "measure305", ",", "measure307", ",", "measure308", ",", "measure309", ",", "measure310", ",", "measure311", ",", "measure312", ",", "measure313", ",", "measure314", ",", "measure315", ",", "measure316", ",", "measure317____section7", ",", "measure318", ",", "measure319", ",", "measure320", ",", "measure321", ",", "measure322", ",", "measure323", ",", "measure324", ",", "measure325", ",", "measure326", ",", "measure327", ",", "measure328____section3", ",", "measure329", ",", "measure330", ",", "measure331", ",", "measure332", ",", "measure333", ",", "measure334", ",", "measure335", ",", "measure336", ",", "measure337", ",", "measure338", ",", "measure339", ",", "measure340", ",", "measure341", ",", "measure342", ",", "measure343", ",", "measure344", ",", "measure345", ",", "measure346", ",", "measure347", ",", "measure348", ",", "measure349", ",", "measure350", ",", "measure351", ",", "measure352", ",", "measure353", ",", "measure354", ",", "measure355", ",", "measure356", ",", "measure357", ",", "measure358", ",", "measure359", ",", "measure360", ",", "measure361" ],
+					"items" : [ "ms1___Koala1", ",", "ms2___Prtm", ",", "ms8____ChordsSuivi___Stretch1", ",", "ms9", ",", "ms_10", ",", "ms11", ",", "ms12", ",", "ms13", ",", "ms14", ",", "ms15", ",", "ms16", ",", "ms17___Zebayce", ",", "ms18", ",", "ms19", ",", "ms20", ",", "ms21", ",", "ms22", ",", "ms23", ",", "ms24", ",", "ms25", ",", "ms26___Koala2", ",", "ms27", ",", "ms28___MetalsSounds", ",", "ms29", ",", "ms30_Stretch-End", ",", "ms32___MetalSound", ",", "ms34___Zebayce", ",", "ms38____ELASTIK", ",", "ms43____REC_BUFFER", ",", "ms45____STOP__REC_BUFFER", ",", "ms55____READ__REC_BUFFER", ",", "ms58____READ__REC_BUFFER", ",", "ms66___Stretch1___Gong", ",", "ms67", ",", "ms68", ",", "ms69", ",", "ms70", ",", "ms71", ",", "ms72", ",", "ms73", ",", "ms74", ",", "ms75", ",", "ms76", ",", "ms77", ",", "ms78", ",", "ms79____Stretch1-2", ",", "ms80", ",", "ms81____Stretch2-End", ",", "ms82", ",", "ms83___VC_Munger", ",", "ms84", ",", "ms85", ",", "ms86", ",", "ms87", ",", "ms88_Stretch-end", ",", "ms96___Piano-Fshift", ",", "ms97", ",", "m100", ",", "ms106___Stretch1", ",", "ms107", ",", "ms108", ",", "ms109", ",", "ms110", ",", "ms111", ",", "ms112___Zebayce_StopMunger", ",", "ms113", ",", "ms117___Soundfiles___StretchEnd", ",", "ms120___Samp", ",", "ms121___Samp", ",", "ms126_fin-suivi", ",", "ms127___Samp", ",", "ms127-3___Samp", ",", "ms130___Samp", ",", "ms131-4___Samp", ",", "ms141", ",", "ms141-4___Samp", ",", "ms142-4___Samp", ",", "ms143", ",", "ms152___Koala1", ",", "ms159", ",", "ms160", ",", "ms161___Stretch1", ",", "ms162", ",", "ms163", ",", "ms164", ",", "ms165", ",", "ms166", ",", "ms167", ",", "ms168", ",", "ms169", ",", "ms170", ",", "ms171", ",", "ms172", ",", "ms173", ",", "ms174", ",", "ms175", ",", "ms176", ",", "ms177", ",", "ms178", ",", "ms179", ",", "ms180", ",", "ms181", ",", "ms182", ",", "ms183", ",", "ms184", ",", "ms185", ",", "ms186", ",", "ms187", ",", "ms188-3-360", ",", "ms189___Stretch1-End", ",", "###___ms190____POLYCHORDS", ",", "ms197", ",", "ms200", ",", "ms201", ",", "ms202", ",", "ms202_3___Stretch1", ",", "ms203", ",", "ms204", ",", "ms205", ",", "ms206", ",", "ms207", ",", "ms208", ",", "ms209", ",", "ms210", ",", "ms211", ",", "ms212", ",", "ms213", ",", "ms214", ",", "ms215", ",", "ms216", ",", "ms217", ",", "ms218", ",", "ms219", ",", "ms220", ",", "ms221", ",", "ms222", ",", "ms223", ",", "ms224", ",", "ms225", ",", "ms226", ",", "ms227", ",", "ms228", ",", "ms229", ",", "ms230", ",", "ms231", ",", "ms234_fin-suivi", ",", "ms238", ",", "ms242", ",", "ms246", ",", "ms250", ",", "ms255____recul_Ondea___PB", ",", "ms258", ",", "ms267", ",", "ms268_____HALLU__DepartOk", ",", "ms280", ",", "ms280-3", ",", "ms287", ",", "ms294-4", ",", "ms303-2", ",", "ms309", ",", "ms315____FUSEES_1__Chromax", ",", "ms317", ",", "###___ms320____Prtm", ",", "ms321-1____Koala1", ",", "ms326-1", ",", "ms328-1", ",", "ms331-1", ",", "ms335-2", ",", "ms336-1", ",", "ms339-4", ",", "ms342-4", ",", "ms343-3", ",", "ms345-3", ",", "ms346-3", ",", "ms346-4", ",", "ms350-4", ",", "ms351-4", ",", "ms352-4", ",", "ms353-4", ",", "ms354-4", ",", "ms355-3", ",", "ms359-2", ",", "ms361-4", ",", "ms363-4", ",", "ms365-4", ",", "ms366-4", ",", "ms367-4", ",", "ms368-4", ",", "ms369-4", ",", "ms370-4", ",", "ms377", ",", "ms392_fff", ",", "ms393____CRESCSa", ",", "ms399_4____StretchRecOn", ",", "ms400_2____StretchRecOff", ",", "ms402____FUSEES_2", ",", "ms407____CRESCSb", ",", "ms415____Chute", ",", "ms419", ",", "ms423", ",", "ms427", ",", "ms431", ",", "ms435__", ",", "ms448", ",", "ms459___MungerLow", ",", "ms463", ",", "ms466" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2211,7 +2758,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 5,
 					"outlettype" : [ "bang", "bang", "bang", "bang", "" ],
-					"patching_rect" : [ 1058.75, 348.0, 85.0, 20.0 ],
+					"patching_rect" : [ 1599.5, 546.0, 85.0, 20.0 ],
 					"style" : "",
 					"text" : "sel 29 30 28 115"
 				}
@@ -2226,7 +2773,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 4,
 					"outlettype" : [ "int", "int", "int", "int" ],
-					"patching_rect" : [ 1090.75, 300.0, 59.5, 20.0 ],
+					"patching_rect" : [ 1631.5, 498.0, 59.5, 20.0 ],
 					"style" : "",
 					"text" : "key"
 				}
@@ -2237,14 +2784,15 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-78",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 55.5, 358.0, 66.0, 18.0 ],
+					"patching_rect" : [ 55.5, 358.0, 66.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 176.0, 0.0, 66.0, 18.0 ],
+					"presentation_rect" : [ 176.0, 4.0, 70.0, 18.0 ],
 					"style" : "",
-					"text" : "5) JUMP TO",
+					"text" : "5) JUMP TO:",
 					"textcolor" : [ 0.666667, 0.698039, 0.717647, 1.0 ]
 				}
 
@@ -2257,7 +2805,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 952.75, 830.0, 61.0, 18.0 ],
+					"patching_rect" : [ 653.5, 865.5, 61.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 478.0, 98.0, 61.0, 18.0 ],
 					"style" : "",
@@ -2274,7 +2822,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 700.5, 830.5, 111.0, 18.0 ],
+					"patching_rect" : [ 860.5, 44.5, 111.0, 18.0 ],
 					"style" : "",
 					"text" : "ANTESCOFO_INFO ::"
 				}
@@ -2315,7 +2863,7 @@
 				"box" : 				{
 					"allowdrag" : 0,
 					"id" : "obj-28",
-					"items" : [ "measure1____intro1", ",", "measure4", ",", "measure5", ",", "Section1____measure6", ",", "measure13____section2", ",", "measure14", ",", "measure15", ",", "measure16", ",", "measure17", ",", "measure18", ",", "measure19", ",", "measure20", ",", "measure21", ",", "measure22", ",", "measure23____section5", ",", "measure24", ",", "measure25", ",", "measure26", ",", "measure27", ",", "measure29", ",", "measure30", ",", "measure31", ",", "measure32", ",", "measure33", ",", "measure34____section3", ",", "measure35", ",", "measure36", ",", "measure37", ",", "measure38", ",", "measure39", ",", "measure40", ",", "measure41", ",", "measure42", ",", "measure43", ",", "measure44", ",", "measure45", ",", "measure46", ",", "measure47", ",", "measure48", ",", "measure49", ",", "measure50", ",", "measure51", ",", "measure52", ",", "measure53", ",", "measure54", ",", "measure55", ",", "measure56", ",", "measure57", ",", "measure58", ",", "measure59", ",", "measure60", ",", "measure61", ",", "measure62", ",", "measure63", ",", "measure64", ",", "measure65", ",", "measure66", ",", "measure67", ",", "measure68____section2", ",", "measure69", ",", "measure70", ",", "measure71", ",", "measure72", ",", "measure73", ",", "measure74", ",", "measure75", ",", "measure76", ",", "measure77", ",", "measure78____section6", ",", "measure79", ",", "measure80", ",", "measure81", ",", "measure82", ",", "measure83", ",", "measure84____section1", ",", "measure90____section6", ",", "measure91", ",", "measure92", ",", "measure93", ",", "measure94", ",", "measure95", ",", "measure96____section4", ",", "measure97", ",", "measure98", ",", "measure99", ",", "measure100", ",", "measure101", ",", "measure102", ",", "measure103", ",", "measure104", ",", "measure105", ",", "measure106", ",", "measure107", ",", "measure108", ",", "measure109", ",", "measure110", ",", "measure111", ",", "measure112", ",", "measure113", ",", "measure114", ",", "measure115", ",", "measure116", ",", "measure117", ",", "measure118", ",", "measure119", ",", "measure120", ",", "measure121", ",", "measure122", ",", "measure123", ",", "measure124", ",", "measure125", ",", "measure126", ",", "measure127", ",", "measure128", ",", "measure129", ",", "measure130____section1", ",", "measure136____section5", ",", "measure137", ",", "measure138", ",", "measure139", ",", "measure140", ",", "measure142", ",", "measure143", ",", "measure144", ",", "measure145", ",", "measure146____section7", ",", "measure147", ",", "measure148", ",", "measure149", ",", "measure150", ",", "measure151", ",", "measure152", ",", "measure153", ",", "measure154", ",", "measure155", ",", "measure156", ",", "measure157____section6", ",", "measure158", ",", "measure159", ",", "measure160", ",", "measure161", ",", "measure162", ",", "measure163____section5", ",", "measure164", ",", "measure165", ",", "measure166", ",", "measure167", ",", "measure169", ",", "measure170", ",", "measure171", ",", "measure172", ",", "measure173", ",", "measure173____section8", ",", "measure174", ",", "measure175", ",", "measure176", ",", "measure178", ",", "measure179", ",", "measure180", ",", "measure181", ",", "measure182", ",", "measure183", ",", "measure184", ",", "measure185", ",", "measure186", ",", "measure187", ",", "measure188", ",", "measure189____section6", ",", "measure190", ",", "measure191", ",", "measure192", ",", "measure193", ",", "measure194", ",", "measure195____section9", ",", "measure196", ",", "measure197", ",", "measure198", ",", "measure199", ",", "measure200", ",", "measure201", ",", "measure202", ",", "measure204____section8", ",", "measure204", ",", "measure205", ",", "measure206", ",", "measure208", ",", "measure209", ",", "measure210", ",", "measure211", ",", "measure212", ",", "measure213", ",", "measure214", ",", "measure215", ",", "measure216", ",", "measure217", ",", "measure218", ",", "measure219", ",", "measure220____section2", ",", "measure221", ",", "measure222", ",", "measure223", ",", "measure224", ",", "measure225", ",", "measure226", ",", "measure227", ",", "measure228", ",", "measure229", ",", "measure230____section9", ",", "measure231", ",", "measure232", ",", "measure233", ",", "measure234", ",", "measure235", ",", "measure236", ",", "measure237", ",", "measure238____section4", ",", "measure239", ",", "measure240", ",", "measure241", ",", "measure242", ",", "measure243", ",", "measure244", ",", "measure245", ",", "measure246", ",", "measure247", ",", "measure248", ",", "measure249", ",", "measure250", ",", "measure251", ",", "measure252", ",", "measure253", ",", "measure254", ",", "measure255", ",", "measure256", ",", "measure257", ",", "measure258", ",", "measure259", ",", "measure260", ",", "measure261", ",", "measure262", ",", "measure263", ",", "measure264", ",", "measure265", ",", "measure266", ",", "measure267", ",", "measure268", ",", "measure269", ",", "measure270____section5", ",", "measure271", ",", "measure272", ",", "measure273", ",", "measure274", ",", "measure276", ",", "measure277", ",", "measure278", ",", "measure279", ",", "measure280", ",", "measure281____section10", ",", "measure282", ",", "measure283", ",", "measure284", ",", "measure285", ",", "measure286", ",", "measure287", ",", "measure288____section1", ",", "measure294____section10", ",", "measure295", ",", "measure296", ",", "measure297", ",", "measure298", ",", "measure299", ",", "measure300", ",", "measure301", ",", "measure302", ",", "measure303", ",", "measure304", ",", "measure305", ",", "measure307", ",", "measure308", ",", "measure309", ",", "measure310", ",", "measure311", ",", "measure312", ",", "measure313", ",", "measure314", ",", "measure315", ",", "measure316", ",", "measure317____section7", ",", "measure318", ",", "measure319", ",", "measure320", ",", "measure321", ",", "measure322", ",", "measure323", ",", "measure324", ",", "measure325", ",", "measure326", ",", "measure327", ",", "measure328____section3", ",", "measure329", ",", "measure330", ",", "measure331", ",", "measure332", ",", "measure333", ",", "measure334", ",", "measure335", ",", "measure336", ",", "measure337", ",", "measure338", ",", "measure339", ",", "measure340", ",", "measure341", ",", "measure342", ",", "measure343", ",", "measure344", ",", "measure345", ",", "measure346", ",", "measure347", ",", "measure348", ",", "measure349", ",", "measure350", ",", "measure351", ",", "measure352", ",", "measure353", ",", "measure354", ",", "measure355", ",", "measure356", ",", "measure357", ",", "measure358", ",", "measure359", ",", "measure360", ",", "measure361" ],
+					"items" : [ "ms1___Koala1", ",", "ms2___Prtm", ",", "ms8____ChordsSuivi___Stretch1", ",", "ms9", ",", "ms_10", ",", "ms11", ",", "ms12", ",", "ms13", ",", "ms14", ",", "ms15", ",", "ms16", ",", "ms17___Zebayce", ",", "ms18", ",", "ms19", ",", "ms20", ",", "ms21", ",", "ms22", ",", "ms23", ",", "ms24", ",", "ms25", ",", "ms26___Koala2", ",", "ms27", ",", "ms28___MetalsSounds", ",", "ms29", ",", "ms30_Stretch-End", ",", "ms32___MetalSound", ",", "ms34___Zebayce", ",", "ms38____ELASTIK", ",", "ms43____REC_BUFFER", ",", "ms45____STOP__REC_BUFFER", ",", "ms55____READ__REC_BUFFER", ",", "ms58____READ__REC_BUFFER", ",", "ms66___Stretch1___Gong", ",", "ms67", ",", "ms68", ",", "ms69", ",", "ms70", ",", "ms71", ",", "ms72", ",", "ms73", ",", "ms74", ",", "ms75", ",", "ms76", ",", "ms77", ",", "ms78", ",", "ms79____Stretch1-2", ",", "ms80", ",", "ms81____Stretch2-End", ",", "ms82", ",", "ms83___VC_Munger", ",", "ms84", ",", "ms85", ",", "ms86", ",", "ms87", ",", "ms88_Stretch-end", ",", "ms96___Piano-Fshift", ",", "ms97", ",", "m100", ",", "ms106___Stretch1", ",", "ms107", ",", "ms108", ",", "ms109", ",", "ms110", ",", "ms111", ",", "ms112___Zebayce_StopMunger", ",", "ms113", ",", "ms117___Soundfiles___StretchEnd", ",", "ms120___Samp", ",", "ms121___Samp", ",", "ms126_fin-suivi", ",", "ms127___Samp", ",", "ms127-3___Samp", ",", "ms130___Samp", ",", "ms131-4___Samp", ",", "ms141", ",", "ms141-4___Samp", ",", "ms142-4___Samp", ",", "ms143", ",", "ms152___Koala1", ",", "ms159", ",", "ms160", ",", "ms161___Stretch1", ",", "ms162", ",", "ms163", ",", "ms164", ",", "ms165", ",", "ms166", ",", "ms167", ",", "ms168", ",", "ms169", ",", "ms170", ",", "ms171", ",", "ms172", ",", "ms173", ",", "ms174", ",", "ms175", ",", "ms176", ",", "ms177", ",", "ms178", ",", "ms179", ",", "ms180", ",", "ms181", ",", "ms182", ",", "ms183", ",", "ms184", ",", "ms185", ",", "ms186", ",", "ms187", ",", "ms188-3-360", ",", "ms189___Stretch1-End", ",", "###___ms190____POLYCHORDS", ",", "ms197", ",", "ms200", ",", "ms201", ",", "ms202", ",", "ms202_3___Stretch1", ",", "ms203", ",", "ms204", ",", "ms205", ",", "ms206", ",", "ms207", ",", "ms208", ",", "ms209", ",", "ms210", ",", "ms211", ",", "ms212", ",", "ms213", ",", "ms214", ",", "ms215", ",", "ms216", ",", "ms217", ",", "ms218", ",", "ms219", ",", "ms220", ",", "ms221", ",", "ms222", ",", "ms223", ",", "ms224", ",", "ms225", ",", "ms226", ",", "ms227", ",", "ms228", ",", "ms229", ",", "ms230", ",", "ms231", ",", "ms234_fin-suivi", ",", "ms238", ",", "ms242", ",", "ms246", ",", "ms250", ",", "ms255____recul_Ondea___PB", ",", "ms258", ",", "ms267", ",", "ms268_____HALLU__DepartOk", ",", "ms280", ",", "ms280-3", ",", "ms287", ",", "ms294-4", ",", "ms303-2", ",", "ms309", ",", "ms315____FUSEES_1__Chromax", ",", "ms317", ",", "###___ms320____Prtm", ",", "ms321-1____Koala1", ",", "ms326-1", ",", "ms328-1", ",", "ms331-1", ",", "ms335-2", ",", "ms336-1", ",", "ms339-4", ",", "ms342-4", ",", "ms343-3", ",", "ms345-3", ",", "ms346-3", ",", "ms346-4", ",", "ms350-4", ",", "ms351-4", ",", "ms352-4", ",", "ms353-4", ",", "ms354-4", ",", "ms355-3", ",", "ms359-2", ",", "ms361-4", ",", "ms363-4", ",", "ms365-4", ",", "ms366-4", ",", "ms367-4", ",", "ms368-4", ",", "ms369-4", ",", "ms370-4", ",", "ms377", ",", "ms392_fff", ",", "ms393____CRESCSa", ",", "ms399_4____StretchRecOn", ",", "ms400_2____StretchRecOff", ",", "ms402____FUSEES_2", ",", "ms407____CRESCSb", ",", "ms415____Chute", ",", "ms419", ",", "ms423", ",", "ms427", ",", "ms431", ",", "ms435__", ",", "ms448", ",", "ms459___MungerLow", ",", "ms463", ",", "ms466" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2348,7 +2896,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 46.5, 113.0, 413.0, 22.0 ],
 					"style" : "",
-					"text" : "Next : measure198",
+					"text" : "Next : ms2___Prtm",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -2361,7 +2909,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 700.5, 870.5, 127.0, 20.0 ],
+					"patching_rect" : [ 860.5, 84.5, 127.0, 20.0 ],
 					"style" : "",
 					"text" : "print ANTESCOFO_INFO"
 				}
@@ -2376,7 +2924,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 700.5, 846.5, 109.0, 20.0 ],
+					"patching_rect" : [ 860.5, 60.5, 109.0, 20.0 ],
 					"style" : "",
 					"text" : "r ANTESCOFO_INFO"
 				}
@@ -2423,7 +2971,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1058.75, 324.0, 51.0, 20.0 ],
+					"patching_rect" : [ 1599.5, 522.0, 51.0, 20.0 ],
 					"style" : "",
 					"text" : "gate"
 				}
@@ -2442,9 +2990,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1058.75, 276.0, 40.0, 16.0 ],
+					"patching_rect" : [ 1599.5, 474.0, 40.0, 16.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 630.0, 293.0, 48.0, 34.0 ],
+					"presentation_rect" : [ 630.0, 231.0, 48.0, 34.0 ],
 					"style" : "",
 					"text" : "OFF",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -2464,7 +3012,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 978.25, 426.0, 34.0, 18.0 ],
+					"patching_rect" : [ 1519.0, 645.0, 34.0, 18.0 ],
 					"style" : "",
 					"text" : "Suivi"
 				}
@@ -2484,7 +3032,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 917.25, 426.0, 60.0, 18.0 ],
+					"patching_rect" : [ 1493.75, 646.0, 60.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 123.0, 246.0, 58.0, 15.0 ],
 					"prototypename" : "M4L.toggle-yellow",
@@ -2510,7 +3058,7 @@
 					"outlettype" : [ "", "", "int" ],
 					"outputmode" : 0,
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1075.25, 438.0, 88.0, 16.0 ],
+					"patching_rect" : [ 1616.0, 636.0, 88.0, 16.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 233.5, 188.0, 73.0, 17.0 ],
 					"style" : "",
@@ -2530,7 +3078,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1091.75, 489.0, 88.0, 16.0 ],
+					"patching_rect" : [ 1632.5, 687.0, 88.0, 16.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 317.5, 188.0, 73.0, 17.0 ],
 					"style" : "",
@@ -2549,7 +3097,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1058.75, 558.0, 88.0, 16.0 ],
+					"patching_rect" : [ 1599.5, 756.0, 88.0, 16.0 ],
 					"style" : "",
 					"text" : "before_nextlabel",
 					"usebgoncolor" : 1,
@@ -2743,7 +3291,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 946.25, 878.0, 108.0, 20.0 ],
+					"patching_rect" : [ 647.0, 913.5, 108.0, 20.0 ],
 					"style" : "",
 					"text" : "s antescofo_score"
 				}
@@ -2758,7 +3306,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 918.25, 775.5, 107.0, 20.0 ],
+					"patching_rect" : [ 619.0, 811.0, 107.0, 20.0 ],
 					"style" : "",
 					"text" : "prepend setsymbol"
 				}
@@ -2774,7 +3322,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 918.25, 751.5, 109.0, 20.0 ],
+					"patching_rect" : [ 619.0, 787.0, 109.0, 20.0 ],
 					"style" : "",
 					"text" : "r antescofo_score"
 				}
@@ -2790,7 +3338,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 521.75, 508.5, 66.0, 20.0 ],
+					"patching_rect" : [ 1047.5, 245.5, 66.0, 20.0 ],
 					"style" : "",
 					"text" : "loadmess 1"
 				}
@@ -2804,7 +3352,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 521.75, 532.5, 20.0, 20.0 ],
+					"patching_rect" : [ 1047.5, 269.5, 20.0, 20.0 ],
 					"style" : ""
 				}
 
@@ -2819,7 +3367,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 521.75, 556.5, 43.0, 20.0 ],
+					"patching_rect" : [ 1047.5, 293.5, 43.0, 20.0 ],
 					"style" : "",
 					"text" : "gate"
 				}
@@ -2834,7 +3382,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1091.75, 518.0, 75.0, 20.0 ],
+					"patching_rect" : [ 1632.5, 716.0, 75.0, 20.0 ],
 					"style" : "",
 					"text" : "previouslabel"
 				}
@@ -2849,7 +3397,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1058.75, 582.0, 90.0, 20.0 ],
+					"patching_rect" : [ 1599.5, 780.0, 90.0, 20.0 ],
 					"style" : "",
 					"text" : "before_nextlabel"
 				}
@@ -2990,7 +3538,7 @@
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "color",
 					"id" : "obj-110",
-					"items" : [ "measure1____intro1", ",", "measure4", ",", "measure5", ",", "Section1____measure6", ",", "measure13____section2", ",", "measure14", ",", "measure15", ",", "measure16", ",", "measure17", ",", "measure18", ",", "measure19", ",", "measure20", ",", "measure21", ",", "measure22", ",", "measure23____section5", ",", "measure24", ",", "measure25", ",", "measure26", ",", "measure27", ",", "measure29", ",", "measure30", ",", "measure31", ",", "measure32", ",", "measure33", ",", "measure34____section3", ",", "measure35", ",", "measure36", ",", "measure37", ",", "measure38", ",", "measure39", ",", "measure40", ",", "measure41", ",", "measure42", ",", "measure43", ",", "measure44", ",", "measure45", ",", "measure46", ",", "measure47", ",", "measure48", ",", "measure49", ",", "measure50", ",", "measure51", ",", "measure52", ",", "measure53", ",", "measure54", ",", "measure55", ",", "measure56", ",", "measure57", ",", "measure58", ",", "measure59", ",", "measure60", ",", "measure61", ",", "measure62", ",", "measure63", ",", "measure64", ",", "measure65", ",", "measure66", ",", "measure67", ",", "measure68____section2", ",", "measure69", ",", "measure70", ",", "measure71", ",", "measure72", ",", "measure73", ",", "measure74", ",", "measure75", ",", "measure76", ",", "measure77", ",", "measure78____section6", ",", "measure79", ",", "measure80", ",", "measure81", ",", "measure82", ",", "measure83", ",", "measure84____section1", ",", "measure90____section6", ",", "measure91", ",", "measure92", ",", "measure93", ",", "measure94", ",", "measure95", ",", "measure96____section4", ",", "measure97", ",", "measure98", ",", "measure99", ",", "measure100", ",", "measure101", ",", "measure102", ",", "measure103", ",", "measure104", ",", "measure105", ",", "measure106", ",", "measure107", ",", "measure108", ",", "measure109", ",", "measure110", ",", "measure111", ",", "measure112", ",", "measure113", ",", "measure114", ",", "measure115", ",", "measure116", ",", "measure117", ",", "measure118", ",", "measure119", ",", "measure120", ",", "measure121", ",", "measure122", ",", "measure123", ",", "measure124", ",", "measure125", ",", "measure126", ",", "measure127", ",", "measure128", ",", "measure129", ",", "measure130____section1", ",", "measure136____section5", ",", "measure137", ",", "measure138", ",", "measure139", ",", "measure140", ",", "measure142", ",", "measure143", ",", "measure144", ",", "measure145", ",", "measure146____section7", ",", "measure147", ",", "measure148", ",", "measure149", ",", "measure150", ",", "measure151", ",", "measure152", ",", "measure153", ",", "measure154", ",", "measure155", ",", "measure156", ",", "measure157____section6", ",", "measure158", ",", "measure159", ",", "measure160", ",", "measure161", ",", "measure162", ",", "measure163____section5", ",", "measure164", ",", "measure165", ",", "measure166", ",", "measure167", ",", "measure169", ",", "measure170", ",", "measure171", ",", "measure172", ",", "measure173", ",", "measure173____section8", ",", "measure174", ",", "measure175", ",", "measure176", ",", "measure178", ",", "measure179", ",", "measure180", ",", "measure181", ",", "measure182", ",", "measure183", ",", "measure184", ",", "measure185", ",", "measure186", ",", "measure187", ",", "measure188", ",", "measure189____section6", ",", "measure190", ",", "measure191", ",", "measure192", ",", "measure193", ",", "measure194", ",", "measure195____section9", ",", "measure196", ",", "measure197", ",", "measure198", ",", "measure199", ",", "measure200", ",", "measure201", ",", "measure202", ",", "measure204____section8", ",", "measure204", ",", "measure205", ",", "measure206", ",", "measure208", ",", "measure209", ",", "measure210", ",", "measure211", ",", "measure212", ",", "measure213", ",", "measure214", ",", "measure215", ",", "measure216", ",", "measure217", ",", "measure218", ",", "measure219", ",", "measure220____section2", ",", "measure221", ",", "measure222", ",", "measure223", ",", "measure224", ",", "measure225", ",", "measure226", ",", "measure227", ",", "measure228", ",", "measure229", ",", "measure230____section9", ",", "measure231", ",", "measure232", ",", "measure233", ",", "measure234", ",", "measure235", ",", "measure236", ",", "measure237", ",", "measure238____section4", ",", "measure239", ",", "measure240", ",", "measure241", ",", "measure242", ",", "measure243", ",", "measure244", ",", "measure245", ",", "measure246", ",", "measure247", ",", "measure248", ",", "measure249", ",", "measure250", ",", "measure251", ",", "measure252", ",", "measure253", ",", "measure254", ",", "measure255", ",", "measure256", ",", "measure257", ",", "measure258", ",", "measure259", ",", "measure260", ",", "measure261", ",", "measure262", ",", "measure263", ",", "measure264", ",", "measure265", ",", "measure266", ",", "measure267", ",", "measure268", ",", "measure269", ",", "measure270____section5", ",", "measure271", ",", "measure272", ",", "measure273", ",", "measure274", ",", "measure276", ",", "measure277", ",", "measure278", ",", "measure279", ",", "measure280", ",", "measure281____section10", ",", "measure282", ",", "measure283", ",", "measure284", ",", "measure285", ",", "measure286", ",", "measure287", ",", "measure288____section1", ",", "measure294____section10", ",", "measure295", ",", "measure296", ",", "measure297", ",", "measure298", ",", "measure299", ",", "measure300", ",", "measure301", ",", "measure302", ",", "measure303", ",", "measure304", ",", "measure305", ",", "measure307", ",", "measure308", ",", "measure309", ",", "measure310", ",", "measure311", ",", "measure312", ",", "measure313", ",", "measure314", ",", "measure315", ",", "measure316", ",", "measure317____section7", ",", "measure318", ",", "measure319", ",", "measure320", ",", "measure321", ",", "measure322", ",", "measure323", ",", "measure324", ",", "measure325", ",", "measure326", ",", "measure327", ",", "measure328____section3", ",", "measure329", ",", "measure330", ",", "measure331", ",", "measure332", ",", "measure333", ",", "measure334", ",", "measure335", ",", "measure336", ",", "measure337", ",", "measure338", ",", "measure339", ",", "measure340", ",", "measure341", ",", "measure342", ",", "measure343", ",", "measure344", ",", "measure345", ",", "measure346", ",", "measure347", ",", "measure348", ",", "measure349", ",", "measure350", ",", "measure351", ",", "measure352", ",", "measure353", ",", "measure354", ",", "measure355", ",", "measure356", ",", "measure357", ",", "measure358", ",", "measure359", ",", "measure360", ",", "measure361" ],
+					"items" : [ "ms1___Koala1", ",", "ms2___Prtm", ",", "ms8____ChordsSuivi___Stretch1", ",", "ms9", ",", "ms_10", ",", "ms11", ",", "ms12", ",", "ms13", ",", "ms14", ",", "ms15", ",", "ms16", ",", "ms17___Zebayce", ",", "ms18", ",", "ms19", ",", "ms20", ",", "ms21", ",", "ms22", ",", "ms23", ",", "ms24", ",", "ms25", ",", "ms26___Koala2", ",", "ms27", ",", "ms28___MetalsSounds", ",", "ms29", ",", "ms30_Stretch-End", ",", "ms32___MetalSound", ",", "ms34___Zebayce", ",", "ms38____ELASTIK", ",", "ms43____REC_BUFFER", ",", "ms45____STOP__REC_BUFFER", ",", "ms55____READ__REC_BUFFER", ",", "ms58____READ__REC_BUFFER", ",", "ms66___Stretch1___Gong", ",", "ms67", ",", "ms68", ",", "ms69", ",", "ms70", ",", "ms71", ",", "ms72", ",", "ms73", ",", "ms74", ",", "ms75", ",", "ms76", ",", "ms77", ",", "ms78", ",", "ms79____Stretch1-2", ",", "ms80", ",", "ms81____Stretch2-End", ",", "ms82", ",", "ms83___VC_Munger", ",", "ms84", ",", "ms85", ",", "ms86", ",", "ms87", ",", "ms88_Stretch-end", ",", "ms96___Piano-Fshift", ",", "ms97", ",", "m100", ",", "ms106___Stretch1", ",", "ms107", ",", "ms108", ",", "ms109", ",", "ms110", ",", "ms111", ",", "ms112___Zebayce_StopMunger", ",", "ms113", ",", "ms117___Soundfiles___StretchEnd", ",", "ms120___Samp", ",", "ms121___Samp", ",", "ms126_fin-suivi", ",", "ms127___Samp", ",", "ms127-3___Samp", ",", "ms130___Samp", ",", "ms131-4___Samp", ",", "ms141", ",", "ms141-4___Samp", ",", "ms142-4___Samp", ",", "ms143", ",", "ms152___Koala1", ",", "ms159", ",", "ms160", ",", "ms161___Stretch1", ",", "ms162", ",", "ms163", ",", "ms164", ",", "ms165", ",", "ms166", ",", "ms167", ",", "ms168", ",", "ms169", ",", "ms170", ",", "ms171", ",", "ms172", ",", "ms173", ",", "ms174", ",", "ms175", ",", "ms176", ",", "ms177", ",", "ms178", ",", "ms179", ",", "ms180", ",", "ms181", ",", "ms182", ",", "ms183", ",", "ms184", ",", "ms185", ",", "ms186", ",", "ms187", ",", "ms188-3-360", ",", "ms189___Stretch1-End", ",", "###___ms190____POLYCHORDS", ",", "ms197", ",", "ms200", ",", "ms201", ",", "ms202", ",", "ms202_3___Stretch1", ",", "ms203", ",", "ms204", ",", "ms205", ",", "ms206", ",", "ms207", ",", "ms208", ",", "ms209", ",", "ms210", ",", "ms211", ",", "ms212", ",", "ms213", ",", "ms214", ",", "ms215", ",", "ms216", ",", "ms217", ",", "ms218", ",", "ms219", ",", "ms220", ",", "ms221", ",", "ms222", ",", "ms223", ",", "ms224", ",", "ms225", ",", "ms226", ",", "ms227", ",", "ms228", ",", "ms229", ",", "ms230", ",", "ms231", ",", "ms234_fin-suivi", ",", "ms238", ",", "ms242", ",", "ms246", ",", "ms250", ",", "ms255____recul_Ondea___PB", ",", "ms258", ",", "ms267", ",", "ms268_____HALLU__DepartOk", ",", "ms280", ",", "ms280-3", ",", "ms287", ",", "ms294-4", ",", "ms303-2", ",", "ms309", ",", "ms315____FUSEES_1__Chromax", ",", "ms317", ",", "###___ms320____Prtm", ",", "ms321-1____Koala1", ",", "ms326-1", ",", "ms328-1", ",", "ms331-1", ",", "ms335-2", ",", "ms336-1", ",", "ms339-4", ",", "ms342-4", ",", "ms343-3", ",", "ms345-3", ",", "ms346-3", ",", "ms346-4", ",", "ms350-4", ",", "ms351-4", ",", "ms352-4", ",", "ms353-4", ",", "ms354-4", ",", "ms355-3", ",", "ms359-2", ",", "ms361-4", ",", "ms363-4", ",", "ms365-4", ",", "ms366-4", ",", "ms367-4", ",", "ms368-4", ",", "ms369-4", ",", "ms370-4", ",", "ms377", ",", "ms392_fff", ",", "ms393____CRESCSa", ",", "ms399_4____StretchRecOn", ",", "ms400_2____StretchRecOff", ",", "ms402____FUSEES_2", ",", "ms407____CRESCSb", ",", "ms415____Chute", ",", "ms419", ",", "ms423", ",", "ms427", ",", "ms431", ",", "ms435__", ",", "ms448", ",", "ms459___MungerLow", ",", "ms463", ",", "ms466" ],
 					"labelclick" : 1,
 					"maxclass" : "umenu",
 					"numinlets" : 1,
@@ -3114,7 +3662,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 898.25, 704.5, 44.0, 18.0 ],
+					"patching_rect" : [ 599.0, 740.0, 44.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 630.0, 98.0, 48.0, 15.0 ],
 					"prototypename" : "M4L.toggle",
@@ -3366,7 +3914,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 898.25, 732.5, 63.0, 20.0 ],
+					"patching_rect" : [ 599.0, 768.0, 63.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3405,7 +3953,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 917.25, 452.0, 48.0, 20.0 ],
+					"patching_rect" : [ 1493.75, 672.0, 48.0, 20.0 ],
 					"style" : "",
 					"text" : "suivi $1"
 				}
@@ -3436,13 +3984,13 @@
 					"fontsize" : 12.0,
 					"hint" : "Choose a score to load",
 					"id" : "obj-27",
-					"items" : [ "_Tutti.asco.txt", ",", "_Tutti_ORIGINAL.asco.txt", ",", "_Tutticp.asco", ",", "_TuttiForNew.asco", ",", "a-Tutti-COPY.asco", ",", "a-Tutti.asco", ",", "AntescofoLanguageModule.plist", ",", "b-Tutti.asco", ",", "Bug1.asco", ",", "Draft1.asco", ",", "followtest.asco", ",", "misplaced2.asco", ",", "seq-test", ",", "seq-test.asco", ",", "seq-test.asco copy", ",", "seq-test.asco.txt", ",", "Test.asco", ",", "Test.asco copy", ",", "TestSynthPrtm.asco", ",", "truc.asco" ],
+					"items" : [ "_Tutti.asco.txt", ",", "_Tutti_ORIGINAL.asco.txt", ",", "_Tutti_testPRTM.asco.txt" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 898.25, 854.0, 114.0, 22.0 ],
+					"patching_rect" : [ 599.0, 889.5, 114.0, 22.0 ],
 					"prefix" : "Macintosh HD:/Users/goepfer/Documents/PATCH/Maresz/Tutti/_CONCERT_2016/PATCH_TUTTI_2016_MAX7/ANTESCOFO/",
 					"presentation" : 1,
 					"presentation_rect" : [ 478.0, 114.0, 200.0, 22.0 ],
@@ -3478,18 +4026,17 @@
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "color",
 					"fontface" : 1,
-					"fontsize" : 12.0,
 					"hint" : "Select a cue",
 					"id" : "obj-33",
-					"items" : [ "measure1____intro1", ",", "measure4", ",", "measure5", ",", "Section1____measure6", ",", "measure13____section2", ",", "measure14", ",", "measure15", ",", "measure16", ",", "measure17", ",", "measure18", ",", "measure19", ",", "measure20", ",", "measure21", ",", "measure22", ",", "measure23____section5", ",", "measure24", ",", "measure25", ",", "measure26", ",", "measure27", ",", "measure29", ",", "measure30", ",", "measure31", ",", "measure32", ",", "measure33", ",", "measure34____section3", ",", "measure35", ",", "measure36", ",", "measure37", ",", "measure38", ",", "measure39", ",", "measure40", ",", "measure41", ",", "measure42", ",", "measure43", ",", "measure44", ",", "measure45", ",", "measure46", ",", "measure47", ",", "measure48", ",", "measure49", ",", "measure50", ",", "measure51", ",", "measure52", ",", "measure53", ",", "measure54", ",", "measure55", ",", "measure56", ",", "measure57", ",", "measure58", ",", "measure59", ",", "measure60", ",", "measure61", ",", "measure62", ",", "measure63", ",", "measure64", ",", "measure65", ",", "measure66", ",", "measure67", ",", "measure68____section2", ",", "measure69", ",", "measure70", ",", "measure71", ",", "measure72", ",", "measure73", ",", "measure74", ",", "measure75", ",", "measure76", ",", "measure77", ",", "measure78____section6", ",", "measure79", ",", "measure80", ",", "measure81", ",", "measure82", ",", "measure83", ",", "measure84____section1", ",", "measure90____section6", ",", "measure91", ",", "measure92", ",", "measure93", ",", "measure94", ",", "measure95", ",", "measure96____section4", ",", "measure97", ",", "measure98", ",", "measure99", ",", "measure100", ",", "measure101", ",", "measure102", ",", "measure103", ",", "measure104", ",", "measure105", ",", "measure106", ",", "measure107", ",", "measure108", ",", "measure109", ",", "measure110", ",", "measure111", ",", "measure112", ",", "measure113", ",", "measure114", ",", "measure115", ",", "measure116", ",", "measure117", ",", "measure118", ",", "measure119", ",", "measure120", ",", "measure121", ",", "measure122", ",", "measure123", ",", "measure124", ",", "measure125", ",", "measure126", ",", "measure127", ",", "measure128", ",", "measure129", ",", "measure130____section1", ",", "measure136____section5", ",", "measure137", ",", "measure138", ",", "measure139", ",", "measure140", ",", "measure142", ",", "measure143", ",", "measure144", ",", "measure145", ",", "measure146____section7", ",", "measure147", ",", "measure148", ",", "measure149", ",", "measure150", ",", "measure151", ",", "measure152", ",", "measure153", ",", "measure154", ",", "measure155", ",", "measure156", ",", "measure157____section6", ",", "measure158", ",", "measure159", ",", "measure160", ",", "measure161", ",", "measure162", ",", "measure163____section5", ",", "measure164", ",", "measure165", ",", "measure166", ",", "measure167", ",", "measure169", ",", "measure170", ",", "measure171", ",", "measure172", ",", "measure173", ",", "measure173____section8", ",", "measure174", ",", "measure175", ",", "measure176", ",", "measure178", ",", "measure179", ",", "measure180", ",", "measure181", ",", "measure182", ",", "measure183", ",", "measure184", ",", "measure185", ",", "measure186", ",", "measure187", ",", "measure188", ",", "measure189____section6", ",", "measure190", ",", "measure191", ",", "measure192", ",", "measure193", ",", "measure194", ",", "measure195____section9", ",", "measure196", ",", "measure197", ",", "measure198", ",", "measure199", ",", "measure200", ",", "measure201", ",", "measure202", ",", "measure204____section8", ",", "measure204", ",", "measure205", ",", "measure206", ",", "measure208", ",", "measure209", ",", "measure210", ",", "measure211", ",", "measure212", ",", "measure213", ",", "measure214", ",", "measure215", ",", "measure216", ",", "measure217", ",", "measure218", ",", "measure219", ",", "measure220____section2", ",", "measure221", ",", "measure222", ",", "measure223", ",", "measure224", ",", "measure225", ",", "measure226", ",", "measure227", ",", "measure228", ",", "measure229", ",", "measure230____section9", ",", "measure231", ",", "measure232", ",", "measure233", ",", "measure234", ",", "measure235", ",", "measure236", ",", "measure237", ",", "measure238____section4", ",", "measure239", ",", "measure240", ",", "measure241", ",", "measure242", ",", "measure243", ",", "measure244", ",", "measure245", ",", "measure246", ",", "measure247", ",", "measure248", ",", "measure249", ",", "measure250", ",", "measure251", ",", "measure252", ",", "measure253", ",", "measure254", ",", "measure255", ",", "measure256", ",", "measure257", ",", "measure258", ",", "measure259", ",", "measure260", ",", "measure261", ",", "measure262", ",", "measure263", ",", "measure264", ",", "measure265", ",", "measure266", ",", "measure267", ",", "measure268", ",", "measure269", ",", "measure270____section5", ",", "measure271", ",", "measure272", ",", "measure273", ",", "measure274", ",", "measure276", ",", "measure277", ",", "measure278", ",", "measure279", ",", "measure280", ",", "measure281____section10", ",", "measure282", ",", "measure283", ",", "measure284", ",", "measure285", ",", "measure286", ",", "measure287", ",", "measure288____section1", ",", "measure294____section10", ",", "measure295", ",", "measure296", ",", "measure297", ",", "measure298", ",", "measure299", ",", "measure300", ",", "measure301", ",", "measure302", ",", "measure303", ",", "measure304", ",", "measure305", ",", "measure307", ",", "measure308", ",", "measure309", ",", "measure310", ",", "measure311", ",", "measure312", ",", "measure313", ",", "measure314", ",", "measure315", ",", "measure316", ",", "measure317____section7", ",", "measure318", ",", "measure319", ",", "measure320", ",", "measure321", ",", "measure322", ",", "measure323", ",", "measure324", ",", "measure325", ",", "measure326", ",", "measure327", ",", "measure328____section3", ",", "measure329", ",", "measure330", ",", "measure331", ",", "measure332", ",", "measure333", ",", "measure334", ",", "measure335", ",", "measure336", ",", "measure337", ",", "measure338", ",", "measure339", ",", "measure340", ",", "measure341", ",", "measure342", ",", "measure343", ",", "measure344", ",", "measure345", ",", "measure346", ",", "measure347", ",", "measure348", ",", "measure349", ",", "measure350", ",", "measure351", ",", "measure352", ",", "measure353", ",", "measure354", ",", "measure355", ",", "measure356", ",", "measure357", ",", "measure358", ",", "measure359", ",", "measure360", ",", "measure361" ],
+					"items" : [ "ms1___Koala1", ",", "ms2___Prtm", ",", "ms8____ChordsSuivi___Stretch1", ",", "ms9", ",", "ms_10", ",", "ms11", ",", "ms12", ",", "ms13", ",", "ms14", ",", "ms15", ",", "ms16", ",", "ms17___Zebayce", ",", "ms18", ",", "ms19", ",", "ms20", ",", "ms21", ",", "ms22", ",", "ms23", ",", "ms24", ",", "ms25", ",", "ms26___Koala2", ",", "ms27", ",", "ms28___MetalsSounds", ",", "ms29", ",", "ms30_Stretch-End", ",", "ms32___MetalSound", ",", "ms34___Zebayce", ",", "ms38____ELASTIK", ",", "ms43____REC_BUFFER", ",", "ms45____STOP__REC_BUFFER", ",", "ms55____READ__REC_BUFFER", ",", "ms58____READ__REC_BUFFER", ",", "ms66___Stretch1___Gong", ",", "ms67", ",", "ms68", ",", "ms69", ",", "ms70", ",", "ms71", ",", "ms72", ",", "ms73", ",", "ms74", ",", "ms75", ",", "ms76", ",", "ms77", ",", "ms78", ",", "ms79____Stretch1-2", ",", "ms80", ",", "ms81____Stretch2-End", ",", "ms82", ",", "ms83___VC_Munger", ",", "ms84", ",", "ms85", ",", "ms86", ",", "ms87", ",", "ms88_Stretch-end", ",", "ms96___Piano-Fshift", ",", "ms97", ",", "m100", ",", "ms106___Stretch1", ",", "ms107", ",", "ms108", ",", "ms109", ",", "ms110", ",", "ms111", ",", "ms112___Zebayce_StopMunger", ",", "ms113", ",", "ms117___Soundfiles___StretchEnd", ",", "ms120___Samp", ",", "ms121___Samp", ",", "ms126_fin-suivi", ",", "ms127___Samp", ",", "ms127-3___Samp", ",", "ms130___Samp", ",", "ms131-4___Samp", ",", "ms141", ",", "ms141-4___Samp", ",", "ms142-4___Samp", ",", "ms143", ",", "ms152___Koala1", ",", "ms159", ",", "ms160", ",", "ms161___Stretch1", ",", "ms162", ",", "ms163", ",", "ms164", ",", "ms165", ",", "ms166", ",", "ms167", ",", "ms168", ",", "ms169", ",", "ms170", ",", "ms171", ",", "ms172", ",", "ms173", ",", "ms174", ",", "ms175", ",", "ms176", ",", "ms177", ",", "ms178", ",", "ms179", ",", "ms180", ",", "ms181", ",", "ms182", ",", "ms183", ",", "ms184", ",", "ms185", ",", "ms186", ",", "ms187", ",", "ms188-3-360", ",", "ms189___Stretch1-End", ",", "###___ms190____POLYCHORDS", ",", "ms197", ",", "ms200", ",", "ms201", ",", "ms202", ",", "ms202_3___Stretch1", ",", "ms203", ",", "ms204", ",", "ms205", ",", "ms206", ",", "ms207", ",", "ms208", ",", "ms209", ",", "ms210", ",", "ms211", ",", "ms212", ",", "ms213", ",", "ms214", ",", "ms215", ",", "ms216", ",", "ms217", ",", "ms218", ",", "ms219", ",", "ms220", ",", "ms221", ",", "ms222", ",", "ms223", ",", "ms224", ",", "ms225", ",", "ms226", ",", "ms227", ",", "ms228", ",", "ms229", ",", "ms230", ",", "ms231", ",", "ms234_fin-suivi", ",", "ms238", ",", "ms242", ",", "ms246", ",", "ms250", ",", "ms255____recul_Ondea___PB", ",", "ms258", ",", "ms267", ",", "ms268_____HALLU__DepartOk", ",", "ms280", ",", "ms280-3", ",", "ms287", ",", "ms294-4", ",", "ms303-2", ",", "ms309", ",", "ms315____FUSEES_1__Chromax", ",", "ms317", ",", "###___ms320____Prtm", ",", "ms321-1____Koala1", ",", "ms326-1", ",", "ms328-1", ",", "ms331-1", ",", "ms335-2", ",", "ms336-1", ",", "ms339-4", ",", "ms342-4", ",", "ms343-3", ",", "ms345-3", ",", "ms346-3", ",", "ms346-4", ",", "ms350-4", ",", "ms351-4", ",", "ms352-4", ",", "ms353-4", ",", "ms354-4", ",", "ms355-3", ",", "ms359-2", ",", "ms361-4", ",", "ms363-4", ",", "ms365-4", ",", "ms366-4", ",", "ms367-4", ",", "ms368-4", ",", "ms369-4", ",", "ms370-4", ",", "ms377", ",", "ms392_fff", ",", "ms393____CRESCSa", ",", "ms399_4____StretchRecOn", ",", "ms400_2____StretchRecOff", ",", "ms402____FUSEES_2", ",", "ms407____CRESCSb", ",", "ms415____Chute", ",", "ms419", ",", "ms423", ",", "ms427", ",", "ms431", ",", "ms435__", ",", "ms448", ",", "ms459___MungerLow", ",", "ms463", ",", "ms466" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 55.5, 444.5, 114.0, 22.0 ],
+					"patching_rect" : [ 55.5, 444.5, 114.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 242.0, 0.0, 200.0, 22.0 ],
+					"presentation_rect" : [ 242.0, 3.0, 200.0, 20.0 ],
 					"style" : "",
 					"textcolor" : [ 0.666667, 0.698039, 0.717647, 1.0 ]
 				}
@@ -3520,7 +4067,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1075.25, 462.0, 54.0, 20.0 ],
+					"patching_rect" : [ 1616.0, 660.0, 54.0, 20.0 ],
 					"style" : "",
 					"text" : "nextlabel"
 				}
@@ -3597,7 +4144,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 114.625, 895.5, 389.0, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 9.0, 22.0, 456.0, 42.0 ],
+					"presentation_rect" : [ 9.0, 26.0, 456.0, 42.0 ],
 					"style" : "",
 					"text" : "wait.....",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3611,12 +4158,12 @@
 					"id" : "obj-85",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 7,
-					"outlettype" : [ "", "float", "symbol", "float", "float", "int", "bang" ],
-					"patching_rect" : [ 119.5, 211.0, 835.0, 20.0 ],
+					"numoutlets" : 8,
+					"outlettype" : [ "", "float", "symbol", "float", "float", "int", "list", "bang" ],
+					"patching_rect" : [ 119.5, 211.0, 971.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 33.0, 188.0, 157.0, 31.0 ],
+					"presentation_rect" : [ 33.0, 188.0, 175.0, 31.0 ],
 					"saved_object_attributes" : 					{
 						"IncomingOscPort" : 5678,
 						"Warning" : 1,
@@ -3628,7 +4175,7 @@
 					}
 ,
 					"style" : "",
-					"text" : "antescofo~ @outlets notenum scoreTempo TDIST"
+					"text" : "antescofo~ @outlets notenum scoreTempo TDIST midiout"
 				}
 
 			}
@@ -3639,7 +4186,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 498.25, 588.5, 20.0, 20.0 ],
+					"patching_rect" : [ 1024.0, 325.5, 20.0, 20.0 ],
 					"style" : ""
 				}
 
@@ -3653,7 +4200,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 521.75, 653.5, 39.0, 20.0 ],
+					"patching_rect" : [ 1047.5, 390.5, 39.0, 20.0 ],
 					"style" : "",
 					"text" : "del 10"
 				}
@@ -3668,7 +4215,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 521.75, 741.5, 32.5, 20.0 ],
+					"patching_rect" : [ 1047.5, 478.5, 32.5, 20.0 ],
 					"style" : "",
 					"text" : "start"
 				}
@@ -3683,7 +4230,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 569.5, 653.5, 40.5, 20.0 ],
+					"patching_rect" : [ 1095.25, 390.5, 40.5, 20.0 ],
 					"style" : "",
 					"text" : "b"
 				}
@@ -3698,7 +4245,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 569.5, 741.5, 48.0, 20.0 ],
+					"patching_rect" : [ 1095.25, 478.5, 48.0, 20.0 ],
 					"style" : "",
 					"text" : "getcues"
 				}
@@ -3713,7 +4260,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 591.0, 680.0, 34.0, 20.0 ],
+					"patching_rect" : [ 1116.75, 417.0, 34.0, 20.0 ],
 					"style" : "",
 					"text" : "clear"
 				}
@@ -3728,7 +4275,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 521.75, 621.5, 39.0, 20.0 ],
+					"patching_rect" : [ 1047.5, 358.5, 39.0, 20.0 ],
 					"style" : "",
 					"text" : "del 10"
 				}
@@ -3775,6 +4322,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-166", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-101", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-85", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -3802,6 +4358,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-101", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-104", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-155", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -3814,7 +4379,7 @@
 					"destination" : [ "obj-123", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 579.0, 675.5, 579.0, 675.5 ],
+					"midpoints" : [ 1104.75, 412.5, 1104.75, 412.5 ],
 					"source" : [ "obj-108", 0 ]
 				}
 
@@ -3894,6 +4459,33 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-117", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-116", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-104", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-117", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-124", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-117", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-119", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -3930,6 +4522,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-148", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-121", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -3943,6 +4544,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-123", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-166", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-124", 0 ]
 				}
 
 			}
@@ -4074,6 +4684,42 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-100", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-148", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-148", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-96", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-148", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-96", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-148", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-177", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4200,6 +4846,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-104", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-166", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-121", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-166", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-151", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4222,6 +4886,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-117", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-170", 0 ]
 				}
 
 			}
@@ -4362,10 +5035,37 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-203", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-193", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-193", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-193", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-203", 0 ]
 				}
 
 			}
@@ -4722,6 +5422,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-167", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-53", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -5041,6 +5750,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-85", 7 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-56", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -5122,6 +5840,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-53", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-96", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-95", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -5174,17 +5901,7 @@
 				}
 
 			}
- ],
-		"parameters" : 		{
-
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "antescofo~.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
