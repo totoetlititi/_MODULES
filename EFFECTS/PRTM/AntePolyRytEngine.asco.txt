@@ -1,0 +1,1302 @@
+antescofo::tempo 60
+
+@global $undef
+@global $MAX_PLAYERS
+@global $keepOriginalPitch
+@global $globalTransPulse, $globalTransPatternInterval, $globalTransPatternID
+@global $nbPlayersActive
+@global $nbPlayersWithPeriod
+@global $periodMin, $periodMax
+@global $nb_pulses
+@global $transpMode
+@global $periodMinimale
+
+
+let $transpMode :=  "Float"
+
+@global $mul_vel_analysis
+let $mul_vel_analysis := 100
+
+let $globalTransPulse := 0.
+let $globalTransPatternInterval := 0.
+let $globalTransPatternID := 0.
+let $nbPlayersActive := 0
+let $nbPlayersWithPeriod := 0
+let $nb_pulses := 0
+
+let $metroModeSignal := true
+let $keepOriginalPitch := true
+let $MAX_PLAYERS := 100;
+let $periodMinimale := 0 // minimum speed is 2ms
+
+@global $stopUntilNextSync
+let $stopUntilNextSync := false
+
+@global $gains
+@global $gainsTab
+@global $gainsNim // array of gains to interpolate
+
+
+
+// print ((@log(0.081 * $mul_vel_analysis) / @log(1.056)) + 106)
+
+
+whenever ($gains == $gains) 
+{
+	
+	@local $args
+
+	switch($gains)
+	{
+		case @is_numeric :
+			$args := [$gains, $gains]
+		case @is_tab :
+			if (@size($gains) == 1)
+			{
+				$args := [ $gains[0], $gains[0] ]
+			}
+			else
+			{
+				$args := $gains
+			}
+	}
+	
+	$interval := 1 / (@size($args) - 1)
+	$gainsNim := NIM{ 0 ($args[0]), $interval ($args[1]) }
+
+	forall $value in @drop($args, 2)
+	{
+	   $gainsNim := @push_back($gainsNim, $interval, $value)
+	}
+
+}
+let $gains := 127
+
+whenever ($testvel == $testvel) 
+{
+	print ($gainsNim(($testvel[0] - 1)/($nbPlayersWithPeriod - 1)))
+}
+
+
+// -------------------------------------------------------------------------
+// retourne [a, b] tels que a/b approximme $x
+
+// @fun_def @cdr ($x) { [$x[$i] | $i in 1 .. @size($x)]}
+// return numerator denominator
+@fun_def @rational($x) { 
+	// @rational0($x / 1000., 2) 
+	@rational0($x / (60000 / $RT_TEMPO), 2) 
+}
+
+
+@fun_def @rational0($x, $i) 
+{
+    $n_x := @floor($x)
+    $r_x := $x - $n_x
+    if ($r_x < 0.125)
+    {
+        return [$n_x, 1]
+    }
+    else
+    {
+        $ir_x := 1.0 / $r_x
+
+        if ($i == 0)
+        {
+            $nir_x := @round($ir_x)
+		        return [$n_x * $nir_x + 1, $nir_x]
+   	  }
+   	  else
+   	  {
+            $y := @rational0($ir_x, $i-1)
+            return [$y[1] + $n_x * $y[0], $y[0]]
+        }
+    }
+}
+
+// print "@rational(243)" (@rational(243))
+// print "@rational(1841)" (@rational(1841))
+// print "@rational(311)" (@rational(311))
+// print "@rational(1538)" (@rational(1538))
+
+let $nuances := MAP {
+	("-∞",  0),
+	("ppp", 16),
+	("pp",  32),
+	("p",   48),
+	("mp",  64),
+	("mf",  80),
+	("f",   96),
+	("ff",  112),
+	("fff", 127)
+}
+
+// @fun_def @mulby2($x)
+// {
+// 	return $x * 2
+// }
+
+// print @mapval($nuances, @scaling(0, 127, 0, 254, 1))
+
+@fun_def @convertNuance($nuancesMap, $x)
+{
+	(@is_defined($nuancesMap, $x)  ?   $nuancesMap($x)   :   ($x))
+}
+
+
+@fun_def @scaling($in_min, $in_max, $out_min, $out_max, $exp, $x)
+{
+    // classic cycling74 scaling
+    // return (($out_max-$out_min >= 0) ? 
+    //     ($out_min + ($out_max - $out_min) * (($out_max - $out_min) * @exp(-1 * ($in_max - $in_min) * @log10($exp)) * @exp($x * @log10($exp)))) 
+    //   : (-1) * ( $out_min + ($out_max - $out_min) * ( ($out_max - $out_min) * @exp(-1 * ($in_max-$in_min) * @log10($exp)) * @exp($x * @log10($exp)))))
+
+    // non-classic cycling74 scaling
+    // return ((($x-$in_min)/($in_max-$in_min) == 0) ? 
+    //     $out_min 
+    //   : (((($x-$in_min)/($in_max-$in_min)) > 0) ? 
+    //         ($out_min + ($out_max-$out_min) * @pow((($x-$in_min)/($in_max-$in_min)), $exp)) 
+    //       : ( $out_min + ($out_max-$out_min) * -@pow(((-$x+$in_min)/($in_max-$in_min)), $exp))))
+
+    // from EJ
+    if ($in_max == $in_min) 
+    {
+    	return $out_min
+    }
+    else
+    {
+    	return @pow((($x - $in_min) / ($in_max - $in_min)), $exp) * ($out_max - $out_min) + $out_min
+	}
+
+}
+
+
+@fun_def ms2beat($s)
+{ return (60. / $TEMPO) * ($s / 1000.)  }
+
+@fun_def hz2midi($hz)
+{ return ( 69 + (12 * @log2($hz/440.0)))}
+
+
+@fun_def @f_maths($periode, $rapportPitch, $basePeriode, $tx)
+{
+	$periode_in_sec := $periode / $basePeriode
+	$abs_rapportPitch := @abs($rapportPitch)
+	$polarity_rapportPitch := (($rapportPitch >= 0.) ? 1 : -1)  
+	if ( $periode_in_sec >= 1. )
+	{
+	    return ($tx * $basePeriode * @exp($polarity_rapportPitch * @log(($periode_in_sec - 1) * $abs_rapportPitch + 1)))
+	}
+	else 
+	{
+	    return ($tx * $basePeriode / @exp(($polarity_rapportPitch * @log(((1 / $periode_in_sec) - 1) * $abs_rapportPitch + 1))))
+	}
+}
+
+// find period min and max for all ative players
+// @proc_def ::find_Period_Min_Max()
+@proc_def ::find_and_count_Period_MinMax()
+{
+	let $periodMin := 999999
+	let $periodMax := -999999
+
+	$nbPlayersWithPeriod := 0
+
+	forall $id, $pid in $dico_names 
+	{  
+		if ($pid.$polymatrix != "none") 
+		{
+			if ($pid.$period < $periodMin){ $periodMin := $pid.$period }
+			if ($pid.$period > $periodMax){ $periodMax := $pid.$period }
+
+			// count how many player has a valid period
+			$nbPlayersWithPeriod := $nbPlayersWithPeriod + 1
+
+		}
+	}
+	// print "$periodMin =" $periodMin "$periodMax =" $periodMax
+}
+
+
+// === Player ===============================================================
+
+@fun_def @always_true($num, $cpt) { return true }
+
+
+
+$engine := false
+$sync := true
+
+@proc_def ::P($id, $per)
+{
+	// loop counter 
+	@local $cpt, $subCpt, $period, $subPeriod, $numerator, $periodInitiale, $savedPeriod, $pid
+
+	// guard of the loops
+	@local $active, $localLoop, $localSubLoop
+	let $active := false
+
+	// state and evolution function of the loop
+	@local $myPitch, $myTrans, $myVel, $myDur, $myPan, $myChan, $myTrack, $myDiv, $myGhost
+	@local $nextPitch, $nextTrans, $nextVel, $nextDur, $nextPan, $nextChan, $nextTrack, $nextDiv, $nextGhost
+	@local $pitchPlusTrans, $trans_final
+	@local $ratio, $numerator, $denominator
+	@local $indexActivePlayer
+	@local $nb_pulses_reached
+
+	@local $velMax
+	let $velMax := 127
+
+	@local $lastDate, $periodeChange, $fire, $timeToSchedule, $creationDate, $periodOperation
+
+	// pour stocker des tableaux/valeurs à partager entre plusieurs états d'une même boucle. Ex tableau pour les URN (series)
+	@local $dicoPersistant
+	let $dicoPersistant := MAP {}
+
+	let $fire := true
+
+	let $myPitch  := 60
+	let $myTrans  := 0
+	let $myVel    := 127
+	let $myDur    := 50
+	let $myPan    := 64
+	let $myChan   := 1
+	let $myTrack  := 1
+	let $myDiv    := 1
+	let $myGhost  := 0
+
+	let $nextPitch	:= @nothing(0)
+	let $nextTrans	:= @nothing(0)
+	let $nextVel	:= @nothing(0)
+	let $nextDur	:= @nothing(0)
+	let $nextPan	:= @nothing(0)
+	let $nextChan	:= @nothing(0)
+	let $nextDiv	:= @nothing(0)
+	let $nextGhost	:= @nothing(0)
+
+	// pour stocker les noms des playerEngine et leurs parametres
+	@local $functionPitch, $functionTrans, $functionVel, $functionDur, $functionPan, $functionChan, $functionDiv, $functionGhost
+
+	@local $paramPitch, $paramTrans, $paramVel, $paramDur, $paramPan, $paramChan, $paramDiv, $paramGhost
+
+	let $functionPitch	:= "nothing"
+	let $functionTrans	:= "nothing"
+	let $functionVel	:= "nothing"
+	let $functionDur	:= "nothing"
+	let $functionPan	:= "nothing"
+	let $functionChan	:= "nothing"
+	let $functionDiv	:= "nothing"
+	let $functionGhost	:= "nothing"
+
+	let $paramPitch	:= 0
+	let $paramTrans	:= 0
+	let $paramVel	:= 0
+	let $paramDur	:= 0
+	let $paramPan	:= 0
+	let $paramChan	:= 0
+	let $paramDiv	:= 0
+	let $paramGhost	:= 0
+
+	@local $polymatrix
+	let $polymatrix	:= "none"
+
+	// let $nextPeriod	:= ::nothing(0)
+
+	// par defaut, $per vaut -1
+	// let $periodInitiale := (($per < 0) ? (1000) : ($per))
+	// let $period := $per
+	let $periodInitiale := 1000
+	let $period := 1000
+	// let $ratio := @rational($per)
+ 	let $numerator := 1
+ 	let $denominator := 1
+
+	let $periodOperation :=  "initial"
+	let $periodOperationArgs :=  0
+
+	let $pid := $MYSELF 
+	let $indexActivePlayer := 0
+
+ 	let $cpt := 0
+ 	let $localLoop := 0
+ 	let $localSubLoop := 0
+
+ 	let $creationDate := ($NOW * 1000)
+ 	let $trans_final := 0
+
+  	whenever($engine)
+  	{
+  	    $creationDate := ($NOW * 1000)
+  	    $fire := 1
+  	}
+
+  	@local $delayScheduleAction
+  	let $delayScheduleAction := 0
+	
+  	whenever ($periodeChange != $period)
+  	// whenever ($periodeChange)
+	{	
+	   	// simule la version metro control / signal
+	   	if ($metroModeSignal && $engine)
+	   	{
+	       	abort $delayScheduleAction //@NOREC
+	       	if ($stopUntilNextSync) 
+	       	{ 
+	       		abort $localLoop
+	       	}
+	       	else 
+	       	{
+	       		abort $localLoop @NOREC // pas de recursion, => tue seulement la loop principale et pas la loop interne, qui sera tuée lors du fire
+	       	}
+	       	
+	       	// delai avant la nouvelle boucle avec la nouvelle période = (int(temps actuel de la boucle / 	période de la     nouvelle boucle) + 1) * période de la nouvelle boucle -  temps actuel de la 	boucle
+	       	let $timeToSchedule := ((@floor((($NOW * 1000) - $creationDate ) / $periodeChange) + 1) * $periodeChange) - (($NOW *    1000) - $creationDate )
+	       	let $period := $periodeChange
+	       	// print "ID" $id "will wait" $timeToSchedule "ms." "Now is" ($NOW *    1000) ", next at" (($NOW * 1000) + $timeToSchedule) "New periode is" $period
+	       	let $delayScheduleAction := 
+	       	{ 
+	       		$timeToSchedule ms $fire := true 
+				// print "ID" $id " waited "$timeToSchedule"ms. Now is" ($NOW * 100)
+
+			}
+		
+	   	}
+	   	if (!$metroModeSignal || !$engine) 
+	   	{
+	   		let $period := $periodeChange
+	   	}
+
+  	}
+
+  	// whenever ($sync || $fire) @immediate
+  	whenever ($fire) @immediate
+  	{
+	   	$cpt := 0
+	   	abort $localLoop 
+	   	abort $localSubLoop
+
+	   	// print "$creationDate" $creationDate
+	   	// let $period := $savedPeriod
+
+	   	$localLoop := {
+
+		  	// Loop $period ms
+		  	Loop ($period / 1000.)
+		  	// Loop ((($period < 0) ? (1000) : ($period / 1000.)))
+		  	{
+		     	// temps courant
+		     	// $lastDate := ($NOW * 1000)
+		     	// print "first lastdate " $lastDate "pid" $id
+		     	$subCpt := 1
+
+		     	//nb_pulses pour stopper les players après un certain nombre d'itérations
+		     	$nb_pulses_reached := (($nb_pulses > 0) && ($cpt >= $nb_pulses))
+		     	if ($nb_pulses_reached) { abort $localSubLoop }
+
+		     	// print "$cpt" $cpt "$nb_pulses" $nb_pulses "$nb_pulses_reached" $nb_pulses_reached
+		     	if ($active && $engine && !$nb_pulses_reached && ($polymatrix != "none"))
+		     	{
+					let $myPitch	:= $nextPitch("PITCH", $pid, $myPitch) 
+					let $myTrans	:= $nextTrans("TRANS", $pid, $myTrans)
+					let $myVel		:= $nextVel("VEL", $pid, $myVel)
+
+					// print "$myVel before is " $myVel
+					let $myVel		:= $myVel * ($gainsNim(($id - 1)/($nbPlayersWithPeriod - 1))) / 127.
+
+					// print "$myVel after is " $myVel "because $id " $id "and $nbPlayersWithPeriod " $nbPlayersWithPeriod " and $gainsNim(1)" ($gainsNim(1))
+
+
+					let $myDur 		:= $nextDur("DUR", $pid, $myDur)
+					let $myPan 		:= $nextPan("PAN", $pid, $myPan)
+					let $myChan		:= $nextChan("CHAN", $pid, $myChan)
+					// let $myPeriod	:= $nextPeriod("PERIOD", $pid, $mychan)
+					// 	if ($myPeriod != $period) { $period := $myPeriod}
+					let $myDiv		:= $nextDiv("DIV", $pid, $myDiv) // loop de subdivision
+					let $myGhost	:= $nextGhost("GHOST", $pid, $myGhost)
+					let $subPeriod	:= ($period / $myDiv)
+					// print "New Period is subdivised by" ($myDiv) " >> "($subPeriod) 
+
+					abort $localSubLoop
+					$localSubLoop := {
+						// print "New Period " $period  " is subdivised by" $myDiv " >> "$subPeriod 
+						// Loop $subPeriod ms
+						Loop ($subPeriod / 1000.)
+						{
+							if ($active && $engine && ($myGhost != $subCpt) && ($polymatrix != "none"))
+							// if ($active && $engine)
+							{
+								// toMidi $pitchPlusTrans $myVel $myDur $myPan $myChan $period $id " -- " $NOW
+								let $trans_final := ($myTrans + ($globalTransPulse * $cpt) + ($globalTransPatternInterval * ($cpt / $denominator)) + ($globalTransPatternID * ($cpt % $denominator)))
+								if ($transpMode != "Float")
+								{
+									let $trans_final := $trans_final / 100
+								}
+								let $pitchPlusTrans :=   $myPitch + $trans_final
+								// toMidi $pitchPlusTrans $myVel $myDur $myPan $myChan $period $id " -- " $NOW
+								toMidi $pitchPlusTrans $myVel $myDur $myPan $myChan $period $id
+
+							}
+							$subCpt := $subCpt + 1
+						}
+						// print "New period is " $period " initially was" $periodInitiale
+					}
+		     	}
+		     	$cpt := $cpt + 1
+        	}
+   		}
+  	}
+}
+
+@global $counter_for_bars_beats
+@global $loop_counter_for_bars_beats
+@global $barResolution
+let $loop_counter_for_bars_beats := 0
+let $barResolution := 4
+
+whenever($engine == $engine )
+{
+	if ($engine) { 
+		$counter_for_bars_beats := 0 
+		$loop_counter_for_bars_beats := {
+			Loop 1.
+			{
+				if ($engine)
+				{
+					let $beat := (($counter_for_bars_beats % $barResolution) + 1)
+					let $bar := (@floor($counter_for_bars_beats / $barResolution) + 1)
+					// print ($bar) ($beat)
+					barBeat ($bar) ($beat)
+					let $counter_for_bars_beats := $counter_for_bars_beats + 1
+				}
+			}
+		}	
+	}
+	else { 
+		abort $loop_counter_for_bars_beats
+	}
+}
+
+whenever ($sync)
+{
+	if ($engine)
+	{	
+		abort $loop_counter_for_bars_beats
+		let $engine :=  1
+	}
+}
+
+
+
+
+// === Definition of generic engines =============================================
+
+@fun_def @nothing($args, $type, $pid, $previous) 
+{ 
+	return $previous
+}
+
+@fun_def @print_param($args, $type, $pid, $previous)
+{
+	$dummy := EXPR { print "Type:" $type "at" $NOW ": num=" $pid.$denominator "period=" $pid.$period  "cpt=" $pid.$cpt "curstate=" $previous }
+	return $previous
+}
+
+@fun_def @seq_fwd($args, $type, $pid, $previous)
+{
+	return $args[($pid.$cpt % @size($args))]
+}
+
+@fun_def @seq_bwd($args, $type, $pid, $previous)
+{
+	return $args[((@size($args) - 1) - ($pid.$cpt % @size($args))) ]
+}
+
+@fun_def @seq_fbwd($args, $type, $pid, $previous)
+{
+	$tmpSizeInterne := (@size($args) - 1)
+	$tmpModuloMax := ($pid.$cpt % ($tmpSizeInterne * 2))
+	$tmpDiff := $tmpSizeInterne - $tmpModuloMax
+	return (( $tmpDiff >= 0) ?
+	  $args[($tmpModuloMax)]
+	: $args[(($tmpDiff * 2) + $tmpModuloMax)])
+}
+
+@fun_def @maths($args, $type, $pid, $previous)
+{
+	$rapport 	:= $args[0]
+	$base 		:= $args[1]
+	$tx_mul 	:= $args[2]
+
+	if ($type == "PITCH")
+	{
+		// if ($keepOriginalPitch) { $periodTmp := $pid.$periodInitiale }
+		// else { let $periodTmp := $pid.$period }
+
+		$periodTmp := (($keepOriginalPitch) ? $pid.$periodInitiale : $pid.$period)
+
+		// auto transposition (keep harmonic, even rapport or base are changing)
+		if( $args[3] == 1)
+		{
+
+			$tx_mul := (($rapport <= 0) 
+				?	$periodMin / (@f_maths($periodMax, $rapport, $base, 1))
+				:	$periodMin / (@f_maths($periodMin, $rapport, $base, 1)))
+			// $dummy := EXPR { print "new $tx_mul = " $tx_mul}
+			return (@hz2midi(@f_maths($periodTmp, $rapport, $base, $tx_mul)))
+		}
+		else
+		{
+			// $dummy := EXPR { print "old $tx_mul = " $tx_mul}
+			return (@hz2midi(@f_maths($periodTmp, $rapport, $base, $tx_mul)))
+		}
+
+	}
+	else
+	{
+		return (@f_maths($pid.$period, $rapport, $base, $tx_mul))
+	}
+}
+
+@fun_def @alea($args, $type, $pid, $previous)
+{
+   return $args[@rand_int(@size($args))]
+}
+
+@fun_def @serie($args, $type, $pid, $previous)
+{
+   // si la clef [serie, type] existe
+   //    récupération du tableau déjà existant
+   //    si il est vide, le tableau est régénèré
+   //    sinon, le tableau est stocké sans le premier élément, qui est retourné
+   // sinon un tableau est régénèré
+
+   if (@is_defined($pid.$dicoPersistant, ["serie", $type]))
+   {
+		$currentTab := $pid.$dicoPersistant(["serie", $type])
+		if (@empty($currentTab))
+		{ 
+		   $dummy := @add_pair($pid.$dicoPersistant, ["serie", $type], @scramble($args))
+		   return @serie($args, $type, $pid, $previous)
+		}
+		else
+		{
+		   $dummy := @add_pair($pid.$dicoPersistant, ["serie", $type], @cdr($currentTab))
+		   return $currentTab[0]
+		}
+	}
+	else 
+	{
+		$dummy := @add_pair($pid.$dicoPersistant, ["serie", $type], @scramble($args))
+		return @serie($args, $type, $pid, $previous)
+	}
+}
+
+@fun_def @perm($args, $type, $pid, $previous)
+{
+	if (@is_defined($pid.$dicoPersistant, ["perm", $type]))
+	{
+		$oldVal := $pid.$dicoPersistant(["perm", $type])
+		$newVal := ($oldVal + 1 + (@rand_int(@size($args) - 1))) % @size($args)
+		$dummy := @add_pair($pid.$dicoPersistant, ["perm", $type], $newVal)
+
+		return $args[$newVal]
+	}
+	else
+	{
+		$dummy := @add_pair($pid.$dicoPersistant, ["perm", $type], @rand_int(@size($args)))
+		return @perm($args, $type, $pid, $previous)
+	}
+}
+
+@fun_def @speed($args, $type, $pid, $previous)
+{
+	if ($type == "PITCH")
+	{
+		return (@hz2midi(1000 / $pid.$period * 1000 * $args[0] / 100))
+	}
+	else 
+	{
+		// return ($args * $pid.$period)
+		return ($args[0] * $pid.$period)
+	}
+}
+
+@fun_def @voice($args, $type, $pid, $previous)
+{
+	// $dummy := EXPR {print "voice at:" $pid.$id }
+	// si PITCH
+	// si inverse == 0 >>> (1 - $pid.$id) * -1 * YanInterval + Base
+	// si inverse == 1 >>> (100 - $pid.$id) * 1 * YanInterval + Base
+			// 100 = nb de voices(players)... 
+	if ($type == "PITCH") // args:: <inverse[0/1]> <only active[0/1]> <coeff> <base> 
+	{	
+		if ($args[1]) // if "only active players"
+		{
+			if ($args[0]) // if inverse mode
+			{
+				return ($nbPlayersActive - $pid.$indexActivePlayer) * ($args[2]) + ($args[3])
+			}
+			else // if no inverse mdde
+			{
+				return (1 - $pid.$indexActivePlayer) * (-1) * ($args[2]) + ($args[3])
+			}
+		}
+		else // else, all players
+		{
+			if  ($args[0]) // if inverse mode
+			{
+				return ($MAX_PLAYERS - $pid.$id) * ($args[2]) + ($args[3])
+			}
+			else // if no inverse mdde
+			{
+				return (1 - $pid.$id) * (-1) * ($args[2]) + ($args[3])
+			}
+		}		
+	}
+	else
+	{
+		return $pid.$id
+	}
+}
+
+@fun_def @scale($args, $type, $pid, $previous)
+{
+	$min := (($args[0] < $args[1]) ? ($args[0]) : ($args[1]))
+	$max := (($args[0] > $args[1]) ? ($args[0]) : ($args[1]))
+	// $val := (($pid.$period > $max) ? $max : $pid.$period)
+	// $val := (($pid.$period < $min) ? $min : $pid.$period)
+	$val := (($pid.$period > $max) ? $max : (($pid.$period < $min) ? $min : $pid.$period))
+
+	return @scaling($min, $max, 0, 127, 1, $val)
+}
+
+@fun_def @table($args, $type, $pid, $previous)
+{
+   return $args[$pid.$pitchPlusTrans]
+}
+
+
+// <max value> <min value> 
+@fun_def @acc($args, $type, $pid, $previous)
+{
+	// $minValue := (@is_defined($nuances, $args[0])  ?   $nuances($args[0])   :   ($args[0]))
+	// $maxValue := (@is_defined($nuances, $args[1])  ?   $nuances($args[1])   :   ($args[1]))
+	$maxValue := ($args[0])
+	$minValue := ($args[1])
+	$val := ((($pid.$cpt % $pid.$denominator) == 0) ?
+	          $maxValue
+	        : $minValue
+	      )
+	return $val
+}
+
+
+
+@fun_def @echo_fwd($args, $type, $pid, $previous)
+{ 
+	// $velStart := (@is_defined($nuances, $args[0])  ?   $nuances($args[0])   :   ($args[0]))
+	// $velEnd   := (@is_defined($nuances, $args[1])  ?   $nuances($args[1])   :   ($args[1]))
+	$velStart := ($args[0])
+	$velEnd   := ($args[1])
+
+	$exp := ((@size($args) >= 3)      ?   $args[2]     :   1 )
+
+	return @scaling(1, $pid.$denominator, $velStart, $velEnd, $exp, ($pid.$cpt % $pid.$denominator) + 1)
+}
+
+@fun_def @echo_bwd($args, $type, $pid, $previous)
+{ 
+	// $velStart := (@is_defined($nuances, $args[0])  ?   $nuances($args[0])   :   ($args[0]))
+	// $velEnd   := (@is_defined($nuances, $args[1])  ?   $nuances($args[1])   :   ($args[1]))
+	$velStart := ($args[0])
+	$velEnd   := ($args[1])
+	$exp := ((@size($args) >= 3)      ?   $args[2]     :   1 )
+
+	return @scaling(1, $pid.$denominator, $velEnd, $velStart,  $exp, ($pid.$cpt % $pid.$denominator) + 1)
+}
+
+@fun_def @echo_fbwd($args, $type, $pid, $previous)
+{ 
+	// $velStart := (@is_defined($nuances, $args[0])  ?   $nuances($args[0])   :   ($args[0]))
+	// $velEnd   := (@is_defined($nuances, $args[1])  ?   $nuances($args[1])   :   ($args[1]))
+	$velStart := ($args[0])
+	$velEnd   := ($args[1])
+	$exp := ((@size($args) >= 3)      ?   $args[2]     :   1 )
+
+	return ((($pid.$cpt % $pid.$denominator) < ($pid.$denominator / 2)) ?
+	          @scaling(1, $pid.$denominator, $velStart, $velEnd, $exp, ($pid.$cpt % ($pid.$denominator / 2)) + 1)
+	        : @scaling(1, $pid.$denominator, $velEnd, $velStart,  $exp, ($pid.$cpt % ($pid.$denominator / 2)) + 1)
+
+	      )
+}
+
+
+
+@fun_def @msec($args, $type, $pid, $previous)
+{ 
+	if ($args[0] < $pid.$period) 
+	{
+		return @floor(($pid.$period) / ($args[0]))
+	}
+	else
+	{
+		return 1
+	}
+  
+}
+
+
+// === Gestion de la creation/ destruction  ==================================================
+
+// On utilise un dico qui associe le processus et le numéro du processus
+
+let $dico_names := MAP { } 
+
+
+// Quand on cree un processus, on le rentre dans le dico
+
+@fun_def @create_player($id, $period)
+{ 
+   @insert($dico_names, $id, ::P($id, $period))
+}
+
+@fun_def @kill_player($id)
+{ 
+   $pid := $dico_names($id)
+   $dummy := ($pid ? EXPR { abort $pid } : 0)
+   $dico_names := @remove($dico_names, $id)
+   return $dummy
+}
+
+
+// $polymatrix >> set each "player". 
+// set player speed with a denominator and a numerator
+// <player index> <denominator> <numerator> 
+//
+// set player speed and velocity from analysis (iana) with a speed and an intensity
+// <player index> <"freq"> <speed in ms> <intensity (linear)> 
+//
+// reset player 
+// <player index> <"none">
+
+
+// <id> <denominator> <numerator> 
+// ou  <id> <"freq"> <freq> <intensity> 
+// ou <id> <"none"> pour un init du polymatrix
+// ou <"0"> <"none"> pour un init de tout les polymatrix
+
+@global $polymatrix 
+whenever ($polymatrix)
+{ 
+	// for all players
+	if ($polymatrix[0] == 0)
+	{
+		switch
+		{
+			case ($polymatrix[1] == "none"):
+				forall $id, $pid in $dico_names 
+				{ 
+				   let $pid.$polymatrix := "none"
+				} 
+				// $nbPlayersWithPeriod := 0
+		}
+	}
+	// for individual player
+	else 
+	{
+
+		@local $pid
+		let $pid := $dico_names($polymatrix[0])
+		if ($pid) 
+		{	
+			switch
+			{
+				// reset
+				case ($polymatrix[1] == "none"):
+					let $pid.$polymatrix := "none"
+					// let$nbPlayersWithPeriod :=  $nbPlayersWithPeriod - 1
+					// if ($nbPlayersWithPeriod < 0) { $nbPlayersWithPeriod := 0 }
+
+				// "freq" mode (from analysis) with speed and velocity
+				case ($polymatrix[1] == "freq"):
+					// remove period < $periodMiniale (0 ms)
+					if ($polymatrix[2] > $periodMinimale)
+					{
+						let $ratio := @rational($polymatrix[2])
+						let $pid.$numerator := $ratio[0]
+						let $pid.$denominator := $ratio[1]
+						let $pid.$velMax := ((@log($polymatrix[3] * $mul_vel_analysis) / @log(1.056)) + 106)
+						if ($pid.$velMax < 0) { $pid.$velMax := 0 }
+						let $pid.$polymatrix := $polymatrix
+						let $pid.$periodInitiale := $polymatrix[2] 
+						// applique la derniere periodOperation sur les periodes
+						:: @string2proc($pid.$periodOperation)($pid, $pid.$periodOperationArgs)
+						// $nbPlayersWithPeriod := $nbPlayersWithPeriod + 1
+					}
+					else 
+					{
+						let $pid.$polymatrix := "none"
+					}
+				// with denominator
+				case (@is_int($polymatrix[1]) || @is_float($polymatrix[1])):
+					let $pid.$numerator := $polymatrix[2]
+					let $pid.$denominator := $polymatrix[1]
+					let $pid.$velMax := 80
+					let $pid.$polymatrix := $polymatrix
+				    let $pid.$periodInitiale := 1000 * ($pid.$numerator / $pid.$denominator)
+				    // applique la derniere periodOperation sur les periodes
+					:: @string2proc($pid.$periodOperation)($pid, $pid.$periodOperationArgs) 
+					// $nbPlayersWithPeriod := $nbPlayersWithPeriod + 1
+			}
+
+		}
+		
+	}
+	// send ratio and period infos to max 
+	// ratioPeriod ($pid.$id) ($pid.$denominator) ($pid.$numerator)  ($pid.$periodInitiale) ($pid.$velMax)
+	
+	::find_and_count_Period_MinMax()
+
+	// ratioPeriod clear all
+	// forall $id, $pid in $dico_names 
+	// { 
+	// 	if ($pid.$polymatrix != "none") 
+	// 	{
+	// 		ratioPeriod ($pid.$id) ($pid.$denominator) ($pid.$numerator) ($pid.$periodInitiale) ($pid.$velMax)
+	// 	}
+	// } 
+}
+
+
+// <pid> <on/off>
+@global $polyplay
+whenever ($polyplay)
+{
+	if ($polyplay[0] <= 0)
+	{ 
+		forall $id, $pid in $dico_names 
+		{  
+		   let $pid.$active := $polyplay[1]
+		} 
+	}
+	else
+	{ 
+		@local $pid
+		let $pid := $dico_names($polyplay[0])
+		if ($pid) { let $pid.$active := $polyplay[1] }
+	}
+	// find continuous index for only active player
+	let $nbPlayersActive := 0
+	forall $id, $pid in $dico_names 
+	{  
+		if ($pid.$active) 
+		{
+			$nbPlayersActive := $nbPlayersActive + 1
+			let $pid.$indexActivePlayer := $nbPlayersActive
+		}
+		else
+		{
+			let $pid.$indexActivePlayer := 0	
+		} 
+	} 
+	::find_and_count_Period_MinMax()
+}
+
+
+
+// === com avec l'exterieur =========================================================
+
+// -- Engine manipulation -----------------------------------------------------------
+
+@global $playerEngine
+
+// $can est une variable qui est affecté par max en utilisant le mesage setvar
+// et sa valeur est une liste (tableau) 
+//
+
+@proc_def ::changePlayerEngine($pid, $param, $eng, $args)
+{
+	@local $args, $eng2
+
+
+	if ($pid)
+	{
+		let $eng2 := @string2fun($eng)
+
+		// print "Change :::" $pid $param $eng $args $eng2
+
+		switch ($param)
+		{
+			case "pitch"	:	let $pid.$nextPitch := $eng2($args)
+								let $pid.$functionPitch := $eng
+								let $pid.$paramPitch := $args
+
+			case "trans"	:	let $pid.$nextTrans := $eng2($args)
+								let $pid.$functionTrans := $eng
+								let $pid.$paramTrans := $args
+			case "vel"  	:	if ($args[0] == "natural")
+								{
+									// enlève 'natural'
+									let $args := [$args[$i] | $i in 1 .. (@size($args))]
+									// scaling similar to max version
+									let $nuancesNatural :=  @mapval($nuances, @scaling(0, 80, 0, $pid.$velMax, 1))
+									// print "$nuancesNatural" $nuancesNatural
+									let $args := @map(@convertNuance($nuancesNatural),  $args)
+								}
+								else
+								{
+									let $args := @map(@convertNuance($nuances),  $args)
+								}
+								let $pid.$nextVel   := $eng2($args) 
+								let $pid.$functionVel := $eng
+								let $pid.$paramVel := $args
+							// 	let $pid.$nextVel   := $eng2(@map(@convertNuance, $args))
+			case "dur"  	: 	let $pid.$functionDur := $eng
+								let $pid.$paramDur := $args
+								if ($args[0] == "legato") 
+								{
+									let $args := [ ($args[$i] * $pid.$period) | $i in 1 .. (@size($args)) ]
+								}
+								let $pid.$nextDur   := $eng2($args)
+			case "pan"  	: 	let $pid.$nextPan   := $eng2($args)
+								let $pid.$functionPan := $eng
+								let $pid.$paramPan := $args
+			case "chan" 	: 	let $pid.$nextChan  := $eng2($args)
+								let $pid.$functionChan := $eng
+								let $pid.$paramChan := $args
+			case "track"	: 	let $pid.$nextTrack := $eng2($args)
+								let $pid.$functionTrack := $eng
+								let $pid.$paramTrack := $args
+			case "div"  	: 	let $pid.$nextDiv   := $eng2($args)
+								let $pid.$functionDiv := $eng
+								let $pid.$paramDiv := $args
+			case "ghost"	: 	let $pid.$nextGhost := $eng2($args)
+								let $pid.$functionGhost := $eng
+								let $pid.$paramGhost := $args
+		}
+	}
+}
+
+
+
+//     [ id, parametre, engine, args supplementaire ]
+whenever ($playerEngine)
+{
+	@local $args
+	$args := [ $playerEngine[$i] | $i in 3 .. (@size($playerEngine)) ]
+
+	// print "call engine " ($playerEngine[1]) ($playerEngine[2])
+	// print "playerEngine: "  $playerEngine  " _______   args: "  $args 
+
+	if ($playerEngine[0] <= 0)
+	{ 
+		forall $id, $pid in $dico_names 
+		{ 
+			::changePlayerEngine($pid, $playerEngine[1], $playerEngine[2], $args)  
+
+		} 
+	}
+	else
+	{ 
+		@local $pid
+		let $pid := $dico_names($playerEngine[0])
+		if ($pid) 
+		{ 
+			::changePlayerEngine($pid, $playerEngine[1], $playerEngine[2], $args) 
+		}
+	}
+}
+
+
+// --- Period manipulation ------------------------------------------------------------
+
+
+// === Operation ===============================================================
+
+@proc_def ::initial($pid, $args)
+{
+	// let $dummy := 1
+	let $pid.$periodeChange := $pid.$periodInitiale
+}
+
+@proc_def ::period_by($pid, $args)
+{
+	let $pid.$periodeChange := $pid.$periodInitiale * $args[0]
+	// print "New period is "  ($args[0]) "*" $pid.$periodInitiale "=" $pid.$period
+}
+
+@proc_def ::maths($pid, $args)
+{
+	// let $pid.$periodeChange := @f_maths($pid.$periodInitiale, $args[0], $args[1], $args[2])
+	let $rapport 	:= $args[0]
+	let $base 		:= $args[1]
+	let $tx_mul 	:= $args[2]
+	let $pid.$periodeChange := @f_maths($pid.$periodInitiale, $rapport, $base, $tx_mul)
+	// print "$pid.$periodeChange" $pid.$periodeChange
+}
+
+
+
+@proc_def ::changePeriodOperation($operation, $pid, $args)
+{
+	:: @string2proc($operation)($pid, $args)
+	// let $pid.$periodOperation := {:: @string2proc($operation)($pid, $args) }
+	// stocke l'operation et les arguments localement pour chaque loop
+	let $pid.$periodOperation := $operation
+	let $pid.$periodOperationArgs := $args
+
+	// print "$pid.$id" $pid.$id "$periodOperation" $pid.$periodOperation "$periodOperationArgs" $pid.$periodOperationArgs
+}
+
+
+@global $periodOperation
+// [id, "op"]
+whenever ($periodOperation)
+{
+	@local $args
+	$args := [ $periodOperation[$i] | $i in 2 .. (@size($periodOperation)) ]
+	// print "call operation " ($periodOperation[1]) ($periodOperation[0]) $args
+	if ($periodOperation[0] <= 0)
+	{ 
+		forall $id, $pid in $dico_names 
+		{ 
+			::changePeriodOperation($periodOperation[1], $pid, $args)
+		// 	:: @string2proc($periodOperation[1])($pid, $args) 
+		// 	// let $pid.$periodOperation := @concat([$periodOperation[1]], $args)
+		// 	// stocke l'operation et les arguments localement pour chaque loop
+		// 	let $pid.$periodOperation := $periodOperation[1]
+		// 	let $pid.$periodOperationArgs := $args
+		}
+	}
+	else
+	{ 
+		@local $pid
+		let $pid := $dico_names($periodOperation[0])
+		if ($pid) 
+		{ 
+			::changePeriodOperation($periodOperation[1], $pid, $args)
+			// :: @string2proc($periodOperation[1])($pid, $args) 
+			// // stocke l'operation et les arguments localement pour chaque loop
+			// let $pid.$periodOperation := $periodOperation[1]
+			// let $pid.$periodOperationArgs := $args
+		}
+	}
+}
+
+
+@global $getRatioPeriod
+whenever ($getRatioPeriod)
+{
+	ratioPeriod clear all
+	forall $id, $pid in $dico_names 
+	{ 
+		if ($pid.$polymatrix != "none") 
+		{
+			ratioPeriod ($pid.$id) ($pid.$denominator) ($pid.$numerator) ($pid.$periodInitiale) ($pid.$velMax)
+		}
+	} 
+}
+
+
+@global $getAll
+
+@fun_def @returnArray($t)
+{
+	return (@empty($t) ? ("") : $t)
+}
+
+
+whenever ($getAll)
+{
+	// $polymatrix
+	forall $id, $pid in $dico_names 
+	{
+		if ($pid.$polymatrix != "none")
+		{
+			allPreset "polymatrix" $pid.$polymatrix
+		}
+	}
+			
+	// polyplay
+	forall $id, $pid in $dico_names 
+	{
+		if ($pid.$polymatrix != "none")
+		{
+			allPreset "polyplay" $pid.$id $pid.$active
+		}
+	}
+
+	// playerEngine
+	@local $pitchUnique, $velUnique, $transUnique, $durUnique, $panUnique, $chanUnique, $divUnique, $ghostUnique, $periodUnique
+	@local $pitchFunc, $velFunc, $transFunc, $durFunc, $panFunc, $chanFunc, $divFunc, $ghostFunc, $periodFunc
+	@local $pitchArgs, $velArgs, $transArgs, $durArgs, $panArgs, $chanArgs, $divArgs, $ghostArgs, $periodArgs
+
+	let $pitchUnique := 	1
+	let $velUnique := 		1
+	let $transUnique := 	1
+	let $durUnique := 		1
+	let $panUnique := 		1
+	let $chanUnique := 		1
+	let $divUnique := 		1
+	let $ghostUnique := 	1
+	let $periodUnique := 	1
+
+	// Pitch
+	let $pitchFunc := 	$dico_names(1).$pid.$functionPitch
+	let $pitchArgs := 	@returnArray($dico_names(1).$pid.$paramPitch)
+	// Trans
+	let $transFunc := 	$dico_names(1).$pid.$functionTrans
+	let $transArgs := 	@returnArray($dico_names(1).$pid.$paramTrans)
+	// Vel
+	let $velFunc := 	$dico_names(1).$pid.$functionVel
+	let $velArgs := 	@returnArray($dico_names(1).$pid.$paramVel)
+	// Dur
+	let $durFunc := 	$dico_names(1).$pid.$functionDur
+	let $durArgs := 	@returnArray($dico_names(1).$pid.$paramDur)
+	// Pan
+	let $panFunc := 	$dico_names(1).$pid.$functionPan
+	let $panArgs := 	@returnArray($dico_names(1).$pid.$paramPan)
+	// Chan
+	let $chanFunc := 	$dico_names(1).$pid.$functionChan
+	let $chanArgs := 	@returnArray($dico_names(1).$pid.$paramChan)
+	// Div
+	let $divFunc := 	$dico_names(1).$pid.$functionDiv
+	let $divArgs := 	@returnArray($dico_names(1).$pid.$paramDiv)
+	// Ghost
+	let $ghostFunc := 	$dico_names(1).$pid.$functionGhost
+	let $ghostArgs := 	@returnArray($dico_names(1).$pid.$paramGhost)
+	// Period
+	let $periodFunc := 	$dico_names(1).$pid.$periodOperation
+	let $periodArgs := 	$dico_names(1).$pid.$periodOperationArgs
+
+
+	forall $id, $pid in $dico_names 
+	{
+		if ($pid.$polymatrix != "none")
+		{
+			// Pitch
+			if (($pitchFunc != $pid.$functionPitch) || ($pitchArgs != @returnArray($pid.$paramPitch))) { let $pitchUnique := 0 }
+			// Trans
+			if (($transFunc!= $pid.$functionTrans) || ($transArgs != @returnArray($pid.$paramTrans))) { let $transUnique := 0 }
+			// Vel
+			if (($velFunc != $pid.$functionVel) || ($velArgs != @returnArray($pid.$paramVel))) { let $velUnique := 0 }
+			// Dur
+			if (($durFunc != $pid.$functionDur) || ($durArgs != @returnArray($pid.$paramDur))) { let $durUnique := 0 }
+			// Pan
+			if (($panFunc != $pid.$functionPan) || ($panArgs != @returnArray($pid.$paramPan))) { let $panUnique := 0 }
+			// Chan
+			if (($chanFunc != $pid.$functionChan) || ($chanArgs != @returnArray($pid.$paramChan))) { let $chanUnique := 0 }
+			// Div
+			if (($divFunc != $pid.$functionDiv) || ($divArgs != @returnArray($pid.$paramDiv))) { let $divUnique := 0 }
+			// Ghost
+			if (($ghostFunc != $pid.$functionGhost) || ($ghostArgs != @returnArray($pid.$paramGhost))) { let $ghostUnique := 0 }
+			// Period
+			if (($periodFunc != $pid.$periodOperation) || ($periodArgs != $pid.$periodOperationArgs)) { let $periodUnique := 0 }
+		}
+	}
+
+	if ($pitchUnique) 
+	{
+		allPreset "playerEngine" 0 "pitch" $pitchFunc $pitchArgs
+	}
+	if ($transUnique) 
+	{
+		allPreset "playerEngine" 0 "trans" $transFunc $transArgs
+	}
+	if ($velUnique) 
+	{
+		allPreset "playerEngine" 0 "vel" $velFunc $velArgs
+	}
+	if ($durUnique) 
+	{
+		allPreset "playerEngine" 0 "dur" $durFunc $durArgs
+	}
+	if ($panUnique) 
+	{
+		allPreset "playerEngine" 0 "pan" $panFunc $panArgs
+	}
+	if ($chanUnique) 
+	{
+		allPreset "playerEngine" 0 "chan" $chanFunc $chanArgs
+	}
+	if ($divUnique) 
+	{
+		allPreset "playerEngine" 0 "div" $divFunc $divArgs
+	}
+	if ($ghostUnique) 
+	{
+		allPreset "playerEngine" 0 "ghost" $ghostFunc $ghostArgs
+	}
+	if ($periodUnique)
+	{
+		allPreset "periodOperation" 0 $periodFunc $periodArgs
+	}
+
+	forall $id, $pid in $dico_names 
+	{
+		if ($pid.$polymatrix != "none")
+		{
+			if (!$pitchUnique) 
+			{
+				allPreset "playerEngine" $pid.$id "pitch" 	$pid.$functionPitch @returnArray($pid.$paramPitch)
+			}
+			if (!$transUnique) 
+			{
+				allPreset "playerEngine" $pid.$id "trans" 	$pid.$functionTrans @returnArray($pid.$paramTrans)
+			}
+			if (!$velUnique) 
+			{
+				allPreset "playerEngine" $pid.$id "vel" 	$pid.$functionVel 	@returnArray($pid.$paramVel)
+			}
+			if (!$durUnique) 
+			{
+				allPreset "playerEngine" $pid.$id "dur" 	$pid.$functionDur 	@returnArray($pid.$paramDur)
+			}
+			if (!$panUnique) 
+			{
+				allPreset "playerEngine" $pid.$id "pan" 	$pid.$functionPan 	@returnArray($pid.$paramPan)
+			}
+			if (!$chanUnique) 
+			{
+				allPreset "playerEngine" $pid.$id "chan" 	$pid.$functionChan 	@returnArray($pid.$paramChan)
+			}
+			if (!$divUnique) 
+			{
+				allPreset "playerEngine" $pid.$id "div" 	$pid.$functionDiv 	@returnArray($pid.$paramDiv)
+			}
+			if (!$ghostUnique) 
+			{
+				allPreset "playerEngine" $pid.$id "ghost" 	$pid.$functionGhost @returnArray($pid.$paramGhost)
+			}
+			if (!$periodUnique)
+			{
+				// periodOperation
+				allPreset "periodOperation" $pid.$id $pid.$periodOperation $pid.$periodOperationArgs
+			}
+		}
+	}
+	// global
+	allPreset "metroModeSignal" $metroModeSignal
+	allPreset "keepOriginalPitch" $keepOriginalPitch
+	allPreset "nb_pulses" $nb_pulses
+	allPreset "tempo" $RT_TEMPO
+	allPreset "barResolution" $barResolution
+	allPreset "transpMode" $transpMode
+	allPreset "globalTransPulse" $globalTransPulse
+	allPreset "globalTransPatternInterval" $globalTransPatternInterval
+	allPreset "globalTransPatternID" $globalTransPatternID
+	allPreset "gains" $gains
+}
+
+
+// ======================================================================
+// === Exemples =========================================================
+
+
+forall $i in $MAX_PLAYERS
+{  
+	let _ := @create_player(($i + 1), 1000) 
+}
+
+// 10 antescofo::killall
+

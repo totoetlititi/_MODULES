@@ -95,7 +95,7 @@
 					"prototypename" : "onoff",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "AutoOff[1]",
+							"parameter_longname" : "AutoOff",
 							"parameter_shortname" : "AutoOff",
 							"parameter_type" : 2,
 							"parameter_mmax" : 1.0,
@@ -1015,7 +1015,7 @@
 					"patching_rect" : [ 1326.5, 531.5, 36.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "PRESET[7]",
+							"parameter_longname" : "PRESET",
 							"parameter_shortname" : "PRESET",
 							"parameter_type" : 1,
 							"parameter_unitstyle" : 0,
@@ -1071,7 +1071,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 1316.5, 3.0, 103.0, 27.0 ],
 					"style" : "",
-					"text" : "PRTMIANA"
+					"text" : "#1"
 				}
 
 			}
@@ -1086,7 +1086,7 @@
 					"bgfillcolor_type" : "color",
 					"fontsize" : 12.0,
 					"id" : "obj-236",
-					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "store", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export", ",", "<separator>", ",", "(Recall)", ",", "(undefined)" ],
+					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "store", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export", ",", "<separator>", ",", "(Recall)", ",", "(undefined)", ",", "Default" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1152,6 +1152,7 @@
 					"prototypename" : "M4L.black",
 					"rounded" : 12.0,
 					"style" : "",
+					"text" : "Default",
 					"textcolor" : [ 0.909804, 0.909804, 0.909804, 1.0 ]
 				}
 
@@ -1210,7 +1211,7 @@
 					"patching_rect" : [ 1224.0, 469.5, 92.5, 69.0 ],
 					"pattrstorage" : "IanaToAddPreset",
 					"presentation" : 1,
-					"presentation_rect" : [ 1318.5, 67.0, 92.5, 69.0 ],
+					"presentation_rect" : [ 1320.5, 70.0, 92.5, 69.0 ],
 					"prototypename" : "M4L.H",
 					"stored1" : [ 0.494118, 0.556863, 0.607843, 1.0 ],
 					"style" : "",
@@ -2044,7 +2045,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 308.325012, 742.0, 118.0, 31.0 ],
+					"patching_rect" : [ 308.325012, 742.0, 102.0, 31.0 ],
 					"style" : "",
 					"text" : "set #1.buffer~, bang"
 				}
@@ -2663,7 +2664,7 @@
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
 									"id" : "obj-268",
-									"linecount" : 3,
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
@@ -2941,7 +2942,6 @@
 					"fontsize" : 10.0,
 					"id" : "obj-331",
 					"keymode" : 1,
-					"linecount" : 2,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -2949,7 +2949,6 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 308.325012, 791.0, 82.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
 					"presentation_rect" : [ 761.5, 80.75, 87.0, 16.0 ],
 					"prototypename" : "M4L.white",
 					"rounded" : 0.0,
@@ -2964,7 +2963,7 @@
 					}
 ,
 					"style" : "",
-					"text" : "PRTMIANA.buffer~",
+					"text" : "#1.buffer~",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"varname" : "ArpegeBufSet"
 				}
@@ -4019,7 +4018,6 @@
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
 									"id" : "obj-170",
-									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -4948,7 +4946,6 @@
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
 									"id" : "obj-177",
-									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
@@ -5148,7 +5145,7 @@
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
 									"id" : "obj-121",
-									"linecount" : 3,
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -5600,7 +5597,7 @@
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
 									"id" : "obj-53",
-									"linecount" : 4,
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -5851,7 +5848,6 @@
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
 									"id" : "obj-23",
-									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
@@ -5867,7 +5863,6 @@
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
 									"id" : "obj-22",
-									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
@@ -5883,7 +5878,6 @@
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
 									"id" : "obj-21",
-									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
@@ -5899,7 +5893,6 @@
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
 									"id" : "obj-20",
-									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
@@ -5946,7 +5939,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 74.0, 20.0, 25.0, 25.0 ],
 									"style" : ""
 								}
@@ -6312,7 +6305,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 28.5, 20.0, 25.0, 25.0 ],
 									"style" : ""
 								}
@@ -10164,7 +10157,7 @@
 						"ArpegeBasePitch" : [ 60.0 ],
 						"ArpegeBuf" : [ "<none>" ],
 						"ArpegeBufReplace" : [ "<none>" ],
-						"ArpegeBufSet" : [ "PRTMIANA.buffer~" ],
+						"ArpegeBufSet" : [ "#1.buffer~" ],
 						"ArpegeD" : [ 0.0 ],
 						"ArpegeDir" : [ 1.0 ],
 						"ArpegeDirRand" : [ 0.0 ],
@@ -10220,7 +10213,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u376007300"
+					"varname" : "u032028343"
 				}
 
 			}
@@ -11115,7 +11108,6 @@
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
 									"id" : "obj-150",
-									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -13803,7 +13795,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 97.0, 26.0, 18.0, 18.0 ],
 					"style" : ""
 				}
@@ -13816,7 +13808,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 65.0, 26.0, 18.0, 18.0 ],
 					"style" : ""
 				}
@@ -14227,7 +14219,6 @@
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
 									"id" : "obj-150",
-									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -18690,7 +18681,130 @@
 				}
 
 			}
- ]
+ ],
+		"parameters" : 		{
+			"obj-286" : [ "ArpegeBuf", "ArpegeBuf", 0 ],
+			"obj-195" : [ "ArpegeDirRand", "ArpegeDirRand", 0 ],
+			"obj-198" : [ "ArpegeNbNotes", "ArpegeNbNotes", 0 ],
+			"obj-194" : [ "ArpegeTranspMode", "ArpegeTranspMode", 0 ],
+			"obj-232" : [ "Error", "Error", 0 ],
+			"obj-44" : [ "HearingThreshold", "HearingThreshold", 0 ],
+			"obj-19" : [ "MaxPeaks", "MaxPeaks", 0 ],
+			"obj-165" : [ "Outgain", "Outgain", 0 ],
+			"obj-41" : [ "Shift", "Shift", 0 ],
+			"obj-26" : [ "Width", "Width", 0 ],
+			"obj-255" : [ "ArpegeBufReplace", "ArpegeBufReplace", 0 ],
+			"obj-226" : [ "ArpegeEnv", "ArpegeEnv", 0 ],
+			"obj-181" : [ "ArpegePower", "ArpegePower", 0 ],
+			"obj-155" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-159" : [ "AutoOff", "AutoOff", 0 ],
+			"obj-3" : [ "FFTSize", "FFTSize", 0 ],
+			"obj-123" : [ "InputChannels", "InputChannels", 0 ],
+			"obj-125" : [ "PRESET", "PRESET", 0 ],
+			"obj-188" : [ "MetroValues", "MetroValues", 0 ],
+			"obj-50" : [ "Rate", "Rate", 0 ],
+			"obj-74" : [ "SpeedFactor", "SpeedFactor", 0 ],
+			"obj-7" : [ "WindowType", "WindowType", 0 ],
+			"obj-103" : [ "AmpSmooth", "AmpSmooth", 0 ],
+			"obj-331" : [ "ArpegeBufSet", "ArpegeBufSet", 0 ],
+			"obj-199" : [ "ArpegeInput", "ArpegeInput", 0 ],
+			"obj-224" : [ "ArpegeR", "ArpegeR", 0 ],
+			"obj-31" : [ "Content", "Content", 0 ],
+			"obj-152" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-171" : [ "Fiddle", "Fiddle", 0 ],
+			"obj-34" : [ "Output", "Output", 0 ],
+			"obj-18" : [ "LastToSearch", "LastToSearch", 0 ],
+			"obj-49" : [ "Metronome", "Metronome", 0 ],
+			"obj-27" : [ "RefLevel", "RefLevel", 0 ],
+			"obj-81" : [ "Sync", "Sync", 0 ],
+			"obj-148" : [ "synthFader", "synthFader", 0 ],
+			"obj-296" : [ "ArpegeA", "ArpegeA", 0 ],
+			"obj-278" : [ "ArpegeD", "ArpegeD", 0 ],
+			"obj-184" : [ "ArpegeMetroRand", "ArpegeMetroRand", 0 ],
+			"obj-274" : [ "ArpegeS", "ArpegeS", 0 ],
+			"obj-37" : [ "Level", "Level", 0 ],
+			"obj-9" : [ "Downsampling", "Downsampling", 0 ],
+			"obj-157" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-16" : [ "FirstToSearch", "FirstToSearch", 0 ],
+			"obj-213" : [ "Manual", "Manual", 0 ],
+			"obj-22" : [ "Monitor", "Monitor", 0 ],
+			"obj-47" : [ "Send", "Send", 0 ],
+			"obj-23" : [ "Threshold", "Threshold", 0 ],
+			"obj-201" : [ "ArpegeBasePitch", "ArpegeBasePitch", 0 ],
+			"obj-196" : [ "ArpegeDir", "ArpegeDir", 0 ],
+			"obj-187" : [ "ArpegeMetroSpeed", "ArpegeMetroSpeed", 0 ],
+			"obj-182" : [ "ArpegeSampleSize", "ArpegeSampleSize", 0 ],
+			"obj-156" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-10" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-99" : [ "FreqSmooth", "FreqSmooth", 0 ],
+			"obj-36" : [ "MaxPartials", "MaxPartials", 0 ],
+			"obj-30" : [ "Ordering", "Ordering", 0 ],
+			"obj-66" : [ "SendData", "SendData", 0 ],
+			"obj-39" : [ "Transpose", "Transpose", 0 ]
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "M4L.bal2~.maxpat",
+				"bootpath" : "~/Documents/PATCH/Maresz/ConcertoHarpe/_PATCH/AntescofoPolyrythmes/AntPolyRyt-Score/AntePolytRyt/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "IanaToAddPreset.json",
+				"bootpath" : "~/Documents/PATCH/Maresz/ConcertoHarpe/_PATCH/AntescofoPolyrythmes/AntPolyRyt-Score/AntePolytRyt/data",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.samplingHarm.maxpat",
+				"bootpath" : "~/Documents/PATCH/Maresz/ConcertoHarpe/_PATCH/AntescofoPolyrythmes/AntPolyRyt-Score/AntePolytRyt/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.samplingGizmo1.maxpat",
+				"bootpath" : "~/Documents/PATCH/Maresz/ConcertoHarpe/_PATCH/AntescofoPolyrythmes/AntPolyRyt-Score/AntePolytRyt/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "gizmo.2.2.pfft.maxpat",
+				"bootpath" : "~/Documents/PATCH/Maresz/ConcertoHarpe/_PATCH/AntescofoPolyrythmes/AntPolyRyt-Score/AntePolytRyt/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.random.maxpat",
+				"bootpath" : "~/Documents/PATCH/Maresz/ConcertoHarpe/_PATCH/AntescofoPolyrythmes/AntPolyRyt-Score/AntePolytRyt/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.m.preset.maxpat",
+				"bootpath" : "~/Documents/PATCH/Maresz/ConcertoHarpe/_PATCH/AntescofoPolyrythmes/AntPolyRyt-Score/AntePolytRyt/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.m.fgraph1.maxpat",
+				"bootpath" : "~/Documents/PATCH/Maresz/ConcertoHarpe/_PATCH/AntescofoPolyrythmes/AntPolyRyt-Score/AntePolytRyt/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "iana~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "fiddle~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "samplor~.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
