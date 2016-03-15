@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 565.0, 44.0, 692.0, 415.0 ],
+		"rect" : [ 564.0, 44.0, 692.0, 415.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -297,14 +297,14 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-13",
-					"linecount" : 5,
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 651.0, 577.5, 44.0, 64.0 ],
+					"patching_rect" : [ 651.0, 577.5, 44.0, 53.0 ],
 					"style" : "",
-					"text" : "startfromlabel ms88_Stretch-end"
+					"text" : "startfromlabel ms18__Guiro"
 				}
 
 			}
@@ -799,6 +799,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-4",
@@ -1585,9 +1586,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 753.5, 84.5, 100.0, 20.0 ],
+					"patching_rect" : [ 753.5, 84.5, 105.0, 20.0 ],
 					"style" : "",
-					"text" : "print print"
+					"text" : "print ANTESCSOFO"
 				}
 
 			}
@@ -2342,7 +2343,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 46.5, 113.0, 413.0, 22.0 ],
 					"style" : "",
-					"text" : "Next : ms152___Koala1",
+					"text" : "Next : THEEND",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -3381,12 +3382,13 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-2",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 419.5, 299.0, 82.0, 20.0 ],
+					"patching_rect" : [ 419.5, 299.0, 82.0, 31.0 ],
 					"style" : "",
-					"text" : "print cue_label"
+					"text" : "print CUE_LABEL:::"
 				}
 
 			}
@@ -3592,7 +3594,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 9.0, 26.0, 456.0, 42.0 ],
 					"style" : "",
-					"text" : "wait.....",
+					"text" : "ms25__Detuning",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
