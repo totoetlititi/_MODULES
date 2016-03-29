@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 121.0, 33.0, 692.0, 415.0 ],
+		"rect" : [ 137.0, 45.0, 692.0, 415.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -401,7 +401,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 651.0, 630.5, 44.0, 53.0 ],
 					"style" : "",
-					"text" : "startfromlabel measure1"
+					"text" : "startfromlabel measure37"
 				}
 
 			}
@@ -5196,15 +5196,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-85", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-88", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-94", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-88", 0 ]
