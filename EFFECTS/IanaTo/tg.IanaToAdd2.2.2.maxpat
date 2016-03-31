@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 2,
 			"revision" : 0,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 90.0, 95.0, 1421.0, 171.0 ],
+		"rect" : [ 138.0, 67.0, 1422.0, 173.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -1058,7 +1058,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 1316.5, 4.0, 103.0, 27.0 ],
 					"style" : "",
-					"text" : "1iana"
+					"text" : "#1"
 				}
 
 			}
@@ -2352,7 +2352,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 0,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -2730,7 +2730,7 @@
 					}
 ,
 					"style" : "",
-					"text" : "1iana.buffer~",
+					"text" : "#1.buffer~",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "ArpegeBufSet"
 				}
@@ -2751,11 +2751,11 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 0,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 25.0, 69.0, 640.0, 480.0 ],
+						"rect" : [ 34.0, 78.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 10.0,
@@ -2847,7 +2847,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 319.0, 241.167236, 100.0, 18.0 ],
+									"patching_rect" : [ 319.0, 241.167236, 100.0, 20.0 ],
 									"style" : "",
 									"text" : "prepend set"
 								}
@@ -2876,7 +2876,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 25.0, 152.0, 75.0, 18.0 ],
+									"patching_rect" : [ 25.0, 152.0, 75.0, 20.0 ],
 									"style" : "",
 									"text" : "r #0.INIT"
 								}
@@ -2889,7 +2889,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 112.0, 212.667236, 20.0, 20.0 ],
+									"patching_rect" : [ 112.0, 234.667236, 20.0, 20.0 ],
 									"style" : ""
 								}
 
@@ -2903,7 +2903,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 190.333374, 241.167236, 88.0, 16.0 ],
+									"patching_rect" : [ 190.333374, 241.167236, 88.0, 20.0 ],
 									"style" : "",
 									"text" : "replace $1 0 -1 2"
 								}
@@ -2918,9 +2918,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 112.0, 241.167236, 63.0, 16.0 ],
+									"patching_rect" : [ 112.0, 263.167236, 63.0, 20.0 ],
 									"style" : "",
-									"text" : "set <none>"
+									"text" : "set NONE"
 								}
 
 							}
@@ -2929,13 +2929,14 @@
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
 									"id" : "obj-266",
+									"linecount" : 2,
 									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 112.0, 189.167236, 97.333374, 18.0 ],
+									"numinlets" : 3,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "" ],
+									"patching_rect" : [ 112.0, 189.167236, 97.333374, 31.0 ],
 									"style" : "",
-									"text" : "route <none>"
+									"text" : "route <none> NONE"
 								}
 
 							}
@@ -2948,7 +2949,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 112.0, 162.5, 78.333374, 18.0 ],
+									"patching_rect" : [ 112.0, 162.5, 78.333374, 20.0 ],
 									"style" : "",
 									"text" : "zl reg"
 								}
@@ -2963,9 +2964,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 230.666626, 128.0, 50.0, 16.0 ],
+									"patching_rect" : [ 230.666626, 128.0, 50.0, 20.0 ],
 									"style" : "",
-									"text" : "<none>"
+									"text" : "NONE"
 								}
 
 							}
@@ -2978,7 +2979,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "bang", "", "bang" ],
-									"patching_rect" : [ 112.0, 100.0, 137.666626, 18.0 ],
+									"patching_rect" : [ 112.0, 100.0, 137.666626, 20.0 ],
 									"style" : "",
 									"text" : "t b l b"
 								}
@@ -2993,7 +2994,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 171.333374, 128.0, 56.0, 18.0 ],
+									"patching_rect" : [ 171.333374, 128.0, 56.0, 20.0 ],
 									"style" : "",
 									"text" : "route text"
 								}
@@ -3123,6 +3124,15 @@
 									"destination" : [ "obj-271", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"source" : [ "obj-266", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-273", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
 									"source" : [ "obj-266", 1 ]
 								}
 
@@ -3241,7 +3251,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 0,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -3295,7 +3305,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 178.833374, 306.167236, 71.0, 18.0 ],
+									"patching_rect" : [ 178.833374, 341.167236, 71.0, 18.0 ],
 									"style" : "",
 									"text" : "to object"
 								}
@@ -3309,7 +3319,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 101.833374, 306.167236, 71.0, 18.0 ],
+									"patching_rect" : [ 101.833374, 341.167236, 71.0, 18.0 ],
 									"style" : "",
 									"text" : "to textedit"
 								}
@@ -3334,13 +3344,14 @@
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
 									"id" : "obj-1",
+									"linecount" : 2,
 									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 50.0, 198.5, 78.333374, 20.0 ],
+									"numinlets" : 3,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "" ],
+									"patching_rect" : [ 50.0, 198.5, 78.333374, 31.0 ],
 									"style" : "",
-									"text" : "route <none>"
+									"text" : "route <none> NONE"
 								}
 
 							}
@@ -3353,9 +3364,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 109.333374, 253.167236, 63.0, 20.0 ],
+									"patching_rect" : [ 109.333374, 288.167236, 63.0, 20.0 ],
 									"style" : "",
-									"text" : "set <none>"
+									"text" : "set NONE"
 								}
 
 							}
@@ -3368,7 +3379,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 109.333374, 227.167236, 97.333374, 20.0 ],
+									"patching_rect" : [ 109.333374, 262.167236, 97.333374, 20.0 ],
 									"style" : "",
 									"text" : "t b l"
 								}
@@ -3400,7 +3411,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 168.666626, 128.0, 50.0, 20.0 ],
 									"style" : "",
-									"text" : "<none>"
+									"text" : "NONE"
 								}
 
 							}
@@ -3454,7 +3465,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 109.333374, 281.167236, 25.0, 25.0 ],
+									"patching_rect" : [ 109.333374, 316.167236, 25.0, 25.0 ],
 									"style" : ""
 								}
 
@@ -3466,7 +3477,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 187.666748, 281.167236, 25.0, 25.0 ],
+									"patching_rect" : [ 187.666748, 316.167236, 25.0, 25.0 ],
 									"style" : ""
 								}
 
@@ -3477,7 +3488,7 @@
 									"destination" : [ "obj-279", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"source" : [ "obj-1", 1 ]
+									"source" : [ "obj-1", 2 ]
 								}
 
 							}
@@ -3610,7 +3621,7 @@
 							"parameter_shortname" : "ArpegeBuf",
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ "<none>" ],
+							"parameter_initial" : [ "NONE" ],
 							"parameter_invisible" : 1
 						}
 
@@ -3653,7 +3664,7 @@
 					}
 ,
 					"style" : "",
-					"text" : "<none>",
+					"text" : "NONE",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "ArpegeBufReplace"
 				}
@@ -3748,7 +3759,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 0,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -3789,7 +3800,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 938.0, 637.0, 50.0, 42.0 ],
 									"style" : "",
-									"text" : "Set 1iana.buffer~"
+									"text" : "Set #1.buffer~"
 								}
 
 							}
@@ -3823,14 +3834,14 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-31",
-									"linecount" : 3,
+									"linecount" : 8,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 63.0, 81.0, 28.0, 42.0 ],
 									"style" : "",
-									"text" : "Power 1"
+									"text" : "TranspMode text samplor"
 								}
 
 							}
@@ -6490,7 +6501,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 72.0, 419.0, 25.0, 25.0 ],
 									"style" : ""
 								}
@@ -6517,7 +6528,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 26.5, 419.0, 25.0, 25.0 ],
 									"style" : ""
 								}
@@ -6553,7 +6564,7 @@
 											"major" : 7,
 											"minor" : 2,
 											"revision" : 0,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -9999,7 +10010,7 @@
 , 							{
 								"name" : "jbb",
 								"default" : 								{
-									"fontname" : [ "Arial" ],
+									"fontsize" : [ 9.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -10009,7 +10020,7 @@
 										"proportion" : 0.39
 									}
 ,
-									"fontsize" : [ 9.0 ]
+									"fontname" : [ "Arial" ]
 								}
 ,
 								"parentstyle" : "",
@@ -10146,7 +10157,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 0,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -10682,8 +10693,8 @@
 						"ArpegeA" : [ 10.0 ],
 						"ArpegeBasePitch" : [ 60.0 ],
 						"ArpegeBuf" : [ "<none>" ],
-						"ArpegeBufReplace" : [ "<none>" ],
-						"ArpegeBufSet" : [ "1iana.buffer~" ],
+						"ArpegeBufReplace" : [ "NONE" ],
+						"ArpegeBufSet" : [ "#1.buffer~" ],
 						"ArpegeD" : [ 0.0 ],
 						"ArpegeDir" : [ 1.0 ],
 						"ArpegeDirRand" : [ 0.0 ],
@@ -10691,7 +10702,7 @@
 						"ArpegeInput" : [ 1.0 ],
 						"ArpegeMetro" : [ "random", 100, 200, 300 ],
 						"ArpegeNbNotes" : [ "random", 5, 10, 15 ],
-						"ArpegePower" : [ 1.0 ],
+						"ArpegePower" : [ 0.0 ],
 						"ArpegeR" : [ 10.0 ],
 						"ArpegeS" : [ 100.0 ],
 						"ArpegeSampleSize" : [ "random", 100, 200, 300 ],
@@ -10702,7 +10713,7 @@
 						"Dry/wet" : [ 100.0 ],
 						"Error" : [ 0.0 ],
 						"FFTSize" : [ 4.0 ],
-						"Fiddle" : [ 1.0 ],
+						"Fiddle" : [ 0.0 ],
 						"FilterFreq" : [ 1000.0 ],
 						"FilterGain" : [ 0.0 ],
 						"FilterMode" : [ 5.0 ],
@@ -10719,9 +10730,9 @@
 						"Metronome" : [ 0.0 ],
 						"Monitor" : [ 0.0 ],
 						"Ordering" : [ 0.0 ],
-						"Outgain" : [ -0.559305 ],
+						"Outgain" : [ -127.0 ],
 						"Output" : [ 0.0 ],
-						"Rate" : [ 300.0 ],
+						"Rate" : [ 60.0 ],
 						"RefLevel" : [ 90.0 ],
 						"Send" : [ "nowhere" ],
 						"SendData" : [ 0.0 ],
@@ -10737,7 +10748,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u898038462"
+					"varname" : "u225013941"
 				}
 
 			}
@@ -10812,7 +10823,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 0,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -11466,7 +11477,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 0,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -13298,7 +13309,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 0,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -14319,7 +14330,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 97.0, 26.0, 18.0, 18.0 ],
 					"style" : ""
 				}
@@ -14332,7 +14343,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 65.0, 26.0, 18.0, 18.0 ],
 					"style" : ""
 				}
@@ -14461,7 +14472,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 0,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -19319,6 +19330,127 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-155" : [ "FilterGain[55]", "FilterGain", 0 ],
+			"obj-286" : [ "ArpegeBuf", "ArpegeBuf", 0 ],
+			"obj-195" : [ "ArpegeDirRand", "ArpegeDirRand", 0 ],
+			"obj-34" : [ "Output", "Output", 0 ],
+			"obj-161" : [ "ArpegeNbNotes", "ArpegeNbNotes", 0 ],
+			"obj-274" : [ "ArpegeS", "ArpegeS", 0 ],
+			"obj-44" : [ "HearingThreshold", "HearingThreshold", 0 ],
+			"obj-19" : [ "MaxPeaks", "MaxPeaks", 0 ],
+			"obj-26" : [ "Width", "Width", 0 ],
+			"obj-125" : [ "PRESET[17]", "PRESET", 0 ],
+			"obj-103" : [ "AmpSmooth", "AmpSmooth", 0 ],
+			"obj-156" : [ "FilterFreq[70]", "FilterFreq", 0 ],
+			"obj-255" : [ "ArpegeBufReplace", "ArpegeBufReplace", 0 ],
+			"obj-226" : [ "ArpegeEnv", "ArpegeEnv", 0 ],
+			"obj-268" : [ "ArpegeSampleSize", "ArpegeSampleSize", 0 ],
+			"obj-232" : [ "Error", "Error", 0 ],
+			"obj-41" : [ "Shift[3]", "Shift", 0 ],
+			"obj-123" : [ "InputChannels", "InputChannels", 0 ],
+			"obj-50" : [ "Rate", "Rate", 0 ],
+			"obj-165" : [ "Outgain[57]", "Outgain", 0 ],
+			"obj-31" : [ "Content", "Content", 0 ],
+			"obj-74" : [ "SpeedFactor", "SpeedFactor", 0 ],
+			"obj-7" : [ "WindowType", "WindowType", 0 ],
+			"obj-296" : [ "ArpegeA", "ArpegeA", 0 ],
+			"obj-37" : [ "Level", "Level", 0 ],
+			"obj-331" : [ "ArpegeBufSet", "ArpegeBufSet", 0 ],
+			"obj-157" : [ "FilterQ[33]", "FilterQ", 0 ],
+			"obj-199" : [ "ArpegeInput", "ArpegeInput", 0 ],
+			"obj-277" : [ "ArpegeTranspMode", "ArpegeTranspMode", 0 ],
+			"obj-23" : [ "Threshold[8]", "Threshold", 0 ],
+			"obj-3" : [ "FFTSize", "FFTSize", 0 ],
+			"obj-18" : [ "LastToSearch", "LastToSearch", 0 ],
+			"obj-49" : [ "Metronome", "Metronome", 0 ],
+			"obj-27" : [ "RefLevel", "RefLevel", 0 ],
+			"obj-81" : [ "Sync", "Sync", 0 ],
+			"obj-148" : [ "synthFader", "synthFader", 0 ],
+			"obj-10" : [ "Dry/wet[27]", "Dry/wet", 0 ],
+			"obj-278" : [ "ArpegeD", "ArpegeD", 0 ],
+			"obj-181" : [ "ArpegePower", "ArpegePower", 0 ],
+			"obj-159" : [ "AutoOff", "AutoOff", 0 ],
+			"obj-171" : [ "Fiddle", "Fiddle", 0 ],
+			"obj-16" : [ "FirstToSearch", "FirstToSearch", 0 ],
+			"obj-213" : [ "Manual", "Manual", 0 ],
+			"obj-22" : [ "Monitor", "Monitor", 0 ],
+			"obj-47" : [ "Send", "Send", 0 ],
+			"obj-188" : [ "ArpegeMetro", "ArpegeMetro", 0 ],
+			"obj-201" : [ "ArpegeBasePitch", "ArpegeBasePitch", 0 ],
+			"obj-152" : [ "FilterMode[54]", "FilterMode", 0 ],
+			"obj-196" : [ "ArpegeDir", "ArpegeDir", 0 ],
+			"obj-224" : [ "ArpegeR", "ArpegeR", 0 ],
+			"obj-9" : [ "Downsampling", "Downsampling", 0 ],
+			"obj-99" : [ "FreqSmooth", "FreqSmooth", 0 ],
+			"obj-36" : [ "MaxPartials", "MaxPartials", 0 ],
+			"obj-30" : [ "Ordering", "Ordering", 0 ],
+			"obj-66" : [ "SendData", "SendData", 0 ],
+			"obj-39" : [ "Transpose", "Transpose", 0 ]
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "M4L.bal2~.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Tools resources",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.samplingHarm.maxpat",
+				"bootpath" : "~/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/_Samplor",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.samplingGizmo1.maxpat",
+				"bootpath" : "~/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/_Samplor",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "gizmo.2.2.pfft.maxpat",
+				"bootpath" : "~/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/IanaTo",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.samplingPitchshift.maxpat",
+				"bootpath" : "~/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/_Samplor",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.random.maxpat",
+				"bootpath" : "~/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.m.preset.maxpat",
+				"bootpath" : "~/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.m.fgraph1.maxpat",
+				"bootpath" : "~/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "iana~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "fiddle~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "samplor~.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -19340,7 +19472,7 @@
 , 			{
 				"name" : "jbb",
 				"default" : 				{
-					"fontname" : [ "Arial" ],
+					"fontsize" : [ 9.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -19350,7 +19482,7 @@
 						"proportion" : 0.39
 					}
 ,
-					"fontsize" : [ 9.0 ]
+					"fontname" : [ "Arial" ]
 				}
 ,
 				"parentstyle" : "",
