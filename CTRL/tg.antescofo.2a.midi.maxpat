@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 313.0, 45.0, 685.0, 415.0 ],
+		"rect" : [ 159.0, 45.0, 685.0, 415.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -39,12 +39,40 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-100",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 401.5, 172.0, 100.0, 20.0 ],
+					"style" : "",
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "incomingosc",
+					"id" : "obj-96",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 401.5, 199.0, 159.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 222.5, 273.0, 126.5, 20.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-87",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 11.0, 235.0, 55.0, 20.0 ],
+					"patching_rect" : [ 11.0, 225.0, 55.0, 20.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -53,12 +81,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-58",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 11.0, 264.0, 50.0, 31.0 ],
+					"patching_rect" : [ 11.0, 264.0, 88.0, 20.0 ],
 					"style" : "",
 					"text" : "ascograph open"
 				}
@@ -1188,7 +1215,7 @@
 								"box" : 								{
 									"allowdrag" : 0,
 									"id" : "obj-15",
-									"items" : [ "test_prtm_accel_____BIG_CHORDS", ",", "measure2", ",", "measure3", ",", "measure4", ",", "measure5", ",", "ms2___Prtm", ",", "ms8____ChordsSuivi___Stretch1", ",", "ms9", ",", "ms_10", ",", "ms11", ",", "ms12", ",", "ms13", ",", "ms14", ",", "ms15", ",", "ms16", ",", "ms17___Zebayce", ",", "ms18", ",", "ms19", ",", "ms20", ",", "ms21", ",", "ms22", ",", "ms23", ",", "ms24", ",", "ms25", ",", "ms26___Koala2", ",", "ms27", ",", "ms28___MetalsSounds", ",", "ms29", ",", "ms30_Stretch-End", ",", "ms32___MetalSound", ",", "ms34___Zebayce", ",", "ms38____ELASTIK", ",", "ms43____REC_BUFFER", ",", "ms45____STOP__REC_BUFFER", ",", "ms55____READ__REC_BUFFER", ",", "ms58____READ__REC_BUFFER", ",", "ms66___Stretch1___Gong", ",", "ms67", ",", "ms68", ",", "ms69", ",", "ms70", ",", "ms71", ",", "ms72", ",", "ms73", ",", "ms74", ",", "ms75", ",", "ms76", ",", "ms77", ",", "ms78", ",", "ms79____Stretch1-2", ",", "ms80", ",", "ms81____Stretch2-End", ",", "ms82", ",", "ms83___VC_Munger", ",", "ms84", ",", "ms85", ",", "ms86", ",", "ms87", ",", "ms88_Stretch-end", ",", "ms96___Piano-Fshift", ",", "ms97", ",", "ms100", ",", "ms106___Stretch1", ",", "ms107", ",", "ms108", ",", "ms109", ",", "ms110", ",", "ms111", ",", "ms112___Zebayce_StopMunger", ",", "ms113", ",", "ms117___Soundfiles___StretchEnd", ",", "ms120___Samp", ",", "ms121___Samp", ",", "ms126_fin-suivi", ",", "ms127___Samp", ",", "ms127-3___Samp", ",", "ms130___Samp", ",", "ms131-4___Samp", ",", "ms141", ",", "ms141-4___Samp", ",", "ms142-4___Samp", ",", "ms143", ",", "ms152___Koala1", ",", "ms159", ",", "ms160", ",", "ms161___Stretch1", ",", "ms162", ",", "ms163", ",", "ms164", ",", "ms165", ",", "ms166", ",", "ms167", ",", "ms168", ",", "ms169", ",", "ms170", ",", "ms171", ",", "ms172", ",", "ms173", ",", "ms174", ",", "ms175", ",", "ms176", ",", "ms177", ",", "ms178", ",", "ms179", ",", "ms180", ",", "ms181", ",", "ms182", ",", "ms183", ",", "ms184", ",", "ms185", ",", "ms186", ",", "ms187", ",", "ms188-3-360", ",", "ms189___Stretch1-End", ",", "###___ms190____POLYCHORDS", ",", "ms197", ",", "ms200", ",", "ms201", ",", "ms202", ",", "ms202_3___Stretch1", ",", "ms203", ",", "ms204", ",", "ms205", ",", "ms206", ",", "ms207", ",", "ms208", ",", "ms209", ",", "ms210", ",", "ms211", ",", "ms212", ",", "ms213", ",", "ms214", ",", "ms215", ",", "ms216", ",", "ms217", ",", "ms218", ",", "ms219", ",", "ms220", ",", "ms221", ",", "ms222", ",", "ms223", ",", "ms224", ",", "ms225", ",", "ms226", ",", "ms227", ",", "ms228", ",", "ms229", ",", "ms230", ",", "ms231", ",", "ms234_fin-suivi", ",", "ms238", ",", "ms242", ",", "ms246", ",", "ms250", ",", "ms255____recul_Ondea___PB", ",", "ms258", ",", "ms267", ",", "ms268_____HALLU__DepartOk", ",", "ms280", ",", "ms280-3", ",", "ms287", ",", "ms294-4", ",", "ms303-2", ",", "ms309", ",", "ms315____FUSEES_1__Chromax", ",", "ms317", ",", "###___ms320____Prtm", ",", "ms321-1____Koala1", ",", "ms326-1", ",", "ms328-1", ",", "ms331-1", ",", "ms335-2", ",", "ms336-1", ",", "ms339-4", ",", "ms342-4", ",", "ms343-3", ",", "ms345-3g", ",", "ms346-3", ",", "ms346-4", ",", "ms350-4", ",", "ms351-4", ",", "ms352-4", ",", "ms353-4", ",", "ms354-4", ",", "ms355-3", ",", "ms359-2", ",", "ms361-4", ",", "ms363-4", ",", "ms365-4", ",", "ms366-4", ",", "ms367-4", ",", "ms368-4", ",", "ms369-4", ",", "ms370-4", ",", "ms377", ",", "ms392_fff", ",", "ms393____CRESCSa", ",", "ms399_4____StretchRecOn", ",", "ms400_2____StretchRecOff", ",", "ms402____FUSEES_2", ",", "ms407____CRESCSb", ",", "ms415____Chute", ",", "ms419", ",", "ms423", ",", "ms427", ",", "ms431", ",", "ms435__", ",", "ms448", ",", "ms459___MungerLow", ",", "ms463", ",", "ms466" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -1218,7 +1245,7 @@
 								"box" : 								{
 									"allowdrag" : 0,
 									"id" : "obj-163",
-									"items" : [ "test_prtm_accel_____BIG_CHORDS", ",", "measure2", ",", "measure3", ",", "measure4", ",", "measure5", ",", "ms2___Prtm", ",", "ms8____ChordsSuivi___Stretch1", ",", "ms9", ",", "ms_10", ",", "ms11", ",", "ms12", ",", "ms13", ",", "ms14", ",", "ms15", ",", "ms16", ",", "ms17___Zebayce", ",", "ms18", ",", "ms19", ",", "ms20", ",", "ms21", ",", "ms22", ",", "ms23", ",", "ms24", ",", "ms25", ",", "ms26___Koala2", ",", "ms27", ",", "ms28___MetalsSounds", ",", "ms29", ",", "ms30_Stretch-End", ",", "ms32___MetalSound", ",", "ms34___Zebayce", ",", "ms38____ELASTIK", ",", "ms43____REC_BUFFER", ",", "ms45____STOP__REC_BUFFER", ",", "ms55____READ__REC_BUFFER", ",", "ms58____READ__REC_BUFFER", ",", "ms66___Stretch1___Gong", ",", "ms67", ",", "ms68", ",", "ms69", ",", "ms70", ",", "ms71", ",", "ms72", ",", "ms73", ",", "ms74", ",", "ms75", ",", "ms76", ",", "ms77", ",", "ms78", ",", "ms79____Stretch1-2", ",", "ms80", ",", "ms81____Stretch2-End", ",", "ms82", ",", "ms83___VC_Munger", ",", "ms84", ",", "ms85", ",", "ms86", ",", "ms87", ",", "ms88_Stretch-end", ",", "ms96___Piano-Fshift", ",", "ms97", ",", "ms100", ",", "ms106___Stretch1", ",", "ms107", ",", "ms108", ",", "ms109", ",", "ms110", ",", "ms111", ",", "ms112___Zebayce_StopMunger", ",", "ms113", ",", "ms117___Soundfiles___StretchEnd", ",", "ms120___Samp", ",", "ms121___Samp", ",", "ms126_fin-suivi", ",", "ms127___Samp", ",", "ms127-3___Samp", ",", "ms130___Samp", ",", "ms131-4___Samp", ",", "ms141", ",", "ms141-4___Samp", ",", "ms142-4___Samp", ",", "ms143", ",", "ms152___Koala1", ",", "ms159", ",", "ms160", ",", "ms161___Stretch1", ",", "ms162", ",", "ms163", ",", "ms164", ",", "ms165", ",", "ms166", ",", "ms167", ",", "ms168", ",", "ms169", ",", "ms170", ",", "ms171", ",", "ms172", ",", "ms173", ",", "ms174", ",", "ms175", ",", "ms176", ",", "ms177", ",", "ms178", ",", "ms179", ",", "ms180", ",", "ms181", ",", "ms182", ",", "ms183", ",", "ms184", ",", "ms185", ",", "ms186", ",", "ms187", ",", "ms188-3-360", ",", "ms189___Stretch1-End", ",", "###___ms190____POLYCHORDS", ",", "ms197", ",", "ms200", ",", "ms201", ",", "ms202", ",", "ms202_3___Stretch1", ",", "ms203", ",", "ms204", ",", "ms205", ",", "ms206", ",", "ms207", ",", "ms208", ",", "ms209", ",", "ms210", ",", "ms211", ",", "ms212", ",", "ms213", ",", "ms214", ",", "ms215", ",", "ms216", ",", "ms217", ",", "ms218", ",", "ms219", ",", "ms220", ",", "ms221", ",", "ms222", ",", "ms223", ",", "ms224", ",", "ms225", ",", "ms226", ",", "ms227", ",", "ms228", ",", "ms229", ",", "ms230", ",", "ms231", ",", "ms234_fin-suivi", ",", "ms238", ",", "ms242", ",", "ms246", ",", "ms250", ",", "ms255____recul_Ondea___PB", ",", "ms258", ",", "ms267", ",", "ms268_____HALLU__DepartOk", ",", "ms280", ",", "ms280-3", ",", "ms287", ",", "ms294-4", ",", "ms303-2", ",", "ms309", ",", "ms315____FUSEES_1__Chromax", ",", "ms317", ",", "###___ms320____Prtm", ",", "ms321-1____Koala1", ",", "ms326-1", ",", "ms328-1", ",", "ms331-1", ",", "ms335-2", ",", "ms336-1", ",", "ms339-4", ",", "ms342-4", ",", "ms343-3", ",", "ms345-3g", ",", "ms346-3", ",", "ms346-4", ",", "ms350-4", ",", "ms351-4", ",", "ms352-4", ",", "ms353-4", ",", "ms354-4", ",", "ms355-3", ",", "ms359-2", ",", "ms361-4", ",", "ms363-4", ",", "ms365-4", ",", "ms366-4", ",", "ms367-4", ",", "ms368-4", ",", "ms369-4", ",", "ms370-4", ",", "ms377", ",", "ms392_fff", ",", "ms393____CRESCSa", ",", "ms399_4____StretchRecOn", ",", "ms400_2____StretchRecOff", ",", "ms402____FUSEES_2", ",", "ms407____CRESCSb", ",", "ms415____Chute", ",", "ms419", ",", "ms423", ",", "ms427", ",", "ms431", ",", "ms435__", ",", "ms448", ",", "ms459___MungerLow", ",", "ms463", ",", "ms466" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -1976,7 +2003,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 76.0, 43.0, 5.0, 100.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 222.5, 248.0, 242.5, 11.0 ]
+					"presentation_rect" : [ 222.5, 243.0, 242.5, 11.0 ]
 				}
 
 			}
@@ -2051,7 +2078,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1695.5, 546.0, 58.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 323.5, 204.0, 64.0, 17.0 ],
+					"presentation_rect" : [ 323.5, 201.0, 64.0, 17.0 ],
 					"style" : "",
 					"text" : "<left arrow>",
 					"textcolor" : [ 1.0, 0.5, 0.0, 1.0 ]
@@ -2069,7 +2096,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1695.5, 583.0, 64.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 237.5, 204.0, 64.0, 17.0 ],
+					"presentation_rect" : [ 237.5, 201.0, 64.0, 17.0 ],
 					"style" : "",
 					"text" : "<right arrow>",
 					"textcolor" : [ 1.0, 0.5, 0.0, 1.0 ]
@@ -2087,7 +2114,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1712.0, 636.0, 58.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 237.5, 237.0, 58.0, 17.0 ],
+					"presentation_rect" : [ 237.5, 234.0, 58.0, 17.0 ],
 					"style" : "",
 					"text" : "<up arrow>",
 					"textcolor" : [ 1.0, 0.5, 0.0, 1.0 ]
@@ -2217,7 +2244,7 @@
 				"box" : 				{
 					"allowdrag" : 0,
 					"id" : "obj-163",
-					"items" : [ "test_prtm_accel_____BIG_CHORDS", ",", "measure2", ",", "measure3", ",", "measure4", ",", "measure5", ",", "ms2___Prtm", ",", "ms8____ChordsSuivi___Stretch1", ",", "ms9", ",", "ms_10", ",", "ms11", ",", "ms12", ",", "ms13", ",", "ms14", ",", "ms15", ",", "ms16", ",", "ms17___Zebayce", ",", "ms18", ",", "ms19", ",", "ms20", ",", "ms21", ",", "ms22", ",", "ms23", ",", "ms24", ",", "ms25", ",", "ms26___Koala2", ",", "ms27", ",", "ms28___MetalsSounds", ",", "ms29", ",", "ms30_Stretch-End", ",", "ms32___MetalSound", ",", "ms34___Zebayce", ",", "ms38____ELASTIK", ",", "ms43____REC_BUFFER", ",", "ms45____STOP__REC_BUFFER", ",", "ms55____READ__REC_BUFFER", ",", "ms58____READ__REC_BUFFER", ",", "ms66___Stretch1___Gong", ",", "ms67", ",", "ms68", ",", "ms69", ",", "ms70", ",", "ms71", ",", "ms72", ",", "ms73", ",", "ms74", ",", "ms75", ",", "ms76", ",", "ms77", ",", "ms78", ",", "ms79____Stretch1-2", ",", "ms80", ",", "ms81____Stretch2-End", ",", "ms82", ",", "ms83___VC_Munger", ",", "ms84", ",", "ms85", ",", "ms86", ",", "ms87", ",", "ms88_Stretch-end", ",", "ms96___Piano-Fshift", ",", "ms97", ",", "ms100", ",", "ms106___Stretch1", ",", "ms107", ",", "ms108", ",", "ms109", ",", "ms110", ",", "ms111", ",", "ms112___Zebayce_StopMunger", ",", "ms113", ",", "ms117___Soundfiles___StretchEnd", ",", "ms120___Samp", ",", "ms121___Samp", ",", "ms126_fin-suivi", ",", "ms127___Samp", ",", "ms127-3___Samp", ",", "ms130___Samp", ",", "ms131-4___Samp", ",", "ms141", ",", "ms141-4___Samp", ",", "ms142-4___Samp", ",", "ms143", ",", "ms152___Koala1", ",", "ms159", ",", "ms160", ",", "ms161___Stretch1", ",", "ms162", ",", "ms163", ",", "ms164", ",", "ms165", ",", "ms166", ",", "ms167", ",", "ms168", ",", "ms169", ",", "ms170", ",", "ms171", ",", "ms172", ",", "ms173", ",", "ms174", ",", "ms175", ",", "ms176", ",", "ms177", ",", "ms178", ",", "ms179", ",", "ms180", ",", "ms181", ",", "ms182", ",", "ms183", ",", "ms184", ",", "ms185", ",", "ms186", ",", "ms187", ",", "ms188-3-360", ",", "ms189___Stretch1-End", ",", "###___ms190____POLYCHORDS", ",", "ms197", ",", "ms200", ",", "ms201", ",", "ms202", ",", "ms202_3___Stretch1", ",", "ms203", ",", "ms204", ",", "ms205", ",", "ms206", ",", "ms207", ",", "ms208", ",", "ms209", ",", "ms210", ",", "ms211", ",", "ms212", ",", "ms213", ",", "ms214", ",", "ms215", ",", "ms216", ",", "ms217", ",", "ms218", ",", "ms219", ",", "ms220", ",", "ms221", ",", "ms222", ",", "ms223", ",", "ms224", ",", "ms225", ",", "ms226", ",", "ms227", ",", "ms228", ",", "ms229", ",", "ms230", ",", "ms231", ",", "ms234_fin-suivi", ",", "ms238", ",", "ms242", ",", "ms246", ",", "ms250", ",", "ms255____recul_Ondea___PB", ",", "ms258", ",", "ms267", ",", "ms268_____HALLU__DepartOk", ",", "ms280", ",", "ms280-3", ",", "ms287", ",", "ms294-4", ",", "ms303-2", ",", "ms309", ",", "ms315____FUSEES_1__Chromax", ",", "ms317", ",", "###___ms320____Prtm", ",", "ms321-1____Koala1", ",", "ms326-1", ",", "ms328-1", ",", "ms331-1", ",", "ms335-2", ",", "ms336-1", ",", "ms339-4", ",", "ms342-4", ",", "ms343-3", ",", "ms345-3g", ",", "ms346-3", ",", "ms346-4", ",", "ms350-4", ",", "ms351-4", ",", "ms352-4", ",", "ms353-4", ",", "ms354-4", ",", "ms355-3", ",", "ms359-2", ",", "ms361-4", ",", "ms363-4", ",", "ms365-4", ",", "ms366-4", ",", "ms367-4", ",", "ms368-4", ",", "ms369-4", ",", "ms370-4", ",", "ms377", ",", "ms392_fff", ",", "ms393____CRESCSa", ",", "ms399_4____StretchRecOn", ",", "ms400_2____StretchRecOff", ",", "ms402____FUSEES_2", ",", "ms407____CRESCSb", ",", "ms415____Chute", ",", "ms419", ",", "ms423", ",", "ms427", ",", "ms431", ",", "ms435__", ",", "ms448", ",", "ms459___MungerLow", ",", "ms463", ",", "ms466" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2262,7 +2289,7 @@
 				"box" : 				{
 					"allowdrag" : 0,
 					"id" : "obj-153",
-					"items" : [ "test_prtm_accel_____BIG_CHORDS", ",", "measure2", ",", "measure3", ",", "measure4", ",", "measure5", ",", "ms2___Prtm", ",", "ms8____ChordsSuivi___Stretch1", ",", "ms9", ",", "ms_10", ",", "ms11", ",", "ms12", ",", "ms13", ",", "ms14", ",", "ms15", ",", "ms16", ",", "ms17___Zebayce", ",", "ms18", ",", "ms19", ",", "ms20", ",", "ms21", ",", "ms22", ",", "ms23", ",", "ms24", ",", "ms25", ",", "ms26___Koala2", ",", "ms27", ",", "ms28___MetalsSounds", ",", "ms29", ",", "ms30_Stretch-End", ",", "ms32___MetalSound", ",", "ms34___Zebayce", ",", "ms38____ELASTIK", ",", "ms43____REC_BUFFER", ",", "ms45____STOP__REC_BUFFER", ",", "ms55____READ__REC_BUFFER", ",", "ms58____READ__REC_BUFFER", ",", "ms66___Stretch1___Gong", ",", "ms67", ",", "ms68", ",", "ms69", ",", "ms70", ",", "ms71", ",", "ms72", ",", "ms73", ",", "ms74", ",", "ms75", ",", "ms76", ",", "ms77", ",", "ms78", ",", "ms79____Stretch1-2", ",", "ms80", ",", "ms81____Stretch2-End", ",", "ms82", ",", "ms83___VC_Munger", ",", "ms84", ",", "ms85", ",", "ms86", ",", "ms87", ",", "ms88_Stretch-end", ",", "ms96___Piano-Fshift", ",", "ms97", ",", "ms100", ",", "ms106___Stretch1", ",", "ms107", ",", "ms108", ",", "ms109", ",", "ms110", ",", "ms111", ",", "ms112___Zebayce_StopMunger", ",", "ms113", ",", "ms117___Soundfiles___StretchEnd", ",", "ms120___Samp", ",", "ms121___Samp", ",", "ms126_fin-suivi", ",", "ms127___Samp", ",", "ms127-3___Samp", ",", "ms130___Samp", ",", "ms131-4___Samp", ",", "ms141", ",", "ms141-4___Samp", ",", "ms142-4___Samp", ",", "ms143", ",", "ms152___Koala1", ",", "ms159", ",", "ms160", ",", "ms161___Stretch1", ",", "ms162", ",", "ms163", ",", "ms164", ",", "ms165", ",", "ms166", ",", "ms167", ",", "ms168", ",", "ms169", ",", "ms170", ",", "ms171", ",", "ms172", ",", "ms173", ",", "ms174", ",", "ms175", ",", "ms176", ",", "ms177", ",", "ms178", ",", "ms179", ",", "ms180", ",", "ms181", ",", "ms182", ",", "ms183", ",", "ms184", ",", "ms185", ",", "ms186", ",", "ms187", ",", "ms188-3-360", ",", "ms189___Stretch1-End", ",", "###___ms190____POLYCHORDS", ",", "ms197", ",", "ms200", ",", "ms201", ",", "ms202", ",", "ms202_3___Stretch1", ",", "ms203", ",", "ms204", ",", "ms205", ",", "ms206", ",", "ms207", ",", "ms208", ",", "ms209", ",", "ms210", ",", "ms211", ",", "ms212", ",", "ms213", ",", "ms214", ",", "ms215", ",", "ms216", ",", "ms217", ",", "ms218", ",", "ms219", ",", "ms220", ",", "ms221", ",", "ms222", ",", "ms223", ",", "ms224", ",", "ms225", ",", "ms226", ",", "ms227", ",", "ms228", ",", "ms229", ",", "ms230", ",", "ms231", ",", "ms234_fin-suivi", ",", "ms238", ",", "ms242", ",", "ms246", ",", "ms250", ",", "ms255____recul_Ondea___PB", ",", "ms258", ",", "ms267", ",", "ms268_____HALLU__DepartOk", ",", "ms280", ",", "ms280-3", ",", "ms287", ",", "ms294-4", ",", "ms303-2", ",", "ms309", ",", "ms315____FUSEES_1__Chromax", ",", "ms317", ",", "###___ms320____Prtm", ",", "ms321-1____Koala1", ",", "ms326-1", ",", "ms328-1", ",", "ms331-1", ",", "ms335-2", ",", "ms336-1", ",", "ms339-4", ",", "ms342-4", ",", "ms343-3", ",", "ms345-3g", ",", "ms346-3", ",", "ms346-4", ",", "ms350-4", ",", "ms351-4", ",", "ms352-4", ",", "ms353-4", ",", "ms354-4", ",", "ms355-3", ",", "ms359-2", ",", "ms361-4", ",", "ms363-4", ",", "ms365-4", ",", "ms366-4", ",", "ms367-4", ",", "ms368-4", ",", "ms369-4", ",", "ms370-4", ",", "ms377", ",", "ms392_fff", ",", "ms393____CRESCSa", ",", "ms399_4____StretchRecOn", ",", "ms400_2____StretchRecOff", ",", "ms402____FUSEES_2", ",", "ms407____CRESCSb", ",", "ms415____Chute", ",", "ms419", ",", "ms423", ",", "ms427", ",", "ms431", ",", "ms435__", ",", "ms448", ",", "ms459___MungerLow", ",", "ms463", ",", "ms466" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2432,7 +2459,7 @@
 				"box" : 				{
 					"allowdrag" : 0,
 					"id" : "obj-28",
-					"items" : [ "test_prtm_accel_____BIG_CHORDS", ",", "measure2", ",", "measure3", ",", "measure4", ",", "measure5", ",", "ms2___Prtm", ",", "ms8____ChordsSuivi___Stretch1", ",", "ms9", ",", "ms_10", ",", "ms11", ",", "ms12", ",", "ms13", ",", "ms14", ",", "ms15", ",", "ms16", ",", "ms17___Zebayce", ",", "ms18", ",", "ms19", ",", "ms20", ",", "ms21", ",", "ms22", ",", "ms23", ",", "ms24", ",", "ms25", ",", "ms26___Koala2", ",", "ms27", ",", "ms28___MetalsSounds", ",", "ms29", ",", "ms30_Stretch-End", ",", "ms32___MetalSound", ",", "ms34___Zebayce", ",", "ms38____ELASTIK", ",", "ms43____REC_BUFFER", ",", "ms45____STOP__REC_BUFFER", ",", "ms55____READ__REC_BUFFER", ",", "ms58____READ__REC_BUFFER", ",", "ms66___Stretch1___Gong", ",", "ms67", ",", "ms68", ",", "ms69", ",", "ms70", ",", "ms71", ",", "ms72", ",", "ms73", ",", "ms74", ",", "ms75", ",", "ms76", ",", "ms77", ",", "ms78", ",", "ms79____Stretch1-2", ",", "ms80", ",", "ms81____Stretch2-End", ",", "ms82", ",", "ms83___VC_Munger", ",", "ms84", ",", "ms85", ",", "ms86", ",", "ms87", ",", "ms88_Stretch-end", ",", "ms96___Piano-Fshift", ",", "ms97", ",", "ms100", ",", "ms106___Stretch1", ",", "ms107", ",", "ms108", ",", "ms109", ",", "ms110", ",", "ms111", ",", "ms112___Zebayce_StopMunger", ",", "ms113", ",", "ms117___Soundfiles___StretchEnd", ",", "ms120___Samp", ",", "ms121___Samp", ",", "ms126_fin-suivi", ",", "ms127___Samp", ",", "ms127-3___Samp", ",", "ms130___Samp", ",", "ms131-4___Samp", ",", "ms141", ",", "ms141-4___Samp", ",", "ms142-4___Samp", ",", "ms143", ",", "ms152___Koala1", ",", "ms159", ",", "ms160", ",", "ms161___Stretch1", ",", "ms162", ",", "ms163", ",", "ms164", ",", "ms165", ",", "ms166", ",", "ms167", ",", "ms168", ",", "ms169", ",", "ms170", ",", "ms171", ",", "ms172", ",", "ms173", ",", "ms174", ",", "ms175", ",", "ms176", ",", "ms177", ",", "ms178", ",", "ms179", ",", "ms180", ",", "ms181", ",", "ms182", ",", "ms183", ",", "ms184", ",", "ms185", ",", "ms186", ",", "ms187", ",", "ms188-3-360", ",", "ms189___Stretch1-End", ",", "###___ms190____POLYCHORDS", ",", "ms197", ",", "ms200", ",", "ms201", ",", "ms202", ",", "ms202_3___Stretch1", ",", "ms203", ",", "ms204", ",", "ms205", ",", "ms206", ",", "ms207", ",", "ms208", ",", "ms209", ",", "ms210", ",", "ms211", ",", "ms212", ",", "ms213", ",", "ms214", ",", "ms215", ",", "ms216", ",", "ms217", ",", "ms218", ",", "ms219", ",", "ms220", ",", "ms221", ",", "ms222", ",", "ms223", ",", "ms224", ",", "ms225", ",", "ms226", ",", "ms227", ",", "ms228", ",", "ms229", ",", "ms230", ",", "ms231", ",", "ms234_fin-suivi", ",", "ms238", ",", "ms242", ",", "ms246", ",", "ms250", ",", "ms255____recul_Ondea___PB", ",", "ms258", ",", "ms267", ",", "ms268_____HALLU__DepartOk", ",", "ms280", ",", "ms280-3", ",", "ms287", ",", "ms294-4", ",", "ms303-2", ",", "ms309", ",", "ms315____FUSEES_1__Chromax", ",", "ms317", ",", "###___ms320____Prtm", ",", "ms321-1____Koala1", ",", "ms326-1", ",", "ms328-1", ",", "ms331-1", ",", "ms335-2", ",", "ms336-1", ",", "ms339-4", ",", "ms342-4", ",", "ms343-3", ",", "ms345-3g", ",", "ms346-3", ",", "ms346-4", ",", "ms350-4", ",", "ms351-4", ",", "ms352-4", ",", "ms353-4", ",", "ms354-4", ",", "ms355-3", ",", "ms359-2", ",", "ms361-4", ",", "ms363-4", ",", "ms365-4", ",", "ms366-4", ",", "ms367-4", ",", "ms368-4", ",", "ms369-4", ",", "ms370-4", ",", "ms377", ",", "ms392_fff", ",", "ms393____CRESCSa", ",", "ms399_4____StretchRecOn", ",", "ms400_2____StretchRecOff", ",", "ms402____FUSEES_2", ",", "ms407____CRESCSb", ",", "ms415____Chute", ",", "ms419", ",", "ms423", ",", "ms427", ",", "ms431", ",", "ms435__", ",", "ms448", ",", "ms459___MungerLow", ",", "ms463", ",", "ms466" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3107,7 +3134,7 @@
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "color",
 					"id" : "obj-110",
-					"items" : [ "test_prtm_accel_____BIG_CHORDS", ",", "measure2", ",", "measure3", ",", "measure4", ",", "measure5", ",", "ms2___Prtm", ",", "ms8____ChordsSuivi___Stretch1", ",", "ms9", ",", "ms_10", ",", "ms11", ",", "ms12", ",", "ms13", ",", "ms14", ",", "ms15", ",", "ms16", ",", "ms17___Zebayce", ",", "ms18", ",", "ms19", ",", "ms20", ",", "ms21", ",", "ms22", ",", "ms23", ",", "ms24", ",", "ms25", ",", "ms26___Koala2", ",", "ms27", ",", "ms28___MetalsSounds", ",", "ms29", ",", "ms30_Stretch-End", ",", "ms32___MetalSound", ",", "ms34___Zebayce", ",", "ms38____ELASTIK", ",", "ms43____REC_BUFFER", ",", "ms45____STOP__REC_BUFFER", ",", "ms55____READ__REC_BUFFER", ",", "ms58____READ__REC_BUFFER", ",", "ms66___Stretch1___Gong", ",", "ms67", ",", "ms68", ",", "ms69", ",", "ms70", ",", "ms71", ",", "ms72", ",", "ms73", ",", "ms74", ",", "ms75", ",", "ms76", ",", "ms77", ",", "ms78", ",", "ms79____Stretch1-2", ",", "ms80", ",", "ms81____Stretch2-End", ",", "ms82", ",", "ms83___VC_Munger", ",", "ms84", ",", "ms85", ",", "ms86", ",", "ms87", ",", "ms88_Stretch-end", ",", "ms96___Piano-Fshift", ",", "ms97", ",", "ms100", ",", "ms106___Stretch1", ",", "ms107", ",", "ms108", ",", "ms109", ",", "ms110", ",", "ms111", ",", "ms112___Zebayce_StopMunger", ",", "ms113", ",", "ms117___Soundfiles___StretchEnd", ",", "ms120___Samp", ",", "ms121___Samp", ",", "ms126_fin-suivi", ",", "ms127___Samp", ",", "ms127-3___Samp", ",", "ms130___Samp", ",", "ms131-4___Samp", ",", "ms141", ",", "ms141-4___Samp", ",", "ms142-4___Samp", ",", "ms143", ",", "ms152___Koala1", ",", "ms159", ",", "ms160", ",", "ms161___Stretch1", ",", "ms162", ",", "ms163", ",", "ms164", ",", "ms165", ",", "ms166", ",", "ms167", ",", "ms168", ",", "ms169", ",", "ms170", ",", "ms171", ",", "ms172", ",", "ms173", ",", "ms174", ",", "ms175", ",", "ms176", ",", "ms177", ",", "ms178", ",", "ms179", ",", "ms180", ",", "ms181", ",", "ms182", ",", "ms183", ",", "ms184", ",", "ms185", ",", "ms186", ",", "ms187", ",", "ms188-3-360", ",", "ms189___Stretch1-End", ",", "###___ms190____POLYCHORDS", ",", "ms197", ",", "ms200", ",", "ms201", ",", "ms202", ",", "ms202_3___Stretch1", ",", "ms203", ",", "ms204", ",", "ms205", ",", "ms206", ",", "ms207", ",", "ms208", ",", "ms209", ",", "ms210", ",", "ms211", ",", "ms212", ",", "ms213", ",", "ms214", ",", "ms215", ",", "ms216", ",", "ms217", ",", "ms218", ",", "ms219", ",", "ms220", ",", "ms221", ",", "ms222", ",", "ms223", ",", "ms224", ",", "ms225", ",", "ms226", ",", "ms227", ",", "ms228", ",", "ms229", ",", "ms230", ",", "ms231", ",", "ms234_fin-suivi", ",", "ms238", ",", "ms242", ",", "ms246", ",", "ms250", ",", "ms255____recul_Ondea___PB", ",", "ms258", ",", "ms267", ",", "ms268_____HALLU__DepartOk", ",", "ms280", ",", "ms280-3", ",", "ms287", ",", "ms294-4", ",", "ms303-2", ",", "ms309", ",", "ms315____FUSEES_1__Chromax", ",", "ms317", ",", "###___ms320____Prtm", ",", "ms321-1____Koala1", ",", "ms326-1", ",", "ms328-1", ",", "ms331-1", ",", "ms335-2", ",", "ms336-1", ",", "ms339-4", ",", "ms342-4", ",", "ms343-3", ",", "ms345-3g", ",", "ms346-3", ",", "ms346-4", ",", "ms350-4", ",", "ms351-4", ",", "ms352-4", ",", "ms353-4", ",", "ms354-4", ",", "ms355-3", ",", "ms359-2", ",", "ms361-4", ",", "ms363-4", ",", "ms365-4", ",", "ms366-4", ",", "ms367-4", ",", "ms368-4", ",", "ms369-4", ",", "ms370-4", ",", "ms377", ",", "ms392_fff", ",", "ms393____CRESCSa", ",", "ms399_4____StretchRecOn", ",", "ms400_2____StretchRecOff", ",", "ms402____FUSEES_2", ",", "ms407____CRESCSb", ",", "ms415____Chute", ",", "ms419", ",", "ms423", ",", "ms427", ",", "ms431", ",", "ms435__", ",", "ms448", ",", "ms459___MungerLow", ",", "ms463", ",", "ms466" ],
+					"items" : "<empty>",
 					"labelclick" : 1,
 					"maxclass" : "umenu",
 					"numinlets" : 1,
@@ -3554,7 +3581,7 @@
 					"fontsize" : 12.0,
 					"hint" : "Choose a score to load",
 					"id" : "obj-27",
-					"items" : [ "_ConcertoHarpe.asco.txt", ",", "Cattaneo_Piano.asco.txt", ",", "Clavier_test.asco.txt", ",", "Clavier_test_ralenti.asco.txt", ",", "Midi-test.mid.asco.txt", ",", "MidiSequence1a.asco", ",", "Test_midi_1.asco.txt", ",", "Tutti.asco.txt" ],
+					"items" : [ "_ConcertoHarpe.asco.txt", ",", "Cattaneo_Piano.asco.txt", ",", "Clavier_test.asco.txt", ",", "Clavier_test_ralenti.asco.txt", ",", "Midi-test.mid.asco.txt", ",", "MidiSequence1a.asco", ",", "Test_curve.asco.txt", ",", "Test_midi_1.asco.txt", ",", "Tutti.asco.txt" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3598,7 +3625,7 @@
 					"fontface" : 1,
 					"hint" : "Select a cue",
 					"id" : "obj-33",
-					"items" : [ "test_prtm_accel_____BIG_CHORDS", ",", "measure2", ",", "measure3", ",", "measure4", ",", "measure5", ",", "ms2___Prtm", ",", "ms8____ChordsSuivi___Stretch1", ",", "ms9", ",", "ms_10", ",", "ms11", ",", "ms12", ",", "ms13", ",", "ms14", ",", "ms15", ",", "ms16", ",", "ms17___Zebayce", ",", "ms18", ",", "ms19", ",", "ms20", ",", "ms21", ",", "ms22", ",", "ms23", ",", "ms24", ",", "ms25", ",", "ms26___Koala2", ",", "ms27", ",", "ms28___MetalsSounds", ",", "ms29", ",", "ms30_Stretch-End", ",", "ms32___MetalSound", ",", "ms34___Zebayce", ",", "ms38____ELASTIK", ",", "ms43____REC_BUFFER", ",", "ms45____STOP__REC_BUFFER", ",", "ms55____READ__REC_BUFFER", ",", "ms58____READ__REC_BUFFER", ",", "ms66___Stretch1___Gong", ",", "ms67", ",", "ms68", ",", "ms69", ",", "ms70", ",", "ms71", ",", "ms72", ",", "ms73", ",", "ms74", ",", "ms75", ",", "ms76", ",", "ms77", ",", "ms78", ",", "ms79____Stretch1-2", ",", "ms80", ",", "ms81____Stretch2-End", ",", "ms82", ",", "ms83___VC_Munger", ",", "ms84", ",", "ms85", ",", "ms86", ",", "ms87", ",", "ms88_Stretch-end", ",", "ms96___Piano-Fshift", ",", "ms97", ",", "ms100", ",", "ms106___Stretch1", ",", "ms107", ",", "ms108", ",", "ms109", ",", "ms110", ",", "ms111", ",", "ms112___Zebayce_StopMunger", ",", "ms113", ",", "ms117___Soundfiles___StretchEnd", ",", "ms120___Samp", ",", "ms121___Samp", ",", "ms126_fin-suivi", ",", "ms127___Samp", ",", "ms127-3___Samp", ",", "ms130___Samp", ",", "ms131-4___Samp", ",", "ms141", ",", "ms141-4___Samp", ",", "ms142-4___Samp", ",", "ms143", ",", "ms152___Koala1", ",", "ms159", ",", "ms160", ",", "ms161___Stretch1", ",", "ms162", ",", "ms163", ",", "ms164", ",", "ms165", ",", "ms166", ",", "ms167", ",", "ms168", ",", "ms169", ",", "ms170", ",", "ms171", ",", "ms172", ",", "ms173", ",", "ms174", ",", "ms175", ",", "ms176", ",", "ms177", ",", "ms178", ",", "ms179", ",", "ms180", ",", "ms181", ",", "ms182", ",", "ms183", ",", "ms184", ",", "ms185", ",", "ms186", ",", "ms187", ",", "ms188-3-360", ",", "ms189___Stretch1-End", ",", "###___ms190____POLYCHORDS", ",", "ms197", ",", "ms200", ",", "ms201", ",", "ms202", ",", "ms202_3___Stretch1", ",", "ms203", ",", "ms204", ",", "ms205", ",", "ms206", ",", "ms207", ",", "ms208", ",", "ms209", ",", "ms210", ",", "ms211", ",", "ms212", ",", "ms213", ",", "ms214", ",", "ms215", ",", "ms216", ",", "ms217", ",", "ms218", ",", "ms219", ",", "ms220", ",", "ms221", ",", "ms222", ",", "ms223", ",", "ms224", ",", "ms225", ",", "ms226", ",", "ms227", ",", "ms228", ",", "ms229", ",", "ms230", ",", "ms231", ",", "ms234_fin-suivi", ",", "ms238", ",", "ms242", ",", "ms246", ",", "ms250", ",", "ms255____recul_Ondea___PB", ",", "ms258", ",", "ms267", ",", "ms268_____HALLU__DepartOk", ",", "ms280", ",", "ms280-3", ",", "ms287", ",", "ms294-4", ",", "ms303-2", ",", "ms309", ",", "ms315____FUSEES_1__Chromax", ",", "ms317", ",", "###___ms320____Prtm", ",", "ms321-1____Koala1", ",", "ms326-1", ",", "ms328-1", ",", "ms331-1", ",", "ms335-2", ",", "ms336-1", ",", "ms339-4", ",", "ms342-4", ",", "ms343-3", ",", "ms345-3g", ",", "ms346-3", ",", "ms346-4", ",", "ms350-4", ",", "ms351-4", ",", "ms352-4", ",", "ms353-4", ",", "ms354-4", ",", "ms355-3", ",", "ms359-2", ",", "ms361-4", ",", "ms363-4", ",", "ms365-4", ",", "ms366-4", ",", "ms367-4", ",", "ms368-4", ",", "ms369-4", ",", "ms370-4", ",", "ms377", ",", "ms392_fff", ",", "ms393____CRESCSa", ",", "ms399_4____StretchRecOn", ",", "ms400_2____StretchRecOff", ",", "ms402____FUSEES_2", ",", "ms407____CRESCSb", ",", "ms415____Chute", ",", "ms419", ",", "ms423", ",", "ms427", ",", "ms431", ",", "ms435__", ",", "ms448", ",", "ms459___MungerLow", ",", "ms463", ",", "ms466" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3880,9 +3907,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 368.5, 234.0, 159.0, 20.0 ],
+					"patching_rect" : [ 401.5, 225.0, 159.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 222.5, 257.0, 159.0, 20.0 ],
+					"presentation_rect" : [ 222.5, 251.0, 159.0, 20.0 ],
 					"style" : ""
 				}
 
@@ -3903,6 +3930,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-96", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-100", 0 ]
 				}
 
 			}
@@ -5304,6 +5340,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-95", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-85", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-96", 0 ]
 				}
 
 			}
