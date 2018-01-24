@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 1,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 436.0, 274.0, 1214.0, 683.0 ],
+		"rect" : [ 633.0, 430.0, 986.0, 582.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -51,7 +51,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 18.0, 107.0, 225.0, 95.0 ],
+					"patching_rect" : [ 24.0, 36.0, 225.0, 95.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -66,7 +66,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 315.0, 261.0, 113.0, 31.0 ],
+					"patching_rect" : [ 321.0, 190.0, 113.0, 31.0 ],
 					"style" : "",
 					"text" : ";\r1IANA.STORAGE 1"
 				}
@@ -80,7 +80,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 181.0, 311.0, 20.0, 20.0 ],
+					"patching_rect" : [ 187.0, 240.0, 20.0, 20.0 ],
 					"style" : ""
 				}
 
@@ -95,7 +95,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 181.0, 341.0, 113.0, 31.0 ],
+					"patching_rect" : [ 187.0, 270.0, 113.0, 31.0 ],
 					"style" : "",
 					"text" : ";\r1IANA Metronome $1"
 				}
@@ -120,7 +120,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 181.0, 261.0, 113.0, 31.0 ],
+					"patching_rect" : [ 187.0, 190.0, 113.0, 31.0 ],
 					"style" : "",
 					"text" : ";\r1IANA.INIT bang",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -137,7 +137,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 896.0, 38.5, 56.0, 31.0 ],
+					"patching_rect" : [ 872.0, 38.5, 56.0, 31.0 ],
 					"style" : "",
 					"text" : "setrange 0 1200"
 				}
@@ -162,7 +162,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 181.0, 218.0, 113.0, 31.0 ],
+					"patching_rect" : [ 187.0, 147.0, 113.0, 31.0 ],
 					"style" : "",
 					"text" : ";\r1IANA.interface open",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -178,7 +178,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 718.0, 14.5, 50.0, 20.0 ],
+					"patching_rect" : [ 694.0, 14.5, 50.0, 20.0 ],
 					"style" : "",
 					"text" : "clear"
 				}
@@ -194,7 +194,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 351.0, 36.0, 298.0, 143.0 ],
+					"patching_rect" : [ 327.0, 36.0, 298.0, 143.0 ],
 					"style" : "",
 					"text" : ";\r1IANA AmpSmooth 0., BufLoop 4., BufSize 2., Content 0., Display 1., Downsampling 0., Dry/wet 100., FilterFreq 1000., FilterGain 0., FilterMode 5., FirstToSearch 0., FreqSmooth 0., Gain 0., HearingThreshold 1., InitOutput 0., InitPeaks 0., InitSendData 0., InitSpectrum 0., InputChannels 2., LastToSearch 1024., Level 0., Manual 0., MaxPartials 40., MaxPeaks 100., Metronome 1., Monitor 1., Ordering 0., Outgain 0.205235, Output 0., Rate 60., RefLevel 90., RemixError 0., Send nowhere, SendData 0., Shift 0., SpeedFactor 8., Sync 0., Threshold 2., TranspEnable 0.3, Transpose 0., WindowSize 1., WindowType 2.,"
 				}
@@ -214,7 +214,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -325,6 +325,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-41",
+									"index" : 1,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -338,6 +339,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-42",
+									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -422,7 +424,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 726.333313, 187.5, 64.0, 20.0 ],
+					"patching_rect" : [ 702.333313, 187.5, 64.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -446,7 +448,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 692.0, 44.5, 152.0, 18.0 ],
+					"patching_rect" : [ 668.0, 44.5, 152.0, 18.0 ],
 					"style" : "",
 					"text" : "< Play transposition envelope"
 				}
@@ -460,7 +462,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 774.333313, 211.5, 19.0, 18.0 ],
+					"patching_rect" : [ 750.333313, 211.5, 19.0, 18.0 ],
 					"style" : "",
 					"text" : "ct"
 				}
@@ -477,7 +479,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 726.333313, 211.5, 48.0, 20.0 ],
+					"patching_rect" : [ 702.333313, 211.5, 48.0, 20.0 ],
 					"prototypename" : "Live",
 					"style" : "",
 					"triscale" : 0.75
@@ -494,7 +496,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 726.333313, 235.5, 97.0, 42.0 ],
+					"patching_rect" : [ 702.333313, 235.5, 97.0, 42.0 ],
 					"style" : "",
 					"text" : ";\r1IANA AmpSmooth $1"
 				}
@@ -508,7 +510,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 666.0, 40.5, 24.0, 24.0 ],
+					"patching_rect" : [ 642.0, 40.5, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -527,7 +529,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "float", "", "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 666.0, 72.5, 200.0, 100.0 ],
+					"patching_rect" : [ 642.0, 72.5, 200.0, 100.0 ],
 					"range" : [ 0.0, 1200.0 ],
 					"style" : ""
 				}
@@ -539,7 +541,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 18.0, 569.0, 45.0, 45.0 ],
+					"patching_rect" : [ 24.0, 498.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -552,7 +554,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 18.0, 389.0, 48.0, 136.0 ],
+					"patching_rect" : [ 24.0, 318.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -580,7 +582,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 18.0, 218.0, 152.0, 31.0 ],
+					"patching_rect" : [ 24.0, 147.0, 152.0, 31.0 ],
 					"style" : "",
 					"text" : "poly~ tg.IanaToRes.2.2.Poly 1 args 1IANA",
 					"varname" : "poly~"
@@ -674,6 +676,7 @@
 					"destination" : [ "obj-1", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-44", 0 ]
 				}
 
@@ -683,6 +686,7 @@
 					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-44", 0 ]
 				}
 
@@ -707,71 +711,70 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-1.1::obj-5::obj-41" : [ "Shift", "Shift", 0 ],
 			"obj-1.1::obj-5::obj-225" : [ "CompThresh", "CompThresh", 0 ],
-			"obj-1.1::obj-5::obj-81" : [ "Sync", "Sync", 0 ],
-			"obj-1.1::obj-5::obj-23" : [ "Threshold", "Threshold", 0 ],
-			"obj-1.1::obj-5::obj-183" : [ "envRate", "envRate", 0 ],
-			"obj-44::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
-			"obj-1.1::obj-5::obj-207" : [ "resStep", "resStep", 0 ],
-			"obj-1.1::obj-5::obj-133" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-1.1::obj-5::obj-3" : [ "BufLoop", "BufLoop", 0 ],
-			"obj-1.1::obj-5::obj-44" : [ "HearingThreshold", "HearingThreshold", 0 ],
-			"obj-1.1::obj-5::obj-256" : [ "CompAttack", "CompAttack", 0 ],
-			"obj-1.1::obj-5::obj-123" : [ "InputChannels", "InputChannels", 0 ],
-			"obj-1.1::obj-5::obj-34" : [ "Output", "Output", 0 ],
-			"obj-1.1::obj-5::obj-50" : [ "Rate", "Rate", 0 ],
-			"obj-1.1::obj-5::obj-30" : [ "Ordering", "Ordering", 0 ],
-			"obj-1.1::obj-5::obj-219" : [ "CompRatio", "CompRatio", 0 ],
-			"obj-1.1::obj-5::obj-184" : [ "ArpegeMetroRand", "ArpegeMetroRand", 0 ],
-			"obj-1.1::obj-5::obj-66" : [ "SendData", "SendData", 0 ],
-			"obj-1.1::obj-5::obj-150" : [ "envFactor", "envFactor", 0 ],
-			"obj-1.1::obj-5::obj-231" : [ "resClear", "resClear", 0 ],
-			"obj-1.1::obj-5::obj-10" : [ "Dry/wet", "Dry/wet", 0 ],
-			"obj-1.1::obj-5::obj-16" : [ "FirstToSearch", "FirstToSearch", 0 ],
-			"obj-1.1::obj-5::obj-233" : [ "Ingain", "Ingain", 0 ],
-			"obj-1.1::obj-5::obj-246" : [ "CompLookahead", "CompLookahead", 0 ],
-			"obj-1.1::obj-5::obj-19" : [ "MaxPeaks", "MaxPeaks", 0 ],
-			"obj-1.1::obj-5::obj-47" : [ "Send", "Send", 0 ],
-			"obj-1.1::obj-5::obj-148" : [ "envStretch", "envStretch", 0 ],
-			"obj-1.1::obj-5::obj-49" : [ "Metronome", "Metronome", 0 ],
-			"obj-1.1::obj-5::obj-26" : [ "BufSize", "BufSize", 0 ],
-			"obj-1.1::obj-5::obj-149" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-1.1::obj-5::obj-213" : [ "CompExpRatio", "CompExpRatio", 0 ],
-			"obj-1.1::obj-5::obj-18" : [ "LastToSearch", "LastToSearch", 0 ],
-			"obj-1.1::obj-5::obj-37" : [ "Level", "Level", 0 ],
-			"obj-1.1::obj-5::obj-27" : [ "RefLevel", "RefLevel", 0 ],
-			"obj-1.1::obj-5::obj-250" : [ "CompRelease", "CompRelease", 0 ],
+			"obj-1.1::obj-5::obj-39" : [ "Transpose", "Transpose", 0 ],
+			"obj-1.1::obj-5::obj-56" : [ "FilterMode", "FilterMode", 0 ],
 			"obj-44::obj-35" : [ "[5]", "Level", 0 ],
-			"obj-1.1::obj-5::obj-222" : [ "envPower", "envPower", 0 ],
-			"obj-1.1::obj-5::obj-74" : [ "SpeedFactor", "SpeedFactor", 0 ],
+			"obj-1.1::obj-5::obj-221" : [ "resBwCoeff", "resBwCoeff", 0 ],
+			"obj-1.1::obj-5::obj-18" : [ "LastToSearch", "LastToSearch", 0 ],
+			"obj-44::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
+			"obj-1.1::obj-5::obj-256" : [ "CompAttack", "CompAttack", 0 ],
+			"obj-1.1::obj-5::obj-184" : [ "ArpegeMetroRand", "ArpegeMetroRand", 0 ],
 			"obj-1.1::obj-5::obj-165" : [ "Outgain", "Outgain", 0 ],
+			"obj-1.1::obj-5::obj-49" : [ "Metronome", "Metronome", 0 ],
+			"obj-1.1::obj-5::obj-219" : [ "CompRatio", "CompRatio", 0 ],
+			"obj-1.1::obj-5::obj-3" : [ "BufLoop", "BufLoop", 0 ],
+			"obj-1.1::obj-5::obj-233" : [ "Ingain", "Ingain", 0 ],
+			"obj-1.1::obj-5::obj-23" : [ "Threshold", "Threshold", 0 ],
+			"obj-1.1::obj-5::obj-136" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-1.1::obj-5::obj-183" : [ "envRate", "envRate", 0 ],
+			"obj-1.1::obj-5::obj-207" : [ "resStep", "resStep", 0 ],
+			"obj-1.1::obj-5::obj-34" : [ "Output", "Output", 0 ],
+			"obj-1.1::obj-5::obj-246" : [ "CompLookahead", "CompLookahead", 0 ],
+			"obj-1.1::obj-5::obj-74" : [ "SpeedFactor", "SpeedFactor", 0 ],
+			"obj-1.1::obj-5::obj-9" : [ "Downsampling", "Downsampling", 0 ],
+			"obj-1.1::obj-5::obj-150" : [ "envFactor", "envFactor", 0 ],
+			"obj-1.1::obj-5::obj-16" : [ "FirstToSearch", "FirstToSearch", 0 ],
+			"obj-1.1::obj-5::obj-231" : [ "resClear", "resClear", 0 ],
+			"obj-1.1::obj-5::obj-36" : [ "MaxPartials", "MaxPartials", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-1.1::obj-5::obj-63" : [ "PRESET", "PRESET", 0 ],
+			"obj-1.1::obj-5::obj-50" : [ "Rate", "Rate", 0 ],
+			"obj-1.1::obj-5::obj-213" : [ "CompExpRatio", "CompExpRatio", 0 ],
+			"obj-1.1::obj-5::obj-226" : [ "ArpegeEnv", "ArpegeEnv", 0 ],
+			"obj-1.1::obj-5::obj-250" : [ "CompRelease", "CompRelease", 0 ],
+			"obj-1.1::obj-5::obj-66" : [ "SendData", "SendData", 0 ],
+			"obj-1.1::obj-5::obj-26" : [ "BufSize", "BufSize", 0 ],
+			"obj-1.1::obj-5::obj-133" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-1.1::obj-5::obj-31" : [ "Content", "Content", 0 ],
+			"obj-1.1::obj-5::obj-148" : [ "envStretch", "envStretch", 0 ],
+			"obj-1.1::obj-5::obj-44" : [ "HearingThreshold", "HearingThreshold", 0 ],
+			"obj-1.1::obj-5::obj-123" : [ "InputChannels", "InputChannels", 0 ],
+			"obj-1.1::obj-5::obj-37" : [ "Level", "Level", 0 ],
+			"obj-1.1::obj-5::obj-30" : [ "Ordering", "Ordering", 0 ],
+			"obj-1.1::obj-5::obj-206" : [ "CompMakeup", "CompMakeup", 0 ],
+			"obj-1.1::obj-5::obj-47" : [ "Send", "Send", 0 ],
+			"obj-1.1::obj-5::obj-103" : [ "AmpSmooth", "ASmooth", 0 ],
+			"obj-1.1::obj-5::obj-149" : [ "FilterQ", "FilterQ", 0 ],
+			"obj-1.1::obj-5::obj-10" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-1.1::obj-5::obj-222" : [ "envPower", "envPower", 0 ],
 			"obj-1.1::obj-5::obj-7" : [ "WindowType", "WindowType", 0 ],
 			"obj-1.1::obj-5::obj-203" : [ "resInterp", "resInterp", 0 ],
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-1.1::obj-5::obj-136" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-1.1::obj-5::obj-103" : [ "AmpSmooth", "ASmooth", 0 ],
-			"obj-1.1::obj-5::obj-63" : [ "PRESET", "PRESET", 0 ],
-			"obj-1.1::obj-5::obj-41" : [ "Shift", "Shift", 0 ],
-			"obj-1.1::obj-5::obj-206" : [ "CompMakeup", "CompMakeup", 0 ],
-			"obj-1.1::obj-5::obj-31" : [ "Content", "Content", 0 ],
-			"obj-1.1::obj-5::obj-226" : [ "ArpegeEnv", "ArpegeEnv", 0 ],
-			"obj-1.1::obj-5::obj-221" : [ "resBwCoeff", "resBwCoeff", 0 ],
-			"obj-1.1::obj-5::obj-39" : [ "Transpose", "Transpose", 0 ],
-			"obj-1.1::obj-5::obj-9" : [ "Downsampling", "Downsampling", 0 ],
-			"obj-1.1::obj-5::obj-56" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-1.1::obj-5::obj-216" : [ "CompExpThresh", "CompExpThresh", 0 ],
-			"obj-1.1::obj-5::obj-36" : [ "MaxPartials", "MaxPartials", 0 ]
+			"obj-1.1::obj-5::obj-19" : [ "MaxPeaks", "MaxPeaks", 0 ],
+			"obj-1.1::obj-5::obj-27" : [ "RefLevel", "RefLevel", 0 ],
+			"obj-1.1::obj-5::obj-216" : [ "CompExpThresh", "CompExpThresh", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "tg.IanaToRes.2.2.Poly.maxpat",
-				"bootpath" : "~/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/IanaTo",
+				"bootpath" : "~/Dropbox/PATCH/_LIBRARY/TG.tools/_MODULES/EFFECTS/IanaTo",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.IanaToRes.2.2.maxpat",
-				"bootpath" : "~/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/IanaTo",
+				"bootpath" : "~/Dropbox/PATCH/_LIBRARY/TG.tools/_MODULES/EFFECTS/IanaTo",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -783,43 +786,43 @@
 			}
 , 			{
 				"name" : "IanaToResPreset.json",
-				"bootpath" : "~/Documents/MAX-LIBRARY/TG.tools/JSON",
+				"bootpath" : "~/Dropbox/PATCH/_LIBRARY/TG.tools/JSON",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "~/Documents/PATCH/Manoury/KeinLicht/PATCHS/KeinLicht-ALLpatchs/patchers",
+				"bootpath" : "~/Dropbox/PATCH/_LIBRARY/TG.tools/_MODULES/CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.vstretch.pfft~.maxpat",
-				"bootpath" : "~/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/_Resonators",
+				"bootpath" : "~/Dropbox/PATCH/_LIBRARY/TG.tools/_MODULES/EFFECTS/_Resonators",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.resonForIana.poly.maxpat",
-				"bootpath" : "~/Documents/MAX-LIBRARY/TG.tools/_MODULES/EFFECTS/_Resonators",
+				"bootpath" : "~/Dropbox/PATCH/_LIBRARY/TG.tools/_MODULES/EFFECTS/_Resonators",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.chant_autobw.maxpat",
-				"bootpath" : "~/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "~/Dropbox/PATCH/_LIBRARY/TG.tools/_MODULES/CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.fgraph1.maxpat",
-				"bootpath" : "~/Documents/PATCH/Manoury/KeinLicht/PATCHS/KeinLicht-ALLpatchs/patchers",
+				"bootpath" : "~/Dropbox/PATCH/_LIBRARY/TG.tools/_MODULES/CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.MuteThispoly2.maxpat",
-				"bootpath" : "~/Documents/MAX-LIBRARY/TG.tools/_MODULES/CTRL",
+				"bootpath" : "~/Dropbox/PATCH/_LIBRARY/TG.tools/_MODULES/CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -878,7 +881,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "Lmult.mxo",
+				"name" : "Ldiv.mxo",
 				"type" : "iLaX"
 			}
 , 			{
